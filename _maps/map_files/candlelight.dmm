@@ -2057,7 +2057,7 @@
 /turf/open/floor/rogue/blocks,
 /area/rogue/outdoors/town)
 "rY" = (
-/obj/structure/rack/rogue,
+/obj/structure/trellise,
 /obj/structure/fluff/walldeco/vinez,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/exposed/church)
