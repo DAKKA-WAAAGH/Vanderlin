@@ -11,7 +11,7 @@
 	move_to_delay = 2
 	vision_range = 5
 	aggro_vision_range = 5
-	
+
 	// One of these daes, they'll drop Gator leather
 	botched_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/mince = 1)
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/mince = 1,
@@ -20,8 +20,8 @@
 						/obj/item/alch/sinew = 1,
 						 /obj/item/alch/bone = 4)
 
-	health = GATOR_HEALTH // to-do
-	maxHealth = GATOR_HEALTH // to-do
+	health = GATOR_HEALTH
+	maxHealth = GATOR_HEALTH
 	food_type = list(/obj/item/bodypart,
 					/obj/item/organ,
 					/obj/item/reagent_containers/food/snacks/rogue/meat)
@@ -62,9 +62,7 @@
 	ai_controller.set_blackboard_key(BB_BASIC_FOODS, food_type)
 	//ADD_TRAIT(src, TRAIT_WEBWALK, TRAIT_GENERIC) // to-do
 
-// dunno if this is needed to function
-/*
-
+/* Dunno if this is needed to function or is it just to inject reagents
 /mob/living/simple_animal/hostile/retaliate/rogue/gator/AttackingTarget()
 	. = ..()
 	if(. && isliving(target))
@@ -109,9 +107,8 @@
 	GiveTarget(user)
 	return
 
-// unsure whether to do anything with this
-/*
-/mob/living/simple_animal/hostile/retaliate/rogue/gator/Life() 
+/* Unsure whether to do anything with this
+/mob/living/simple_animal/hostile/retaliate/rogue/gator/Life()
 	..()
 	if(stat == CONSCIOUS)
 		if(!target)
