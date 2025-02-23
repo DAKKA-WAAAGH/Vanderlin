@@ -101,7 +101,7 @@
 			return pick('sound/vo/mobs/gator/death.ogg')
 		*/
 		if("idle")
-			return pick('sound/vo/mobs/gator/idle (1).ogg')
+			return pick('modular/Gators/sound/vo/mobs/gator/idle (1).ogg')
 
 /mob/living/simple_animal/hostile/retaliate/rogue/gator/taunted(mob/user)
 	emote("aggro")
