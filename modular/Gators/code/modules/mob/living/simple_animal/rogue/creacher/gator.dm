@@ -47,7 +47,7 @@
 	stat_attack = UNCONSCIOUS
 	body_eater = TRUE
 
-	ai_controller = /datum/ai_controller/gator // to-do
+	ai_controller = /datum/ai_controller/troll // to-do
 	AIStatus = AI_OFF
 	can_have_ai = FALSE
 
@@ -75,14 +75,17 @@
 
 	AddElement(/datum/element/ai_flee_while_injured, 0.75, retreat_health)
 	ai_controller.set_blackboard_key(BB_BASIC_FOODS, food_type)
-	ADD_TRAIT(src, TRAIT_WEBWALK, TRAIT_GENERIC) // to-do
+	//ADD_TRAIT(src, TRAIT_WEBWALK, TRAIT_GENERIC) // to-do
 
+// dunno if this is needed to function
+/*
 /mob/living/simple_animal/hostile/retaliate/rogue/gator/AttackingTarget()
 	. = ..()
 	if(. && isliving(target))
 		var/mob/living/L = target
 		if(L.reagents)
 			L.reagents.add_reagent(/datum/reagent/toxin/venom, 1)
+*/
 
 /mob/living/simple_animal/hostile/retaliate/rogue/gator/find_food()
 	. = ..()
