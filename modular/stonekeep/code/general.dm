@@ -99,22 +99,7 @@
 | Crops |
 \------*/
 
-/datum/plant_def/jacksberry
-	icon = 'modular/stonekeep/icons/crops.dmi'
-
-/datum/plant_def/jacksberry_poison
-	icon = 'modular/stonekeep/icons/crops.dmi'
-
-/datum/plant_def/swampweed
-	icon = 'modular/stonekeep/icons/crops.dmi'
-
-/datum/plant_def/potato
-	icon = 'modular/stonekeep/icons/crops.dmi'
-
-/datum/plant_def/turnip
-	icon = 'modular/stonekeep/icons/crops.dmi'
-
-/datum/plant_def/onion
+/datum/plant_def
 	icon = 'modular/stonekeep/icons/crops.dmi'
 
 // =================================================================================
@@ -383,7 +368,7 @@
 /obj/structure/innocent_web
 	name = ""
 	desc = ""
-	icon = 'modular/stonekeep/icons/misc.dmi'
+	icon = 'modular/stonekeep/icons/32x64.dmi'
 	icon_state = "innocentweb1"
 	layer = ABOVE_ALL_MOB_LAYER
 	density = FALSE
@@ -400,17 +385,17 @@
 
 /obj/structure/innocent_web/attack_hand()
 	playsound(src, pick('sound/misc/jumpscare (1).ogg','sound/misc/jumpscare (2).ogg','sound/misc/jumpscare (3).ogg','sound/misc/jumpscare (4).ogg'), 100)
-	new /mob/living/simple_animal/hostile/retaliate/rogue/spider/colony (get_turf(src))
+	new /mob/living/simple_animal/hostile/retaliate/rogue/spider/hairy (get_turf(src))
 	qdel(src)
 
 /obj/structure/innocent_web/attackby(obj/item, /mob/user, params)
 	playsound(src, pick('sound/misc/jumpscare (1).ogg','sound/misc/jumpscare (2).ogg','sound/misc/jumpscare (3).ogg','sound/misc/jumpscare (4).ogg'), 100)
-	new /mob/living/simple_animal/hostile/retaliate/rogue/spider/colony (get_turf(src))
+	new /mob/living/simple_animal/hostile/retaliate/rogue/spider/hairy (get_turf(src))
 	qdel(src)
 
 /obj/structure/innocent_web/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
 	playsound(src, pick('sound/misc/jumpscare (1).ogg','sound/misc/jumpscare (2).ogg','sound/misc/jumpscare (3).ogg','sound/misc/jumpscare (4).ogg'), 100)
-	new /mob/living/simple_animal/hostile/retaliate/rogue/spider/colony (get_turf(src))
+	new /mob/living/simple_animal/hostile/retaliate/rogue/spider/hairy (get_turf(src))
 	qdel(src)
 
 /obj/structure/innocent_web/Crossed(atom/movable/AM)
@@ -426,7 +411,7 @@
 				qdel(src)
 			else
 				playsound(src, pick('sound/misc/jumpscare (1).ogg','sound/misc/jumpscare (2).ogg','sound/misc/jumpscare (3).ogg','sound/misc/jumpscare (4).ogg'), 120)
-				new /mob/living/simple_animal/hostile/retaliate/rogue/spider/colony (get_turf(src))
+				new /mob/living/simple_animal/hostile/retaliate/rogue/spider/hairy (get_turf(src))
 				qdel(src)
 		if(L.m_intent == MOVE_INTENT_RUN)
 			to_chat(L, "<span class='warning'>I'm stuck in the web!</span>")
@@ -436,7 +421,7 @@
 				qdel(src)
 			else
 				playsound(src, pick('sound/misc/jumpscare (1).ogg','sound/misc/jumpscare (2).ogg','sound/misc/jumpscare (3).ogg','sound/misc/jumpscare (4).ogg'), 120)
-				new /mob/living/simple_animal/hostile/retaliate/rogue/spider/colony (get_turf(src))
+				new /mob/living/simple_animal/hostile/retaliate/rogue/spider/hairy (get_turf(src))
 				qdel(src)
 		else
 			to_chat(L, "<span class='warning'>I'm stuck in the web!</span>")
@@ -446,13 +431,14 @@
 				qdel(src)
 			else
 				playsound(src, pick('sound/misc/jumpscare (1).ogg','sound/misc/jumpscare (2).ogg','sound/misc/jumpscare (3).ogg','sound/misc/jumpscare (4).ogg'), 120)
-				new /mob/living/simple_animal/hostile/retaliate/rogue/spider/colony (get_turf(src))
+				new /mob/living/simple_animal/hostile/retaliate/rogue/spider/hairy (get_turf(src))
 				qdel(src)
 
 
-/mob/living/simple_animal/hostile/retaliate/rogue/spider/colony // colony spider
+/mob/living/simple_animal/hostile/retaliate/rogue/spider/hairy
 	name = "hairy spider"
 	desc = "The forest canopies hides more than leaves...These creachers make honey from flowers and spin silk from their abdomen, when not consuming prey."
+	icon = 'modular/stonekeep/icons/spider.dmi'
 	icon_state = "spider"
 	icon_living = "spider"
 	icon_dead = "spider-dead"
@@ -588,54 +574,48 @@
 	name = "flowers"
 	icon = 'modular/stonekeep/icons/pigflora.dmi'
 	icon_state = "reedbush_1"
+/obj/structure/flora/rogueflower/Initialize()
+	dir = pick(GLOB.cardinals)
+	. = ..()
+
+/obj/structure/flora/rogueflower/random
+/obj/structure/flora/rogueflower/random/Initialize()
+	icon_state = pick("reedbush", "lavendergrass", "ywflowers", "brflower", "ppflowers")
+	. = ..()
 
 /obj/structure/flora/rogueflower/fallenleaves
 	icon_state = "leaves"
 	alpha = 200
-/obj/structure/flora/rogueflower/fallenleaves/Initialize()
-	dir = pick(GLOB.cardinals)
-	. = ..()
 
 /obj/structure/flora/rogueflower/reedbush
-	icon_state = "reedbush_1"
-/obj/structure/flora/rogueflower/reedbush/Initialize()
-	icon_state = "reedbush_[rand(1, 4)]"
-	. = ..()
+	icon_state = "reedbush"
 
 /obj/structure/flora/rogueflower/lavendergrass
-	icon_state = "lavendergrass_1"
-/obj/structure/flora/rogueflower/lavendergrass/Initialize()
-	icon_state = "lavendergrass_[rand(1, 4)]"
-	. = ..()
+	icon_state = "lavendergrass"
 
 /obj/structure/flora/rogueflower/ywflowers
-	icon_state = "ywflowers_1"
-/obj/structure/flora/rogueflower/ywflowers/Initialize()
-	icon_state = "ywflowers_[rand(1, 3)]"
-	. = ..()
+	icon_state = "ywflowers"
 
 /obj/structure/flora/rogueflower/brflowers
-	icon_state = "brflowers_1"
-/obj/structure/flora/rogueflower/brflowers/Initialize()
-	icon_state = "brflowers_[rand(1, 3)]"
-	. = ..()
+	icon_state = "brflowers"
 
 /obj/structure/flora/rogueflower/ppflowers
-	icon_state = "ppflowers_1"
-
-/obj/structure/flora/rogueflower/ppflowers/Initialize()
-	icon_state = "ppflowers_[rand(1, 3)]"
-	. = ..()
+	icon_state = "ppflowers"
 
 /obj/structure/flora/roguegrass/stalky
 	name = ""
 	desc = ""
-	icon = 'modular/stonekeep/icons/pigflora.dmi'
+
 	icon_state = "stalkygrass"
 	opacity = FALSE
 
-/obj/structure/flora/roguegrass/stalky/update_icon()
+/obj/structure/flora/roguegrass/stalky/Initialize()
 	dir = pick(GLOB.cardinals)
+	. = ..()
+
+
+/obj/structure/flora/roguegrass/herb
+	icon = 'modular/stonekeep/icons/pigflora.dmi'
 
 /*	..................   Bear pelt better   ................... */
 /obj/structure/bearpelt
@@ -698,7 +678,7 @@
 	icon = 'modular/stonekeep/icons/facial.dmi'
 	icon_state = "facial_stubble"
 	gender = MALE
-	specuse = list("human", "dwarf", "elf", "aasimar", "tiefling", "halforc")
+	specuse = list("human", "dwarf", "elf", "tiefling", "halforc")
 
 /mob/living/carbon/human/proc/try_grow_beard()
 
@@ -1055,116 +1035,72 @@
 /obj/item/perfume
 	dropshrink = 0.5
 
+/obj/item/sleepingbag
+	dropshrink = 0.7
+	icon = 'modular/stonekeep/icons/structure.dmi'
+
+/obj/structure/bed/rogue/sleepingbag
+	icon = 'modular/stonekeep/icons/structure.dmi'
 
 
-/datum/sprite_accessory/facial_hair
-	icon = 'icons/roguetown/mob/facial.dmi'
-	gender = MALE
 
-/datum/sprite_accessory/facial_hair/none
-	name = "None"
-	icon_state = ""
-	gender = FEMALE
-	specuse = ALL_RACES_LIST
+GLOBAL_LIST_EMPTY(travel_tile_locations)
 
-/datum/sprite_accessory/facial_hair/shaved
-	name = "None"
-	icon_state = "facial_shaven"
-	gender = MALE
-	specuse = list("human", "dwarf", "elf", "aasimar", "tiefling", "halforc")
+/obj/effect/landmark/travel_tile_location
+	name = "travel tile location"
 
-/datum/sprite_accessory/facial_hair/brew
-	name = "Brew"
-	icon_state = "facial_moonshiner"
-	gender = MALE
-	specuse = list("human", "dwarf", "elf", "tiefling", "halforc")
+/obj/effect/landmark/travel_tile_location/Initialize()
+	. = ..()
+	GLOB.travel_tile_locations += src
 
-/datum/sprite_accessory/facial_hair/chops
-	name = "Choppe"
-	icon_state = "facial_muttonmus"
-	gender = MALE
-	specuse = list("human", "dwarf", "elf", "tiefling", "halforc")
+/obj/effect/landmark/travel_tile_location/Destroy()
+	GLOB.travel_tile_locations -= src
+	. = ..()
 
-/datum/sprite_accessory/facial_hair/chin
-	name = "Clean Chin"
-	icon_state = "facial_chin"
-	gender = MALE
-	specuse = list("human", "dwarf", "elf", "tiefling", "halforc")
+GLOBAL_LIST_EMPTY(travel_spawn_points)
 
-/datum/sprite_accessory/facial_hair/braided
-	name = "Dignitary"
-	icon_state = "braided"
-	gender = MALE
-	specuse = list("dwarf")
+/obj/effect/landmark/travel_spawn_point
+	name = "travel spawn point"
+	icon_state = "generic_event"
+	var/taken = FALSE
 
-/datum/sprite_accessory/facial_hair/manly
-	name = "Drinker"
-	icon_state = "facial_manly"
-	gender = MALE
-	specuse = list("human", "dwarf", "elf", "tiefling", "halforc")
+/obj/effect/landmark/travel_spawn_point/Initialize()
+	. = ..()
+	GLOB.travel_spawn_points += src
 
-/datum/sprite_accessory/facial_hair/fullbeard
-	name = "Full Beard"
-	icon_state = "facial_fullbeard"
-	gender = MALE
-	specuse = list("human", "dwarf", "elf", "tiefling", "halforc")
+/obj/effect/landmark/travel_spawn_point/Destroy()
+	GLOB.travel_spawn_points -= src
+	. = ..()
 
-/datum/sprite_accessory/facial_hair/cousin
-	name = "Fullest Beard"
-	icon_state = "facial_brokenman"
-	gender = MALE
-	specuse = list("human", "dwarf", "elf", "tiefling", "halforc")
+/proc/get_free_travel_spawn_point()
+	var/list/shuffled = shuffle(GLOB.travel_spawn_points)
+	for(var/obj/effect/landmark/travel_spawn_point/point as anything in shuffled)
+		if(point.taken)
+			continue
+		point.taken = TRUE
+		return point.loc
+	return null
 
-/datum/sprite_accessory/facial_hair/knightly
-	name = "Knightly"
-	icon_state = "facial_knightly"
-	gender = MALE
-	specuse = list("human", "dwarf", "elf", "tiefling", "halforc")
+/proc/create_travel_tiles(atom/location, travel_id, travel_goes_to_id, required_trait, tile_path)
+	for(var/obj/effect/landmark/travel_tile_location/landmark as anything in GLOB.travel_tile_locations)
+		if(get_dist(location, landmark) > 5)
+			continue
+		// Create travel tile here
+		var/obj/structure/fluff/traveltile/tile = new tile_path(landmark.loc)
+		tile.aportalid = travel_id
+		tile.aportalgoesto = travel_goes_to_id
+		tile.required_trait = required_trait
+		tile.hide_if_needed()
 
-/datum/sprite_accessory/facial_hair/know
-	name = "Knowledge"
-	icon_state = "facial_wise"
-	gender = MALE
-	specuse = list("human", "dwarf", "elf", "tiefling", "halforc")
+/datum/controller/subsystem/mapping/proc/spawn_random_travel_tiles()
+	spawn_random_travel_transition("vampexit", "vampin", TRAIT_VAMPMANSION, /obj/structure/fluff/traveltile/vampire)
+	spawn_random_travel_transition("banditexit", "banditin", TRAIT_BANDITCAMP, /obj/structure/fluff/traveltile/bandit)
+//Uncomment to have random transitions, instead of in the sewers exclusively. Duh.
+//	spawn_random_travel_transition("goblinexit", "goblinin", TRAIT_GOBLINCAMP, /obj/structure/fluff/traveltile/goblin)
 
-/datum/sprite_accessory/facial_hair/fiveoclockm
-	name = "Mustache"
-	icon_state = "facial_5oclockmoustache"
-	gender = MALE
-	specuse = list("human", "dwarf", "elf", "tiefling", "halforc")
-
-/datum/sprite_accessory/facial_hair/pick
-	name = "Pick"
-	icon_state = "facial_longbeard"
-	gender = MALE
-	specuse = list("human", "dwarf", "elf", "tiefling", "halforc")
-
-/datum/sprite_accessory/facial_hair/pipe
-	name = "Pipesmoker"
-	icon_state = "facial_pipe"
-	gender = MALE
-	specuse = list("human", "dwarf", "elf", "tiefling", "halforc")
-
-/datum/sprite_accessory/facial_hair/viking
-	name = "Raider"
-	icon_state = "facial_viking"
-	gender = MALE
-	specuse = list("human", "dwarf", "elf", "tiefling", "halforc")
-
-/datum/sprite_accessory/facial_hair/ranger
-	name = "Ranger"
-	icon_state = "facial_dwarf"
-	gender = MALE
-	specuse = list("human", "dwarf", "elf", "tiefling", "halforc")
-
-/datum/sprite_accessory/facial_hair/vandyke
-	name = "Rumata"
-	icon_state = "facial_vandyke"
-	gender = MALE
-	specuse = list("human", "dwarf", "elf", "tiefling", "halforc")
-
-/datum/sprite_accessory/facial_hair/burns
-	name = "Sideburns"
-	icon_state = "facial_burns"
-	gender = MALE
-	specuse = list("human", "dwarf", "elf", "aasimar", "tiefling", "halforc")
+/datum/controller/subsystem/mapping/proc/spawn_random_travel_transition(travel_id, travel_goes_to_id, required_trait, path)
+	var/atom/location = get_free_travel_spawn_point()
+	if(!location)
+		log_world("Unable to find spot for random travel transition: [travel_id] [travel_goes_to_id]")
+		return
+	create_travel_tiles(location, travel_id, travel_goes_to_id, required_trait, path)

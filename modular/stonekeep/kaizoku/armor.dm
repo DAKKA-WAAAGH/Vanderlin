@@ -117,8 +117,8 @@
 	mob_overlay_icon = 'modular/stonekeep/kaizoku/icons/clothing/armor.dmi'
 	sleeved = 'modular/stonekeep/kaizoku/icons/helpers/sleeves_armor.dmi'
 	icon_state = "imirrorarmor"
-	max_integrity = 200
-	armor = list("melee" = 80, "bullet" = 60, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	max_integrity = INTEGRITY_STANDARD
+	armor = ARMOR_SCALE
 	smeltresult = /obj/item/ingot/iron
 	armor_class = AC_MEDIUM
 	sellprice = 20
@@ -449,18 +449,18 @@
 
 /obj/item/clothing/suit/roguetown/armor/ceramic
 	name = "tribal coverings"
-	desc = "A more well-designed armor made with sturdy animal bones. Suitable for tribals whom uses little mettalurgy."
+	desc = "A more well-designed armor made with sturdy animal bones. Suitable for tribals whom uses little metallurgy."
 	icon_state = "nacre_covering"
 	icon = 'modular/stonekeep/kaizoku/icons/clothingicon/armor.dmi'
 	mob_overlay_icon = 'modular/stonekeep/kaizoku/icons/clothing/armor.dmi'
 	sleeved = 'modular/stonekeep/kaizoku/icons/helpers/sleeves_armor.dmi'
-	armor = list("melee" = 60, "bullet" = 50, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = ARMOR_LEATHER_BAD
 	blocksound = SOFTHIT
 	blade_dulling = DULLING_BASHCHOP
 	body_parts_covered = CHEST|GROIN|VITALS
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_STAB) // Bones are ceramic-like. These are horrible against blunt.
 	armor_class = AC_MEDIUM
-	max_integrity = 150
+	max_integrity = INTEGRITY_POOR
 	anvilrepair = null //You can't repair 'ceramic' armor. You will need to make a new armor instead.
 	smeltresult = /obj/item/ash
 	sewrepair = FALSE
@@ -476,8 +476,8 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_STAB) // Bones are ceramic-like. These are horrible against blunt.
 	blade_dulling = DULLING_BASHCHOP
 	body_parts_covered = CHEST|VITALS|ARMS|GROIN //Protects an acceptable large range of places for such relatively cost-y armor. I hope.
-	armor = list("melee" = 60, "bullet" = 60, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
-	max_integrity = 250
+	armor = ARMOR_LEATHER_GOOD
+	max_integrity = INTEGRITY_STANDARD
 	equip_delay_self = 40
 	armor_class = AC_MEDIUM
 
@@ -487,7 +487,7 @@
 	icon = 'modular/stonekeep/kaizoku/icons/clothingicon/armor.dmi'
 	mob_overlay_icon = 'modular/stonekeep/kaizoku/icons/clothing/armor.dmi'
 	sleeved = 'modular/stonekeep/kaizoku/icons/helpers/sleeves_armor.dmi'
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 0, "acid" = 0)
+	armor = ARMOR_LEATHER
 	icon_state = "ivory_coverings"
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
 	blocksound = SOFTHIT
@@ -753,8 +753,8 @@
 	mob_overlay_icon = 'modular/stonekeep/kaizoku/icons/clothing/feet.dmi'
 	sleeved = 'modular/stonekeep/kaizoku/icons/clothing/feet.dmi'
 	desc = "A tabi reinforced in dragon bones and asbestos, making it fire immune. Not very protective against physical damage, but still fairly durable."
-	armor = list("melee" = 40, "bullet" = 40, "laser" = 0,"energy" = 0, "bomb" = 60, "bio" = 0, "rad" = 0, "fire" = 100, "acid" = 0)
-	max_integrity = 250
+	armor = ARMOR_LEATHER_BAD
+	max_integrity = INTEGRITY_STANDARD
 	armor_class = AC_MEDIUM
 	heat_protection = LEGS|FEET
 	body_parts_covered = LEGS|FEET
@@ -1116,7 +1116,7 @@
 	resistance_flags = FLAMMABLE // Made of leather
 	smeltresult = /obj/item/ash
 	anvilrepair = null
-	max_integrity = 250
+	max_integrity = INTEGRITY_STANDARD
 	sewrepair = TRUE
 	blocksound = SOFTHIT
 	sellprice = 25

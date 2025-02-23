@@ -129,8 +129,8 @@
 	pixel_y = 6
 	},
 /obj/item/grown/log/tree{
-	pixel_y = 6;
-	pixel_x = 9
+	pixel_x = 9;
+	pixel_y = 6
 	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/rtfield)
@@ -322,8 +322,8 @@
 	dir = 1
 	},
 /obj/item/rogueweapon/sickle{
-	pixel_y = 4;
-	pixel_x = -2
+	pixel_x = -2;
+	pixel_y = 4
 	},
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/town/basement)
@@ -334,8 +334,8 @@
 /obj/structure/table/wood/plain,
 /obj/machinery/light/rogue/wallfire/candle/l,
 /obj/item/reagent_containers/glass/bucket/pot/copper{
-	pixel_y = 18;
-	pixel_x = -4
+	pixel_x = -4;
+	pixel_y = 18
 	},
 /obj/item/cooking/pan{
 	pixel_x = 5
@@ -356,8 +356,8 @@
 /area/rogue/indoors/town/manor)
 "cf" = (
 /obj/structure/roguemachine/submission{
-	pixel_y = 0;
-	pixel_x = 32
+	pixel_x = 32;
+	pixel_y = 0
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town)
@@ -497,9 +497,9 @@
 /area/rogue/under/town/basement)
 "cU" = (
 /obj/structure/closet/crate/chest/neu_fancy{
-	name = "Priest's Lockbox";
 	locked = 1;
-	lockid = "hpriest"
+	lockid = "hpriest";
+	name = "Priest's Lockbox"
 	},
 /obj/item/book/rogue/bibble,
 /obj/item/clothing/neck/roguetown/psycross/g,
@@ -732,8 +732,8 @@
 /area/rogue/outdoors/rtfield/safe)
 "eB" = (
 /obj/structure/roguemachine/stockpile{
-	pixel_y = 0;
-	pixel_x = -32
+	pixel_x = -32;
+	pixel_y = 0
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town)
@@ -862,8 +862,8 @@
 /area/rogue/under/cave)
 "fr" = (
 /obj/structure/mineral_door/wood/donjon/stone{
-	name = "Temple";
-	lockid = "priest"
+	lockid = "priest";
+	name = "Temple"
 	},
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/town/church/chapel)
@@ -1036,9 +1036,9 @@
 "gs" = (
 /obj/machinery/light/rogue/wallfire/candle,
 /obj/structure/mineral_door/wood/donjon/stone{
-	name = "Vineyard Access";
+	locked = 1;
 	lockid = "priest";
-	locked = 1
+	name = "Vineyard Access"
 	},
 /turf/open/floor/rogue/ruinedwood/turned,
 /area/rogue/indoors/town/church)
@@ -1099,8 +1099,8 @@
 /area/rogue/indoors/town/church)
 "gS" = (
 /obj/structure/mirror{
-	pixel_y = 0;
-	pixel_x = -28
+	pixel_x = -28;
+	pixel_y = 0
 	},
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/manor)
@@ -1235,8 +1235,8 @@
 /area/rogue/indoors/town/manor)
 "hX" = (
 /obj/structure/mineral_door/wood/donjon/stone{
-	name = "Porch";
-	lockid = "priest"
+	lockid = "priest";
+	name = "Porch"
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/church)
@@ -1362,8 +1362,8 @@
 	dir = 1
 	},
 /obj/item/rogueweapon/knife/hunting{
-	pixel_y = 3;
-	pixel_x = 7
+	pixel_x = 7;
+	pixel_y = 3
 	},
 /turf/open/floor/rogue/hexstone,
 /area/rogue/under/town/basement)
@@ -1466,8 +1466,8 @@
 /area/rogue/indoors/town/church)
 "jm" = (
 /obj/structure/fluff/buysign{
-	name = "DIRECTIONS";
-	desc = "This sign lists the local directions, etched out in rough-hewn letters. NORTH - MOUNTAIN, EAST - COAST, SOUTH - SWAMP, WEST - FOREST."
+	desc = "This sign lists the local directions, etched out in rough-hewn letters. NORTH - MOUNTAIN, EAST - COAST, SOUTH - SWAMP, WEST - FOREST.";
+	name = "DIRECTIONS"
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/rtfield/safe)
@@ -1937,9 +1937,9 @@
 "my" = (
 /obj/structure/mineral_door/wood/donjon{
 	dir = 1;
-	name = "Temple Cellar";
+	locked = 1;
 	lockid = "hpriest";
-	locked = 1
+	name = "Temple Cellar"
 	},
 /turf/open/floor/rogue/greenstone,
 /area/rogue/under/town/basement)
@@ -2056,8 +2056,8 @@
 /area/rogue/indoors/town/church)
 "nm" = (
 /obj/structure/roguemachine/stockpile{
-	pixel_y = 0;
-	pixel_x = 32
+	pixel_x = 32;
+	pixel_y = 0
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town)
@@ -2137,9 +2137,9 @@
 /area/rogue/indoors/town/church/chapel)
 "nS" = (
 /obj/structure/closet/crate/chest/neu_iron{
-	name = "Alms Chest";
+	locked = 1;
 	lockid = "hpriest";
-	locked = 1
+	name = "Alms Chest"
 	},
 /obj/structure/fluff/walldeco/church/line{
 	dir = 8
@@ -2293,8 +2293,8 @@
 /area/rogue/outdoors/rtfield)
 "oW" = (
 /obj/structure/mirror/fancy{
-	pixel_y = 0;
-	pixel_x = -28
+	pixel_x = -28;
+	pixel_y = 0
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/church)
@@ -2350,9 +2350,9 @@
 /area/rogue/indoors/butchershop)
 "pq" = (
 /obj/structure/mineral_door/bars{
-	name = "Inner Access";
+	locked = 1;
 	lockid = "hpriest";
-	locked = 1
+	name = "Inner Access"
 	},
 /obj/structure/stairs/stone{
 	dir = 8
@@ -2556,12 +2556,12 @@
 "qL" = (
 /obj/structure/table/wood/plain_alt,
 /obj/item/reagent_containers/glass/cup/silver{
-	pixel_y = 10;
-	pixel_x = -7
+	pixel_x = -7;
+	pixel_y = 10
 	},
 /obj/item/reagent_containers/glass/bottle/rogue/whitewine{
-	pixel_y = 4;
-	pixel_x = 5
+	pixel_x = 5;
+	pixel_y = 4
 	},
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/manor)
@@ -2594,9 +2594,9 @@
 /area/rogue/outdoors/rtfield/safe)
 "qY" = (
 /obj/structure/mineral_door/wood/donjon/stone{
-	name = "Sacred Hall";
+	locked = 1;
 	lockid = "priest";
-	locked = 1
+	name = "Sacred Hall"
 	},
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/town/church)
@@ -2655,9 +2655,9 @@
 /area/rogue/outdoors/exposed/church)
 "rq" = (
 /obj/structure/closet/crate/chest/neu_iron{
-	name = "Alms Chest";
+	locked = 1;
 	lockid = "hpriest";
-	locked = 1
+	name = "Alms Chest"
 	},
 /obj/structure/fluff/walldeco/church/line{
 	dir = 4
@@ -2741,8 +2741,8 @@
 /area/rogue/outdoors/exposed/church)
 "rQ" = (
 /obj/structure/fluff/walldeco/pillar{
-	pixel_y = 0;
-	pixel_x = -10
+	pixel_x = -10;
+	pixel_y = 0
 	},
 /turf/open/floor/rogue/ruinedwood/spiralfade,
 /area/rogue/indoors/town/manor)
@@ -3241,8 +3241,8 @@
 	dir = 1
 	},
 /obj/item/reagent_containers/glass/cup/glassware/wineglass{
-	pixel_y = 8;
-	pixel_x = -7
+	pixel_x = -7;
+	pixel_y = 8
 	},
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/manor)
@@ -3483,9 +3483,9 @@
 /area/rogue/outdoors/exposed/manorgarri)
 "wG" = (
 /obj/structure/mineral_door/wood/donjon/stone{
-	name = "Inquisition Hall";
+	locked = 1;
 	lockid = "puritan";
-	locked = 1
+	name = "Inquisition Hall"
 	},
 /turf/open/floor/rogue/greenstone,
 /area/rogue/under/town/basement)
@@ -3700,12 +3700,12 @@
 	pixel_x = 7
 	},
 /obj/item/grown/log/tree/small{
-	pixel_y = 7;
-	pixel_x = -3
+	pixel_x = -3;
+	pixel_y = 7
 	},
 /obj/item/grown/log/tree/small{
-	pixel_y = 7;
-	pixel_x = 4
+	pixel_x = 4;
+	pixel_y = 7
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/rtfield/safe)
@@ -3927,8 +3927,8 @@
 	dir = 1
 	},
 /obj/item/rogueweapon/whip{
-	pixel_y = 8;
-	pixel_x = -10
+	pixel_x = -10;
+	pixel_y = 8
 	},
 /obj/item/rogueweapon/thresher{
 	pixel_x = 15
@@ -4057,9 +4057,9 @@
 /area/rogue/outdoors/rtfield/safe)
 "AY" = (
 /obj/structure/mineral_door/wood/donjon/stone{
-	name = "Porch";
+	locked = 1;
 	lockid = "priest";
-	locked = 1
+	name = "Porch"
 	},
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/town/church)
@@ -4451,8 +4451,8 @@
 /area/rogue/indoors/town/manor)
 "En" = (
 /obj/structure/fluff/buysign{
-	name = "DIRECTIONS";
-	desc = "This sign lists the local directions, etched out in rough-hewn letters. NORTH - MOUNTAIN, EAST - COAST, SOUTH - SWAMP, WEST - FOREST."
+	desc = "This sign lists the local directions, etched out in rough-hewn letters. NORTH - MOUNTAIN, EAST - COAST, SOUTH - SWAMP, WEST - FOREST.";
+	name = "DIRECTIONS"
 	},
 /turf/open/floor/rogue/grass,
 /area/rogue/outdoors/rtfield)
@@ -4641,13 +4641,13 @@
 "FP" = (
 /obj/structure/table/wood/plain_alt,
 /obj/item/reagent_containers/peppermill{
-	pixel_y = 7;
-	pixel_x = -3
+	pixel_x = -3;
+	pixel_y = 7
 	},
 /obj/item/cooking/skewer,
 /obj/item/cooking/skewer{
-	pixel_y = -4;
-	pixel_x = -5
+	pixel_x = -5;
+	pixel_y = -4
 	},
 /turf/open/floor/rogue/tile/checker,
 /area/rogue/indoors/town/church)
@@ -4657,9 +4657,9 @@
 /area/rogue/outdoors/town)
 "FR" = (
 /obj/structure/mineral_door/wood/donjon/stone{
-	name = "Back Entrance";
+	locked = 1;
 	lockid = "puritan";
-	locked = 1
+	name = "Back Entrance"
 	},
 /turf/open/floor/rogue/cobble/mossy,
 /area/rogue/under/town/basement)
@@ -4943,8 +4943,8 @@
 /area/rogue/indoors/town/manor)
 "HC" = (
 /obj/structure/mineral_door/wood/donjon/stone{
-	name = "Infirmary";
-	lockid = "priest"
+	lockid = "priest";
+	name = "Infirmary"
 	},
 /turf/open/floor/rogue/ruinedwood,
 /area/rogue/indoors/town/church)
@@ -4971,8 +4971,8 @@
 /area/rogue/outdoors/rtfield/safe)
 "HQ" = (
 /obj/structure/mirror/fancy{
-	pixel_y = -16;
-	pixel_x = -32
+	pixel_x = -32;
+	pixel_y = -16
 	},
 /obj/structure/table/wood/nice,
 /turf/open/floor/rogue/tile,
@@ -5317,8 +5317,8 @@
 /area/rogue/indoors/town/manor)
 "Kl" = (
 /obj/structure/mineral_door/wood/donjon/stone{
-	lockid = "puritan";
 	locked = 1;
+	lockid = "puritan";
 	name = "Inquisitor's Quarters"
 	},
 /turf/open/floor/rogue/herringbone,
@@ -5342,9 +5342,9 @@
 "Kv" = (
 /obj/structure/fluff/railing/border,
 /obj/structure/closet/crate/chest/neu_iron{
-	name = "Alms Chest";
+	locked = 1;
 	lockid = "hpriest";
-	locked = 1
+	name = "Alms Chest"
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/church)
@@ -5383,8 +5383,8 @@
 /area/rogue/outdoors/beach)
 "KP" = (
 /obj/structure/mineral_door/wood/donjon{
-	name = "Templar's Barracks";
-	locked = 1
+	locked = 1;
+	name = "Templar's Barracks"
 	},
 /turf/closed/wall/mineral/rogue/decostone/long{
 	dir = 1
@@ -5580,8 +5580,8 @@
 /area/rogue/outdoors/town/roofs)
 "LW" = (
 /obj/structure/mineral_door/bars{
-	lockid = "puritan";
 	locked = 1;
+	lockid = "puritan";
 	name = "Cell"
 	},
 /turf/open/floor/rogue/blocks,
@@ -5641,7 +5641,10 @@
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/rtfield/safe)
 "Mw" = (
-/obj/structure/fluff/traveltile,
+/obj/structure/fluff/traveltile{
+	aportalgoesto = "stone_forest";
+	aportalid = "candlelight-forest"
+	},
 /turf/open/floor/rogue/dirt/road,
 /area/rogue/outdoors/rtfield)
 "Mx" = (
@@ -6147,8 +6150,8 @@
 /area/rogue/outdoors/exposed/church)
 "Qq" = (
 /obj/structure/fluff/walldeco/pillar{
-	pixel_y = 0;
-	pixel_x = 9
+	pixel_x = 9;
+	pixel_y = 0
 	},
 /turf/open/floor/rogue/ruinedwood/spiralfade,
 /area/rogue/indoors/town/manor)
@@ -6173,8 +6176,8 @@
 /area/rogue/outdoors/rtfield/safe)
 "QA" = (
 /obj/structure/mineral_door/wood/donjon/stone{
-	lockid = "hpriest";
 	locked = 1;
+	lockid = "hpriest";
 	name = "Temple Vault"
 	},
 /turf/open/floor/rogue/blocks/paving/vert,
@@ -6255,8 +6258,8 @@
 /area/rogue/indoors/town/church/chapel)
 "Rk" = (
 /obj/structure/roguemachine/submission{
-	pixel_y = 0;
-	pixel_x = -32
+	pixel_x = -32;
+	pixel_y = 0
 	},
 /turf/open/floor/rogue/cobble,
 /area/rogue/outdoors/town)
@@ -6293,8 +6296,8 @@
 "Rw" = (
 /obj/structure/table/wood/large/corner_new,
 /obj/item/reagent_containers/glass/cup/golden{
-	pixel_y = 6;
-	pixel_x = 4
+	pixel_x = 4;
+	pixel_y = 6
 	},
 /turf/open/floor/rogue/tile,
 /area/rogue/indoors/town/manor)
@@ -6392,9 +6395,9 @@
 /area/rogue/indoors/town/church)
 "Se" = (
 /obj/structure/mineral_door/wood/donjon{
-	name = "Torture Chamber";
+	locked = 1;
 	lockid = "puritan";
-	locked = 1
+	name = "Torture Chamber"
 	},
 /turf/open/floor/rogue/blocks,
 /area/rogue/under/town/basement)
@@ -6893,12 +6896,12 @@
 "VS" = (
 /obj/structure/table/wood/fine,
 /obj/item/reagent_containers/glass/cup/golden{
-	pixel_y = 9;
-	pixel_x = -4
+	pixel_x = -4;
+	pixel_y = 9
 	},
 /obj/item/reagent_containers/glass/bottle/rogue/redwine{
-	pixel_y = 8;
-	pixel_x = 4
+	pixel_x = 4;
+	pixel_y = 8
 	},
 /turf/open/floor/rogue/ruinedwood/spiral,
 /area/rogue/indoors/town/church)
@@ -6925,9 +6928,9 @@
 "VX" = (
 /obj/machinery/light/rogue/wallfire/candle/l,
 /obj/structure/closet/crate/chest/neu_fancy{
-	name = "Tithe Chest";
+	locked = 1;
 	lockid = "hpriest";
-	locked = 1
+	name = "Tithe Chest"
 	},
 /obj/item/roguecoin/silver/pile,
 /obj/item/roguecoin/silver/pile,
@@ -7344,8 +7347,8 @@
 /area/rogue/under/town/basement)
 "YT" = (
 /obj/structure/mineral_door/wood/donjon/stone{
-	lockid = "priest";
 	locked = 1;
+	lockid = "priest";
 	name = "Kitchen"
 	},
 /turf/open/floor/rogue/tile,
@@ -7396,9 +7399,9 @@
 /area/rogue/outdoors/exposed/church)
 "Zn" = (
 /obj/structure/closet/crate/chest/neu_iron{
-	name = "Alms Chest";
+	locked = 1;
 	lockid = "hpriest";
-	locked = 1
+	name = "Alms Chest"
 	},
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/town/church)
@@ -7479,8 +7482,8 @@
 /area/rogue/outdoors/rtfield)
 "ZU" = (
 /obj/structure/mineral_door/wood/donjon/stone{
-	name = "Gatehouse";
-	locked = 1
+	locked = 1;
+	name = "Gatehouse"
 	},
 /turf/open/floor/rogue/church,
 /area/rogue/indoors/town/church)

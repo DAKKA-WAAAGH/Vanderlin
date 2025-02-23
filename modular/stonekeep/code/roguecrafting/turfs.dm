@@ -57,7 +57,7 @@
 
 /datum/crafting_recipe/roguetown/turfs/stonefloor/cobblerock
 	name = "road (cobblerock)"
-	result = /turf/open/floor/rogue/cobblerock
+	result = /turf/open/floor/rogue/cobblerock/alt
 /datum/crafting_recipe/roguetown/turfs/stonefloor/cobblerock/TurfCheck(mob/user, turf/T)
 	if(isclosedturf(T))
 		return

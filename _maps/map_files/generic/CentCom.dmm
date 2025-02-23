@@ -2049,8 +2049,8 @@
 "ps" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/rogue/wallfire/candle/l{
-	icon_state = "invisible";
-	icon = null
+	icon = null;
+	icon_state = "invisible"
 	},
 /turf/open/floor/plasteel/maniac,
 /area/rogue)
@@ -2598,8 +2598,8 @@
 "vT" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/rogue/wallfire/candle/l{
-	icon_state = "invisible";
 	icon = null;
+	icon_state = "invisible";
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel/maniac,
@@ -2891,8 +2891,8 @@
 /area/rogue/outdoors/woods_safe)
 "AC" = (
 /obj/machinery/light/rogue/wallfire/candle/l{
-	icon_state = "invisible";
 	icon = null;
+	icon_state = "invisible";
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel/maniac,
@@ -3958,8 +3958,8 @@
 "QY" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/rogue/wallfire/candle/l{
-	icon_state = "invisible";
-	icon = null
+	icon = null;
+	icon_state = "invisible"
 	},
 /turf/open/floor/plasteel/maniac/damaged,
 /area/rogue)
@@ -4232,6 +4232,13 @@
 /obj/item/flashlight/flare/torch,
 /turf/open/floor/rogue/dirt,
 /area/rogue/outdoors/bog/inhumen_camp)
+"TZ" = (
+/obj/structure/fluff/traveltile/bandit{
+	aportalgoesto = "banditexit";
+	aportalid = "banditin"
+	},
+/turf/open/floor/rogue/dirt/road,
+/area/rogue/outdoors/woods_safe)
 "Ur" = (
 /obj/structure/table/wood{
 	dir = 1;
@@ -6803,7 +6810,7 @@ xt
 xt
 xt
 xt
-dv
+TZ
 Iw
 "}
 (17,1,1) = {"
@@ -6933,7 +6940,7 @@ Kn
 so
 FR
 FR
-dv
+TZ
 Iw
 "}
 (18,1,1) = {"
@@ -7063,7 +7070,7 @@ xt
 xt
 xt
 xt
-dv
+TZ
 Iw
 "}
 (19,1,1) = {"

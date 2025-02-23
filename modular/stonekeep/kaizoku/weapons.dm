@@ -1411,7 +1411,7 @@
 	attack_verb = list("clangs")
 	animname = "smash"
 	blade_class = BCLASS_CHOP
-	hitsound = list('modular/stonekeep/kaizoku/sound/dragonslayer.ogg', 'modular/stonekeep/kaizoku/sound/dragonslayer2.ogg')
+	hitsound = list('modular/stonekeep/kaizoku/sound/dragonslayer.ogg')
 	penfactor = 30
 	damfactor = 1.2
 	chargetime = 5

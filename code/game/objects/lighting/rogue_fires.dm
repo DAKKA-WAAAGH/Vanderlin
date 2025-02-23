@@ -200,6 +200,8 @@
 	crossfire = FALSE
 	plane = GAME_PLANE_UPPER
 	cookonme = FALSE
+	var/lacks_torch
+	var/unlit_torch
 
 /obj/machinery/light/rogue/torchholder/c
 	pixel_y = 32
@@ -224,8 +226,11 @@
 				return TRUE
 
 /obj/machinery/light/rogue/torchholder/Initialize()
-	torchy = new /obj/item/flashlight/flare/torch(src)
-	torchy.spark_act()
+	if(unlit_torch)
+		torchy = new /obj/item/flashlight/flare/torch(src)
+	else if(!lacks_torch)
+		torchy = new /obj/item/flashlight/flare/torch(src)
+		torchy.spark_act()
 	. = ..()
 
 /obj/machinery/light/rogue/torchholder/OnCrafted(dirin, user)

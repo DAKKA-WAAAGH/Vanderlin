@@ -25,7 +25,7 @@
 	beltl = /obj/item/flashlight/flare/torch/lantern/bronzelamptern
 	backr = /obj/item/storage/backpack/rogue/satchel
 	pants = /obj/item/clothing/under/roguetown/leather/heavy
-	backpack_contents = list(/obj/item/flint = 1, /obj/item/reagent_containers/food/snacks/fat/salo = 1)
+	backpack_contents = list(/obj/item/flint = 1, /obj/item/reagent_containers/food/snacks/fat/salo = 1, /obj/item/sleepingbag = 1)
 
 
 	if(H.mind)
