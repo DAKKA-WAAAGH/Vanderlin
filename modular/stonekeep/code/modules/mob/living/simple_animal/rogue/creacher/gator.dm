@@ -1,5 +1,5 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/gator
-	icon = '/modular/Gators/icons/roguetown/mob/monster/gator.dmi'
+	icon = 'modular/stonekeep/icons/roguetown/mob/monster/gator.dmi'
 	name = "gator"
 	desc = "Vicious and patient creachers; tales have been told of passersby being grabbed and dragged underwater, never to be seen again."
 	icon_state = "gator"
@@ -18,7 +18,7 @@
 						/obj/item/alch/bone = 2)
 	perfect_butcher_results = list(/obj/item/reagent_containers/food/snacks/rogue/meat/steak = 1,
 						/obj/item/alch/sinew = 1,
-						 /obj/item/alch/bone = 4)
+						/obj/item/alch/bone = 4)
 
 	health = GATOR_HEALTH
 	maxHealth = GATOR_HEALTH
@@ -27,7 +27,7 @@
 					/obj/item/reagent_containers/food/snacks/rogue/meat)
 
 	base_intents = list(/datum/intent/simple/bite)
-	// attack_sound = list('/modular/Gators/sound/vo/mobs/gator/attack (1).ogg') // to-do
+	// attack_sound = list('/modular/stonekeep/sound/vo/mobs/gator/attack (1).ogg') // to-do
 	melee_damage_lower = 17
 	melee_damage_upper = 22
 
@@ -93,7 +93,7 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/gator/get_sound(input)
 	switch(input)
 		if("aggro")
-			return pick('modular/Gators/sound/vo/mobs/gator/aggro (1).ogg','modular/Gators/sound/vo/mobs/gator/aggro (2).ogg','modular/Gators/sound/vo/mobs/gator/aggro (3).ogg','modular/Gators/sound/vo/mobs/gator/aggro (4).ogg')
+			return pick('/modular/stonekeep/sound/vo/mobs/gator/aggro (1).ogg','/modular/stonekeep/sound/vo/mobs/gator/aggro (2).ogg','/modular/stonekeep/sound/vo/mobs/gator/aggro (3).ogg','/modular/stonekeep/sound/vo/mobs/gator/aggro (4).ogg')
 		/*
 		if("pain")
 			return pick('sound/vo/mobs/gator/pain.ogg')
@@ -101,7 +101,7 @@
 			return pick('sound/vo/mobs/gator/death.ogg')
 		*/
 		if("idle")
-			return pick('modular/Gators/sound/vo/mobs/gator/idle (1).ogg')
+			return pick('/modular/stonekeep/sound/vo/mobs/gator/idle (1).ogg')
 
 /mob/living/simple_animal/hostile/retaliate/rogue/gator/taunted(mob/user)
 	emote("aggro")
