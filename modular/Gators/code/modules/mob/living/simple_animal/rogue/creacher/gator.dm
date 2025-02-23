@@ -51,21 +51,6 @@
 	AIStatus = AI_OFF
 	can_have_ai = FALSE
 
-// to-do
-/*
-/mob/living/simple_animal/hostile/retaliate/rogue/spider/mutated
-	icon = 'icons/roguetown/mob/monster/spider.dmi'
-	name = "skallax spider"
-	icon_state = "skallax"
-	icon_living = "skallax"
-	icon_dead = "skallax-dead"
-
-	health = SPIDER_HEALTH+10
-	maxHealth = SPIDER_HEALTH+10
-
-	base_intents = list(/datum/intent/simple/bite)
-*/
-
 /mob/living/simple_animal/hostile/retaliate/rogue/gator/Initialize()
 	. = ..()
 	gender = MALE
