@@ -21,7 +21,7 @@
 						 /obj/item/alch/bone = 4)
 
 	health = GATOR_HEALTH // to-do
-	maxHealth = SPIDER_HEALTH // to-do
+	maxHealth = GATOR_HEALTH // to-do
 	food_type = list(/obj/item/bodypart,
 					/obj/item/organ,
 					/obj/item/reagent_containers/food/snacks/rogue/meat)
@@ -79,6 +79,7 @@
 
 // dunno if this is needed to function
 /*
+
 /mob/living/simple_animal/hostile/retaliate/rogue/gator/AttackingTarget()
 	. = ..()
 	if(. && isliving(target))
