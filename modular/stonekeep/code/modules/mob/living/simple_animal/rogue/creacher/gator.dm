@@ -29,7 +29,7 @@
 					/obj/item/reagent_containers/food/snacks/rogue/meat)
 
 	base_intents = list(/datum/intent/simple/bite)
-	// attack_sound = list('/modular/stonekeep/sound/vo/mobs/gator/gatorattack1.ogg') // to-do
+	attack_sound = list('modular/stonekeep/sound/vo/mobs/gator/gatorattack1.ogg', 'modular/stonekeep/sound/vo/mobs/gator/gatorattack2.ogg')
 	melee_damage_lower = 25
 	melee_damage_upper = 30
 
@@ -87,15 +87,13 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/gator/get_sound(input)
 	switch(input)
 		if("aggro")
-			return pick('/modular/stonekeep/sound/vo/mobs/gator/gatoraggro1.ogg','/modular/stonekeep/sound/vo/mobs/gator/gatoraggro2.ogg','/modular/stonekeep/sound/vo/mobs/gator/gatoraggro3.ogg','/modular/stonekeep/sound/vo/mobs/gator/gatoraggro4.ogg')
-		/* to-do
+			return pick('modular/stonekeep/sound/vo/mobs/gator/gatoraggro1.ogg','modular/stonekeep/sound/vo/mobs/gator/gatoraggro2.ogg','modular/stonekeep/sound/vo/mobs/gator/gatoraggro3.ogg','modular/stonekeep/sound/vo/mobs/gator/gatoraggro4.ogg')
 		if("pain")
-			return pick('/modular/stonekeep/sound/vo/mobs/gator/gatorpain.ogg')
+			return pick('modular/stonekeep/sound/vo/mobs/gator/gatorpain.ogg')
 		if("death")
-			return pick('/modular/stonekeep/sound/vo/mobs/gator/gatordeath.ogg')
-		*/
+			return pick('modular/stonekeep/sound/vo/mobs/gator/gatordeath.ogg')
 		if("idle")
-			return pick('/modular/stonekeep/sound/vo/mobs/gator/gatoridle1.ogg')
+			return pick('modular/stonekeep/sound/vo/mobs/gator/gatoridle1.ogg')
 
 /mob/living/simple_animal/hostile/retaliate/rogue/gator/taunted(mob/user)
 	emote("aggro")
