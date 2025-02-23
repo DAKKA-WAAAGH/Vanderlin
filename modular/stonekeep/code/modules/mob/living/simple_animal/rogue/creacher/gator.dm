@@ -29,13 +29,14 @@
 					/obj/item/reagent_containers/food/snacks/rogue/meat)
 
 	base_intents = list(/datum/intent/simple/bite)
-	// attack_sound = list('/modular/stonekeep/sound/vo/mobs/gator/attack (1).ogg') // to-do
-	melee_damage_lower = 17
-	melee_damage_upper = 22
+	// attack_sound = list('/modular/stonekeep/sound/vo/mobs/gator/gatorattack1.ogg') // to-do
+	melee_damage_lower = 25
+	melee_damage_upper = 30
 
-	TOTALCON = 6
-	TOTALSTR = 10
-	TOTALSPD = 10
+	TOTALCON = 10
+	TOTALSTR = 14
+	TOTALSPD = 2
+	TOTALEND = 8
 
 	retreat_distance = 0
 	minimum_distance = 0
@@ -49,7 +50,7 @@
 	stat_attack = UNCONSCIOUS
 	body_eater = TRUE
 
-	ai_controller = /datum/ai_controller/troll // to-do
+	ai_controller = /datum/ai_controller/mole // to-do
 	AIStatus = AI_OFF
 	can_have_ai = FALSE
 
@@ -62,16 +63,7 @@
 
 	AddElement(/datum/element/ai_flee_while_injured, 0.75, retreat_health)
 	ai_controller.set_blackboard_key(BB_BASIC_FOODS, food_type)
-	//ADD_TRAIT(src, TRAIT_WEBWALK, TRAIT_GENERIC) // to-do
-
-/* Dunno if this is needed to function or is it just to inject reagents
-/mob/living/simple_animal/hostile/retaliate/rogue/gator/AttackingTarget()
-	. = ..()
-	if(. && isliving(target))
-		var/mob/living/L = target
-		if(L.reagents)
-			L.reagents.add_reagent(/datum/reagent/toxin/venom, 1)
-*/
+	//ADD_TRAIT(src, TRAIT_GENERIC) // to-do
 
 /mob/living/simple_animal/hostile/retaliate/rogue/gator/find_food()
 	. = ..()
@@ -87,7 +79,7 @@
 	cut_overlays()
 	..()
 	if(stat != DEAD)
-		var/mutable_appearance/eye_lights = mutable_appearance(icon, "gator-eyes") // to-do
+		var/mutable_appearance/eye_lights = mutable_appearance(icon, "gator-eyes")
 		eye_lights.plane = 19
 		eye_lights.layer = 19
 		add_overlay(eye_lights)
@@ -111,23 +103,11 @@
 	GiveTarget(user)
 	return
 
-/* Unsure whether to do anything with this
 /mob/living/simple_animal/hostile/retaliate/rogue/gator/Life()
 	..()
-	if(stat == CONSCIOUS)
-		if(!target)
-			if(production >= 100)
-				production = 0
-				visible_message("<span class='alertalien'>[src] creates some honey.</span>")
-				var/turf/T = get_turf(src)
-				playsound(T, pick('sound/vo/mobs/spider/speak (1).ogg','sound/vo/mobs/spider/speak (2).ogg','sound/vo/mobs/spider/speak (3).ogg','sound/vo/mobs/spider/speak (4).ogg'), 100, TRUE, -1)
-				new /obj/item/reagent_containers/food/snacks/spiderhoney(T)
-	if(pulledby && !tame)
-		if(HAS_TRAIT(pulledby, TRAIT_WEBWALK))
-			return
+	if(pulledby)
 		Retaliate()
 		GiveTarget(pulledby)
-*/
 
 /mob/living/simple_animal/hostile/retaliate/rogue/gator/simple_limb_hit(zone)
 	if(!zone)
