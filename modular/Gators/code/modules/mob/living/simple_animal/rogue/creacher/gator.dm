@@ -2,9 +2,9 @@
 	icon = 'icons/roguetown/mob/monster/gator.dmi'
 	name = "gator"
 	desc = "Vicious and patient creachers; tales have been told of passersby being grabbed and dragged underwater, never to be seen again."
-	icon_state = "gator" // to-do
-	icon_living = "gator" // to-do
-	icon_dead = "gator-dead" // to-do
+	icon_state = "gator"
+	icon_living = "gator"
+	icon_dead = "gator-dead"
 
 	faction = list("gators") // to-do
 	turns_per_move = 4
