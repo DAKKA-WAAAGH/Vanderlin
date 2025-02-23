@@ -1885,6 +1885,7 @@
 #include "interface\skin.dmf"
 #include "modular\Barding\code\Barding_instruments.dm"
 #include "modular\Barding\code\music_effect.dm"
+#include "modular\Gators\code\modules\mob\living\simple_animal\rogue\rogueanimals.dm"
 #include "modular\Gators\code\modules\mob\living\simple_animal\rogue\creacher\gator.dm"
 #include "modular\Mapping\Mapping_aides.dm"
 #include "modular\Mapping\hammer\hammer_mapping_helpers.dm"
