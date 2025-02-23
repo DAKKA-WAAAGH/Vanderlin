@@ -95,15 +95,15 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/gator/get_sound(input)
 	switch(input)
 		if("aggro")
-			return pick('/modular/stonekeep/sound/vo/mobs/gator/aggro (1).ogg','/modular/stonekeep/sound/vo/mobs/gator/aggro (2).ogg','/modular/stonekeep/sound/vo/mobs/gator/aggro (3).ogg','/modular/stonekeep/sound/vo/mobs/gator/aggro (4).ogg')
+			return pick('/modular/stonekeep/sound/vo/mobs/gator/gatoraggro1.ogg','/modular/stonekeep/sound/vo/mobs/gator/gatoraggro2.ogg','/modular/stonekeep/sound/vo/mobs/gator/gatoraggro3.ogg','/modular/stonekeep/sound/vo/mobs/gator/gatoraggro4.ogg')
 		/*
 		if("pain")
-			return pick('sound/vo/mobs/gator/pain.ogg')
+			return pick('/modular/stonekeep/sound/vo/mobs/gator/gatorpain.ogg')
 		if("death")
-			return pick('sound/vo/mobs/gator/death.ogg')
+			return pick('/modular/stonekeep/sound/vo/mobs/gator/gatordeath.ogg')
 		*/
 		if("idle")
-			return pick('/modular/stonekeep/sound/vo/mobs/gator/idle (1).ogg')
+			return pick('/modular/stonekeep/sound/vo/mobs/gator/gatoridle1.ogg')
 
 /mob/living/simple_animal/hostile/retaliate/rogue/gator/taunted(mob/user)
 	emote("aggro")
