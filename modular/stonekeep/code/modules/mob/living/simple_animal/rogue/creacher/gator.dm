@@ -8,7 +8,7 @@
 	pixel_x = -32
 	pixel_y = 8
 
-	faction = list("gators") // to-do
+	faction = list("gators")
 	turns_per_move = 4
 	move_to_delay = 2
 	vision_range = 5
@@ -88,7 +88,7 @@
 	switch(input)
 		if("aggro")
 			return pick('/modular/stonekeep/sound/vo/mobs/gator/gatoraggro1.ogg','/modular/stonekeep/sound/vo/mobs/gator/gatoraggro2.ogg','/modular/stonekeep/sound/vo/mobs/gator/gatoraggro3.ogg','/modular/stonekeep/sound/vo/mobs/gator/gatoraggro4.ogg')
-		/*
+		/* to-do
 		if("pain")
 			return pick('/modular/stonekeep/sound/vo/mobs/gator/gatorpain.ogg')
 		if("death")
