@@ -106,7 +106,7 @@
 /mob/living/simple_animal/hostile/retaliate/rogue/gator/get_sound(input)
 	switch(input)
 		if("aggro")
-			return pick('sound/vo/mobs/gator/aggro (1).ogg','sound/vo/mobs/gator/aggro (2).ogg','sound/vo/mobs/gator/aggro (3).ogg')
+			return pick('sound/vo/mobs/gator/aggro (1).ogg','sound/vo/mobs/gator/aggro (2).ogg','sound/vo/mobs/gator/aggro (3).ogg','sound/vo/mobs/gator/aggro (4).ogg')
 		if("pain")
 			return pick('sound/vo/mobs/gator/pain.ogg')
 		if("death")
