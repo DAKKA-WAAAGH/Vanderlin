@@ -94,3 +94,80 @@ lute (b1).ogg: https://www.youtube.com/watch?v=n-wlB48Sq94
 harp (b1).ogg: https://www.youtube.com/watch?v=DaGdjI4HGTg
 flute (b1).ogg: https://www.youtube.com/watch?v=_bhiGbnfMT4
 viola (b1): https://www.youtube.com/watch?v=qmS-rX0_qRQ
+
+KAIZOKU:
+
+Area:
+
+Shadow.ogg: Ending theme from Shadowman(1999) soundtrack
+Sweating_off_sin.ogg: Wounded Warsong by Akira Yamaoka for the Silent Hill 4: The Room soundtrack
+Many_bargains_to_be_had: S4 M32 Jingle (S4 M32 Jingle) from Way of the Samurai 4 soundtrack
+Imperial_court.ogg: Way from Way of the Samurai 3 soundtrack
+House_of_Xylix.ogg: Sultry Night from the Godhand soundtrack
+Embassy.ogg: Foreigner from Way of the Samurai 4 soundtrack
+Underbelly.ogg: Sneaking from Way of the Samurai 4 soundtrack
+Breaking_the_cycle: Hoshingoeika from Siren soundtrack
+Faces_in_the_water: Hirunotsuka from Siren soundtrack
+
+Combat:
+
+combat_shixoid.ogg: Torture from Way of the Samurai 4 soundtrack
+combat_ascended_shixoid.ogg: Final Battle from Way of the Samurai 3 soundtrack
+combat_shinobi.ogg: Battle Night from Way of the Samurai 4 soundtrack
+combat_bandit.ogg: S4 M33 Jingle (S4 M33 Jingle) from Way of the Samurai 4 soundtrack
+combat_cutthroat.ogg: Season of the Samurai from No More Heroes soundtrack
+combat_cutthroat_boss.ogg: Fiercest Warrior from Like a Dragon: Ishin! soundtrack
+combat_bard.ogg: War of the Strings from Like a Dragon: Ishin! soundtrack
+combat_thief.ogg: Deadly Tengu Gang! from Like a Dragon: Ishin! soundtrack
+combat_zamurai.ogg: For My Sake from Like a Dragon: Ishin! soundtrack
+combat_spectacler.ogg: Receive and Doubt You from Like a Dragon: Ishin! soundtrack
+combat_doyen.ogg: Innocence for Violence from Like a Dragon: Ishin! soundtrack
+combat_kabuki.ogg: Four Unrestful Flowers from Like a Dragon: Ishin! soundtrack
+combat_law.ogg: The Rhapsody of Chivalry from Like a Dragon: Ishin! soundtrack
+combat_heart.ogg: Butterfly from Like a Dragon: Ishin! soundtrack
+combat_hero.ogg: Wild from Like a Dragon: Ishin! soundtrack
+combat_eldersohei.ogg: Last Battle from Way of the Samurai 4 soundtrack
+combat_guragaronic.ogg: Battle Against Clown by Geinoh Yamashirogumi for the Akira(1988) soundtrack
+combat_ronin.ogg: Normal Battle from Way of the Samurai 3 soundtrack
+combat_abyssanctum.ogg: Track 12 from Way of the Samurai 1 soundtrack
+combat_government.ogg: Kurofune from Way of the Samurai 4 soundtrack
+combat_champion.ogg: Boss Battle from Way of the Samurai 3 soundtrack
+combat_denmorian.ogg: Battle Boss from Way of the Samurai 4 soundtrack
+
+Foley:
+purification1.ogg: Godly Purification I from Okami soundtrack
+purification2.ogg: Godly Purification II from Okami soundtrack
+purification3.ogg: Godly Purification III from Okami soundtrack
+offeringsmall.ogg: Small Success from Okami soundtrack
+offeringmedium.ogg: Medium Success from Okami soundtrack
+offeringbig.ogg: Big Success from Okami soundtrack
+offeringhuge.ogg: Super Big Success from Okami soundtrack
+miracle.ogg: Miracle from Okami soundtrack
+bad_omen.ogg: Death from Okami soundtrack
+deth.ogg: The Beginning from Okami soundtrack
+forbiddenritual.ogg: Oratio -Hoshingoeika- from Siren soundtrack
+fog_start.ogg/fog_loop.ogg/fog_end.ogg: Amb 16 from Siren soundtrack
+engrave.ogg: Cocoon_engrave.ogg from Fear & Hunger 2: Termina soundtrack
+towerannounce1: Bobby1.ogg from Fear & Hunger 2: Termina soundtrack
+towerannounce2: Bobby2.ogg from Fear & Hunger 2: Termina soundtrack
+towerannounce3: Bobby3.ogg from Fear & Hunger 2: Termina soundtrack
+flesh.ogg: Living_flesh.ogg from Fear & Hunger 2: Termina soundtrack
+fleshform.ogg: Giant_head_push.ogg from Fear & Hunger 2: Termina soundtrack
+ozium.ogg: Xeno Arcadia from Hylics 2 soundtrack
+equip_chain_armor.ogg and armor_drop_chain.ogg are by Riftjaw on the Mine-Imator forums
+equip_armor_lamellar.ogg and armor_drop_lamellar.ogg are by InspiredCosplay on Youtube
+
+Mobs:
+yokai_aggro.ogg: Bellend.ogg from Fear & Hunger 2: Termina soundtrack
+witchlaugh.ogg: Rat_hag.ogg from Fear & Hunger 2: Termina soundtrack
+
+Instrument:
+Shakuhachi music is taken from Kohachiro Miyata (Full)
+Guzheng music is taken from Austin Guzheng Studio 望舒琴行
+Morin Khuur music is taken from Bukhu Ganburged, with morinkhuur3.ogg being taken from the Civilization 6 soundtrack Mongolia theme (Ancient)
+
+Ambience:
+ambient_drone1.ogg: Ambient Drone Low 01 from Fear & Hunger 2: Termina soundtrack
+
+An IMMENSE number of sounds are taken from Taira Komori, who made a royalty free library of sounds to use. There are far too many sounds to individually credit, so please check them out if ever you're in need of sounds. https://taira-komori.net/freesounden.html
+
