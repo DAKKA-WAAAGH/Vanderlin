@@ -156,6 +156,7 @@ fleshform.ogg: Giant_head_push.ogg from Fear & Hunger 2: Termina soundtrack
 ozium.ogg: Xeno Arcadia from Hylics 2 soundtrack
 equip_chain_armor.ogg and armor_drop_chain.ogg are by Riftjaw on the Mine-Imator forums
 equip_armor_lamellar.ogg and armor_drop_lamellar.ogg are by InspiredCosplay on Youtube
+whip.ogg and whipgrab.ogg is by Adam-Winrich on Youtube
 
 Mobs:
 yokai_aggro.ogg: Bellend.ogg from Fear & Hunger 2: Termina soundtrack
