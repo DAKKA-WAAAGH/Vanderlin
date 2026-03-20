@@ -133,6 +133,7 @@ combat_abyssanctum.ogg: Track 12 from Way of the Samurai 1 soundtrack
 combat_government.ogg: Kurofune from Way of the Samurai 4 soundtrack
 combat_champion.ogg: Boss Battle from Way of the Samurai 3 soundtrack
 combat_denmorian.ogg: Battle Boss from Way of the Samurai 4 soundtrack
+combat_custodian.ogg: The Tiger Warrior (Jago's Theme) from Killer Instinct 2013
 
 Foley:
 purification1.ogg: Godly Purification I from Okami soundtrack
