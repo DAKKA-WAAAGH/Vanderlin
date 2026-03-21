@@ -97,7 +97,7 @@ viola (b1): https://www.youtube.com/watch?v=qmS-rX0_qRQ
 
 KAIZOKU:
 
-Area:
+Music:
 
 Shadow.ogg: Ending theme from Shadowman(1999) soundtrack
 Sweating_off_sin.ogg: Wounded Warsong by Akira Yamaoka for the Silent Hill 4: The Room soundtrack
@@ -108,6 +108,9 @@ Embassy.ogg: Foreigner from Way of the Samurai 4 soundtrack
 Underbelly.ogg: Sneaking from Way of the Samurai 4 soundtrack
 Breaking_the_cycle: Hoshingoeika from Siren soundtrack
 Faces_in_the_water: Hirunotsuka from Siren soundtrack
+Dog_eat_dog: Nobushi by Avery Alexander on Youtube https://www.youtube.com/channel/UCUCQAFyjDmGSK68SfQ3iBVQ
+title.ogg is Stealth Music - Ninja by Avery Alexander on Youtube https://www.youtube.com/channel/UCUCQAFyjDmGSK68SfQ3iBVQ
+title2.ogg is Gryning by Ulf Söderberg
 
 Combat:
 
