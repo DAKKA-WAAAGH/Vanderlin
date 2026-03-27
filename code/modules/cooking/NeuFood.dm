@@ -276,7 +276,7 @@
 /obj/item/reagent_containers/glass/bowl/iron
 	icon_state = "bowl_iron"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	melting_material = /datum/material/iron
 	melt_amount = 20
 	max_usages = 7
@@ -284,7 +284,7 @@
 /obj/item/reagent_containers/glass/bowl/pewter
 	icon_state = "bowl_iron"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	melting_material = /datum/material/tin
 	melt_amount = 20
 	max_usages = 7
@@ -294,7 +294,7 @@
 	desc = "A bowl carved out of joapstone."
 	icon_state = "bowl_jade"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 55
 	max_usages = 10
 
@@ -303,7 +303,7 @@
 	desc = "A bowl carved out of onyxa."
 	icon_state = "bowl_onyxa"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 35
 	max_usages = 10
 
@@ -312,7 +312,7 @@
 	desc = "A bowl carved out of rosellusk."
 	icon_state = "bowl_rose"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 20
 	max_usages = 10
 
@@ -321,7 +321,7 @@
 	desc = "A bowl carved out of petriamber."
 	icon_state = "bowl_amber"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 55
 	max_usages = 10
 
@@ -330,7 +330,7 @@
 	desc = "A bowl carved out of ceruleabaster."
 	icon_state = "bowl_turq"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 80
 	max_usages = 10
 
@@ -339,7 +339,7 @@
 	desc = "A bowl carved out of shell."
 	icon_state = "bowl_shell"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 15
 	max_usages = 10
 
@@ -348,7 +348,7 @@
 	desc = "A bowl carved out of aoetal."
 	icon_state = "bowl_coral"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 65
 	max_usages = 10
 
@@ -357,7 +357,7 @@
 	desc = "A bowl carved out of opaloise."
 	icon_state = "bowl_opal"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 85
 	max_usages = 10
 

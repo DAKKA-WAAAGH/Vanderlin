@@ -744,13 +744,10 @@ Traitors and the like can also be revived with the previous role mostly intact.
 		if(ADMIN_PUNISHMENT_PSYDON)
 			sleep(60)
 			target.psydo_nyte()
-			target.playsound_local(target, 'sound/misc/psydong.ogg', 100, FALSE)
 			sleep(20)
 			target.psydo_nyte()
-			target.playsound_local(target, 'sound/misc/psydong.ogg', 100, FALSE)
 			sleep(15)
 			target.psydo_nyte()
-			target.playsound_local(target, 'sound/misc/psydong.ogg', 100, FALSE)
 			sleep(10)
 			target.gib(FALSE)
 

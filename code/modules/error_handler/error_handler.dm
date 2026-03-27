@@ -248,13 +248,6 @@ GLOBAL_VAR_INIT(total_runtimes_skipped, 0)
 		var/file_name = "unknown"
 		var/line_num = 0
 
-		if(p.proc)
-			proc_name = "[p.proc.type]"
-			// Clean up the proc name if it has path separators
-			var/slash_pos_inner = findtext(proc_name, "/", -1)
-			if(slash_pos_inner && slash_pos_inner < length(proc_name))
-				proc_name = copytext(proc_name, slash_pos_inner + 1)
-
 		// Get file and line information if available
 		if(p.file)
 			file_name = p.file

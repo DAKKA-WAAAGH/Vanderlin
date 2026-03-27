@@ -184,7 +184,7 @@
 	desc = "A platter made from a sheet of copper. Known to impart a metallic taste when eating certain foods."
 	icon_state = "platter_copper"
 	resistance_flags = FIRE_PROOF
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	max_fork_usages = 7
 
 /obj/item/plate/pewter
@@ -192,7 +192,7 @@
 	desc = "A tin plate that contains just a tinge of lead."
 	icon_state = "platter_tin"
 	resistance_flags = FIRE_PROOF
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	max_fork_usages = 7
 
 /obj/item/plate/silver
@@ -200,7 +200,7 @@
 	desc = "A fancy silver plate often used by the nobility as a symbol of class."
 	icon_state = "platter_silver"
 	resistance_flags = FIRE_PROOF
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 12
 	smeltresult = /obj/item/ingot/silver
 	max_fork_usages = 9
@@ -214,7 +214,7 @@
 	desc = "A fancy gold plate often used by the nobility as a symbol of class."
 	icon_state = "platter_gold"
 	resistance_flags = FIRE_PROOF
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 20
 	smeltresult = /obj/item/ingot/gold
 	max_fork_usages = 11
@@ -224,7 +224,7 @@
 	desc = "A fancy platter carved out of joapstone."
 	icon_state = "platter_jade"
 	resistance_flags = FIRE_PROOF
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 60
 	max_fork_usages = 11
 
@@ -233,7 +233,7 @@
 	desc = "A fancy platter carved out of onyxa."
 	icon_state = "platter_onyxa"
 	resistance_flags = FIRE_PROOF
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 40
 	max_fork_usages = 11
 
@@ -242,7 +242,7 @@
 	desc = "A fancy platter carved out of shell."
 	icon_state = "platter_shell"
 	resistance_flags = FIRE_PROOF
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 20
 	max_fork_usages = 11
 
@@ -251,7 +251,7 @@
 	desc = "A fancy platter carved out of rosellusk."
 	icon_state = "platter_rose"
 	resistance_flags = FIRE_PROOF
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 25
 	max_fork_usages = 11
 
@@ -260,7 +260,7 @@
 	desc = "A fancy platter carved out of petriamber."
 	icon_state = "platter_amber"
 	resistance_flags = FIRE_PROOF
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 60
 	max_fork_usages = 11
 
@@ -269,7 +269,7 @@
 	desc = "A fancy platter carved out of opaloise."
 	icon_state = "platter_opal"
 	resistance_flags = FIRE_PROOF
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 90
 	max_fork_usages = 11
 
@@ -278,7 +278,7 @@
 	desc = "A fancy platter carved out of aoetal."
 	icon_state = "platter_coral"
 	resistance_flags = FIRE_PROOF
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 70
 	max_fork_usages = 11
 
@@ -287,7 +287,7 @@
 	desc = "A fancy platter carved out of ceruleabaster."
 	icon_state = "platter_turq"
 	resistance_flags = FIRE_PROOF
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 85
 	max_fork_usages = 11
 

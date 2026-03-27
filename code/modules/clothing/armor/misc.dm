@@ -60,7 +60,7 @@
 
 /obj/item/clothing/armor/brigandine/Initialize()
 	. = ..()
-	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_COAT_STEP)
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_OUTLANDER_PLATE_COAT_STEP)
 
 //................ Abyssal Robe ............... //
 /obj/item/clothing/armor/brigandine/abyssor // This is only a brigandine subtype for balance reasons, it should be a cuirass variant.
@@ -72,7 +72,7 @@
 
 /obj/item/clothing/armor/brigandine/abyssor/Initialize()
 	. = ..()
-	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_COAT_STEP)
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_OUTLANDER_PLATE_COAT_STEP)
 
 
 /obj/item/clothing/armor/brigandine/captain
@@ -103,7 +103,7 @@
 
 /obj/item/clothing/armor/brigandine/captain/Initialize()
 	. = ..()
-	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_COAT_STEP)
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_OUTLANDER_PLATE_COAT_STEP)
 
 //................ Coat of Plate ............... //
 /obj/item/clothing/armor/brigandine/coatplates

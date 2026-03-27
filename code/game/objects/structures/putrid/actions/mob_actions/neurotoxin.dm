@@ -4,7 +4,7 @@
 	personal_resource_cost = 10
 	acid_projectile = null
 	acid_casing = /obj/item/ammo_casing/xenospit
-	spit_sound = 'sound/alien/alien_spitacid2.ogg'
+	spit_sound = 'sound/blank.ogg'
 	cooldown_time = 10 SECONDS
 
 /obj/item/ammo_casing/xenospit //This is probably really bad, however I couldn't find any other nice way to do this

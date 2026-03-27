@@ -79,7 +79,7 @@
 	ignore_walls = FALSE
 
 /datum/looping_sound/boatloop
-	mid_sounds = list('sound/ambience/boat (1).ogg','sound/ambience/boat (2).ogg')
+	mid_sounds = list('sound/ambience/boat.ogg')
 	mid_length = 60
 	volume = 100
 	extra_range = -1

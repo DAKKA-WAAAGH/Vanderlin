@@ -2,9 +2,7 @@
 
 GLOBAL_LIST_INIT(ambience_town_day, list('sound/ambience/townday.ogg'))
 GLOBAL_LIST_INIT(ambience_town_night, list(
-	'sound/ambience/townnight (1).ogg',
-	'sound/ambience/townnight (2).ogg',
-	'sound/ambience/townnight (3).ogg',
+	'sound/ambience/townnight.ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_forest_day, list('sound/ambience/forestday.ogg'))
@@ -22,13 +20,9 @@ GLOBAL_LIST_INIT(ambience_jungle_night, list('sound/ambience/junglenight.ogg'))
 
 GLOBAL_LIST_INIT(ambience_river_day, list(
 	'sound/ambience/riverday (1).ogg',
-	'sound/ambience/riverday (2).ogg',
-	'sound/ambience/riverday (3).ogg',
 ))
 GLOBAL_LIST_INIT(ambience_river_night, list(
 	'sound/ambience/rivernight (1).ogg',
-	'sound/ambience/rivernight (2).ogg',
-	'sound/ambience/rivernight (3).ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_indoors, list('sound/ambience/indoorgen.ogg'))
@@ -40,14 +34,27 @@ GLOBAL_LIST_INIT(ambience_mountain, list(
 ))
 
 GLOBAL_LIST_INIT(ambience_lake, list(
-	'sound/ambience/lake (1).ogg',
-	'sound/ambience/lake (2).ogg',
-	'sound/ambience/lake (3).ogg',
+	'sound/ambience/lake.ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_boat, list(
-	'sound/ambience/boat (1).ogg',
-	'sound/ambience/boat (2).ogg',
+	'sound/ambience/boat.ogg',
+))
+
+GLOBAL_LIST_INIT(ambience_outskirts, list(
+	'sound/ambience/outskirts.ogg',
+))
+
+GLOBAL_LIST_INIT(ambience_outskirts_night, list(
+	'sound/ambience/outskirts_night.ogg',
+))
+
+GLOBAL_LIST_INIT(ambience_dungeon, list(
+	'sound/ambience/dungeon.ogg',
+))
+
+GLOBAL_LIST_INIT(ambience_sewer, list(
+	'sound/ambience/sewer.ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_rain_indoors, list('sound/ambience/rainin.ogg'))
@@ -58,13 +65,20 @@ GLOBAL_LIST_INIT(ambience_rain_sewer, list('sound/ambience/rainsewer.ogg'))
 
 GLOBAL_LIST_INIT(ambience_cave_generic, list('sound/ambience/cave.ogg'))
 GLOBAL_LIST_INIT(ambience_cave_wet, list(
-	'sound/ambience/cavewater (1).ogg',
-	'sound/ambience/cavewater (2).ogg',
-	'sound/ambience/cavewater (3).ogg'))
+	'sound/ambience/cavewater.ogg'
+))
 GLOBAL_LIST_INIT(ambience_cave_lava, list(
 	'sound/ambience/cavelava (1).ogg',
 	'sound/ambience/cavelava (2).ogg',
 	'sound/ambience/cavelava (3).ogg',
+))
+
+GLOBAL_LIST_INIT(ambience_ghetto, list(
+	'sound/ambience/ghetto.ogg',
+))
+
+GLOBAL_LIST_INIT(ambience_ghetto_night, list(
+	'sound/ambience/ghetto_night.ogg',
 ))
 
 //======== Spooky
@@ -83,13 +97,20 @@ GLOBAL_LIST_INIT(ambience_spooky_cave, list(
 	'sound/ambience/noises/cave (1).ogg',
 	'sound/ambience/noises/cave (2).ogg',
 	'sound/ambience/noises/cave (3).ogg',
+	'sound/ambience/noises/cave (4).ogg',
+	'sound/ambience/noises/cave (5).ogg',
+	'sound/ambience/noises/cave (6).ogg',
+	'sound/ambience/noises/cave (7).ogg',
+	'sound/ambience/noises/cave (8).ogg',
+	'sound/ambience/noises/cave (9).ogg',
+	'sound/ambience/noises/cave (10).ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_spooky_forest, list(
 	'sound/ambience/noises/owl.ogg',
-	'sound/ambience/noises/wolf (1).ogg',
-	'sound/ambience/noises/wolf (2).ogg',
-	'sound/ambience/noises/wolf (3).ogg',
+	'sound/ambience/noises/howl.ogg',
+	'sound/ambience/noises/howl2.ogg',
+	'sound/ambience/noises/howl3.ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_spooky_dungeon, list(
@@ -117,9 +138,31 @@ GLOBAL_LIST_INIT(ambience_spooky_birds, list(
 	'sound/ambience/noises/birds (1).ogg',
 	'sound/ambience/noises/birds (3).ogg',
 	'sound/ambience/noises/birds (4).ogg',
-	'sound/ambience/noises/birds (5).ogg',
+))
+
+GLOBAL_LIST_INIT(ambience_outside_birds, list(
 	'sound/ambience/noises/birds (6).ogg',
 	'sound/ambience/noises/birds (7).ogg',
+))
+
+GLOBAL_LIST_INIT(ambience_waterside_birds, list(
+	'sound/ambience/noises/birds (9).ogg',
+	'sound/ambience/noises/birds (10).ogg',
+	'sound/ambience/noises/birds (8).ogg',
+))
+
+GLOBAL_LIST_INIT(ambience_spooky_dogs, list(
+	'sound/ambience/noises/dog (1).ogg',
+	'sound/ambience/noises/dog (2).ogg',
+	'sound/ambience/noises/dog (3).ogg',
+	'sound/ambience/noises/dog (4).ogg',
+	'sound/ambience/noises/dog (5).ogg',
+))
+
+GLOBAL_LIST_INIT(ambience_spooky_sewer, list(
+	'sound/ambience/noises/sewer (1).ogg',
+	'sound/ambience/noises/sewer (2).ogg',
+	'sound/ambience/noises/sewer (3).ogg',
 ))
 
 // Misc
@@ -142,6 +185,10 @@ GLOBAL_LIST_INIT(ambience_assoc_sounds, list(
 	AMBIENCE_RAT = GLOB.ambience_spooky_rat,
 	AMBIENCE_FROG = GLOB.ambience_spooky_frog,
 	AMBIENCE_BIRDS = GLOB.ambience_spooky_birds,
+	AMBIENCE_OBIRDS = GLOB.ambience_outside_birds,
+	AMBIENCE_WBIRDS = GLOB.ambience_waterside_birds,
+	AMBIENCE_DOGS = GLOB.ambience_spooky_dogs,
+	AMBIENCE_SEWER = GLOB.ambience_spooky_sewer,
 	AMBIENCE_MYSTICAL = GLOB.ambience_spooky_mystical,
 ))
 
@@ -168,4 +215,10 @@ GLOBAL_LIST_INIT(ambience_assoc_droning, list(
 	DRONING_RAIN_IN = GLOB.ambience_rain_indoors,
 	DRONING_RAIN_OUT = GLOB.ambience_rain_outdoors,
 	DRONING_RAIN_SEWER = GLOB.ambience_rain_sewer,
+	DRONING_SEWER = GLOB.ambience_sewer,
+	DRONING_OUTSKIRTS = GLOB.ambience_outskirts,
+	DRONING_OUTSKIRTS_NIGHT = GLOB.ambience_outskirts_night,
+	DRONING_GHETTO = GLOB.ambience_ghetto,
+	DRONING_GHETTO_NIGHT = GLOB.ambience_ghetto_night,
+	DRONING_DUNGEON = GLOB.ambience_dungeon,
 ))

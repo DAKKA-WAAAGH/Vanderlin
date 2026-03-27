@@ -1,7 +1,6 @@
 /datum/action/cooldown/spell/status/wheel
 	name = "Wheel of Fortune"
 	desc = "Roll the dice for something nice..."
-	sound = 'sound/misc/letsgogambling.ogg'
 
 	spell_type = SPELL_MIRACLE
 	antimagic_flags = MAGIC_RESISTANCE_HOLY

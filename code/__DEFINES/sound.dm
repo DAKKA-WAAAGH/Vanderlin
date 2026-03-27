@@ -74,9 +74,12 @@
 #define SOUND_MINIMUM_PRESSURE 10
 
 #define SFX_SPARKS "sparks"
+#define SFX_OUTLANDER_CHAIN_STEP	"outlander_chain_step"
+#define SFX_OUTLANDER_PLATE_STEP	"outlander_plate_step"
+#define SFX_OUTLANDER_PLATE_COAT_STEP	"outlander_plate_coat_step"
 #define SFX_CHAIN_STEP	"chain_step"
 #define SFX_PLATE_STEP	"plate_step"
-#define SFX_PLATE_COAT_STEP	"plate_coat_step"
+#define SFX_LAMELLAR_STEP	"lamellar_step"
 #define SFX_JINGLE_BELLS	"jingle_bells"
 #define SFX_INQUIS_BOOT_STEP	"inquis_boot_step"
 #define SFX_POWER_ARMOR_STEP	"power_armor_step"
@@ -114,6 +117,9 @@
 #define DRONING_MOUNTAIN "mountain"
 #define DRONING_LAKE "lake"
 #define DRONING_BOAT "boat"
+#define DRONING_OUTSKIRTS "outskirts"
+#define DRONING_OUTSKIRTS_NIGHT "outskirts_night"
+#define DRONING_DUNGEON "dungeon"
 
 #define DRONING_RAIN_IN "rain_in"
 #define DRONING_RAIN_OUT "rain_out"
@@ -122,6 +128,9 @@
 #define DRONING_CAVE_GENERIC "cave_generic"
 #define DRONING_CAVE_WET "cave_wet"
 #define DRONING_CAVE_LAVA "cave_lava"
+
+#define DRONING_GHETTO "ghetto"
+#define DRONING_GHETTO_NIGHT "ghetto_night"
 
 // Ambient sounds handled by SSambience
 
@@ -132,4 +141,6 @@
 #define AMBIENCE_RAT "spooky_ray"
 #define AMBIENCE_FROG "spooky_frog"
 #define AMBIENCE_BIRDS "spooky_birds"
+#define AMBIENCE_OBIRDS "outside_birds"
 #define AMBIENCE_MYSTICAL "spooky_mystic"
+#define AMBIENCE_DOGS "spooky_dogs"

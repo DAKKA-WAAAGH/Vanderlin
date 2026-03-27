@@ -52,13 +52,10 @@
 					playsound(user, 'sound/magic/PSYDONE.ogg', 100, FALSE)
 					sleep(60)
 					user.psydo_nyte()
-					user.playsound_local(user, 'sound/misc/psydong.ogg', 100, FALSE)
 					sleep(20)
 					user.psydo_nyte()
-					user.playsound_local(user, 'sound/misc/psydong.ogg', 100, FALSE)
 					sleep(15)
 					user.psydo_nyte()
-					user.playsound_local(user, 'sound/misc/psydong.ogg', 100, FALSE)
 					sleep(10)
 					user.gib()
 					return FALSE

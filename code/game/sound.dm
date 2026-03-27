@@ -378,20 +378,35 @@
 					'sound/surgery/changeling_absorb/changeling_absorb4.ogg',
 					'sound/surgery/changeling_absorb/changeling_absorb5.ogg',
 				)
-			if(SFX_CHAIN_STEP)
+			if(SFX_OUTLANDER_CHAIN_STEP)
 				soundin = pick('sound/foley/footsteps/armor/chain (1).ogg',\
 							'sound/foley/footsteps/armor/chain (2).ogg',\
 							'sound/foley/footsteps/armor/chain (3).ogg',\
 							)
-			if(SFX_PLATE_STEP)
+			if(SFX_OUTLANDER_PLATE_STEP)
 				soundin = pick('sound/foley/footsteps/armor/plate (1).ogg',\
 							'sound/foley/footsteps/armor/plate (2).ogg',\
 							'sound/foley/footsteps/armor/plate (3).ogg',\
 							)
-			if(SFX_PLATE_COAT_STEP)
+			if(SFX_OUTLANDER_PLATE_COAT_STEP)
 				soundin = pick('sound/foley/footsteps/armor/coatplates (1).ogg',\
 							'sound/foley/footsteps/armor/coatplates (2).ogg',\
 							'sound/foley/footsteps/armor/coatplates (3).ogg',\
+							)
+			if(SFX_CHAIN_STEP)
+				soundin = pick('sound/foley/footsteps/armor/fisherchain (1).ogg',\
+							'sound/foley/footsteps/armor/fisherchain (2).ogg',\
+							'sound/foley/footsteps/armor/fisherchain (3).ogg',\
+							)
+			if(SFX_PLATE_STEP)
+				soundin = pick('sound/foley/footsteps/armor/crabsplate (1).ogg',\
+							'sound/foley/footsteps/armor/crabsplate (2).ogg',\
+							'sound/foley/footsteps/armor/crabsplate (3).ogg',\
+							)
+			if(SFX_LAMELLAR_STEP)
+				soundin = pick('sound/foley/footsteps/armor/lobsterplate (1).ogg',\
+							'sound/foley/footsteps/armor/lobsterplate (2).ogg',\
+							'sound/foley/footsteps/armor/lobsterplate (3).ogg',\
 							)
 			if(SFX_JINGLE_BELLS)
 				soundin = pick('sound/items/jinglebell (1).ogg',\

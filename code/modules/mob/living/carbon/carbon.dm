@@ -256,7 +256,7 @@
 		log_message("has thrown [thrown_thing]", LOG_ATTACK)
 		thrown_thing.safe_throw_at(end_T, thrown_range, thrown_speed, src, null, null, null, move_force)
 		if(!used_sound)
-			used_sound = pick(PUNCHWOOSH)
+			used_sound = pick('sound/items/weapons/thudswoosh.ogg', 'sound/items/weapons/thudswoosh2.ogg')
 		playsound(src, used_sound, 60, FALSE)
 
 /mob/living/carbon/proc/canBeHandcuffed()

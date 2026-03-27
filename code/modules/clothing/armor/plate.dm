@@ -7,7 +7,7 @@
 	melting_material = /datum/material/steel
 	equip_delay_self = 4 SECONDS
 	unequip_delay_self = 4 SECONDS
-	equip_sound = 'sound/foley/equip/equip_armor_plate.ogg'
+	equip_sound = 'sound/foley/equip/equip_outlander_plate.ogg'
 	pickup_sound = "rustle"
 	sellprice = VALUE_STEEL_ARMOR
 	clothing_flags = CANT_SLEEP_IN
@@ -21,7 +21,7 @@
 
 /obj/item/clothing/armor/plate/Initialize()
 	. = ..()
-	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_STEP)
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_OUTLANDER_PLATE_STEP)
 
 /obj/item/clothing/armor/plate/iron
 	name = "iron half-plate"

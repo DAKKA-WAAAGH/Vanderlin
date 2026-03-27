@@ -6,10 +6,10 @@
 	resistance_flags = null
 	blocksound = CHAINHIT
 	blade_dulling = DULLING_BASHCHOP
-	equip_sound = 'sound/foley/equip/equip_armor_chain.ogg'
+	equip_sound = 'sound/foley/equip/equip_outlander_chain.ogg'
 	pickup_sound = "rustle"
 	break_sound = 'sound/foley/breaksound.ogg'
-	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_chain.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
 	smeltresult = null
 	sewrepair = FALSE

@@ -63,7 +63,7 @@
 	minstr = 10 //meant to be a orc weapon or barbarian weapon
 
 	parrysound = "sword"
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	melting_material = /datum/material/steel
 	melt_amount = 150
 	sellprice = 60
@@ -97,7 +97,7 @@
 	melting_material = /datum/material/iron
 	melt_amount = 100
 	parrysound = "sword"
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 
 	sellprice = 20
 
@@ -157,7 +157,7 @@
 	melting_material = /datum/material/bronze
 	melt_amount = 100
 	parrysound = "sword"
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 
 	sellprice = 20
 
@@ -191,7 +191,7 @@
 	melting_material = /datum/material/silver
 	melt_amount = 75
 	parrysound = "sword"
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 60
 
 /obj/item/weapon/axe/psydon/Initialize(mapload)

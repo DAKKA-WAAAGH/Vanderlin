@@ -21,7 +21,6 @@
 		return FALSE
 
 	var/mob/living/simple_animal/hostile/retaliate/meatvine/consumed = owner
-	playsound(consumed, 'sound/misc/tail_swing.ogg', 80, TRUE)
 	consumed.spin(6, 1)
 
 	for(var/mob/living/victim in range(sweep_radius, consumed))

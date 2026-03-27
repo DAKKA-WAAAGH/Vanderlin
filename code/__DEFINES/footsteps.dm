@@ -105,8 +105,7 @@ GLOBAL_LIST_INIT(footstep, list(
 		'sound/foley/footsteps/FTMUD (1).ogg',
 		'sound/foley/footsteps/FTMUD (2).ogg',
 		'sound/foley/footsteps/FTMUD (3).ogg',
-		'sound/foley/footsteps/FTMUD (4).ogg',
-		'sound/foley/footsteps/FTMUD (5).ogg'), 80, 0),
+		'sound/foley/footsteps/FTMUD (4).ogg'), 80, 0),
 ))
 //bare footsteps lists
 GLOBAL_LIST_INIT(barefootstep, list(
@@ -137,8 +136,7 @@ GLOBAL_LIST_INIT(barefootstep, list(
 		'sound/foley/footsteps/FTMUD (1).ogg',
 		'sound/foley/footsteps/FTMUD (2).ogg',
 		'sound/foley/footsteps/FTMUD (3).ogg',
-		'sound/foley/footsteps/FTMUD (4).ogg',
-		'sound/foley/footsteps/FTMUD (5).ogg'), 100, 0),
+		'sound/foley/footsteps/FTMUD (4).ogg'), 100, 0),
 ))
 
 //claw footsteps lists
@@ -183,28 +181,27 @@ GLOBAL_LIST_INIT(heavyfootstep, list(
 		'sound/foley/footsteps/FTMUD (1).ogg',
 		'sound/foley/footsteps/FTMUD (2).ogg',
 		'sound/foley/footsteps/FTMUD (3).ogg',
-		'sound/foley/footsteps/FTMUD (4).ogg',
-		'sound/foley/footsteps/FTMUD (5).ogg'), 100, 0),
+		'sound/foley/footsteps/FTMUD (4).ogg'), 100, 0),
 ))
 
 GLOBAL_LIST_INIT(metalfootstep, list(
 	FOOTSTEP_GENERIC_HEAVY = list(list(
-		'sound/foley/footsteps/armor/powerarmor (1).ogg',
-		'sound/foley/footsteps/armor/powerarmor (2).ogg',
-		'sound/foley/footsteps/armor/powerarmor (3).ogg',), 100, 0),
+		'sound/blank.ogg',
+		'sound/blank.ogg',
+		'sound/blank.ogg',), 100, 0),
 	FOOTSTEP_WATER = list(list(
-		'sound/foley/footsteps/armor/powerarmor (1).ogg',
-		'sound/foley/footsteps/armor/powerarmor (2).ogg',
-		'sound/foley/footsteps/armor/powerarmor (3).ogg',), 100, 0),
+		'sound/blank.ogg',
+		'sound/blank.ogg',
+		'sound/blank.ogg',), 100, 0),
 	FOOTSTEP_SHALLOW = list(list(
-		'sound/foley/footsteps/armor/powerarmor (1).ogg',
-		'sound/foley/footsteps/armor/powerarmor (2).ogg',
-		'sound/foley/footsteps/armor/powerarmor (3).ogg',), 100, 0),
+		'sound/blank.ogg',
+		'sound/blank.ogg',
+		'sound/blank.ogg',), 100, 0),
 	FOOTSTEP_LAVA = list(list(
 		'sound/blank.ogg'), 100, 0),
 	FOOTSTEP_MUD = list(list(
-		'sound/foley/footsteps/armor/powerarmor (1).ogg',
-		'sound/foley/footsteps/armor/powerarmor (2).ogg',
-		'sound/foley/footsteps/armor/powerarmor (3).ogg',), 100, 0),
+		'sound/blank.ogg',
+		'sound/blank.ogg',
+		'sound/blank.ogg',), 100, 0),
 ))
 
