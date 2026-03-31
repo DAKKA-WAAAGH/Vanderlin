@@ -99,7 +99,7 @@ KAIZOKU:
 
 Music:
 
-Shadow.ogg: Ending theme from Shadowman(1999) soundtrack
+credits.ogg: Ending theme from Shadowman(1999) soundtrack
 guraga.ogg: Wounded Warsong by Akira Yamaoka for the Silent Hill 4: The Room soundtrack
 shop.ogg: S4 M32 Jingle (S4 M32 Jingle) from Way of the Samurai 4 soundtrack
 palace_night.ogg: Way from Way of the Samurai 3 soundtrack
@@ -110,9 +110,11 @@ shixo.ogg: Hoshingoeika from Siren soundtrack
 underpater.ogg: Hirunotsuka from Siren soundtrack
 industrial_night.ogg: dino synth. a song in a day for a year, day 22
 ghetto_night.ogg: Nobushi by Avery Alexander on Youtube https://www.youtube.com/channel/UCUCQAFyjDmGSK68SfQ3iBVQ
-title.ogg is Stealth Music - Ninja by Avery Alexander on Youtube https://www.youtube.com/channel/UCUCQAFyjDmGSK68SfQ3iBVQ
-title2.ogg is Gryning by Ulf Söderberg
+titleold.ogg is Stealth Music - Ninja by Avery Alexander on Youtube https://www.youtube.com/channel/UCUCQAFyjDmGSK68SfQ3iBVQ
+underwater_dungeon.ogg is Gryning by Ulf Söderberg
 title3.ogg is Kami of the Dust by Amos Roddy
+lorddeath.ogg is Prelude to Darkness from Fear & Hunger soundtrack
+title.ogg is Grace Omega by Mizoguchi Hajime for the Jin-Roh: The Wolf Brigade(1999) soundtrack
 
 Combat:
 
@@ -161,22 +163,16 @@ towerannounce3: Bobby3.ogg from Fear & Hunger 2: Termina soundtrack
 flesh.ogg: Living_flesh.ogg from Fear & Hunger 2: Termina soundtrack
 fleshform.ogg: Giant_head_push.ogg from Fear & Hunger 2: Termina soundtrack
 ozium.ogg: Xeno Arcadia from Hylics 2 soundtrack
+spice.ogg: Prevailing Westerlies from Hylics 2 soundtrack
 equip_chain_armor.ogg and armor_drop_chain.ogg are by Riftjaw on the Mine-Imator forums
 equip_armor_lamellar.ogg and armor_drop_lamellar.ogg are by InspiredCosplay on Youtube
 whip.ogg and whipgrab.ogg is by Adam-Winrich on Youtube
 chain (1-3).ogg is by GFX Sounds
 
-Mobs:
-yokai_aggro.ogg: Bellend.ogg from Fear & Hunger 2: Termina soundtrack
-witchlaugh.ogg: Rat_hag.ogg from Fear & Hunger 2: Termina soundtrack
-
 Instrument:
 Shakuhachi music is taken from Kohachiro Miyata (Full)
 Guzheng music is taken from Austin Guzheng Studio 望舒琴行
 Morin Khuur music is taken from Bukhu Ganburged, with morinkhuur3.ogg being taken from the Civilization 6 soundtrack Mongolia theme (Ancient)
-
-Ambience:
-ambient_drone1.ogg: Ambient Drone Low 01 from Fear & Hunger 2: Termina soundtrack
 
 An IMMENSE number of sounds are taken from Taira Komori, who made a royalty free library of sounds to use. There are far too many sounds to individually credit, so please check them out if ever you're in need of sounds. https://taira-komori.net/freesounden.html
 

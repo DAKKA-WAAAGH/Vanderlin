@@ -1,4 +1,5 @@
 //SWINGSOUNDS, or WOOSHES
+#define BLADEWOOSH_SLAYER		list('sound/combat/wooshes/bladed/largeswordwoosh (1).ogg','sound/combat/wooshes/bladed/largeswordwoosh (2).ogg','sound/combat/wooshes/bladed/largeswordwoosh (3).ogg')
 #define BLADEWOOSH_HUGE			list('sound/combat/wooshes/bladed/wooshhuge (1).ogg','sound/combat/wooshes/bladed/wooshhuge (2).ogg','sound/combat/wooshes/bladed/wooshhuge (3).ogg')
 #define BLADEWOOSH_LARGE		list('sound/combat/wooshes/bladed/wooshlarge (1).ogg','sound/combat/wooshes/bladed/wooshlarge (2).ogg','sound/combat/wooshes/bladed/wooshlarge (3).ogg')
 #define BLADEWOOSH_MED			list('sound/combat/wooshes/bladed/wooshmed (1).ogg','sound/combat/wooshes/bladed/wooshmed (2).ogg','sound/combat/wooshes/bladed/wooshmed (3).ogg')

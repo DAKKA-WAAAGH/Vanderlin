@@ -1162,6 +1162,7 @@
 	resistance_flags = FIRE_PROOF
 	smeltresult = /obj/item/ingot/steel
 	max_integrity = 500
+	swingsound = BLADEWOOSH_SLAYER
 	force = 5 //You won't get ANYTHING by using in one hand. Trust me. EVEN IF YOU COULD.
 	force_wielded = 40 // I thought Gundam would nerf it. He buffed it instead. What a World!
 	slowdown = 1
@@ -1184,7 +1185,7 @@
 	attack_verb = list("clangs")
 	animname = "smash"
 	blade_class = BCLASS_CHOP
-	hitsound = list('modular/kaizoku/sound/dragonslayer.ogg')
+	hitsound = list('sound/combat/hits/bladed/largesword (1).ogg', 'sound/combat/hits/bladed/largesword (2).ogg', 'sound/combat/hits/bladed/largesword (3).ogg')
 	penfactor = 30
 	damfactor = 1.2
 	chargetime = 5

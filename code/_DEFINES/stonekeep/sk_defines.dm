@@ -161,5 +161,5 @@ GLOBAL_LIST_EMPTY(zizo_starts)
 
 #define GATOR_HEALTH 220
 
-#define ZATANA_WOOSH			list('modular/kaizoku/sound/woosh/zatana_nimble(1).ogg','modular/kaizoku/sound/woosh/zatana_nimble(2).ogg','modular/kaizoku/sound/woosh/zatana_nimble(3).ogg')
+#define ZATANA_WOOSH			list('sound/combat/wooshes/bladed/zatana_nimble(1).ogg','sound/combat/wooshes/bladed/zatana_nimble(2).ogg','sound/combat/wooshes/bladed/zatana_nimble(3).ogg')
 #define MANCATCHER				/datum/intent/polearm/thrust/mancatcher
