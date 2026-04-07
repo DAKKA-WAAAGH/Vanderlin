@@ -190,7 +190,7 @@
 // Ritual framework
 // ---------------------------------------------------
 
-var/global/list/ABYSS_RITUALS = null
+GLOBAL_VAR_INIT(ABYSS_RITUALS, null)
 
 /proc/GetAbyssRituals()
 	if(ABYSS_RITUALS)

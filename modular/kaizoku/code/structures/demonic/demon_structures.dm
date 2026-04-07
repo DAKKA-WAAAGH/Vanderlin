@@ -6,13 +6,13 @@
 	world << msg
 
 var/global/datum/demon_hive/DEMON_HIVE
-var/global/list/demon_spread_dirs = list(NORTH, SOUTH, EAST, WEST)
-var/global/list/demon_all_dirs = list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAST, SOUTHWEST)
-var/global/list/DEMON_SPAWNER_MATURE_TYPES = list(
+GLOBAL_LIST_INIT(demon_spread_dirs, list(NORTH, SOUTH, EAST, WEST))
+GLOBAL_LIST_INIT(demon_all_dirs, list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAST, SOUTHWEST))
+GLOBAL_LIST_INIT(DEMON_SPAWNER_MATURE_TYPES, list(
 	/mob/living/simple_animal/hostile/retaliate/infernal/watcher,
 	/mob/living/simple_animal/hostile/retaliate/blood,
 	/mob/living/simple_animal/hostile/retaliate/demon/succubus
-)
+))
 
 /mob/living/var/ichor_next_burn_tick = 0
 

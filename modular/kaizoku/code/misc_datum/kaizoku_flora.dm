@@ -903,6 +903,51 @@
 /obj/effect/methane_gas/spark_act()
 	ignite_gas_area()
 
+/proc/get_chebyshev_ring_turfs(turf/center, distance)
+	var/list/ring = list()
+	if(!center || distance < 0)
+		return ring
+
+	if(distance == 0)
+		ring += center
+		return ring
+
+	var/min_x = center.x - distance
+	var/max_x = center.x + distance
+	var/min_y = center.y - distance
+	var/max_y = center.y + distance
+	var/z_level = center.z
+
+	for(var/y in min_y to max_y)
+		var/turf/west = locate(min_x, y, z_level)
+		if(west)
+			ring += west
+		var/turf/east = locate(max_x, y, z_level)
+		if(east && east != west)
+			ring += east
+
+	for(var/x in (min_x + 1) to (max_x - 1))
+		var/turf/south = locate(x, min_y, z_level)
+		if(south)
+			ring += south
+		var/turf/north = locate(x, max_y, z_level)
+		if(north && north != south)
+			ring += north
+
+	return ring
+
+/proc/release_fogblight_smoke(turf/T, atom/source_atom, amount = 30)
+	if(!T)
+		return
+
+	var/datum/reagents/R = new /datum/reagents(amount)
+	R.my_atom = source_atom
+	R.add_reagent(/datum/reagent/fogblight/corruption, amount)
+
+	var/datum/effect_system/smoke_spread/chem/smoke = new
+	smoke.set_up(R, 0, T, null)
+	smoke.start()
+
 /obj/structure/methane_geyser
 	name = "geyser"
 	desc = "A natural fissure on the ground. This one hisses... without any smell."
@@ -912,10 +957,14 @@
 	density = FALSE
 	var/gas_range_min = 1
 	var/gas_range_max = 4
-	var/gas_release_cooldown = 5 MINUTES
+	var/gas_release_cooldown = 7 MINUTES
 	var/next_release_time = 0
 	var/spreading = FALSE
 	var/proximity_range = 6
+	var/burst_release_min = 3
+	var/burst_release_max = 5
+	var/burst_interval = 25
+	var/burst_releases_left = 0
 
 /obj/structure/methane_geyser/Initialize()
 	. = ..()
@@ -947,29 +996,49 @@
 		force_release_gas()
 
 /obj/structure/methane_geyser/process()
-	if(world.time < next_release_time)
+	if(spreading || world.time < next_release_time)
 		return
 
-	release_gas()
-	next_release_time = world.time + gas_release_cooldown
+	start_gas_burst(gas_release_cooldown)
 
 /obj/structure/methane_geyser/proc/force_release_gas()
 	if(spreading)
 		return
 
-	visible_message("<span class='warning'>Coincidently, The geyser hisses...</span>")
-	release_gas()
-
 	var/remaining = next_release_time - world.time
 	if(remaining <= 0)
 		remaining = gas_release_cooldown
-	next_release_time = world.time + max(1, round(remaining / 2))
+	start_gas_burst(max(1, round(remaining / 2)))
 
-/obj/structure/methane_geyser/proc/release_gas()
+/obj/structure/methane_geyser/proc/start_gas_burst(cooldown_after_burst)
 	if(spreading)
 		return
-	spreading = TRUE
 
+	spreading = TRUE
+	burst_releases_left = rand(burst_release_min, burst_release_max)
+	execute_gas_burst(cooldown_after_burst)
+
+/obj/structure/methane_geyser/proc/execute_gas_burst(cooldown_after_burst)
+	if(!spreading || QDELETED(src))
+		return
+
+	if(burst_releases_left <= 0)
+		spreading = FALSE
+		next_release_time = world.time + cooldown_after_burst
+		return
+
+	burst_releases_left--
+	visible_message("<span class='warning'>Coincidently, The geyser hisses...</span>")
+	release_gas()
+
+	if(burst_releases_left > 0)
+		spawn(burst_interval)
+			execute_gas_burst(cooldown_after_burst)
+	else
+		spreading = FALSE
+		next_release_time = world.time + cooldown_after_burst
+
+/obj/structure/methane_geyser/proc/release_gas()
 	var/gas_range = rand(gas_range_min, gas_range_max)
 	visible_message("<span class='warning'>The geyser hisses...</span>")
 
@@ -977,23 +1046,21 @@
 
 /obj/structure/methane_geyser/proc/progressive_gas_spread(current_range, max_range)
 	var/turf/center = get_turf(src)
+	if(!center)
+		return
 
 	if(current_range == 0)
 		if(!locate(/obj/effect/methane_gas) in center)
 			new /obj/effect/methane_gas(center)
 	else
-		for(var/turf/T in range(current_range, center))
-			var/distance = get_dist(center, T)
-			if(distance == current_range)
-				if(prob(80))
-					if(!locate(/obj/effect/methane_gas) in T)
-						new /obj/effect/methane_gas(T)
+		for(var/turf/T in get_chebyshev_ring_turfs(center, current_range))
+			if(prob(80))
+				if(!locate(/obj/effect/methane_gas) in T)
+					new /obj/effect/methane_gas(T)
 
 	if(current_range < max_range)
 		spawn(15)
 			progressive_gas_spread(current_range + 1, max_range)
-	else
-		spreading = FALSE
 
 /obj/structure/boiling_geyser
 	name = "geyser"
@@ -1004,10 +1071,14 @@
 	density = FALSE
 	var/water_range_min = 1
 	var/water_range_max = 4
-	var/water_release_cooldown = 5 MINUTES
+	var/water_release_cooldown = 7 MINUTES
 	var/next_release_time = 0
 	var/spreading = FALSE
 	var/proximity_range = 6
+	var/burst_release_min = 3
+	var/burst_release_max = 5
+	var/burst_interval = 30
+	var/burst_releases_left = 0
 
 /obj/structure/boiling_geyser/Initialize()
 	. = ..()
@@ -1042,68 +1113,85 @@
 		force_release_water()
 
 /obj/structure/boiling_geyser/process()
-	if(world.time < next_release_time)
+	if(spreading || world.time < next_release_time)
 		return
 
-	release_water()
-	next_release_time = world.time + water_release_cooldown
+	start_water_burst(water_release_cooldown)
 
 /obj/structure/boiling_geyser/proc/force_release_water()
 	if(spreading)
 		return
 
-	visible_message("<span class='warning'>The geyser rumbles...</span>")
-	release_water()
-
 	// Halve the remaining time (or half a fresh full cooldown if none scheduled)
 	var/remaining = next_release_time - world.time
 	if(remaining <= 0)
 		remaining = water_release_cooldown
-	next_release_time = world.time + max(1, round(remaining / 2))
+	start_water_burst(max(1, round(remaining / 2)))
 
-/obj/structure/boiling_geyser/proc/release_water()
+/obj/structure/boiling_geyser/proc/start_water_burst(cooldown_after_burst)
 	if(spreading)
 		return
-	spreading = TRUE
 
+	spreading = TRUE
+	burst_releases_left = rand(burst_release_min, burst_release_max)
+	execute_water_burst(cooldown_after_burst)
+
+/obj/structure/boiling_geyser/proc/execute_water_burst(cooldown_after_burst)
+	if(!spreading || QDELETED(src))
+		return
+
+	if(burst_releases_left <= 0)
+		spreading = FALSE
+		next_release_time = world.time + cooldown_after_burst
+		return
+
+	burst_releases_left--
+	release_water()
+
+	if(burst_releases_left > 0)
+		spawn(burst_interval)
+			execute_water_burst(cooldown_after_burst)
+	else
+		spreading = FALSE
+		next_release_time = world.time + cooldown_after_burst
+
+/obj/structure/boiling_geyser/proc/release_water()
 	var/water_range = rand(water_range_min, water_range_max)
 	visible_message("<span class='warning'>The geyser rumbles...</span>")
 
 	spawn(10)
 		visible_message("<span class='danger'>The geyser erupts!</span>")
 		enhanced_water_spread(0, water_range)
-		spawn((water_range * 8) + 20)
-			spreading = FALSE
 
 /obj/structure/boiling_geyser/proc/enhanced_water_spread(current_range, max_range)
 	var/turf/center = get_turf(src)
+	if(!center)
+		return
 
 	if(current_range == 0)
 		new /obj/effect/geyser_water(center)
 	else
-		for(var/turf/T in range(current_range, center))
-			var/distance = get_dist(center, T)
-			if(distance == current_range)
-				if(prob(85))
-					new /obj/effect/geyser_water(T)
-					for(var/mob/living/L in T.contents)
-						if(L.stat == DEAD)
-							continue
+		for(var/turf/T in get_chebyshev_ring_turfs(center, current_range))
+			if(prob(85))
+				new /obj/effect/geyser_water(T)
+				for(var/mob/living/L in T.contents)
+					if(L.stat == DEAD)
+						continue
 
-						var/push_strength = (max_range - current_range + 2) * 2
-						var/push_dir = get_dir(center, L)
+					var/push_strength = (max_range - current_range + 2) * 2
+					var/push_dir = get_dir(center, L)
 
-						spawn(0)
-							for(var/i = 1 to 2)
-								if(push_dir)
-									var/turf/target = get_step(L, push_dir)
-									if(target && !target.density)
-										L.throw_at(target, push_strength, 2)
-								sleep(5)
+					spawn(0)
+						for(var/i = 1 to 2)
+							if(push_dir)
+								var/turf/target = get_step(L, push_dir)
+								if(target && !target.density)
+									L.throw_at(target, push_strength, 2)
+							sleep(5)
 
-						L.Knockdown(30 + (push_strength * 5))
-						L.visible_message("<span class='danger'>[L] is blasted!</span>")
-						L.adjustFireLoss(rand(40, 80)) //big damage.
+					L.Knockdown(30 + (push_strength * 5))
+					L.visible_message("<span class='danger'>[L] is blasted!</span>")
+					L.adjustFireLoss(rand(40, 80)) //big damage.
 
 	if(current_range < max_range)
 		spawn(8)
@@ -1118,10 +1206,14 @@
 	density = FALSE
 	var/fog_range_min = 1
 	var/fog_range_max = 4
-	var/fog_release_cooldown = 5 MINUTES
+	var/fog_release_cooldown = 7 MINUTES
 	var/next_release_time = 0
 	var/spreading = FALSE
 	var/proximity_range = 6
+	var/burst_release_min = 3
+	var/burst_release_max = 5
+	var/burst_interval = 30
+	var/burst_releases_left = 0
 
 /obj/structure/fogblight_geyser/Initialize()
 	. = ..()
@@ -1154,29 +1246,49 @@
 		force_release_fog()
 
 /obj/structure/fogblight_geyser/process()
-	if(world.time < next_release_time)
+	if(spreading || world.time < next_release_time)
 		return
 
-	release_fog()
-	next_release_time = world.time + fog_release_cooldown
+	start_fog_burst(fog_release_cooldown)
 
 /obj/structure/fogblight_geyser/proc/force_release_fog()
 	if(spreading)
 		return
 
-	visible_message("<span class='warning'>The geyser begins to hizz...</span>")
-	release_fog()
-
 	var/remaining = next_release_time - world.time
 	if(remaining <= 0)
 		remaining = fog_release_cooldown
-	next_release_time = world.time + max(1, round(remaining / 2))
+	start_fog_burst(max(1, round(remaining / 2)))
 
-/obj/structure/fogblight_geyser/proc/release_fog()
+/obj/structure/fogblight_geyser/proc/start_fog_burst(cooldown_after_burst)
 	if(spreading)
 		return
-	spreading = TRUE
 
+	spreading = TRUE
+	burst_releases_left = rand(burst_release_min, burst_release_max)
+	execute_fog_burst(cooldown_after_burst)
+
+/obj/structure/fogblight_geyser/proc/execute_fog_burst(cooldown_after_burst)
+	if(!spreading || QDELETED(src))
+		return
+
+	if(burst_releases_left <= 0)
+		spreading = FALSE
+		next_release_time = world.time + cooldown_after_burst
+		return
+
+	burst_releases_left--
+	visible_message("<span class='warning'>The geyser begins to hizz...</span>")
+	release_fog()
+
+	if(burst_releases_left > 0)
+		spawn(burst_interval)
+			execute_fog_burst(cooldown_after_burst)
+	else
+		spreading = FALSE
+		next_release_time = world.time + cooldown_after_burst
+
+/obj/structure/fogblight_geyser/proc/release_fog()
 	var/fog_range = rand(fog_range_min, fog_range_max)
 	visible_message("<span class='warning'>Toxic fog is lifted!</span>")
 
@@ -1184,30 +1296,16 @@
 
 /obj/structure/fogblight_geyser/proc/progressive_fog_spread(current_range, max_range)
 	var/turf/center = get_turf(src)
+	if(!center)
+		return
 
 	if(current_range == 0)
-		var/datum/reagents/R = new/datum/reagents(30)
-		R.my_atom = src
-		R.add_reagent(/datum/reagent/fogblight/corruption, 30)
-
-		var/datum/effect_system/smoke_spread/chem/smoke = new
-		smoke.set_up(R, 0, center, null)
-		smoke.start()
+		release_fogblight_smoke(center, src)
 	else
-		for(var/turf/T in range(current_range, center))
-			var/distance = get_dist(center, T)
-			if(distance == current_range)
-				if(prob(70))
-					var/datum/reagents/R = new/datum/reagents(30)
-					R.my_atom = src
-					R.add_reagent(/datum/reagent/fogblight/corruption, 30)
-
-					var/datum/effect_system/smoke_spread/chem/smoke = new
-					smoke.set_up(R, 0, T, null)
-					smoke.start()
+		for(var/turf/T in get_chebyshev_ring_turfs(center, current_range))
+			if(prob(70))
+				release_fogblight_smoke(T, src)
 
 	if(current_range < max_range)
 		spawn(20)
 			progressive_fog_spread(current_range + 1, max_range)
-	else
-		spreading = FALSE

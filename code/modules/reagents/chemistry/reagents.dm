@@ -200,6 +200,10 @@ GLOBAL_LIST_INIT(name2reagent, build_name2reagent())
 	SHOULD_CALL_PARENT(TRUE)
 	if(!length(incoming_data))
 		return
+
+	if(!data) //Stonekeep Edit > Initialize data list if it doesn't exist. Fix runtime.
+		data = list() //hopefully...
+
 	if("quality" in incoming_data)
 		var/other_quality = incoming_data["quality"]
 
@@ -208,9 +212,6 @@ GLOBAL_LIST_INIT(name2reagent, build_name2reagent())
 		recipe_quality = floor(weighted_average)
 
 		recipe_quality = CLAMP(recipe_quality, 1, 4)
-
-		if(!data)
-			data = list()
 		data["quality"] = recipe_quality
 	for(var/data_item in incoming_data)
 		if(data_item == "quality") //special handling for this

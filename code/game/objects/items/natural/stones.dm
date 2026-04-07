@@ -1,3 +1,14 @@
+
+// Stonekeep Edit: Kaizoku here: Complete and utterly removal of this 'magic stone system'.
+// I cannot stress enough that Roguetown coders from Blackstone/Vanderlin often creates bloat systems that
+// spreads out to other servers, and it never have an actual use, just ... more damage when throw.
+// This system is an prime example of that, and I am yet to find an use for this.
+// Breaks immersion, makes no sense, glows weirdly and becomes an eyesore during mining.
+// Regardless, at least the removal of this one has a more lore background set into it.
+// Zizo magic HAS died. and so will this system.
+// Praise the Holy Emperor.
+
+/*
 GLOBAL_LIST_INIT(stone_sharpness_names, list(
 	"Sharp",
 	"Vicious",
@@ -124,7 +135,7 @@ GLOBAL_LIST_INIT(stone_personality_descs, list(
 	"I could sure do a whole lot with this stone.",
 	"I love stones!",
 ))
-
+*/
 
 /obj/item/natural/stone
 	name = "stone"
@@ -149,8 +160,9 @@ GLOBAL_LIST_INIT(stone_personality_descs, list(
 /obj/item/natural/stone/Initialize()
 	. = ..()
 	icon_state = "stone[rand(1,4)]"
-	stone_lore()
+	/* stone_lore() */
 
+/* Stonekeep Edit: Kaizoku
 /obj/item/natural/stone/on_consume(mob/living/eater)
 	if(!magic_power)
 		return
@@ -261,6 +273,7 @@ GLOBAL_LIST_INIT(stone_personality_descs, list(
 	// force += bonus_force // This will result in a stone that has only 40 max at a extremely low chance damage at this time of this PR.
 	throwforce += bonus_force // It gets added to throw damage too
 	possible_item_intents = given_intent_list // And heres ur new extra intents too
+*/
 
 /obj/item/natural/stone/equipped(mob/living/carbon/human/user, slot)
 	. = ..()

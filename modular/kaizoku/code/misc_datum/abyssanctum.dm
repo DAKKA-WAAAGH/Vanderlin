@@ -73,7 +73,7 @@
 	flaws = "Reckless, Stubborn, Destructive - Overtrusting"
 	worshippers = "The common folk, storytellers, ship doctors and educators. The Curators."
 	sins = "Fear, Hubris, Forgetfulness - Intellectual arrogance"
-	boons = "Champion's Knowledge. Blessed waters provides more quality and ways of warfare. Your rituals branches blessings."
+	boons = "Champion's Knowledge. Waters provides more quality and ways of warfare. Your rituals branches blessings."
 	added_traits = list(TRAIT_CHAMPION_KNOWLEDGE, TRAIT_KAIZOKU) //Leech Immune will change later.
 	devotion_holder = /datum/devotion/abyssanctum/curator
 	confess_lines = list(
@@ -99,8 +99,8 @@
 	domain = "Abyssor, mutual to Syzygy the Sky Serpent, focused on the physical."
 	desc = "Guardians of filtering, what shields the body \
 			from rot unseen. Uphold the status quo of flesh and steel, \
-			heal the flawed, shatter the irredeemable, \
-			as for every untreated disease, a failure. \
+			heal the flawed, shatter the irredeemable, eat the mutant, \
+			as for every untreated disease or forced deformation, a failure. \
 			Salvation lies in uprooting harm without leaving ruins behind."
 	flaws = "Reckless, Stubborn, Destructive - Unyielding"
 	worshippers = "Abyssal Warriors, Sea raiders, Generals. The Tideweavers."
@@ -127,6 +127,26 @@
 	)
 
 #define ALL_ABYSSANCTUM_DOCTRINE list(/datum/patron/abyssanctum/purifier, /datum/patron/abyssanctum/curator, /datum/patron/abyssanctum/tideweaver)
+
+/datum/patron/abyssanctum/silent
+	name = "Silent Doctrine"
+	domain = "WIP"
+	flaws = "Reckless, Stubborn, Destructive, Indecise"
+	worshippers = "."
+	sins = "Fear, Hubris, Forgetfulness"
+	boons = "None."
+	added_traits = list(TRAIT_KAIZOKU) //Leech Immune will change later.
+	devotion_holder = /datum/devotion/abyssanctum/silent
+	confess_lines = list(
+		"ABYSSOR COMMANDS THE WAVES!",
+		"THE OCEAN'S FURY IS ABYSSOR'S WILL!",
+		"I AM DRAWN BY THE PULL OF THE TIDE!",
+	)
+	storyteller = /datum/storyteller/abyssor
+
+/datum/devotion/abyssanctum/silent
+	miracles = list(
+	)
 
 /*
 GLOBAL_LIST_INIT(abyssanctum_speak, world.file2list('strings/rt/abyssanctum_speak.txt'))

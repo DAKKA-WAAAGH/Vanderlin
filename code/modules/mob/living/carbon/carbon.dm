@@ -1445,9 +1445,9 @@
 /mob/living/carbon/verb/test_dismember_groin()
 	set name = "Test Dismember Groin"
 	set category = "Debug"
-	var/obj/item/bodypart/groin = get_bodypart(BODY_ZONE_GROIN)
+	var/obj/item/bodypart/groin = get_bodypart(BODY_ZONE_PRECISE_GROIN)
 	if(groin)
-		groin.dismember(BCLASS_CUT, src, BODY_ZONE_GROIN)
+		groin.dismember(BCLASS_CUT, src, BODY_ZONE_PRECISE_GROIN)
 		to_chat(src, "Attempted to dismember groin.")
 	else
 		to_chat(src, "No groin bodypart found.")

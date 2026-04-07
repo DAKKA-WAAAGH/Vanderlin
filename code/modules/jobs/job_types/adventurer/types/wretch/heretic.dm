@@ -80,16 +80,21 @@
 			ADD_TRAIT(spawned, TRAIT_STRONGBITE, TRAIT_GENERIC)
 			spawned.cmode_music = 'sound/music/cmode/antag/combat_werewolf.ogg'
 			ADD_TRAIT(spawned, TRAIT_STRONGBITE, TRAIT_GENERIC)
+
+		/*  //Stonekeep Edit: Kaizoku
 		if(/datum/patron/inhumen/graggar_zizo)
 			spawned.adjust_skillrank(/datum/skill/combat/axesmaces, 4, TRUE)
 			spawned.cmode_music = 'sound/music/cmode/antag/combat_werewolf.ogg'
+		*/
 		if(/datum/patron/inhumen/zizo)
 			spawned.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
 			spawned.cmode_music = 'sound/music/cmode/antag/combat_cult.ogg'
 			spawned.grant_language(/datum/language/undead)
+		/*  //Stonekeep Edit: Kaizoku
 		if(/datum/patron/inhumen/matthios)
 			spawned.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
 			spawned.cmode_music = 'sound/music/cmode/antag/CombatBandit1.ogg'
+		*/
 		if(/datum/patron/inhumen/baotha)
 			spawned.adjust_skillrank(/datum/skill/combat/knives, 4, TRUE)
 			spawned.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)

@@ -151,6 +151,7 @@
 	. = ..()
 	if(!.)
 		return
+	REMOVE_TRAIT(src, TRAIT_ZOMBIE_IMMUNE, "prayer_deadite_ward") //Stonekeep Edit
 	var/datum/job/human_job = SSjob.GetJob(job)
 	if(human_job)
 		switch(human_job.type)

@@ -497,13 +497,13 @@ GLOBAL_LIST_INIT(ritualslist, build_zizo_rituals())
 	to_chat(cultist, span_notice("Stolen Arcane prowess floods my mind, ZIZO empowers me."))
 
 /datum/ritual/fleshcrafting/curse
-    name = "Hollow Curse"
-    center_requirement = /mob/living/carbon/human
+	name = "Hollow Curse"
+	center_requirement = /mob/living/carbon/human
 
-    w_req = /obj/item/alch/sinew
-    e_req = /obj/item/alch/sinew
-    n_req = /obj/item/natural/fur/volf
-    s_req = /obj/item/natural/fur/volf
+	w_req = /obj/item/alch/sinew
+	e_req = /obj/item/alch/sinew
+	n_req = /obj/item/natural/fur/volf
+	s_req = /obj/item/natural/fur/volf
 
 /datum/ritual/fleshcrafting/curse/invoke(mob/living/user, turf/center)
 	var/mob/living/carbon/human/target = locate() in center.contents

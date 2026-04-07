@@ -314,7 +314,7 @@
 /obj/structure/flora/grass/Initialize()
 	. = ..()
 	AddComponent(/datum/component/grass)
-	AddComponent(/datum/component/tick_infested, 7, 50) //Stonekeep edit.
+	AddComponent(/datum/component/tick_infested, 3, 70) //Stonekeep edit.
 
 
 /obj/structure/flora/grass/Destroy()

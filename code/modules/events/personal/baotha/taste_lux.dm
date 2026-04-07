@@ -20,8 +20,8 @@
 	for(var/mob/living/carbon/human/H in GLOB.player_list)
 		if(!istype(H) || H.stat == DEAD || !H.client)
 			continue
-		if(!H.patron || !istype(H.patron, /datum/patron/inhumen/baotha))
-			continue
+		// if(!H.patron || !istype(H.patron, /datum/patron/inhumen/baotha)) //stonekeep edit: Kaizoku. We don't have Baotha here.
+			// continue
 		if(!H.is_noble())
 			continue
 		return TRUE
@@ -34,8 +34,8 @@
 	for(var/mob/living/carbon/human/human_mob in GLOB.player_list)
 		if(!istype(human_mob) || human_mob.stat == DEAD || !human_mob.client)
 			continue
-		if(!human_mob.patron || !istype(human_mob.patron, /datum/patron/inhumen/baotha))
-			continue
+		// if(!human_mob.patron || !istype(human_mob.patron, /datum/patron/inhumen/baotha)) //stonekeep edit: Kaizoku. We don't have Baotha here.
+			//continue
 		if(!human_mob.is_noble())
 			continue
 		valid_targets += human_mob

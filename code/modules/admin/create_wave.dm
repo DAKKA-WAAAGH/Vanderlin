@@ -1021,7 +1021,7 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 
 /datum/create_wave/proc/create_job(mob/admin)
 
-    // Generate HTML form
+	// Generate HTML form
 	var/dat = {"
 	<html><head><title>Create Custom Job</title></head><body>
 	<form name='job' action='byond://?src=[REF(src)];[HrefToken()]' method='get'>
@@ -1352,7 +1352,7 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 	if(!J)
 		return
 
-    // Generate HTML form
+	// Generate HTML form
 	var/dat = {"
 	<html><head><title>Edit Custom Wave</title></head><body>
 	<form name='wave' action='byond://?src=[REF(src)];[HrefToken()]' method='get'>
@@ -1684,7 +1684,7 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 
 /datum/create_wave/proc/create_wave(mob/admin)
 
-    // Generate HTML form
+	// Generate HTML form
 	var/dat = {"
 	<html><head><title>Create Custom Wave</title></head><body>
 	<form name='wave' action='byond://?src=[REF(src)];[HrefToken()]' method='get'>
@@ -1821,7 +1821,7 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 		to_chat(admin, span_warning("You can't edit the wave while it is deploying!"))
 		return
 
-    // Generate HTML form (mostly like create_wave)
+	// Generate HTML form (mostly like create_wave)
 	var/dat = {"
 	<html><head><title>Edit Custom Wave</title></head><body>
 	<form name='wave' action='byond://?src=[REF(src)];[HrefToken()]' method='get'>
@@ -2365,10 +2365,10 @@ GLOBAL_LIST_EMPTY(custom_outfits) //Admin created outfits
 				continue
 			o_wrists_options += "<option value='[wrists]'>[wrists::name]</option>"
 
-		for(var/obj/item/clothing/type as anything in subtypesof(/obj/item/clothing/shirt) + subtypesof(/obj/item/clothing/armor))
-			if(IS_ABSTRACT(type))
+		for(var/obj/item/clothing/clothing_type as anything in subtypesof(/obj/item/clothing/shirt) + subtypesof(/obj/item/clothing/armor))
+			if(IS_ABSTRACT(clothing_type))
 				continue
-			o_shirt_options += "<option value='[type]'>[type::name]</option>"
+			o_shirt_options += "<option value='[clothing_type]'>[clothing_type::name]</option>"
 
 		for(var/obj/item/clothing/pants/pants as anything in subtypesof(/obj/item/clothing/pants))
 			if(IS_ABSTRACT(pants))

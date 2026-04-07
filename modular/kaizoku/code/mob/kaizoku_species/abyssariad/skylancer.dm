@@ -34,7 +34,7 @@
 	)
 	default_features = list("mcolor" = "FFF", "ears" = "TenguS", "tail_human" = "TenguV")
 	use_skintones = 1
-	possible_ages = CHAMPIONAGE_AGES
+	possible_ages = NORMAL_AGES_LIST_BLOOMING
 	disliked_food = NONE
 	liked_food = NONE
 	changesource_flags = WABBAJACK

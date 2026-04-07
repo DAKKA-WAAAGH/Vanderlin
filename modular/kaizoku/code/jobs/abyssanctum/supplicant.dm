@@ -1,7 +1,7 @@
 /datum/job/kaizoku/supplicant
 	title = "Supplicant"
 	tutorial = "You are an novice devotee of Abyssanctum. \
-	You've already chosen the thalassic angel that most alizgns with your beliefs, \
+	You've already chosen the thalassic angel that most aligns with your beliefs, \
 	and now, you must prove yourself worthy in your path of championage, \
 	as to serve Abyssor, you must first serve his children. \
 	However, your path of abyssal devotion and discovery will be filled of chores."

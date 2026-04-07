@@ -45,10 +45,12 @@
 				spawned.adjust_skillrank(/datum/skill/combat/axesmaces, 3, TRUE)
 				ADD_TRAIT(spawned, TRAIT_DUALWIELDER, TRAIT_GENERIC)
 				spawned.cmode_music = 'sound/music/cmode/antag/combat_werewolf.ogg'
+			/*  //Stonekeep Edit: Kaizoku
 			if(/datum/patron/inhumen/graggar_zizo)
 				spawned.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 				spawned.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
 				spawned.cmode_music = 'sound/music/cmode/antag/combat_werewolf.ogg'
+			*/
 			if(/datum/patron/inhumen/zizo)
 				spawned.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 				spawned.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
@@ -60,12 +62,14 @@
 				spawned.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
 				spawned.adjust_skillrank(/datum/skill/misc/lockpicking, 1, TRUE)
 				spawned.cmode_music = 'sound/music/cmode/antag/CombatBandit1.ogg'
+			/*  //Stonekeep Edit: Kaizoku
 			if(/datum/patron/inhumen/baotha)
 				spawned.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
 				spawned.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 				spawned.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)
 				spawned.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
 				spawned.cmode_music = 'sound/music/cmode/antag/CombatBaotha.ogg'
+			*/
 			else
 				spawned.cmode_music = 'sound/music/cmode/church/CombatInquisitor.ogg'
 

@@ -189,7 +189,7 @@
 			target_item = target.get_item_by_slot(ITEM_SLOT_WRISTS)
 			if(!target_item)
 				target_item = target.held_items[1]
-		if(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG, BODY_ZONE_GROIN) //Stonekeep Edit
+		if(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG, BODY_ZONE_PRECISE_GROIN) //Stonekeep Edit
 			target_item = target.get_item_by_slot(ITEM_SLOT_PANTS)
 		if(BODY_ZONE_PRECISE_R_FOOT, BODY_ZONE_PRECISE_L_FOOT)
 			target_item = target.get_item_by_slot(ITEM_SLOT_SHOES)

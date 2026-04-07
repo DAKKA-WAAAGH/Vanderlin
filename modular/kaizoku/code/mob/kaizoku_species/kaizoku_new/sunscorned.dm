@@ -681,7 +681,7 @@
 	return ..()
 
 /datum/action/cooldown/spell/undirected/shapeshift/bat_form
-	name = "Bat Form"
+	name = "Morbing" //hahahahahah....
 	desc = "Transform into a bat."
 	button_icon = 'modular/kaizoku/icons/misc/spells.dmi'
 	button_icon_state = "battify"

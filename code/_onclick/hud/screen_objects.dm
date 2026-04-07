@@ -1029,7 +1029,7 @@
 					if(20 to 29)
 						return BODY_ZONE_R_LEG
 					if(30 to 36)
-						return BODY_ZONE_GROIN // STONEKEEP EDIT: KAIZOKU; GROIN IS ITS OWN BODYPART.
+						return BODY_ZONE_PRECISE_GROIN // STONEKEEP EDIT: KAIZOKU; GROIN IS ITS OWN BODYPART.
 					if(37 to 46)
 						return BODY_ZONE_L_LEG
 					if(48 to 54)
@@ -1140,7 +1140,7 @@
 					if(20 to 23)
 						return BODY_ZONE_PRECISE_R_HAND
 					if(30 to 36)
-						return BODY_ZONE_GROIN // STONEKEEP EDIT: KAIZOKU; GROIN IS ITS OWN BODYPART.
+						return BODY_ZONE_PRECISE_GROIN // STONEKEEP EDIT: KAIZOKU; GROIN IS ITS OWN BODYPART.
 					if(43 to 46)
 						return BODY_ZONE_PRECISE_L_HAND
 					if(52 to 54)
@@ -1152,7 +1152,7 @@
 					if(20 to 25)
 						return BODY_ZONE_R_ARM
 					if(30 to 36)
-						return BODY_ZONE_GROIN // STONEKEEP EDIT: KAIZOKU; GROIN IS ITS OWN BODYPART.
+						return BODY_ZONE_PRECISE_GROIN // STONEKEEP EDIT: KAIZOKU; GROIN IS ITS OWN BODYPART.
 					if(41 to 46)
 						return BODY_ZONE_L_ARM
 					if(52 to 54)

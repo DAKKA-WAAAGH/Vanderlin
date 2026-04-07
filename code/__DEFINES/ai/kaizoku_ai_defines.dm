@@ -14,3 +14,6 @@
 #define BB_CURRENT_TARGET "current_target"
 #define BB_DOGGO_RESTING "doggo_resting"
 #define BB_DOGGO_REST_BED "doggo_rest_bed"
+#define BB_KAIZOKU_WINGED_AIRBORNE "kaizoku_winged_airborne"
+#define BB_KAIZOKU_WINGED_SHADOW "kaizoku_winged_shadow"
+#define BB_KAIZOKU_AMBUSH_PARALYZE_CD "kaizoku_ambush_paralyze_cd"

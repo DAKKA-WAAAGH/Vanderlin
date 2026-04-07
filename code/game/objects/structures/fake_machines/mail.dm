@@ -505,12 +505,13 @@ GLOBAL_LIST_EMPTY(letters_sent)
 
 	// Check patron types
 	if(subject?.patron)
-		switch(subject?.patron.type)
+		switch(subject?.patron.type) //Edit on this list.
 			if(/datum/patron/inhumen/matthios, /datum/patron/inhumen/zizo, /datum/patron/inhumen/graggar,
-			   /datum/patron/inhumen/baotha, /datum/patron/godless/godless, /datum/patron/godless/autotheist,
+			   /datum/patron/godless/godless, /datum/patron/godless/autotheist,
 			   /datum/patron/godless/defiant, /datum/patron/godless/dystheist, /datum/patron/godless/rashan,
 			   /datum/patron/godless/galadros)
 				is_correct = TRUE
+		// /datum/patron/inhumen/baotha, /datum/patron/godless/godless, /datum/patron/godless/autotheist,
 
 	// Check excommunication
 	if(subject?.name in GLOB.excommunicated_players)

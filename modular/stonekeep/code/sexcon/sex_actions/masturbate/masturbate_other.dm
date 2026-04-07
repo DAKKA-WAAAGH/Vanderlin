@@ -12,7 +12,7 @@
 /datum/sex_action/masturbate_other_vagina/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
 		return FALSE
-	if(!get_location_accessible(target, BODY_ZONE_GROIN))
+	if(!get_location_accessible(target, BODY_ZONE_PRECISE_GROIN))
 		return FALSE
 	if(target.underwear != "Nude")
 		return FALSE
@@ -57,7 +57,7 @@
 /datum/sex_action/masturbate_penis_other/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
 		return FALSE
-	if(!get_location_accessible(target, BODY_ZONE_GROIN))
+	if(!get_location_accessible(target, BODY_ZONE_PRECISE_GROIN))
 		return FALSE
 	if(target.underwear != "Nude")
 		return FALSE
@@ -100,7 +100,7 @@
 /datum/sex_action/masturbate_other_anus/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
 		return FALSE
-	if(!get_location_accessible(target, BODY_ZONE_GROIN))
+	if(!get_location_accessible(target, BODY_ZONE_PRECISE_GROIN))
 		return FALSE
 	if(target.underwear != "Nude")
 		return FALSE

@@ -111,7 +111,7 @@
 // ==================== DOGGO MOB ====================
 
 /mob/living/simple_animal/hostile/retaliate/custodianpet/doggo
-	name = "doggo"
+	name = "doggeth"
 	icon = 'modular/kaizoku/icons/mobs/doggo.dmi'
 	desc = "Mixed breed between Foglander zingerhound and heartfeltean landstrider. Loyal, powerful and affectionate, replacing stingers for size."
 	icon_state = "doggo"
@@ -273,7 +273,7 @@
 
 	set_movement_target(controller, target)
 
-/mob/living/simple_animal/hostile/retaliate/custodianpet/doggo/proc/move_to_turf(var/turf/T, mob/user)
+/mob/living/simple_animal/hostile/retaliate/custodianpet/doggo/proc/move_to_turf(turf/T, mob/user)
 	patrolling = FALSE
 	following = FALSE
 	doggo_resting = FALSE
@@ -530,14 +530,14 @@
 		to_chat(user, "<span class='info'>You signal your doggo(s) to move to a spot.</span>")
 		return
 
-var/global/list/doggo_whistle_command_cooldowns = list()
+GLOBAL_LIST_INIT(doggo_whistle_command_cooldowns, list())
 
 /obj/item/pet_command/doggo_whistle/attack_self(mob/user)
 	// Cooldown check
-	if(doggo_whistle_command_cooldowns[user] && world.time < doggo_whistle_command_cooldowns[user])
+	if(GLOB.doggo_whistle_command_cooldowns[user] && world.time < GLOB.doggo_whistle_command_cooldowns[user])
 		to_chat(user, "<span class='warning'>You need to wait before using the whistle again.</span>")
 		return
-	doggo_whistle_command_cooldowns[user] = world.time + 10 // 1 second cooldown
+	GLOB.doggo_whistle_command_cooldowns[user] = world.time + 10 // 1 second cooldown
 
 	// Find doggos in range
 	var/list/doggos = list()

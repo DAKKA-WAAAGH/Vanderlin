@@ -261,6 +261,10 @@
 	for(var/trait in traits)
 		ADD_TRAIT(spawned, trait, JOB_TRAIT)
 
+	if(player_client && has_limpdick_spawn_ckey(player_client.ckey))
+		ADD_TRAIT(spawned, TRAIT_LIMPDICK, TRAIT_GENERIC)
+		spawned.set_hygiene(HYGIENE_LEVEL_DISGUSTING)
+
 	for(var/datum/language/to_learn as anything in languages)
 		if(!spawned.has_language(to_learn))
 			spawned.grant_language(to_learn)

@@ -60,7 +60,7 @@
 	if(!gateway)
 		return
 	for(var/obj/effect/demon/corruption/Cor in range(FIRST_COLONY_RANGE, gateway))
-		for(var/dir_card in demon_spread_dirs)
+		for(var/dir_card in GLOB.demon_spread_dirs)
 			var/turf/Tc = get_step(Cor, dir_card)
 			if(!Tc || !(locate(/obj/effect/demon/corruption) in Tc))
 				if(!(locate(/obj/structure/demon/railing) in Cor.loc))
@@ -76,7 +76,7 @@
 		var/dist = get_dist(gateway, Cor2)
 		if(dist <= FIRST_COLONY_RANGE)
 			continue
-		for(var/dir_card2 in demon_spread_dirs)
+		for(var/dir_card2 in GLOB.demon_spread_dirs)
 			var/turf/Tc2 = get_step(Cor2, dir_card2)
 			if(!Tc2 || !(locate(/obj/effect/demon/corruption) in Tc2))
 				if(!(locate(/obj/structure/demon/railing) in Cor2.loc))

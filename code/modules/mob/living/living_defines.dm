@@ -150,6 +150,7 @@
 	var/last_ps = 0
 
 	var/ambushable = 0
+	var/last_prayer_time = 0
 
 	var/surrendering = 0
 

@@ -107,7 +107,7 @@
 			return "leg"
 		if(BODY_ZONE_PRECISE_STOMACH)
 			return "stomach"
-		if(BODY_ZONE_GROIN)
+		if(BODY_ZONE_PRECISE_GROIN)
 			return "tail"
 		if(BODY_ZONE_HEAD)
 			return "head"

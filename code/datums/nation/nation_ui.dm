@@ -708,11 +708,9 @@
 				const tooltip = generateNodeTooltip(node);
 
 				html += `<div class='trade-node ${node.status}'
-							 style='left: ${pos.x}px; top: ${pos.y}px;'
-							 data-tooltip="${tooltip.replace(/"/g, '&quot;')}"
-							 onclick='selectNode("${node.id}")'>`;
-
-				if(node.icon && node.icon_state) {
+					style='left: ${pos.x}px; top: ${pos.y}px;'
+					data-tooltip="${tooltip.replace(/"/g, '&quot;')}"
+					onclick='selectNode("${node.id}")'>`;
 					html += `<img src='${node.icon}?state=${node.icon_state}' alt='${node.name}'>`;
 				} else {
 					html += `<div style='font-size: 24px;'>?</div>`;

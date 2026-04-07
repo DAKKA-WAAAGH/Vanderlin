@@ -957,7 +957,7 @@
 			burn_body_with_oil(H)
 			to_chat(H, span_danger("Boiling oil splashes upon you from above!"))
 
-/proc/burn_body_with_oil(var/mob/living/carbon/human/H)
+/proc/burn_body_with_oil(mob/living/carbon/human/H)
 	for(var/zone in list("head", "chest", "groin", "l_arm", "r_arm", "l_leg", "r_leg"))
 		H.apply_damage(40, BURN, zone)
 
@@ -1191,7 +1191,7 @@
 /mob/living/carbon/human
 	var/image/goblin_pounced_overlay = null
 
-/mob/living/carbon/human/proc/add_goblin_pounced_overlay(var/mob/living/simple_animal/hostile/clockbomb_goblin/G)
+/mob/living/carbon/human/proc/add_goblin_pounced_overlay(mob/living/simple_animal/hostile/clockbomb_goblin/G)
 	if(goblin_pounced_overlay)
 		cut_overlay(goblin_pounced_overlay)
 		goblin_pounced_overlay = null
@@ -1551,3 +1551,9 @@
 	spawn(15)
 		linked_core?.process_conversion()
 		qdel(src)
+
+#undef BOMB_LIFESPAN
+#undef BOMB_ARMTIME
+#undef BOMB_TRIGGER_TIME
+#undef BB_TARGET
+#undef AI_BEHAVIOR_NONE
