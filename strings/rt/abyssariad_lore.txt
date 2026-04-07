@@ -118,7 +118,7 @@
 	</p>
 
 	<p style="text-align: center; font-style: italic; margin-bottom: 24px;">
-		The sacred tenets of the Abyssariads, carved into the hearts of those who dwell in the deep and honor the ancient pacts.
+		The sacred oath of the Foglander warrior caste. WIP
 	</p>
 
 	<p>

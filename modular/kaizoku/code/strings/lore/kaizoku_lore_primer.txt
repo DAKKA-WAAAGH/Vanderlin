@@ -294,73 +294,71 @@
 		<div class="details-content">
 			<img class="lore-image small" src="guayo_namunamu.png" alt="Abyssanctum">
 			<div class="image-caption">Artist: Guayo</div>
-			<div class="faction-desc">;wip;The core identity of Abyssanctum is that natives are part of Abyssor, non-natives are the absorbed. The objective is to avoid corruption that strays one away from Abyssor, and 'grow back' into Abyssor. is the ritual-martial spine of Fog Island theology: a historical order of warrior-priests, jurists, and sea-commanders that codified Abyssariad discipline after successive schisms. Their doctrine branches into four sacred traditions.</div>
-			<div class="faction-desc">What most differences Abyssanctum from the Pantheon, is that the faith is found on every glimpse of existence. Prayer goes not only to honor the Gods and the Thalassic Angels, but to purge unseen corruption, as prayer often comes as sanctification for food before eating, both to ensure no poison or intestinal infection will come, but to request so there will be no lack of food in the future. The very same goes before sleeping, and every funeral is an exorcism on its own way, to ensure the dead will not stay under the effects of undeath.</div>
+			<div class="faction-desc">WIP.</div>
+			<div class="faction-desc">WIP.</div>
 
 
 			<details class="section">
 				<summary><em>Purifier Doctrine</em></summary>
 				<div class="details-content">
-					<div class="faction-desc">During the age of Blood Apotheosis's, the armies of Graggar reached Fog Islands as warned by Abyssor's Grey Dream, and the first effective resistance came from those who saw the assaults during sleep, or heard talking spirits during prayer. Though dismissed as hysteria, the recurring visions preceded attacks, and the Elite champion Kimura Tagahara, currently reborn as Quintessential the Nautilus, not only treated these dreams as assets for war, but turned the wartime pragmatism as doctrine for the army, the 'Dreamer Philosophy' emerged ever since, evolving under the ideals of spiritual purity and ascension.</div>
-					<div class="faction-desc">The philosophy branched as its thinkers grappled the nature of demonic corruption during war, regarded as a constant threat inherent to the mortal coil as a natural state of creation, light and dark bound in tension, an parasite fed by sin that forever anchors the body and soul, and to weaken it, one must starve it through discipline, restraint and deliberate restoration of order, allowing devouts to perform astral projections while in a state of stupor and interact with the spiritual realm, contacting the dead and lingering ancestors before reincarnation takes place.</div>
-					<div class="faction-desc">The philosophy became part of Abyssanctum religion organically ever since the death of Kimura Tagahara during the siege on Sora no Shiden, reborn as thalassic angel rather than reincarnated as a mortal similarly to the other two resonances of the depths. Further discoveries about purification were made after centuries, the doctrine performing restoration of order for the sake of purification, as corruption also comes from accumulation of violence, resentment and prolonged proximity to demonic presence, and whoever this impurity festers, malignant entities come to feast.</div>
-					<div class="faction-desc">It is with rites using purifying materials such as salt, cinnamon, burning mizuwood incense, silver dust and ofundas, one is able to restore the natural circulation of spirits, not with the intention of detaching the corruption, but overpowering and ensuring it can no longer resonate with its vessel. Regardless, purifiers should be always willing to punish evil spirits by unarmed combat and rites, as souls can be subdued by a pure soul.</div>
+					<div class="faction-desc">WIP.</div>
+					<div class="faction-desc">WIP</div>
 				</div>
 			</details>
 
 			<details class="section">
 				<summary><em>Curator Doctrine<	em></summary>
 				<div class="details-content">
-					<div class="faction-desc">The preservationist tradition dedicated to maintaining sacred knowledge, artifacts, and the historical continuity of Abyssariad civilization. Curators guard libraries, reliquaries, and ancestral records against loss and desecration.</div>
+					<div class="faction-desc">WIP.</div>
 				</div>
 			</details>
 
 			<details class="section">
 				<summary><em>Tideweaver Doctrine</em></summary>
 				<div class="details-content">
-					<div class="faction-desc">The maritime tradition bound to oceanic forces and Abyssor's will. Tideweavers harness the power of tides, navigate the realms between water and land, and commune with sea-spirits in service of conquest and sovereignty.</div>
+					<div class="faction-desc">WIP.</div>
 				</div>
 			</details>
 
 			<details class="section">
 				<summary><em>Silent Doctrine</em></summary>
 				<div class="details-content">
-					<div class="faction-desc">The covert tradition of assassins, spies, and judicial executioners who operate without fanfare under the veil of silence. The Silent serve as instruments of hidden justice and territorial control, bound by absolute discretion.</div>
+					<div class="faction-desc">WIP.</div>
 				</div>
 			</details>
 		</div>
 	</details>
 
 	<details class="section">
-		<summary>The Tennites - The Ten Divine Thrones</summary>
+		<summary>The Tennites - The Ten Divines</summary>
 		<div class="details-content">
-			<div class="faction-desc">Tennite doctrine recognizes ten supreme divine seats shaping mortal fate through law, tide, death, harvest, war, and celestial order. Regional liturgies differ, but the canonical frame remains tenfold.</div>
+			<div class="faction-desc">WIP.</div>
 
 			<details class="section">
 				<summary><em>Deities</em></summary>
 				<div class="details-content">
-					<p><strong>Astrata</strong> - The goddess of harvest, fertility, and agricultural blessing. Her domains span growth, sustenance, and the cycle of seasons.</p>
-					<p><strong>Noc</strong> - The god of night, secrets, and hidden knowledge. Noc oversees mysteries, forbidden lore, and the boundary between darkness and light.</p>
+					<p><strong>Astrata</strong> - WIP.</p>
+					<p><strong>Noc</strong> - WIP.</p>
 				</div>
 			</details>
 
 			<details class="section">
 				<summary><em>Forces</em></summary>
 				<div class="details-content">
-					<p><strong>Necra</strong> - The keeper of souls and mistress of the afterlife. Necra is neither evil nor good, simply inevitable. Her priests oversee funerals and guide the dead, but some delve into forbidden necromancy, seeking to defy her domain.</p>
-					<p><strong>Dendor</strong> - The force of harvest's decay and winter's death. Dendor represents necessary endings, rot as renewal, and the dark cycle of consumption and regrowth.</p>
-					<p><strong>Abyssor</strong> - The ancient deity of the ocean, storms, and the unknown depths. Worshipped by the Abyssariads, Abyssor demands honor, loyalty, and sacrifice. His wrath manifests as tidal waves and hurricanes, while his blessing grants power over water and shadow.</p>
+					<p><strong>Necra</strong> - WIP.</p>
+					<p><strong>Dendor</strong> - WIP.</p>
+					<p><strong>Abyssor</strong> - WIP.</p>
 				</div>
 			</details>
 
 			<details class="section">
 				<summary><em>Saints</em></summary>
 				<div class="details-content">
-					<p><strong>Malum</strong> - The primal force of ancestral strength and dwarvish resilience. Malum embodies the foundation of mountains and the unbreakable bonds of clan.</p>
-					<p><strong>Ravox</strong> - The voice of prophecy and fate's messenger. Ravox speaks through omens, dreams, and the threads of destiny visible only to shamans and seers.</p>
-					<p><strong>Eora</strong> - The spirit of crafted beauty and artistic excellence. Eora blesses makers, builders, and those who elevate the mundane to the sublime.</p>
-					<p><strong>Pestra</strong> - The hunger-spirit of plague and suffering endured. Pestra tests mortals through hardship, teaching wisdom through trial and pain.</p>
-					<p><strong>Xylix</strong> - The trickster of crossroads and choices unmade. Xylix embodies chaos, chance, and the paths not taken in life's journey.</p>
+					<p><strong>Malum</strong> - WIP.</p>
+					<p><strong>Ravox</strong> - WIP.</p>
+					<p><strong>Eora</strong> - WIP.</p>
+					<p><strong>Pestra</strong> - WIP.</p>
+					<p><strong>Xylix</strong> - WIP.</p>
 				</div>
 			</details>
 		</div>
@@ -369,39 +367,39 @@
 	<details class="section">
 		<summary>Psydonic Path (Psydon)</summary>
 		<div class="details-content">
-			<div class="faction-desc">The god of light, law, and retribution. Psydon is worshipped by paladins, judges, and those who seek order in a chaotic world. The Psydonic tradition exalts justice, oath-keeping, and social hierarchy under divine scrutiny. Its judges and templars preach that mercy is lawful only when duty is preserved.</div>
+			<div class="faction-desc">WIP.</div>
 		</div>
 	</details>
 
 	<details class="section">
 		<summary>Demons of Grimoria</summary>
 		<div class="details-content">
-			<div class="faction-desc">Beyond the pantheon of reverence dwell forces of pure corruption—entities worshipped not out of faith, but fear and pursuit of their dark gifts. These Inhuman powers pervert the world and claim followers through promises of power and dominion.</div>
+			<div class="faction-desc">WIP</div>
 
 			<details class="section">
-				<summary><em>Graggar, the Wrath-King</em></summary>
+				<summary><em>Graggar/em></summary>
 				<div class="details-content">
 					<img class="lore-image small" src="pasghetti8811_warning_poster2.png" alt="Graggar">
 					<div class="image-caption">Artist: pasghetti8811</div>
-					<div class="faction-desc">Graggar is treated as an Inhumen force of predatory ruin: worship through blood, domination, and desecration. His followers seek authority by proving they can break what others still revere. Orcs and Goblins carry his taint through their raids and carnage.</div>
+					<div class="faction-desc">WIP.</div>
 				</div>
 			</details>
 
 			<details class="section">
-				<summary><em>Zizo, the Hunger-Plague</em></summary>
+				<summary><em>Zizo</em></summary>
 				<div class="details-content">
 					<img class="lore-image small" src="pasghetti8811_warning_poster1.png" alt="Zizo">
 					<div class="image-caption">Artist: pasghetti8811</div>
-					<div class="faction-desc">Zizo embodies corruptive hunger and ecological collapse. Denmorian mutation myths trace to Zizo's touch, where survival mutates into swarm instinct and spiritual cannibalism.</div>
+					<div class="faction-desc">WIP</div>
 					<img class="lore-image small" src="beanysprout_ztupid_dorkoid.png" alt="Zizo Manifestation" style="margin-top: 10px;">
 					<div class="image-caption">Artist: Beanysprout</div>
 				</div>
 			</details>
 
 			<details class="section">
-				<summary><em>Ananshor, the Void-Weaver</em></summary>
+				<summary><em>Ananshor</em></summary>
 				<div class="details-content">
-					<div class="faction-desc">An ancient entity of entropy and unraveling. Ananshor seeks to unwind the threads binding reality itself, dissolving order into chaos and consuming all that was built. Its tentacles reach through dreams and forbidden pacts.</div>
+					<div class="faction-desc">WIP</div>
 				</div>
 			</details>
 		</div>
@@ -426,7 +424,7 @@
 					<div class="image-caption">Male Changeling Beneffited, full body. - Artist: Simulo</div>
 				</div>
 			</div>
-			<div class="faction-desc">Molded by Abyssor's will for Blood Apotheosis, changelings are honor-bound and volatile: either uncompromising duelists or strict pacifists. Their adaptive physiology is built to consume corruption and purify decay, but it limits what they can safely ingest from common agriculture.</div>
+			<div class="faction-desc">Wip.</div>
 			<img class="lore-image small" src="beanysprout_changeling_hmm.png" alt="Changelings">
 			<div class="image-caption">Changelings across myriad genetic variations. Some with exposed filtering maws. - Artist: Beanysprout</div>
 			<div class="img-row">
@@ -501,7 +499,7 @@
 					<div class="image-caption">Undine with Merkling manifestation - Artist: Simulo</div>
 				</div>
 			</div>
-			<div class="faction-desc">Dwellers of water and marsh, Undines are as varied in form as the ecosystems they inhabit. Some lean toward goblinoid traits, others toward merling ancestry. All maintain deep connections to aquatic dominion and territorial custom.</div>
+			<div class="faction-desc">Wip.</div>
 			<div class="img-row">
 				<div style="text-align: center; width: 60%;">
 					<img class="lore-image small" src="undine_armed.png" alt="Armed Undine">
