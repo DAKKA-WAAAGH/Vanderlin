@@ -12,7 +12,7 @@
 	faction = FACTION_TOWN
 	total_positions = 3
 	spawn_positions = 3
-	min_pq = 0
+	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	bypass_lastclass = TRUE
 	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_ANCIENT, AGE_IMMORTAL, AGE_OLD,)
 	allowed_races = RACES_PLAYER_ALL

@@ -132,15 +132,6 @@
             "command": "${command:dreammaker.reparse}",
             "group": "build",
             "label": "dm: reparse"
-        },
-        {
-            "type": "dreammaker",
-            "dme": "vanderlin.dme",
-            "problemMatcher": [
-                "$dreammaker"
-            ],
-            "group": "build",
-            "label": "dm: build - ${command:CurrentDME}"
         }
     ]
 }

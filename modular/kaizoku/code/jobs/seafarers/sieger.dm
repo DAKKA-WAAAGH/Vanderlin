@@ -11,11 +11,11 @@
 	tutorial = "You are a naval siege engineer who takes mathematics to absolute terms. \
 	You repel the threat of greater powers on the snap of a hope, or the end of the fuse. \
 	You've been hired by the Quartermaster to ensure that the walls of the tower will never \
-	be breached, while making sure the wall of others will crumble, and by the divines \
+	be breached, while making sure the wall of others will crumble, and by Abyssor \
 	above, you know how far walls can go both ways."
 
 	give_bank_account = 30
-	min_pq = 0
+	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	selection_color = "#920909"
 	outfit = /datum/outfit/job/kaizoku/sieger
 	cmode_music = 'sound/music/cmode/nobility/CombatKnight.ogg' //going to change for another one.
@@ -511,7 +511,7 @@
 
 	for(var/mob/living/carbon/H in hearers(7, src))
 		shake_camera(H, 6, 5)
-		H.blur_eyes(4)
+		H.adjust_eye_blur(4 SECONDS)
 		H.playsound_local(get_turf(H), 'sound/foley/tinnitus.ogg', 75, FALSE)
 
 	flick("hwancha_fire", src)
@@ -631,7 +631,7 @@
 	if(launch_z && launch_z != z) //In case the user selected a different Z-level of the surface.
 		final_target = locate(final_target.x, final_target.y, launch_z)
 
-		while(final_target && !istype(final_target, /turf/open/transparent/openspace)) // Check for openspaces. If there is any, it will fall down.
+		while(final_target && !istype(final_target, /turf/open/openspace)) // Check for openspaces. If there is any, it will fall down.
 			var/turf/above = get_step_multiz(final_target, UP)
 			if(!above) break
 			final_target = above //The only way to actually shoot 'undeground', is to actually have somewhere for it to fall upon.
@@ -932,7 +932,7 @@
 		if(!T)
 			continue
 		var/turf/fall_turf = T
-		while(istype(fall_turf, /turf/open/transparent/openspace) || fall_turf.z > 1)
+		while(istype(fall_turf, /turf/open/openspace) || fall_turf.z > 1)
 			var/next_z = fall_turf.z - 1
 			if(next_z <= 0)
 				break
@@ -940,7 +940,7 @@
 			if(!next || fall_turf.density)
 				break
 			fall_turf = next
-			if(!istype(fall_turf, /turf/open/transparent/openspace))
+			if(!istype(fall_turf, /turf/open/openspace))
 				break
 
 		if(!fall_turf || fall_turf.density)

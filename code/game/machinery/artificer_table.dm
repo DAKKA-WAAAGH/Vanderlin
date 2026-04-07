@@ -62,7 +62,7 @@
 		var/result = SEND_SIGNAL(buckled, COMSIG_AUGMENT_INSTALL, kit.contained_augment, user)
 		if(result & COMPONENT_AUGMENT_SUCCESS)
 			qdel(kit)
-			user.mind?.add_sleep_experience(/datum/skill/craft/engineering, user.STAINT * 2)
+			user.adjust_experience(/datum/skill/craft/engineering, user.STAINT * 2)
 			playsound(src, 'sound/effects/sparks1.ogg', 75, TRUE)
 		return
 
@@ -78,7 +78,7 @@
 
 		if(do_after(user, 5 SECONDS, target = buckled))
 			SEND_SIGNAL(buckled, COMSIG_AUGMENT_REPAIR, repair_amount, user)
-			user.mind?.add_sleep_experience(/datum/skill/craft/engineering, user.STAINT)
+			user.adjust_experience(/datum/skill/craft/engineering, user.STAINT)
 		return
 
 	if(istype(I, /obj/item/natural/wood/plank) || istype(I, /obj/item/ingot))
@@ -109,7 +109,7 @@
 				new_atom.update_integrity(new_atom.max_integrity, update_atom = FALSE)
 			var/obj/item/created_item_instance = material.artrecipe.created_item
 			user.visible_message(span_info("[user] creates \a [created_item_instance.name]."))
-			user.mind.add_sleep_experience(material.artrecipe.appro_skill, (user.STAINT * (material.artrecipe.craftdiff + 1)/2) * user.get_learning_boon(material.artrecipe.appro_skill)) //may need to be adjusted
+			user.adjust_experience(material.artrecipe.appro_skill, (user.STAINT * (material.artrecipe.craftdiff + 1)/2) * user.get_learning_boon(material.artrecipe.appro_skill)) //may need to be adjusted
 			qdel(material)
 			material = null
 			update_appearance(UPDATE_OVERLAYS)
@@ -118,7 +118,7 @@
 			if(prob(max(0, 25 - user.goodluck(2) - (skill * 2))))
 				to_chat(user, span_warning("Ah yes, my incompetence bears fruit."))
 				playsound(src,'sound/combat/hits/onwood/destroyfurniture.ogg', 100, FALSE)
-				user.mind.add_sleep_experience(material.artrecipe.appro_skill, (user.STAINT * material.artrecipe.craftdiff * 0.25)) // Getting exp for failing
+				user.adjust_experience(material.artrecipe.appro_skill, user.STAINT * material.artrecipe.craftdiff * 0.25) // Getting exp for failing
 				qdel(material)
 				material = null
 				return

@@ -71,7 +71,7 @@
 		return
 
 	var/mob/living/carbon/human/H = placed_mob
-	if(!istype(H.dna?.species, /datum/species/automaton))
+	if(!istype(H.dna?.species, /datum/species/vessel)) //Stonekeep Edit: We use Haniwas. Replace the system later with 'Heat system'
 		visible_message(span_warning("[src] ejects [H] - incompatible lifeform!"))
 		remove_placed_mob()
 		return
@@ -142,7 +142,7 @@
 		to_chat(user, span_warning("[automaton] cannot use [src]!"))
 		return FALSE
 
-	if(!istype(automaton.dna?.species, /datum/species/automaton))
+	if(!istype(automaton.dna?.species, /datum/species/vessel)) //Stonekeep Edit: We use Haniwas. Replace the system later with 'Heat system'
 		to_chat(user, span_warning("[automaton] is not an automaton!"))
 		return FALSE
 
@@ -228,7 +228,7 @@
 	if(!ishuman(automaton))
 		return
 
-	if(!istype(automaton.dna?.species, /datum/species/automaton))
+	if(!istype(automaton.dna?.species, /datum/species/vessel)) //Stonekeep Edit: We use Haniwas. Replace the system later with 'Heat system'
 		to_chat(user, span_warning("[automaton] is not an automaton!"))
 		return
 

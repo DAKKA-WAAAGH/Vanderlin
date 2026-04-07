@@ -300,8 +300,8 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/Lore_Primer.txt"))
 			return "[jobtitle] requires more faith."
 		if(JOB_UNAVAILABLE_QUALITY)
 			return "[jobtitle] requires higher player quality."
-		if(JOB_UNAVAILABLE_DONATOR)
-			return "You need to be a donator to have play as [jobtitle]."
+		/*if(JOB_UNAVAILABLE_DONATOR) Stonekeep Edit: Patreon Bullshit. Kaizoku will NEVER follow the same steps.
+			return "You need to be a donator to have play as [jobtitle]."*/
 		if(JOB_UNAVAILABLE_ACCOUNTAGE)
 			return "Your account is not old enough for [jobtitle]."
 		if(JOB_UNAVAILABLE_LASTCLASS)
@@ -381,8 +381,8 @@ GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/Lore_Primer.txt"))
 		return JOB_UNAVAILABLE_DEITY */
 
 	#ifdef USES_PQ
-	if(!isnull(job.min_pq) && (get_playerquality(ckey) < job.min_pq))
-		return JOB_UNAVAILABLE_QUALITY
+	//if(!isnull(job.min_pq) && (get_playerquality(ckey) < job.min_pq)) //Vanderlin removed PQ. Reimplement this later.
+		//return JOB_UNAVAILABLE_QUALITY
 	#endif
 	if(length(job.allowed_sexes) && !(client.prefs.gender in job.allowed_sexes))
 		return JOB_UNAVAILABLE_SEX

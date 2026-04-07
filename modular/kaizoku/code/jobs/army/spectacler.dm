@@ -13,7 +13,7 @@
 	faction = FACTION_TOWN
 	total_positions = 1
 	spawn_positions = 1
-	min_pq = 0
+	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 
 	allowed_sexes = list(MALE, FEMALE)
 	//Every single race can be a Gladiator. If you can fight GOOD, you can join, you little social pariah.

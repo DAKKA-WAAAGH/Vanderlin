@@ -59,7 +59,7 @@
 		QDEL_IN(P, 150)
 
 		var/turf/open/floor/above_tile
-		if(above && istype(above, /turf/open/transparent/openspace))
+		if(above && istype(above, /turf/open/openspace))
 			above_tile = new /turf/open/floor/eyeofstorm(above)
 			above_tile.name = "eye of the storm"
 			above_tile.desc = "The fierce winds keep you in place, somehow. But its force weakens."
@@ -68,7 +68,7 @@
 			above_tile.overlays += image('modular/kaizoku/icons/misc/spells.dmi', "eye")
 			spawn(150)
 				if(above_tile && above_tile.loc)
-					above_tile.ChangeTurf(/turf/open/transparent/openspace)
+					above_tile.ChangeTurf(/turf/open/openspace)
 
 		for(var/mob/living/M in T.contents)
 			if(ceiling && !istransparentturf(ceiling))

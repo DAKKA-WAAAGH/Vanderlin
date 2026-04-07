@@ -397,7 +397,6 @@
 	icon_dead = null
 	color = "#a58ba2"
 
-
 /mob/living/simple_animal/hostile/insanegnome
 	name = "insane gnome"
 	desc = "Trapped alive for decades in stone is not good for your mental balance."
@@ -446,12 +445,19 @@
 
 /mob/living/simple_animal/hostile/insanegnome/death(gibbed)
 	playsound(src.loc, 'modular/stonekeep/sound/vo/mobs/gnome/scream.ogg', 50)
-	..()
-	var/turf/deathspot = get_turf(src)
-	new  /obj/effect/decal/cleanable/ash(deathspot)
+	. = ..()
 	update_icon()
-	sleep(20)
-	qdel(src)
+	call_later(CALLBACK(src, /mob/living/simple_animal/hostile/insanegnome/proc/finish_death), 20)
+
+
+/mob/living/simple_animal/hostile/insanegnome/proc/finish_death()
+	if(QDELETED(src))
+		return
+	var/turf/deathspot = get_turf(src)
+	if(deathspot)
+		new /obj/effect/decal/cleanable/ash(deathspot)
+	if(!QDELETED(src))
+		qdel(src)
 
 /mob/living/simple_animal/hostile/insanegnome/taunted(mob/user)
 	. = ..()

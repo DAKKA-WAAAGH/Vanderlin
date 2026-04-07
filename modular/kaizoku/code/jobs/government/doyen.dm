@@ -3,7 +3,7 @@
 	f_title = "Doyenne Champion"
 	tutorial = "More than six centuries has passed yet you still feel the blood of the unholy. \
 	You've outlived your comrades, and the memories of watching the skies bleed asunder taught \
-	you what slaughter really means, always on edge, high alert- everything that reenacts \
+	you what slaughter really means, always on edge, everything that reenacts \
 	the memories triggers an overdrive of your senses all over again. \
 	There is no one better at killing demons, ... \
 	but the memories... there is something... out there... coming for you. \
@@ -14,7 +14,7 @@
 	faction = FACTION_TOWN
 	total_positions = 1
 	spawn_positions = 1
-	min_pq = 0
+	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	outfit = /datum/outfit/kaizoku/doyen
 
 	spells = list(/datum/action/cooldown/spell/undirected/list_target/convert_role/militia)

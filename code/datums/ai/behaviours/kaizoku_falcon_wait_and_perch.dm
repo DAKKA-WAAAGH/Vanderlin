@@ -1,5 +1,3 @@
-#define BB_FALCON_WANT_PERCH "falcon_want_perch"
-
 /datum/ai_behavior/falcon_wait_and_perch
 	behavior_flags = AI_BEHAVIOR_REQUIRE_MOVEMENT
 

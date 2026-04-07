@@ -421,17 +421,6 @@
 	if(limb)
 		limb.attach_limb(src, TRUE)
 		return TRUE
-		return 0
-	L = newBodyPart(limb_zone, 0, 0)
-	if(L)
-		if(!noheal)
-			L.brute_dam = 0
-			L.burn_dam = 0
-			L.brutestate = 0
-			L.burnstate = 0
-
-		L.attach_limb(src, 1)
-		return 1
 
  //Stonekeep Edit - Groin introdution - Adapt this better
 /obj/item/bodypart/groin/dismember(dam_type = BRUTE, bclass = BCLASS_CUT, mob/living/user, zone_precise = src.body_zone)
@@ -444,5 +433,3 @@
 		if(r_leg && r_leg.dismemberable)
 			r_leg.drop_limb()
 
-/obj/item/bodypart/groin/drop_limb(special)
-	. = ..()

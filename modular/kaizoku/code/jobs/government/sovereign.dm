@@ -15,7 +15,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	display_order = KZ_SOVEREIGN
 	total_positions = 0
 	spawn_positions = 1
-	min_pq = 0
+	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	allowed_races = RACES_FIRSTCLASS_PLAYERS
 	outfit = /datum/outfit/kaizoku/sovereign
 	bypass_lastclass = TRUE
@@ -53,8 +53,6 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		ruler_title = "[SSmapping.config.monarch_title_f]"
 	to_chat(world, "<b>[span_notice(span_big("[H.real_name] is [ruler_title] of [SSmapping.config.map_name]."))]</b>")
 	to_chat(world, "<br>")
-	if(GLOB.keep_doors.len > 0)
-		addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(know_keep_door_password), H), 7 SECONDS)
 
 /datum/outfit/kaizoku/sovereign/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -115,7 +113,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	ADD_TRAIT(H, TRAIT_NOSEGRAB, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
-	ADD_TRAIT(H, TRAIT_KNOWKEEPPLANS, TRAIT_GENERIC)
+	ADD_TRAIT(H, TRAIT_KNOW_KEEP_DOORS, TRAIT_GENERIC)
 
 /datum/job/exlord //just used to change the lords title
 	title = "Ex-Sovereign"

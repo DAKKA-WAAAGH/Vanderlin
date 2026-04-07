@@ -30,6 +30,7 @@
 	desc = "Through some grand misfortune, or heroic sacrifice - you have given up your link to Psydon, and with it - your soul. A putrid, horrid thing, you consign yourself to an eternity of nil after death. EXPECT A DIFFICULT, MECHANICALLY UNFAIR EXPERIENCE. (Rakshari, Hollowkin and Kobolds cannot take this - they already have no lux.)"
 	point_value = 5
 	random_exempt = TRUE
+	/* Stonekeep Edit: None of these races exists/are playable on Stonekeep.
 	blocked_species = list(
 		/datum/species/kobold,
 		/datum/species/demihuman,
@@ -38,6 +39,7 @@
 		/datum/species/goblin,
 		/datum/species/orc,
 	)
+	*/
 
 /datum/quirk/vice/luxless/on_spawn()
 	if(!ishuman(owner))
@@ -146,17 +148,17 @@
 	customization_label = "Choose Fear"
 	customization_options = list(
 		/datum/species/goblin,
-		/datum/species/werewolf,
+		/datum/species/werewolf, //Stonekeep Edit: We don't have these.
 		/datum/species/orc,
-		/datum/species/halforc,
-		/datum/species/halfling,
-		/datum/species/demihuman,
+		///datum/species/halforc, //Stonekeep Edit: We don't have these.
+		// /datum/species/halfling, //Stonekeep Edit: We don't have these.
+		// /datum/species/demihuman, //Stonekeep Edit: We don't have these.
 		/datum/species/dwarf,
 		/datum/species/elf,
-		/datum/species/triton,
-		/datum/species/rakshari,
-		/datum/species/kobold,
-		/datum/oratorium,
+		// /datum/species/triton, //Stonekeep Edit: We don't have these.
+		// /datum/species/rakshari, //Stonekeep Edit: We don't have these.
+		// /datum/species/kobold, //Stonekeep Edit: We don't have these.
+		// /datum/oratorium, //Stonekeep Edit: No. They don't exist normally. ANTAG role.
 		"Nobles",
 	)
 

@@ -18,7 +18,7 @@
 	whitelist_req = FALSE
 	outfit = /datum/outfit/job/kaizoku/bachelor
 	give_bank_account = 30 //Way above average pay, paid by the Government - not by the clan members.
-	min_pq = 0
+	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	///advclass_cat_rolls = list(CTAG_BACHELOR = 20)	//Content for later.
 	cmode_music = 'sound/music/cmode/nobility/CombatKnight.ogg'
 

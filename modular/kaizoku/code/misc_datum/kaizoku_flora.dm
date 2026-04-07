@@ -56,7 +56,7 @@
 	var/obj/structure/flora/hollowtree/prev = src
 	for(var/i in 1 to 2)
 		var/turf/T = get_step_multiz(prev, UP)
-		if(!istype(T, /turf/open/transparent/openspace))
+		if(!istype(T, /turf/open/openspace))
 			break
 		var/obj/structure/flora/hollowtree/new_trunk = new /obj/structure/flora/hollowtree(T)
 		new_trunk.dir = dir
@@ -81,7 +81,7 @@
 				continue
 
 			var/turf/T = locate(src.x + dx, src.y + dy, src.z)
-			if(!istype(T, /turf/open/transparent/openspace))
+			if(!istype(T, /turf/open/openspace))
 				continue
 			if(locate(/obj/structure) in T)
 				continue

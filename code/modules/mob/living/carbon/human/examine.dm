@@ -1,23 +1,32 @@
 /mob/living/carbon/human/proc/on_examine_face(mob/living/carbon/human/user, self_inspect = FALSE)
 	if(!istype(user))
 		return
-	if(!HAS_TRAIT(src, TRAIT_TOLERANT))
-		// if(!isdarkelf(user) && isdarkelf(src)) //Stonekeep Edit
-			// user.add_stress(/datum/stress_event/delf) //Stonekeep Edit
+
+	// Intolerant
+	if(!self_inspect && !HAS_TRAIT(user, TRAIT_TOLERANT))
+		/*
+		Stonekeep Edit - Begin
+		if(!isdarkelf(user) && isdarkelf(src))
+			user.add_stress(/datum/stress_event/delf)
+
 		if(!istiefling(user) && istiefling(src))
 			user.add_stress(/datum/stress_event/tieb)
-		// if(!ishalforc(user) && ishalforc(src)) //Stonekeep Edit
-			// user.add_stress(/datum/stress_event/horc) //Stonekeep Edit
-		if(user.has_flaw(/datum/charflaw/paranoid) && (STASTR - user.STASTR) > 1)
-			user.add_stress(/datum/stress_event/parastr)
+
+		if(!ishalforc(user) && ishalforc(src))
+			user.add_stress(/datum/stress_event/horc)
+		Stonekeep Edit - End
+		*/
+
 		if(HAS_TRAIT(src, TRAIT_FOREIGNER) && !HAS_TRAIT(user, TRAIT_FOREIGNER))
 			if(user.has_quirk(/datum/quirk/vice/paranoid))
 				user.add_stress(/datum/stress_event/paraforeigner)
 			else
 				user.add_stress(/datum/stress_event/foreigner)
-
+		/*
+		Stonekeep Edit - Begin
 		if(HAS_TRAIT(src, TRAIT_FISHFACE) && !HAS_TRAIT(user, TRAIT_FISHFACE))
 			user.add_stress(/datum/stress_event/fishface)
+
 
 	if(HAS_TRAIT(src, TRAIT_FISHFACE))
 		if(!self_inspect && HAS_TRAIT(user, TRAIT_FISHFACE))
@@ -26,7 +35,8 @@
 			user.add_stress(/datum/stress_event/self_fishface)
 	else if(!self_inspect && user.age == AGE_CHILD)
 		user.add_stress(/datum/stress_event/fish_monster)
-
+				Stonekeep Edit - End
+		*/
 	if(HAS_TRAIT(src, TRAIT_BEAUTIFUL))
 		if(self_inspect)
 			user.add_stress(/datum/stress_event/beautiful_self)
@@ -38,19 +48,13 @@
 			user.add_stress(/datum/stress_event/ugly_self)
 		else
 			user.add_stress(/datum/stress_event/ugly)
-	if(HAS_TRAIT(src, TRAIT_FISHFACE))
-		if(HAS_TRAIT(user, TRAIT_FISHFACE))
-			if(user == src)
-				user.add_stress(/datum/stress_event/self_fishface)
-			else
-				user.add_stress(/datum/stress_event/fellow_fishface)
-		else
-			// if(user.age == BLOOMING_ADULT) //Stonekeep Edit: Young Adult
-				// user.add_stress(/datum/stress_event/fish_monster)
 
-			user.add_stress(/datum/stress_event/fishface)
-	if(HAS_TRAIT(src, TRAIT_OLDPARTY) && HAS_TRAIT(user, TRAIT_OLDPARTY) && user != src)
-		user.add_stress(/datum/stress_event/saw_old_party)
+	if(!self_inspect)
+		if(user.has_quirk(/datum/quirk/vice/paranoid) && (STASTR - user.STASTR) > 1)
+			user.add_stress(/datum/stress_event/parastr)
+
+		if(HAS_TRAIT(src, TRAIT_OLDPARTY) && HAS_TRAIT(user, TRAIT_OLDPARTY))
+			user.add_stress(/datum/stress_event/saw_old_party)
 
 /mob/living/carbon/human/examine(mob/user)
 	var/self_inspect = (user == src)
@@ -83,11 +87,21 @@
 	if(sun_disguise_comp?.disguised)
 		race_name = "Humen" // Stonekeep Edit - End
 
-	var/m1 = "[t_He] [t_is]"
-	var/m2 = "[t_his]"
-	var/m3 = "[t_He] [t_has]"
-	. = list()
-	if(user == src)
+	var/ignore_pronouns = (obscure_name || !person_known)
+	var/t_He = p_they(TRUE, temp_gender, ignore_pronouns)
+	var/t_his = p_their(FALSE, temp_gender, ignore_pronouns)
+	var/t_has = p_have(temp_gender, ignore_pronouns)
+	var/t_is  = p_are(temp_gender, ignore_pronouns)
+
+	var/m1
+	var/m2
+	var/m3
+
+	if(!self_inspect)
+		m1 = "[t_He] [t_is]"
+		m2 = "[t_his]"
+		m3 = "[t_He] [t_has]"
+	else
 		m1 = "I am"
 		m2 = "my"
 		m3 = "I have"
@@ -141,25 +155,7 @@
 					if(src.skin_tone == skin_tones[tone])
 						skin_tone_seen = lowertext(tone)
 						break
-
-				// Check if sunscorned with disguise and map human hex back to heritage name
-				if(!skin_tone_seen || skin_tone_seen == "incomprehensible")
-					var/datum/component/sunscorned_disguise/disguise = src.GetComponent(/datum/component/sunscorned_disguise)
-					if(disguise)
-						var/heritage = disguise.get_heritage_from_skin(src.skin_tone)
-						if(heritage)
-							skin_tone_seen = lowertext(heritage)
-
-			var/slop_lore_string = "."
-			if(ishumannorthern(user))
-				var/mob/living/carbon/human/racist = user
-				var/list/user_skin_tones = racist.dna.species.get_skin_list()
-//				var/user_skin_tone_seen = "incomprehensible"	gives unused warning now, sick of seeing it
-				for(var/tone in user_skin_tones)
-					if(racist.skin_tone == user_skin_tones[tone])
-//						user_skin_tone_seen = lowertext(tone)	gives unused warning now, sick of seeing it
-						break
-			. += "<span class='info'>[capitalize(m2)] [skin_tone_wording] is [skin_tone_seen][slop_lore_string]</span>"
+			. += "<span class='info'>[capitalize(m2)] [skin_tone_wording] is [skin_tone_seen].</span>"
 
 		if(ishuman(user))
 			var/mob/living/carbon/human/stranger = user
@@ -200,28 +196,15 @@
 					if(their_god)
 						. += (user_side == mob_side) ? span_notice("Fellow [their_god.name] supporter!") : span_userdanger("Vile [their_god.name] supporter!")
 
-		if(HAS_TRAIT(src, TRAIT_FOREIGNER) && !HAS_TRAIT(user, TRAIT_FOREIGNER))
-			. += span_phobia("A foreigner...")
-
-		if(has_flaw(/datum/charflaw/addiction/alcoholic) && HAS_TRAIT(user, TRAIT_RECOGNIZE_ADDICTS))
-			. += span_userdanger("ALCOHOLIC!")
-
-		if(has_flaw(/datum/charflaw/addiction/junkie) && HAS_TRAIT(user, TRAIT_RECOGNIZE_ADDICTS))
-			. += span_userdanger("JUNKIE!")
-
-		if(HAS_TRAIT(src, TRAIT_FISHFACE) && HAS_TRAIT(user, TRAIT_FISHFACE))
-			if(user == src)
-				. += span_green("I don't look that bad, I just look different to other species.")
-			else
-				. += span_green("A fellow triton")
-
-		if(ishuman(user) && HAS_TRAIT(src, TRAIT_FISHFACE) && !HAS_TRAIT(user, TRAIT_FISHFACE))
-			// var/mob/living/carbon/human/H = user
-			// if(H.age == BLOOMING_ADULT) //Stonekeep Edit: Young Adult
-				// . += span_userdanger("IT'S A HORRIBLE MONSTER!!!")
-				// user.emote("scream")
-			. += span_necrosis("That fish is ugly!")
-
+			/* // Stonekeep edit - We don't have Tritons nor Children. Remove all.
+			if(ishuman(user) && HAS_TRAIT(src, TRAIT_FISHFACE) && !HAS_TRAIT(user, TRAIT_FISHFACE))
+				var/mob/living/carbon/human/H = user
+				if(H.age == AGE_CHILD)
+					. += span_userdanger("IT'S A HORRIBLE MONSTER!!!")
+					user.emote("scream")
+				else
+					. += span_necrosis("That fish is ugly!")
+			*/
 			if(HAS_TRAIT(src, TRAIT_FOREIGNER) && !HAS_TRAIT(user, TRAIT_FOREIGNER))
 				. += span_phobia("A foreigner...")
 
@@ -231,14 +214,9 @@
 			if(has_quirk(/datum/quirk/vice/junkie) && HAS_TRAIT(user, TRAIT_RECOGNIZE_ADDICTS))
 				. += span_userdanger("JUNKIE!")
 
-		if(mind && mind.special_role == "Tiefling Herald")	// STONEKEEP EDIT
-			. += "<span class='userdanger'>Has a evil aura!</span>"
+			if(mind && mind.special_role == "Tiefling Herald")	// STONEKEEP EDIT
+				. += "<span class='userdanger'>Has a evil aura!</span>"
 
-		var/list/known_frumentarii = user.mind?.cached_frumentarii
-		if(name in known_frumentarii)
-			. += span_greentext("<b>[m1] an agent of the court!</b>")
-
-		if(user != src)
 			if(HAS_TRAIT(src, TRAIT_OLDPARTY) && HAS_TRAIT(user, TRAIT_OLDPARTY))
 				. += span_green("Ahh... my old friend!")
 
@@ -246,35 +224,28 @@
 				. += span_green("A member of the Thieves' Guild.")
 
 			if((HAS_TRAIT(src, TRAIT_CABAL) && HAS_TRAIT(user, TRAIT_CABAL)) || (src.patron?.type == /datum/patron/inhumen/zizo && HAS_TRAIT(user, TRAIT_CABAL)))
-				. += span_purple("A fellow wanderer on the path of ZIZO.")	// STONEKEEP EDIT
+				. += span_purple("A fellow seeker of Her ascension.")
 
-			var/inquisition_text =get_inquisition_text(user)
-			if(inquisition_text)
-				. +=span_notice(inquisition_text)
-
-		if(HAS_TRAIT(src, TRAIT_LEPROSY))
-			. += span_necrosis("A LEPER...")
-
-		if(HAS_TRAIT(user, TRAIT_ROYALSERVANT))
-			if(length(culinary_preferences) && family_datum == SSfamilytree.ruling_family)
-				var/obj/item/reagent_containers/food/snacks/fav_food = src.culinary_preferences[CULINARY_FAVOURITE_FOOD]
-				var/datum/reagent/consumable/fav_drink = src.culinary_preferences[CULINARY_FAVOURITE_DRINK]
-				if(fav_food)
-					if(fav_drink)
-						. += span_notice("Their favourites are [fav_food.name] and [fav_drink.name].")
-					else
-						. += span_notice("Their favourite is [fav_food.name].")
-				else if(fav_drink)
-					. += span_notice("Their favourite is [fav_drink.name].")
-				var/obj/item/reagent_containers/food/snacks/hated_food = src.culinary_preferences[CULINARY_HATED_FOOD]
-				var/datum/reagent/consumable/hated_drink = src.culinary_preferences[CULINARY_HATED_DRINK]
-				if(hated_food)
-					if(hated_drink)
-						. += span_notice("They hate [hated_food.name] and [hated_drink.name].")
-					else
-						. += span_notice("They hate [hated_food.name].")
-				else if(hated_drink)
-					. += span_notice("They hate [hated_drink.name].")
+			if(HAS_TRAIT(user, TRAIT_ROYALSERVANT))
+				if(length(culinary_preferences) && family_datum == SSfamilytree.ruling_family)
+					var/obj/item/reagent_containers/food/snacks/fav_food = src.culinary_preferences[CULINARY_FAVOURITE_FOOD]
+					var/datum/reagent/consumable/fav_drink = src.culinary_preferences[CULINARY_FAVOURITE_DRINK]
+					if(fav_food)
+						if(fav_drink)
+							. += span_notice("Their favourites are [fav_food.name] and [fav_drink.name].")
+						else
+							. += span_notice("Their favourite is [fav_food.name].")
+					else if(fav_drink)
+						. += span_notice("Their favourite is [fav_drink.name].")
+					var/obj/item/reagent_containers/food/snacks/hated_food = src.culinary_preferences[CULINARY_HATED_FOOD]
+					var/datum/reagent/consumable/hated_drink = src.culinary_preferences[CULINARY_HATED_DRINK]
+					if(hated_food)
+						if(hated_drink)
+							. += span_notice("They hate [hated_food.name] and [hated_drink.name].")
+						else
+							. += span_notice("They hate [hated_food.name].")
+					else if(hated_drink)
+						. += span_notice("They hate [hated_drink.name].")
 
 			if(HAS_TRAIT(src, TRAIT_LEPROSY))
 				. += span_necrosis("A LEPER...")
@@ -691,9 +662,11 @@
 				var/N = M.owner?.name
 				. += span_notice("Inscryption[N ? " by [N]'s " : ""][W ? "Wonder #[W]" : ""]: [K ? K : ""]")
 
+	/* Stonekeep Edit - Destruction of Patreon
 	if(!obscure_name) // Miniature headshot on examine
 		if(headshot_link && client?.is_donator())
 			. += "<img src=[headshot_link] width=100 height=100/>"
+	*/
 
 	if(Adjacent(user))
 		if(isobserver(user))
@@ -727,9 +700,10 @@
 			if(liver.has_quirk(/datum/quirk/vice/hunted))
 				user.add_stress(/datum/stress_event/hunted)
 
-	//Stonekeep Edit
-	/*if(!obscure_name && (flavortext || ((headshot_link || ooc_extra_link) && client?.patreon?.has_access(ACCESS_ASSISTANT_RANK)))) // only show flavor text if there is a flavor text and we show headshot
-		. += "<a href='?src=[REF(src)];task=view_flavor_text;'>Examine Closer</a>"*/
+	/* Stonekeep Edit, removal of Donator stuff. May turn this into 'normal' content for all players.
+	if(!obscure_name && (flavortext || ((headshot_link || ooc_extra_link) && client?.is_donator()))) // only show flavor text if there is a flavor text and we show headshot
+		. += "<a href='?src=[REF(src)];task=view_flavor_text;'>Examine Closer</a>"
+	*/
 
 	var/trait_exam = common_trait_examine()
 	if(!isnull(trait_exam))

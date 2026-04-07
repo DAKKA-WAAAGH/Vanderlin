@@ -12,7 +12,8 @@
 	shared_occurence_type = SHARED_MINOR_THREAT
 	minor_roleset = TRUE
 
-	needed_job = list(
+	needed_job = list( //Stonekeep Todo: Implement kaizoku roles here.
+	/*
 		/datum/job/consort,
 		/datum/job/hand,
 		/datum/job/prince,
@@ -22,10 +23,13 @@
 		/datum/job/courtphys,
 		/datum/job/archivist,
 		/datum/job/minor_noble,
+	*/
 	)
 
 	restricted_roles = list(
+	/*
 		/datum/job/lord,
+	*/
 	)
 
 	base_antags = 1
@@ -57,6 +61,7 @@
 	. = ..()
 
 	var/static/list/helping = list(
+	/* Stonekeep Edit, replace this with Kaizoku version later.
 		/datum/job/consort,
 		/datum/job/hand,
 		/datum/job/prince,
@@ -72,6 +77,7 @@
 		/datum/job/gatemaster,
 		/datum/job/butler,
 		/datum/job/servant,
+	*/
 	)
 	var/list/possible_helpers = list()
 

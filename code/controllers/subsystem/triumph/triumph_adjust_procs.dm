@@ -20,9 +20,9 @@
 	else
 		key = key_holder:key
 
-	// donator triumph increase
-	if((key_is_donator(key) || ckey_is_donator(ckey)) && !override_bonus && (amount > 0))
-		amount *= 1.5
+	// donator triumph increase // Stonekeep Edit: Patreon Bullshit. Kaizoku will NEVER follow the same steps.
+	//if((key_is_donator(key) || ckey_is_donator(ckey)) && !override_bonus && (amount > 0))
+		// amount *= 1.5
 
 	ckey = ckey ? ckey : ckey(key)
 

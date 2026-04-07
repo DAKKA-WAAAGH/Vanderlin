@@ -17,7 +17,7 @@
 
 	bypass_lastclass = TRUE
 	outfit = /datum/outfit/job/kaizoku/mastersohei
-	min_pq = 0
+	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	selection_color = "#c2a45d"
 	cmode_music = 'modular/kaizoku/sound/combat/combat_emperor.ogg'
 	// spells = list(
@@ -346,6 +346,7 @@
 					held_confession.false_confession = TRUE
 					to_chat(interrogator, span_danger("Something seems off about this confession..."))
 
+
 				switch(antag_type)
 					if(/datum/antagonist/bandit)
 						held_confession.bad_type = "AN OUTLAW OF THE THIEF-LORD"
@@ -386,7 +387,7 @@
 					if(/datum/antagonist/vampire/lord)
 						held_confession.bad_type = "THE BLOOD-LORD OF VANDERLIN"
 						held_confession.antag = initial(antag_type:name)
-					if(/datum/antagonist/vampire/lesser)
+					if(/datum/antagonist/vampire/lords_spawn)
 						held_confession.bad_type = "AN UNDERLING OF THE BLOOD-LORD"
 						held_confession.antag = initial(antag_type:name)
 					if(/datum/patron/inhumen/graggar)
@@ -413,9 +414,11 @@
 					if(/datum/patron/godless/galadros)
 						held_confession.bad_type = "A WORSHIPPER OF THE DRACONIC"
 						held_confession.antag = "worshiper of the false god, Galadros"
+					/* Stonekeep Edit - We don't have Baotha on Stonekeep lore.
 					if(/datum/patron/inhumen/baotha)
 						held_confession.bad_type = "A FOLLOWER OF THE REMORSELESS RUINER"
 						held_confession.antag = "worshiper of " + initial(antag_type:name)
+					*/
 					else
 						return
 

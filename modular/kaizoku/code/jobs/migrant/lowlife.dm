@@ -12,7 +12,7 @@
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
 	total_positions = 15
 	spawn_positions = 15
-	min_pq = -100
+	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	bypass_lastclass = TRUE
 	banned_leprosy = FALSE
 	allowed_races = RACES_PLAYER_ALL

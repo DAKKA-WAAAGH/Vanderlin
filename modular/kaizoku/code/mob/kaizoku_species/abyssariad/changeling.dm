@@ -4,6 +4,19 @@
 	*				*
 	*===============*/
 
+// Stonekeep ToDo: Changeling perk
+// Inquisite mind - "Changelings are driven by ancestral cognition that aids knowledge
+// and muscular memory. They adquire experience faster than usual."
+// TRAIT_INQUISITE_MIND = span_info("I am quick to perceive patterns and memorize details,
+// so I quickly learn new skills."),
+
+// Purifying Maw - "Changelings are built to consume corruption from corpses of evil
+// entities, but makes it impossible to digest grain and vegetables."
+// them unable to eat vegetables and grain. But they can easily eat corpses of evil."
+// 	TRAIT_CHANGELING_METABOLISM = span_info("My metabolism breaks down demonic impurity.
+// Now, I crave flesh rather than what is green."),
+
+
 //	( + Hard Bite perk )
 //	( - 'Bite' intention always set a warning state. )
 

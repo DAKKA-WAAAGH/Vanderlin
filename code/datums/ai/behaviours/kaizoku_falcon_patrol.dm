@@ -1,6 +1,3 @@
-#define BB_SUMMONER "summoner"
-#define BB_PATROLLING "patrolling"
-
 /datum/ai_behavior/falcon_patrol
 	behavior_flags = AI_BEHAVIOR_REQUIRE_MOVEMENT | AI_BEHAVIOR_MOVE_AND_PERFORM
 

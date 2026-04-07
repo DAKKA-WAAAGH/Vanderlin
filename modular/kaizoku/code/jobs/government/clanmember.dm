@@ -14,7 +14,7 @@
 	spells = list(
 		/datum/action/cooldown/spell/undirected/list_target/grant_title,
 	)
-	min_pq = 0
+	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	bypass_lastclass = TRUE
 
 	allowed_races = RACES_FIRSTCLASS_PLAYERS
@@ -23,6 +23,14 @@
 	advclass_cat_rolls = list(CTAG_HAND = 20)
 	give_bank_account = 120
 	noble_income = 22
+	job_bitflag = BITFLAG_ROYALTY
+
+	mind_traits = list(
+		TRAIT_KNOW_KEEP_DOORS
+	)
+	traits = list(
+		TRAIT_NOBLE
+	)
 	job_bitflag = BITFLAG_ROYALTY
 
 /datum/outfit/kaizoku/clanmember
@@ -34,9 +42,6 @@
 	var/mob/living/carbon/human/H = spawned
 	addtimer(CALLBACK(SSfamilytree, TYPE_PROC_REF(/datum/controller/subsystem/familytree, AddRoyal), H, FAMILY_OMMER), 5 SECONDS)
 
-	if(GLOB.keep_doors.len > 0)
-		addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(know_keep_door_password), H), 5 SECONDS)
-	ADD_TRAIT(H, TRAIT_KNOWKEEPPLANS, TRAIT_GENERIC)
 	addtimer(CALLBACK(src, PROC_REF(know_agents), H), 5 SECONDS)
 
 /datum/job/kaizoku/clanmember/proc/know_agents(mob/living/carbon/human/H)
@@ -55,8 +60,10 @@
 	Your ceremonial blade can subdue your own warriors when they disrespect you, and your voice strengthens morale."
 	outfit = /datum/outfit/kaizoku/clanmember/companion
 
-	category_tags = list(CTAG_HAND)
+	//var/list/category_tags = list(CTAG_HAND)
 	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
+	total_positions = 2
+	spawn_positions = 2
 
 /datum/outfit/kaizoku/clanmember/companion/pre_equip(mob/living/carbon/human/H)
 	shirt = /obj/item/clothing/shirt/undershirt/fancy
@@ -96,8 +103,10 @@
 	you already know. You can hire agents with your Metsuke scroll."
 	outfit = /datum/outfit/kaizoku/clanmember/spymaster
 
-	category_tags = list(CTAG_HAND)
+	//var/list/category_tags = list(CTAG_HAND)
 	cmode_music = 'sound/music/cmode/nobility/CombatSpymaster.ogg'
+	total_positions = 2
+	spawn_positions = 2
 
 //Spymaster start. More similar to the rogue adventurer - loses heavy armor and sword skills for more sneaky stuff.
 /datum/outfit/kaizoku/clanmember/spymaster/pre_equip(mob/living/carbon/human/H)
@@ -143,7 +152,7 @@
 	with discipline and training. Your ambition provides the potential to become a true warrior, \
 	but there is plenty to endure, be it from bloodshed, your teachers or even fate itself."
 	outfit = /datum/outfit/heir/daring
-	category_tags = list(CTAG_HEIR)
+	//var/list/category_tags = list(CTAG_HEIR)
 
 /datum/outfit/heir/daring/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -185,7 +194,9 @@
 	you have nothing to prove, as living a good life is enough until you are married away to another clan \
 	to ensure good relations. At least a life without stress granted grace and knowledge of arts."
 	outfit = /datum/outfit/kaizoku/clanmember/courtling
-	category_tags = list(CTAG_HEIR)
+	//var/list/category_tags = list(CTAG_HEIR)
+	total_positions = 2
+	spawn_positions = 2
 
 /datum/outfit/kaizoku/clanmember/courtling/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -232,9 +243,11 @@
 	and worldly trade, process debt, documents, regulations, payments, loans and ensure civilian rights. \
 	Your very stamp is what differs between someone being confiscated, jailed, or walk armed on town."
 	outfit = /datum/outfit/kaizoku/clanmember/broker
-	category_tags = list(CTAG_HAND)
+	//var/list/category_tags = list(CTAG_HAND)
 	cmode_music = 'sound/music/cmode/nobility/CombatSpymaster.ogg'
 	give_bank_account = 100
+	total_positions = 2
+	spawn_positions = 2
 
 /datum/outfit/kaizoku/clanmember/broker/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -277,10 +290,11 @@
 	doctrine or Noc's influence, you've secured name of demons to weaken them."
 	outfit = /datum/outfit/kaizoku/clanmember/conservator
 
-	category_tags = list(CTAG_HAND)
+	//var/list/category_tags = list(CTAG_HAND)
 	cmode_music = 'sound/music/cmode/nobility/CombatSpymaster.ogg'
 
-	outfit = /datum/outfit/kaizoku/clanmember/conservator
+	total_positions = 1
+	spawn_positions = 1
 	spells = list(
 		/datum/action/cooldown/spell/undirected/learn,
 		/datum/action/cooldown/spell/undirected/touch/prestidigitation,

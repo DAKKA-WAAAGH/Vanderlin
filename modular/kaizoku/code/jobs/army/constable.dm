@@ -18,7 +18,7 @@
 	display_order = GARRISON_ORDER
 	outfit = /datum/outfit/job/kaizoku/constable
 	give_bank_account = 20 // Average pay.
-	min_pq = -10
+	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.0
 	cmode_music = 'modular/kaizoku/sound/combat/combat_stormwarrior.ogg'
 
 /datum/outfit/job/kaizoku/constable/pre_equip(mob/living/carbon/human/H) //Everything here is placeholder

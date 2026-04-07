@@ -14,6 +14,32 @@
 	name = "Tiefling Blood"
 	glows = TRUE
 
+//Stonekeep Edit - Heavily modified content below.
+//Check below this area to see the commented out upstream code.
+/datum/reagent/blood/reaction_mob(mob/living/carbon/L, method=TOUCH, reac_volume) //Stonekeep Edit; Heavily modified content
+	if(iscarbon(L))
+		var/mob/living/carbon/C = L
+		var/datum/blood_type/blood = L.get_blood_type()
+		if(blood?.reagent_type == type && ((method & INJECT) || ((method & INGEST) && C.dna && C.dna.species && (DRINKSBLOOD in C.dna.species.species_traits))))
+			if((data["blood_type"] in blood.compatible_types))
+				C.blood_volume = min(C.blood_volume + round(reac_volume, 0.1), BLOOD_VOLUME_MAXIMUM)
+
+	if(method == INGEST)
+		if(istype(L, /mob/living/carbon))
+			var/mob/living/carbon/C = L
+			if(C.clan || (C.dna?.species?.id == SPEC_ID_SUNSCORNED)) //Stonekeep Edit: Kaizoku Sunscorned
+				if(C.dna?.species?.handle_blood_reagent_ingest(C, src, reac_volume, data))
+					return // Species handled the rest
+				C.adjust_bloodpool(reac_volume)
+				C.clan.handle_bloodsuck(BLOOD_PREFERENCE_FANCY)
+		else
+			if(L.clan)
+				L.adjust_bloodpool(reac_volume)
+				L.clan.handle_bloodsuck(BLOOD_PREFERENCE_FANCY)
+	if((method & INJECT) || (HAS_TRAIT(L, TRAIT_SANGUINE) && (method & INGEST)))
+		SEND_SIGNAL(L, COMSIG_HANDLE_INFUSION, data["blood_type"], reac_volume)
+
+/*
 /datum/reagent/blood/reaction_mob(mob/living/L, method=TOUCH, reac_volume)
 	if(iscarbon(L))
 		var/mob/living/carbon/C = L
@@ -30,6 +56,7 @@
 		L.clan.handle_bloodsuck(BLOOD_PREFERENCE_FANCY)
 	if((method & INJECT) || (HAS_TRAIT(L, TRAIT_SANGUINE) && (method & INGEST)))
 		SEND_SIGNAL(L, COMSIG_HANDLE_INFUSION, data["blood_type"], reac_volume)
+*/
 
 /datum/reagent/blood/on_merge(list/mix_data)
 	. = ..()

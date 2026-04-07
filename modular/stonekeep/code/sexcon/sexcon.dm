@@ -568,7 +568,7 @@ Admin logging is provided for orgasms and if you try to initiate sex with corpse
 	. = ..()
 	if(. && iscarbon(user))
 		var/mob/living/carbon/C = user
-		if(C.silent || !C.can_speak())
+		if(C.has_status_effect(/datum/status_effect/silenced) || !C.can_speak())
 			message = "makes a noise."
 
 /datum/emote/living/carbon/human/sexmoanhvy
@@ -581,5 +581,5 @@ Admin logging is provided for orgasms and if you try to initiate sex with corpse
 	. = ..()
 	if(. && iscarbon(user))
 		var/mob/living/carbon/C = user
-		if(C.silent || !C.can_speak())
+		if(C.has_status_effect(/datum/status_effect/silenced) || !C.can_speak())
 			message = "makes a noise."

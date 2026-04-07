@@ -21,7 +21,8 @@
 	typepath = /datum/round_event/antagonist/solo/vampire
 	antag_datum = /datum/antagonist/vampire/lord
 
-	restricted_roles = list(
+	restricted_roles = list( //Stonekeep Todo: Implement kaizoku roles here.
+	/*
 		/datum/job/lord,
 		/datum/job/consort,
 		/datum/job/priest,
@@ -35,6 +36,7 @@
 		/datum/job/forestwarden,
 		/datum/job/royalknight,
 		/datum/job/templar,
+	*/
 	)
 
 /datum/round_event/antagonist/solo/vampire

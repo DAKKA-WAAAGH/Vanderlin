@@ -21,7 +21,7 @@ var/global/list/DEMON_SPAWNER_MATURE_TYPES = list(
 		return FALSE
 	if(T.density)
 		return FALSE
-	if(istype(T, /turf/open/transparent/openspace))
+	if(istype(T, /turf/open/openspace))
 		return FALSE
 	if(locate(/obj/effect/demon/corruption) in T)
 		return FALSE

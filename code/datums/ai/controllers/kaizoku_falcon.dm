@@ -1,13 +1,3 @@
-#define BB_FALCON_CURRENT_TARGET "falcon_current_target"
-#define BB_FALCON_PERCH_TARGET "falcon_perch_target"
-#define BB_FALCON_PERCH_TYPES "falcon_perch_types"
-#define BB_FALCON_WANT_PERCH "falcon_want_perch"
-#define BB_SUMMONER "summoner"
-#define BB_FOCUS_TARGETS "focus_targets"
-#define BB_PATROLLING "patrolling"
-#define BB_FOLLOWING "following"
-#define BB_TARGETTING_DATUM "targetting_datum"
-
 /datum/ai_controller/falcon
 	movement_delay = 0.4 SECONDS
 	ai_movement = /datum/ai_movement/hybrid_pathing

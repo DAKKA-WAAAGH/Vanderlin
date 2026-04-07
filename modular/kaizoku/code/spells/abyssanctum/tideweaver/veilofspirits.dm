@@ -85,7 +85,7 @@
 	attacker.visible_message(span_danger("[attacker] is shocked by wild spirits!"))
 	attacker.adjustFireLoss(intensity)
 	attacker.Paralyze(10)
-	attacker.Jitter(20)
+	attacker.adjust_jitter(20 SECONDS)
 	attacker.electrocute_act(1)
 	playsound(get_turf(attacker), 'sound/magic/lightning.ogg', 70, TRUE)
 	new /obj/effect/temp_visual/lightning(get_turf(attacker))

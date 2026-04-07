@@ -23,10 +23,12 @@
 	typepath = /datum/round_event/antagonist/solo/lich
 	antag_datum = /datum/antagonist/lich
 
-	restricted_roles = list(
+	restricted_roles = list( //Stonekeep TODO: Implement kaizoku roles here.
+	/*
 		/datum/job/lord,
 		/datum/job/consort,
 		/datum/job/priest,
+	*/
 	)
 
 

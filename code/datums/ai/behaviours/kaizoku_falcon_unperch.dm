@@ -1,5 +1,3 @@
-#define TRAIT_FALCON_PERCHED "falcon_perched"
-
 /datum/ai_behavior/falcon_unperch/perform(seconds_per_tick, datum/ai_controller/controller)
 	var/mob/living/simple_animal/hostile/retaliate/custodianpet/falcon/falcon_pawn = controller.pawn
 

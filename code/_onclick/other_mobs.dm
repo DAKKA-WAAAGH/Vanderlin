@@ -181,56 +181,10 @@
 				to_chat(user, span_warning("Your fangs inject venom into [src]!"))
 		else
 			next_attack_msg += span_warning("Armor stops the damage.")
-	var/nodmg = FALSE
-	var/dam2do = 10*(user.STASTR/20)
-	var/poisonkiss = FALSE
-	if(HAS_TRAIT(user, TRAIT_STRONGBITE))
-		dam2do *= 2
-	if(HAS_TRAIT(user, TRAIT_CHANGELING_METABOLISM)) //Stonekeep edit
-		poisonkiss = TRUE
-	if(!HAS_TRAIT(user, TRAIT_STRONGBITE))
-		if(!affecting.has_wound(/datum/wound/bite))
-			nodmg = TRUE
-	if(!nodmg)
-		var/armor_block = run_armor_check(user.zone_selected, "stab",blade_dulling=BCLASS_BITE)
-		if(!apply_damage(dam2do, BRUTE, def_zone, armor_block, user))
-			nodmg = TRUE
-			next_attack_msg += span_warning("Armor stops the damage.")
-			if(HAS_TRAIT(user, TRAIT_POISONBITE))
-				if(src.reagents)
-					var/poison = user.STACON/2
-					src.reagents.add_reagent(/datum/reagent/toxin/venom, poison/2)
-					src.reagents.add_reagent(/datum/reagent/medicine/soporpot, poison)
-					to_chat(user, span_warning("Your fangs inject venom into [src]!"))
 
 	visible_message(span_danger("[user] bites [src]'s [parse_zone(user.zone_selected)]![next_attack_msg.Join()]"), \
 					span_userdanger("[user] bites my [parse_zone(user.zone_selected)]![next_attack_msg.Join()]"))
 	next_attack_msg.Cut()
-
-	var/datum/wound/caused_wound
-	if(!nodmg)
-		caused_wound = affecting.bodypart_attacked_by(BCLASS_BITE, dam2do, user, user.zone_selected, crit_message = TRUE)
-
-	if(!nodmg)
-		playsound(src, "smallslash", 100, TRUE, -1)
-		if(istype(src, /mob/living/carbon/human))
-			var/mob/living/carbon/human/H = src
-			if(poisonkiss)
-				if(prob(50)) // 50% chance of injecting venom on the victim.
-					to_chat(user, "<span class='greentext'>Your internal glands releases venom upon [src]</span>")
-					to_chat(src, "<span class='warning'>Argh! An burning sensation has spread on my veins!</span>")
-					src.reagents.add_reagent(/datum/reagent/poison/changelingtoxin, 5) // Inject 5 units of venomtoxin
-			if(user?.mind && mind)
-				if(user.dna?.species && istype(user.dna.species, /datum/species/werewolf))
-					if(HAS_TRAIT(src, TRAIT_SILVER_BLESSED))
-						to_chat(user, span_warning("BLEH! [src] tastes of SILVER! My gift cannot take hold."))
-					else
-						if(caused_wound)
-							caused_wound.werewolf_infect_attempt()
-						if(prob(30))
-							user.werewolf_feed(src)
-				if(user.mind.has_antag_datum(/datum/antagonist/zombie) && !src.mind.has_antag_datum(/datum/antagonist/zombie))
-					INVOKE_ASYNC(H, TYPE_PROC_REF(/mob/living/carbon/human, zombie_infect_attempt))
 
 	var/obj/item/grabbing/bite/B = new()
 	if(user.equip_to_slot_or_del(B, ITEM_SLOT_MOUTH))
@@ -355,89 +309,6 @@
 					if(C.mouth)
 						to_chat(src, span_warning("My mouth has something in it."))
 						return
-					return
-				if(HAS_TRAIT(src, TRAIT_CHANGELING_METABOLISM) && ismob(A)) //Stonekeep edit
-					var/mob/living/L = A
-					if(L && (L.stat == DEAD || L.stat == UNCONSCIOUS))
-						changeNext_move(mmb_intent.clickcd)
-						face_atom(L)
-
-						var/devour_delay
-						if(L.stat == DEAD)
-							devour_delay = 60
-						else
-							devour_delay = 360
-
-						src.visible_message(span_danger("[src] begins grotesquely devouring [L]'s flesh"))
-						playsound(src.loc, 'sound/gore/flesh_eat_03.ogg', 50, 1)
-
-						if(do_after(src, devour_delay, target = L))
-							if(QDELETED(L))
-								return
-
-							var/obj/item/bodypart/limb
-							var/list/limb_list = list(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
-							var/selected_zone = src.zone_selected
-
-							var/purifying = FALSE
-							if(istype(L, /mob/living/carbon/human))
-								var/mob/living/carbon/human/H = L
-								if((islist(H.faction) && (FACTION_ORCS in H.faction)) || (H.dna?.species?.id == "tiefling") || (H.mob_biotypes & MOB_UNDEAD))
-									purifying = TRUE
-
-							if(selected_zone in limb_list)
-								limb = L.get_bodypart(selected_zone)
-								if(limb)
-									limb.dismember()
-									playsound(src.loc, 'sound/combat/dismemberment/dismem (1).ogg', 50, 1)
-									qdel(limb)
-									if(purifying)
-										to_chat(src, span_bloody("Feast of the righteous, your teeth sink into blemished flesh. The abyss within is relished."))
-										src.reagents?.add_reagent(/datum/reagent/consumable/nutriment, SNACK_NUTRITIOUS)
-										src.apply_status_effect(/datum/status_effect/buff/foodbuff)
-									else
-										to_chat(src, span_bloody("Wallowing in guilt as you savour the untainted. This was not meant to be devoured."))
-										src.reagents?.add_reagent(/datum/reagent/consumable/nutriment, SNACK_DECENT)
-									return
-
-							for(var/zone in limb_list)
-								limb = L.get_bodypart(zone)
-								if(limb)
-									limb.dismember()
-									playsound(src.loc, 'sound/combat/dismemberment/dismem (1).ogg', 50, 1)
-									qdel(limb)
-									if(purifying)
-										to_chat(src, span_bloody("Feast of the righteous, your teeth sink into blemished flesh. The abyss within is relished."))
-										src.reagents?.add_reagent(/datum/reagent/consumable/nutriment, SNACK_NUTRITIOUS)
-										src.apply_status_effect(/datum/status_effect/buff/foodbuff)
-									else
-										to_chat(src, span_bloody("Wallowing in guilt as you savour the untainted. This was not meant to be devoured."))
-										src.reagents?.add_reagent(/datum/reagent/consumable/nutriment, SNACK_DECENT)
-									return
-
-							limb = L.get_bodypart(BODY_ZONE_CHEST)
-							if(limb)
-								if(!limb.dismember())
-									L.gib()
-								playsound(src.loc, 'sound/combat/dismemberment/dismem (1).ogg', 50, 1)
-								if(purifying)
-									to_chat(src, span_bloody("You devour the rest of the corruptive veil, unleashing what lies within."))
-									src.reagents?.add_reagent(/datum/reagent/consumable/nutriment, SNACK_NUTRITIOUS)
-									src.apply_status_effect(/datum/status_effect/buff/foodbuff)
-								else
-									to_chat(src, span_bloody("You collapse the body of the victim of a sorry fate. Their undeserving organs spill out."))
-									src.reagents?.add_reagent(/datum/reagent/consumable/nutriment, SNACK_DECENT)
-								return
-							to_chat(src, span_bloody("You tear into [L]'s flesh!"))
-							playsound(src.loc, 'sound/gore/flesh_eat_03.ogg', 50, 1)
-							if(hascall(L, "gib"))
-								L.gib()
-							else
-								qdel(L)
-							to_chat(src, span_bloody("Such simple creature does not bring you a proper feast."))
-							playsound(src.loc, 'sound/combat/dismemberment/dismem (1).ogg', 50, 1)
-							src.reagents?.add_reagent(/datum/reagent/consumable/nutriment, SNACK_DECENT)
-							return
 				changeNext_move(mmb_intent.clickcd)
 				face_atom(A)
 				bite(A)
@@ -542,7 +413,7 @@
 		var/target_perception = V.STAPER
 		var/target_skill = V.get_skill_level(/datum/skill/misc/stealing)
 		var/exp_to_gain = U.STAINT * 1.5
-		var/list/stealablezones = list(BODY_ZONE_CHEST, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_PRECISE_NECK, BODY_ZONE_GROIN, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG, BODY_ZONE_PRECISE_R_HAND, BODY_ZONE_PRECISE_L_HAND) //Stonekeep Edit: Kaizoku Groin for Gore
+		var/list/stealablezones = list(BODY_ZONE_CHEST, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_PRECISE_NECK, BODY_ZONE_GROIN, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG, BODY_ZONE_PRECISE_R_HAND, BODY_ZONE_PRECISE_L_HAND) // STONEKEEP EDIT: KAIZOKU; GROIN IS ITS OWN BODYPART.
 		var/list/stealpos = list()
 		if(client?.prefs.showrolls)
 			to_chat(U, span_info("Your stealing skill roll of [thiefskill]d6 is [stealroll]..."))
@@ -574,8 +445,6 @@
 					if(BODY_ZONE_GROIN) // STONEKEEP EDIT: KAIZOKU; GROIN IS ITS OWN BODYPART.
 						if (V.get_item_by_slot(ITEM_SLOT_BELT_R))
 							stealpos.Add(V.get_item_by_slot(ITEM_SLOT_BELT_R))
-						if (V.get_item_by_slot(ITEM_SLOT_BELT_L))
-							stealpos.Add(V.get_item_by_slot(ITEM_SLOT_BELT_L))
 					if(BODY_ZONE_L_ARM)
 						if (V.get_item_by_slot(ITEM_SLOT_BELT_L))
 							stealpos.Add(V.get_item_by_slot(ITEM_SLOT_BELT_L))

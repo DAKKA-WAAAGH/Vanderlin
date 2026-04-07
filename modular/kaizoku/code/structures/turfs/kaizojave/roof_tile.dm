@@ -6,10 +6,11 @@
 	icon = 'code/__DEFINES/kaizojave/placeholder_icons/compatibility/table.dmi'
 	icon_state = "low-0"
 	base_icon_state = "low"
+	var/low_wall_signals_set = FALSE
 	max_integrity = 1000
 	smoothing_flags = SMOOTH_BITMASK | SMOOTH_OBJ
-	smoothing_groups = list(SMOOTH_GROUP_kaizojave_LOW_WALL)
-	canSmoothWith = list(SMOOTH_GROUP_kaizojave_LOW_WALL)
+	smoothing_groups = SMOOTH_GROUP_kaizojave_LOW_WALL
+	smoothing_list = SMOOTH_GROUP_kaizojave_LOW_WALL
 	anchored = TRUE
 	climbable = TRUE
 	climb_offset = 10
@@ -18,7 +19,39 @@
 	. = ..()
 	update_appearance(UPDATE_SMOOTHING)
 	QUEUE_SMOOTH_NEIGHBORS(src)
+	// Register junction signal so we can map smoothed junctions to consolidated low icons
+	if(!src.low_wall_signals_set)
+		RegisterSignal(src, COMSIG_ATOM_SET_SMOOTHED_ICON_STATE, PROC_REF(on_junction_change))
+		src.low_wall_signals_set = TRUE
 	return INITIALIZE_HINT_NORMAL
+
+
+/obj/structure/table/kaizojave/low_wall/proc/get_consolidated_low_wall_state(junction)
+	// Map junction numbers into consolidated low wall states (shifted like walls)
+	if(junction in list(0, 1))
+		return "low-0"
+	if(junction in list(2,3,6,7,10,11,14,15,23,31,139,143,157,159))
+		return "low-1"
+	if(junction in list(4,21))
+		return "low-2"
+	if(junction in list(8,9,137))
+		return "low-3"
+	if(junction in list(38,39,46,47,55,63,175,191))
+		return "low-4"
+	if(junction in list(74,75,78,79,95,203,207,223))
+		return "low-5"
+	if(junction in list(111,127,239,255))
+		return "low-6"
+	if(junction in list(12,13,29,141))
+		return "low-7"
+	return "low-0"
+
+
+
+/obj/structure/table/kaizojave/low_wall/proc/on_junction_change(atom/source, new_junction)
+	SIGNAL_HANDLER
+	var/consolidated = get_consolidated_low_wall_state(new_junction)
+	icon_state = consolidated
 
 /obj/structure/table/kaizojave/low_wall/update_icon()
 	. = ..()
@@ -175,4 +208,3 @@
 	name = "low reinforced bunker wall"
 	desc = ""
 	icon = 'code/__DEFINES/kaizojave/placeholder_icons/turf/walls/dungeon_rust_1.dmi'
-

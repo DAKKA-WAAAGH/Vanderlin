@@ -48,7 +48,7 @@
 		return
 	var/list/targets = list()
 	for(var/mob/living/L in range(radius, src))
-		if(L.stat != DEAD && !("cabal" in L.faction || FACTION_CABAL in L.faction || "infernal" in L.faction))
+		if(L.stat != DEAD && !((FACTION_CABAL in (L.faction || list())) || ("infernal" in (L.faction || list()))))
 			targets += L
 	active = targets.len > 0
 	if(active)
@@ -254,6 +254,7 @@
 				R.update_icon()
 
 /obj/structure/demon/railing/update_icon()
+	. = ..()
 	var/list/adjacent = list()
 	for(var/d in list(NORTH, SOUTH, EAST, WEST))
 		var/turf/T = get_step(src, d)

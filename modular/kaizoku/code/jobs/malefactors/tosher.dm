@@ -12,7 +12,7 @@
 	spawn_positions = 3
 	bypass_lastclass = TRUE
 	allowed_races = RACES_PLAYER_ALL //change this
-	min_pq = 0
+	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	outfit = /datum/outfit/kaizoku/tosher
 	cmode_music = 'sound/music/cmode/towner/CombatTowner2.ogg'
 

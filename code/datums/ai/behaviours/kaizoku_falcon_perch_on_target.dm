@@ -1,6 +1,3 @@
-#define BB_FALCON_WANT_PERCH "falcon_want_perch"
-#define TRAIT_FALCON_PERCHED "falcon_perched"
-
 /datum/ai_behavior/falcon_perch_on_target
 	behavior_flags = AI_BEHAVIOR_REQUIRE_MOVEMENT | AI_BEHAVIOR_REQUIRE_REACH
 

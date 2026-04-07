@@ -2,14 +2,6 @@
 // Remember to split this file with other files.
 // Organization's sake.
 
-#define BB_FOCUS_TARGETS "focus_targets"
-#define BB_PATROLLING "patrolling"
-#define BB_CURRENT_TARGET "current_target"
-#define BB_SUMMONER "summoner"
-#define BB_FOLLOWING "following"
-#define BB_DOGGO_RESTING "doggo_resting"
-#define BB_DOGGO_REST_BED "doggo_rest_bed"
-
 // Put this in another file, when we have our own Kaizoku modular folders.
 
 /datum/ai_controller/doggo

@@ -1,14 +1,3 @@
-#define BB_FALCON_CURRENT_TARGET "falcon_current_target"
-#define BB_FALCON_PERCH_TARGET "falcon_perch_target"
-#define BB_FALCON_WANT_PERCH "falcon_want_perch"
-#define BB_SUMMONER "summoner"
-#define BB_FOCUS_TARGETS "focus_targets"
-#define BB_PATROLLING "patrolling"
-#define BB_FOLLOWING "following"
-#define TRAIT_FALCON_PERCHED "falcon_perched"
-#define TRAIT_FALCON_FROZEN "falcon_frozen"
-#define BB_TARGETTING_DATUM "targetting_datum"
-
 /datum/ai_planning_subtree/falcon_custom_targeting
 
 /datum/ai_planning_subtree/falcon_custom_targeting/SelectBehaviors(datum/ai_controller/controller, delta_time)

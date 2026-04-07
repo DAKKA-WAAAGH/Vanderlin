@@ -282,7 +282,7 @@
 	if(bpc & CHEST)
 		covered_parts |= list(BODY_ZONE_CHEST)
 	if(bpc & GROIN)
-		covered_parts |= list(BODY_ZONE_PRECISE_GROIN)
+		covered_parts |= list(BODY_ZONE_GROIN) //stonekeep edit
 	if(bpc & VITALS)
 		covered_parts |= list(BODY_ZONE_PRECISE_STOMACH)
 

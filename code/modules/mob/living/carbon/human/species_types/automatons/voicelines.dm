@@ -349,7 +349,7 @@
 	play_voice_line("Your Lux Will Be Mine")
 
 /mob/living/carbon/human/proc/play_voice_line(voice_key)
-	if(!istype(dna?.species, /datum/species/automaton))
+	if(!istype(dna?.species, /datum/species/vessel)) //Stonekeep Edit: We use Haniwas. Replace the system later with 'Heat system'
 		return
 
 	if(stat >= UNCONSCIOUS)

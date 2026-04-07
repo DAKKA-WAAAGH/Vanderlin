@@ -65,7 +65,7 @@
 	pre_transformation()
 
 	// Actual transformation step
-	var/mob/living/carbon/human/species/werewolf/new_werewolf = generate_werewolf(human_user)
+	var/mob/living/carbon/human/new_werewolf = generate_werewolf(human_user)
 	new_werewolf.apply_status_effect(/datum/status_effect/shapechange_mob/die_with_form/werewolf, human_user, FALSE)
 	new_werewolf.dna?.species.after_creation(new_werewolf) // funny accented werewolf
 	new_werewolf.set_patron(human_user.patron)
@@ -97,7 +97,7 @@
 			human_user.dropItemToGround(item, silent = TRUE)
 
 /datum/antagonist/werewolf/proc/generate_werewolf(mob/living/carbon/human/user)
-	var/mob/living/carbon/human/species/werewolf/new_werewolf = new (get_turf(user))
+	var/mob/living/carbon/human/new_werewolf = new (get_turf(user))
 	new_werewolf.age = user.age
 	new_werewolf.real_name = wolfname
 	new_werewolf.name = wolfname

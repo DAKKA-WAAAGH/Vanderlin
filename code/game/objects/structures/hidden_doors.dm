@@ -188,28 +188,6 @@ GLOBAL_LIST_EMPTY(secret_door_managers)
 	else
 		force_closed()
 
-///// DOOR TYPES //////
-/obj/structure/door/secret/vault
-	vip = list(
-	/datum/job/kaizoku/sovereign, //Stonekeep Edit
-	// /datum/job/consort,
-	// /datum/job/steward,
-	// /datum/job/hand,
-	)
-
-/obj/structure/door/secret/merchant
-	vip = list(
-		/datum/job/kaizoku/quartermaster, //Stonekeep Edit
-	)
-
-/obj/structure/door/secret/wizard //for wizard tower
-	vip = list(
-	//	/datum/job/magician,
-	//	/datum/job/mageapprentice,
-	//	/datum/job/archivist,
-	)
-	//make me look like an arcane door
-
 /obj/structure/door/secret/rattle()
 	return
 
@@ -311,181 +289,6 @@ GLOBAL_LIST_EMPTY(secret_door_managers)
 	air_update_turf(TRUE)
 	switching_states = FALSE
 
-/proc/open_word()
-	var/list/open_word = list(
-		"open",
-		"pass",
-		"part",
-		"break",
-		"reveal",
-		"unbar",
-		"gape", //You wanted this.
-		"extend",
-		"widen",
-		"unfold",
-		"rise"
-		)
-	return pick(open_word)
-
-/proc/close_word()
-	var/list/close_word = list(
-		"close",
-		"seal",
-		"still",
-		"fade",
-		"retreat",
-		"consume",
-		"envelope",
-		"hide",
-		"halt",
-		"cease",
-		"vanish",
-		"end"
-		)
-	return pick(close_word)
-
-
-/proc/magic_word()
-	var/list/magic_word = list(
-		"sesame",
-		"abyss",
-		"fire",
-		"wind",
-		"earth",
-		"shadow",
-		"nite",
-		"oblivion",
-		"void",
-		"time",
-		"dead",
-		"decay",
-		"gods",
-		"ancient",
-		"twisted",
-		"corrupt",
-		"secrets",
-		"lore",
-		"text",
-		"ritual",
-		"sacrifice",
-		"deal",
-		"pact",
-		"bargain",
-		"ritual",
-		"dream",
-		"nitemare",
-		"vision",
-		"hunger",
-		"lust",
-		"necra",
-		"noc",
-		"psydon"
-		)
-	return pick(magic_word)
-
-/proc/flavor_name()
-	var/list/flavor_name = list(
-		"my friend",
-		"love",
-		"my love",
-		"honey",
-		"darling",
-		"stranger",
-		"companion",
-		"mate",
-		"you harlot",
-		"comrade",
-		"fellow",
-		"chum",
-		"bafoon"
-		)
-	return pick(flavor_name)
-
-/obj/structure/door/secret/proc/set_phrase(new_phrase)
-	open_phrase = new_phrase
-
-///// KEEP DOORS /////
-/obj/structure/door/secret/keep
-	hidden_dc = 14
-	vip = list(
-		/datum/job/kaizoku/sovereign, //Stonekeep Edit
-		/datum/job/kaizoku/clanmember,
-		/datum/job/kaizoku/doyen,
-		/datum/job/kaizoku/menial,
-	)
-
-/obj/structure/door/secret/keep/Initialize()
-	. = ..()
-	if(length(GLOB.keep_doors) > 0)
-		var/obj/structure/door/secret/D = GLOB.keep_doors[1]
-		open_phrase = D.open_phrase
-	GLOB.keep_doors |= src
-
-/obj/structure/door/secret/keep/Destroy()
-	GLOB.keep_doors -= src
-	return ..()
-
-/obj/structure/door/secret/keep/Hear(message, atom/movable/speaker, message_language, raw_message, radio_freq, list/spans, list/message_mods = list())
-	if(!..())
-		return FALSE
-	var/mob/living/carbon/human/H = speaker
-
-	var/message2recognize = SANITIZE_HEAR_MESSAGE(raw_message)
-	if(is_type_in_list(H.mind?.assigned_role, vip) && findtext(message2recognize, "set phrase"))
-		for(var/obj/structure/door/secret/D in GLOB.keep_doors)
-			D.set_phrase(open_phrase)
-	return TRUE
-
-/obj/structure/door/secret/keep/examine(mob/user)
-	. = ..()
-	if(HAS_TRAIT(user, TRAIT_KNOWKEEPPLANS))
-		. += span_purple("There's a hidden door here...")
-
-/obj/structure/lever/hidden/keep
-	hidden_dc = 14
-
-/obj/structure/lever/hidden/keep/feel_button(mob/living/user, ignore_dc = FALSE)
-	// they're trained at this
-	var/bonuses = (HAS_TRAIT(user, TRAIT_THIEVESGUILD) || HAS_TRAIT(user, TRAIT_ASSASSIN)) ? 2 : 0
-	if(HAS_TRAIT(user, TRAIT_KNOWKEEPPLANS) || (user.STAPER + bonuses) >= hidden_dc || ignore_dc)
-		..(user, ignore_dc = TRUE)// passes onto parent dc check, otherwise someone who knows the keep plans would still need perception
-
-/proc/know_keep_door_password(mob/living/carbon/human/H)
-	var/obj/structure/door/secret/D = GLOB.keep_doors[1]
-	var/msg = "The keep's secret doors answer to: '[D.open_phrase]'"
-	to_chat(H, span_notice(msg))
-	H.mind?.store_memory(msg)
-
-///// THIEVES GUILD DOORS /////
-/obj/structure/door/secret/thieves_guild
-	/* We don't have that. Kids BEGONE.
-	vip = list(
-		/datum/job/matron,
-	)
-	*/
-	lang = /datum/language/thievescant
-
-/obj/structure/door/secret/thieves_guild/Initialize()
-	. = ..()
-	if(length(GLOB.thieves_guild_doors))
-		var/obj/structure/door/secret/D = GLOB.thieves_guild_doors[1]
-		open_phrase = D.open_phrase
-	GLOB.thieves_guild_doors |= src
-
-/obj/structure/door/secret/thieves_guild/Destroy()
-	GLOB.thieves_guild_doors -= src
-	return ..()
-
-/obj/structure/door/secret/thieves_guild/Hear(message, atom/movable/speaker, message_language, raw_message, radio_freq, list/spans, list/message_mods = list())
-	if(!..())
-		return FALSE
-	var/mob/living/carbon/human/H = speaker
-
-	var/message2recognize = SANITIZE_HEAR_MESSAGE(raw_message)
-	if((is_type_in_list(H.mind?.assigned_role, vip)) && findtext(message2recognize, "set phrase"))
-		for(var/obj/structure/door/secret/D in GLOB.keep_doors)
-			D.set_phrase(open_phrase)
-	return TRUE
 
 
 ///// MAPPERS /////
@@ -576,7 +379,8 @@ GLOBAL_LIST_EMPTY(secret_door_managers)
 	manager_id = "keep"
 	accessor_trait = TRAIT_KNOW_KEEP_DOORS
 	memory_name = "keep's"
-	vips = list(/datum/job/lord, /datum/job/consort, /datum/job/prince, /datum/job/hand, /datum/job/butler, /datum/job/archivist)
+	vips = list(/datum/job/kaizoku/sovereign) //Stonekeep Edit - Increase with all Kaizoku imperial family
+	// vips = list(/datum/job/lord, /datum/job/consort, /datum/job/prince, /datum/job/hand, /datum/job/butler, /datum/job/archivist)
 
 /obj/effect/mapping_helpers/secret_door_creator/keep/Initialize()
 	if(SSmapping.config.map_name == "Rosewood")
@@ -595,7 +399,8 @@ GLOBAL_LIST_EMPTY(secret_door_managers)
 	manager_id = "inquisition"
 	accessor_trait = TRAIT_KNOW_INQUISITION_DOORS
 	memory_name = "Oratorium's"
-	vips = list(/datum/job/inquisitor)
+	vips = list() //We don't have 'Inquisition' here.
+	//vips = list(/datum/job/inquisitor)
 
 /obj/effect/mapping_helpers/secret_door_creator/inquisition/Initialize()
 	if(SSmapping.config.map_name == "Rosewood")
@@ -615,4 +420,5 @@ GLOBAL_LIST_EMPTY(secret_door_managers)
 	manager_id = "thief"
 	accessor_trait = TRAIT_KNOW_THIEF_DOORS
 	memory_name = "thieves' guild's"
-	vips = list(/datum/job/matron)
+	vips = list() //We don't have kid mongler here
+	//vips = list(/datum/job/matron)

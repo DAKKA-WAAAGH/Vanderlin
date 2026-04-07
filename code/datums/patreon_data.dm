@@ -1,3 +1,6 @@
+/*// Stonekeep Edit: Patreon Bullshit. Kaizoku will NEVER follow the same steps.
+// Complete removal because its mere existence is no different to an insult.
+
 GLOBAL_LIST_INIT(contributors, load_contributors())
 GLOBAL_LIST_EMPTY(donator_data_by_key)
 GLOBAL_LIST_EMPTY(donator_data_by_ckey)
@@ -86,4 +89,4 @@ GLOBAL_LIST_EMPTY(donator_data_by_ckey)
 	if(GLOB.donator_data_by_ckey[ckey])
 		return TRUE
 	return FALSE
-
+*/

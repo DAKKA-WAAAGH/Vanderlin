@@ -267,15 +267,20 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	validate_loadouts()
 
 /datum/preferences/proc/validate_loadouts()
+	/*
 	if(!parent.patreon.has_access(ACCESS_ASSISTANT_RANK) && !parent.twitch.has_access(ACCESS_TWITCH_SUB_TIER_1))
 		loadout1 = null
 		loadout2 = null
 		loadout3 = null
 		return FALSE
-
+	*/
 	for(var/i in 1 to 3)
-		if(!(vars["loadout[i]"] in GLOB.loadout_items)) // bite me
+		if(vars["loadout[i]"] && !(vars["loadout[i]"] in GLOB.loadout_items))
 			vars["loadout[i]"] = null
+	loadout1 = null //Let people have FUN.
+	loadout2 = null
+	loadout3 = null
+	return FALSE
 
 /datum/preferences/proc/_load_culinary_preferences(S)
 	var/list/loaded_culinary_preferences

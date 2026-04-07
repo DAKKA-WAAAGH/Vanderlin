@@ -27,7 +27,7 @@
 	if(ishuman(target) || target.maxHealth > 300)
 		owner.balloon_alert(owner, "This being is... stronger than you.")
 		return
-	if(("cabal" in target.faction || FACTION_CABAL in target.faction || "infernal" in target.faction))
+	if(("cabal" in target.faction) || (FACTION_CABAL in target.faction) || ("infernal" in target.faction))
 		target.adjustBruteLoss(target.maxHealth + 100) //Incase death trigger doesn't work.
 		target.death()
 		owner.visible_message(span_danger("[owner]'s hand reaches upon [target], drying it into a husk."))

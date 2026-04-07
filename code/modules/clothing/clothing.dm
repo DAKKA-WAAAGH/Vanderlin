@@ -576,8 +576,8 @@ BLIND     // can't see anything
 		if(HAS_TRAIT(C, TRAIT_NOBLE) && wet.water_stacks == 0)
 			C.add_stress(/datum/stress_event/noble_tarnished_cloth)
 
-		if(C.mind?.assigned_role == /datum/job/farmer || C.mind?.assigned_role == /datum/job/soilchild || HAS_TRAIT(C, TRAIT_LEECHIMMUNE) || istriton(C))
-			return
+		//if(C.mind?.assigned_role == /datum/job/farmer || C.mind?.assigned_role == /datum/job/soilchild || HAS_TRAIT(C, TRAIT_LEECHIMMUNE) || istriton(C)) //Stonekeep Edit: Implement Kaizoku roles here.
+			//return
 
 	if(wet.water_stacks < 0)
 		if(COOLDOWN_FINISHED(src, wet_stress_cd))

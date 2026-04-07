@@ -462,7 +462,7 @@
 	icon_state = "ring_apothecary"
 	desc = "" // the description is handled upon examine.
 
-
+/* Stonekeep Edit - Temporary removal.
 /obj/item/clothing/ring/apothecary_ring/examine(mob/user)
 	. = ..()
 	if(is_apothecary_job(user.mind.assigned_role))
@@ -472,3 +472,4 @@
 	else
 		. += "An uncomfortably heavy ring of thaumic iron. Specifically made for apothecaries upon graduation. \n \
 		This gives them the right to both extract and manipulate lux, so long as they follow Pestra's teachings."
+*/

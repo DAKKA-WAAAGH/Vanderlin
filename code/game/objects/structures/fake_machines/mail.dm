@@ -353,11 +353,12 @@ GLOBAL_LIST_EMPTY(letters_sent)
 	// Calculate marque value
 	var/marque_value = confession.marquevalue
 	if(confession.false_confession)
+		/* Stonekeep Edit: We don't have these. Not fitting on Kaizoku either.
 		var/mob/living/carbon/human/human = confession.signee
 		if(human)
 			human.inquisition_position.merits -= 4
 		to_chat(user, span_notice("To lie to the church is a sin my son, do not do it again."))
-
+		*/
 	else if(confession.paired && !is_indexed && !is_correct)
 		marque_value = 2
 		GLOB.vanderlin_round_stats[STATS_MARQUES_MADE] += 2
@@ -368,8 +369,8 @@ GLOBAL_LIST_EMPTY(letters_sent)
 		if(is_accused)
 			marque_value -= 4
 
-		GLOB.vanderlin_round_stats[STATS_MARQUES_MADE] += marque_value
-		user.inquisition_position.merits += CEILING(marque_value * 0.5, 1)
+		//GLOB.vanderlin_round_stats[STATS_MARQUES_MADE] += marque_value //stonekeep edit: Stonekeep Todo
+		//user.inquisition_position.merits += CEILING(marque_value * 0.5, 1) //stonekeep edit: Stonekeep Todo
 		budget2change(marque_value, user, "MARQUE")
 
 	// Accept confession
@@ -443,7 +444,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 		else
 			budget2change(2, user, "MARQUE")
 			GLOB.vanderlin_round_stats[STATS_MARQUES_MADE] += 2
-			user.inquisition_position.merits += 1
+			// user.inquisition_position.merits += 1 //We don't have these.
 			qdel(indexer)
 			visible_message(span_warning("[user] sends something."))
 			playsound(src, 'sound/misc/otavasent.ogg', 100, FALSE, -1)
@@ -558,7 +559,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 
 		budget2change(marque_value, user, "MARQUE")
 		GLOB.vanderlin_round_stats[STATS_MARQUES_MADE] += marque_value
-		user.inquisition_position.merits += CEILING(marque_value * 0.5, 1)
+		// user.inquisition_position.merits += CEILING(marque_value * 0.5, 1) //We don't have these.
 
 	qdel(accusation.paired)
 	qdel(accusation)

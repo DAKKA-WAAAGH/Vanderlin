@@ -20,7 +20,8 @@
 	typepath = /datum/round_event/antagonist/solo/zizo_cultist
 	antag_datum = /datum/antagonist/zizocultist
 
-	restricted_roles = list(
+	restricted_roles = list( //Stonekeep Todo: Implement Kaizoku roles here.
+	/*
 		/datum/job/lord,
 		/datum/job/consort,
 		/datum/job/priest,
@@ -34,6 +35,7 @@
 		/datum/job/forestwarden,
 		/datum/job/royalknight,
 		/datum/job/templar,
+	*/
 	)
 
 /datum/round_event/antagonist/solo/zizo_cultist

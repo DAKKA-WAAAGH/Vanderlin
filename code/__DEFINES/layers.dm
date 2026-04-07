@@ -221,3 +221,12 @@
 
 ///Plane master controller keys
 #define PLANE_MASTERS_GAME "plane_masters_game"
+
+
+
+
+// Stonekeep Edit - Kaizojave ; Wallening
+#define RENDER_PLANE_GAME 990
+#define GAME_PLANE_UPPER_FOV_HIDDEN -27
+#define ABOVE_GAME_PLANE -20
+// Stonekeep Edit - Kaizojave ; Wallening

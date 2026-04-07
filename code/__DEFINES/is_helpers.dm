@@ -1,8 +1,3 @@
-//Stonekeep Edit: FILE CHANGE
-//UPDATE TRIGGER ON THIS FILE!!!
-//For the ALTERNATIVE FILE used for KAIZOKU PROJECT
-//Check for code\__DEFINES\is_helpers_kaizoku.dm
-
 // simple is_type and similar inline helpers
 
 
@@ -75,20 +70,30 @@ GLOBAL_LIST_INIT(turfs_without_ground, typecacheof(list(
 //RT species
 #define ishumannorthern(A) (is_species(A, /datum/species/human/northern))
 #define isdwarfmountain(A) (is_species(A, /datum/species/dwarf/mountain))
-#define isdarkelf(A) (is_species(A, /datum/species/elf/dark))
 #define issnowelf(A) (is_species(A, /datum/species/elf/snow))
-#define ishalfelf(A) (is_species(A, /datum/species/human/halfelf))
 #define istiefling(A) (is_species(A, /datum/species/tieberian))
-#define ishalforc(A) (is_species(A, /datum/species/halforc))
-#define iskobold(A) (is_species(A, /datum/species/kobold))
-#define israkshari(A) (is_species(A, /datum/species/rakshari))
 #define isaasimar(A) (is_species(A, /datum/species/aasimar))
+
+/* Stonekeep Edit: Removal. We don't use these races. Never will.
 #define ishollowkin(A) (is_species(A, /datum/species/demihuman))
 #define isharpy(A) (is_species(A, /datum/species/harpy))
 #define ishalfdrow(A) (is_species(A, /datum/species/human/halfdrow))
 #define ismedicator(A) (is_species(A, /datum/species/medicator))
 #define istriton(A) (is_species(A, /datum/species/triton))
 #define ishalfling(A) (is_species(A, /datum/species/halfling))
+*/
+
+//Kaizoku species
+#define ischangeling(A) (is_species(A, /datum/species/abyssariad/changeling))
+#define isskylancer(A) (is_species(A, /datum/species/abyssariad/skylancer))
+#define isogrun(A) (is_species(A, /datum/species/abyssariad/ogrun))
+#define isundine(A) (is_species(A, /datum/species/elf/undine))
+#define issunscorned(A) (is_species(A, /datum/species/sunscorned))
+#define isvessel(A) (is_species(A, /datum/species/vessel))
+#define isgroveling(A) (is_species(A, /datum/species/groveling))
+#define isdenmorian(A) (is_species(A, /datum/species/denmorian))
+
+
 
 //more carbon mobs
 #define ismonkey(A) (istype(A, /mob/living/carbon/monkey))
@@ -179,28 +184,28 @@ GLOBAL_LIST_INIT(RATS_DONT_EAT, typecacheof(list(
 	//#define is__job(job_type) (istype(job_type, /datum/job/)) //template for easy filling in
 	#define is_unassigned_job(job_type) (istype(job_type, /datum/job/unassigned))
 // Nobility
-	#define is_lord_job(job_type) (istype(job_type, /datum/job/lord))
-	#define is_consort_job(job_type) (istype(job_type, /datum/job/consort))
-	#define is_merchant_job(job_type) (istype(job_type, /datum/job/merchant))
+	#define is_lord_job(job_type) (istype(job_type, /datum/job/kaizoku/sovereign)) //Stonekeep Edit // 	#define is_lord_job(job_type) (istype(job_type, /datum/job/lord))
+	#define is_consort_job(job_type) (istype(job_type, /datum/job/kaizoku/clanmember)) //Try to find a way to bind this into a chosen Court member.
+	#define is_merchant_job(job_type) (istype(job_type, /datum/job/kaizoku/quartermaster)) // Stonekeep Edit // #define is_merchant_job(job_type) (istype(job_type, /datum/job/merchant))
 	#define is_steward_job(job_type) (istype(job_type, /datum/job/steward))
 // Garrison
 // Church
-	#define is_priest_job(job_type) (istype(job_type, /datum/job/priest))
-	#define is_monk_job(job_type) (istype(job_type, /datum/job/monk))
-	#define is_inquisitor_job(job_type) (istype(job_type, /datum/job/inquisitor))
-	#define is_adept_job(job_type) (istype(job_type, /datum/job/adept))
+	#define is_priest_job(job_type) (istype(job_type, /datum/job/kaizoku/prophet)) //Stonekeep Edit
+	#define is_monk_job(job_type) (istype(job_type, /datum/job/kaizoku/votary))//stonekeep edit
+	#define is_inquisitor_job(job_type) (istype(job_type, /datum/job/kaizoku/mastersohei)) //Stonekeep Edit
+	#define is_adept_job(job_type) (istype(job_type, /datum/job/kaizoku/tideseeker)) //Stonekeep Edit
 // Serfs
-	#define is_gaffer_job(job_type) (istype(job_type, /datum/job/gaffer))
+	#define is_gaffer_job(job_type) (istype(job_type, /datum/job/kaizoku/panderer)) //Stonekeep Edit: Gaffer replaced by Panderer.
 	#define is_apothecary_job(job_type) (istype(job_type, /datum/job/apothecary))
 // Peasantry
-	#define is_jester_job(job_type) (istype(job_type, /datum/job/jester))
+	#define is_jester_job(job_type) (istype(job_type, /datum/job/kaizoku/performer))//stonekeep edit
 	#define is_adventurer_job(job_type) (istype(job_type, /datum/job/advclass/adventurer))
-	#define is_mercenary_job(job_type) (istype(job_type, /datum/job/advclass/mercenary))
+	#define is_mercenary_job(job_type) (istype(job_type, /datum/job/kaizoku/cutthroat)) //Stonekeep Edit: Our mercenaries became adventurers and Cutthroats.
 	#define is_pilgrim_job(job_type) (istype(job_type, /datum/job/advclass/pilgrim))
-	#define is_vagrant_job(job_type) (istype(job_type, /datum/job/vagrant))
-	#define is_servant_job(job_type) (istype(job_type, /datum/job/servant))
+	#define is_vagrant_job(job_type) (istype(job_type, /datum/job/kaizoku/lowlife))//stonekeep edit
+	#define is_servant_job(job_type) (istype(job_type, /datum/job/kaizoku/menial)) //stonekeep edit
 //  Apprentices
-	#define is_gaffer_assistant_job(job_type) (istype(job_type, /datum/job/gaffer_assistant))
+	// #define is_gaffer_assistant_job(job_type) (istype(job_type, /datum/job/gaffer_assistant)) // Stonekeep Edit: We don't have these
 // Villains
 	#define is_skeleton_job(job_type) (istype(job_type, /datum/job/skeleton))
 		#define is_skeleton_knight_job(job_type) (istype(job_type, /datum/job/skeleton/knight))

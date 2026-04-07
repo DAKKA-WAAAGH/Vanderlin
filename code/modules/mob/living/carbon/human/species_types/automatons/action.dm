@@ -92,7 +92,7 @@ GLOBAL_LIST_INIT(automaton_voice_lines, list(
 		return
 
 	var/mob/living/carbon/human/H = owner
-	if(!istype(H.dna?.species, /datum/species/automaton))
+	if(!istype(H.dna?.species, /datum/species/vessel)) //stonekeep edit - we use vessels
 		return
 
 	if(H.stat >= UNCONSCIOUS)
@@ -118,7 +118,7 @@ GLOBAL_LIST_INIT(automaton_voice_lines, list(
 		return
 
 	var/mob/living/carbon/human/H = owner
-	if(!istype(H.dna?.species, /datum/species/automaton))
+	if(!istype(H.dna?.species, /datum/species/vessel)) //stonekeep edit - we use vessels
 		return
 
 	var/choice = browser_input_list(H, "Select a voice line to add/remove as an action:", "Voice Action Manager", GLOB.automaton_voice_lines)

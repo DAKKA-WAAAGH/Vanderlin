@@ -188,7 +188,7 @@
 	desc = "You're a local legend who saved your community from great danger. People recognize you, even as a foreigner."
 	point_value = -10
 	blocked_ages = list(
-		AGE_CHILD,
+		// AGE_CHILD, //Stonekeep Edit: We don't have children. Never will. You will be banned instantly if you ask.
 	)
 	preview_render = FALSE
 

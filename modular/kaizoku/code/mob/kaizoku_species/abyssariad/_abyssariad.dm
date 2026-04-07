@@ -406,7 +406,7 @@
 	src.remove_movespeed_modifier(MOVESPEED_ID_LEGCUFF_SLOWDOWN) //It is okay. You can walk away with respect now.
 
 	var/turf/T = get_turf(src) //falldown check. I hope you are going to break your hollow bones.
-	if(istype(T, /turf/open/transparent/openspace)) //checks if the Skylancer is on an openspace. This is to avoid 'floating' while not flying.
+	if(istype(T, /turf/open/openspace)) //checks if the Skylancer is on an openspace. This is to avoid 'floating' while not flying.
 		to_chat(src, "<span class='warning'>With no solid ground beneath, you plummet.</span>")
 		var/turf/target = get_step_multiz(src, DOWN)
 		if(target)
@@ -493,44 +493,62 @@
 /mob/living/carbon/human/proc/toggle_changeling_maw()
 	set name = "Expose Illusion"
 	set category = "ABYSSAL"
-	var/icon_path = (gender == FEMALE) ? 'modular/kaizoku/icons/abyssariad_bodies/female/ft_kit.dmi' : 'modular/kaizoku/icons/abyssariad_bodies/male/mt_kit.dmi'
+	if(overlay_eldritchjaw)
+		close_changeling_maw()
+	else
+		open_changeling_maw()
 
+/mob/living/carbon/human/proc/open_changeling_maw()
+	if(dna?.species?.id != "abyssariad")
+		return
+	var/icon_path = (gender == FEMALE) ? 'modular/kaizoku/icons/abyssariad_bodies/female/ft_kit.dmi' : 'modular/kaizoku/icons/abyssariad_bodies/male/mt_kit.dmi'
 	var/image/open_maw = image(icon_path, "eldritch_maw")
 	var/image/closed_maw = image(icon_path, "eldritch_maw_closed")
-
-	overlay_eldritchjaw = !overlay_eldritchjaw // Toggle state
-
 	if(overlay_eldritchjaw)
-		cut_overlay(closed_maw)
-		remove_overlay(closed_maw)
-		add_overlay(open_maw)
-		visible_message("<span class='warning'>[src]'s face splits into a deadly maw.</span>")
-		to_chat(src, "<span class='warning'>With your maw exposed, your teeth becomes deadlier.</span>")
-		playsound(src.loc, 'sound/combat/fracture/fracturewet (2).ogg', 50, 1)
-		ADD_TRAIT(src, TRAIT_STRONGBITE, TRAIT_GENERIC)
+		return
+	overlay_eldritchjaw = TRUE
+	cut_overlay(closed_maw)
+	remove_overlay(closed_maw)
+	add_overlay(open_maw)
+	visible_message("<span class='warning'>[src]'s face splits into a deadly maw.</span>")
+	to_chat(src, "<span class='warning'>With your maw exposed, your teeth becomes deadlier.</span>")
+	playsound(src.loc, 'sound/combat/fracture/fracturewet (2).ogg', 50, 1)
+	ADD_TRAIT(src, TRAIT_STRONGBITE, TRAIT_GENERIC)
 
-		if("tail_human" in dna.features)
-			dna.features["tail_human"] = "Threetails"
-		if("ears" in dna.features)
-			dna.features["ears"] = "Lying"
-	else
-		cut_overlay(open_maw)
-		remove_overlay(open_maw)
-		add_overlay(closed_maw)
-		visible_message("<span class='warning'>[src]'s face knits together.</span>")
-		playsound(src.loc, 'sound/combat/fracture/fracturewet (2).ogg', 50, 1)
+	if("tail_human" in dna.features)
+		dna.features["tail_human"] = "Threetails"
+	if("ears" in dna.features)
+		dna.features["ears"] = "Lying"
 
-		if("tail_human" in dna.features)
-			dna.features["tail_human"] = "Onetail"
-		if("ears" in dna.features)
-			dna.features["ears"] = "Upright"
-		to_chat(src, "<span class='warning'>Your teeth becomes hidden under the lips.</span>")
-		REMOVE_TRAIT(src, TRAIT_STRONGBITE, TRAIT_GENERIC)
-
-	// Apply Changes
-//	update_mutant_bodyparts()
 	update_icon()
 	update_body()
+
+/mob/living/carbon/human/proc/close_changeling_maw()
+	// Close the eldritch maw visual + remove strong bite trait
+	if(dna?.species?.id != "abyssariad")
+		return
+	var/icon_path = (gender == FEMALE) ? 'modular/kaizoku/icons/abyssariad_bodies/female/ft_kit.dmi' : 'modular/kaizoku/icons/abyssariad_bodies/male/mt_kit.dmi'
+	var/image/open_maw = image(icon_path, "eldritch_maw")
+	var/image/closed_maw = image(icon_path, "eldritch_maw_closed")
+	if(!overlay_eldritchjaw)
+		return
+	overlay_eldritchjaw = FALSE
+	cut_overlay(open_maw)
+	remove_overlay(open_maw)
+	add_overlay(closed_maw)
+	visible_message("<span class='warning'>[src]'s face knits together.</span>")
+	playsound(src.loc, 'sound/combat/fracture/fracturewet (2).ogg', 50, 1)
+
+	if("tail_human" in dna.features)
+		dna.features["tail_human"] = "Onetail"
+	if("ears" in dna.features)
+		dna.features["ears"] = "Upright"
+	to_chat(src, "<span class='warning'>Your teeth becomes hidden under the lips.</span>")
+	REMOVE_TRAIT(src, TRAIT_STRONGBITE, TRAIT_GENERIC)
+
+	update_icon()
+	update_body()
+
 
 //This entire code does not work, as misgendering is happening no matter what.
 /*

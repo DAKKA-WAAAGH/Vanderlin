@@ -605,7 +605,7 @@
 			return "foreleg"
 		if(BODY_ZONE_PRECISE_L_FOOT, BODY_ZONE_PRECISE_R_FOOT)
 			return "leg"
-		if(BODY_ZONE_PRECISE_GROIN)
+		if(BODY_ZONE_GROIN)
 			return "tail"
 		if(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG) // back legs
 			return "leg"

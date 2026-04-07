@@ -66,10 +66,8 @@
 
 	if(used)
 		if(used.blocksound)
-		var/endurance = used.armor.getRating("endurance") //Start of Stonekeep Edit: Kaizoku Kombat
-		if(damage > endurance - armor_penetration)
-			used.take_damage(damage, damage_flag = d_type, sound_effect = FALSE, armor_penetration = 100) //End of Stonekeep Edit: Kaizoku Kombat
 			playsound(src, get_armor_sound(used.blocksound, blade_dulling), 100)
+		used.take_damage(damage, damage_flag = d_type, sound_effect = FALSE, armor_penetration = 100)
 
 	if(steam_boiler && def_zone == BODY_ZONE_CHEST)
 		steam_boiler.take_damage(boiler_damage, damage_flag = d_type, sound_effect = FALSE, armor_penetration = 100)

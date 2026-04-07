@@ -288,7 +288,6 @@
 	plane = UNDER_FRILL_PLANE
 	appearance_flags = PLANE_MASTER
 	blend_mode = BLEND_OVERLAY
-	render_relay_plane = RENDER_PLANE_GAME
 
 /atom/movable/screen/plane_master/frill_under/backdrop(mob/mymob)
 	. = ..()
@@ -301,16 +300,8 @@
 	name = "frill mask plane master"
 	plane = FRILL_MASK_PLANE
 	appearance_flags = PLANE_MASTER | NO_CLIENT_COLOR
-	blend_mode = BLEND_OVERLAY
 	render_target = FRILL_MASK_RENDER_TARGET
-	render_relay_plane = null
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
-	icon = 'icons/mob/screen_gen.dmi'
-	icon_state = "blank"
-
-/atom/movable/screen/plane_master/frill_mask/Initialize()
-	. = ..()
-	alpha = 255
 
 /atom/movable/screen/plane_master/frill
 	name = "frill plane master"
@@ -318,7 +309,6 @@
 	appearance_flags = PLANE_MASTER
 	blend_mode = BLEND_OVERLAY
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
-	render_relay_plane = RENDER_PLANE_GAME
 
 /atom/movable/screen/plane_master/frill/backdrop(mob/mymob)
 	. = ..()
@@ -332,7 +322,6 @@
 	plane = OVER_FRILL_PLANE
 	appearance_flags = PLANE_MASTER
 	blend_mode = BLEND_OVERLAY
-	render_relay_plane = RENDER_PLANE_GAME
 
 /atom/movable/screen/plane_master/frill_over/backdrop(mob/mymob)
 	. = ..()

@@ -40,12 +40,14 @@ DEFINE_BITFIELD(smoothing_junction, list(
 	"NORTHWEST_JUNCTION" = NORTHWEST_JUNCTION,
 ))
 
+
 #define NO_ADJ_FOUND 0
 #define ADJ_FOUND 1
 #define NULLTURF_BORDER 2
 
 #define DEFAULT_UNDERLAY_ICON 			'icons/turf/floors.dmi'
 #define DEFAULT_UNDERLAY_ICON_STATE 	"plating"
+
 
 //do not use, use QUEUE_SMOOTH(atom)
 /atom/proc/smooth_icon()
@@ -245,6 +247,7 @@ DEFINE_BITFIELD(smoothing_junction, list(
 				else
 					QUEUE_SMOOTH(A)
 
+/*
 #undef NORTH_JUNCTION
 #undef SOUTH_JUNCTION
 #undef EAST_JUNCTION
@@ -260,3 +263,4 @@ DEFINE_BITFIELD(smoothing_junction, list(
 
 #undef DEFAULT_UNDERLAY_ICON
 #undef DEFAULT_UNDERLAY_ICON_STATE
+*/

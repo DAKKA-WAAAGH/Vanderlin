@@ -1,5 +1,3 @@
-
-
 /**
  * If your mob is concious, drop the item in the active hand
  *
@@ -142,18 +140,6 @@
 	if(L.succubus_reverse_controls) //Stonekeep Edit: Kaizoku Change
 		direct = turn(direct, 180)
 		n = get_step(L, direct)
-
-	if(L.confused)
-		var/newdir = 0
-		if(L.confused > 40)
-			newdir = pick(GLOB.alldirs)
-		else if(prob(L.confused * 1.5))
-			newdir = angle2dir(dir2angle(direct) + pick(90, -90))
-		else if(prob(L.confused * 3))
-			newdir = angle2dir(dir2angle(direct) + pick(45, -45))
-		if(newdir)
-			direct = newdir
-			n = get_step(L, direct)
 
 	var/target_dir = get_dir(L, n)
 
@@ -541,9 +527,6 @@
 		m_intent = MOVE_INTENT_WALK
 	else
 		m_intent = MOVE_INTENT_RUN
-	if(hud_used && hud_used.static_inventory)
-		for(var/atom/movable/screen/mov_intent/selector in hud_used.static_inventory)
-			selector.update_icon()
 
 /mob/proc/update_sneak_invis(reset = FALSE)
 	return

@@ -3,6 +3,7 @@
 	var/atom/movable/screen/command_display/hud_element
 	var/mob/living/carbon/human/owner
 	var/list/order_priority = list(
+	/* Stonekeep Todo: Implement Kaizoku roles here.
 		/datum/job/lord = 1,
 		/datum/job/consort = 2,
 		/datum/job/hand = 3,
@@ -31,6 +32,7 @@
 		/datum/job/absolver = 27,
 		/datum/job/monk = 28,
 		/datum/job/adept = 28
+	*/
 	)
 
 	var/list/available_commands = list(

@@ -126,7 +126,7 @@
 			ghost.mind.transfer_to(target, TRUE)
 		target.grab_ghost(force = TRUE)
 
-	if(!target.revive(full_heal = FALSE))
+	if(!target.revive())
 		to_chat(user, span_warning("The abyssal surge fails to bring [target] back!"))
 		return
 
@@ -140,6 +140,6 @@
 	target.adjustBruteLoss(-50)
 	target.adjustCloneLoss(-50)
 	target.restore_blood()
-	target.Jitter(100)
+	target.adjust_jitter(100 SECONDS)
 	target.emote("gasp")
 	target.apply_status_effect(/datum/status_effect/debuff/revive)

@@ -14,7 +14,7 @@
 	as the tower's clan tolerates you, since your gang ensures no more other syndicates intrude on their \
 	domains with more aggressive drugs and crimes, such as the Rockhill's black market, so seek to destroy it. \
 	Don't forget gambling and the adventure guild, your only 'legal' business."
-	min_pq = 0
+	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	allowed_sexes = list(MALE, FEMALE)
 	outfit = /datum/outfit/job/kaizoku/panderer
 	display_order = NITEMAN_ORDER

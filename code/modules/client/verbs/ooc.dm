@@ -376,6 +376,10 @@ GLOBAL_LIST_INIT(oocpronouns_required, list(
 					winset(src, "browseroutput", "is-disabled=true;is-visible=false")
 				log_game("GOONCHAT: [key_name(src)] Failed to fix their goonchat window after manually calling start() and forcing a load()")
 
+/* Stonekeep Edit: I have BARELY any idea of what this is supposed to be, but it has patreon stuff, so I took it out
+// Maybe I can leave it to... everyone... to call themselves whatever they want by pronouns, regardless?
+// I genuinely hope this isn't "pay to be trans" thing, seriously. That's a low blow by Vanderlin if so.
+
 /client/proc/validate_oocpronouns(value)
 	value = lowertext(value)
 
@@ -416,6 +420,7 @@ GLOBAL_LIST_INIT(oocpronouns_required, list(
 	to_chat(usr, span_warning("You must include at least one of the following pronouns: [GLOB.oocpronouns_required.Join(", ")]"))
 	// Someone may yell at me i dont know
 	return FALSE
+*/
 
 /client/verb/setoocpronouns()
 	set name = "Set OOC Pronouns"
@@ -439,8 +444,8 @@ GLOBAL_LIST_INIT(oocpronouns_required, list(
 	var/new_pronouns = input("Enter your OOC pronouns (separated by slashes):", "Set OOC Pronouns", prefs.oocpronouns) as text|null
 	if (isnull(new_pronouns))
 		return
-	if (!validate_oocpronouns(new_pronouns))
-		return
+	//if (!validate_oocpronouns(new_pronouns)) //Stonekeep Edit
+		//return
 	message_admins("OOC pronouns set by [usr] ([usr.ckey]) from [html_encode(old_pronouns)] to: [html_encode(new_pronouns)]")
 	log_game("OOC pronouns set by [usr] ([usr.ckey]) from [html_encode(old_pronouns)] to: [html_encode(new_pronouns)]")
 	prefs.oocpronouns = new_pronouns

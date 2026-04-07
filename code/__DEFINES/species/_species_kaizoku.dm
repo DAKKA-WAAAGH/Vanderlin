@@ -107,8 +107,10 @@
 	SPEC_ID_UNDINE,\
 )
 
-/// First class citizens. Highly important members of society that have all citizen rights and right to rule.
-// The explanation is simple - First class members receives rights from the main Government imperial regime and the sovereignty's land.
+/// First class citizens. Highly important members of society that
+// have all citizen rights and right to rule.
+// The explanation is simple - First class members receives rights
+// from the main Government imperial regime and the sovereignty's land.
 // May change 'Undine' to 'Vessel' later.
 // Humen and Dwarves are not natives, and will swap out between First and Second class citizens.
 #define RACES_FIRSTCLASS_PLAYERS list(\
@@ -120,8 +122,10 @@
 	SPEC_ID_UNDINE,\
 )
 
-// Second class citizens, specifically. They still majorly of citizen rights, but has no right to rule.
-// The explanation is simple - Second class members receives rights from the sovereignty's land, but not the imperial regime.
+// Second class citizens, specifically. They still majorly
+// of citizen rights, but has no right to rule.
+// The explanation is simple - Second class members receives
+// rights from the sovereignty's land, but not the imperial regime.
 #define RACES_SECONDCLASS_PLAYERS list(\
 	SPEC_ID_AASIMAR,\
 	SPEC_ID_ELF,\
@@ -129,7 +133,8 @@
 	SPEC_ID_VESSEL,\
 )
 
-// Non-citizens, specifically. They don't have citizen rights, and can be victims of tsujigiri.
+// Non-citizens, specifically. They don't have citizen rights,
+// and can be victims of tsujigiri. Pretty much made to be bullied
 #define RACES_THIRDCLASS_PLAYERS list(\
 	SPEC_ID_GROVELING,\
 	SPEC_ID_DENMORIAN,\

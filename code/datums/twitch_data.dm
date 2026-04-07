@@ -1,3 +1,4 @@
+/* Stonekeep Edit - We don't have to deal with Twitch either.
 
 /datum/twitch_data
 	/// The details of the linked player.
@@ -26,6 +27,7 @@
 /datum/twitch_data/proc/add_to_global_list()
 	GLOB.donator_data_by_key[owner.key] += access_rank
 	GLOB.donator_data_by_ckey[owner.ckey] += access_rank
+
 
 /datum/twitch_data/proc/fetch_key_and_rank()
 	if(!SSdbcore.IsConnectedCross())
@@ -65,3 +67,4 @@
 	return owned_rank && owned_rank != NO_RANK && owned_rank != UNSUBBED
 
 
+*/

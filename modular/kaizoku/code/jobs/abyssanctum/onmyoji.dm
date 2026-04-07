@@ -8,7 +8,7 @@
 	faction = FACTION_TOWN
 	total_positions = 1
 	spawn_positions = 1
-	min_pq = 0
+	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	bypass_lastclass = TRUE
 	selection_color = "#c2a45d"
 	allowed_patrons = list(/datum/patron/abyssanctum/curator)

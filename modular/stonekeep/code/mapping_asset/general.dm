@@ -332,8 +332,7 @@
 	icon = 'icons/effects/blood.dmi'
 	icon_state = "floor1"
 	// nomouseover = TRUE // Got removed.
-	var/wash_precent = 0
-	COOLDOWN_DECLARE(wash_cooldown)
+	wash_precent = 0
 
 /obj/effect/decal/cleanable/blood_neu/weather_act_on(weather_trait, severity)
 	if(weather_trait != PARTICLEWEATHER_RAIN || !COOLDOWN_FINISHED(src, wash_cooldown))
@@ -448,6 +447,7 @@
 	pixel_y = start_y + 2
 	pixel_y = start_y  // Ensure it resets to the original position
 	pixel_x = start_x
+
 
 /obj/item/stonetofleshpotion
 	name = "strange clay bottle"

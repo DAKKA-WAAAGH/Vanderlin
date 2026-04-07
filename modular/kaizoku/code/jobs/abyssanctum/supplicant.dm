@@ -11,7 +11,7 @@
 	faction = FACTION_TOWN
 	total_positions = 2
 	spawn_positions = 2
-	min_pq = -10
+	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	bypass_lastclass = TRUE
 	allowed_ages = list(BLOOMING_ADULT) // Young Adult
 	allowed_races = RACES_PLAYER_ALL

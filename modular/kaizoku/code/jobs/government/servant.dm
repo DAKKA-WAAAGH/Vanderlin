@@ -11,7 +11,7 @@
 	display_order = KZ_SERVANT
 	total_positions = 5
 	spawn_positions = 5
-	min_pq = -20
+	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	bypass_lastclass = TRUE
 	allowed_ages = list(AGE_ADULT, AGE_IMMORTAL) // put all others
 	allowed_races = RACES_NOTNATIVE //Usually non-native. Will change to allow natives later.

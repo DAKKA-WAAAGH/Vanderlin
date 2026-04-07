@@ -1,11 +1,3 @@
-#define BB_FALCON_CURRENT_TARGET "falcon_current_target"
-#define BB_SUMMONER "summoner"
-#define BB_FOCUS_TARGETS "focus_targets"
-#define BB_PATROLLING "patrolling"
-#define BB_FOLLOWING "following"
-#define TRAIT_FALCON_PERCHED "falcon_perched"
-#define TRAIT_FALCON_FROZEN "falcon_frozen"
-
 /datum/ai_behavior/basic_melee_attack/falcon
 	action_cooldown = 2 SECONDS
 	behavior_flags = AI_BEHAVIOR_REQUIRE_MOVEMENT | AI_BEHAVIOR_REQUIRE_REACH | AI_BEHAVIOR_CAN_PLAN_DURING_EXECUTION

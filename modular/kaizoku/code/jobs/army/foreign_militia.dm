@@ -20,7 +20,7 @@
 	outfit = /datum/outfit/job/kaizoku/militia
 	display_order = SQUIRE_ORDER
 	give_bank_account = TRUE
-	min_pq = -15
+	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	can_have_apprentices = FALSE
 	give_bank_account = 15 // Considered "Slightly below average military pay(20), but higher than minimal pay (10)"
 	cmode_music = 'modular/stonekeep/sound/cmode/combat_quarte.ogg'

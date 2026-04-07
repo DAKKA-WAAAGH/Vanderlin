@@ -12,13 +12,13 @@
 	since the Seneschal went to war against Grenzelhoft. Now \
 	with their absence, you control the Custodians at mainland. \
 	Keep the order of the land, and feed the enemies the end of your boot, \
-	and someday, you will be a fully fledged Zamurai. \
+	and someday, you will be a high ranking Zamurai. \
 	Your voice bring morale, and regardless of your bloodline, your leadership \
 	is absolute among the Custodians."
 	display_order = GARRISON_ORDER
 	outfit = /datum/outfit/job/kaizoku/provost //Default outfit.
 	give_bank_account = 30
-	min_pq = 0 //Change this later.
+	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	cmode_music = 'modular/kaizoku/sound/combat/combat_stormwarrior.ogg'
 
 /datum/outfit/job/kaizoku/provost/pre_equip(mob/living/carbon/human/H) // All equipments here are placeholder for now.

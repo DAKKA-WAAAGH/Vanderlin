@@ -15,7 +15,7 @@
 	display_order = KZ_CITIZEN
 	total_positions = 20
 	spawn_positions = 20
-	min_pq = -100
+	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	banned_leprosy = FALSE
 	bypass_lastclass = TRUE
 	advclass_cat_rolls = list(CTAG_CITIZEN = 20)

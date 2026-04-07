@@ -55,7 +55,6 @@
 		"Hurdy-Gurdy" = /obj/item/instrument/hurdygurdy,
 		"Viola" = /obj/item/instrument/viola)
 	var/instrument_choice = input("Choose your instrument.", "XYLIX") as anything in instruments
-	H.set_blindness(0)
 	if(instrument_choice && instruments[instrument_choice])
 		backr = instruments[instrument_choice]
 	else

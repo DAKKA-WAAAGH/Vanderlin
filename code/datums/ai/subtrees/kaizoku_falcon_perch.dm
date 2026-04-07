@@ -1,11 +1,3 @@
-#define BB_FALCON_CURRENT_TARGET "falcon_current_target"
-#define BB_FALCON_PERCH_TARGET "falcon_perch_target"
-#define BB_FALCON_PERCH_TYPES "falcon_perch_types"
-#define BB_FALCON_WANT_PERCH "falcon_want_perch"
-#define BB_SUMMONER "summoner"
-#define BB_PATROLLING "patrolling"
-#define TRAIT_FALCON_PERCHED "falcon_perched"
-#define TRAIT_FALCON_FROZEN "falcon_frozen"
 
 /datum/ai_planning_subtree/falcon_perch_behavior //This is a subtree so the bird perches on targets.
 	var/perch_chance = 6 //Chance to perchh

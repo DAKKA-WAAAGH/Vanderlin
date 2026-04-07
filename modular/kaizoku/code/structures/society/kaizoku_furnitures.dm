@@ -683,7 +683,7 @@
 	if(M.CanAutoGrabRope())
 		return TRUE
 	var/turf/myturf = get_turf(src)
-	if(myturf && istype(myturf, /turf/open/transparent/openspace))
+	if(myturf && istype(myturf, /turf/open/openspace))
 		return FALSE
 	return TRUE
 
@@ -874,7 +874,7 @@
 	to_chat(user, span_redtext("Oh SHIT!!! FUCK!!!"))
 	user.ReleaseRope()
 	var/turf/fall_turf = get_step_multiz(get_turf(user), DOWN)
-	if(fall_turf && istype(get_turf(user), /turf/open/transparent/openspace))
+	if(fall_turf && istype(get_turf(user), /turf/open/openspace))
 		user.forceMove(fall_turf)
 
 

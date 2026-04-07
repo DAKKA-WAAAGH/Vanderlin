@@ -1,4 +1,6 @@
-SUBSYSTEM_DEF(librarian) // Inf.Trigger: Requires balancing/Reformulation.
+#define LIBRARY_JSON "_book_titles"
+
+SUBSYSTEM_DEF(librarian)
 	name = "Librarian"
 	init_order = INIT_ORDER_PATH
 	flags = SS_NO_FIRE

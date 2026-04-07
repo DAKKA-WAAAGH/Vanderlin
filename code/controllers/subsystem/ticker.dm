@@ -87,7 +87,7 @@ SUBSYSTEM_DEF(ticker)
 
 	var/last_bot_update = 0
 
-	var/list/no_ruler_lines = list(
+	var/list/no_ruler_lines = list( //Stonekeep Edit here.
 		"Set a Sovereign to 'high' in your class preferences to begin the campaign!",
 		"The clan awaits for the Sovereign to claim the celestial throne.",
 		"The oceanic scrolls remains sealed until a leader comes to claim its tides.",

@@ -374,8 +374,7 @@
 
 	soft_explosion(get_turf(src), 4, 4, 4)
 
-	addtimer(CALLBACK(src, /atom/proc/..), 1.6 SECONDS)
-	return ..()
+	. = ..()
 
 /obj/item/ammo_casing/caseless/loomshot
 	name = "lead pelletize"
@@ -425,7 +424,7 @@
 		return TRUE
 	is_destroyed = TRUE
 	bombingthemselves()
-	return TRUE
+	return ..(damage_flag)
 
 /obj/structure/loomshot/proc/bombingthemselves()
 	if(QDELETED(src))
@@ -487,10 +486,7 @@
 	pixel_x = ox
 	pixel_y = oy
 
-/obj/structure/loomshot/Destroy()
-	STOP_PROCESSING(SSfastprocess, src)
-	return ..()
-
+/obj/structure/loomshot_broken
 /obj/structure/loomshot_broken
 	name = "destroyed loomshot"
 	desc = "A shattered loomshot, torn apart by internal detonation."

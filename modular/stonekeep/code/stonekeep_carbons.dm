@@ -655,12 +655,19 @@
 
 /mob/living/simple_animal/hostile/zizombie/death(gibbed)
 	emote("death")
-	..()
-	var/turf/deathspot = get_turf(src)
-	new /obj/structure/remains/human(deathspot)
+	. = ..()
 	update_icon()
-	sleep(10)
-	qdel(src)
+	call_later(CALLBACK(src, /mob/living/simple_animal/hostile/zizombie/proc/finish_death), 10)
+
+
+/mob/living/simple_animal/hostile/zizombie/proc/finish_death()
+	if(QDELETED(src))
+		return
+	var/turf/deathspot = get_turf(src)
+	if(deathspot)
+		new /obj/structure/remains/human(deathspot)
+	if(!QDELETED(src))
+		qdel(src)
 
 
 /mob/living/simple_animal/hostile/zizombie/monk

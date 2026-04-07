@@ -40,7 +40,7 @@ GLOBAL_LIST_INIT(sex_actions, build_sex_actions())
 /proc/build_sex_actions()
 	. = list()
 	for(var/path in typesof(/datum/sex_action))
-		if(is_abstract(path))
+		if(path == /datum/sex_action) //Abstract path got warped on the lastest vanderlin update
 			continue
 		.[path] = new path()
 	return .

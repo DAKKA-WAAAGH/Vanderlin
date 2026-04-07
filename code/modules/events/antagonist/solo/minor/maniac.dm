@@ -13,6 +13,7 @@
 	minor_roleset = TRUE
 
 	restricted_roles = list(
+	/* Stonekeep Edit, replace this with Kaizoku verison later.
 		/datum/job/lord,
 		/datum/job/consort,
 		/datum/job/priest,
@@ -26,6 +27,7 @@
 		/datum/job/forestwarden,
 		/datum/job/royalknight,
 		/datum/job/templar,
+	*/
 	)
 
 	denominator = 30

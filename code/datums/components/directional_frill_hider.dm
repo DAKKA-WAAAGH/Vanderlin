@@ -1,3 +1,4 @@
+
 /atom/movable/screen/frill_direction_mask
 	name = "frill direction mask"
 	icon = 'code/__DEFINES/kaizojave/placeholder_icons/turf/walls/frill_direction_masks.dmi'
@@ -47,21 +48,21 @@
 	mask_obj.icon = frill_icon_path
 	if(!mask_obj.icon)
 		mask_obj.icon = 'code/__DEFINES/kaizojave/placeholder_icons/turf/walls/frill_direction_masks.dmi'
+	target.client.screen += mask_obj
+
+/datum/component/directional_frill_hider/proc/apply_direction(dir)
+	if(!mask_obj)
 		return
 	var/state = ""
-	if(direction & EAST) // EAST, NORTHEAST, SOUTHEAST
-		state = "frill_block_right"
-	else if(direction & WEST) // WEST, NORTHWEST, SOUTHWEST
+	if(dir & EAST) // EAST, NORTHEAST, SOUTHEAST - block left frills
 		state = "frill_block_left"
+	else if(dir & WEST) // WEST, NORTHWEST, SOUTHWEST - block right frills
+		state = "frill_block_right"
 	else
-		// NORTH or SOUTH
+		// NORTH or SOUTH - block nothing (back frills handled separately)
 		state = ""
 
 	if(state)
-		mask_obj.icon_state = state
-		mask_obj.alpha = 255
-	else
-		mask_obj.alpha = 0
 		mask_obj.icon_state = state
 		mask_obj.alpha = 255
 	else

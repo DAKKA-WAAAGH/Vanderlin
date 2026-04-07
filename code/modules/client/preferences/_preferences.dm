@@ -1,8 +1,3 @@
-//Stonekeep Edit: FILE CHANGE
-//UPDATE TRIGGER ON THIS FILE!!!
-//For the ALTERNATIVE FILE used for KAIZOKU PROJECT
-//Check for code\modules\client\preferences\_preferences_kaizoku.dm
-
 GLOBAL_LIST_EMPTY(preferences_datums)
 
 GLOBAL_LIST_EMPTY(chosen_names)
@@ -142,7 +137,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 	/// The patron/god/diety this character worships
 	var/datum/patron/selected_patron
 	/// The default patron to use if none is selected
-	var/static/datum/patron/default_patron = /datum/patron/divine/astrata
+	var/static/datum/patron/default_patron = /datum/patron/abyssanctum/purifier //Stonekeep Edit
 	var/list/features = MANDATORY_FEATURE_LIST
 	var/list/randomise = list(
 		(RANDOM_BODY) = FALSE,
@@ -239,6 +234,11 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 	/// Assoc list of culinary preferences, where the key is the type of the culinary preference, and value is food/drink typepath
 	var/list/culinary_preferences = list()
 
+	//Stonekeep Edit: Kaizoku Change; Unique Content.
+	var/culture //The player's culture
+	//Body type preference
+	var/body_type //The player's body type
+
 	/// Whether multi-character readying is enabled
 	var/multi_char_ready = FALSE
 	/// List of character slot indices selected for multi-ready (in priority order)
@@ -263,8 +263,10 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 	headshot_link = null
 
 	// C/parent can be a client_interface
+	/* // Stonekeep Edit - Dear God, SO MUCH Patreon Content.
 	if(isclient(parent))
 		donator = parent.is_donator()
+	*/
 
 	for(var/custom_name_id in GLOB.preferences_custom_names)
 		custom_names[custom_name_id] = get_default_name(custom_name_id)
@@ -933,7 +935,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 			var/right_column_html = ""
 
 			var/list/omegalist = list(
-				GLOB.noble_courthand_positions,
+				//GLOB.noble_courthand_positions, //stonekeep edit - unused
 				GLOB.garrison_positions,
 				GLOB.church_positions,
 				GLOB.peasant_positions,
@@ -969,6 +971,26 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 				var/datum/job/first_job = SSjob.name_occupations[category[1]]
 				var/cat_color = first_job.selection_color
 				var/cat_name = ""
+
+				switch(first_job.department_flag)
+					if(FACTION_GOVERNMENT)
+						cat_name = "Government"
+					if(FACTION_MILITARY)
+						cat_name = "Military"
+					if(FACTION_IMPERIAL)
+						cat_name = "Imperial"
+					if(FACTION_ABYSSANCTUM)
+						cat_name = "Abyssanctum"
+					if(FACTION_CITIZENS)
+						cat_name = "Citizens"
+					if(FACTIONLESS)
+						cat_name = "Factionless"
+					if(FACTION_VILLAIN)
+						cat_name = "Villain"
+					if(FACTION_MALEFACTORS)
+						cat_name = "Malefactors"
+
+				/*
 				switch(first_job.department_flag)
 					if(NOBLEMEN)
 						cat_name = "Nobles"
@@ -990,6 +1012,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 						cat_name = "Outsiders"
 					if(INQUISITION)
 						cat_name = "Inquisition"
+					*/
 
 				var/category_html = ""
 				category_html += "<fieldset class='job-category-box' style='border-color: [cat_color];' id='fieldset-[cat_name]' data-collapsed='true'>"

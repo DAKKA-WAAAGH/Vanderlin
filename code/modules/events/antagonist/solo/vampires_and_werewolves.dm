@@ -21,7 +21,8 @@
 	secondary_prob = 0
 	typepath = /datum/round_event/antagonist/solo/vampires_and_werewolves
 
-	restricted_roles = list(
+	restricted_roles = list( //Stonekeep Todo: Implement Kaizoku roles here.
+	/*
 		/datum/job/lord,
 		/datum/job/consort,
 		/datum/job/priest,
@@ -35,6 +36,7 @@
 		/datum/job/forestwarden,
 		/datum/job/royalknight,
 		/datum/job/templar,
+	*/
 	)
 
 /datum/round_event/antagonist/solo/vampires_and_werewolves

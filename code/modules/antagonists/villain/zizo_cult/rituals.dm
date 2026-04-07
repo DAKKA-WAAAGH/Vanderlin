@@ -545,7 +545,7 @@ GLOBAL_LIST_INIT(ritualslist, build_zizo_rituals())
 	if(victim.stat == DEAD)
 		return
 
-	var/mob/living/wll = new /mob/living/carbon/human/species/demihuman(place)
+	var/mob/living/wll = new /mob/living/carbon/human/species/tieberian(place) //Stonekeep Edit: This makes more sense on Sk lore.
 	victim.mind.transfer_to(wll)
 	victim.gib()
 

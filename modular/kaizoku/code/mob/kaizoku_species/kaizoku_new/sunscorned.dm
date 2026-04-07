@@ -519,6 +519,7 @@
 		to_chat(drinker, "... Not enough... I need [round(drinker.blood_accum_target - drinker.blood_accumulation, 0.1)] more.")
 		return
 	var/datum/status_effect/buff/blood_satiation/sat = drinker.has_status_effect(/datum/status_effect/buff/blood_satiation)
+	if(!sat)
 		sat = drinker.apply_status_effect(/datum/status_effect/buff/blood_satiation)
 	if(!sat)
 		return

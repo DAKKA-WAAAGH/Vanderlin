@@ -584,6 +584,8 @@
 	if(atkswinging)
 		stop_attack()
 
+	var/ignorethechangelingmaw = mmb_intent?.type //Stonekeep Edit
+
 	if(!input)
 		qdel(mmb_intent)
 		mmb_intent = null
@@ -626,6 +628,17 @@
 
 	hud_used.quad_intents?.switch_intent(input)
 	hud_used.give_intent?.switch_intent(input)
+
+	//Stonekeep Edit - Start
+	var/biteychangey = mmb_intent?.type
+	if(ishuman(src))
+		var/mob/living/carbon/human/H = src
+		if(H.dna?.species?.id == SPEC_ID_CHANGELING)
+			if(ignorethechangelingmaw == INTENT_BITE && biteychangey != INTENT_BITE)
+				H.close_changeling_maw()
+			else if(ignorethechangelingmaw != INTENT_BITE && biteychangey == INTENT_BITE)
+				H.open_changeling_maw()
+	//Stonekeep Edit - Ending
 
 /mob/verb/def_intent_change(input as num)
 	set name = "def-change"

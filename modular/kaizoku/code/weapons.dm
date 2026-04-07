@@ -119,7 +119,7 @@
 /obj/item/weapon/axe/battle/ono/fogono
 	slot_flags = ITEM_SLOT_HIP
 	name = "custodian ono"
-	desc = "Originally, a prank forged by changelings to mock dwarves centuries ago. Now, it is repurposed by houndmasters as their war symbol."
+	desc = "Originally a survival tool reforged to celebrate the dwarven raids, now used to breach armored targets."
 	icon_state = "fogaxe"
 	minstr = 10
 	icon = 'modular/kaizoku/icons/weapons/32.dmi'
@@ -130,7 +130,7 @@
 		var/mob/living/carbon/human/H = user
 		if(H.dna?.species?.id == "dwarf")
 			to_chat(H, span_warning("TWO HEADED AXE? THIS WILL GO RIGHT TO THE BOOK OF GRUDGES!"))
-			H.blur_eyes(rand(3, 6))
+			H.adjust_eye_blur(rand(3, 6) SECONDS)
 			for(var/obj/item/bodypart/BP in H.bodyparts)
 				if(BP.body_zone == BODY_ZONE_HEAD)
 					BP.lingering_pain += rand(25, 40)
@@ -814,14 +814,14 @@
 
 /obj/effect/oilspill/Initialize()
 	. = ..()
+	for(var/mob/living/carbon/human/H in view(2, src)) 	// Sate pyromaniac addiction. I don't even know if that thing works, but anyway.
+		if(H.has_quirk(/datum/quirk/vice/pyromaniac))
+			H.sate_addiction(/datum/quirk/vice/pyromaniac)
 	setDir(pick(GLOB.cardinals))
 	START_PROCESSING(SSfastprocess, src)
 	return
 
 /obj/effect/oilspill/process()
-	for(var/mob/living/carbon/human/H in view(2, src)) 	// Sate pyromaniac addiction. I don't even know if that thing works, but anyway.
-		if(H.has_flaw(/datum/charflaw/addiction/pyromaniac))
-			H.sate_addiction()
 	life--
 	if(life <= 0)
 		qdel(src)
@@ -1513,7 +1513,7 @@
 
 		for(var/mob/living/carbon/H in hearers(5, user))
 			shake_camera(H, 4, 3)
-			H.blur_eyes(3)
+			H.adjust_eye_blur(3 SECONDS)
 			H.playsound_local(get_turf(H), 'sound/foley/tinnitus.ogg', 70)
 		step(user, get_dir(user, turn(user.dir, 180)))
 

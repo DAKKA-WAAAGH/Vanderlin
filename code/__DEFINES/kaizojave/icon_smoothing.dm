@@ -1,30 +1,31 @@
 //THESE WALLS ARE kaizojave'S WALLS! ALL RECOGNITION GOES TO THEIR ORIGINAL CREATORS!
 
-#ifndef LAZYACCESS
-#define LAZYACCESS(L, I) (L ? (isnum(I) ? (I > 0 && I <= length(L) ? L[I] : null) : L[I]) : null)
-#endif
-#ifndef LAZYADD
-#define LAZYADD(L, I) if(!L) { L = list(); } L += I;
-#endif
-#ifndef LAZYADDASSOCLIST
-#define LAZYADDASSOCLIST(L, K, V) if(!L) { L = list(); } L[K] += list(V);
-#endif
-#ifndef LAZYREMOVEASSOC
-#define LAZYREMOVEASSOC(L, K, V) if(L) { if(L[K]) { L[K] -= V; if(!length(L[K])) L -= K; } if(!length(L)) L = null; }
-#endif
-
 // The previous comment from Mojave Sun were removed as it is outdated under our new, cursed system.
 // Later down the line, I shall make an text explaining this file.
 
-//Redefinitions of the diagonal directions so they can be stored in one var without conflicts
-#define NORTH_JUNCTION NORTH //(1<<0)
-#define SOUTH_JUNCTION SOUTH //(1<<1)
-#define EAST_JUNCTION EAST  //(1<<2)
-#define WEST_JUNCTION WEST  //(1<<3)
-#define NORTHEAST_JUNCTION (1<<4)
-#define SOUTHEAST_JUNCTION (1<<5)
-#define SOUTHWEST_JUNCTION (1<<6)
-#define NORTHWEST_JUNCTION (1<<7)
+#ifndef NORTH_JUNCTION
+#define NORTH_JUNCTION		NORTH
+#define SOUTH_JUNCTION		SOUTH
+#define EAST_JUNCTION		EAST
+#define WEST_JUNCTION		WEST
+#define NORTHEAST_JUNCTION	(1<<4)
+#define SOUTHEAST_JUNCTION	(1<<5)
+#define SOUTHWEST_JUNCTION	(1<<6)
+#define NORTHWEST_JUNCTION	(1<<7)
+#endif
+
+/atom
+	var/mutable_appearance/top_left_corner = null
+	var/mutable_appearance/top_right_corner = null
+	var/mutable_appearance/bottom_right_corner = null
+	var/mutable_appearance/bottom_left_corner = null
+
+/atom/movable
+	var/can_be_unanchored = FALSE
+
+/turf/closed
+	var/list/fixed_underlay = null
+
 
 DEFINE_BITFIELD(smoothing_junction, list(
 	"NORTH_JUNCTION" = NORTH_JUNCTION,
@@ -37,53 +38,51 @@ DEFINE_BITFIELD(smoothing_junction, list(
 	"NORTHWEST_JUNCTION" = NORTHWEST_JUNCTION,
 ))
 
+//#define NO_ADJ_FOUND 0
+//#define ADJ_FOUND 1
+//#define NULLTURF_BORDER 2
 
-#define NO_ADJ_FOUND 0
-#define ADJ_FOUND 1
-#define NULLTURF_BORDER 2
+//#define DEFAULT_UNDERLAY_ICON 'icons/turf/floors.dmi'
+//#define DEFAULT_UNDERLAY_ICON_STATE "plating"
 
-#define DEFAULT_UNDERLAY_ICON 'icons/turf/floors.dmi'
-#define DEFAULT_UNDERLAY_ICON_STATE "plating"
-
-
-#define SET_ADJ_IN_DIR(source, junction, direction, direction_flag) \
-	do { \
-		var/turf/neighbor = get_step(source, direction); \
-		if(!neighbor) { \
-			if(source.smoothing_flags & SMOOTH_BORDER) { \
-				junction |= direction_flag; \
+// Kaizojave's own macro for adjacency smoothing
+#define KJ_SET_ADJ_IN_DIR(direction, direction_flag) \
+do { \
+	var/turf/neighbor = get_step(src, direction); \
+	if(!neighbor) { \
+		if(src.smoothing_flags & SMOOTH_BORDER) { \
+			new_junction |= direction_flag; \
+		}; \
+	} \
+	else { \
+		if(!isnull(neighbor.smoothing_groups)) { \
+			for(var/target in src.smoothing_list) { \
+				if(!(src.smoothing_list[target] & neighbor.smoothing_groups[target])) { \
+					continue; \
+				}; \
+				new_junction |= direction_flag; \
+				break; \
 			}; \
 		}; \
-		else { \
-			if(!isnull(neighbor.smoothing_groups)) { \
-				for(var/target in source.smoothing_list) { \
-					if(!(source.smoothing_list[target] & neighbor.smoothing_groups[target])) { \
+		if(!(new_junction & direction_flag) && src.smoothing_flags & SMOOTH_OBJ) { \
+			for(var/obj/thing in neighbor) { \
+				if(!thing.anchored || isnull(thing.smoothing_groups)) { \
+					continue; \
+				}; \
+				for(var/target in src.smoothing_list) { \
+					if(!(src.smoothing_list[target] & thing.smoothing_groups[target])) { \
 						continue; \
 					}; \
-					junction |= direction_flag; \
+					new_junction |= direction_flag; \
+					break; \
+				}; \
+				if(new_junction & direction_flag) { \
 					break; \
 				}; \
 			}; \
-			if(!(junction & direction_flag) && source.smoothing_flags & SMOOTH_OBJ) { \
-				for(var/obj/thing in neighbor) { \
-					if(!thing.anchored || isnull(thing.smoothing_groups)) { \
-						continue; \
-					}; \
-					for(var/target in source.smoothing_list) { \
-					if(!(source.smoothing_list[target] & thing.smoothing_groups[target])) { \
-							continue; \
-						}; \
-						junction |= direction_flag; \
-						break; \
-					}; \
-					if(junction & direction_flag) { \
-						break; \
-					}; \
-				}; \
-			}; \
 		}; \
-	} while(FALSE)
-
+	}; \
+} while(FALSE)
 
 ///Scans all adjacent turfs to find targets to smooth with.
 /atom/proc/calculate_adjacencies()
@@ -140,8 +139,6 @@ DEFINE_BITFIELD(smoothing_junction, list(
 		return NONE
 	return ..()
 
-
-// smooth_icon with SMOOTH_CORNERS support extends base proc
 // Base smooth_icon is in code/__HELPERS/icon_smoothing.dm
 // This override handles corner-based smoothing
 /atom/smooth_icon()
@@ -257,19 +254,19 @@ DEFINE_BITFIELD(smoothing_junction, list(
 	if(top_left_corner != nw)
 		cut_overlay(top_left_corner)
 		top_left_corner = nw
-		LAZYADD(new_overlays, nw)
+		if(!new_overlays) { new_overlays = list(); } new_overlays += nw
 	if(top_right_corner != ne)
 		cut_overlay(top_right_corner)
 		top_right_corner = ne
-		LAZYADD(new_overlays, ne)
+		if(!new_overlays) { new_overlays = list(); } new_overlays += ne
 	if(bottom_right_corner != sw)
 		cut_overlay(bottom_right_corner)
 		bottom_right_corner = sw
-		LAZYADD(new_overlays, sw)
+		if(!new_overlays) { new_overlays = list(); } new_overlays += sw
 	if(bottom_left_corner != se)
 		cut_overlay(bottom_left_corner)
 		bottom_left_corner = se
-		LAZYADD(new_overlays, se)
+		if(!new_overlays) { new_overlays = list(); } new_overlays += se
 	if(new_overlays)
 		add_overlay(new_overlays)
 
@@ -308,7 +305,7 @@ DEFINE_BITFIELD(smoothing_junction, list(
 	var/new_junction = NONE
 
 	for(var/direction in GLOB.cardinals) //Cardinal case first.
-		SET_ADJ_IN_DIR(src, new_junction, direction, direction)
+		KJ_SET_ADJ_IN_DIR(direction, direction)
 
 	if(!(new_junction & (NORTH|SOUTH)) || !(new_junction & (EAST|WEST)))
 		set_smoothed_icon_state(new_junction)
@@ -316,17 +313,17 @@ DEFINE_BITFIELD(smoothing_junction, list(
 
 	if(new_junction & NORTH_JUNCTION)
 		if(new_junction & WEST_JUNCTION)
-			SET_ADJ_IN_DIR(src, new_junction, NORTHWEST, NORTHWEST_JUNCTION)
+			KJ_SET_ADJ_IN_DIR(NORTHWEST, NORTHWEST_JUNCTION)
 
 		if(new_junction & EAST_JUNCTION)
-			SET_ADJ_IN_DIR(src, new_junction, NORTHEAST, NORTHEAST_JUNCTION)
+			KJ_SET_ADJ_IN_DIR(NORTHEAST, NORTHEAST_JUNCTION)
 
 	if(new_junction & SOUTH_JUNCTION)
 		if(new_junction & WEST_JUNCTION)
-			SET_ADJ_IN_DIR(src, new_junction, SOUTHWEST, SOUTHWEST_JUNCTION)
+			KJ_SET_ADJ_IN_DIR(SOUTHWEST, SOUTHWEST_JUNCTION)
 
 		if(new_junction & EAST_JUNCTION)
-			SET_ADJ_IN_DIR(src, new_junction, SOUTHEAST, SOUTHEAST_JUNCTION)
+			KJ_SET_ADJ_IN_DIR(SOUTHEAST, SOUTHEAST_JUNCTION)
 
 	set_smoothed_icon_state(new_junction)
 

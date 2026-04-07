@@ -14,7 +14,7 @@
 	spawn_positions = 2
 	bypass_lastclass = TRUE
 	outfit = /datum/outfit/job/kaizoku/tideseeker
-	min_pq = 0
+	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	selection_color = "#c2a45d"
 	cmode_music = 'modular/kaizoku/sound/combat/combat_decapitator.ogg'
 	allowed_patrons = list(/datum/patron/abyssanctum/purifier, /datum/patron/abyssanctum/curator, /datum/patron/abyssanctum/tideweaver)

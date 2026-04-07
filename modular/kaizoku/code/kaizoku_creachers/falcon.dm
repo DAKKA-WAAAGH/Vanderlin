@@ -1,16 +1,6 @@
 //This animal alongside the Doggo has been organized this way because I seriously can't organize the code otherwise.
 //Feel free to change it. In fact, I encourage you to do it. I just can't waste time on it right now.
 
-#define BB_FALCON_CURRENT_TARGET "falcon_current_target"
-#define BB_FALCON_PERCH_TARGET "falcon_perch_target"
-#define BB_FALCON_PERCH_TYPES "falcon_perch_types"
-#define BB_FALCON_WANT_PERCH "falcon_want_perch"
-#define BB_FALCON_DELIVERING_PAPER "falcon_delivering_paper"
-
-#define TRAIT_FALCON_PERCHED "falcon_perched"
-#define TRAIT_FALCON_FROZEN "falcon_frozen"
-#define PERCH_SOURCE "perched"
-
 /proc/OnFalconBuckled(mob/living/carbon/human/H, mob/living/M)
 	H.update_falcon_perched_overlay()
 
@@ -541,9 +531,11 @@
 			return
 	..()
 
+/*
 /mob/living/simple_animal/hostile/retaliate/custodianpet/falcon/get_sound(input)
 	if("idle")
 		return pick('modular/kaizoku/sound/animals/saintalon/saintalon_3.ogg','modular/kaizoku/sound/animals/saintalon/saintalon_4.ogg','modular/kaizoku/sound/animals/saintalon/saintalon_5.ogg','modular/kaizoku/sound/animals/saintalon/saintalon_6.ogg')
+*/
 
 /mob/living/carbon/human
 	var/image/falcon_perched_overlay = null

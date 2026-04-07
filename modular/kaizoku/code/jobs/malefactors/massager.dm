@@ -21,7 +21,7 @@ It´s pretty good. Also extra good mood boost for sex, but still a bit barebones
 	outfit = /datum/outfit/job/kaizoku/massager	//Default outfit.
 	// advclass_cat_rolls = list(CTAG_NITEMAIDEN= 20) // Not yet.
 	give_bank_account = 25
-	min_pq = -25
+	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	faction = FACTION_TOWN
 	department_flag = FACTION_MALEFACTORS
 	cmode_music = 'modular/kaizoku/sound/combat/combat_stormwarrior.ogg'
