@@ -74,6 +74,7 @@
 	)
 	storyteller = /datum/storyteller/matthios
 
+/* // Stonekeep Edit: Kaizoku : Sourced from ERP servers, this does not belong to Stonekeep, and never will.
 /datum/patron/inhumen/baotha
 	name = BAOTHA
 	domain = "Goddess of Drugs, Self-Preservation, and Remorseless Joy"	//Bright-dyed hair falls within 'remorseless joy.' Joy for one's self at expense of the setting. Same for her music taste.
@@ -90,7 +91,9 @@
 		"BAOTHA'S WHISPERS CALM MY MIND!",
 	)
 	storyteller = /datum/storyteller/baotha
+*/
 
+/* // Stonekeep Edit: Kaizoku : This is part of Vanderlin's schrizophrenic lore 'ss13 monkey spacestation'. Removal. REMOVAL. REMOVAL!!! THIS SHOULD NOT EXIST.
 /// Maniac Patron - Their mind is broken by secrets of Zizo/Graggar combined. They quite possibly know the reality of what happens outside the planet. They may think this is all a game. They are clearly insane.
 /datum/patron/inhumen/graggar_zizo
 	name = "Graggazo"
@@ -126,3 +129,4 @@
 		INVOKE_ASYNC(dreamer, TYPE_PROC_REF(/datum/antagonist/maniac, wake_up))
 		return TRUE
 	. = ..()
+*/

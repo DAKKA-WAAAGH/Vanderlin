@@ -30,8 +30,8 @@
 	detail_tag = "_det"
 
 /obj/item/clothing/neck/psycross/silver/abyssanctum
-	name = "abyssanctum amulet"
-	desc = "Despair thee not at the abyssal depths, for where light doth fade, vessels of might shall be therein carved, as Abyssor and the Weeper guide their own."
+	name = "trinomial anchor"
+	desc = "Despair thee not at the abyssal depths, for where light doth fade, vessels of might shall be therein carved, as Abyssor guide their own."
 	icon = 'modular/kaizoku/icons/clothingicon/neck.dmi'
 	mob_overlay_icon = 'modular/kaizoku/icons/clothing/neck.dmi'
 	icon_state = "abyssanctum"

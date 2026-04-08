@@ -133,7 +133,7 @@
 		var/turf/Tpick = cands[1]
 		var/atom/source_for_dir = src
 
-		for(var/dir_all in demon_all_dirs)
+		for(var/dir_all in GLOB.demon_all_dirs)
 			var/turf/Nt = get_step(Tpick, dir_all)
 			if(!Nt) continue
 			var/obj/effect/demon/corruption/Nc = locate(/obj/effect/demon/corruption) in Nt
@@ -158,7 +158,7 @@
 	for(var/obj/effect/demon/corruption/CorOwn in range(DEMON_SPREAD_RADIUS, src))
 		if(CorOwn.parent_core != src)
 			continue
-		for(var/dir_card5 in demon_spread_dirs)
+		for(var/dir_card5 in GLOB.demon_spread_dirs)
 			var/turf/Tb = get_step(CorOwn, dir_card5)
 			if(!Tb)
 				continue

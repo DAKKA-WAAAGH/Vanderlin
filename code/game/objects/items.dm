@@ -584,6 +584,13 @@ GLOBAL_DATUM_INIT(fire_overlay, /mutable_appearance, mutable_appearance('icons/e
 /obj/item/Topic(href, href_list)
 	. = ..()
 
+	if(href_list["kaizoku_gaze_further"])
+		if(!usr || !specialkaizokutext || !specialkaizokudesc)
+			return
+		set_kaizoku_reveal_flag(usr)
+		usr.run_examinate(src)
+		return
+
 	if(href_list["inspect"])
 		if(!usr.can_perform_action(src, NEED_DEXTERITY|FORBID_TELEKINESIS_REACH))
 			return
@@ -595,11 +602,44 @@ GLOBAL_DATUM_INIT(fire_overlay, /mutable_appearance, mutable_appearance('icons/e
 
 /obj/item
 	var/simpleton_price = FALSE
+	/// Enables an optional Kaizoku alternate examine text for this item.
+	var/specialkaizokutext = FALSE
+	/// Hidden text revealed when the user clicks the Kaizoku examine link.
+	var/specialkaizokudesc
+	/// One-shot per-user reveal flag for rebuilding examine output as a single connected block.
+	var/tmp/list/kaizoku_reveal_once_for
+
+/obj/item/proc/consume_kaizoku_reveal_flag(mob/user)
+	if(!user)
+		return FALSE
+	if(!islist(kaizoku_reveal_once_for) || !kaizoku_reveal_once_for[REF(user)])
+		return FALSE
+	kaizoku_reveal_once_for -= REF(user)
+	return TRUE
+
+/obj/item/proc/set_kaizoku_reveal_flag(mob/user)
+	if(!user)
+		return
+	if(!islist(kaizoku_reveal_once_for))
+		kaizoku_reveal_once_for = list()
+	kaizoku_reveal_once_for[REF(user)] = TRUE
 
 /obj/item/get_inspect_button()
+	var/button = ""
 	if(has_inspect_verb || (atom_integrity < max_integrity))
-		return " <span class='info'><a href='byond://?src=[REF(src)];inspect=1'>{?}</a></span>"
+		button += " <span class='info'><a href='byond://?src=[REF(src)];inspect=1'>{?}</a></span>"
+	if(button)
+		return button
 	return ..()
+
+/obj/item/examine(mob/user)
+	. = ..()
+	if(!specialkaizokutext || !specialkaizokudesc)
+		return
+	if(consume_kaizoku_reveal_flag(user))
+		. += specialkaizokudesc
+	else
+		. += "<a href='byond://?src=[REF(src)];kaizoku_gaze_further=1' style='color: #c41e3a; text-decoration: underline;'>examine further</a>"
 
 /obj/item/get_inspect_entries(list/inspect_list)
 	if(!islist(inspect_list))

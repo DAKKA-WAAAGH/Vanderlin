@@ -197,7 +197,7 @@
 	. += "<BR><B>Cloak:</B> <A href='byond://?src=[REF(src)];command=item_placement;item_slot=[SLOT_MANNEQUIN_CLOAK]'>[makeStrippingButton(clothing[SLOT_MANNEQUIN_CLOAK])]</A>" //No direct slot to equip.
 	. += "<BR><B>Armor:</B> <A href='byond://?src=[REF(src)];command=item_placement;item_slot=[BODY_ZONE_CHEST]'>[makeStrippingButton(clothing[SLOT_MANNEQUIN_ARMOR])]</A>"
 	. += "<BR><B>Shirt:</B> <A href='byond://?src=[REF(src)];command=item_placement;item_slot=[BODY_ZONE_PRECISE_STOMACH]'>[makeStrippingButton(clothing[SLOT_MANNEQUIN_SHIRT])]</A>"
-	. += "<BR><B>Belt:</B> <A href='byond://?src=[REF(src)];command=item_placement;item_slot=[BODY_ZONE_GROIN]'>[makeStrippingButton(clothing[SLOT_MANNEQUIN_BELT])]</A>" //Stonekeep Edit
+	. += "<BR><B>Belt:</B> <A href='byond://?src=[REF(src)];command=item_placement;item_slot=[BODY_ZONE_PRECISE_GROIN]'>[makeStrippingButton(clothing[SLOT_MANNEQUIN_BELT])]</A>" //Stonekeep Edit
 	. += "<BR><B>Ring:</B> <A href='byond://?src=[REF(src)];command=item_placement;item_slot=[SLOT_MANNEQUIN_RING]'>[makeStrippingButton(clothing[SLOT_MANNEQUIN_RING])]</A>" //No direct slot to equip.
 
 /obj/structure/mannequin/attackby(obj/item/I, mob/user)
@@ -619,7 +619,7 @@
 			return ITEM_SLOT_ARMOR
 		if(BODY_ZONE_PRECISE_STOMACH)
 			return ITEM_SLOT_SHIRT
-		if(BODY_ZONE_GROIN)
+		if(BODY_ZONE_PRECISE_GROIN)
 			return ITEM_SLOT_BELT
 		if(SLOT_MANNEQUIN_RING)
 			return ITEM_SLOT_RING
@@ -677,7 +677,7 @@
 			return SLOT_MANNEQUIN_ARMOR
 		if(BODY_ZONE_PRECISE_STOMACH)
 			return SLOT_MANNEQUIN_SHIRT
-		if(BODY_ZONE_GROIN)
+		if(BODY_ZONE_PRECISE_GROIN)
 			return SLOT_MANNEQUIN_BELT
 		if(SLOT_MANNEQUIN_RING)
 			return SLOT_MANNEQUIN_RING

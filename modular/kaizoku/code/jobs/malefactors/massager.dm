@@ -10,7 +10,7 @@ It´s pretty good. Also extra good mood boost for sex, but still a bit barebones
 
 	allowed_races = RACES_PLAYER_ALL
 	allowed_sexes = list(FEMALE) //put males too
-	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_ANCIENT)
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
 	tutorial = "You've been chosen for your beauty as you rotted in poverty, either a shamed \
 	desecrant or a refugee with no work skills. Now, you lull people with seduction to be your \
 	clients, and receive relaxing massages, baths... with a happy ending, just don't tell the last \

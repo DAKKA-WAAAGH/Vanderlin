@@ -487,7 +487,6 @@
 	pixel_y = oy
 
 /obj/structure/loomshot_broken
-/obj/structure/loomshot_broken
 	name = "destroyed loomshot"
 	desc = "A shattered loomshot, torn apart by internal detonation."
 	icon = 'modular/kaizoku/icons/mapset/warfare64x64.dmi'
@@ -497,3 +496,226 @@
 	layer = OBJ_LAYER
 	mouse_opacity = MOUSE_OPACITY_OPAQUE
 	resistance_flags = INDESTRUCTIBLE
+
+/obj/structure/sonar_cannon
+	name = "sonar cannon"
+	desc = "A pressure-wave cannon that charges, fires, and cycles again."
+	icon = 'modular/kaizoku/icons/mapset/warfare64x64.dmi'
+	icon_state = "loomshot_open"
+	anchored = TRUE
+	density = TRUE
+	layer = OBJ_LAYER
+	max_integrity = 450
+	var/fire_range = 9
+	var/charge_time = 3 SECONDS
+	var/recharge_time = 20 SECONDS
+	var/next_fire = 0
+	var/charging = FALSE
+	var/charge_finish = 0
+	var/mob/living/current_target = null
+
+/obj/structure/sonar_cannon/Initialize()
+	. = ..()
+	START_PROCESSING(SSfastprocess, src)
+
+/obj/structure/sonar_cannon/Destroy()
+	STOP_PROCESSING(SSfastprocess, src)
+	return ..()
+
+/obj/structure/sonar_cannon/process()
+	if(charging)
+		if(world.time < charge_finish)
+			return
+		fire_sonar()
+		return
+	if(world.time < next_fire)
+		return
+	var/mob/living/target = find_target()
+	if(!target)
+		return
+	current_target = target
+	charging = TRUE
+	charge_finish = world.time + charge_time
+	visible_message(span_warning("[src] hums as pressure builds in its chamber."))
+	playsound(get_turf(src), 'modular/kaizoku/sound/warfaresounds/loomshot_actingup.ogg', 70, FALSE)
+
+/obj/structure/sonar_cannon/proc/find_target()
+	for(var/mob/living/L in oview(fire_range, src))
+		if(QDELETED(L) || L.stat >= UNCONSCIOUS)
+			continue
+		if(L.client)
+			return L
+	return null
+
+/obj/structure/sonar_cannon/proc/fire_sonar()
+	charging = FALSE
+	next_fire = world.time + recharge_time
+	if(!current_target || QDELETED(current_target) || current_target.stat >= UNCONSCIOUS || get_dist(src, current_target) > fire_range)
+		current_target = null
+		return
+	visible_message(span_danger("[src] releases a crushing sonar blast at [current_target]!"))
+	playsound(get_turf(src), 'modular/kaizoku/sound/warfaresounds/loomshot_shotgun.ogg', 85, FALSE)
+	apply_sonar_payload(current_target)
+	current_target = null
+
+/obj/structure/sonar_cannon/proc/apply_sonar_payload(mob/living/L)
+	if(!L || QDELETED(L))
+		return
+	L.overlay_fullscreen("whiteout", /atom/movable/screen/fullscreen/white)
+	addtimer(CALLBACK(L, TYPE_PROC_REF(/mob/living, clear_fullscreen), "whiteout", 15 SECONDS), 10 SECONDS)
+
+	// Apply damage
+	if(iscarbon(L))
+		var/list/zones = list(BODY_ZONE_CHEST, BODY_ZONE_HEAD, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
+		var/spread_damage = max(1, round(20 / zones.len))
+		for(var/zone in zones)
+			L.apply_damage(spread_damage, BRUTE, zone)
+	else
+		L.apply_damage(20, BRUTE)
+	L.Paralyze(3 SECONDS)
+	L.Knockdown(6 SECONDS)
+	L.stuttering = max(L.stuttering, 25)
+	L.adjust_confusion(45 SECONDS)
+	L.adjust_eye_blur(8 SECONDS)
+
+	if(iscarbon(L))
+		var/mob/living/carbon/C = L
+		for(var/obj/item/I in C.held_items)
+			if(I && prob(85))
+				C.dropItemToGround(I)
+
+	L.visible_message(span_danger("[L] is blasted by a deafening sonic wave!"))
+	L.emote("scream")
+
+/obj/structure/manscrusher
+	name = "manscrusher"
+	desc = "A brutal overhead crusher waiting for a step below."
+	icon = 'icons/roguetown/items/natural.dmi'
+	icon_state = "stonebig2"
+	anchored = TRUE
+	density = TRUE
+	w_class = WEIGHT_CLASS_GIGANTIC
+	layer = ABOVE_MOB_LAYER
+	max_integrity = 180
+	var/triggered = FALSE
+	var/obj/effect/manscrusher_trigger/trigger = null
+
+/obj/structure/manscrusher/Initialize()
+	. = ..()
+	setup_trigger()
+
+/obj/structure/manscrusher/Destroy()
+	if(trigger)
+		QDEL_NULL(trigger)
+	return ..()
+
+/obj/structure/manscrusher/proc/setup_trigger()
+	var/turf/T = get_turf(src)
+	if(!T)
+		return
+	var/turf/below = GET_TURF_BELOW(T)
+	if(!below)
+		return
+	if(trigger)
+		QDEL_NULL(trigger)
+	trigger = new /obj/effect/manscrusher_trigger(below, src)
+
+/obj/structure/manscrusher/proc/trigger_fall(mob/living/victim)
+	if(triggered)
+		return
+	triggered = TRUE
+	if(trigger)
+		QDEL_NULL(trigger)
+	anchored = FALSE
+	visible_message(span_danger("[src] breaks loose and drops!"))
+	var/turf/T = get_turf(src)
+	if(T)
+		T.zFall(src, 1, TRUE)
+
+/obj/structure/manscrusher/fall_damage()
+	return 110
+
+/obj/structure/manscrusher/onZImpact(turf/T, levels)
+	. = ..()
+	if(!T)
+		return
+	for(var/mob/living/L in T)
+		L.apply_damage(35, BRUTE)
+
+/obj/structure/manscrusher/stalactite
+	name = "stalactite"
+	desc = "A jagged spike poised to skewer anything below."
+	icon_state = "stonebig1"
+
+/obj/structure/manscrusher/stalactite/fall_damage()
+	return 95
+
+/obj/structure/manscrusher/stalactite/onZImpact(turf/T, levels)
+	if(T)
+		for(var/mob/living/L in T)
+			if(L.stat == DEAD)
+				continue
+			var/obj/item/stalactite_spike/spike = new /obj/item/stalactite_spike(T)
+
+			var/list/zones = list(BODY_ZONE_CHEST, BODY_ZONE_HEAD, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
+			var/target_zone = pick(zones)
+			L.apply_damage(40, BRUTE, target_zone)
+
+			if(ishuman(L))
+				var/mob/living/carbon/human/H = L
+				var/obj/item/bodypart/BP = H.get_bodypart(target_zone)
+				if(BP && !HAS_TRAIT(H, TRAIT_PIERCEIMMUNE))
+					BP.add_embedded_object(spike, silent = FALSE, crit_message = TRUE)
+					H.emote("embed")
+	return ..()
+
+/obj/item/stalactite_spike
+	name = "stalactite shard"
+	desc = "A jagged piece of rock embedded deep."
+	icon = 'icons/roguetown/items/natural.dmi'
+	icon_state = "rock1"
+	w_class = WEIGHT_CLASS_SMALL
+	embedding = list(
+		"embed_chance" = 100,
+		"embedded_pain_multiplier" = 3,
+		"embedded_fall_chance" = 15,
+		"embedded_impact_pain_multiplier" = 5,
+		"embedded_unsafe_removal_pain_multiplier" = 6,
+		"embedded_unsafe_removal_time" = 8,
+		"embedded_bloodloss" = 1.5
+	)
+
+/obj/structure/manscrusher/stalactite/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
+	if(hit_atom && !QDELETED(hit_atom))
+		return hit_atom.hitby(src, 0, TRUE, FALSE, throwingdatum, "stab")
+
+/obj/effect/manscrusher_trigger
+	name = "crusher shadow"
+	desc = "Something heavy looms above."
+	icon = 'icons/effects/effects.dmi'
+	icon_state = "shadow"
+	alpha = 180
+	anchored = TRUE
+	density = FALSE
+	mouse_opacity = MOUSE_OPACITY_ICON
+	layer = BELOW_MOB_LAYER
+	plane = GAME_PLANE
+	var/obj/structure/manscrusher/owner = null
+
+/obj/effect/manscrusher_trigger/Initialize(mapload, obj/structure/manscrusher/new_owner)
+	. = ..()
+	owner = new_owner
+
+/obj/effect/manscrusher_trigger/Crossed(atom/movable/AM)
+	. = ..()
+	if(!owner || owner.triggered)
+		qdel(src)
+		return
+	if(!isliving(AM))
+		return
+	var/mob/living/L = AM
+	if(L.stat == DEAD)
+		return
+	if(!L.client)
+		return
+	owner.trigger_fall(L)

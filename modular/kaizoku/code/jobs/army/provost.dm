@@ -7,7 +7,7 @@
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_CITIZEN_PLAYERS
-	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_IMMORTAL, AGE_ANCIENT)
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_IMMORTAL, AGE_OLD)
 	tutorial = "The mantle of an provost was never an easy one to bear ever \
 	since the Seneschal went to war against Grenzelhoft. Now \
 	with their absence, you control the Custodians at mainland. \

@@ -19,7 +19,7 @@
 
 	spells = list(/datum/action/cooldown/spell/undirected/list_target/convert_role/militia)
 	allowed_sexes = list(MALE, FEMALE) //same as town guard
-	allowed_ages = list(AGE_ANCIENT) //You are more than 600 years old, bud.
+	allowed_ages = list(AGE_OLD) //You are more than 600 years old, bud.
 	allowed_races = RACE_NATIVE_PLAYERS //Change this to Kaizoku races only.
 
 	// advclass_cat_rolls = list(CTAG_VETERAN = 20) // You don't.

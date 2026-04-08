@@ -19,7 +19,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	category_tags = list(CTAG_FORESTER)
 	cmode_music = 'sound/music/cmode/towner/CombatBeggar.ogg'
-	allowed_ages = ALL_AGES_LIST
+	allowed_ages = ALL_AGES_LIST_BLOOMING
 
 /datum/job/advclass/forester/timbercollier
 	title = "Timber Collier"

@@ -15,8 +15,8 @@
 		/datum/patron/divine/eora = /datum/curse/eora,
 		/datum/patron/inhumen/zizo = /datum/curse/zizo/minor,
 		/datum/patron/inhumen/matthios = /datum/curse/matthios,
-		/datum/patron/inhumen/baotha = /datum/curse/baotha,
-		/datum/patron/inhumen/graggar_zizo = /datum/curse/zizo/minor,
+		// /datum/patron/inhumen/baotha = /datum/curse/baotha, //Stonekeep Edit: Kaizoku
+		// /datum/patron/inhumen/graggar_zizo = /datum/curse/zizo/minor, //Stonekeep Edit: Kaizoku
 	)
 
 /datum/triumph_buy/random_curse/on_after_spawn(mob/living/carbon/human/H)

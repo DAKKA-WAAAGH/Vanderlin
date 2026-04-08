@@ -1,7 +1,7 @@
 //Cursed version of Mojave's frills. Improve at your own risk.
 
 GLOBAL_LIST_EMPTY(frill_objects)
-var/FRILL_DEBUG = FALSE
+GLOBAL_VAR_INIT(FRILL_DEBUG, FALSE)
 
 /proc/debug_frill_junction(junction)
 	var/state = get_consolidated_frill_state(junction)
@@ -97,6 +97,7 @@ var/FRILL_DEBUG = FALSE
 	return "frill0"
 
 
+
 /proc/get_frill_object(icon_path, icon_state, alpha = 255, pixel_x = 0, pixel_y = 0, plane = FRILL_PLANE, layer = FLOAT_LAYER)
 	var/cache_key = "[icon_path]-[icon_state]-[alpha]-[pixel_x]-[pixel_y]-[plane]-[layer]"
 	if(cache_key in GLOB.frill_objects)
@@ -105,15 +106,40 @@ var/FRILL_DEBUG = FALSE
 	var/mutable_appearance/mut_appearance = mutable_appearance(icon_path, icon_state, layer, plane, alpha)
 	mut_appearance.pixel_x = pixel_x
 	mut_appearance.pixel_y = pixel_y
+	mut_appearance.appearance_flags = RESET_ALPHA
+	mut_appearance.mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	return GLOB.frill_objects[cache_key] = mut_appearance
 
 
 /proc/get_frill_for_junction(icon_path, junction, alpha = 255, pixel_x = 0, pixel_y = 0, plane = OVER_FRILL_PLANE, is_modular = FALSE, layer = FLOAT_LAYER, west_is_diagonal = FALSE, east_is_diagonal = FALSE)
 	var/consolidated = is_modular ? get_consolidated_front_frill_state(junction, west_is_diagonal, east_is_diagonal) : get_consolidated_frill_state(junction, west_is_diagonal, east_is_diagonal)
 	var/icon_state = is_modular ? "[consolidated]_front" : consolidated
-	if(FRILL_DEBUG)
+	if(GLOB.FRILL_DEBUG)
 		world << "FRILL_DEBUG: junction=[junction] -> [consolidated] (icon=[icon_state])"
 	return get_frill_object(icon_path, icon_state, alpha, pixel_x, pixel_y, plane, layer)
+
+/proc/kaizojave_frill_source_has_wall_interface(atom/source)
+	return !!(source && hascall(source, "is_kaizojave_wall"))
+
+/proc/kaizojave_frill_is_wall_neighbor(atom/source, turf/neighbor)
+	if(!kaizojave_frill_source_has_wall_interface(source))
+		return FALSE
+	return !!call(source, "is_kaizojave_wall")(neighbor)
+
+/proc/kaizojave_frill_has_mergeable_connector(atom/source, turf/neighbor)
+	if(!source || !hascall(source, "has_mergeable_connector_on_turf"))
+		return FALSE
+	return !!call(source, "has_mergeable_connector_on_turf")(neighbor)
+
+/proc/kaizojave_frill_is_back_wall(atom/source, turf/neighbor)
+	if(!source || !hascall(source, "is_back_wall"))
+		return FALSE
+	return !!call(source, "is_back_wall")(neighbor)
+
+/proc/kaizojave_frill_should_use_coverup(atom/source)
+	if(!source || !hascall(source, "should_use_window_coverup"))
+		return FALSE
+	return !!call(source, "should_use_window_coverup")()
 
 /datum/element/frill
 	element_flags = ELEMENT_BESPOKE | ELEMENT_DETACH
@@ -151,40 +177,47 @@ var/FRILL_DEBUG = FALSE
 	var/east_is_diagonal = FALSE
 	var/west_is_back = FALSE
 	var/east_is_back = FALSE
-	if(istype(west_neighbor, /turf/closed/wall/kaizojave))
-		var/turf/west_south = get_step(west_neighbor, SOUTH)
-		west_is_back = istype(west_south, /turf/closed/wall/kaizojave)
-		if(!west_is_back)
-			west_is_diagonal = TRUE
-	if(istype(east_neighbor, /turf/closed/wall/kaizojave))
-		var/turf/east_south = get_step(east_neighbor, SOUTH)
-		east_is_back = istype(east_south, /turf/closed/wall/kaizojave)
-		if(!east_is_back)
-			east_is_diagonal = TRUE
+	var/atom/wall_source_current = source
+	var/has_wall_interface = kaizojave_frill_source_has_wall_interface(wall_source_current)
+	if(has_wall_interface && kaizojave_frill_is_wall_neighbor(wall_source_current, west_neighbor))
+		if(kaizojave_frill_has_mergeable_connector(wall_source_current, west_neighbor))
+			west_is_back = FALSE
+			west_is_diagonal = FALSE
+		else
+			west_is_back = kaizojave_frill_is_back_wall(wall_source_current, west_neighbor)
+			if(!west_is_back)
+				west_is_diagonal = TRUE
+	if(has_wall_interface && kaizojave_frill_is_wall_neighbor(wall_source_current, east_neighbor))
+		if(kaizojave_frill_has_mergeable_connector(wall_source_current, east_neighbor))
+			east_is_back = FALSE
+			east_is_diagonal = FALSE
+		else
+			east_is_back = kaizojave_frill_is_back_wall(wall_source_current, east_neighbor)
+			if(!east_is_back)
+				east_is_diagonal = TRUE
 
 	var/south_changed = (last_south_turf != south_turf)
 	last_south_turf = south_turf
 
-	//The only useful one
 	var/turf/north_turf = get_step(source, NORTH)
-	// Was used for shitass admin logs, "she is no more more"
-	/*
-	var/turf/east_turf = get_step(source, EAST)
-	var/turf/west_turf = get_step(source, WEST)
-	var/turf/ne_turf = get_step(source, NORTHEAST)
-	var/turf/nw_turf = get_step(source, NORTHWEST)
-	*/
+	var/use_coverup = kaizojave_frill_should_use_coverup(wall_source_current)
+
 	if(!south_changed)
 		var/list/old_overlays = tracked_overlays[source]
 		if(old_overlays && old_overlays.len > 0)
 			var/list/updated_overlays = list()
-			var/has_north_wall_check = north_turf && istype(north_turf, /turf/closed/wall/kaizojave)
+			if(use_coverup)
+				source.cut_overlay(old_overlays)
+				tracked_overlays[source] = updated_overlays
+				return
+			var/has_north_wall_check = has_wall_interface && kaizojave_frill_is_wall_neighbor(wall_source_current, north_turf)
+			var/is_wall13 = (source.icon_state == "wall13")
+			var/is_still_frontmost = !south_turf || !(has_wall_interface && kaizojave_frill_is_wall_neighbor(wall_source_current, south_turf))
 
-			if(!has_north_wall_check) // Only create back frill if NO wall to north
-				var/back_frill = get_frill_for_junction(icon_path, new_junction, 255, 0, 32, OVER_FRILL_PLANE, FALSE, FLOAT_LAYER, west_is_diagonal, east_is_diagonal)
+			if(!has_north_wall_check)
+				var/back_frill = get_frill_for_junction(icon_path, new_junction, 255, 0, 32, OVER_FRILL_PLANE, FALSE, ABOVE_MOB_LAYER, west_is_diagonal, east_is_diagonal)
 				updated_overlays += back_frill
-			var/is_still_frontmost = !south_turf || !istype(south_turf, /turf/closed/wall/kaizojave)
-			if(is_still_frontmost)// Re-add front frill if this wall is still frontmost
+			if(is_still_frontmost && !is_wall13)
 				var/front_junction = new_junction
 				if(west_is_back)
 					front_junction &= ~WEST_JUNCTION
@@ -192,7 +225,7 @@ var/FRILL_DEBUG = FALSE
 					front_junction &= ~EAST_JUNCTION
 				var/front_west_is_diagonal = west_is_diagonal && !west_is_back
 				var/front_east_is_diagonal = east_is_diagonal && !east_is_back
-				var/front_plane = has_north_wall_check ? GAME_PLANE_UPPER : OVER_FRILL_PLANE
+				var/front_plane = has_north_wall_check ? UNDER_FRILL_PLANE : OVER_FRILL_PLANE
 				updated_overlays += get_frill_for_junction(icon_path, front_junction, 255, 0, 32, front_plane, TRUE, ABOVE_MOB_LAYER, front_west_is_diagonal, front_east_is_diagonal)
 
 			source.cut_overlay(old_overlays)
@@ -206,24 +239,20 @@ var/FRILL_DEBUG = FALSE
 		source.cut_overlay(current_overlays)
 
 	var/list/new_overlays = list()
+	if(use_coverup)
+		tracked_overlays[source] = new_overlays
+		return
 
-	var/has_north_wall = north_turf && istype(north_turf, /turf/closed/wall/kaizojave)
+	var/has_north_wall = has_wall_interface && kaizojave_frill_is_wall_neighbor(wall_source_current, north_turf)
 
-	var/turf/closed/wall/kaizojave/wall_source = source
-	var/vertical_door_south = wall_source?.check_vertical_door_window_south()
+	var/is_wall13 = (source.icon_state == "wall13")
+	var/is_frontmost = !south_turf || !(has_wall_interface && kaizojave_frill_is_wall_neighbor(wall_source_current, south_turf))
 
 	if(!has_north_wall)
-		if(vertical_door_south)
-			var/mutable_appearance/coverup = mutable_appearance(icon_path, "frill_coverup", FLOAT_LAYER, OVER_FRILL_PLANE)
-			coverup.appearance_flags = RESET_COLOR | RESET_ALPHA
-			coverup.pixel_y = 32
-			new_overlays += coverup
-		else
-			var/back_frill = get_frill_for_junction(icon_path, new_junction, 255, 0, 32, OVER_FRILL_PLANE, FALSE, FLOAT_LAYER, west_is_diagonal, east_is_diagonal)
-			new_overlays += back_frill
-	var/is_frontmost = !south_turf || !istype(south_turf, /turf/closed/wall/kaizojave)
+		var/back_frill = get_frill_for_junction(icon_path, new_junction, 255, 0, 32, OVER_FRILL_PLANE, FALSE, ABOVE_MOB_LAYER, west_is_diagonal, east_is_diagonal)
+		new_overlays += back_frill
 
-	if(is_frontmost)
+	if(is_frontmost && !is_wall13)
 		var/front_junction = new_junction
 		if(west_is_back)
 			front_junction &= ~WEST_JUNCTION
@@ -231,7 +260,7 @@ var/FRILL_DEBUG = FALSE
 			front_junction &= ~EAST_JUNCTION
 		var/front_west_is_diagonal = west_is_diagonal && !west_is_back
 		var/front_east_is_diagonal = east_is_diagonal && !east_is_back
-		var/front_plane = has_north_wall ? GAME_PLANE_UPPER : OVER_FRILL_PLANE
+		var/front_plane = has_north_wall ? UNDER_FRILL_PLANE : OVER_FRILL_PLANE
 		new_overlays += get_frill_for_junction(icon_path, front_junction, 255, 0, 32, front_plane, TRUE, ABOVE_MOB_LAYER, front_west_is_diagonal, front_east_is_diagonal)
 
 	source.add_overlay(new_overlays)

@@ -73,7 +73,8 @@ DEFINE_BITFIELD(smooth, list(
 #define SMOOTH_GROUP_MUSHROOM S_TURF(22)
 
 #define SMOOTH_GROUP_KAIZOJAVE_WALL S_TURF(23) //Stonekeep Edit: /turf/closed/wall/kaizojave
-#define MAX_S_TURF 23 //Stonekeep Edit. Have to match with the one above us.
+#define SMOOTH_GROUP_KAIZOJAVE_NATURAL_WALL S_TURF(24) // Stonekeep Edit: /turf/closed/wall/natural/kaizojave
+#define MAX_S_TURF 24 //Stonekeep Edit. Have to match with the one above us.
 
 /* /obj included */
 

@@ -37,6 +37,24 @@
 	var/has_smoke = FALSE
 	var/obj/item/clothing/face/cigarette/rollie/falcon_smoke = null
 
+/mob/living/simple_animal/hostile/retaliate/custodianpet/examine(mob/user)
+	. = ..()
+	if(user == summoner && length(.))
+		. += "<span class='notice'>This is your bloodbounded animal!</span>"
+
+/mob/living/simple_animal/hostile/retaliate/custodianpet/handle_fire()
+	. = ..()
+	if(on_fire)
+		resist_fire()
+
+/mob/living/simple_animal/hostile/retaliate/custodianpet/resist_fire()
+	if(!on_fire)
+		return
+	adjust_fire_stacks(-4)
+	adjust_divine_fire_stacks(-4)
+	if((fire_stacks + divine_fire_stacks) <= 0)
+		ExtinguishMob()
+
 /mob/living/simple_animal/hostile/retaliate/custodianpet/falcon
 	name = "saintalon"
 	desc = "The saintalon, whom each dive is a judgemental rite as the winged covenant of the skies. It like to smoke rollies."
@@ -301,7 +319,7 @@
 		if(!QDELETED(found_ziggie))
 			visible_message("<span class='notice'>[src] couldn't reach the ziggie in time.</span>")
 
-/mob/living/carbon/human/proc/perch_falcon_on_hand(var/falcon)
+/mob/living/carbon/human/proc/perch_falcon_on_hand(falcon)
 	var/mob/living/simple_animal/hostile/retaliate/custodianpet/falcon/F = falcon
 	if(!istype(F, /mob/living/simple_animal/hostile/retaliate/custodianpet/falcon) || !F.can_be_perched(src))
 		to_chat(src, "<span class='warning'>That falcon don't want to perch on you.</span>")
@@ -330,10 +348,17 @@
 	update_falcon_perched_overlay()
 
 /mob/living/simple_animal/hostile/retaliate/custodianpet/falcon/MouseDrop_T(mob/living/carbon/human/target, mob/living/user)
-	if(target == user && !buckled)
-		if(ishuman(user))
-			var/mob/living/carbon/human/H = user
-			H.perch_falcon_on_hand(src)
+	if(target != user || buckled || !ishuman(user))
+		return ..()
+	if(summoner != user)
+		to_chat(user, "<span class='warning'>[src] ignores your command. It serves another master.</span>")
+		return
+	for(var/mob/living/simple_animal/hostile/retaliate/custodianpet/falcon/F in target.buckled_mobs)
+		if(F != src)
+			to_chat(user, "<span class='warning'>Another saintalon is already perched on you.</span>")
+			return
+	var/mob/living/carbon/human/H = user
+	H.perch_falcon_on_hand(src)
 
 /mob/living/carbon/human/MiddleClickOn(atom/A, params)
 	if(A == src && buckled_mobs)
@@ -358,7 +383,7 @@
 		return P.afterattack(src, user, TRUE, list())
 	return ..()
 
-/obj/item/paper/afterattack(var/obj, mob/user, reach, params)
+/obj/item/paper/afterattack(obj, mob/user, reach, params)
 	var/mob/living/simple_animal/hostile/retaliate/custodianpet/falcon/F = obj
 	if(!istype(F, /mob/living/simple_animal/hostile/retaliate/custodianpet/falcon) || F.delivering_paper || !info)
 		return ..()
@@ -589,13 +614,13 @@
 		to_chat(user, "<span class='info'>You signal your animal(s) to move to a spot.</span>")
 		return
 
-var/global/list/whistle_command_cooldowns = list()
+GLOBAL_LIST_INIT(whistle_command_cooldowns, list())
 
 /obj/item/pet_command/whistle/attack_self(mob/user)
-	if(whistle_command_cooldowns[user] && world.time < whistle_command_cooldowns[user])
+	if(GLOB.whistle_command_cooldowns[user] && world.time < GLOB.whistle_command_cooldowns[user])
 		to_chat(user, "<span class='warning'>Your lungs need to recover before using this again.</span>")
 		return
-	whistle_command_cooldowns[user] = world.time + 10
+	GLOB.whistle_command_cooldowns[user] = world.time + 10
 
 	// Find both falcons and doggos
 	var/list/falcons = list()
@@ -710,7 +735,7 @@ var/global/list/whistle_command_cooldowns = list()
 			else
 				to_chat(user, "<span class='warning'>There are no beds nearby for your doggo to rest on.</span>")
 
-/mob/living/simple_animal/hostile/retaliate/custodianpet/falcon/proc/move_to_turf(var/turf/T, mob/user)
+/mob/living/simple_animal/hostile/retaliate/custodianpet/falcon/proc/move_to_turf(turf/T, mob/user)
 	patrolling = FALSE
 	following = FALSE
 	if(ai_controller)

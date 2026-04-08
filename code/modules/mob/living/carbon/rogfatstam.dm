@@ -4,7 +4,13 @@
 		athletics_skill = get_skill_level(/datum/skill/misc/athletics)
 	maximum_stamina = (STAEND + athletics_skill) * 10 //This here is the calculation for max STAMINA / GREEN
 
-	var/delay = (HAS_TRAIT(src, TRAIT_APRICITY) && (GLOB.tod == TOD_DAWN || GLOB.tod == TOD_DAY)) ? 11 : 20
+	var/champion_knowledge_near_water = FALSE
+	if(HAS_TRAIT(src, TRAIT_CHAMPION_KNOWLEDGE))
+		for(var/turf/open/water/water_turf in range(6, src))
+			champion_knowledge_near_water = TRUE
+			break
+
+	var/delay = ((HAS_TRAIT(src, TRAIT_APRICITY) && (GLOB.tod == TOD_DAWN || GLOB.tod == TOD_DAY)) || champion_knowledge_near_water) ? 11 : 20
 	if(world.time > last_fatigued + delay) //regen fatigue
 		var/added = energy / max_energy
 		added = round(-10+ (added*-40))

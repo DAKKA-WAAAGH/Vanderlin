@@ -12,9 +12,9 @@
 /datum/sex_action/anal_sex/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
 		return FALSE
-	if(!get_location_accessible(user, BODY_ZONE_GROIN))
+	if(!get_location_accessible(user, BODY_ZONE_PRECISE_GROIN))
 		return FALSE
-	if(!get_location_accessible(target, BODY_ZONE_GROIN))
+	if(!get_location_accessible(target, BODY_ZONE_PRECISE_GROIN))
 		return FALSE
 	if(user.gender == FEMALE)
 		return FALSE
@@ -74,9 +74,9 @@
 /datum/sex_action/anal_ride_sex/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
 		return FALSE
-	if(!get_location_accessible(user, BODY_ZONE_GROIN))
+	if(!get_location_accessible(user, BODY_ZONE_PRECISE_GROIN))
 		return FALSE
-	if(!get_location_accessible(target, BODY_ZONE_GROIN))
+	if(!get_location_accessible(target, BODY_ZONE_PRECISE_GROIN))
 		return FALSE
 	if(target.gender == FEMALE)
 		return FALSE

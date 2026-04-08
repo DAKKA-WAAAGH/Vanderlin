@@ -1,3 +1,14 @@
+// - // TOWER RAID IN PROGRESS // -
+
+// IDEA: CHANGE THESE GUYS AS THE 'EMERGENCY PERSONNEL' SOLDIERS IN CASE THE SOVEREIGN FAILS TO PLEASE THE EMPEROR.
+// THE ESSENCE? GIVE BACK THE TOWER TO THE EMPEROR. KILL ALL COURT MEMBERS. KILL ALL ENEMIES.
+// THIS TOWER DESEVES A NEW WORTHY CLAN TO CONTROL IT AFTERALL.
+// DO NOT DISAPPOINT. THE HUNDRED THOUSAND MARCHING PHANTOMS
+
+// - // TOWER RAID IN PROGRESS // -
+
+
+
 /////////////////////////////////////////////////////Abyssariad Pattern for Combat Skills/////////////////////////////////////////////////////////
 //'Civilian/Low Abyssanctum' Combat Roles - 3 LEVELS MAX in Combat Skill (Normal) - Many reasons. Mostly religious and Finantial.				//
 //'Zamurai/High Abyssanctum' Combat Roles - 4 lEVELS MAX in Combat Skill (Rare) - Plenty of Reasons. Leading religious and Demon-slaying.		//

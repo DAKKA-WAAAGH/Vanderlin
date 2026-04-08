@@ -1,0 +1,235 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			max-width: 100%;
+			overflow: visible !important;
+			overflow-x: hidden !important;
+		}
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #0b0f12;
+			color: #e6e6e6;
+			padding: 20px;
+			line-height: 1.6;
+			overflow-x: hidden !important;
+		}
+		h1 {
+			color: #ffd479;
+			text-align: center;
+			font-size: 2em;
+			margin-bottom: 10px;
+		}
+		h2 {
+			color: #f2aa4c;
+			border-bottom: 2px solid #f2aa4c;
+			padding-bottom: 8px;
+			margin-top: 12px;
+		}
+		p {
+			margin: 10px 0;
+		}
+		em {
+			color: #ccc;
+			font-style: italic;
+		}
+		strong {
+			color: #fff;
+		}
+		.quote {
+			color: #fff;
+			font-style: italic;
+			font-weight: bold;
+			margin: 12px 0;
+			border-left: 4px solid #f2aa4c;
+			padding-left: 12px;
+			overflow-wrap: anywhere;
+		}
+		.section {
+			background-color: #101820;
+			padding: 12px;
+			margin: 8px 0;
+			border-radius: 4px;
+		}
+		.sin {
+			color: #E63946;
+			margin: 8px 0;
+		}
+		.nonperson {
+			color: #FFD700;
+			margin: 8px 0;
+		}
+		.description {
+			color: #e6e6e6;
+			margin: 8px 0;
+			overflow-wrap: anywhere;
+		}
+		hr {
+			border: 0;
+			height: 1px;
+			background-color: #f2aa4c;
+			margin: 24px 0;
+		}
+		/* per-category expanders */
+		details.section {
+			margin: 8px 0;
+			padding: 0; /* summary holds padding */
+		}
+		summary {
+			cursor: pointer;
+			color: #ffd479;
+			font-weight: bold;
+			padding: 10px 12px;
+			background-color: #101820;
+			border-radius: 4px;
+			user-select: none;
+			margin: 0; /* remove forehead space */
+		}
+		summary:hover {
+			background-color: #151b24;
+		}
+		.lore-image {
+			width: 40%;
+			max-width: 420px;
+			height: auto;
+			display: block;
+			margin: 0 auto 12px;
+			border: 1px solid #2a2f36;
+		}
+		.details-content {
+			padding: 10px 12px 16px 12px;
+			background-color: #0f1418;
+			border-radius: 0 0 4px 4px;
+			margin-top: 8px;
+		}
+	</style>
+</head>
+<body>
+	<h1>The Nautical Oath</h1>
+	<p style="text-align:center; margin: 10px 0 20px 0;">
+		<img class="lore-image" src="pasghetti8811_lobby.png" alt="Nautical Oath Image">
+	</p>
+
+	<p style="text-align: center; font-style: italic; margin-bottom: 24px;">
+		The sacred oath of the Foglander warrior caste. WIP
+	</p>
+
+	<p>
+		<em>The Abyssariads are the living extensions of Abyssor, and to break one's honor is to insult both Him and the Championage. Such a transgression condemns one to become a Burakumin, cast from grace. The eyes of the Abyss find lies deeper than itself, and this fate is worse than death. The soul no longer belongs to itself, stripped of immortality, bound to become a demonic Dai. The unhonor mask is a final mercy in case one transforms. To obtain salvation, one must repent and be purified.</em>
+	</p>
+
+	<hr>
+
+	<h2 style="text-align:center;">CORE TENETS OF THE OATH</h2>
+
+	<details class="section">
+		<summary>Loyalty to the Tide</summary>
+		<div class="details-content">
+			<div class="quote">"To betray is to forever sever the lifeblood of the Abyssariad soul. Loyalty is the shield of essence, what gives love, hierarchy, and duty meaning. But from others, betrayal comes easy - that's where the whalers falter."</div>
+			<div class="description">
+				It is paramount to cherish loyalty to the lord, spouse, and duty. Among Abyssariads, betrayal is rare due to their collectivistic and monogamic nature. However, they believe other races betray easily and are often distrustful. Betraying one's crew or mission strips an Abyssariad of their honor.
+			</div>
+			<div class="sin"><strong>Sin of Pride:</strong> The delusion of standing above the collective, divine justice, and law. It is the sin of oath breakers who reject the natural order and retribution.</div>
+			<div class="nonperson"><strong>Desecrant:</strong> Ronins, Tower-Yakkos, Kabuki-marus, deserters, corrupt bureaucrats.</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Dignity in Victory and Defeat</summary>
+		<div class="details-content">
+			<div class="quote">"Victory and Defeat are two respectful sides of the same blade, but only those who yield allow the blade to turn inward to themselves."</div>
+			<div class="description">
+				Abyssariads respect fallen enemies unless those demonic in nature. In defeat, they prioritize retreat or dealing with consequences over surrender, as it is the ultimate disgrace warranting of self-disembowelment. In sparring, competitors are always equal, regardless of victory or defeat.
+			</div>
+			<div class="sin"><strong>Sin of Sloth:</strong> The decay of a warrior's spirit, becoming dead weight that leeches off others' work, abandoning duty, neglecting training and responsibilities.</div>
+			<div class="nonperson"><strong>Desecrant:</strong> Beggars without monastic oath, vagrants, anyone unwilling to work at anything - no tilling the field, no carpentry, nor battling, sucking from the governmental aid while not having disability. The latter rarely saw anywhere outside of Fog Islands.</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Spurn the Corrupt and Wicked</summary>
+		<div class="details-content">
+			<div class="quote">"Stay vigilant against the twisted mockeries of demonic taint. One must purge the defilers and their ilk as warriors of purity."</div>
+			<div class="description">
+				Abyssariads are dedicated to maintaining purity through vigilance against demonic corruption. They are often at odds with Tieflings and in direct conflict with goblins, orcs, demons, and zizo cultists, who are considered distortions of nature within their religious fold and culture.
+			</div>
+			<div class="sin"><strong>Sin of Gluttony:</strong> Excess leads to moral degradation and weakens discipline. Feasting while others hunger, and overindulging in intoxicants, makes one unfit for war.</div>
+			<div class="nonperson"><strong>Desecrant:</strong> Corrupt wealth-hoarders, warriors whom overindulge in alcohol to the point of becoming vulnerable, sycophantic leaders that let their warriors fight without reward.</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Resist Graggarious Temptations</summary>
+		<div class="details-content">
+			<div class="quote">"Reject demonic lure, as their corruption leads only to ruin. They may promise many, but all that is delivered is nothing but a noose that tightens each sin. The Whales fell from grace, so pure souls should not have their minds touched by their unworthiness."</div>
+			<div class="description">
+				One must resist the ultimate degradation of spirit - sin, disguised as desires, whispers and intrusive thoughts. Demonic wiles abuse the frail-minded. Discipline and meditation anchor one into light. Hence, prostitution is illegal in Fog Islands, and relationships with 'whaler' non-foglanders considered corrupting.
+			</div>
+			<div class="sin"><strong>Sin of Lust:</strong> Lust leads to corruption, weakens discipline and makes one vulnerable to demonic temptation. Hedonism brings decadence, prioritizing pleasure over morals, corrupting marriage and loyalty and seducing others to follow suit. Living for the thrill instead of duty, succubus corruption taints the soul of their victims that way.</div>
+			<div class="nonperson"><strong>Desecrant:</strong> Prostitutes, from high (Oiran) to low society (Tea girls).</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Respect the Tools of Labor</summary>
+		<div class="details-content">
+			<div class="quote">"A weapon might defend a life, but the plow is what sustains it. You must not withdraw what your victims require for survival - if they meet death, it will be one less to supply the kin."</div>
+			<div class="description">
+				Excessive raiding is a grave offense, since sustainability is vital. Sacred tools that sustain life should not be taken as it will lead to indirect murder. Armor, weapons and luxuries are the focus for raids.
+			</div>
+			<div class="sin"><strong>Sin of Greed:</strong> The hoarding of excess, which without purpose leads to barren lands and corruption, forsaking loyalty for coin. Avarice disrupts the natural cycle of sustenance, turning warriors into nothing but thieves.</div>
+			<div class="nonperson"><strong>Desecrant:</strong> Loot-hungry wokous that pillage indiscriminately to the point of complete annihilation. Any thief.</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Combatants Weigh Their Choices</summary>
+		<div class="details-content">
+			<div class="quote">"Enemies who hold their blade with killing intention have chosen their path. Enemies who have chosen their path will be dispatched and exposed in failure. Enemies who yield shall receive mercy. Make them fear, make the men reward the Abyssariads at their doorstep as tamed animals. For the day as iron is sacrificed on their sandy beaches will be the day the raided will suffer no more."</div>
+			<div class="description">
+				In battles, combatants must be annihilated. Unarmed civilians and those who yield must be spared, as fear tames the men into submission. Visible signs of Abyssor worship on the coastline are signals of successful proselytization.
+			</div>
+			<div class="sin"><strong>Sin of Envy:</strong> The anchor of weak men. Taking over or sabotaging fellow men binds the soul to envy. One must seek wisdom from the past rather than expect the downfall of the present.</div>
+			<div class="nonperson"><strong>Desecrant:</strong> The Abyssanctum Traditionalists after their defeat in the Abyssanctum's Schism.</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Preservation of Wisdom</summary>
+		<div class="details-content">
+			<div class="quote">"Culture is not merely an inheritance; it is a flame that must be kept alive. Through them, what is lost to them becomes the light that guides the future as long it is uncorrupted. Seeing the errors of their ways allows us to learn on their behalf."</div>
+			<div class="description">
+				Preserving knowledge is sacred, and so long as it is not demon-sourced, as empires rise and fall, the duty becomes to preserve their wisdom and integrate ancient texts, technology and arts to current day life. This mentality has kept Abyssal's Blood-Apotheosis foundations even after millennia, when bronze long became obsolete.
+			</div>
+			<div class="sin"><strong>Sin of Ignorance:</strong> Willfully neglecting growth and truth for misinformation and stagnation. It further erodes the world's unity and invites demonic influence to the world.</div>
+			<div class="nonperson"><strong>Desecrant:</strong> Book burners, artifact-destroyers, zealots that reject knowledge in favor of dogma.</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>The Path of the Blade</summary>
+		<div class="details-content">
+			<div class="quote">"A blade guided by justice cuts cleanly; justified in war and law. Yet personal vendettas are the realm of cowards, where the heart invites ruin as a demonic gateway of Wraith."</div>
+			<div class="description">
+				Assassinations should be for warfare and justice alone, never personal revenge. Lawful duel is what settles matters. Unlawful assassinations taint the soul and lead to Graggar allure.
+			</div>
+			<div class="sin"><strong>Sin of Wrath:</strong> The loss of discipline, when emotions dictate actions over abyssal ways. Giving in to rage leads to mindless killing, unlawful duels outside natural oath, unnecessary torture and cruelty. Death or cultural absorption must be preferred over slavery.</div>
+			<div class="nonperson"><strong>Desecrant:</strong> Mindless killers who praise the acts of Graggar, slavers and zapists. This oath ensured lack of slavery on Fog islands. (Foglanders executors, the Kaishakunin, are considered holy and untouched by Graggar's ways.)</div>
+		</div>
+	</details>
+
+	<hr>
+
+	<p style="text-align: center; color: #999; font-size: 0.9em; margin-top: 18px;">
+		<em>To learn this oath is to understand the Abyssariad people. To break this oath is to become less than the beasts of the deep.</em>
+	</p>
+
+</body>
+</html>

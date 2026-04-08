@@ -102,7 +102,7 @@
 			return "tail"
 		if(BODY_ZONE_PRECISE_STOMACH)
 			return "body"
-		if(BODY_ZONE_GROIN) //Stonekeep Edit
+		if(BODY_ZONE_PRECISE_GROIN) //Stonekeep Edit
 			return "body"
 		if(BODY_ZONE_PRECISE_R_INHAND)
 			return "body"

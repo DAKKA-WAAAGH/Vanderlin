@@ -34,8 +34,8 @@
 	)
 
 	traits = list(
-        TRAIT_MEDIUMARMOR,
-        TRAIT_DUALWIELDER,
+		TRAIT_MEDIUMARMOR,
+		TRAIT_DUALWIELDER,
 	)
 
 /datum/job/advclass/mercenary/steppesman/after_spawn(mob/living/carbon/human/spawned, client/player_client)

@@ -103,6 +103,7 @@
 	name = "lighting plane master"
 	plane = LIGHTING_PLANE
 	blend_mode = BLEND_MULTIPLY
+	render_target = LIGHTING_RENDER_TARGET
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 
 /*!
@@ -286,15 +287,16 @@
 /atom/movable/screen/plane_master/frill_under
 	name = "frill under plane master"
 	plane = UNDER_FRILL_PLANE
-	appearance_flags = PLANE_MASTER
-	blend_mode = BLEND_OVERLAY
+	appearance_flags = PLANE_MASTER | NO_CLIENT_COLOR
+	blend_mode = BLEND_DEFAULT
 
 /atom/movable/screen/plane_master/frill_under/backdrop(mob/mymob)
 	. = ..()
 	if(!mymob)
 		CRASH("Plane master backdrop called without a mob attached.")
 	remove_filter(FRILL_MOB_MASK)
-	add_filter(FRILL_MOB_MASK, 1, alpha_mask_filter(render_source = FRILL_MASK_RENDER_TARGET, flags = MASK_INVERSE))
+	remove_filter(FRILL_LIGHT_RELAY)
+	add_filter(FRILL_LIGHT_RELAY, 0, layering_filter(render_source = LIGHTING_RENDER_TARGET, y = 32, blend_mode = BLEND_MULTIPLY))
 
 /atom/movable/screen/plane_master/frill_mask
 	name = "frill mask plane master"
@@ -307,7 +309,7 @@
 	name = "frill plane master"
 	plane = FRILL_PLANE
 	appearance_flags = PLANE_MASTER
-	blend_mode = BLEND_OVERLAY
+	blend_mode = BLEND_DEFAULT
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 
 /atom/movable/screen/plane_master/frill/backdrop(mob/mymob)
@@ -315,17 +317,21 @@
 	remove_filter(FRILL_FLOOR_CUT)
 	remove_filter(FRILL_GAME_CUT)
 	remove_filter(FRILL_MOB_MASK)
+	remove_filter(FRILL_LIGHT_RELAY)
+	add_filter(FRILL_LIGHT_RELAY, 0, layering_filter(render_source = LIGHTING_RENDER_TARGET, y = 32, blend_mode = BLEND_MULTIPLY))
 	add_filter(FRILL_MOB_MASK, 1, alpha_mask_filter(render_source = FRILL_MASK_RENDER_TARGET, flags = MASK_INVERSE))
 
 /atom/movable/screen/plane_master/frill_over
 	name = "frill over plane master"
 	plane = OVER_FRILL_PLANE
 	appearance_flags = PLANE_MASTER
-	blend_mode = BLEND_OVERLAY
+	blend_mode = BLEND_DEFAULT
 
 /atom/movable/screen/plane_master/frill_over/backdrop(mob/mymob)
 	. = ..()
 	remove_filter(FRILL_MOB_MASK)
+	remove_filter(FRILL_LIGHT_RELAY)
+	add_filter(FRILL_LIGHT_RELAY, 0, layering_filter(render_source = LIGHTING_RENDER_TARGET, y = 32, blend_mode = BLEND_MULTIPLY))
 	add_filter(FRILL_MOB_MASK, 1, alpha_mask_filter(render_source = FRILL_MASK_RENDER_TARGET, flags = MASK_INVERSE))
 
 /atom/movable/screen/frill_mask_overlay //This is the screen object that hides wall's frills.

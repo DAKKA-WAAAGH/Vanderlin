@@ -7,6 +7,7 @@
 	and you have political or military influence to back it up during your workload."
 	department_flag = FACTION_GOVERNMENT
 	faction = FACTION_TOWN
+	allowed_ages = ALL_AGES_LIST_BLOOMING
 	display_order = KZ_CLANMEMBER
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
 	total_positions = 8
@@ -145,16 +146,16 @@
 	ADD_TRAIT(H, TRAIT_DODGEEXPERT, TRAIT_GENERIC)
 	H.verbs |= /mob/living/carbon/human/proc/torture_victim
 
-/datum/job/advclass/heir/daring
+/datum/job/advclass/kaizoku/clanmember/newrice
 	title = "New Rice"
 	tutorial = "The life of a mere courtling was not for you, if you are to make a name for yourself, \
 	you must conquer it with your own glory that gives your bloodline meaning by becoming a Zamurai \
 	with discipline and training. Your ambition provides the potential to become a true warrior, \
 	but there is plenty to endure, be it from bloodshed, your teachers or even fate itself."
-	outfit = /datum/outfit/heir/daring
+	outfit = /datum/outfit/kaizoku/clanmember/newrice
 	//var/list/category_tags = list(CTAG_HEIR)
 
-/datum/outfit/heir/daring/pre_equip(mob/living/carbon/human/H)
+/datum/outfit/kaizoku/clanmember/newrice/pre_equip(mob/living/carbon/human/H)
 	..()
 	pants = /obj/item/clothing/pants/tights
 	shirt = /obj/item/clothing/shirt/undershirt/colored/guard

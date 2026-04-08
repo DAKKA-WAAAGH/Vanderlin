@@ -233,6 +233,7 @@
 
 //┌─────────────── TURBULENTA ───────────────┐//
 
+/*
 /obj/item/gun/ballistic/revolver/grenadelauncher/bow/turbulenta
 	name = "turbulenta"
 	desc = "Rarely does she even care about combat, but when she does... Baotha was quite the markswoman."
@@ -251,7 +252,8 @@
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/bow/turbulenta/Initialize(mapload, ...)
 	. = ..()
-	AddElement(/datum/element/divine_intervention, /datum/patron/inhumen/baotha, PUNISHMENT_STRESS, /datum/stress_event/divine_punishment, TRUE)
+	AddElement(/datum/element/divine_intervention, PUNISHMENT_STRESS, /datum/stress_event/divine_punishment, TRUE) //Stonekeep Edit: Kaizoku. We don't have Baotha here, so I removed the patron requirement for this weapon.
+	//	AddElement(/datum/element/divine_intervention, /datum/patron/inhumen/baotha, PUNISHMENT_STRESS, /datum/stress_event/divine_punishment, TRUE)
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/bow/turbulenta/getonmobprop(tag)
 	if(tag)
@@ -342,6 +344,7 @@
 	arrow.damage = old_dam || arrow.damage
 	arrow.armor_penetration = old_pen || arrow.armor_penetration
 	chambered.BB = arrow
+*/
 
 /obj/projectile/bullet/reusable/arrow/spiced
 	name = "spiced arrow"

@@ -12,7 +12,7 @@
 					covered_locations |= GROIN
 			if(grabs)
 				for(var/obj/item/grabbing/grab in human_victim.grabbedby)
-					if(grab.sublimb_grabbed == BODY_ZONE_GROIN) //Stonekeep Edit
+					if(grab.sublimb_grabbed == BODY_ZONE_PRECISE_GROIN) //Stonekeep Edit
 						covered_locations |= GROIN
 					if(grab.sublimb_grabbed == BODY_ZONE_PRECISE_MOUTH)
 						covered_locations |= MOUTH
@@ -52,7 +52,7 @@
 		if(BODY_ZONE_PRECISE_STOMACH)
 			if(covered_locations & VITALS)
 				return TRUE
-		if(BODY_ZONE_GROIN)
+		if(BODY_ZONE_PRECISE_GROIN)
 			if(covered_locations & GROIN)
 				return TRUE
 		if(BODY_ZONE_L_ARM)

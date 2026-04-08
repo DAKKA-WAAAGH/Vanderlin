@@ -148,7 +148,7 @@
 		return list(/datum/intent/grab/move, /datum/intent/grab/twist, /datum/intent/grab/smash, /datum/intent/grab/armdrag)
 
 /obj/item/bodypart/chest/grabbedintents(mob/living/user, atom/grabbed, precise)
-	if(precise == BODY_ZONE_GROIN) //Stonekeep Edit here
+	if(precise == BODY_ZONE_PRECISE_GROIN) //Stonekeep Edit here
 		if(user == grabbed)
 			return list(/datum/intent/grab/move, /datum/intent/grab/twist)
 		else
@@ -848,12 +848,12 @@
 	desc = ""
 	icon_state = "default_human_groin"
 	max_damage = 150
-	body_zone = BODY_ZONE_GROIN
+	body_zone = BODY_ZONE_PRECISE_GROIN
 	body_part = GROIN
 	px_x = 0
 	px_y = 6
-	subtargets = list(BODY_ZONE_GROIN)
-	grabtargets = list(BODY_ZONE_GROIN)
+	subtargets = list(BODY_ZONE_PRECISE_GROIN)
+	grabtargets = list(BODY_ZONE_PRECISE_GROIN)
 	offset = OFFSET_GROIN
 	dismemberable = TRUE
 	dismember_wound = /datum/wound/dismemberment/groin
@@ -1231,7 +1231,7 @@
 	desc = ""
 	icon_state = "default_human_groin"
 	max_damage = 200
-	body_zone = BODY_ZONE_GROIN
+	body_zone = BODY_ZONE_PRECISE_GROIN
 	body_part = GROIN
 	px_x = 0
 	px_y = 0

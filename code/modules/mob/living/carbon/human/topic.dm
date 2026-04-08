@@ -112,7 +112,7 @@ GLOBAL_VAR_INIT(year_integer, text2num(year)) // = 2013???
 			return
 
 	if(href_list["undiesthing"]) //canUseTopic check for this is handled by mob/Topic()
-		if(!get_location_accessible(src, BODY_ZONE_GROIN, skipundies = TRUE)) // STONEKEEP EDIT: KAIZOKU; GROIN IS ITS OWN BODYPART.
+		if(!get_location_accessible(src, BODY_ZONE_PRECISE_GROIN, skipundies = TRUE)) // STONEKEEP EDIT: KAIZOKU; GROIN IS ITS OWN BODYPART.
 			to_chat(usr, span_warning("I can't reach that! Something is covering it."))
 			return
 		if(underwear == "Nude")

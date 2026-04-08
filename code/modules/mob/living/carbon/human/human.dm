@@ -56,10 +56,10 @@
 								V.add_stress(/datum/stress_event/dwarfshaved)
 					else
 						held_item.melee_attack_chain(user, src, params)
-		else if(user.zone_selected == BODY_ZONE_GROIN) // STONEKEEP EDIT: KAIZOKU; GROIN IS ITS OWN BODYPART.
+		else if(user.zone_selected == BODY_ZONE_PRECISE_GROIN) // STONEKEEP EDIT: KAIZOKU; GROIN IS ITS OWN BODYPART.
 			if(usable_hands < 1)//STONEKEEP EDIT START
 				return
-			if(get_location_accessible(src, BODY_ZONE_GROIN, skipundies = TRUE))
+			if(get_location_accessible(src, BODY_ZONE_PRECISE_GROIN, skipundies = TRUE))
 				if(underwear == "Nude")
 					return
 				if(!can_do_sex())
@@ -343,7 +343,7 @@
 	popup.open()
 
 #ifdef MATURESERVER	//STONEKEEP EDIT START
-	if(get_location_accessible(src, BODY_ZONE_GROIN, skipundies = TRUE))
+	if(get_location_accessible(src, BODY_ZONE_PRECISE_GROIN, skipundies = TRUE))
 		if(can_do_sex())
 			dat += "<tr><td><BR><B>Underwear:</B> <A href='?src=[REF(src)];undiesthing=1'>[underwear == "Nude" ? "Nothing" : "Remove"]</A></td></tr>"
 #endif	//STONEKEEP EDIT END

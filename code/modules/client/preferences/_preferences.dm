@@ -555,7 +555,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 				var silhouette = document.getElementById('silhouette');
 				silhouette.style.backgroundImage = "url('features_bodytype_" + data.gender + ".png')";
 				if (data.gender === "F") silhouette.style.width = "15px";
-    			if (data.gender === "M") silhouette.style.width = "18px";
+				if (data.gender === "M") silhouette.style.width = "18px";
 			}
 
 			// Update voice color blob
@@ -585,8 +585,8 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 	<div class="sprite headshot-bg" style="padding: 3px; box-sizing: border-box;">
 		<a href='?_src_=prefs;preference=headshot;task=input' style="display: block; width: 100%; height: 100%;">
 			<img id="headshot-img" src="[headshot_link || ""]"
-				 style="width: 100%; height: 100%; object-fit: cover; cursor: pointer; image-rendering: auto;"
-				 onerror="this.style.display='none';">
+				style="width: 100%; height: 100%; object-fit: cover; cursor: pointer; image-rendering: auto;"
+				onerror="this.style.display='none';">
 		</a>
 	</div>
 	<div class="sprite ooc-bg"></div>
@@ -1306,6 +1306,37 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 /datum/preferences/proc/LorePopup(mob/user)
 	if(!user || !user.client)
 		return
+	user << browse_rsc('modular/kaizoku/png_icons/guayo/guayo_worldfadesaway.png', "guayo_worldfadesaway.png")
+	user << browse_rsc('modular/kaizoku/png_icons/pasghetti8811/pasghetti8811_warning_poster1.png', "pasghetti8811_warning_poster1.png")
+	user << browse_rsc('modular/kaizoku/png_icons/pasghetti8811/pasghetti8811_warning_poster2.png', "pasghetti8811_warning_poster2.png")
+	user << browse_rsc('modular/kaizoku/png_icons/pasghetti8811/pasghetti8811_warning_poster3.png', "pasghetti8811_warning_poster3.png")
+	user << browse_rsc('modular/kaizoku/png_icons/pasghetti8811/pasghetti8811_warning_poster4.png', "pasghetti8811_warning_poster4.png")
+	user << browse_rsc('modular/kaizoku/png_icons/guayo/guayo_denmorian.png', "guayo_denmorian.png")
+	user << browse_rsc('modular/kaizoku/png_icons/guayo/guayo_namunamu.png', "guayo_namunamu.png")
+	user << browse_rsc('modular/kaizoku/png_icons/simulo/simulo_female_changeling.png', "simulo_female_changeling.png")
+	user << browse_rsc('modular/kaizoku/png_icons/simulo/simulo_male_changeling.png', "simulo_male_changeling.png")
+	user << browse_rsc('modular/kaizoku/png_icons/beanysprout/beanysprout_changeling_hmm.png', "beanysprout_changeling_hmm.png")
+	user << browse_rsc('modular/kaizoku/png_icons/guayo/guayo_ogrun.png', "guayo_ogrun.png")
+	user << browse_rsc('modular/kaizoku/png_icons/simulo/simulo_male_ogrun.png', "simulo_male_ogrun.png")
+	user << browse_rsc('modular/kaizoku/png_icons/guayo/guayo_skylancer.png', "guayo_skylancer.png")
+	user << browse_rsc('modular/kaizoku/png_icons/guayo/guayo_skylancer2.png', "guayo_skylancer2.png")
+	user << browse_rsc('modular/kaizoku/png_icons/beanysprout/beanysprout_skylancer.png', "beanysprout_skylancer.png")
+	user << browse_rsc('modular/kaizoku/png_icons/guayo/skylancer.png', "skylancer.png")
+	user << browse_rsc('modular/kaizoku/png_icons/guayo/guayo_undine.png', "guayo_undine.png")
+	user << browse_rsc('modular/kaizoku/png_icons/simulo/simulo_femalekappa.png', "simulo_femalekappa.png")
+	user << browse_rsc('modular/kaizoku/png_icons/guayo/undine_armed.png', "undine_armed.png")
+	user << browse_rsc('modular/kaizoku/png_icons/guayo/undine.png', "undine.png")
+	user << browse_rsc('modular/kaizoku/png_icons/guayo/guayo_psyjin.png', "guayo_psyjin.png")
+	user << browse_rsc('modular/kaizoku/png_icons/guayo/guayo_scholar.png', "guayo_scholar.png")
+	user << browse_rsc('modular/kaizoku/png_icons/guayo/humen_butgood.png', "humen_butgood.png")
+	user << browse_rsc('modular/kaizoku/png_icons/beanysprout/beanysprout_ztupid_dorkoid.png', "beanysprout_ztupid_dorkoid.png")
+
+	user << browse_rsc('modular/kaizoku/png_icons/guayo/guayo_goblin.png', "guayo_goblin.png")
+	user << browse_rsc('modular/kaizoku/png_icons/guayo/orc.png', "orc.png")
+	user << browse_rsc('modular/kaizoku/png_icons/guayo/orc2.png', "orc2.png")
+	user << browse_rsc('modular/kaizoku/png_icons/simulo/simulo_changelingface.png', "simulo_changelingface.png")
+	user << browse_rsc('modular/kaizoku/png_icons/guayo/changeling.png', "changeling.png")
+
 	var/list/dat = list()
 	var/datum/browser/noclose/popup  = new(user, "lore_primer", "<div align='center'>Lore Primer</div>", 650, 900)
 	dat += GLOB.roleplay_readme

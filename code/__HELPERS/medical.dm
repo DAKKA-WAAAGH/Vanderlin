@@ -22,7 +22,7 @@
 			return "right foot"
 		if(BODY_ZONE_PRECISE_NECK)
 			return "throat"
-		if(BODY_ZONE_GROIN) // STONEKEEP EDIT: KAIZOKU; GROIN IS ITS OWN BODYPART.
+		if(BODY_ZONE_PRECISE_GROIN) // STONEKEEP EDIT: KAIZOKU; GROIN IS ITS OWN BODYPART.
 			return "groin"
 		if(BODY_ZONE_PRECISE_EARS)	//we want the chatlog to say 'grabbed his ear' not 'grabbed his ears' etc
 			return "ear"

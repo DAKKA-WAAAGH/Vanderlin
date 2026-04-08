@@ -11,7 +11,7 @@
 	spawn_positions = 4
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_NOTNATIVE
-	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
+	allowed_ages = ALL_AGES_LIST_BLOOMING
 	tutorial = "Fate has placed a weapon upon your foreigner hands as you volunteered \
 	your name upon a conscription roll, another non-citizen turned warrior under the lord's banner \
 	just to not use foglander blood. Still in training, you've been handed whatever left over equipment and income \

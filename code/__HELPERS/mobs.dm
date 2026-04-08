@@ -5,6 +5,25 @@
 
 	return pickweight(human_blood_type_weights)
 
+/proc/has_limpdick_spawn_ckey(target_ckey) //Stonekeep Edit - Start
+	if(!target_ckey)
+		return FALSE
+
+	var/static/list/limpdick_spawn_ckeys
+	if(isnull(limpdick_spawn_ckeys))
+		limpdick_spawn_ckeys = list()
+		for(var/line in world.file2list("config/limpdick_ckeys.txt"))
+			if(!line)
+				continue
+			if(findtext(line, "#") == 1)
+				continue
+			var/listed_ckey = ckey(line)
+			if(!listed_ckey)
+				continue
+			limpdick_spawn_ckeys[listed_ckey] = TRUE
+
+	return !!limpdick_spawn_ckeys[ckey(target_ckey)] //Stonekeep Edit - Ending
+
 /proc/random_eye_color()
 	switch(pick(20;"brown",20;"hazel",20;"grey",15;"blue",15;"green",1;"amber",1;"albino"))
 		if("brown")
