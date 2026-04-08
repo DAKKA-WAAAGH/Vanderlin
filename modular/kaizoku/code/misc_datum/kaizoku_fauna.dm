@@ -19,7 +19,51 @@
 	"embedded_fall_chance" = 0,\
 	"embedded_bloodloss" = 0)
 
+/obj/item/natural/worms/parasitic
+	embedding = PARASITIC_EMBEDDING
+	/// Time this parasite can stay attached before dropping off. Zero disables timeout.
+	var/max_embed_duration = 0
+	/// World time when this parasite should detach, if timed.
+	var/embed_expire_time = 0
+
+/obj/item/natural/worms/parasitic/embedded(atom/embedded_target, obj/item/bodypart/part)
+	. = ..()
+	if(max_embed_duration)
+		embed_expire_time = world.time + max_embed_duration
+
+/obj/item/natural/worms/parasitic/unembedded(mob/living/owner)
+	. = ..()
+	embed_expire_time = 0
+	if(!QDELETED(src))
+		addtimer(CALLBACK(src, PROC_REF(handle_detached_cleanup)), 1)
+
+/obj/item/natural/worms/parasitic/dropped(mob/user, silent = FALSE)
+	. = ..()
+	if(QDELETED(src))
+		return
+	addtimer(CALLBACK(src, PROC_REF(handle_detached_cleanup)), 1)
+
+/obj/item/natural/worms/parasitic/proc/handle_detached_cleanup()
+	if(QDELETED(src))
+		return
+	if(ismob(loc))
+		return
+	qdel(src)
+
+/obj/item/natural/worms/parasitic/proc/embed_duration_expired()
+	return (embed_expire_time && world.time >= embed_expire_time)
+
+/obj/item/natural/worms/parasitic/proc/detach_from_host(mob/living/user, obj/item/bodypart/bodypart)
+	if(bodypart)
+		bodypart.remove_embedded_object(src)
+		return TRUE
+	if(user)
+		user.simple_remove_embedded_object(src)
+		return TRUE
+	return FALSE
+
 /obj/item/natural/worms/ant
+	parent_type = /obj/item/natural/worms/parasitic
 	name = "Wild fleshripper"
 	desc = "Native little creacher that aids in suturing wounds and killing pests. \
 	This wild crawler is wild and aggressive."
@@ -28,20 +72,17 @@
 	baitpenalty = 0
 	isbait = FALSE
 	fishloot = null
-	embedding = PARASITIC_EMBEDDING
 	var/bite_damage = 5
 	var/itch_cooldown = 5 SECONDS
 	var/next_msg_time = 0
-
-/obj/item/natural/worms/ant/dropped(mob/living/carbon/human/user)
-	. = ..()
-	if(QDELETED(src))
-		return
-	addtimer(CALLBACK(GLOBAL_PROC, /proc/qdel, src), 1)
+	max_embed_duration = 2 MINUTES
 
 /obj/item/natural/worms/ant/on_embed_life(mob/living/user, obj/item/bodypart/bodypart) //Later on, add "Allergy" perk reaction.
 	if(!user || !bodypart)
 		return FALSE
+	if(embed_duration_expired())
+		detach_from_host(user, bodypart)
+		return TRUE
 	if(world.time >= next_msg_time) //Perhaps later, we will make 'insect sensitive' perk.
 		if(bite_damage)
 			bodypart.receive_damage(bite_damage, 5) //Small ouchie. Ants ain't well know for killing people.
@@ -79,6 +120,7 @@
 // Cannot be used as bait. Should HOPEFULLY cause diseases in the future.
 
 /obj/item/natural/worms/tick
+	parent_type = /obj/item/natural/worms/parasitic
 	name = "tick"
 	desc = "Bothersome disease-bringer not native to Fog Islands, the symbol of the first invasion done by grenzelhoft."
 	icon = 'modular/kaizoku/icons/mapset/florafauna.dmi'
@@ -87,21 +129,34 @@
 	isbait = FALSE
 	fishloot = null
 	color = null
-	embedding = PARASITIC_EMBEDDING
 	var/blood_succ = 1
+	/// Total blood this tick can drain before it drops off.
+	var/max_blood_drain = 25
+	/// Running total of blood drained from the current host.
+	var/total_blood_drain = 0
 	var/itch_chance = 10
 	var/itch_cooldown = 25
 	var/next_msg_time = 0
+	max_embed_duration = 3 MINUTES
+
+/obj/item/natural/worms/tick/embedded(atom/embedded_target, obj/item/bodypart/part)
+	total_blood_drain = 0
+	return ..()
 
 /obj/item/natural/worms/tick/on_embed_life(mob/living/user, obj/item/bodypart/bodypart)
 	if(!user || !bodypart)
 		return FALSE
+	if(embed_duration_expired())
+		detach_from_host(user, bodypart)
+		return TRUE
 
 	var/drain = blood_succ
 	if(HAS_TRAIT(user, TRAIT_LEECHIMMUNE))
 		drain *= 0.05
 
-	user.blood_volume = max(user.blood_volume - drain, 0)
+	var/actual_drain = min(user.blood_volume, drain)
+	user.blood_volume = max(user.blood_volume - actual_drain, 0)
+	total_blood_drain += actual_drain
 
 	if(world.time >= next_msg_time)
 		if(prob(itch_chance))
@@ -115,24 +170,18 @@
 			to_chat(user, "<span class='notice'>[pick(itch_messages)]</span>")
 		next_msg_time = world.time + itch_cooldown
 
-	if(user.blood_volume <= 0)
-		bodypart.remove_embedded_object(src)
+	if(total_blood_drain >= max_blood_drain || user.blood_volume <= 0)
+		detach_from_host(user, bodypart)
 		return TRUE
 
 	return FALSE
 
-/obj/item/natural/worms/tick/dropped(mob/living/carbon/human/user)
-	. = ..()
-	if(QDELETED(src))
-		return
-	addtimer(CALLBACK(GLOBAL_PROC, /proc/qdel, src), 1)
-
 /datum/component/tick_infested
-	var/tick_chance = 7
-	var/tick_cooldown = 50
+	var/tick_chance = 3
+	var/tick_cooldown = 70
 	var/next_infest_time = 0
 
-/datum/component/tick_infested/Initialize(chance = 7, cooldown = 50)
+/datum/component/tick_infested/Initialize(chance = 3, cooldown = 70)
 	tick_chance = clamp(chance, 0, 100)
 	tick_cooldown = max(0, cooldown)
 	RegisterSignal(get_turf(parent), COMSIG_ATOM_ENTERED, PROC_REF(on_mob_entered))
@@ -184,6 +233,9 @@
 	return chance_modifier
 
 /datum/component/tick_infested/proc/infest_target(mob/living/carbon/target)
+	if(target.has_embedded_object(/obj/item/natural/worms/tick))
+		return
+
 	var/list/valid_parts = list()
 	for(var/obj/item/bodypart/BP in target.bodyparts)
 		if(!BP.skeletonized)
@@ -265,6 +317,9 @@
 	return modifier
 
 /datum/component/infestation_aura/proc/infest_target(mob/living/carbon/target)
+	if(target.has_embedded_object(parasite_type))
+		return
+
 	var/list/valid_parts = list()
 	for(var/obj/item/bodypart/BP in target.bodyparts)
 		if(!BP.skeletonized)

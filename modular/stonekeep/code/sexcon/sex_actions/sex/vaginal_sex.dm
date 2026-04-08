@@ -14,9 +14,9 @@
 /datum/sex_action/vaginal_sex/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
 		return FALSE
-	if(!get_location_accessible(user, BODY_ZONE_GROIN))
+	if(!get_location_accessible(user, BODY_ZONE_PRECISE_GROIN))
 		return FALSE
-	if(!get_location_accessible(target, BODY_ZONE_GROIN))
+	if(!get_location_accessible(target, BODY_ZONE_PRECISE_GROIN))
 		return FALSE
 	if(target.gender == MALE)
 		return FALSE
@@ -81,9 +81,9 @@
 /datum/sex_action/vaginal_ride_sex/can_perform(mob/living/carbon/human/user, mob/living/carbon/human/target)
 	if(user == target)
 		return FALSE
-	if(!get_location_accessible(user, BODY_ZONE_GROIN))
+	if(!get_location_accessible(user, BODY_ZONE_PRECISE_GROIN))
 		return FALSE
-	if(!get_location_accessible(target, BODY_ZONE_GROIN))
+	if(!get_location_accessible(target, BODY_ZONE_PRECISE_GROIN))
 		return FALSE
 	if(user.gender == MALE)
 		return FALSE

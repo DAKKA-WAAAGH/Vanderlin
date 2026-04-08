@@ -127,8 +127,8 @@
 		return
 	UnregisterSignal(wearer, COMSIG_MOB_UNEQUIPPED_ITEM)
 	wearer.remove_curse(/datum/curse/baotha)
-	if(wearer.patron != /datum/patron/inhumen/baotha)
-		REMOVE_TRAIT(wearer, TRAIT_CRACKHEAD, "corruptflower_[REF(src)]")
+	// if(wearer.patron != /datum/patron/inhumen/baotha) //Stonekeep Edit: Kaizoku Edit
+		// REMOVE_TRAIT(wearer, TRAIT_CRACKHEAD, "corruptflower_[REF(src)]")
 
 /obj/item/clothing/head/corruptflower/proc/cursed_check(mob/living/user)
 	// return true if we should be unequippable, return false if not

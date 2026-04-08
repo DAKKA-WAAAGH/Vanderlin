@@ -193,6 +193,7 @@
 		),
 
 		/// Baotha - The Tiefling Queen
+		/* //Stonekeep Edit: Kaizoku edit, no Baotha allowed here.
 		/datum/patron/inhumen/baotha = list(
 			/datum/status_effect/buff/beastsense = "Baotha shrieks: \"See it! Smell it! Rip it apart! Or hug it! Both are valid!\"",
 			/datum/status_effect/buff/trollshape = "Baotha howls: \"Perfect. You’re gonna cause SUCH a scene!\"",
@@ -207,6 +208,7 @@
 			/datum/status_effect/buff/calm = "Baotha reassures: \"Sink into the serenity of mindlessness. I'm here for you, when no-one else is.\"",
 			/datum/status_effect/buff/barbrage = "Baotha squeals: \"BREAK SOMETHING BEAUTIFUL! Be someone beautiful. It’s therapeutic!\""
 		),
+		*/
 
 		/// Dendor - The Treefather
 		/datum/patron/divine/dendor = list(

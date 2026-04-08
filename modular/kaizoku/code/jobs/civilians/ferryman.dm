@@ -7,6 +7,7 @@
 	You can create and control ship graves or small ships for all purposes. "
 	department_flag = FACTION_CITIZENS
 	display_order = KZ_FERRYMAN
+	allowed_ages = ALL_AGES_LIST_BLOOMING
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
 	faction = FACTION_TOWN
 	total_positions = 3

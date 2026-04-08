@@ -327,3 +327,16 @@
 	icon_state = "white"
 	layer = BLIND_LAYER
 	alpha = 0
+/atom/movable/screen/fullscreen/crit_blood
+	icon = 'icons/mob/screen_full.dmi'
+	icon_state = "crit_blood" //Wewillspritethislater. Kaizoku Todo
+	layer = 20.52
+	plane = FULLSCREEN_PLANE
+	alpha = 200
+
+/atom/movable/screen/fullscreen/crit_wound
+	icon = 'icons/mob/screen_full.dmi'
+	icon_state = "crit_wound" //Wewillspritethislater. Kaizoku Todo
+	layer = 20.52
+	plane = FULLSCREEN_PLANE
+	alpha = 200

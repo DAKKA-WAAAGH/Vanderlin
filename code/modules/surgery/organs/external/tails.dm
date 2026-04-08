@@ -4,7 +4,7 @@
 	desc = "A severed tail. What did you cut this off of?"
 	icon_state = "severedtail"
 	visible_organ = TRUE
-	zone = BODY_ZONE_GROIN //Stonekeep Edit
+	zone = BODY_ZONE_PRECISE_GROIN //Stonekeep Edit
 	slot = ORGAN_SLOT_TAIL
 	var/can_wag = TRUE
 	var/wagging = FALSE

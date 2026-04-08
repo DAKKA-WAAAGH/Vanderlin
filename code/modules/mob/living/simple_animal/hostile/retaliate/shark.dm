@@ -55,7 +55,7 @@
 			return "tail"
 		if(BODY_ZONE_PRECISE_STOMACH)
 			return "stomach"
-		if(BODY_ZONE_GROIN) //Stonekeep Edit
+		if(BODY_ZONE_PRECISE_GROIN) //Stonekeep Edit
 			return "tail"
 		if(BODY_ZONE_HEAD)
 			return "head"

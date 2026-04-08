@@ -169,6 +169,7 @@
 					conditional_buff = TRUE
 					situational_bonus = 25
 
+			/*Stonekeep Edit. We don't have Baotha here.
 			if(/datum/patron/inhumen/baotha)
 				cast_on.visible_message(span_info("A sweet, dizzying haze swirls around [cast_on], their eyes glimmering with bliss..."), span_notice("Mmm... the world softens... and I melt into it..."))
 				//If the owner or cast_on are on drugs, they get a heal bonus.
@@ -185,7 +186,7 @@
 						conditional_buff = TRUE
 						situational_bonus = 25
 						break
-
+			*/
 			else
 				if(istype(living_owner.patron, /datum/patron/godless))
 					cast_on.visible_message(span_info("No Gods answer these prayers."), span_notice("No Gods answer these prayers."))

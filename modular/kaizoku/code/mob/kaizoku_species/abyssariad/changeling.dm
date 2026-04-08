@@ -55,7 +55,7 @@
 	)
 
 	use_skintones = 1
-	possible_ages = CHAMPIONAGE_AGES
+	possible_ages = NORMAL_AGES_LIST_BLOOMING
 	disliked_food = NONE
 	liked_food = MEAT
 	changesource_flags = WABBAJACK

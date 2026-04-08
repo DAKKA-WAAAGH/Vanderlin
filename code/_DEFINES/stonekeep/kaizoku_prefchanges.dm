@@ -1,18 +1,18 @@
 // Global registries
-var/global/list/body_types = list()   // id => /datum/body_type path OR datum instance
-var/global/list/cultures   = list()   // id => /datum/culture  path OR datum instance
+GLOBAL_LIST_INIT(body_types, list())
+GLOBAL_LIST_INIT(cultures, list())
 
 /proc/register_body_type(id, path_or_datum)
 	if(!id || !path_or_datum) return
-	body_types[id] = path_or_datum
+	GLOB.body_types[id] = path_or_datum
 
 /proc/register_culture(id, path_or_datum)
 	if(!id || !path_or_datum) return
-	cultures[id] = path_or_datum
+	GLOB.cultures[id] = path_or_datum
 
 /proc/get_body_type(id)
 	if(!id) return null
-	var/entry = body_types[id]
+	var/entry = GLOB.body_types[id]
 	if(ispath(entry)) return new entry()
 	if(isdatum(entry)) return entry
 	return null
@@ -21,7 +21,7 @@ var/global/list/cultures   = list()   // id => /datum/culture  path OR datum ins
 	if(!id)
 		return null
 
-	return cultures[id]
+	return GLOB.cultures[id]
 
 /datum/culture
 	var/id

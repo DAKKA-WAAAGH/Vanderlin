@@ -285,6 +285,35 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/lobby)
 	var/datum/preferences/prefs = hud.mymob.client?.prefs
 	prefs?.LorePopup(hud.mymob)
 
+/atom/movable/screen/lobby/button/abyssariad_lore
+	name = "Abyssariad Oath"
+	screen_loc = "WEST:20,TOP:-200"
+	icon = 'modular/kaizoku/icons/newlobby/temporary/oath.dmi'
+	icon_state = "oath"
+	base_icon_state = "oath"
+	enabled = TRUE
+
+/atom/movable/screen/lobby/button/abyssariad_lore/Click(location, control, params)
+	. = ..()
+	if(!.)
+		return
+
+	var/mob/m = hud.mymob
+	if(!m)
+		return
+
+	m << browse_rsc('modular/kaizoku/png_icons/pasghetti8811/pasghetti8811_lobby.png', "pasghetti8811_lobby.png")
+
+	var/html_content = file2text('strings/rt/abyssariad_lore.txt')
+	var/datum/browser/popup = new(m, "Nautical Oath", "The tenets of the Abyssariads (WIP)", 700, 900)
+	popup.set_content(html_content)
+	popup.open()
+
+/atom/movable/screen/lobby/button/abyssariad_lore/Initialize(mapload, datum/hud/hud_owner)
+	. = ..()
+	set_button_status(TRUE)
+	update_appearance(UPDATE_ICON)
+
 /atom/movable/screen/lobby/button/migration
 	name = "Migration"
 	screen_loc = "WEST:20,TOP:-134"

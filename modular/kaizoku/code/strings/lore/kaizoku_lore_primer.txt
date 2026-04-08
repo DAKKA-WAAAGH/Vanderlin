@@ -1,0 +1,613 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			max-width: 100%;
+			overflow: visible !important;
+			overflow-x: hidden !important;
+		}
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #0a0a0a;
+			color: #d4d4d4;
+			padding: 20px;
+			line-height: 1.6;
+			overflow-x: hidden !important;
+		}
+		h1 {
+			color: #ff4444;
+			text-align: center;
+			font-size: 2em;
+			margin-bottom: 10px;
+			text-shadow: 0 0 10px rgba(255, 68, 68, 0.5);
+		}
+		h2 {
+			color: #c41e3a;
+			border-bottom: 2px solid #8b0000;
+			padding-bottom: 8px;
+			margin-top: 12px;
+		}
+		p {
+			margin: 10px 0;
+			overflow-wrap: anywhere;
+		}
+		em {
+			color: #aaa;
+			font-style: italic;
+		}
+		strong {
+			color: #fff;
+		}
+		hr {
+			border: 0;
+			height: 1px;
+			background-color: #8b0000;
+			margin: 24px 0;
+		}
+		details.section {
+			margin: 8px 0;
+			padding: 0;
+		}
+		summary {
+			cursor: pointer;
+			color: #ff6b6b;
+			font-weight: bold;
+			padding: 10px 12px;
+			background-color: #1a1a1a;
+			border: 1px solid #3a0000;
+			border-radius: 4px;
+			user-select: none;
+			margin: 0;
+		}
+		summary:hover {
+			background-color: #2a0000;
+			color: #ff8888;
+		}
+		.details-content {
+			padding: 10px 12px 16px 12px;
+			background-color: #0f0f0f;
+			border: 1px solid #3a0000;
+			border-top: none;
+			border-radius: 0 0 4px 4px;
+			margin-top: 0;
+		}
+		.faction-desc {
+			color: #d4d4d4;
+			margin: 10px 0;
+			line-height: 1.7;
+		}
+		.highlight {
+			color: #ff6b6b;
+			font-weight: bold;
+		}
+		.lore-image {
+			width: 60%;
+			max-width: 720px;
+			height: auto;
+			display: block;
+			margin: 8px auto 8px;
+			border: 1px solid #3a0000;
+		}
+		.lore-image.small {
+			width: 100%;
+			max-width: 420px;
+		}
+		.image-caption {
+			text-align: center;
+			color: #999;
+			font-size: 0.9em;
+			font-style: italic;
+			margin: 4px 0 16px 0;
+		}
+		.subnote {
+			text-align: center;
+			font-style: italic;
+			margin-bottom: 24px;
+		}
+		.img-row {
+			display: flex;
+			justify-content: center;
+			gap: 12px;
+			flex-wrap: wrap;
+			margin: 8px 0;
+		}
+		.img-pair {
+			width: 48%;
+			min-width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div class="faction-desc">
+		<strong>This document</strong> is a summarized breakdown of Kaizoku lore, one generation after the events of Stonekeep. Just like any lore, reading it is optional, but recommended for understanding the society where the game takes place, especially for important roles.
+		<strong>Things to add: The Thasallasic angels. The Clanless people.
+		<strong>Things to change: Shorter purifiers.
+	</div>
+
+	<h1>WELCOME TO STONEKEEP: KAIZOKU PROJECT</h1>
+
+	<img class="lore-image" src="guayo_worldfadesaway.png" alt="World Fades Away">
+	<div class="image-caption">"A tree of elegance, crafted by a carpenter's hands. With a final sight, the world fades away." - Art by Guayo</div>
+
+	<div class="faction-desc subnote">
+		<strong>The struggle to adapt to an always changing world.</strong><br>
+		<em>"Shoreline ever new,<br>Yet the tide repeats its song,<br>Future folds into past."</em>
+	</div>
+
+	<div class="faction-desc">
+		Only a few still remember the golden days before the fall of magic, when <strong>Grimoria</strong> was a world of wonders and heroic feats. Now, <span class="highlight">demonic corruption</span> spreads across lands like wind under hellish gateways, while <span class="highlight">Denmorian swarms</span> pressure nations to their breaking point. Empires struggle to keep dominion, and ordinary people pray for heroes under distant gods.
+	</div>
+
+	<hr>
+
+	<h2 style="text-align:center;">CURRENT CHAPTER</h2>
+	<p style="text-align:center; color: #999; font-size: 0.95em; margin: 16px 0 20px 0;">
+		<strong>CHAPTER 1: THIRD WAR OF HUNDRED SUNS</strong>
+		<p><br>Weary by the Demnorian invasions, a bold campaign was launched by Grenzelhoft to take back Heartfeltean lands, as a fresh conquest might rekindle the morale. However, the attack had consequences with Fog Islands rising in defense of its allies with the imperial fleets. Now, the two empires clashes over their sphere of influence on every edge, in the third war of the hundred suns.</p>
+
+	</p>
+
+	<hr>
+
+	<h2 style="text-align:center;">AREAS OF GRIMORIA</h2>
+
+	<details class="section" open>
+		<summary>The Fog Islands</summary>
+		<div class="details-content">
+			<img class="lore-image small" src="pasghetti8811_warning_poster3.png" alt="Fog Islands Poster">
+			<div class="image-caption">Artist: pasghetti8811</div>
+
+			<p class="faction-desc"><strong>The Fog Islands</strong> <em>- "The orbiting menace that brings delirium and obscurity to the unseasoned eyes, a forecasting of destruction anywhere it passes, bringing a heavy fog with hidden warriors that leaves few spared from its widespread piracy."</em></p>
+			<p class="faction-desc">A relic of times ancient, the Fog Islands is a moving archipelago in the seas of Grimoria, constantly on the move and ruled by the ceremonial son of Abyssor and spiritual leader Heavenly Emperor Abyssaya. Its body was raised as Abyssor called forth its creation, all to become the home of his spawn.</p>
+
+			<details class="section">
+				<summary><em>Points of Interest</em></summary>
+				<div class="details-content">
+				<p class="faction-desc"><strong>Pelangic Empire</strong></p>
+				<p class="faction-desc">Fog Islands is home to the Pelangic Empire under control of the Abyssaya Dynasty, the nation is a thalassocratic meritocracy, where social standing is determined by the military service of their clan rather than direct birthright.</p>
+				<p class="faction-desc">The population were driven out by Grenzelhoft aggression to resume their ancient traditions of raiding, working to prevent demonic corruption from extending outside its boundaries, and actively participating in the defense of their allies and sphere of influence, Heartfelt, against pressure from other greater powers.</p>
+				<p class="faction-desc">As any empire worth its salt, Fog Islands is a concoction of cultures, native or assimilated, with plenty of divide-and-conquer population management, suppression of 'undesirables' and fear-inducing doutrines to keep the empire stable and avoid insurgencies, while providing citizenship privileges no other empire can reliably provide.</p>
+				<p class="faction-desc">Outsiders often come to this realm under the ideals of meritocracy, as any <span class="highlight">non-desecrant citizen</span> has a shot to become something more, regardless of their background, something mainlander feudalism does not provide.</p>
+					<p><strong>- Heavenly Towers</strong><br>Viewable anywhere on the Fog Islands, these mega-structures were assembled over centuries: monolithic columns held by chains that connect to mountains and ground. The towers are temples dedicated to Abyssor's beloved skies, and Muqians dwell within their maze-like layouts.</p>
+					<p><strong>- Mirehaven</strong><br>A flooded grassland in a semi-tropical area with abundant fauna, tall reeds, and varying marshes. Several Undine communities and the LinYou live there. It is well-known for producing rattan and leather. The LinYou use their jungle terrain for ambush tactics, fishing, hunting, and herbal trade, honoring Abyssor's manifestations in the mist. The dampness of the jungle is kept at bay by their armor made of rattan stitched with iron.</p>
+					<p><strong>- Dunes of Cinder</strong><br>Arid wasteland with lakes of magma and sand that is home to the Dustwalkers, a nomadic group of abyssariads skilled in horse archery and magma forging. They use hit-and-run tactics and reside in mobile camps. They move from forge to forge, producing inexpensive, cokeless cast iron, and their light armor guarantees that in battle, they have quick-hit tactics that mirror the sandy whirlwinds, appearing from nowhere, striking suddenly, and disappearing before retaliation.</p>
+					<p><strong>- Outskirts</strong><br>Large plains, kept in good condition by aqueducts, utilized by the Shuhen people to cultivate wheat and rice. The Shuhen are fierce agricultural fighters who establish militias during times of conflict, wear masks that symbolize their identities, and use farming implements as weapons. They saw the most warfare among the others against the demonic forces and the Grezenholft, and their many tactics and landowning influence grew exponentially.</p>
+					<p><strong>- The Destroyed Atoll</strong><br>Once a rendezvous point for raiding trade routes from other empires. Foglander Coastal pirates focused on raiding for knowledge, iron, and steel. Ever since the Apotheosis war, the Great Atoll, is now in ruins. The land is made of jagged rocks and underwater reefs, but the Foglanders have adapted by creating platforms, rope bridges, and silted homes. They rely on rainwater, fishing, and small-scale farming.</p>
+					<p><strong>- The Wild Isles</strong><br>Conquered colonial isles used as scouting ports and gateways for mining operations. Psyjin natives still live there.</p>
+				</div>
+			</details>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Isle of Enigma</summary>
+		<div class="details-content">
+			<p class="faction-desc"><strong>Isle of Enigma</strong> <em>- "Once the bastion of magic as the center of the world, everything changed with its dissipation worldwide. Now, it serves as a source of most immigration into Fog Islands through both current and past diplomacies."</em></p>
+
+			<details class="section">
+				<summary><em>Points of Interest</em></summary>
+				<div class="details-content">
+					<p><strong>- Town of Rockhill</strong><br>Colloquially known as Roguetown, the Stonekeep castle still remains, infested with the new generations of insurgents attempting to take power from the crown. Previously associated with [Fog Islands: Change Name] in the orcish invasion to the lands, all ties were severed due to Rockhill's consistent cooperation with Grenzelhoft.</p>
+					<p><strong>- Kingdom of Heartfelt</strong><br>Fog Island's prized, and only, ally with ties of iron, as for what began as a mere exchange of hostages, became the end of Heartfelt's cycle of devastation, which led to cultural exchange and shared family ties. The forced submission from Grenzelhoft and countless pirates' hosts ended two decades ago, yet Heartfelt still retains the wounds of humiliation, even more for an island prized for serene nature, fertility and rich lands.</p>
+				</div>
+			</details>
+		</div>
+	</details>
+
+	<hr>
+
+	<h2 style="text-align:center;">FACTIONS OF GRIMORIA</h2>
+
+	<details class="section">
+		<summary>Grenzelhoft Imperiate</summary>
+		<div class="details-content">
+			<img class="lore-image small" src="pasghetti8811_warning_poster4.png" alt="Grenzelhoft Poster">
+			<div class="image-caption">Artist: pasghetti8811</div>
+			<div class="faction-desc"><em>The Groß Empire, The Black Banners, Empire of the Trident</em></div>
+			<div class="faction-desc">An Imperialist state carved across the Eastern Continent through political upheaval and military action. The Grenzelhofts proudly assimilate all those who come under their heel into their Empire, integrating national identities into their fold and destroying them with their own. Bearing the largest armies in the world, which come under vast scrutiny and disgust as they become increasingly desperate to upkeep.</div>
+			<div class="faction-desc">The Grenzelhoftian couldn’t explain a time when the Empire wasn’t at war, and many have served within its military forces to escape the intense poverty of its lower class. Exhibiting a strong sense of pride, mainly towards their own nationality, those outside its realms have likely good reason to escape the encroaching iron grip of house Grenz. It’s capital is Zenitharion, which shares the name of the tribe founded by house Grenz in ancient times.</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>The Denmorian Swarm</summary>
+		<div class="details-content">
+			<img class="lore-image small" src="guayo_denmorian.png" alt="Denmorian Swarm">
+			<div class="image-caption">Artist: Guayo</div>
+			<div class="faction-desc"><em>The Zizoid Herd, The Eastern Legion, Manifestation of Wilderness</em></div>
+			<div class="faction-desc">Born from Zizo's corruption, the once-outcast Denmorian tribes became a migrating predatory swarm once mana scarcity worsened across the world.</div>
+			<div class="faction-desc">They have broken fortresses once thought impregnable, pressed the borders of Grenzelhoft and Valoria, and now surge toward the Fog Islands to devour what remains of the world's magic.</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Zybantu Ziggurat</summary>
+		<div class="details-content">
+			<div class="faction-desc"><em>The Monolith, The Spire of the World, The Shadow Kingdom</em></div>
+			<div class="faction-desc">The Zybantian Empire is a conglomeration of many Califs, Shakas, Despotes, and Rajas states within the Western Deserts of their home continent. Protected by the massive, frigid mountain range to the deep west from the frozen winds of the Unknown Continent: the Zybantu Ziggurat is known for its extremely favorable climate to the production of many commodity goods within the world, leading to their rise as a nationalized identity.</div>
+			<div class="faction-desc">While life within Zybantu is commonly dictated by the local lordships' control over their fiefdom, the Zybantians have recently found a resurgence of economic growth after the near destruction of the culture by Grenzelhoftian influence. A reawakening that has seen the near complete autonomy of the state by that of the powerful Merchants Guild, which funds nearly every aspect of the Mansa Padasha’s wishes. The seat of power relies upon the black pyramid within the Zybantine Peninsula, its name often changes, so it is commonly referred to simply as the Black Pyramid.</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Valorian Rupublias</summary>
+		<div class="details-content">
+			<div class="faction-desc"><em>Land of Abominable Coin-Lords, The Blood Baros, The Totod Order</em></div>
+			<div class="faction-desc">A republic mosaic of rival city-states descended from old Valorian kingdoms. Bajorai aristocrats rose through guilds, temples, and tower alliances.</div>
+			<div class="faction-desc">Rumors claim blood-magic among the Blood Baros invited Totod crusades that now purge settlements judged impure.</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Dwarven Confederacy</summary>
+		<div class="details-content">
+			<div class="faction-desc"><em>The Great Throngs, The Braided Confederacy, Malum's Prodigy</em></div>
+			<div class="faction-desc">Usually in the mountains of continents all over Grimoria. The political aspects stem from federations bearing unique dwarven clans, leaderships, industries, and cultures. Unified by a homogenous racial identity. An official capital has yet to proclaim itself, as every dwarven holding considers itself the most industrious and important.</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Elven Enclaves</summary>
+		<div class="details-content">
+			<div class="faction-desc"><em>Keepers of Grimoria, Retreats of the Ancient Age, Fallen Fae Lines</em></div>
+			<div class="faction-desc">The declining population has led Elves to retreat to compact and isolated communities. They defend their remaining homes in natural wonders around Grimoria to the death and without mercy. Sub-divided into distinct cultures such as Wood, Snow, Dark, Sand, Mountain, Sea, and countless more. Due to cultural differences, there is no capital for all of Elvenkind, however they each trace their lineage to the Psydonic Forests as their species’ homelands on the Zybantu Continent.</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Ork and Goblin Thrones</summary>
+		<div class="details-content">
+			<div class="img-row">
+				<div style="text-align: center; width: 48%;">
+					<img class="lore-image small" src="guayo_goblin.png" alt="Goblin">
+					<div class="image-caption">Goblinoid in Graggar armor, full body. Kill on sight - Artist: Guayo</div>
+				</div>
+				<div style="text-align: center; width: 48%;">
+					<img class="lore-image small" src="orc.png" alt="Orcish Warrior">
+					<div class="image-caption">Orc in Graggar armor. Kill on sight. - Artist: Guayo</div>
+				</div>
+			</div>
+			<div class="img-row">
+				<div style="text-align: center; width: 48%;">
+					<img class="lore-image small" src="orc2.png" alt="Orc Portrait">
+					<div class="image-caption">Portrait of a captured orcish warrior. - Artist: Guayo</div>
+				</div>
+			</div>
+			<div class="faction-desc"><em>Crusaders of Graggar, Jihadists of the Dark Sun, Heirs of Grimoria</em></div>
+			<div class="faction-desc">Sprung up fortresses and towns established via nomadic means, with origins from the Crimsonlands, taking advantage of natural resources and nearby settlements to raid, conquer, and move on to more promising targets. An ever-moving snowball that expands in size and occasionally experiences great losses, followed by a steady regrowth. The largest throne is rumored to be close to the Barrows, where the living god Graggar resides in his mortal form.</div>
+			</div>
+		</details>
+
+		<hr>
+
+	<h2 style="text-align:center;">ABYSSANCTUM AND THEOLOGY</h2>
+
+	<details class="section">
+		<summary>Abyssanctum</summary>
+		<div class="details-content">
+			<img class="lore-image small" src="guayo_namunamu.png" alt="Abyssanctum">
+			<div class="image-caption">Artist: Guayo</div>
+			<div class="faction-desc">WIP.</div>
+			<div class="faction-desc">WIP.</div>
+
+
+			<details class="section">
+				<summary><em>Purifier Doctrine</em></summary>
+				<div class="details-content">
+					<div class="faction-desc">WIP.</div>
+					<div class="faction-desc">WIP</div>
+				</div>
+			</details>
+
+			<details class="section">
+				<summary><em>Curator Doctrine<	em></summary>
+				<div class="details-content">
+					<div class="faction-desc">WIP.</div>
+				</div>
+			</details>
+
+			<details class="section">
+				<summary><em>Tideweaver Doctrine</em></summary>
+				<div class="details-content">
+					<div class="faction-desc">WIP.</div>
+				</div>
+			</details>
+
+			<details class="section">
+				<summary><em>Silent Doctrine</em></summary>
+				<div class="details-content">
+					<div class="faction-desc">WIP.</div>
+				</div>
+			</details>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>The Tennites - The Ten Divines</summary>
+		<div class="details-content">
+			<div class="faction-desc">WIP.</div>
+
+			<details class="section">
+				<summary><em>Deities</em></summary>
+				<div class="details-content">
+					<p><strong>Astrata</strong> - WIP.</p>
+					<p><strong>Noc</strong> - WIP.</p>
+				</div>
+			</details>
+
+			<details class="section">
+				<summary><em>Forces</em></summary>
+				<div class="details-content">
+					<p><strong>Necra</strong> - WIP.</p>
+					<p><strong>Dendor</strong> - WIP.</p>
+					<p><strong>Abyssor</strong> - WIP.</p>
+				</div>
+			</details>
+
+			<details class="section">
+				<summary><em>Saints</em></summary>
+				<div class="details-content">
+					<p><strong>Malum</strong> - WIP.</p>
+					<p><strong>Ravox</strong> - WIP.</p>
+					<p><strong>Eora</strong> - WIP.</p>
+					<p><strong>Pestra</strong> - WIP.</p>
+					<p><strong>Xylix</strong> - WIP.</p>
+				</div>
+			</details>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Psydonic Path (Psydon)</summary>
+		<div class="details-content">
+			<div class="faction-desc">WIP.</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Demons of Grimoria</summary>
+		<div class="details-content">
+			<div class="faction-desc">WIP</div>
+
+			<details class="section">
+				<summary><em>Graggar/em></summary>
+				<div class="details-content">
+					<img class="lore-image small" src="pasghetti8811_warning_poster2.png" alt="Graggar">
+					<div class="image-caption">Artist: pasghetti8811</div>
+					<div class="faction-desc">WIP.</div>
+				</div>
+			</details>
+
+			<details class="section">
+				<summary><em>Zizo</em></summary>
+				<div class="details-content">
+					<img class="lore-image small" src="pasghetti8811_warning_poster1.png" alt="Zizo">
+					<div class="image-caption">Artist: pasghetti8811</div>
+					<div class="faction-desc">WIP</div>
+					<img class="lore-image small" src="beanysprout_ztupid_dorkoid.png" alt="Zizo Manifestation" style="margin-top: 10px;">
+					<div class="image-caption">Artist: Beanysprout</div>
+				</div>
+			</details>
+
+			<details class="section">
+				<summary><em>Ananshor</em></summary>
+				<div class="details-content">
+					<div class="faction-desc">WIP</div>
+				</div>
+			</details>
+		</div>
+	</details>
+
+	<hr>
+
+	<h2 style="text-align:center;">PLAYABLE SPECIES</h2>
+
+	<h3 style="color: #c41e3a; text-align: center; margin-top: 20px; margin-bottom: 12px;">First Class Citizens (Natives)</h3>
+
+	<details class="section">
+		<summary>Changelings</summary>
+		<div class="details-content">
+			<div class="img-row">
+				<div style="text-align: center; width: 48%;">
+					<img class="lore-image small" src="simulo_female_changeling.png" alt="Female Changeling">
+					<div class="image-caption">Female Changeling Silkrunner, full body. - Artist: Simulo</div>
+				</div>
+				<div style="text-align: center; width: 48%;">
+					<img class="lore-image small" src="simulo_male_changeling.png" alt="Male Changeling">
+					<div class="image-caption">Male Changeling Beneffited, full body. - Artist: Simulo</div>
+				</div>
+			</div>
+			<div class="faction-desc">Wip.</div>
+			<img class="lore-image small" src="beanysprout_changeling_hmm.png" alt="Changelings">
+			<div class="image-caption">Changelings across myriad genetic variations. Some with exposed filtering maws. - Artist: Beanysprout</div>
+			<div class="img-row">
+				<div style="text-align: center; width: 48%;">
+					<img class="lore-image small" src="simulo_changelingface.png" alt="Changeling Face">
+					<div class="image-caption">Female changeling courtling. The soft features suggests a life without pressure.</div>
+				</div>
+				<div style="text-align: center; width: 48%;">
+					<img class="lore-image small" src="changeling.png" alt="Changeling Portrait">
+					<div class="image-caption">Male changeling retainer. The rough features implies a life that requires deadly efficiency.</div>
+				</div>
+			</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Ogrun</summary>
+		<div class="details-content">
+			<img class="lore-image small" src="guayo_ogrun.png" alt="Ogrun">
+			<div class="image-caption">Ogrun Zamurai - Artist: Guayo</div>
+			<img class="lore-image small" src="simulo_male_ogrun.png" alt="Male Ogrun">
+			<div class="image-caption">Male Ogrun Blacksmith - Artist: Simulo</div>
+
+
+			<div class="faction-desc">Ogrun text here.</div>
+
+
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Skylancers</summary>
+		<div class="details-content">
+			<div class="img-row">
+				<div style="text-align: center; width: 48%;">
+					<img class="lore-image small" src="guayo_skylancer.png" alt="Male Skylancer">
+					<div class="image-caption">Male Skylancer of the beak-having 'Kotengu' subspecies. - Artist: Guayo</div>
+				</div>
+				<div style="text-align: center; width: 48%;">
+					<img class="lore-image small" src="beanysprout_skylancer.png" alt="Female Skylancer">
+					<div class="image-caption">Female Skylancer of the nose-having 'Daitengu' subspecies. Izakaya owner. - Artist: Beanysprout</div>
+				</div>
+			</div>
+
+
+			<div class="faction-desc">Skylancers text here.</div>
+
+
+			<div class="img-row">
+				<div style="text-align: center; width: 48%;">
+					<img class="lore-image small" src="guayo_skylancer2.png" alt="Skylancer Variant 1">
+					<div class="image-caption">Skylancers of the 'Kotengu' subspecies - Artist: Guayo</div>
+				</div>
+				<div style="text-align: center; width: 48%;">
+					<img class="lore-image small" src="skylancer.png" alt="Skylancer Variant 2">
+					<div class="image-caption">Skylancers of the 'Kotengu' subspecies - Artist: Guayo</div>
+				</div>
+			</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Undines</summary>
+		<div class="details-content">
+			<div class="img-row">
+				<div style="text-align: center; width: 60%;">
+					<img class="lore-image small" src="guayo_undine.png" alt="Undine">
+					<div class="image-caption">Undine with Goblinoid manifestation - Artist: Guayo</div>
+				</div>
+				<div style="text-align: center; width: 60%;">
+					<img class="lore-image small" src="simulo_femalekappa.png" alt="Merkling Undine">
+					<div class="image-caption">Undine with Merkling manifestation - Artist: Simulo</div>
+				</div>
+			</div>
+			<div class="faction-desc">Wip.</div>
+			<div class="img-row">
+				<div style="text-align: center; width: 60%;">
+					<img class="lore-image small" src="undine_armed.png" alt="Armed Undine">
+					<div class="image-caption">Undine, armed and in portrait - Artist: Guayo</div>
+				</div>
+				<div style="text-align: center; width: 60%;">
+					<img class="lore-image small" src="undine.png" alt="Undine Portrait">
+					<div class="image-caption">Undine - Artist: Guayo</div>
+				</div>
+			</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Vessels</summary>
+		<div class="details-content">
+			<div class="faction-desc">Vessels of a soul made of clay.</div>
+		</div>
+	</details>
+
+	<h3 style="color: #c41e3a; text-align: center; margin-top: 20px; margin-bottom: 12px;">First Class Citizens (Allies)</h3>
+
+	<details class="section">
+		<summary>Psyjin</summary>
+		<div class="details-content">
+			<img class="lore-image small" src="guayo_psyjin.png" alt="Psyjin">
+			<div class="image-caption">Heartfeltean Psyjin Zamurai, Psydonic yet still brother in arms - Artist: Guayo</div>
+			<div class="faction-desc">Psyjin, or ‘Mongrel’, is the term used to describe both the half-elves and humens, as it became impossible to distinguish the two species after many generations. They come from a vast swathe of cultures and ethnicities all around Psydonia, most of which have historically been at odds with one another and other species. The Heartfeltean people became part of Fog Island's political landscape by the alliance of both nations, and are viewed in great light beyond the perception of prejudice. The Psyjin tend to find fortune easier than the other species, and are so diverse that no other traits are dominant in their species.</div>
+			<img class="lore-image small" src="guayo_scholar.png" alt="Scholar">
+			<div class="image-caption">Islander imperial scholar - Artist: Guayo</div>
+			<img class="lore-image small" src="humen_butgood.png" alt="Psyjin Islander">
+			<div class="image-caption">Islander Psyjin, influenced by Foglander customs - Artist: Guayo</div>
+		</div>
+	</details>
+
+	<h3 style="color: #c41e3a; text-align: center; margin-top: 20px; margin-bottom: 12px;">Second Class Citizens</h3>
+
+	<details class="section">
+		<summary>Dwarves</summary>
+		<div class="details-content">
+			<div class="faction-desc">A stubborn and curious-minded race of stunted folk,  the dwarves are known for inventing many mechanical contraptions and being hard workers. Tradition and customs such as respect for Malum are pillars of their society, but is often also the cause of endless bickering and infighting over minute details. Dwarves are hearty and stout but not known for their speed or eyesight.</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Elvenkind</summary>
+		<div class="details-content">
+			<div class="faction-desc">Elves, the first race of Grimoria is characterized by lengthened age, low fertility, and magical aptitude originating from a vast array of tribal cultures and sub-races. Previously immortal, they’ve been punished by the Forgotten God for their genocides against the other races in their pre-historic days.</div>
+			<div class="faction-desc">In an attempt to avoid this punishment, some descended from a perversion of false immortality which founded the Dark elves that boasts proud, beauty-centric culture that compensates their cursed that ranges from skin tints to extreme deformations, with anyone falling behind their cripplingly high standards referred to as a Homonculus.</div>
+			<div class="faction-desc">Driven from the enclaves by Denmorian hordes, the Elven found refuge in Foglander lands, but were met with disdain from Heartfeltean lords that, in consequence of their alliance, resulted in the stigmatization of the Elven by the Abyssariads just alike, as second-class citizens.</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Sunscorned</summary>
+		<div class="details-content">
+		<div class="faction-desc">Once their rule was welcomed on Valoria, but the decline of magic mirrored the weakening of the Blood Barons, growing desperate as blood tithe no longer came with mana they relied on. It was just a matter of time until the Totod Order tilted the balance and scattered many Sun-scorned across the land, forcing them to carve hidden enclaves or flee to Fog Islands, the last refuge where their existence is tolerated and magic recycles naturally.</div>
+		<div class="faction-desc">These struggling immortal nobles rely on mana-infused blood rather than food or sleep, allowing them primordial abilities for their survival as the sun or theurgies wounds them greatly, something this island has... untapped, rich abyssal blood.</div>
+
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Automatas</summary>
+		<div class="details-content">
+			<div class="faction-desc">Of the times and yils of Psydonia, these effigies of Malumite machinations are archaic and overly complex emulations of life. Powered by soul-gemeralds, these great machines were able to contend with the natural world in various ways. Lost to time, ignorance and fear - the automata remain a coveted piece of equipment: to be used by those seeking immortality, to be destroyed by the zealots of the faith or to be bound to eternal servitude by the greedy.</div>
+		</div>
+	</details>
+
+	<h3 style="color: #c41e3a; text-align: center; margin-top: 20px; margin-bottom: 12px;">Third Class Citizens</h3>
+
+	<details class="section">
+		<summary>Tieflings</summary>
+		<div class="details-content">
+		<div class="faction-desc">Tieflings, also known as Infernal-Spawn, are one of the younger peoples of Grimoria, appearing during the time of the Apotheosis War. Said to be the offspring of mortals who served Zizo and mated with their Spawn in unholy union, legions of them served as the chattel army under the banners of Zizo and Graggar. After their crushing defeat, Tieflings are said to have begged for mercy and were begrudgingly accepted, after abandoning their Lord.</div>
+		<div class="faction-desc">Facing much persecution and prejudice, these people have survived pogroms with remarkable resilience , many seeking a solitary and nomadic life without relying on the wider society to survive. Tieflings are less capable of creating offspring than most peoples, and only produce more tieflings due to their strong Zizo taint, so no half-breeds exist. Most of them tend to be extremely perceptive and paranoid, as luck is rarely on their side and their peculiar anatomy with somewhat fragile, crystalline bones makes them susceptible to injury.</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Denmorian</summary>
+		<div class="details-content">
+			<div class="faction-desc">The Denmorian are the unholy amalgamation of beast and man, spawned from Zizonic mana during the struggle with the wretched Warlock. Boasting innumerable variations of beastial features, their integration into society ranges from tremendous successes to horrible failures.</div>
+			<div class="faction-desc">Their worldwide invasions left scars on greater empires, as Denmorian warbands broke the civilizations once thought impenetrable, leaving people desperate and homeless, filling islander empires with refugees, and their own traitors… or spies.</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Groveling</summary>
+		<div class="details-content">
+			<div class="faction-desc">Mysterious living entities that do not even know their own destiny on the wheel of fate. Either divine intervention channeled through flora by parasitic symbiosis, a fungal colony combined with tree barks, vines and growths no different from kneestingers on Fog Islands after the fall of magic. Not even elvenkind knows how they came to be, some believe they are revengeful spirits that slipped through Necra's fingers, are Dendor's wraith made form, or an Abyssor's manifestation of symbiosis.</div>
+			<div class="faction-desc">Grovelings are parasitic, able to choose a host tree to absorb its nutrients, and anchor itself on the ground to heal and receive less damage from attacks at the cost of not moving at all, and cannot get diseased. However, they are vulnerable to fire and receive semi-permanent damage when their host tree dies. Nonetheless, they have been formed in fungal flesh and fiber with little to no memory of why and how, but they have an unconscious hate for the demonic, including tieflings.</div>
+		</div>
+	</details>
+
+	<details class="section">
+		<summary>Aasimar</summary>
+		<div class="details-content">
+		<div class="faction-desc">Immortal offspring created through unknown means by command of the goddess Astrata, used as soldiers to fight in the Apotheosis God-War. They quickly earned scorn and fear from the mortal races they fought alongside for their indifference to the suffering of their allies and unquestioning brutality. The aasimar who survived the war have been abandoned by Astrata, left to face an uncertain fate alongside the other races of Grimoria.</div>
+		<div class="faction-desc">Apotheosis and memories of their violent legacy have faded, but many still view these aasimar survivors as emotionally dull, stubborn, and simple-minded brutes... though this is not always the case. Aasimar are known for their incredible strength and resilience, and are a prized addition to any shield wall. However, they possess less capacity for independent thought due to their wartime construction.</div>
+		</div>
+	</details>
+
+	<hr>
+
+	<p style="text-align: center; color: #999; font-size: 0.9em; margin-top: 18px;">
+		<em>Welcome to Kaizoku, hard ass.</em>
+	</p>
+
+</body>
+</html>

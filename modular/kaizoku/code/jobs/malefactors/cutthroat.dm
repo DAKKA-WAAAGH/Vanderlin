@@ -14,7 +14,7 @@
 	spawn_positions = 3
 	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	bypass_lastclass = TRUE
-	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_ANCIENT, AGE_IMMORTAL, AGE_OLD,)
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD, AGE_IMMORTAL)
 	allowed_races = RACES_PLAYER_ALL
 	outfit = /datum/outfit/kaizoku/cutthroat
 	advclass_cat_rolls = list(CTAG_ADEPT = 20) //Kaizoku ToDo

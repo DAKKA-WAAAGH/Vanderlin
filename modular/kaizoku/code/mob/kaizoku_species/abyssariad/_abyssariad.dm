@@ -85,6 +85,7 @@
 	C.grant_language(/datum/language/abyssal)
 	to_chat(C, "<span class='info'>I can speak Abyssal with ,a before my speech.</span>")
 
+
 /datum/species/abyssariad/on_species_loss(mob/living/carbon/C)
 	. = ..()
 	UnregisterSignal(C, COMSIG_MOB_SAY)
@@ -181,89 +182,54 @@
 	set name = "The Nautical Oath"
 	set category = "ABYSSAL"
 
-	var/list/json_data = list(
-		"Loyalty to the Tide" = list(
-			"quote" = "To betray is to forever sever the lifeblood of the Abyssariad soul. Loyalty is the shield of essence, what gives love, hierarchy, and duty meaning. But from others, betrayal comes easy - that's where the whalers falter.",
-			"description" = "It is paramount to cherish loyalty to the lord, spouse, and duty. Among Abyssariads, betrayal is rare due to their collectivistic and monogamic nature. However, they believe other races betray easily and are often distrustful. Betraying one’s crew or mission strips an Abyssariad of their honor.",
-			"sin" =  "Sin of pride: the delusion of standing above the collective, divine justice, and law. It is the sin of oath breakers who reject the natural order and retribution.",
-			"nonperson" = "Desecrant: Ronins, Tower-Yakkos, Kabuki-marus, deserters, corrupt bureaucrats."
-		),
-		"Dignity in Victory and Defeat" = list(
-			"quote" = "Victory and Defeat are two respectful sides of the same blade, but only those who yield allow the blade to turn inward to themselves.",
-			"description" = "Explanation: Abyssariads respect fallen enemies unless those demonic in nature. In defeat, they prioritize retreat or dealing with consequences over surrender, as it is the ultimate disgrace warranting of self-disembowelment. In sparring, competitos are always equal, regardless of victory or defeat.",
-			"sin" =  "Sloth, the decay of a warrior's spirit, becoming dead weight that leeches off others' work, abandoning duty, neglecting training and responsibilities.",
-			"nonperson" = "Desecrant: Beggars without monastic oath, vagrants, anyone unwilling to work at anything- no tilling the field, no carpetry, nor battling, sucking from the governmental aid while not having disability. The latter rarely saw anywhere outside of Fog Islands."
-		),
-		"Spurn the Corrupt and Wicked" = list(
-			"quote" = "Stay vigilant against the twisted mockeries of demonic taint. One must purge the defilers and their ilk as warriors of purity.",
-			"description" = "Explanation: Abyssariads are dedicated to maintaining purity through vigilance against demonic corruption. They are often at odds with Tieflings and in direct conflict with goblins, orcs, demons, and zizo cultists, who are considered distortions of nature within their religious fold and culture.",
-			"sin" =  "the Sin of Gluttony, in which excess leads to moral degradation and weakens discipline. Feasting while others hunger, and overindulging in intoxicants, makes one unfit for war.",
-			"nonperson" = "Desecrant: Corrupt wealth-hoarders, warriors whom overindulges in alcohol to the point of becoming vulnerable, sycophantic leaders that let their warriors fight without reward."
-		),
-		"Resist Graggarious Temptations" = list(
-			"quote" = "Reject demonic lure, as their corruption leads only to ruin. They may promise many, but all that is delivered is nothing but a noose that tightens each sin. The Whales fell from grace, so pure souls should not have their minds touched by their unworthiness.",
-			"description" = "Explanation: One must resist the ultimate degradation of spirit- sin, disguised as desires, whispers and intrusive thoughts. Demonic wiles abuses the frail-minded. Discipline and meditation anchors one into light. Hence, prostitution is illegal in Fog Islands, and relationships with 'whaler' non-foglanders considered corrupting.",
-			"sin" =  "Sin of Lust: Lust leads to corruption, weakens discipline and makes one vulnerable to demonic temptation. Hedonism brings decadence, prioritizing pleasure over morals, corrupting marriage and loyalty and seducing others to follow suit. Living for the thrill instead of duty, succubus corruption taints the soul of their victims that way.",
-			"nonperson" = "Desecrant: Prostitutes, from high(Oiran) to low society(Tea girls)."
-		),
-		"Respect the Tools of Labor" = list(
-			"quote" = "A weapon might defend a life, but the plow is what sustains it. You must not withdraw what your victims require for survival-if they meet death, it will be one less to supply the kin.",
-			"description" = "Explanation: Excessive raiding is a grave offence, since sustainability is vital. Sacred tools that sustains life should not be taken as it will lead to indirect murder. Armor, weapons and luxuries are the focus for raids.",
-			"sin" =  "Greed is the hoarding of excess, as without purpose, leads to barren lands and corruption, forsaking loyalty for coin. Avarice disrupt the natural cycle of sustenance, turning warriors into nothing but thieves.",
-			"nonperson" = "Desecrant: loot-hungry wokous that pillages indiscriminately to the point of complete annihilation. Any thief."
-		),
-		"Combatants Weigh Their Choices" = list(
-			"quote" = "Enemies who hold their blade with killing intention have chosen their path. Enemies who have chosen their path will be dispatched and exposed in failure. Enemies who yield shall receive mercy. Make them fear, make the men reward the Abyssariads at their doorstep as tamed animals. For the day as iron is sacrificed on their sandy beaches will be the day the raided will suffer no more.",
-			"description" = "Explanation: In battles, combatants must be annihilated. Unarmed civilians and those who yield must be spared, as fear tames the men into submission. Visible signs of Abyssor worship on the coastline are signals of successful proselytization.",
-			"sin" =  "Envy is the anchor of weak men. Taking over or sabotaging fellow men binds the soul to envy. One must seek wisdom from the past rather than expect the downfall of the present.",
-			"nonperson" = "Desecrant: The Abyssanctum Traditionalists after their defeat in the Abyssanctum's Schism."
-		),
-		"Preservation of Wisdom" = list(
-			"quote" = "Culture is not merely an inheritance; it is a flame that must be kept alive. Through them, what is lost to them becomes the light that guides the future as long it is uncorrupted. Seeing the errors of their ways allows us to learn on their behalf.",
-			"description" = "Explanation: Preserving knowledge is sacred and long it is not demon-sourced, as empires rises and fall, the duty becomes to preserve their wisdom and integrate ancient texts, technology and arts to current day life. This mentality has kept Abyssal's Blood-Apotheosis foundations even after millennia, when bronze long became obsolete.",
-			"sin" =  "The sin of ignorance, willfully neglecting growth and truth for misinformation and stagnation. It further eroses the world's unity and invites demonic influence to the world.",
-			"nonperson" = "Desecrant: Book burners, artifact-destroyers, zealots that rejects knowledge in favor of dogma."
-		),
-		"The Path of the Blade" = list(
-			"quote" = "A blade guided by justice cuts cleanly; justified in war and law. Yet personal vendettas are the realm of cowards, where the heart invites ruin as a demonic gateway of Wraith.",
-			"description" = "Assassinations should be for warfare and justice alone, never personal revenge. lawful duel is what settle matters. Unlawful assassinations taints the soul and leads to Graggar alure.",
-			"sin" =  "The sin of wrath is the loss of discipline, when emotions dictates actions over abyssal ways. Giving in to rage leads to mindless killing, unlawful duels outside natural oath, unnecessary torture and cruelty. Death or cultural absorption must be prefered over slavery.",
-			"nonperson" = "Desecrant: Mindless killers who praise the acts of Graggar, slavers and zapists. This oath ensured lack of slavery on Fog islands. (Foglanders executors, the Kaishakunin, are considered holy and untouched by Graggar's ways.)"
-		)
-	)
+	// Read the properly formatted lore document
+	var/html_content = file2text('strings/rt/abyssariad_lore.txt')
 
+	// Expose the image resource to the browser
+	src << browse_rsc('modular/kaizoku/png_icons/pasghetti8811/pasghetti8811_lobby.png', "pasghetti8811_lobby.png")
+
+	// Display the lore in a browser popup
+	var/datum/browser/popup = new(src, "Nautical Oath", "The sacred tenets of the Abyssariads", 700, 900)
+	popup.set_content(html_content)
+	popup.open()
+
+// Generic helper: show a lore/browser primer containing text blocks and optional images.
+/mob/proc/show_lore_primer(text_title, list/entries)
+	set name = "Show Lore Primer"
+	set category = "LORE"
+	var/width = 640
+	var/height = max(420, 200 + length(entries) * 110)
 	var/text = ""
-	for (var/section in json_data)
-		var/quote = json_data[section]["quote"]
-		var/description = json_data[section]["description"]
-		var/sin = json_data[section]["sin"]
-		var/nonperson = json_data[section]["nonperson"]
-
-		text += "<h2>[section]</h2>"
-		text += "<p><strong style='color:white;'>“[quote]”</strong></p>"
-		text += "<p><em style='color:#ccc;'>[description]</em></p>"
-		text += "<p><span style='color:#E63946;'>Sin: [sin]</span></p>"
-		text += "<p><span style='color:yellow;'>[nonperson]</span></p>"
-		text += "<hr>"
+	for(var/entry in entries)
+		var/img_html = ""
+		var/align = "left"
+		var/text_value = ""
+		if(entry && entry["align"])
+			align = entry["align"]
+		if(entry && entry["image"])
+			img_html = "<div style='float:" + align + "; margin:8px 12px 8px 0; max-height:160px;'><img src='" + entry["image"] + "' style='max-height:160px; border:1px solid #333;'></div>"
+		if(entry && entry["text"])
+			text_value = entry["text"]
+		text += "<div style='overflow:auto; padding:8px; margin-bottom:12px; background:#0f1720; border-radius:6px;'>"
+		if(img_html) text += img_html
+		text += "<div style='color:#E6E6E6; font-size:14px; line-height:1.4; margin-left:8px;'>" + text_value + "</div>"
+		text += "</div>"
 
 	var/html_content = "<html>\
 		<head>\
 			<style>\
-				body { font-family: Arial, sans-serif; background-color: #101820; color: #F2AA4C; padding: 12px; }\
-				h1 { color: #FFD700; text-align: center; }\
-				h2 { color: #F2AA4C; margin-top: 16px; }\
-				p { line-height: 1.4; }\
+				body { font-family: Arial, sans-serif; background-color: #0b0f12; color: #e6e6e6; padding:12px; }\
+				h1 { color: #ffd479; text-align:center; }\
+				a { color:#8ec6ff; }\
 			</style>\
 		</head>\
 		<body>\
-			<h1>The Nautical Oath</h1>\
-			<p><i>The Abyssariads are the living extensions of Abyssor, and to break one's honor is to insult both Him and the Championage. Such a transgression condemns one to become a Burakumin, cast from grace. The eyes of the Abyss find lies deeper than itself, and this fate is worse than death. The soul no longer belongs to itself, stripped of immortality, bound to become a demonic Dai. The unhonor mask is a final mercy in case one transforms. To obtain salvation, one must repent and be purified.</i></p>\
-			<hr>\
+			<h1>[text_title]</h1>\
 			[text]\
 		</body>\
 	</html>"
 
-	var/datum/browser/popup = new(src, "Nautical Oath", "Warning. This is a RP tool, not a guideline or forced directions.", 500, 600)
+	var/datum/browser/popup = new(src, text_title, "Lore Primer", width, height)
 	popup.set_content(html_content)
 	popup.open()
 

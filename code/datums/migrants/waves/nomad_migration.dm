@@ -17,7 +17,7 @@
 
 	skills = list(
 		/datum/skill/combat/swords = 4,
-        /datum/skill/craft/crafting = 2,
+		/datum/skill/craft/crafting = 2,
 		/datum/skill/craft/tanning = 3,
 		/datum/skill/combat/bows = 3,
 		/datum/skill/combat/knives = 2,
@@ -32,14 +32,14 @@
 		/datum/skill/misc/climbing = 2,
 		/datum/skill/misc/swimming = 1,
 		/datum/skill/misc/riding = 6,
-    )
+	)
 
 	traits = list(
 		TRAIT_HEAVYARMOR,
-        TRAIT_MEDIUMARMOR,
+		TRAIT_MEDIUMARMOR,
 		TRAIT_STEELHEARTED,
-        TRAIT_DUALWIELDER,
-        TRAIT_NOBLE,
+		TRAIT_DUALWIELDER,
+		TRAIT_NOBLE,
 	)
 
 	cmode_music = 'sound/music/cmode/adventurer/CombatOutlander2.ogg'

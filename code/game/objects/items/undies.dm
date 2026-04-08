@@ -28,7 +28,7 @@
 		if(H.underwear == "Nude" && H.cached_underwear != "Nude")
 			user.visible_message("<span class='notice'>[user] tries to put [src] on [H]...</span>")
 			if(do_after(user, 5 SECONDS, H))
-				get_location_accessible(H, BODY_ZONE_GROIN) // STONEKEEP EDIT: KAIZOKU; GROIN IS ITS OWN BODYPART.
+				get_location_accessible(H, BODY_ZONE_PRECISE_GROIN) // STONEKEEP EDIT: KAIZOKU; GROIN IS ITS OWN BODYPART.
 				H.underwear = H.cached_underwear
 				H.underwear_color = color
 				H.update_body()

@@ -18,7 +18,7 @@
 	as it became impossible to distinguish the two species after many generations. \
 	They come from a vast swathe of cultures and ethnicities all around Psydonia, \
 	most of which have historically been at odds with one another and other species. \
- 	The Heartfeltean people became part of Fog Island's political landscape by the alliance of \
+	The Heartfeltean people became part of Fog Island's political landscape by the alliance of \
 	both nations, and are viewed in great light beyond the perception of prejudice. \
 	Regardless, many came in search for a second chance far away from denmorian hordes, \
 	other few has been recovered from zybantine slave ships, kept among the lower \

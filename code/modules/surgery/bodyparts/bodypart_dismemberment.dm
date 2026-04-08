@@ -422,7 +422,7 @@
 		limb.attach_limb(src, TRUE)
 		return TRUE
 
- //Stonekeep Edit - Groin introdution - Adapt this better
+//Stonekeep Edit - Groin introdution - Adapt this better
 /obj/item/bodypart/groin/dismember(dam_type = BRUTE, bclass = BCLASS_CUT, mob/living/user, zone_precise = src.body_zone)
 	. = ..()
 	if(. && owner)

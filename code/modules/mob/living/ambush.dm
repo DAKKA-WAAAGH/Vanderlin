@@ -2,6 +2,8 @@
 // This should be it's own system. Please.
 
 #define AMBUSH_CHANCE 5
+#define WILDERNESS_SLEEP_AMBUSH_DELAY (45 SECONDS) //Stonekeep Edit: Praying will prevent ambush during sleep.
+#define WILDERNESS_SLEEP_PRAYER_GRACE (10 MINUTES) //Stonekeep Edit
 
 /mob/living/proc/ambushable()
 	if(!mind)
@@ -20,6 +22,9 @@
 	if(!MOBTIMER_FINISHED(src, MT_AMBUSHCHECK, 15 SECONDS))
 		return
 	MOBTIMER_SET(src, MT_AMBUSHCHECK)
+	perform_ambush()
+
+/mob/living/proc/perform_ambush()
 
 	if(!ambushable())
 		return
@@ -88,4 +93,48 @@
 				playsound(src, pick('sound/misc/jumphumans (1).ogg','sound/misc/jumphumans (2).ogg','sound/misc/jumphumans (3).ogg'), 100)
 			shake_camera(src, 2, 2)
 
+/mob/living/proc/is_in_wilderness_ambush_area() //STONEKEEP EDIT start
+	var/area/AR = get_area(src)
+	if(!AR || !length(AR.ambush_mobs))
+		return FALSE
+	var/turf/T = get_turf(src)
+	if(!T)
+		return FALSE
+	if(!(T.type in AR.ambush_types))
+		return FALSE
+	for(var/obj/machinery/light/fueled/RF in view(5, src))
+		if(RF.on)
+			return FALSE
+	return TRUE
+
+/mob/living/proc/schedule_wilderness_sleep_ambush_if_unprayed()
+	if(!mind || stat || status_flags & GODMODE)
+		return
+	if(!is_in_wilderness_ambush_area())
+		return
+	if(ishuman(src))
+		var/mob/living/carbon/human/H = src
+		if(H.patron && istype(H.patron, /datum/patron/abyssanctum)) 	// Only followers of Abyssanctum benefit from prayer protection
+			if(last_prayer_time && world.time - last_prayer_time <= WILDERNESS_SLEEP_PRAYER_GRACE)
+				return
+	var/sleep_start_time = world.time
+	addtimer(CALLBACK(src, TYPE_PROC_REF(/mob/living, try_wilderness_sleep_ambush), sleep_start_time), WILDERNESS_SLEEP_AMBUSH_DELAY)
+
+/mob/living/proc/try_wilderness_sleep_ambush(sleep_start_time)
+	if(QDELETED(src) || stat >= DEAD)
+		return
+	if(!IsSleeping())
+		return
+	if(!is_in_wilderness_ambush_area())
+		return
+	// Recheck prayer time in case they prayed during the delay
+	if(ishuman(src))
+		var/mob/living/carbon/human/H = src
+		if(H.patron && istype(H.patron, /datum/patron/abyssanctum))
+			if(last_prayer_time >= sleep_start_time)
+				return
+	perform_ambush()
+
 #undef AMBUSH_CHANCE
+#undef WILDERNESS_SLEEP_AMBUSH_DELAY //Stonekeep Edit
+#undef WILDERNESS_SLEEP_PRAYER_GRACE //Stonekeep Edit

@@ -982,6 +982,8 @@
 	icon_state = "uchigatana"
 	swingsound = ZATANA_WOOSH
 	smeltresult = /obj/item/ingot/steel
+	specialkaizokutext = TRUE
+	specialkaizokudesc = "Testing for the chat. Testing for the chat. Testing for the chat. Testing for the chat. Testing for the chat. Testing for the chat."
 
 /obj/item/weapon/sword/uchigatana/Initialize()
 	. = ..()

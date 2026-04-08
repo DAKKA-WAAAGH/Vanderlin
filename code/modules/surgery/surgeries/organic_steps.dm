@@ -138,7 +138,7 @@
 		BODY_ZONE_HEAD,
 		BODY_ZONE_PRECISE_NECK,
 		BODY_ZONE_CHEST,
-		BODY_ZONE_GROIN, //Stonekeep Edit
+		BODY_ZONE_PRECISE_GROIN, //Stonekeep Edit
 		BODY_ZONE_R_ARM,
 		BODY_ZONE_PRECISE_R_HAND,
 		BODY_ZONE_L_ARM,
@@ -177,7 +177,7 @@
 				fracture_type = /datum/wound/fracture/neck
 			if(BODY_ZONE_CHEST)
 				fracture_type = /datum/wound/fracture/chest
-			if(BODY_ZONE_GROIN)
+			if(BODY_ZONE_PRECISE_GROIN)
 				fracture_type = /datum/wound/fracture/groin
 		bodypart.add_wound(fracture_type)
 	target.emote("scream")

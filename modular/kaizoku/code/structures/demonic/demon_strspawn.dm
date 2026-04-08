@@ -6,21 +6,21 @@
 	var/obj/structure/demon/cocoon/reserving_cocoon = null
 	var/atom/owner = null
 
-/datum/structure_slot/New(var/slot_name, var/owner_ref)
+/datum/structure_slot/New(slot_name, owner_ref)
 	slot_type = slot_name
 	owner = owner_ref
 
 /datum/structure_slot/proc/is_available()
 	return !occupied && !reserved && (!child_structure || QDELETED(child_structure))
 
-/datum/structure_slot/proc/fill_slot(var/obj/structure/demon/S)
+/datum/structure_slot/proc/fill_slot(obj/structure/demon/S)
 	occupied = TRUE
 	reserved = FALSE
 	reserving_cocoon = null
 	child_structure = S
 	S.parent_slot = src
 
-/datum/structure_slot/proc/reserve_for_cocoon(var/obj/structure/demon/cocoon/Cc)
+/datum/structure_slot/proc/reserve_for_cocoon(obj/structure/demon/cocoon/Cc)
 	reserved = TRUE
 	reserving_cocoon = Cc
 
@@ -84,7 +84,7 @@
 /obj/structure/demon/proc/within_square_bounds(turf/T)
 	return (abs(T.x - src.x) <= DEMON_SPREAD_RADIUS) && (abs(T.y - src.y) <= DEMON_SPREAD_RADIUS)
 
-/obj/structure/demon/proc/get_organized_spread_candidates(var/obj/structure/demon/expansion/parent = null)
+/obj/structure/demon/proc/get_organized_spread_candidates(obj/structure/demon/expansion/parent = null)
 	var/list/candidates = list()
 	var/list/corruption_tiles = list()
 	if(parent)
@@ -97,14 +97,14 @@
 				corruption_tiles += Cu
 
 	if(!corruption_tiles.len)
-		for(var/dir_card3 in demon_spread_dirs)
+		for(var/dir_card3 in GLOB.demon_spread_dirs)
 			var/turf/Tcand = get_step(src, dir_card3)
 			if(is_valid_corruption_turf(Tcand) && within_square_bounds(Tcand))
 				candidates += Tcand
 		return candidates
 
 	for(var/obj/effect/demon/corruption/Cl in corruption_tiles)
-		for(var/dir_card4 in demon_spread_dirs)
+		for(var/dir_card4 in GLOB.demon_spread_dirs)
 			var/turf/Tn = get_step(Cl, dir_card4)
 			if(is_valid_corruption_turf(Tn) && within_square_bounds(Tn))
 				if(!(Tn in candidates))

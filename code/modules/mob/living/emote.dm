@@ -21,6 +21,48 @@
 	emote("pray", intentional = TRUE)
 	SEND_SIGNAL(src, COMSIG_PRAYER_COMPLETED)
 
+/mob/living/carbon/human/proc/abyssanctum_pray_effects()
+	if(!patron || !istype(patron, /datum/patron/abyssanctum))
+		return
+
+	last_prayer_time = world.time
+	purification_of_food()
+	wardoff_dead()
+
+/mob/living/carbon/human/proc/purification_of_food()
+	var/obj/item/held_item = get_active_held_item()
+	if(!istype(held_item, /obj/item/reagent_containers/food/snacks))
+		return
+	var/obj/item/reagent_containers/food/snacks/held_snack = held_item
+	if(!held_snack.reagents)
+		return
+
+	var/list/to_remove = list()
+	for(var/datum/reagent/reagent as anything in held_snack.reagents.reagent_list)
+		if(reagent.harmful)
+			to_remove += reagent.type
+
+	if(!length(to_remove))
+		return
+
+	for(var/reagent_type in to_remove)
+		held_snack.reagents.remove_reagent(reagent_type, held_snack.reagents.get_reagent_amount(reagent_type), TRUE)
+
+	to_chat(src, span_notice("My prayer purifies [held_snack] of poison."))
+
+/mob/living/carbon/human/proc/wardoff_dead()
+	var/blessed_bodies = 0
+	for(var/mob/living/carbon/human/nearby_body in range(2, src))
+		if(nearby_body.stat != DEAD)
+			continue
+		if(HAS_TRAIT(nearby_body, TRAIT_ZOMBIE_IMMUNE))
+			continue
+		ADD_TRAIT(nearby_body, TRAIT_ZOMBIE_IMMUNE, "prayer_deadite_ward")
+		blessed_bodies++
+
+	if(blessed_bodies)
+		to_chat(src, span_notice("My prayer wards nearby dead from deadite corruption."))
+
 /datum/emote/living/pray/run_emote(mob/user, params, type_override, intentional)
 	if(HAS_TRAIT(user, TRAIT_ATHEISM_CURSE))
 		to_chat(user, span_danger("Praying is for fools."))
@@ -52,6 +94,10 @@
 
 	for(var/mob/living/crit_guy in hearers(2, follower)) //as of writing succumb_timer does literally nothing btw
 		crit_guy.succumb_timer = world.time
+
+	if(ishuman(follower))
+		var/mob/living/carbon/human/H = follower
+		H.abyssanctum_pray_effects()
 
 // ............... Me (custom emote) ..................
 /datum/emote/living/custom
@@ -996,7 +1042,7 @@
 	if(ishuman(target) && ishuman(user))
 		var/mob/living/carbon/human/H = user
 		var/mob/living/carbon/human/E = target
-		if(H.zone_selected == BODY_ZONE_GROIN)
+		if(H.zone_selected == BODY_ZONE_PRECISE_GROIN)
 		// anti pedophile logging
 		// We don't need this anymore since we don't have children anymore.
 			var/log_msg
@@ -1013,7 +1059,7 @@
 	message_param = initial(message_param) // reset
 	if(ishuman(user))
 		var/mob/living/carbon/human/H = user
-		if(H.zone_selected == BODY_ZONE_GROIN) // STONEKEEP EDIT: KAIZOKU; GROIN IS ITS OWN BODYPART.
+		if(H.zone_selected == BODY_ZONE_PRECISE_GROIN) // STONEKEEP EDIT: KAIZOKU; GROIN IS ITS OWN BODYPART.
 			message_param = "slaps %t on the ass!"
 
 	..()

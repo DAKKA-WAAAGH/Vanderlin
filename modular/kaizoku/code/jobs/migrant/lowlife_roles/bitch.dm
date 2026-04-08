@@ -10,7 +10,7 @@
 	outfit = /datum/outfit/job/lowlife/bitch
 	category_tags = list(CTAG_LOWLIFE)
 	cmode_music = 'sound/music/cmode/towner/CombatBeggar.ogg'
-	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_ANCIENT)
+	allowed_ages = list(AGE_ADULT, AGE_MIDDLEAGED, AGE_OLD)
 
 /datum/outfit/job/lowlife/bitch/pre_equip(mob/living/carbon/human/H)
 	..()

@@ -32,7 +32,7 @@
 	inherent_traits = list(TRAIT_NOMOBSWAP)
 	default_features = list("mcolor" = "FFF", "ears" = "Ogrun", "tail_human" = "Onihorn")
 	use_skintones = 1
-	possible_ages = CHAMPIONAGE_AGES
+	possible_ages = NORMAL_AGES_LIST_BLOOMING
 	inherent_skills = list(
 		/datum/skill/misc/reading = 1,
 	)

@@ -131,8 +131,8 @@
 		/mob/living/simple_animal/hostile/demon/goonpack,
 		/mob/living/simple_animal/hostile/retaliate/lamia
 	)
-	if(is_mature && DEMON_SPAWNER_MATURE_TYPES && DEMON_SPAWNER_MATURE_TYPES.len) //Anti-runtime purposes, since you NEVER know.
-		return DEMON_SPAWNER_MATURE_TYPES
+	if(is_mature && GLOB.DEMON_SPAWNER_MATURE_TYPES && GLOB.DEMON_SPAWNER_MATURE_TYPES.len) //Anti-runtime purposes, since you NEVER know.
+		return GLOB.DEMON_SPAWNER_MATURE_TYPES
 	return base_pool
 
 /obj/structure/demon/spawner/process()

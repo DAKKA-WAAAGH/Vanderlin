@@ -52,16 +52,21 @@
 	switch(spawned.patron?.type)
 		if(/datum/patron/inhumen/graggar)
 			spawned.cmode_music = 'sound/music/cmode/antag/combat_werewolf.ogg'
-		if(/datum/patron/inhumen/graggar_zizo)
+		/*
+		if(/datum/patron/inhumen/graggar_zizo) //Stonekeep Edit: Kaizoku
 			spawned.cmode_music = 'sound/music/cmode/antag/combat_werewolf.ogg'
+		*/
 		if(/datum/patron/inhumen/zizo)
 			spawned.cmode_music = 'sound/music/cmode/antag/combat_cult.ogg'
 			if(!spawned.has_language(/datum/language/undead))
 				spawned.grant_language(/datum/language/undead)
 		if(/datum/patron/inhumen/matthios)
 			spawned.cmode_music = 'sound/music/cmode/antag/CombatBandit1.ogg'
+
+		/*  //Stonekeep Edit: Kaizoku
 		if(/datum/patron/inhumen/baotha)
 			spawned.cmode_music = 'sound/music/cmode/antag/CombatBaotha.ogg'
+		*/
 		else
 			spawned.cmode_music = 'sound/music/cmode/church/CombatInquisitor.ogg'
 

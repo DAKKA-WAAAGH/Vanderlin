@@ -1,4 +1,5 @@
-GLOBAL_LIST_INIT(roleplay_readme, world.file2list("strings/rt/Lore_Primer.txt"))
+//stonekeep edit: Lore primer source redirected to Kaizoku-specific primer.
+GLOBAL_LIST_INIT(roleplay_readme, world.file2list("modular/kaizoku/code/strings/lore/kaizoku_lore_primer.txt"))
 
 /mob/dead/new_player
 	flags_1 = NONE

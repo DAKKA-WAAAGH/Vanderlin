@@ -2026,6 +2026,7 @@ GLOBAL_LIST_EMPTY(donator_races)
 		if(BRAIN)
 			damage_amount = forced ? damage : damage * hit_percent * H.physiology.brain_mod
 			H.adjustOrganLoss(ORGAN_SLOT_BRAIN, damage_amount)
+
 	return damage_amount
 
 /datum/species/proc/on_hit(obj/projectile/P, mob/living/carbon/human/H)

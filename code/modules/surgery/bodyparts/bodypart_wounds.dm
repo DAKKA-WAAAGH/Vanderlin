@@ -160,6 +160,12 @@
 	if(do_crit)
 		var/crit_attempt = try_crit(bclass, dam, user, zone_precise, silent, crit_message, reduce_crit)
 		if(crit_attempt)
+			if(owner?.client)
+				owner.overlay_fullscreen("crit_wound_flash", /atom/movable/screen/fullscreen/crit_wound)
+				addtimer(CALLBACK(owner, TYPE_PROC_REF(/mob, clear_fullscreen), "crit_wound_flash", 20), 50)
+			if(user?.client)
+				user.overlay_fullscreen("crit_blood_flash", /atom/movable/screen/fullscreen/crit_blood)
+				addtimer(CALLBACK(user, TYPE_PROC_REF(/mob, clear_fullscreen), "crit_blood_flash", 20), 50)
 			return crit_attempt
 
 	return manage_dynamic_wound(bclass, dam)
@@ -313,7 +319,7 @@
 	var/list/attempted_wounds
 	switch(pick(crit_classes))
 		if("cbt")
-			if(zone_precise == BODY_ZONE_GROIN) //Stonekeep Edit
+			if(zone_precise == BODY_ZONE_PRECISE_GROIN) //Stonekeep Edit
 				var/cbt_multiplier = 1
 				if(user && HAS_TRAIT(user, TRAIT_NUTCRACKER))
 					cbt_multiplier = 2
@@ -334,7 +340,7 @@
 				if(HAS_TRAIT(src, TRAIT_CRITICAL_RESISTANCE))
 					used -= 10
 				var/fracture_type = /datum/wound/fracture/chest
-				if(zone_precise == BODY_ZONE_GROIN)
+				if(zone_precise == BODY_ZONE_PRECISE_GROIN)
 					if(damage_dividend >= 0.8) // Dismember groin
 						src.dismember(BRUTE, BCLASS_CUT, user)
 						return TRUE
