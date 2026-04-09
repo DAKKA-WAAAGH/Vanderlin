@@ -111,8 +111,7 @@ GLOBAL_LIST_INIT(footstep, list(
 		'sound/foley/footsteps/tatamistep1.ogg',
 		'sound/foley/footsteps/tatamistep2.ogg',
 		'sound/foley/footsteps/tatamistep3.ogg',
-		'sound/foley/footsteps/tatamistep4.ogg',
-		'sound/foley/footsteps/tatamistep5.ogg'), 80, 0),
+		'sound/foley/footsteps/tatamistep4.ogg'), 80, 0),
 ))
 //bare footsteps lists
 GLOBAL_LIST_INIT(barefootstep, list(
