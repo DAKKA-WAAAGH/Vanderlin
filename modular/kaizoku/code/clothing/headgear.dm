@@ -619,6 +619,8 @@
 	icon_state = "paddedt"
 	icon = 'modular/kaizoku/icons/clothingicon/head.dmi'
 	mob_overlay_icon = 'modular/kaizoku/icons/clothingoldbodies/head64.dmi'
+	worn_x_dimension = 64
+	worn_y_dimension = 64
 
 /obj/item/clothing/head/helmet/leather/paddedt/Initialize()
 	. = ..()
