@@ -33,7 +33,6 @@
 		span_warning("[victim] is connected to [caster] with a lightning lure!"),
 		span_warning("You create a static link with [victim]."),
 	)
-	playsound(victim, 'sound/items/stunmace_gen (2).ogg', 100)
 	victim.AddComponent(\
 		/datum/component/leash,\
 		owner,\
@@ -51,7 +50,6 @@
 	if(QDELETED(owner))
 		return
 	if(get_dist(victim, owner) > aoe_radius - 1)
-		playsound(victim, 'sound/items/stunmace_toggle (3).ogg', 100)
 		owner.visible_message(span_warning("The lightning lure fizzles out!"), span_warning("[victim] was too far away!"))
 		return
 	victim.visible_message(span_warning("[victim] is hooked!"), span_userdanger("I'm hooked!"))

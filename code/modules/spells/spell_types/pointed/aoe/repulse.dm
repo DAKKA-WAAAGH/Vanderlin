@@ -78,7 +78,6 @@
 
 	point_cost = 0
 
-	sound = 'sound/misc/tail_swing.ogg'
 	spell_flags = NONE
 	invocation = null
 	invocation_type = INVOCATION_NONE

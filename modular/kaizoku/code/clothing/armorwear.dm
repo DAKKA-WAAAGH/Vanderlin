@@ -11,6 +11,10 @@
 
 	body_parts_covered = COVERAGE_FULL
 
+/obj/item/clothing/armor/medium/surcoat/heartfelt/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_OUTLANDER_PLATE_COAT_STEP)
+
 //................ Armored surcoat (Heartfelt Hand) ............... //
 /obj/item/clothing/armor/medium/surcoat/heartfelt/hand
 	name = "turtleshell royal coat"
@@ -48,6 +52,10 @@
 	icon_state = "nanbando"
 	item_state = "nanbando"
 
+/obj/item/clothing/armor/plate/nanbando/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_STEP)
+
 /obj/item/clothing/armor/cuirass/nanbando
 	name = "abyssal cuirass"
 	desc = "Proper refined protection for the chest made of true, reliable spring steel."
@@ -57,6 +65,10 @@
 	icon_state = "nanbandoc"
 	item_state = "nanbandoc"
 
+/obj/item/clothing/armor/cuirass/nanbando/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_STEP)
+
 /obj/item/clothing/armor/plate/full/nanbando
 	name = "abyssal full plate"
 	desc = "A complete set of abyssariad steel armor, refined and with additional auxiliary parts for protection."
@@ -64,6 +76,10 @@
 	mob_overlay_icon = 'modular/kaizoku/icons/clothing/armor.dmi'
 	sleeved = 'modular/kaizoku/icons/helpers/sleeves_armor.dmi'
 	icon_state = "nanbandofull"
+
+/obj/item/clothing/armor/plate/full/nanbando/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_LAMELLAR_STEP)
 
 /obj/item/clothing/armor/plate/full/nanbando/cursed/Initialize()
 	. = ..()
@@ -84,6 +100,10 @@
 	sleeved = 'modular/kaizoku/icons/helpers/sleeves_armor.dmi'
 	icon_state = "laminartatami"
 
+/obj/item/clothing/armor/chainmail/tatami/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_CHAIN_STEP)
+
 /obj/item/clothing/armor/chainmail/iron/tatami
 	name = "iron foldable armor"
 	desc = "The 'Tatami karuta-gane'. A foldable lightweight armor with lacquered iron squares or tiles on padded chains."
@@ -91,6 +111,10 @@
 	mob_overlay_icon = 'modular/kaizoku/icons/clothing/armor.dmi'
 	sleeved = 'modular/kaizoku/icons/helpers/sleeves_armor.dmi'
 	icon_state = "tatami"
+
+/obj/item/clothing/armor/chainmail/iron/tatami/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_CHAIN_STEP)
 
 /obj/item/clothing/armor/chainmail/hauberk/kusari
 	name = "chainmail robe"
@@ -100,6 +124,10 @@
 	sleeved = 'modular/kaizoku/icons/helpers/sleeves_armor.dmi'
 	icon_state = "kusari"
 	item_state = "kusari"
+
+/obj/item/clothing/armor/chainmail/hauberk/kusari/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_CHAIN_STEP)
 
 /obj/item/clothing/armor/plate/mirror/iron
 	name = "iron mirror armor"
@@ -114,6 +142,10 @@
 	armor_class = AC_MEDIUM
 	sellprice = 20
 
+/obj/item/clothing/armor/plate/mirror/iron/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_STEP)
+
 /obj/item/clothing/armor/plate/mirror
 	name = "steel mirror armor"
 	icon_state = "mirrorarmor"
@@ -123,6 +155,10 @@
 	sleeved = 'modular/kaizoku/icons/helpers/sleeves_armor.dmi'
 	icon_state = "mirrorarmor"
 
+/obj/item/clothing/armor/plate/mirror/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_STEP)
+
 /obj/item/clothing/armor/brigandine/oyoroi
 	name = "great lamellar armor"
 	desc = "The 'O-yoroi', a heavy-duty lamellar armor favored by high-ranking zamurais on horseback, with pauldrons functioning similarly to shields in battle."
@@ -131,6 +167,10 @@
 	mob_overlay_icon = 'modular/kaizoku/icons/clothing/armor.dmi'
 	sleeved = 'modular/kaizoku/icons/helpers/sleeves_armor.dmi'
 	icon_state = "halfoyoroi"
+
+/obj/item/clothing/armor/brigandine/oyoroi/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_LAMELLAR_STEP)
 
 /obj/item/clothing/armor/brigandine/oyoroi/update_icon()
 	. = ..()
@@ -191,6 +231,10 @@
 		return
 	qdel(src)
 
+/obj/item/clothing/armor/brigandine/oyoroi/oyoroigusoku/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_LAMELLAR_STEP)
+
 /obj/item/clothing/armor/cuirass/iron/sanmaido
 	name = "three-plates cuirass"
 	desc = "The 'San mai-do', a cost-effective cuirass composed of three main iron plates riveted together. It is favored by poor foot soldiers and warrior monks."
@@ -198,6 +242,10 @@
 	mob_overlay_icon = 'modular/kaizoku/icons/clothing/armor.dmi'
 	sleeved = 'modular/kaizoku/icons/helpers/sleeves_armor.dmi'
 	icon_state = "sanmaido"
+
+/obj/item/clothing/armor/cuirass/iron/sanmaido/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_STEP)
 
 /obj/item/clothing/armor/leather/abyssal
 	name = "leather cuirass"
@@ -285,6 +333,10 @@
 	item_state = "kikkoabyssal"
 	sellprice = 65 //not unique.
 
+/obj/item/clothing/armor/medium/surcoat/heartfelt/abyssariad/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_STEP)
+
 /obj/item/clothing/armor/leather/vest/kaizoku
 	name = "kaizoku's waitao"
 	icon_state = "waitao_coat"
@@ -308,6 +360,10 @@
 /obj/item/clothing/armor/brigandine/godwenkai/update_icon()
 	. = ..()
 	return
+
+/obj/item/clothing/armor/brigandine/godwenkai/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_LAMELLAR_STEP)
 
 /obj/item/clothing/armor/gambeson/ruankai
 	slot_flags = ITEM_SLOT_ARMOR|ITEM_SLOT_SHIRT
@@ -370,6 +426,10 @@
 	mob_overlay_icon = 'modular/kaizoku/icons/clothing/armor.dmi'
 	sleeved = 'modular/kaizoku/icons/helpers/sleeves_armor.dmi'
 
+/obj/item/clothing/armor/leather/splint/ninjakappa/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_STEP)
+
 /obj/item/clothing/armor/rare/myrmidon
 	name = "myrmidon mingguang kai" // that's "明光铠", not the genshin character.
 	desc = "Ocean-blessed overlapping steel plates joined by butchered demonhide threads and orichalcum infusion, \
@@ -384,6 +444,10 @@
 	mob_overlay_icon = 'modular/kaizoku/icons/clothing/armor.dmi'
 	sleeved = 'modular/kaizoku/icons/helpers/sleeves_armor.dmi'
 	body_parts_covered = CHEST|GROIN|ARMS|VITALS|LEGS //Pays off by not having other limbparts.
+
+/obj/item/clothing/armor/rare/myrmidon/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_LAMELLAR_STEP)
 
 /obj/item/clothing/armor/ceramic
 	name = "tribal coverings"
@@ -404,6 +468,10 @@
 	sewrepair = FALSE
 	slot_flags = ITEM_SLOT_ARMOR
 
+/obj/item/clothing/armor/ceramic/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_STEP)
+
 /obj/item/clothing/armor/ceramic/reinforced
 	name = "marauder trollhunter armor"
 	desc = "The heavy armor used by the tribalistic undine marauder forces under the flag of abyssariads from the Fog Islands. Made of ceramic-like material from lava forges."
@@ -418,6 +486,10 @@
 	max_integrity = INTEGRITY_STANDARD
 	equip_delay_self = 40
 	armor_class = AC_MEDIUM
+
+/obj/item/clothing/armor/ceramic/reinforced/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_STEP)
 
 /obj/item/clothing/armor/ceramic/light
 	name = "bone coverings"
@@ -435,6 +507,9 @@
 	prevent_crits = list(BCLASS_CUT, BCLASS_STAB) //Bones acts similar to ceramics, it will crack with blunt damage.
 	armor_class = AC_LIGHT
 
+/obj/item/clothing/armor/ceramic/light/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_STEP)
 
 /obj/item/clothing/armor/medium/scale/shanwenkai
 	name = "imperial weepersmail"
@@ -443,6 +518,10 @@
 	icon = 'modular/kaizoku/icons/clothingicon/armor.dmi'
 	mob_overlay_icon = 'modular/kaizoku/icons/clothing/armor.dmi'
 	sleeved = 'modular/kaizoku/icons/helpers/sleeves_armor.dmi'
+
+/obj/item/clothing/armor/medium/scale/shanwenkai/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_CHAIN_STEP)
 
 /obj/item/clothing/armor/leather/jacket/custodian //Pretty much the stonekeep version of gatemaster armor.
 	name = "scout battlecoat"
@@ -477,10 +556,18 @@
 		det.color = GLOB.lordprimary
 		add_overlay(det)
 
+/obj/item/clothing/armor/leather/jacket/custodian/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_STEP)
+
 /obj/item/clothing/armor/leather/jacket/custodian/foglander
 	name = "imperial battlecoat"
 	desc = "Thick coat with slim plates bound internally to belt-like leather reinforcements. Proper light armor for the imperial army's cavalry."
 	icon_state = "fflcustodian"
+
+/obj/item/clothing/armor/leather/jacket/custodian/foglander/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_STEP)
 
 /obj/item/clothing/armor/cuirass/custodian
 	name = "coastal cuirass"
@@ -490,6 +577,10 @@
 	icon = 'modular/kaizoku/icons/clothingicon/armor.dmi'
 	mob_overlay_icon = 'modular/kaizoku/icons/clothing/armor.dmi'
 	sleeved = 'modular/kaizoku/icons/helpers/sleeves_armor.dmi'
+
+/obj/item/clothing/armor/cuirass/custodian/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_STEP)
 
 /obj/item/clothing/armor/cuirass/shuhen
 	name = "shuhen cuirass"
@@ -519,6 +610,10 @@
 		det.color = GLOB.lordprimary
 		add_overlay(det)
 
+/obj/item/clothing/armor/cuirass/shuhen/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_LAMELLAR_STEP)
+
 /obj/item/clothing/armor/chainmail/hauberk/custodian
 	name = "custodian chainrobes"
 	desc = "A large robe made of chains, essentially a mixture between the hauberk and a kusari katabira, which both are already the same thing."
@@ -547,6 +642,10 @@
 		det.color = GLOB.lordprimary
 		add_overlay(det)
 
+/obj/item/clothing/armor/chainmail/hauberk/custodian/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_CHAIN_STEP)
+
 /obj/item/clothing/armor/brigandine/custzamurai
 	name = "brigandine-of-knives"
 	icon_state = "flccustodian"
@@ -555,6 +654,10 @@
 	mob_overlay_icon = 'modular/kaizoku/icons/clothing/armor.dmi'
 	sleeved = 'modular/kaizoku/icons/helpers/sleeves_armor.dmi'
 
+/obj/item/clothing/armor/brigandine/custzamurai/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_STEP)
+
 /obj/item/clothing/armor/brigandine/custknight
 	name = "plated brigandine"
 	desc = "Coastal brigandine proper for a knightly warrior. Well adjusted, it barely makes swimming harder, proper for those whom lives by the sea."
@@ -562,3 +665,7 @@
 	icon = 'modular/kaizoku/icons/clothingicon/armor.dmi'
 	mob_overlay_icon = 'modular/kaizoku/icons/clothing/armor.dmi'
 	sleeved = 'modular/kaizoku/icons/helpers/sleeves_armor.dmi'
+
+/obj/item/clothing/armor/brigandine/custknight/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_STEP)

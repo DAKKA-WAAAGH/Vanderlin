@@ -28,8 +28,8 @@
 	anvilrepair = /datum/skill/craft/armorsmithing
 	resistance_flags = FIRE_PROOF
 	pickup_sound = "rustle"
-	equip_sound = 'sound/foley/equip/equip_armor_plate.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	equip_sound = 'sound/foley/equip/equip_outlander_plate.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	break_sound = 'sound/foley/breaksound.ogg'
 	sellprice = 25
 	item_weight = 7 * STEEL_MULTIPLIER

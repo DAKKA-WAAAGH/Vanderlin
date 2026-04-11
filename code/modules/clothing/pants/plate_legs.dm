@@ -11,8 +11,8 @@
 	unequip_delay_self = 30
 	resistance_flags = FIRE_PROOF
 	var/do_sound = FALSE
-	equip_sound = 'sound/foley/equip/equip_armor_plate.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	equip_sound = 'sound/foley/equip/equip_outlander_plate.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	pickup_sound = "rustle"
 	break_sound = 'sound/foley/breaksound.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
@@ -30,7 +30,7 @@
 
 /obj/item/clothing/pants/platelegs/Initialize()
 	. = ..()
-	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_STEP)
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_OUTLANDER_PLATE_STEP)
 
 /obj/item/clothing/pants/platelegs/ancient
 	name = "ancient chausses"

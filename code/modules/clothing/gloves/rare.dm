@@ -2,10 +2,10 @@
 	icon = 'icons/roguetown/clothing/Racial_Armour.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/onmob_racial.dmi'
 	sleeved = 'icons/roguetown/clothing/onmob/onmob_racial.dmi'
-	equip_sound = 'sound/foley/equip/equip_armor_plate.ogg'
+	equip_sound = 'sound/foley/equip/equip_outlander_plate.ogg'
 	pickup_sound = "rustle"
 	break_sound = 'sound/foley/breaksound.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sleevetype = null
 	blocksound = PLATEHIT
 	body_parts_covered = HANDS

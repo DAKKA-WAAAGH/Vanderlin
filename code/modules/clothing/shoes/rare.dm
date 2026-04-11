@@ -7,8 +7,8 @@
 	resistance_flags = FIRE_PROOF // All of these are plated
 	prevent_crits = list(BCLASS_LASHING, BCLASS_BITE, BCLASS_TWIST, BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_STAB)
 	pickup_sound = "rustle"
-	equip_sound = 'sound/foley/equip/equip_armor_plate.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	equip_sound = 'sound/foley/equip/equip_outlander_plate.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	break_sound = 'sound/foley/breaksound.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
 	melt_amount = 75

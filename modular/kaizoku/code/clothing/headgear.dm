@@ -18,8 +18,6 @@
 	desc = "A wide-brimmed hat traditionally worn by wandering monks of the Abyssanctum fold."
 	bloody_icon = 'icons/effects/blood64x64.dmi'
 	bloody_icon_state = "helmetblood_big"
-	worn_x_dimension = 64
-	worn_y_dimension = 64
 	icon = 'modular/kaizoku/icons/clothingicon/head.dmi'
 	mob_overlay_icon = 'modular/kaizoku/icons/clothingoldbodies/head64.dmi'
 	flags_inv = HIDEEARS
@@ -141,8 +139,6 @@
 	mob_overlay_icon = 'modular/kaizoku/icons/clothingoldbodies/head64.dmi'
 	bloody_icon = 'icons/effects/blood64x64.dmi'
 	bloody_icon_state = "helmetblood_big"
-	worn_x_dimension = 64
-	worn_y_dimension = 64
 	detail_tag = "_detail"
 	dynamic_hair_suffix = ""
 
@@ -173,8 +169,6 @@
 	mob_overlay_icon = 'modular/kaizoku/icons/clothingoldbodies/head64.dmi'
 	bloody_icon = 'icons/effects/blood64x64.dmi'
 	bloody_icon_state = "helmetblood_big"
-	worn_x_dimension = 64
-	worn_y_dimension = 64
 
 /obj/item/clothing/head/helmet/sallet/tosei_kabuto/cursed/Initialize()
 	. = ..()
@@ -196,8 +190,6 @@
 	mob_overlay_icon = 'modular/kaizoku/icons/clothingoldbodies/head64.dmi'
 	bloody_icon = 'icons/effects/blood64x64.dmi'
 	bloody_icon_state = "helmetblood_big"
-	worn_x_dimension = 64
-	worn_y_dimension = 64
 
 /obj/item/clothing/head/helmet/visored/sallet/tosei_kabuto/cursed/Initialize()
 	. = ..()
@@ -288,8 +280,6 @@
 	icon = 'modular/kaizoku/icons/clothingicon/head.dmi'
 	bloody_icon = 'icons/effects/blood64x64.dmi'
 	bloody_icon_state = "helmetblood_big"
-	worn_x_dimension = 64
-	worn_y_dimension = 64
 	emote_environment = 3
 	sellprice = VALUE_STEEL_HELMET+BONUS_VALUE_SMALL
 	clothing_flags = CANT_SLEEP_IN
@@ -329,8 +319,6 @@
 	icon = 'modular/kaizoku/icons/clothingicon/head.dmi'
 	bloody_icon = 'icons/effects/blood64x64.dmi'
 	bloody_icon_state = "helmetblood_big"
-	worn_x_dimension = 64
-	worn_y_dimension = 64
 	sewrepair = TRUE
 
 /obj/item/clothing/head/helmet/heavy/bronzepot //hopefully asking someone to draw this helmet.
@@ -345,8 +333,6 @@
 	mob_overlay_icon = 'modular/kaizoku/icons/clothingoldbodies/head64.dmi'
 	bloody_icon = 'icons/effects/blood64x64.dmi'
 	bloody_icon_state = "helmetblood_big"
-	worn_x_dimension = 64
-	worn_y_dimension = 64
 	block2add = null //Can easily see - cannot remove the helmet. This is your new skull.
 	adjustable = CAN_CADJUST
 	clothing_flags = null
@@ -417,8 +403,6 @@
 	mob_overlay_icon = 'modular/kaizoku/icons/clothingoldbodies/head64.dmi'
 	bloody_icon = 'icons/effects/blood64x64.dmi'
 	bloody_icon_state = "helmetblood_big"
-	worn_x_dimension = 64
-	worn_y_dimension = 64
 
 // 'bone-tier' Undine equipments.
 
@@ -429,8 +413,6 @@
 	icon = 'modular/kaizoku/icons/clothingicon/head.dmi'
 	mob_overlay_icon = 'modular/kaizoku/icons/clothingoldbodies/head64.dmi'
 	bloody_icon = 'icons/effects/blood64x64.dmi'
-	worn_x_dimension = 64
-	worn_y_dimension = 64
 	resistance_flags = FLAMMABLE
 	bloody_icon = 'icons/effects/blood64x64.dmi'
 	bloody_icon_state = "helmetblood_big"
@@ -462,8 +444,6 @@
 	mob_overlay_icon = 'modular/kaizoku/icons/clothingoldbodies/head64.dmi'
 	bloody_icon = 'icons/effects/blood64x64.dmi'
 	sellprice = 100
-	worn_x_dimension = 64
-	worn_y_dimension = 64
 	resistance_flags = FLAMMABLE
 	bloody_icon = 'icons/effects/blood64x64.dmi'
 	bloody_icon_state = "helmetblood_big"
@@ -487,8 +467,6 @@
 	mob_overlay_icon = 'modular/kaizoku/icons/clothingoldbodies/head64.dmi'
 	bloody_icon = 'icons/effects/blood64x64.dmi'
 	bloody_icon_state = "helmetblood_big"
-	worn_x_dimension = 64
-	worn_y_dimension = 64
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 
 /obj/item/clothing/head/rare/dragonslayer
@@ -499,8 +477,6 @@
 	the sons of magma. The asbestos materials excels in resisting the intense heat of dragonfire and wizardry."
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 	resistance_flags = FIRE_PROOF | ACID_PROOF
-	worn_x_dimension = 64
-	worn_y_dimension = 64
 	icon = 'modular/kaizoku/icons/clothingicon/head.dmi'
 	mob_overlay_icon = 'modular/kaizoku/icons/clothingoldbodies/head64.dmi'
 	bloody_icon = 'icons/effects/blood64x64.dmi'
@@ -571,8 +547,6 @@
 	mob_overlay_icon = 'modular/kaizoku/icons/clothingoldbodies/head64.dmi'
 	bloody_icon = 'icons/effects/blood64x64.dmi'
 	bloody_icon_state = "helmetblood_big"
-	worn_x_dimension = 64
-	worn_y_dimension = 64
 
 /obj/item/clothing/head/helmet/ceramic/reinforced
 	name = "marauder trollhunter helmet"
@@ -590,8 +564,6 @@
 	mob_overlay_icon = 'modular/kaizoku/icons/clothingoldbodies/head64.dmi'
 	bloody_icon = 'icons/effects/blood64x64.dmi'
 	bloody_icon_state = "helmetblood_big"
-	worn_x_dimension = 64
-	worn_y_dimension = 64
 
 /obj/item/clothing/head/helmet/visored/zunari/zamurai
 	detail_tag = "_det"
@@ -683,8 +655,6 @@
 	desc = "Protective helmet with a padded leather cap and a crest, used by lowly members of Foglander's imperial retainers. \
 	Typically worn by scouts and light infantry aiding the main forces to keep unruly zamurais at bay."
 	icon_state = "paddedf"
-	worn_x_dimension = 64
-	worn_y_dimension = 64
 
 /obj/item/clothing/neck/bevor/crabstain
 	name = "crabstain bevor"
@@ -748,8 +718,6 @@
 	icon_state = "firelancer_kettle"
 	detail_tag = ""
 	detail_color = null
-	worn_x_dimension = 64
-	worn_y_dimension = 64
 	icon = 'modular/kaizoku/icons/clothingicon/head.dmi'
 	mob_overlay_icon = 'modular/kaizoku/icons/clothingoldbodies/head64.dmi'
 
@@ -790,8 +758,6 @@
 	smeltresult = /obj/item/ingot/iron
 	sellprice = VALUE_IRON_ARMOR_UNUSUAL
 	item_weight = 6 * STEEL_MULTIPLIER
-	worn_x_dimension = 64
-	worn_y_dimension = 64
 
 /obj/item/clothing/head/helmet/guardsman/Initialize()
 	. = ..()
@@ -847,8 +813,6 @@
 	icon = 'modular/kaizoku/icons/clothingicon/head.dmi'
 	mob_overlay_icon = 'modular/kaizoku/icons/clothingoldbodies/head64.dmi'
 	icon_state = "hfhcustodian"
-	worn_x_dimension = 64
-	worn_y_dimension = 64
 
 /obj/item/clothing/head/helmet/visored/knight/custknight/Initialize()
 	. = ..()

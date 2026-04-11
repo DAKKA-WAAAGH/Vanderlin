@@ -6,7 +6,7 @@ GLOBAL_LIST_INIT(patron_sound_themes, list(
 	MALUM = 'sound/magic/dwarf_chant01.ogg',
 	XYLIX = 'sound/misc/gods/xylix_omen_male_female.ogg',
 	NECRA = 'sound/ambience/noises/genspooky (1).ogg',
-	ABYSSOR = 'sound/items/bucket_transfer (2).ogg',
+	ABYSSOR = 'sound/items/bucket_transfer (1).ogg',
 	RAVOX = 'sound/vo/male/knight/rage (6).ogg',
 	PESTRA = 'sound/magic/cosmic_expansion.ogg',
 	ZIZO = 'sound/misc/gods/zizo_omen.ogg',

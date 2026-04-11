@@ -326,7 +326,7 @@
 	name = "parent visored helmet"
 	desc = "If you're reading this, someone forgot to set an item description or spawned the wrong item. Yell at them."
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
-	equip_sound = 'sound/foley/equip/equip_armor_plate.ogg'
+	equip_sound = 'sound/foley/equip/equip_outlander_plate.ogg'
 	adjustable = CAN_CADJUST
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	block2add = FOV_BEHIND

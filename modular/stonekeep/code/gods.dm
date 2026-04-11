@@ -246,7 +246,6 @@
 
 
 /datum/action/cooldown/spell/projectile/moonlit_dagger
-	sound = 'sound/misc/tail_swing.ogg'
 
 
 #define TAG_NOCEVENT "nocevent"

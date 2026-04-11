@@ -9,6 +9,10 @@
 	sleeved = 'modular/kaizoku/icons/helpers/sleeves_pants.dmi'
 	alternate_worn_layer = SHOESLEEVE_LAYER
 
+/obj/item/clothing/pants/chainlegs/iron/haidate_tatami/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_CHAIN_STEP)
+
 /obj/item/clothing/pants/chainlegs/sendan
 	name = "segmented thighguard"
 	desc = "A 'sendan tatami', a segmented thigh armor with overlapping plates that allows engagement in prolonged combat, without causing mobility issues."
@@ -17,6 +21,10 @@
 	mob_overlay_icon = 'modular/kaizoku/icons/clothing/pants.dmi'
 	sleeved = 'modular/kaizoku/icons/helpers/sleeves_pants.dmi'
 	alternate_worn_layer = SHOESLEEVE_LAYER
+
+/obj/item/clothing/pants/chainlegs/sendan/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_CHAIN_STEP)
 
 /obj/item/clothing/pants/chainlegs/sendan/cursed/Initialize()
 	. = ..()
@@ -33,6 +41,10 @@
 	icon_state = "yoroihakama"
 	item_state = "yoroihakama"
 	alternate_worn_layer = SHOESLEEVE_LAYER
+
+/obj/item/clothing/pants/platelegs/yoroihakama/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_STEP)
 
 /obj/item/clothing/pants/kaizoku/yoroihakama/update_icon()
 	. = ..()
@@ -146,9 +158,13 @@
 	body_parts_covered = GROIN|LEGS|FEET
 	blocksound = PLATEHIT
 	var/do_sound = FALSE
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_lamellar.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
 	alternate_worn_layer = SHOESLEEVE_LAYER
+
+/obj/item/clothing/pants/kaizoku/ceramic/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_STEP)
 
 /obj/item/clothing/pants/platelegs/weepershanwenkai
 	name = "Y-wenkai lowerhalf"
@@ -160,6 +176,10 @@
 	item_state = "weepershanwenkai"
 	gender = PLURAL
 	alternate_worn_layer = SHOESLEEVE_LAYER
+
+/obj/item/clothing/pants/platelegs/weepershanwenkai/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_LAMELLAR_STEP)
 
 /obj/item/clothing/pants/kaizoku/ceramic/light
 	name = "ivory leg plates"
@@ -174,6 +194,10 @@
 	gender = PLURAL
 	icon_state = "ivory_legs"
 	item_state = "ivory_legs"
+
+/obj/item/clothing/pants/kaizoku/ceramic/light/Initialize()
+	. = ..()
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_PLATE_STEP)
 
 /obj/item/clothing/pants/kaizoku/tribal
 	name = "tribal lowerhalf"

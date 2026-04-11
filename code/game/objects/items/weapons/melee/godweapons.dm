@@ -27,7 +27,7 @@
 	icon = 'icons/roguetown/weapons/64/godweapons.dmi'
 	icon_state = "gorefeast"
 	parrysound = "sword"
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	force = DAMAGE_HEAVYAXE_WIELD
 	force_wielded = DAMAGE_HEAVYAXE_WIELD + 5
 	wdefense = GOOD_PARRY

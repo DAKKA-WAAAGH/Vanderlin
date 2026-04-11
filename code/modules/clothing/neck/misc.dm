@@ -235,8 +235,8 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 	resistance_flags = FIRE_PROOF
 	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HEAD
-	pickup_sound = 'sound/foley/equip/equip_armor_chain.ogg'
-	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
+	pickup_sound = 'sound/foley/equip/equip_outlander_chain.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_chain.ogg'
 	break_sound = 'sound/foley/breaksound.ogg'
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
@@ -320,8 +320,8 @@
 	melting_material = /datum/material/steel
 	melt_amount = 100
 	melting_material = /datum/material/steel
-	equip_sound = 'sound/foley/equip/equip_armor.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	equip_sound = 'sound/foley/equip/equip_outlander_plate.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	break_sound = 'sound/foley/breaksound.ogg'
 	slot_flags = ITEM_SLOT_NECK
 	blocksound = PLATEHIT
@@ -356,8 +356,8 @@
 	resistance_flags = FIRE_PROOF
 	slot_flags = ITEM_SLOT_NECK
 	blocksound = PLATEHIT
-	equip_sound = 'sound/foley/equip/equip_armor.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	equip_sound = 'sound/foley/equip/equip_outlander_plate.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	break_sound = 'sound/foley/breaksound.ogg'
 	smeltresult = /obj/item/ingot/iron
 	melting_material = /datum/material/iron
@@ -519,8 +519,8 @@
 	flags_inv = HIDEFACE|HIDEFACIALHAIR
 	armor = ARMOR_MAILLE_GOOD
 	resistance_flags = FIRE_PROOF
-	pickup_sound = 'sound/foley/equip/equip_armor_chain.ogg'
-	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
+	pickup_sound = 'sound/foley/equip/equip_outlander_chain.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_chain.ogg'
 	break_sound = 'sound/foley/breaksound.ogg'
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE

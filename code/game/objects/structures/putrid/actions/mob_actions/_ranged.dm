@@ -11,7 +11,7 @@
 	/// The base icon for the ability, so a red box can be put on it using _0 or _1
 	var/button_base_icon = "neurospit"
 	/// The sound that should be played when the xeno actually spits
-	var/spit_sound = 'sound/alien/alien_spitacid.ogg'
+	var/spit_sound = 'sound/blank.ogg'
 	shared_cooldown = MOB_SHARED_COOLDOWN_3
 	cooldown_time = 5 SECONDS
 

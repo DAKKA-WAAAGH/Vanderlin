@@ -143,7 +143,7 @@
 	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
 	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
 	break_sound = 'sound/foley/breaksound.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	blocksound = PLATEHIT
 	smeltresult = /obj/item/ingot/silver
 	anvilrepair = FALSE
@@ -1235,7 +1235,7 @@
 	icon_state = "splintlegs"
 	item_state = "splintlegs"
 	blocksound = SOFTHIT
-	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_chain.ogg'
 	anvilrepair = /datum/skill/craft/blacksmithing
 	smeltresult = /obj/item/ingot/iron
 	r_sleeve_status = SLEEVE_NOMOD

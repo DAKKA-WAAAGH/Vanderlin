@@ -11,8 +11,8 @@
 	equip_delay_self = 25
 	unequip_delay_self = 25
 	var/do_sound = FALSE
-	equip_sound = 'sound/foley/equip/equip_armor_chain.ogg'
-	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
+	equip_sound = 'sound/foley/equip/equip_outlander_chain.ogg'
+	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_chain.ogg'
 	pickup_sound = "rustle"
 	break_sound = 'sound/foley/breaksound.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
@@ -29,7 +29,7 @@
 
 /obj/item/clothing/pants/chainlegs/Initialize()
 	. = ..()
-	AddComponent(/datum/component/item_equipped_movement_rustle)
+	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = SFX_OUTLANDER_CHAIN_STEP)
 
 /obj/item/clothing/pants/chainlegs/iron
 	icon_state = "ichain_legs"

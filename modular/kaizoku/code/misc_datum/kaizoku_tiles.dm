@@ -649,9 +649,9 @@
 	icon = 'modular/kaizoku/icons/mapset/kaizoku_tiles.dmi'
 	icon_state = "tatami"
 	neighborlay = "woodedge"
-	footstep = FOOTSTEP_WOOD
+	footstep = FOOTSTEP_TATAMI
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
-	clawfootstep = FOOTSTEP_WOOD_CLAW
+	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	landsound = 'sound/foley/jumpland/woodland.ogg'
 	smoothing_flags = SMOOTH_EDGE
