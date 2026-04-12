@@ -198,7 +198,7 @@
 	action_cooldown = 2 SECONDS
 	behavior_flags = AI_BEHAVIOR_REQUIRE_MOVEMENT | AI_BEHAVIOR_REQUIRE_REACH | AI_BEHAVIOR_CAN_PLAN_DURING_EXECUTION
 
-/datum/ai_behavior/basic_melee_attack/doggo/perform(delta_time, datum/ai_controller/controller, target_key, _, _)
+/datum/ai_behavior/basic_melee_attack/doggo/perform(delta_time, datum/ai_controller/controller, target_key, action_key, state_key)
 	var/mob/living/simple_animal/hostile/retaliate/custodianpet/doggo/doggo_pawn = controller.pawn
 	if(doggo_pawn.next_click && world.time < doggo_pawn.next_click)
 		return

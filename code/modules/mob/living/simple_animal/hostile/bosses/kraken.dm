@@ -330,7 +330,7 @@
 	cooldown_time = 8 SECONDS
 	var/projectile_type = /obj/projectile/tentacle_acid
 
-/datum/action/cooldown/mob_cooldown/tentacle_spit_acid/Activate(var/atom/target)
+/datum/action/cooldown/mob_cooldown/tentacle_spit_acid/Activate(atom/target)
 	if(!isliving(target))
 		return FALSE
 

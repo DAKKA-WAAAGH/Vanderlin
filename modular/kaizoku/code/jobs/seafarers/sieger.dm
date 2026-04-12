@@ -231,7 +231,7 @@
 		if(3) desc = "Insert iron bars."
 		if(4) desc = "Attach the launcher arm."
 		if(5) desc = "Hammer the launcher into place."
-		else if(finished) desc = "The catapult is fully assembled and ready."
+		if(finished) desc = "The catapult is fully assembled and ready."
 
 /obj/structure/siege/hwancha/base
 	name = "firewagon assembly"

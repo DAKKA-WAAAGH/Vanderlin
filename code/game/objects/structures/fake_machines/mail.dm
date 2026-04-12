@@ -359,6 +359,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 			human.inquisition_position.merits -= 4
 		to_chat(user, span_notice("To lie to the church is a sin my son, do not do it again."))
 		*/
+		*/
 	else if(confession.paired && !is_indexed && !is_correct)
 		marque_value = 2
 		GLOB.vanderlin_round_stats[STATS_MARQUES_MADE] += 2
