@@ -5,7 +5,7 @@
 /proc/visible_message(msg)
 	world << msg
 
-GLOBAL_VAR_INIT(DEMON_HIVE, null)
+var/datum/demon_hive/DEMON_HIVE
 GLOBAL_LIST_INIT(demon_spread_dirs, list(NORTH, SOUTH, EAST, WEST))
 GLOBAL_LIST_INIT(demon_all_dirs, list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAST, SOUTHWEST))
 GLOBAL_LIST_INIT(DEMON_SPAWNER_MATURE_TYPES, list(
