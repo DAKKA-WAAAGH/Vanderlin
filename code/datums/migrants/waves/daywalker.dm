@@ -31,7 +31,7 @@
 	)
 
 	traits = list(TRAIT_DODGEEXPERT, TRAIT_STEELHEARTED)
-	cmode_music = 'sound/music/cmode/antag/CombatThrall.ogg'
+	cmode_music = 'sound/blank.ogg'
 	voicepack_m = /datum/voicepack/male/knight
 
 /datum/job/migrant/daywalker/after_spawn(mob/living/carbon/human/spawned, client/player_client)

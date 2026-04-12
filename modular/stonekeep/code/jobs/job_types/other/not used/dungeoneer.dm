@@ -24,7 +24,7 @@
 	give_bank_account = 50
 	min_pq = -10
 
-	cmode_music = 'sound/music/cmode/nobility/CombatDungeoneer.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/job/roguetown/dungeoneer/pre_equip(mob/living/carbon/human/H)
 	..()

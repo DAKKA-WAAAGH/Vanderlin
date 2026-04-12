@@ -41,7 +41,7 @@
 		TRAIT_HEAVYARMOR,
 		TRAIT_STEELHEARTED,
 	)
-	cmode_music = 'sound/music/cmode/nobility/CombatKnight.ogg'
+	cmode_music = 'sound/blank.ogg'
 	voicepack_m = /datum/voicepack/male/knight
 
 /datum/job/migrant/itinerant_knight/after_spawn(mob/living/carbon/human/spawned, client/player_client)

@@ -126,7 +126,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 				GLOB.letters_sent |= stripped_info
 
 			visible_message(span_warning("[user] sends something."))
-			playsound(src, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
+			playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 			SStreasury.give_money_treasury(coin_loaded, "Mail Income")
 			coin_loaded = FALSE
 			update_appearance()
@@ -157,7 +157,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 			var/stripped_info = remove_color_tags(P.info)
 			GLOB.letters_sent |= stripped_info
 		visible_message(span_warning("[user] sends something."))
-		playsound(src, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
+		playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 		SStreasury.give_money_treasury(coin_loaded, "Mail")
 		coin_loaded = FALSE
 		update_appearance(UPDATE_OVERLAYS)
@@ -226,7 +226,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 	// Process the token
 	qdel(token)
 	visible_message(span_warning("[H] sends something."))
-	playsound(src, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
+	playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 
 	sleep(2 SECONDS)
 
@@ -285,8 +285,8 @@ GLOBAL_LIST_EMPTY(letters_sent)
 		budget2change(2, user, "MARQUE")
 		qdel(mirror)
 		GLOB.vanderlin_round_stats[STATS_MARQUES_MADE] += 2
-		playsound(src, 'sound/misc/otavanlament.ogg', 100, FALSE, -1)
-		playsound(src, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
+		playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
+		playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 	else
 		if(!mirror.broken)
 			to_chat(user, span_warning("It isn't broken."))
@@ -375,14 +375,14 @@ GLOBAL_LIST_EMPTY(letters_sent)
 
 	// Accept confession
 	cleanup_confession(confession, user)
-	playsound(src, 'sound/misc/otavanlament.ogg', 100, FALSE, -1)
+	playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 
 /obj/structure/fake_machine/mail/proc/cleanup_confession(obj/item/paper/inqslip/confession/confession, mob/user)
 	if(confession.paired)
 		qdel(confession.paired)
 	qdel(confession)
 	visible_message(span_warning("[user] sends something."))
-	playsound(src, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
+	playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 
 
 /obj/structure/fake_machine/mail/proc/handle_indexer(obj/item/inqarticles/indexer/indexer, mob/living/carbon/human/user)
@@ -400,7 +400,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 		if(is_duplicate)
 			qdel(indexer)
 			visible_message(span_warning("[user] sends something."))
-			playsound(src, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
+			playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 			visible_message(span_warning("[user] receives something."))
 			to_chat(user, span_notice("We've already collected a sample of their accursed blood."))
 			var/obj/item/inqarticles/indexer/replacement = new /obj/item/inqarticles/indexer(get_turf(user))
@@ -411,8 +411,8 @@ GLOBAL_LIST_EMPTY(letters_sent)
 			GLOB.vanderlin_round_stats[STATS_MARQUES_MADE] += marque_value
 			qdel(indexer)
 			visible_message(span_warning("[user] sends something."))
-			playsound(src, 'sound/misc/otavanlament.ogg', 100, FALSE, -1)
-			playsound(src, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
+			playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
+			playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 		return
 
 	// Handle regular indexing
@@ -431,7 +431,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 		if(is_duplicate || is_selfreport)
 			qdel(indexer)
 			visible_message(span_warning("[user] sends something."))
-			playsound(src, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
+			playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 			visible_message(span_warning("[user] receives something."))
 
 			if(is_selfreport)
@@ -447,8 +447,8 @@ GLOBAL_LIST_EMPTY(letters_sent)
 			// user.inquisition_position.merits += 1 //We don't have these.
 			qdel(indexer)
 			visible_message(span_warning("[user] sends something."))
-			playsound(src, 'sound/misc/otavasent.ogg', 100, FALSE, -1)
-			playsound(src, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
+			playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
+			playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 
 /obj/structure/fake_machine/mail/proc/handle_arrival_slip(obj/item/paper/inqslip/arrival/slip, mob/user)
 	if(!slip.signee || !slip.signed)
@@ -462,8 +462,8 @@ GLOBAL_LIST_EMPTY(letters_sent)
 	qdel(slip)
 
 	visible_message(span_warning("[user] sends something."))
-	playsound(src, 'sound/misc/otavasent.ogg', 100, FALSE, -1)
-	playsound(src, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
+	playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
+	playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 
 /obj/structure/fake_machine/mail/proc/handle_accusation(obj/item/paper/inqslip/accusation/accusation, mob/living/carbon/human/user)
 	if(!accusation.paired)
@@ -540,7 +540,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 		QDEL_NULL(accusation.paired) // do this before the paper so it isn't cleared
 		QDEL_NULL(accusation)
 		visible_message(span_warning("[user] sends something."))
-		playsound(src, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
+		playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 
 		if(is_confessed)
 			to_chat(user, span_notice("They've confessed."))
@@ -565,8 +565,8 @@ GLOBAL_LIST_EMPTY(letters_sent)
 	qdel(accusation.paired)
 	qdel(accusation)
 	visible_message(span_warning("[user] sends something."))
-	playsound(src, 'sound/misc/otavanlament.ogg', 100, FALSE, -1)
-	playsound(src, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
+	playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
+	playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 
 /obj/structure/fake_machine/mail/proc/handle_paper_mail(obj/item/paper/paper, mob/user)
 	if(inqcoins)
@@ -604,7 +604,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 			if(paper.info)
 				GLOB.letters_sent |= remove_color_tags(paper.info)
 			visible_message(span_warning("[user] sends something."))
-			playsound(src, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
+			playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 		else
 			to_chat(user, span_warning("Cannot send it. Bad number?"))
 		return
@@ -630,7 +630,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 		GLOB.letters_sent |= remove_color_tags(paper.info)
 
 	visible_message(span_warning("[user] sends something."))
-	playsound(src, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
+	playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 	send_ooc_note("New letter from <b>[sent_from].</b>", name = send_to)
 
 	for(var/mob/living/carbon/human/H in GLOB.human_list)
@@ -889,7 +889,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 		if(!inqcoins)
 			coin_loaded = FALSE
 			update_appearance()
-		playsound(src, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
+		playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 
 		var/obj/bought = new PA.item_type(pick(spawnable))
 		if(isitem(bought))

@@ -7,7 +7,7 @@
 	outfit = /datum/outfit/pilgrim/preacher
 	category_tags = list(CTAG_PILGRIM)
 	total_positions = 1
-	cmode_music = 'sound/music/cmode/church/CombatInquisitor.ogg'
+	cmode_music = 'sound/blank.ogg'
 	allowed_patrons = list(/datum/patron/psydon, /datum/patron/psydon/extremist)
 
 	skills = list(

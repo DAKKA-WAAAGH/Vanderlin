@@ -62,7 +62,7 @@
 	outfit = /datum/outfit/kaizoku/clanmember/companion
 
 	//var/list/category_tags = list(CTAG_HAND)
-	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
+	cmode_music = 'sound/blank.ogg'
 	total_positions = 2
 	spawn_positions = 2
 
@@ -105,7 +105,7 @@
 	outfit = /datum/outfit/kaizoku/clanmember/spymaster
 
 	//var/list/category_tags = list(CTAG_HAND)
-	cmode_music = 'sound/music/cmode/nobility/CombatSpymaster.ogg'
+	cmode_music = 'sound/blank.ogg'
 	total_positions = 2
 	spawn_positions = 2
 
@@ -245,7 +245,7 @@
 	Your very stamp is what differs between someone being confiscated, jailed, or walk armed on town."
 	outfit = /datum/outfit/kaizoku/clanmember/broker
 	//var/list/category_tags = list(CTAG_HAND)
-	cmode_music = 'sound/music/cmode/nobility/CombatSpymaster.ogg'
+	cmode_music = 'sound/blank.ogg'
 	give_bank_account = 100
 	total_positions = 2
 	spawn_positions = 2
@@ -292,7 +292,7 @@
 	outfit = /datum/outfit/kaizoku/clanmember/conservator
 
 	//var/list/category_tags = list(CTAG_HAND)
-	cmode_music = 'sound/music/cmode/nobility/CombatSpymaster.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	total_positions = 1
 	spawn_positions = 1

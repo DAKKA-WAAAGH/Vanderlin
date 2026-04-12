@@ -54,7 +54,7 @@ Spawns in forest area.
 	ADD_TRAIT(H, TRAIT_NOBLE, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_HEAVYARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
-	H.cmode_music = 'sound/music/cmode/nobility/CombatKnight.ogg'
+	H.cmode_music = 'sound/blank.ogg'
 
 /datum/migrant_role/sk/errant/squire
 	name = "Errant Squire"

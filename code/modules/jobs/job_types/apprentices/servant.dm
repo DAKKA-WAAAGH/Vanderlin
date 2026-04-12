@@ -12,7 +12,7 @@
 	spawn_positions = 5
 	bypass_lastclass = TRUE
 	give_bank_account = TRUE
-	cmode_music = 'sound/music/cmode/towner/CombatPrisoner.ogg'
+	cmode_music = 'sound/blank.ogg'
 	can_have_apprentices = FALSE
 
 	allowed_ages = list(BLOOMING_ADULT, AGE_ADULT, AGE_IMMORTAL)
@@ -216,7 +216,7 @@
 	spawn_positions = 1
 	bypass_lastclass = TRUE
 	give_bank_account = TRUE
-	cmode_music = 'sound/music/cmode/adventurer/CombatIntense.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	allowed_races = RACES_PLAYER_ALL
 

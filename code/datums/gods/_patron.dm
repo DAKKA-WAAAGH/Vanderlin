@@ -102,5 +102,5 @@ GLOBAL_LIST_EMPTY(prayers)
 /datum/patron/proc/reward_prayer(mob/living/follower)
 	SHOULD_CALL_PARENT(TRUE)
 
-	follower.playsound_local(follower, 'sound/misc/notice (2).ogg', 100, FALSE)
+	follower.playsound_local(follower, 'sound/blank.ogg', 100, FALSE)
 	follower.add_stress(/datum/stress_event/psyprayer)

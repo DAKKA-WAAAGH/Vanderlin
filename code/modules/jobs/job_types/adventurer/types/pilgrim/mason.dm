@@ -6,7 +6,7 @@
 	outfit = /datum/outfit/pilgrim/mason
 	category_tags = list(CTAG_PILGRIM)
 	apprentice_name = "Mason Apprentice"
-	cmode_music = 'sound/music/cmode/towner/CombatBeggar.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	jobstats = list(
 		STATKEY_STR = 1,
@@ -35,7 +35,7 @@
 	spawned.adjust_skillrank(/datum/skill/craft/carpentry, pick(1,2), TRUE)
 
 	if(spawned.dna?.species.id == SPEC_ID_DWARF)
-		spawned.cmode_music = 'sound/music/cmode/combat_dwarf.ogg'
+		spawned.cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/pilgrim/mason
 	name = "Mason (Pilgrim)"

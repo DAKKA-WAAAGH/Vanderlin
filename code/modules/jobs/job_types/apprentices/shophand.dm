@@ -22,7 +22,7 @@
 	give_bank_account = 10
 	bypass_lastclass = TRUE
 	can_have_apprentices = FALSE
-	cmode_music = 'sound/music/cmode/towner/CombatTowner2.ogg'
+	cmode_music = 'sound/blank.ogg'
 	exp_types_granted = list(EXP_TYPE_MERCHANT_COMPANY)
 
 	exp_types_granted = list(EXP_TYPE_MERCHANT_COMPANY)

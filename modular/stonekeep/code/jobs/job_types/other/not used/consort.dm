@@ -23,7 +23,7 @@
 	min_pq = 0
 	give_bank_account = 500
 
-	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
+	cmode_music = 'sound/blank.ogg'
 	apprentice_name = "Servant"
 
 /datum/job/stonekeep/consort/after_spawn(mob/living/L, mob/M, latejoin = TRUE)

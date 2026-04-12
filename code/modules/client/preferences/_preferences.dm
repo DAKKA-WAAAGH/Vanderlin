@@ -1974,7 +1974,7 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 					if(next_special_trait)
 						log_game("SPECIALS: Rolled [next_special_trait] for ckey: [user.ckey]")
 						print_special_text(user, next_special_trait)
-						user.playsound_local(user, 'sound/misc/alert.ogg', 100)
+						user.playsound_local(user, 'sound/blank.ogg', 100)
 						to_chat(user, span_warning("This will be applied on your next game join."))
 						to_chat(user, span_warning("You may switch your character and choose any role, if you don't meet the requirements (if any are specified) it won't be applied"))
 

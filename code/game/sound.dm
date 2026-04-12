@@ -298,7 +298,7 @@
 			if (SFX_SPARKS)
 				soundin = pick('sound/effects/sparks1.ogg','sound/effects/sparks2.ogg','sound/effects/sparks3.ogg','sound/effects/sparks4.ogg')
 			if ("rustle")
-				soundin = pick('sound/foley/equip/rummaging-01.ogg','sound/foley/equip/rummaging-02.ogg','sound/foley/equip/rummaging-03.ogg')
+				soundin = pick('sound/foley/equip/rummaging-01.ogg','sound/foley/equip/rummaging-02.ogg')
 			if ("bodyfall")
 				soundin = pick('sound/foley/bodyfall (1).ogg','sound/foley/bodyfall (2).ogg','sound/foley/bodyfall (3).ogg','sound/foley/bodyfall (4).ogg')
 			if ("clothwipe")
@@ -408,22 +408,11 @@
 							'sound/foley/footsteps/armor/lobsterplate (2).ogg',\
 							'sound/foley/footsteps/armor/lobsterplate (3).ogg',\
 							)
-			if(SFX_JINGLE_BELLS)
-				soundin = pick('sound/items/jinglebell (1).ogg',\
-							'sound/items/jinglebell (2).ogg',\
-							'sound/items/jinglebell (3).ogg',\
-							'sound/items/jinglebell (4).ogg',\
-							)
 			if(SFX_INQUIS_BOOT_STEP)
 				soundin = pick('sound/foley/footsteps/armor/inquisitorboot (1).ogg',\
 							'sound/foley/footsteps/armor/inquisitorboot (2).ogg',\
 							'sound/foley/footsteps/armor/inquisitorboot (3).ogg',\
 							'sound/foley/footsteps/armor/inquisitorboot (4).ogg'\
-							)
-			if(SFX_POWER_ARMOR_STEP)
-				soundin = pick('sound/foley/footsteps/armor/powerarmor (1).ogg',\
-							'sound/foley/footsteps/armor/powerarmor (2).ogg',\
-							'sound/foley/footsteps/armor/powerarmor (3).ogg',\
 							)
 			if(SFX_WATCH_BOOT_STEP)
 				soundin = pick('sound/foley/footsteps/armor/heavy-footstep (1).ogg',\
@@ -448,9 +437,7 @@
 				)
 			if(SFX_EGG_HATCHING)
 				soundin = pick(
-					'sound/foley/egg_hatching/egghatching1.ogg',
-					'sound/foley/egg_hatching/egghatching2.ogg',
-					'sound/foley/egg_hatching/egghatching3.ogg',
+					'sound/blank.ogg',
 				)
 			if(SFX_DEFAULT_FISH_SLAP)
 				soundin = pick(

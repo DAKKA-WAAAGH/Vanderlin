@@ -366,7 +366,7 @@
 	desc = "Made from fired clay."
 	icon_state = "bowl_clay"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/brick_drop.ogg'
+	drop_sound = 'sound/combat/hits/onstone/wallhit.ogg'
 
 /obj/item/reagent_containers/glass/bowl/clay/set_material_information()
 	. = ..()

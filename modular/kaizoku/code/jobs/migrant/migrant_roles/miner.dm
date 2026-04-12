@@ -7,7 +7,7 @@
 	category_tags = list(CTAG_MIGRANTS)
 	allowed_races = RACES_NOTNATIVE
 	apprentice_name = "Miner Apprentice"
-	cmode_music = 'sound/music/cmode/towner/CombatBeggar.ogg'//pilgrims aren't towners, this fits them more for a combat on the woods
+	cmode_music = 'sound/blank.ogg'//pilgrims aren't towners, this fits them more for a combat on the woods
 
 /datum/outfit/migrant/miner/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -43,6 +43,6 @@
 
 	if(H.dna.species.id == SPEC_ID_DWARF)
 		head = /obj/item/clothing/head/helmet/leather/minershelm
-		H.cmode_music = 'sound/music/cmode/combat_dwarf.ogg'
+		H.cmode_music = 'sound/blank.ogg'
 	else
 		beltr = /obj/item/flashlight/flare/torch/lantern

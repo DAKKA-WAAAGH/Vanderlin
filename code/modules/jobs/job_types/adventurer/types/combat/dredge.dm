@@ -225,14 +225,14 @@
 			spawned.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 			spawned.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
 			spawned.change_stat(STATKEY_SPD, -1) // big boy
-			spawned.cmode_music = 'sound/music/cmode/adventurer/CombatIntense.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			to_chat(spawned,span_info("\
 			Only the strong can survive in the wilds, Dendor fears my axe.")
 			)
 		if("Mace")
 			spawned.adjust_skillrank(/datum/skill/combat/axesmaces, 3, TRUE)
 			spawned.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/adventurer/CombatWarrior.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			to_chat(spawned,span_info("\
 			I do not need skill to win a fight, only raw strength. Clubs are my tool of war.")
 			)
@@ -243,7 +243,7 @@
 			spawned.change_stat(STATKEY_LCK, 1)
 			spawned.change_stat(STATKEY_SPD, 1)
 			spawned.change_stat(STATKEY_END, 2)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatGravekeeper.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			to_chat(spawned,span_info("\
 			Fools underestimate the might of the shovel, for it is the great communicator, and shepherd of the dead.")
 			)
@@ -251,7 +251,7 @@
 			spawned.adjust_skillrank(/datum/skill/combat/axesmaces, 3, TRUE)
 			spawned.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
 			spawned.change_stat(STATKEY_SPD, -1) // big boy
-			spawned.cmode_music = 'sound/music/cmode/nobility/CombatKnight.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			to_chat(spawned,span_info("\
 			I've known nobody who can stop the might of my hammer. My might shall carve mountains in twain.")
 			)
@@ -269,7 +269,7 @@
 			spawned.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
 			spawned.change_stat(STATKEY_STR, -1)
 			spawned.change_stat(STATKEY_SPD, 2)
-			spawned.cmode_music = 'sound/music/cmode/nobility/CombatSpymaster.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			to_chat(spawned,span_info("\
 			I'm a whirlwind of chaos. Walk into me and die.")
 			)
@@ -298,7 +298,7 @@
 			spawned.change_stat(STATKEY_SPD, -3)
 			spawned.change_stat(STATKEY_PER, -3)
 			spawned.change_stat(STATKEY_END, 4)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatAstrata.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			to_chat(spawned,span_info("\
 			No man on earth can make me fall. I am a bulwark, my offense is my defense.")
 			)
@@ -312,7 +312,7 @@
 		if("Rapier")
 			spawned.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 			spawned.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatInquisitor.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			to_chat(spawned,span_info("\
 			Fighting is an art, and I am an artist.")
 			)
@@ -320,7 +320,7 @@
 			spawned.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 			spawned.adjust_skillrank(/datum/skill/combat/knives, 1, TRUE)
 			spawned.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/antag/CombatLich.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			to_chat(spawned,span_info("\
 			There's nothing more intimidating than someone with a weapon in each hand.")
 			)
@@ -328,21 +328,21 @@
 			spawned.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 			spawned.adjust_skillrank(/datum/skill/combat/axesmaces, 3, TRUE)
 			spawned.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatInquisitor.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			to_chat(spawned,span_info("\
 			I prefer the weaponry of a bygone age.")
 			)
 		if("Sword")
 			spawned.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 			spawned.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/adventurer/CombatWarrior.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			to_chat(spawned,span_info("\
 			I'm a practical person, the sword is my weapon of choice.")
 			)
 		if("LSword")
 			spawned.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 			spawned.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/antag/combat_cult.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			to_chat(spawned,span_info("\
 			I've brought my father's sword with me on my journey to the grave. Come forth and die.")
 			)
@@ -350,7 +350,7 @@
 			spawned.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 			spawned.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
 			spawned.change_stat(STATKEY_SPD, -1)
-			spawned.cmode_music = 'sound/music/cmode/antag/combat_werewolf.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			to_chat(spawned,span_info("\
 			Like a wounded bird, I endure the rain with grace. With my sword I take fate into my own hands and strangle it.")
 			)
@@ -374,7 +374,7 @@
 			spawned.change_stat(STATKEY_END, 1)
 			spawned.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 			spawned.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/adventurer/CombatWarrior.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			to_chat(spawned,span_info("\
 			Two swords, nothing beats that!")
 			)
@@ -403,7 +403,7 @@
 		if("Gun")
 			spawned.adjust_skillrank(/datum/skill/combat/firearms, 3, TRUE)
 			spawned.adjust_skillrank(/datum/skill/misc/climbing, 1, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatInquisitor.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			spawned.change_stat(STATKEY_PER, 3)
 			ADD_TRAIT(spawned, TRAIT_LIGHT_STEP, TRAIT_GENERIC)
 			to_chat(spawned,span_info("\

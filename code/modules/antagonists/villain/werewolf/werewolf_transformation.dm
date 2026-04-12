@@ -81,7 +81,7 @@
 	human_user.fully_heal(HEAL_DAMAGE|HEAL_BLOOD|HEAL_WOUNDS|HEAL_RESTRAINTS)
 
 	playsound(new_werewolf, pick('sound/combat/gib (1).ogg','sound/combat/gib (2).ogg'), 200, FALSE, 3)
-	new_werewolf.playsound_local(get_turf(new_werewolf), 'sound/music/wolfintro.ogg', 80, FALSE, pressure_affected = FALSE)
+	new_werewolf.playsound_local(get_turf(new_werewolf), 'sound/blank.ogg', 80, FALSE, pressure_affected = FALSE)
 	to_chat(new_werewolf, span_userdanger("I transform into a horrible beast!"))
 	new_werewolf.emote("rage")
 

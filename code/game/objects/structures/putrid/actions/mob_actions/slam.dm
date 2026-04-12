@@ -44,7 +44,7 @@
 	)
 
 	playsound(epicenter, 'sound/misc/meteorimpact.ogg', 80, TRUE)
-	playsound(epicenter, 'sound/misc/bamf.ogg', 50, TRUE)
+	playsound(epicenter, 'sound/blank.ogg', 50, TRUE)
 	shake_camera(user, 3, 3)
 
 	for(var/mob/living/victim in epicenter)

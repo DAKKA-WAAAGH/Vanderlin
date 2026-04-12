@@ -54,4 +54,4 @@
 	w_class = WEIGHT_CLASS_TINY
 	possible_item_intents = list(MACE_STRIKE) // Not giving it smash so it don't become competetive with conjure weapon (as a melee weapon)
 	associated_skill = /datum/skill/combat/axesmaces // If it was tied to Arcane it'd be too strong
-	hitsound = list('sound/combat/hits/blunt/brick.ogg')
+	hitsound = list('sound/blank.ogg')

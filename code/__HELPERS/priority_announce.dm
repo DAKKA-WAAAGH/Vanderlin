@@ -61,7 +61,7 @@
 		if(!isnewplayer(target) && target.can_hear())
 			to_chat(target, "[span_minorannounce("<font color = purple>[title]</font color><BR>[message]")]<BR>")
 			if(target.client.prefs.toggles & SOUND_ANNOUNCEMENTS)
-				target.playsound_local(target, 'sound/misc/alert.ogg', 100)
+				target.playsound_local(target, 'sound/blank.ogg', 100)
 
 /proc/bordered_message(mob/target, list/messages)
 	var/html = "<br><div class='alert_holder'>"

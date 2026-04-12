@@ -93,7 +93,7 @@
 	base_intelligence = 8
 	base_speed = 11
 	base_fortune = 9
-	cmode_music = 'sound/music/cmode/antag/combat_cult.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	set_patron(master.patron)
 	copy_known_languages_from(master, TRUE)

@@ -59,4 +59,4 @@
 		to_chat(C, "<span class='danger'>\The [src] ensnares you!</span>")
 		//C.Knockdown(knockdown) //We don't seems to use the knockdown, good enough tbh.
 		C.apply_status_effect(/datum/status_effect/debuff/netted)
-		playsound(src, 'sound/combat/caught.ogg', 50, TRUE)
+		playsound(src, 'sound/blank.ogg', 50, TRUE)

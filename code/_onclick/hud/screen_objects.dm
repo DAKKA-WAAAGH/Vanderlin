@@ -1562,7 +1562,7 @@
 			if(alert("Do you want to remember a TRIUMPH?", "", "Yes", "No") == "Yes")
 				if(M.add_stress(/datum/stress_event/triumph))
 					M.adjust_triumphs(-1)
-					M.playsound_local(M, 'sound/misc/notice (2).ogg', 100, FALSE)
+					M.playsound_local(M, 'sound/blank.ogg', 100, FALSE)
 
 
 /atom/movable/screen/rmbintent

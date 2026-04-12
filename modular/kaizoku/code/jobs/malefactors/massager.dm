@@ -24,7 +24,7 @@ It´s pretty good. Also extra good mood boost for sex, but still a bit barebones
 	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	faction = FACTION_TOWN
 	department_flag = FACTION_MALEFACTORS
-	cmode_music = 'modular/kaizoku/sound/combat/combat_stormwarrior.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 
 //Universal stuff for all nitemaidens

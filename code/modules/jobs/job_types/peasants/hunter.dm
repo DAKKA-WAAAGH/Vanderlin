@@ -17,7 +17,7 @@
 	outfit = /datum/outfit/hunter
 	give_bank_account = 15
 	apprentice_name = "Hunter"
-	cmode_music = 'sound/music/cmode/towner/CombatTowner2.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	job_bitflag = BITFLAG_CONSTRUCTOR
 

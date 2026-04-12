@@ -15,7 +15,7 @@
 
 	outfit = /datum/outfit/grabber
 	give_bank_account = TRUE
-	cmode_music = 'sound/music/cmode/towner/CombatTowner2.ogg'
+	cmode_music = 'sound/blank.ogg'
 	exp_types_granted = list(EXP_TYPE_MERCHANT_COMPANY)
 
 	jobstats = list(

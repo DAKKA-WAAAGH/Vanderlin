@@ -6,7 +6,7 @@
 	outfit = /datum/outfit/mercenary/sworddancer
 	category_tags = list(CTAG_MERCENARY)
 	total_positions = 2
-	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg' // Not a noble, but it fits really well
+	cmode_music = 'sound/blank.ogg' // Not a noble, but it fits really well
 
 
 	spells = list(

@@ -14,7 +14,7 @@
 
 	outfit = /datum/outfit/miner
 	give_bank_account = 6
-	cmode_music = 'sound/music/cmode/towner/CombatTowner2.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	job_bitflag = BITFLAG_CONSTRUCTOR
 
@@ -79,7 +79,7 @@
 	. = ..()
 	if (equipped_human.dna.species.id == SPEC_ID_DWARF)
 		head = /obj/item/clothing/head/helmet/leather/minershelm
-		equipped_human.cmode_music = 'sound/music/cmode/combat_dwarf.ogg'
+		equipped_human.cmode_music = 'sound/blank.ogg'
 	else
 		beltr = /obj/item/flashlight/flare/torch/lantern
 

@@ -17,7 +17,7 @@
 
 	can_have_apprentices = FALSE
 	noble_income = 20
-	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	allowed_races = RACES_PLAYER_ROYALTY
 	allowed_ages = list(AGE_ADULT, AGE_CHILD)

@@ -15,7 +15,7 @@
 		return
 	var/list/all_turfs = RANGE_TURFS(range, origin)
 	for(var/sound_range = 0 to range)
-		playsound(origin,'sound/misc/bamf.ogg', 100, TRUE, 10)
+		playsound(origin,'sound/blank.ogg', 100, TRUE, 10)
 		for(var/turf/stomp_turf in all_turfs)
 			if(get_dist(origin, stomp_turf) > sound_range)
 				continue

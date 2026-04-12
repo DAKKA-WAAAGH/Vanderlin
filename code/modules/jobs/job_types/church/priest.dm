@@ -13,7 +13,7 @@
 	spawn_positions = 1
 	bypass_lastclass = TRUE
 	selection_color = "#c2a45d"
-	cmode_music = 'sound/music/cmode/church/CombatAstrata.ogg'
+	cmode_music = 'sound/blank.ogg'
 	allowed_races = RACES_PLAYER_NONDISCRIMINATED
 	blacklisted_species = list(SPEC_ID_HALFLING)
 	allowed_patrons = list(/datum/patron/divine/astrata)

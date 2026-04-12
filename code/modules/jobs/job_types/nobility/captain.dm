@@ -17,7 +17,7 @@
 	outfit = /datum/outfit/captain
 	spells = list(/datum/action/cooldown/spell/undirected/list_target/convert_role/guard)
 	give_bank_account = 120
-	cmode_music = 'sound/music/cmode/antag/CombatSausageMaker.ogg'
+	cmode_music = 'sound/blank.ogg'
 	noble_income = 11
 
 	exp_type = list(EXP_TYPE_GARRISON)

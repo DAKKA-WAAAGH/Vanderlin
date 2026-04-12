@@ -18,7 +18,7 @@
 	allowed_races = RACES_PLAYER_ALL
 	outfit = /datum/outfit/kaizoku/ferryman
 	give_bank_account = TRUE
-	cmode_music = 'sound/music/cmode/church/CombatGravekeeper.ogg'
+	cmode_music = 'sound/blank.ogg'
 	job_bitflag = BITFLAG_CHURCH
 
 	// exp_types_granted  = list(EXP_TYPE_CHURCH, EXP_TYPE_CLERIC)

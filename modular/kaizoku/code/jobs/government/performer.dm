@@ -59,9 +59,9 @@
 	H.recalculate_stats(FALSE)
 
 	if(H.base_strength > 16) //all natural, baby
-		H.cmode_music = 'sound/music/cmode/nobility/CombatJesterSTR.ogg'
+		H.cmode_music = 'sound/blank.ogg'
 	else
-		H.cmode_music = pick('sound/music/cmode/nobility/CombatJester1.ogg', 'sound/music/cmode/nobility/CombatJester2.ogg')
+		H.cmode_music = pick('sound/blank.ogg', 'sound/blank.ogg')
 
 	H.verbs |= /mob/living/carbon/human/proc/ventriloquate
 	H.verbs |= /mob/living/carbon/human/proc/ear_trick

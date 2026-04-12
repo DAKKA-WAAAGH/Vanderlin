@@ -42,7 +42,7 @@
 /datum/job/advclass/wretch/hedgemage/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
 	if(prob(1))
-		spawned.cmode_music = 'sound/music/cmode/antag/combat_evilwizard.ogg'
+		spawned.cmode_music = 'sound/blank.ogg'
 
 	if(spawned.age == AGE_OLD)
 		spawned.adjust_stat_modifier(STATMOD_JOB, STATKEY_INT, 1)

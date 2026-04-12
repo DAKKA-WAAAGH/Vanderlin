@@ -28,7 +28,7 @@
 				if(!iter_admin_client?.holder)
 					continue
 				window_flash(iter_admin_client)
-				SEND_SOUND(iter_admin_client.mob, sound('sound/misc/asay_ping.ogg'))
+				SEND_SOUND(iter_admin_client.mob, sound('sound/blank.ogg'))
 
 	msg = keywords_lookup(msg)
 	msg = parsemarkdown_basic(msg, limited = TRUE, barebones = TRUE)

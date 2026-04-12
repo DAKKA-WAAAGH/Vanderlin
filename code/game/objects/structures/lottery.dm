@@ -99,7 +99,7 @@
 	))
 
 	playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
-	playsound(src, 'sound/misc/letsgogambling.ogg', 100, FALSE, -1)
+	playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 
 	gamblingprob += (user.STALUC - probpenalty)
 	stopgambling = 1

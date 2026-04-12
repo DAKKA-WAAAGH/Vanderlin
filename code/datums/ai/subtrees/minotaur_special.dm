@@ -232,7 +232,7 @@
 	var/turf/target_turf = get_turf(target)
 
 	boss.visible_message("<span class='danger'>[boss] slams the ground, creating a rain of fiery debris!</span>")
-	playsound(boss, 'sound/misc/bamf.ogg', 50, TRUE)
+	playsound(boss, 'sound/blank.ogg', 50, TRUE)
 
 	var/current_phase = controller.blackboard[BB_MINOTAUR_PHASE]
 	var/zone_count = 3 + (current_phase * 2) // More zones at higher phases

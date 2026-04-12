@@ -130,7 +130,7 @@ SUBSYSTEM_DEF(ambience)
 		used = cmode_music
 		vol *= 1.2
 	else if(music_enabled && HAS_TRAIT(src, TRAIT_SCHIZO_AMBIENCE))
-		used = 'sound/music/dreamer_is_still_asleep.ogg'
+		used = 'sound/blank.ogg'
 	else if(music_enabled && HAS_TRAIT(src, TRAIT_DRUQK))
 		used = 'sound/music/spice.ogg'
 

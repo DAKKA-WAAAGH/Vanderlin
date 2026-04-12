@@ -45,11 +45,11 @@
 	. = ..()
 	switch(spawned.patron?.type)
 		if(/datum/patron/divine/astrata)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatAstrata.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 		if(/datum/patron/divine/necra)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatGravekeeper.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 		else
-			spawned.cmode_music = 'sound/music/cmode/adventurer/CombatIntense.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 
 	if(spawned.gender == FEMALE)
 		spawned.adjust_skillrank(/datum/skill/combat/crossbows, 1, TRUE)

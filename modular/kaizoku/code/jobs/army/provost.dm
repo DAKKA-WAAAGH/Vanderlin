@@ -19,7 +19,7 @@
 	outfit = /datum/outfit/job/kaizoku/provost //Default outfit.
 	give_bank_account = 30
 	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
-	cmode_music = 'modular/kaizoku/sound/combat/combat_stormwarrior.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/job/kaizoku/provost/pre_equip(mob/living/carbon/human/H) // All equipments here are placeholder for now.
 	..()

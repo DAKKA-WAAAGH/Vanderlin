@@ -15,7 +15,7 @@
 
 	outfit = /datum/outfit/mason
 	give_bank_account = 8
-	cmode_music = 'sound/music/cmode/towner/CombatTowner2.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	job_bitflag = BITFLAG_CONSTRUCTOR
 
@@ -44,7 +44,7 @@
 /datum/job/mason/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
 	if(spawned.dna.species.id == SPEC_ID_DWARF)
-		spawned.cmode_music = 'sound/music/cmode/combat_dwarf.ogg'
+		spawned.cmode_music = 'sound/blank.ogg'
 	if(prob(5))
 		spawned.adjust_skillrank(/datum/skill/craft/cooking, 1, TRUE)
 		spawned.adjust_skillrank(/datum/skill/misc/sewing, 2, TRUE)

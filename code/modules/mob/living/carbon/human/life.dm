@@ -123,10 +123,7 @@
 	if(istype(wear_mask, /obj/item/clothing/face/facemask/steel/confessor))
 		if(breathe_tick>=rand(3,5))
 			breathe_tick = 0
-			mask_sound = pick('sound/items/confessormask1.ogg', 'sound/items/confessormask2.ogg', 'sound/items/confessormask3.ogg',
-							'sound/items/confessormask4.ogg', 'sound/items/confessormask5.ogg', 'sound/items/confessormask6.ogg',
-							'sound/items/confessormask7.ogg', 'sound/items/confessormask8.ogg', 'sound/items/confessormask9.ogg',
-							'sound/items/confessormask10.ogg')
+			mask_sound = pick('sound/blank.ogg')
 			playsound(src, mask_sound, 90, FALSE, 4, 0)
 			return
 

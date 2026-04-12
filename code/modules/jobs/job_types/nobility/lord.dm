@@ -24,7 +24,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 	bypass_lastclass = TRUE
 	give_bank_account = 500
 	selection_color = "#7851A9"
-	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
+	cmode_music = 'sound/blank.ogg'
 	can_have_apprentices = FALSE
 	job_bitflag = BITFLAG_ROYALTY
 	exp_type = list(EXP_TYPE_NOBLE, EXP_TYPE_LIVING, EXP_TYPE_LEADERSHIP)

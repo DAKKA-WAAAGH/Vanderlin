@@ -49,5 +49,5 @@
 	parent_devotion?.update_progression(progression_reward)
 
 	to_chat(user, span_notice("[name] complete! Gained [devotion_reward] devotion."))
-	user.playsound_local(user, 'sound/misc/notice (2).ogg', 50, FALSE)
+	user.playsound_local(user, 'sound/blank.ogg', 50, FALSE)
 	return TRUE

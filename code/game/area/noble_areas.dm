@@ -4,7 +4,7 @@
 	name = "Manor"
 	icon = 'icons/turf/areas/manor.dmi'
 	icon_state = "manor"
-	background_track = 'sound/music/area/manor.ogg'
+	background_track = 'sound/blank.ogg'
 	background_track_dusk = null
 	background_track_night = null
 	converted_type = /area/outdoors/exposed/manorgarri
@@ -158,19 +158,19 @@
 /area/indoors/town/keep/gate
 	name = "Manor Gate"
 	icon_state = "manorgate"
-	background_track = 'sound/music/area/manorgarri.ogg'
+	background_track = 'sound/blank.ogg'
 	background_track_dusk = null
-	background_track_night = 'sound/music/area/deliverer.ogg'
+	background_track_night = null
 
 /area/outdoors/exposed/manorgarri
 	icon_state = "manorgarri"
-	background_track = 'sound/music/area/manor.ogg'
+	background_track = 'sound/blank.ogg'
 	background_track_dusk = null
 	background_track_night = null
 
 /area/outdoors/exposed/cell
 	icon_state = "cell"
-	background_track = 'sound/music/area/manorgarri.ogg'
+	background_track = 'sound/blank.ogg'
 	background_track_dusk = null
 	background_track_night = null
 
@@ -178,14 +178,14 @@
 	name = "Wizard's Tower"
 	icon_state = "magiciantower"
 	ambient_index = AMBIENCE_MYSTICAL
-	background_track = 'sound/music/area/magiciantower.ogg'
+	background_track = 'sound/blank.ogg'
 	background_track_dusk = null
 	background_track_night = null
 	converted_type = /area/outdoors/exposed/magiciantower
 
 /area/outdoors/exposed/magiciantower
 	icon_state = "magiciantower"
-	background_track = 'sound/music/area/magiciantower.ogg'
+	background_track = 'sound/blank.ogg'
 	background_track_dusk = null
 	background_track_night = null
 
@@ -194,7 +194,7 @@
 /area/indoors/town/noble_manor
 	icon = 'icons/turf/areas/manor.dmi'
 	icon_state = "noble"
-	background_track = 'sound/music/area/manor.ogg'
+	background_track = 'sound/blank.ogg'
 	background_track_dusk = null
 	background_track_night = null
 	converted_type = /area/outdoors/exposed/manorgarri

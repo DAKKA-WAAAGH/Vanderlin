@@ -80,7 +80,7 @@ GLOBAL_LIST_EMPTY(last_words)
 		GLOB.dead_mob_list += src
 
 	if(prob(0.1))
-		src.playsound_local(src, 'sound/misc/dark_die.ogg', 250)
+		src.playsound_local(src, 'sound/blank.ogg', 250)
 	else
 		src.playsound_local(src, 'sound/misc/deth.ogg', 100)
 

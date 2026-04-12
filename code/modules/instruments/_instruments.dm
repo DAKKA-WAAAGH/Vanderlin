@@ -283,15 +283,15 @@
 	icon_state = "lute"
 	item_state = "lute"
 	song_list = list(
-	"Abyssor's Second Shanty" = 'sound/instruments/band/lute (b1).ogg',
-	"A Knight's Return" = 'sound/instruments/lute (1).ogg',
-	"Amongst Fare Friends" = 'sound/instruments/lute (2).ogg',
-	"The Road Traveled by Few" = 'sound/instruments/lute (3).ogg',
-	"Tip Thine Tankard" = 'sound/instruments/lute (4).ogg',
-	"A Reed On the Wind" = 'sound/instruments/lute (5).ogg',
-	"Jests On Steel Ears" = 'sound/instruments/lute (6).ogg',
-	"Merchant in the Mire" = 'sound/instruments/lute (7).ogg',
-	"Soilson's Song" = 'sound/instruments/lute (8).ogg')
+	"Abyssor's Second Shanty" = 'sound/blank.ogg',
+	"A Knight's Return" = 'sound/blank.ogg',
+	"Amongst Fare Friends" = 'sound/blank.ogg',
+	"The Road Traveled by Few" = 'sound/blank.ogg',
+	"Tip Thine Tankard" = 'sound/blank.ogg',
+	"A Reed On the Wind" = 'sound/blank.ogg',
+	"Jests On Steel Ears" = 'sound/blank.ogg',
+	"Merchant in the Mire" = 'sound/blank.ogg',
+	"Soilson's Song" = 'sound/blank.ogg')
 
 /obj/item/instrument/accord
 	name = "accordion"
@@ -299,15 +299,15 @@
 	icon_state = "accordion"
 	item_state = "accordion"
 	song_list = list(
-	"Her Healing Tears" = 'sound/instruments/accord (1).ogg',
-	"Peddler's Tale" = 'sound/instruments/accord (2).ogg',
-	"We Toil Together" = 'sound/instruments/accord (3).ogg',
-	"Just One More, Tavern Wench" = 'sound/instruments/accord (4).ogg',
-	"Moonlight Carnival" = 'sound/instruments/accord (5).ogg',
-	"'Ye Best Be Goin'" = 'sound/instruments/accord (6).ogg',
-	"Song of the Falconeer" = 'sound/instruments/accord (7).ogg',
-	"Dwarven Frolick" = 'sound/instruments/accord (8).ogg',
-	"Beloved Blue" = 'sound/instruments/accord (9).ogg',
+	"Her Healing Tears" = 'sound/blank.ogg',
+	"Peddler's Tale" = 'sound/blank.ogg',
+	"We Toil Together" = 'sound/blank.ogg',
+	"Just One More, Tavern Wench" = 'sound/blank.ogg',
+	"Moonlight Carnival" = 'sound/blank.ogg',
+	"'Ye Best Be Goin'" = 'sound/blank.ogg',
+	"Song of the Falconeer" = 'sound/blank.ogg',
+	"Dwarven Frolick" = 'sound/blank.ogg',
+	"Beloved Blue" = 'sound/blank.ogg',
 	)
 
 /obj/item/instrument/guitar
@@ -317,26 +317,26 @@
 	icon_state = "guitar"
 	item_state = "guitar"
 	song_list = list(
-	"Fire-Cast Shadows" = 'sound/instruments/guitar (1).ogg',
-	"The Forced Hand" = 'sound/instruments/guitar (2).ogg',
-	"Regrets Unpaid" = 'sound/instruments/guitar (3).ogg',
-	"'Took the Mammon and Ran'" = 'sound/instruments/guitar (4).ogg',
-	"Poor Man's Tithe" = 'sound/instruments/guitar (5).ogg',
-	"In His Arms Ye'll Find Me" = 'sound/instruments/guitar (6).ogg',
-	"Sunset Ballad" = 'sound/instruments/guitar (7).ogg',
-	"Romanza" = 'sound/instruments/guitar (8).ogg',
-	"Malaguena" = 'sound/instruments/guitar (9).ogg',
-	"Song of the Archer" = 'sound/instruments/guitar (10).ogg',
-	"The Mask" = 'sound/instruments/guitar (11).ogg',
-	"Evolvado" = 'sound/instruments/guitar (12).ogg',
-	"Asturias" = 'sound/instruments/guitar (13).ogg',
-	"The Fools Journey" = 'sound/instruments/guitar (14).ogg',
-	"Prelude to Sorrow" = 'sound/instruments/guitar (15).ogg',
-	"The Queen's High Seas" = 'sound/instruments/guitar (16).ogg',
-	"El Odio" = 'sound/instruments/guitar (17).ogg',
-	"Danza De Las Lanzas" = 'sound/instruments/guitar (18).ogg',
-	"The Feline, Forever Returning" = 'sound/instruments/guitar (19).ogg',
-	"El Beso Carmesí" = 'sound/instruments/guitar (20).ogg',
+	"Fire-Cast Shadows" = 'sound/blank.ogg',
+	"The Forced Hand" = 'sound/blank.ogg',
+	"Regrets Unpaid" = 'sound/blank.ogg',
+	"'Took the Mammon and Ran'" = 'sound/blank.ogg',
+	"Poor Man's Tithe" = 'sound/blank.ogg',
+	"In His Arms Ye'll Find Me" = 'sound/blank.ogg',
+	"Sunset Ballad" = 'sound/blank.ogg',
+	"Romanza" = 'sound/blank.ogg',
+	"Malaguena" = 'sound/blank.ogg',
+	"Song of the Archer" = 'sound/blank.ogg',
+	"The Mask" = 'sound/blank.ogg',
+	"Evolvado" = 'sound/blank.ogg',
+	"Asturias" = 'sound/blank.ogg',
+	"The Fools Journey" = 'sound/blank.ogg',
+	"Prelude to Sorrow" = 'sound/blank.ogg',
+	"The Queen's High Seas" = 'sound/blank.ogg',
+	"El Odio" = 'sound/blank.ogg',
+	"Danza De Las Lanzas" = 'sound/blank.ogg',
+	"The Feline, Forever Returning" = 'sound/blank.ogg',
+	"El Beso Carmesí" = 'sound/blank.ogg',
 	)
 
 /obj/item/instrument/harp
@@ -345,17 +345,17 @@
 	icon_state = "harp"
 	item_state = "harp"
 	song_list = list(
-	"Abyssor's Second Shanty" = 'sound/instruments/band/harp (b1).ogg',
-	"Through Thine Window, He Glanced" = 'sound/instruments/harp (1).ogg',
-	"The Lady of Red Silks" = 'sound/instruments/harp (2).ogg',
-	"Eora Doth Watches" = 'sound/instruments/harp (3).ogg',
-	"Dance of the Mages" = 'sound/instruments/harp (4).ogg',
-	"Trickster Wisps" = 'sound/instruments/harp (5).ogg',
-	"On the Breeze" = 'sound/instruments/harp (6).ogg',
-	"Never Enough" = 'sound/instruments/harp (7).ogg',
-	"Sundered Heart" = 'sound/instruments/harp (8).ogg',
-	"Corridors of Time" = 'sound/instruments/harp (9).ogg',
-	"Determination" = 'sound/instruments/harp (10).ogg',
+	"Abyssor's Second Shanty" = 'sound/blank.ogg',
+	"Through Thine Window, He Glanced" = 'sound/blank.ogg',
+	"The Lady of Red Silks" = 'sound/blank.ogg',
+	"Eora Doth Watches" = 'sound/blank.ogg',
+	"Dance of the Mages" = 'sound/blank.ogg',
+	"Trickster Wisps" = 'sound/blank.ogg',
+	"On the Breeze" = 'sound/blank.ogg',
+	"Never Enough" = 'sound/blank.ogg',
+	"Sundered Heart" = 'sound/blank.ogg',
+	"Corridors of Time" = 'sound/blank.ogg',
+	"Determination" = 'sound/blank.ogg',
 	)
 
 /obj/item/instrument/harp/turbulenta
@@ -369,16 +369,16 @@
 	dropshrink = 0.6
 	w_class = WEIGHT_CLASS_SMALL
 	song_list = list(
-	"Abyssor's Second Shanty" = 'sound/instruments/band/flute (b1).ogg',
-	"Half-Dragon's Ten Mammon" = 'sound/instruments/flute (1).ogg',
-	"The Local Favorite" = 'sound/instruments/flute (2).ogg',
-	"Rous in the Cellar" = 'sound/instruments/flute (3).ogg',
-	"Her Boots, So Incandescent" = 'sound/instruments/flute (4).ogg',
-	"Moondust Minx" = 'sound/instruments/flute (5).ogg',
-	"Quest to the Ends" = 'sound/instruments/flute (6).ogg',
-	"Flower Melody" = 'sound/instruments/flute (7).ogg',
-	"Noble Solace" = 'sound/instruments/flute (8).ogg',
-	"Spit Shine" = 'sound/instruments/flute (9).ogg',
+	"Abyssor's Second Shanty" = 'sound/blank.ogg',
+	"Half-Dragon's Ten Mammon" = 'sound/blank.ogg',
+	"The Local Favorite" = 'sound/blank.ogg',
+	"Rous in the Cellar" = 'sound/blank.ogg',
+	"Her Boots, So Incandescent" = 'sound/blank.ogg',
+	"Moondust Minx" = 'sound/blank.ogg',
+	"Quest to the Ends" = 'sound/blank.ogg',
+	"Flower Melody" = 'sound/blank.ogg',
+	"Noble Solace" = 'sound/blank.ogg',
+	"Spit Shine" = 'sound/blank.ogg',
 	)
 
 /obj/item/instrument/drum
@@ -387,22 +387,22 @@
 	icon_state = "drum"
 	item_state = "drum"
 	song_list = list(
-	"Barbarian's Moot" = 'sound/instruments/drum (1).ogg',
-	"Muster the Wardens" = 'sound/instruments/drum (2).ogg',
-	"The Earth That Quakes" = 'sound/instruments/drum (3).ogg',
-	"Marching Beat" = 'sound/instruments/drum (4).ogg',
-	"Desert Heat" = 'sound/instruments/drum (5).ogg')
+	"Barbarian's Moot" = 'sound/blank.ogg',
+	"Muster the Wardens" = 'sound/blank.ogg',
+	"The Earth That Quakes" = 'sound/blank.ogg',
+	"Marching Beat" = 'sound/blank.ogg',
+	"Desert Heat" = 'sound/blank.ogg')
 
 /obj/item/instrument/hurdygurdy
 	name = "hurdy-gurdy"
 	desc = "A knob-driven, wooden string instrument that reminds you of the oceans far."
 	icon_state = "hurdygurdy"
-	song_list = list("Ruler's One Ring" = 'sound/instruments/hurdy (1).ogg',
-	"Tangled Trod" = 'sound/instruments/hurdy (2).ogg',
-	"Motus" = 'sound/instruments/hurdy (3).ogg',
-	"Becalmed" = 'sound/instruments/hurdy (4).ogg',
-	"The Bloody Throne" = 'sound/instruments/hurdy (5).ogg',
-	"We Shall Sail Together" = 'sound/instruments/hurdy (6).ogg'
+	song_list = list("Ruler's One Ring" = 'sound/blank.ogg',
+	"Tangled Trod" = 'sound/blank.ogg',
+	"Motus" = 'sound/blank.ogg',
+	"Becalmed" = 'sound/blank.ogg',
+	"The Bloody Throne" = 'sound/blank.ogg',
+	"We Shall Sail Together" = 'sound/blank.ogg'
 	)
 	experimental_inhand = TRUE //temporary inhand sprite
 
@@ -411,12 +411,12 @@
 	desc = "The prim and proper Viola, often the first instrument nobles are taught."
 	icon_state = "viola"
 	song_list = list(
-	"Abyssor's Second Shanty" = 'sound/instruments/band/viola (b1).ogg',
-	"Far Flung Tale" = 'sound/instruments/viola (1).ogg',
-	"G Major Cello Suite No. 1" = 'sound/instruments/viola (2).ogg',
-	"Ursine's Home" = 'sound/instruments/viola (3).ogg',
-	"Mead, Gold and Blood" = 'sound/instruments/viola (4).ogg',
-	"Gasgow's Reel" = 'sound/instruments/viola (5).ogg',
+	"Abyssor's Second Shanty" = 'sound/blank.ogg',
+	"Far Flung Tale" = 'sound/blank.ogg',
+	"G Major Cello Suite No. 1" = 'sound/blank.ogg',
+	"Ursine's Home" = 'sound/blank.ogg',
+	"Mead, Gold and Blood" = 'sound/blank.ogg',
+	"Gasgow's Reel" = 'sound/blank.ogg',
 	)
 	experimental_inhand = TRUE
 
@@ -424,17 +424,17 @@
 	name = "vocalist's talisman"
 	desc = "This talisman emanates a small shimmer of light. When held, it can amplify and even change one's voice."
 	icon_state = "vtalisman"
-	song_list = list("Harpy's Call (Feminine)" = 'sound/instruments/vocalsf (1).ogg',
-	"Necra's Lullaby (Feminine)" = 'sound/instruments/vocalsf (2).ogg',
-	"Death Touched Aasimar (Feminine)" = 'sound/instruments/vocalsf (3).ogg',
-	"Our Mother, Our Divine (Feminine)" = 'sound/instruments/vocalsf (4).ogg',
-	"Wed, Forever More (Feminine)" = 'sound/instruments/vocalsf (5).ogg',
-	"Paper Boats (Feminine + Vocals)" = 'sound/instruments/vocalsf (6).ogg',
-	"The Dragon's Blood Surges (Masculine)" = 'sound/instruments/vocalsm (1).ogg',
-	"Timeless Temple (Masculine)" = 'sound/instruments/vocalsm (2).ogg',
-	"Angel's Earnt Halo (Masculine)" = 'sound/instruments/vocalsm (3).ogg',
-	"A Fabled Choir (Masculine)" = 'sound/instruments/vocalsm (4).ogg',
-	"A Pained Farewell (Masculine + Feminine)" = 'sound/instruments/vocalsx (1).ogg'
+	song_list = list("Harpy's Call (Feminine)" = 'sound/blank.ogg',
+	"Necra's Lullaby (Feminine)" = 'sound/blank.ogg',
+	"Death Touched Aasimar (Feminine)" = 'sound/blank.ogg',
+	"Our Mother, Our Divine (Feminine)" = 'sound/blank.ogg',
+	"Wed, Forever More (Feminine)" = 'sound/blank.ogg',
+	"Paper Boats (Feminine + Vocals)" = 'sound/blank.ogg',
+	"The Dragon's Blood Surges (Masculine)" = 'sound/blank.ogg',
+	"Timeless Temple (Masculine)" = 'sound/blank.ogg',
+	"Angel's Earnt Halo (Masculine)" = 'sound/blank.ogg',
+	"A Fabled Choir (Masculine)" = 'sound/blank.ogg',
+	"A Pained Farewell (Masculine + Feminine)" = 'sound/blank.ogg'
 	)
 	experimental_inhand = TRUE
 
@@ -450,13 +450,13 @@
 	desc = "A traditional form of boxed zither or box-harp that may be played plucked, with a plectrum or with hammers. They are particularly associated with divine beings, Aasimar and liturgies."
 	icon_state = "psyaltery"
 	song_list = list(
-	"Disciples Tower" = 'sound/instruments/psyaltery (1).ogg',
-	"Green Sleeves" = 'sound/instruments/psyaltery (2).ogg',
-	"Midyear Melancholy" = 'sound/instruments/psyaltery (3).ogg',
-	"Santa Psydonia" = 'sound/instruments/psyaltery (4).ogg',
-	"Le Venardine" = 'sound/instruments/psyaltery (5).ogg',
-	"Azurea Fair" = 'sound/instruments/psyaltery (6).ogg',
-	"Amoroso" = 'sound/instruments/psyaltery (7).ogg',
-	"Lupian's Lullaby" = 'sound/instruments/psyaltery (8).ogg',
-	"White Wine Before Breakfast" = 'sound/instruments/psyaltery (9).ogg',
-	"Chevalier de Valeur" = 'sound/instruments/psyaltery (10).ogg')
+	"Disciples Tower" = 'sound/blank.ogg',
+	"Green Sleeves" = 'sound/blank.ogg',
+	"Midyear Melancholy" = 'sound/blank.ogg',
+	"Santa Psydonia" = 'sound/blank.ogg',
+	"Le Venardine" = 'sound/blank.ogg',
+	"Azurea Fair" = 'sound/blank.ogg',
+	"Amoroso" = 'sound/blank.ogg',
+	"Lupian's Lullaby" = 'sound/blank.ogg',
+	"White Wine Before Breakfast" = 'sound/blank.ogg',
+	"Chevalier de Valeur" = 'sound/blank.ogg')

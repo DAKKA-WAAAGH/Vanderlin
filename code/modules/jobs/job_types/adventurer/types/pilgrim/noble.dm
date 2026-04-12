@@ -8,7 +8,7 @@
 	category_tags = list(CTAG_PILGRIM)
 	total_positions = 2
 	apprentice_name = "Servant"
-	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
+	cmode_music = 'sound/blank.ogg'
 	spells = list(
 		/datum/action/cooldown/spell/undirected/call_bird = 1,
 	)

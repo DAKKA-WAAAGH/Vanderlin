@@ -147,9 +147,3 @@
 	icon_state =  "jingle_bells"
 	throwforce = 5
 	dropshrink = 0.5
-	pickup_sound = SFX_JINGLE_BELLS
-	drop_sound = SFX_JINGLE_BELLS
-
-/obj/item/jingle_bells/Initialize()
-	. = ..()
-	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = list(SFX_JINGLE_BELLS))

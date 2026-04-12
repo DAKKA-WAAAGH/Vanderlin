@@ -18,7 +18,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	blade_dulling = 0
 	slot_flags = ITEM_SLOT_HIP
-	drop_sound = 'sound/foley/dropsound/brick_drop.ogg'
+	drop_sound = 'sound/combat/hits/onstone/wallhit.ogg'
 	associated_skill = /datum/skill/combat/knives
 	dropshrink = 0.9
 	grid_height = 64

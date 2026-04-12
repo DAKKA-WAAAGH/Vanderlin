@@ -806,7 +806,7 @@
 			if(do_after(H, 1 SECONDS, target = src))
 				to_chat(H, span_good("Noc's glow seems to help clear your thoughts."))
 				H.apply_status_effect(/datum/status_effect/buff/nocblessing)
-				H.playsound_local(H, 'sound/misc/notice (2).ogg', 100, FALSE)
+				H.playsound_local(H, 'sound/blank.ogg', 100, FALSE)
 		if(2)
 			to_chat(H, span_warning("Looking at Astrata blinds you"))
 			if(do_after(H, 1 SECONDS, src)) // QUICK LOOK AWAY !!

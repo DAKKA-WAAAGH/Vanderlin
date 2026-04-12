@@ -162,15 +162,15 @@
 	set name = "Define War-Anthem"
 	set category = "ABYSSAL"
 	var/list/music_options = list(
-		"Changeling" = 'modular/kaizoku/sound/combat/combat_changeling.ogg',
-		"Storm Warrior" = 'modular/kaizoku/sound/combat/combat_stormwarrior.ogg',
-		"Sea Raider" = 'modular/kaizoku/sound/combat/combat_searaider.ogg',
-		"Old Tides" = 'modular/kaizoku/sound/combat/combat_oldtides.ogg',
-		"Decapitator" = 'modular/kaizoku/sound/combat/combat_decapitator.ogg',
-		"Emperor" = 'modular/kaizoku/sound/combat/combat_emperor.ogg',
-		"Traditional" = 'modular/kaizoku/sound/combat/combat_traditional.ogg',
-		"Naval Retainers" = 'modular/kaizoku/sound/combat/combat_navalretainers.ogg',
-		"Kyudo" = 'modular/kaizoku/sound/combat/combat_kyudo.ogg'
+		"Changeling" = 'sound/music/cmode/combat_changeling.ogg',
+		"Storm Warrior" = 'sound/music/cmode/garrison/combat_stormwarrior.ogg',
+		"Sea Raider" = 'sound/music/cmode/adventurer/combat_searaider.ogg',
+		"Old Tides" = 'sound/music/cmode/combat_oldtides.ogg',
+		"Decapitator" = 'sound/music/cmode/garrison/combat_decapitator.ogg',
+		"Emperor" = 'sound/music/cmode/nobility/combat_emperor.ogg',
+		"Traditional" = 'sound/music/cmode/combat.ogg',
+		"Naval Retainers" = 'sound/music/cmode/garrison/combat_navalretainers.ogg',
+		"Kyudo" = 'sound/music/cmode/adventurer/combat_kyudo.ogg'
 	)
 	var/battlesong = input(src, "Choose your War-Anthem", "Abyssal Combat") as null|anything in music_options
 	if(!battlesong)

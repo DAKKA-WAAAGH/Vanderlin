@@ -382,7 +382,7 @@
 			update_appearance()
 			S.tallowed = FALSE
 			S.update_appearance()
-			playsound(src, 'sound/items/inqslip_sealed.ogg', 75, TRUE, 4)
+			playsound(src, 'sound/blank.ogg', 75, TRUE, 4)
 			marquevalue += 2
 		else if(S.tallowed && !sealed)
 			to_chat(user,  span_warning("I need to fold the [src] first."))
@@ -566,7 +566,7 @@
 		return
 	to_chat(user, span_purple("<b>These look like secret passages...</b>"))
 	ADD_TRAIT(user.mind, TRAIT_KNOW_KEEP_DOORS, "[type]")
-	user.playsound_local(user, 'sound/misc/notice (2).ogg', 100, FALSE)
+	user.playsound_local(user, 'sound/blank.ogg', 100, FALSE)
 
 
 /obj/item/paper/scroll/sold_manifest

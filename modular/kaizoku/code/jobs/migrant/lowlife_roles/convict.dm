@@ -8,7 +8,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	outfit = /datum/outfit/kaizoku/lowlife/convict
 	category_tags = list(CTAG_LOWLIFE)
-	cmode_music = 'sound/music/cmode/towner/CombatPrisoner.ogg'
+	cmode_music = 'sound/blank.ogg'
 	allowed_ages = ALL_AGES_LIST_BLOOMING
 	bypass_lastclass = TRUE
 

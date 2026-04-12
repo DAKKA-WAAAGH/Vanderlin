@@ -559,7 +559,7 @@
 /*
 /mob/living/simple_animal/hostile/retaliate/custodianpet/falcon/get_sound(input)
 	if("idle")
-		return pick('modular/kaizoku/sound/animals/saintalon/saintalon_3.ogg','modular/kaizoku/sound/animals/saintalon/saintalon_4.ogg','modular/kaizoku/sound/animals/saintalon/saintalon_5.ogg','modular/kaizoku/sound/animals/saintalon/saintalon_6.ogg')
+		return pick('sound/animals/saintalon/saintalon_3.ogg','sound/animals/saintalon/saintalon_4.ogg','sound/animals/saintalon/saintalon_5.ogg','sound/animals/saintalon/saintalon_6.ogg')
 */
 
 /mob/living/carbon/human

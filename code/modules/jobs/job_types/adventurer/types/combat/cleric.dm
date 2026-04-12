@@ -53,11 +53,11 @@
 	if(spawned.patron)
 		switch(spawned.patron.type)
 			if(/datum/patron/divine/astrata)
-				spawned.cmode_music = 'sound/music/cmode/church/CombatAstrata.ogg'
+				spawned.cmode_music = 'sound/blank.ogg'
 			if(/datum/patron/divine/dendor)
 				spawned.cmode_music = 'sound/music/cmode/garrison/CombatForestGarrison.ogg'
 			if(/datum/patron/divine/necra)
-				spawned.cmode_music = 'sound/music/cmode/church/CombatGravekeeper.ogg'
+				spawned.cmode_music = 'sound/blank.ogg'
 				ADD_TRAIT(spawned, TRAIT_DEADNOSE, TRAIT_GENERIC)
 				ADD_TRAIT(spawned, TRAIT_GRAVEROBBER, TRAIT_GENERIC)
 			if(/datum/patron/divine/eora)
@@ -79,7 +79,7 @@
 			if(/datum/patron/divine/xylix)
 				spawned.cmode_music = 'sound/music/cmode/church/CombatXylix.ogg'
 			else
-				spawned.cmode_music = 'sound/music/cmode/church/CombatInquisitor.ogg'
+				spawned.cmode_music = 'sound/blank.ogg'
 
 	var/holder = spawned.patron?.devotion_holder
 	if(holder)

@@ -430,7 +430,7 @@
 		var/mob/living/carbon/human/H = L
 		if(H.dna?.species?.id == "tiefling") // Tieflings are tolerated, but not really accepted.
 			to_chat(H, span_warning("By Akhang-u, 3.6 'For the verdict not yet cast to the curseborn, welcomed you are if spiritual purification is being seeked'."))
-			playsound(src, pick('modular/kaizoku/sound/evil.ogg','modular/kaizoku/sound/evil2.ogg','modular/kaizoku/sound/evil3.ogg'), 35, TRUE, ignore_walls = FALSE)
+			playsound(src, pick('sound/evil.ogg','sound/evil2.ogg','sound/evil3.ogg'), 35, TRUE, ignore_walls = FALSE)
 			return
 
 		if((islist(H.faction) && (FACTION_ORCS in H.faction)) || (H.mob_biotypes & MOB_UNDEAD)) //The undead and the Graggarious forces are gatekept.
@@ -439,7 +439,7 @@
 			H.apply_status_effect(/datum/status_effect/debuff/frostbite)
 			H.adjustFireLoss(5)
 			H.Stun(20)
-			playsound(src, pick('modular/kaizoku/sound/evil.ogg','modular/kaizoku/sound/evil2.ogg','modular/kaizoku/sound/evil3.ogg'), 35, TRUE, ignore_walls = FALSE)
+			playsound(src, pick('sound/evil.ogg','sound/evil2.ogg','sound/evil3.ogg'), 35, TRUE, ignore_walls = FALSE)
 
 			var/turf/origin = get_turf(H)
 			var/dir_to_gate = get_dir(get_step_away(H, master), master)
@@ -448,7 +448,7 @@
 				H.throw_at(push_dest, 4, 1)
 			return
 	to_chat(L, span_notice("By Akhang-u, 3.7 'Let the pure be praised, let the soul reaved walk again among the living, as redemption weights more than gold.'")) // All other are welcomed.
-	playsound(src, pick('modular/kaizoku/sound/good.ogg','modular/kaizoku/sound/good2.ogg','modular/kaizoku/sound/good3.ogg'), 35, TRUE, ignore_walls = FALSE)
+	playsound(src, pick('sound/good.ogg','sound/good2.ogg','sound/good3.ogg'), 35, TRUE, ignore_walls = FALSE)
 
 /obj/structure/fluff/railing/shojidivider
 	name = "privacy screen"
@@ -527,7 +527,7 @@
 		return
 
 	to_chat(user, "<span class='notice'>You strike the gong. A deep, sacred tone echoes through the air.</span>")
-	playsound(src, pick('modular/kaizoku/sound/gong.ogg','modular/kaizoku/sound/gong2.ogg','modular/kaizoku/sound/gong3.ogg'), 35, TRUE, ignore_walls = FALSE)
+	playsound(src, pick('sound/gong.ogg','sound/gong2.ogg','sound/gong3.ogg'), 35, TRUE, ignore_walls = FALSE)
 
 	var/oldx = pixel_x
 	animate(src, pixel_x = oldx + 2, time = 0.3)
@@ -536,7 +536,7 @@
 
 	for(var/mob/living/player in GLOB.player_list)
 		if(player.stat != DEAD && !isbrain(player) && is_tideseeker(player.mind?.assigned_role))
-			player.playsound_local(get_turf(player), 'modular/kaizoku/sound/gong3.ogg', 60, FALSE)
+			player.playsound_local(get_turf(player), 'sound/gong3.ogg', 60, FALSE)
 			to_chat(player, "<span class='notice'>A sacred gong rings out from afar...</span>")
 
 	COOLDOWN_START(src, gong_ring, 30 SECONDS)

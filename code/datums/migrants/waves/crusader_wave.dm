@@ -131,7 +131,7 @@
 	)
 
 	languages = list(/datum/language/oldpsydonic)
-	cmode_music = 'sound/music/cmode/church/CombatInquisitor.ogg'
+	cmode_music = 'sound/blank.ogg'
 	voicepack_m = /datum/voicepack/male/knight
 
 /datum/job/migrant/inquisition_crusader/after_spawn(mob/living/carbon/human/spawned, client/player_client)

@@ -13,7 +13,7 @@
 	obj_flags = null
 	w_class = WEIGHT_CLASS_TINY
 	experimental_inhand = FALSE
-	hitsound = list('sound/combat/hits/blunt/brick.ogg')
+	hitsound = list('sound/blank.ogg')
 	bundletype = /obj/item/natural/bundle/brick
 
 /obj/item/natural/brick/attackby(obj/item, mob/living/user)

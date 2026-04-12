@@ -26,7 +26,7 @@
 
 /obj/structure/wonder/OnCrafted(dirin, mob/user)
 	. = ..()
-	playsound(src, 'sound/villain/wonder.ogg', 100, vary = FALSE)
+	playsound(src, 'sound/blank.ogg', 100, vary = FALSE)
 	dream_master = user?.mind?.has_antag_datum(/datum/antagonist/maniac)
 	if(dream_master)
 		if(LAZYACCESS(dream_master.recipe_progression, dream_master.current_wonder))
@@ -118,7 +118,7 @@
 			H.maniacs += dream_master
 			V.emote("scream")
 			V.set_eye_blur_if_lower(4 SECONDS)
-			SEND_SOUND(V, 'sound/villain/seen_wonder.ogg')
+			SEND_SOUND(V, 'sound/blank.ogg')
 			V.Paralyze(5 SECONDS)
 			gazed_at = TRUE
 			to_chat(V, span_userdanger("It is WONDERFUL!"))

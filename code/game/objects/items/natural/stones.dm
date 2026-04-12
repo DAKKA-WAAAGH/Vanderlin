@@ -487,8 +487,8 @@ GLOBAL_LIST_INIT(stone_personality_descs, list(
 	righthand_file = 'icons/roguetown/onmob/righthand.dmi'
 	item_state = "block"
 	experimental_inhand = FALSE
-	drop_sound = 'sound/foley/dropsound/brick_drop.ogg'
-	hitsound = 'sound/foley/dropsound/brick_drop.ogg'
+	drop_sound = 'sound/combat/hits/onstone/wallhit.ogg'
+	hitsound = 'sound/combat/hits/onstone/wallhit.ogg'
 	possible_item_intents = list(INTENT_GENERIC)
 	force = 10
 	throwforce = 18 //brick is valid weapon
@@ -510,8 +510,8 @@ GLOBAL_LIST_INIT(stone_personality_descs, list(
 	grid_height = 64
 	base_width = 64
 	base_height = 64
-	drop_sound = 'sound/foley/dropsound/brick_drop.ogg'
-	pickup_sound = 'sound/foley/dropsound/brick_drop.ogg'
+	drop_sound = 'sound/combat/hits/onstone/wallhit.ogg'
+	pickup_sound = 'sound/combat/hits/onstone/wallhit.ogg'
 	possible_item_intents = list(/datum/intent/use)
 	force = 2
 	throwforce = 0	// useless for throwing unless solo

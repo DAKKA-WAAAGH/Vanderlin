@@ -5,7 +5,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	outfit = /datum/outfit/adventurer/gravedigger
 	category_tags = list(CTAG_ADVENTURER)
-	cmode_music = 'sound/music/cmode/church/CombatGravekeeper.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	skills = list(
 		/datum/skill/misc/medicine = 1,

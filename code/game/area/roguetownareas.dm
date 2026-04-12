@@ -7,9 +7,9 @@
 	icon_state = "indoors"
 	droning_index = DRONING_INDOORS
 	ambient_index = AMBIENCE_GENERIC
-	background_track = 'sound/music/area/indoor.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'sound/music/area/sleeping.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 	plane = INDOOR_PLANE
 	converted_type = /area/outdoors
 
@@ -32,33 +32,33 @@
 	droning_index_night = DRONING_TOWN_NIGHT
 	ambient_index = AMBIENCE_BIRDS
 	ambient_index_night = AMBIENCE_GENERIC
-	background_track = 'sound/music/area/townstreets.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'sound/music/area/sleeping.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 	converted_type = /area/indoors/shelter
 
 /area/indoors/shelter
 	icon_state = "shelter"
-	background_track = 'sound/music/area/townstreets.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'sound/music/area/sleeping.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/outdoors/mountains
 	name = "mountains"
 	icon_state = "mountains"
 	droning_index = DRONING_MOUNTAIN
 	ambient_index = AMBIENCE_GENERIC
-	background_track = 'sound/music/area/townstreets.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'sound/music/area/sleeping.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 	soundenv = 17
 	converted_type = /area/indoors/shelter/mountains
 
 /area/indoors/shelter/mountains
 	icon_state = "mountains"
-	background_track = 'sound/music/area/townstreets.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'sound/music/area/sleeping.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/outdoors/mountains/deception
 	name = "deception"
@@ -80,9 +80,9 @@
 				/mob/living/simple_animal/hostile/retaliate/troll = 30,
 				/mob/living/carbon/human/species/skeleton/npc/ambush = 90,
 				/mob/living/carbon/human/species/goblin/npc/ambush/cave = 20)
-	background_track = 'sound/music/area/decap.ogg'
-	background_track_dusk = null
-	background_track_night = null
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 	first_time_text = "MALUMS ANVIL"
 	custom_area_sound = 'sound/misc/stings/MalumSting.ogg'
 	ambush_times = list("night","dawn","dusk","day")
@@ -90,9 +90,9 @@
 	converted_type = /area/indoors/shelter/mountains/decap
 /area/indoors/shelter/mountains/decap
 	icon_state = "decap"
-	background_track = 'sound/music/area/decap.ogg'
-	background_track_dusk = null
-	background_track_night = null
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/outdoors/basin
 	name = "town basin"
@@ -106,9 +106,9 @@
 				/mob/living/carbon/human/species/goblin/npc/ambush/hell = 50,
 				/mob/living/carbon/human/species/goblin/npc/ambush/sea = 50,
 				/mob/living/carbon/human/species/goblin/npc/ambush = 50)
-	background_track = 'sound/music/area/field.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'sound/music/area/sleeping.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 	converted_type = /area/indoors/shelter/basin
 
 /area/outdoors/basin/Initialize()
@@ -121,15 +121,15 @@
 
 /area/indoors/shelter/basin
 	icon_state = "basin"
-	background_track = 'sound/music/area/field.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'sound/music/area/sleeping.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/indoors/shelter/woods
 	icon_state = "woods"
-	background_track = 'sound/music/area/forest.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'sound/music/area/forestnight.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/outdoors/woods_safe
 	name = "woods"
@@ -138,9 +138,9 @@
 	droning_index_night = DRONING_FOREST_NIGHT
 	ambient_index = AMBIENCE_BIRDS
 	ambient_index_night = AMBIENCE_FOREST
-	background_track = 'sound/music/area/forest.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'sound/music/area/forestnight.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 	soundenv = 15
 	converted_type = /area/indoors/shelter/woods
 
@@ -151,9 +151,9 @@
 	droning_index_night = DRONING_RIVER_NIGHT
 	ambient_index = AMBIENCE_FROG
 	ambient_index_night = AMBIENCE_FOREST
-	background_track = 'sound/music/area/forest.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'sound/music/area/forestnight.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 	converted_type = /area/indoors/shelter/woods
 
 /area/outdoors/bog
@@ -163,7 +163,7 @@
 	droning_index_night = DRONING_BOG_NIGHT
 	ambient_index = AMBIENCE_FROG
 	ambient_index_night = AMBIENCE_GENERIC
-	background_track = 'sound/music/area/bog.ogg'
+	background_track = 'sound/blank.ogg'
 	background_track_dusk = null
 	background_track_night = null
 	ambush_times = list("night","dawn","dusk","day")
@@ -182,25 +182,25 @@
 
 /area/indoors/shelter/bog
 	icon_state = "bog"
-	background_track = 'sound/music/area/bog.ogg'
-	background_track_dusk = null
-	background_track_night = null
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/outdoors/beach
 	name = "sophia's cry"
 	icon_state = "beach"
 	droning_index = DRONING_LAKE
-	background_track = 'sound/music/area/townstreets.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'sound/music/area/sleeping.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/outdoors/eora
 	name = "eoran grove"
 	icon_state = "eora"
 	droning_index = DRONING_FOREST_DAY
-	background_track = 'sound/music/area/eora.ogg'
-	background_track_dusk =  'sound/music/area/eora.ogg'
-	background_track_night = 'sound/music/area/eora.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 //// UNDER AREAS (no indoor rain sound usually)
 
@@ -208,27 +208,27 @@
 /area/under
 	name = "basement"
 	icon_state = "under"
-	background_track = 'sound/music/area/towngen.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'sound/music/area/sleeping.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 	soundenv = 8
 	plane = INDOOR_PLANE
 	converted_type = /area/outdoors/exposed
 
 /area/outdoors/exposed
 	icon_state = "exposed"
-	background_track = 'sound/music/area/towngen.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'sound/music/area/sleeping.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/under/cave
 	name = "cave"
 	icon_state = "cave"
 	droning_index = DRONING_CAVE_GENERIC
 	ambient_index = AMBIENCE_CAVE
-	background_track = 'sound/music/area/caves.ogg'
-	background_track_dusk = null
-	background_track_night = null
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 	ambush_times = list("night","dawn","dusk","day")
 	ambush_types = list(
 				/turf/open/floor/dirt)
@@ -249,9 +249,9 @@
 	icon_state = "cavewet"
 	droning_index = DRONING_CAVE_WET
 	ambient_index = AMBIENCE_CAVE
-	background_track = 'sound/music/area/caves.ogg'
-	background_track_dusk = null
-	background_track_night = null
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 	ambush_times = list("night","dawn","dusk","day")
 	ambush_types = list(
 				/turf/open/floor/dirt)
@@ -266,32 +266,32 @@
 	first_time_text = "ARAIGNÉE"
 	ambush_mobs = list(
 				/mob/living/simple_animal/hostile/retaliate/spider = 100)
-	background_track = 'sound/music/area/spidercave.ogg'
-	background_track_dusk = null
-	background_track_night = null
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 	converted_type = /area/outdoors/spidercave
 
 /area/outdoors/spidercave
 	icon_state = "spidercave"
-	background_track = 'sound/music/area/spidercave.ogg'
-	background_track_dusk = null
-	background_track_night = null
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/under/spiderbase
 	name = "spiderbase"
 	droning_index = DRONING_BASEMENT
 	droning_index_night = DRONING_BASEMENT
 	icon_state = "spiderbase"
-	background_track = 'sound/music/area/spidercave.ogg'
-	background_track_dusk = null
-	background_track_night = null
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 	converted_type = /area/outdoors/spidercave
 
 /area/outdoors/spidercave
 	icon_state = "spidercave"
-	background_track = 'sound/music/area/spidercave.ogg'
-	background_track_dusk = null
-	background_track_night = null
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/under/cavelava
 	name = "cavelava"
@@ -306,14 +306,14 @@
 				/mob/living/simple_animal/hostile/retaliate/bigrat = 30,
 				/mob/living/carbon/human/species/skeleton/npc/ambush = 10,
 				/mob/living/carbon/human/species/goblin/npc/hell = 20)
-	background_track = 'sound/music/area/decap.ogg'
+	background_track = 'sound/blank.ogg'
 	background_track_dusk = null
 	background_track_night = null
 	converted_type = /area/outdoors/exposed/decap
 
 /area/outdoors/exposed/decap
 	icon_state = "decap"
-	background_track = 'sound/music/area/decap.ogg'
+	background_track = 'sound/blank.ogg'
 	background_track_dusk = null
 	background_track_night = null
 
@@ -328,17 +328,17 @@
 	name = "the ship"
 	droning_index = DRONING_LAKE
 	droning_index_night = DRONING_LAKE
-	background_track = 'sound/music/area/townstreets.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'sound/music/area/night.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/outdoors/coast
 	name = "the coast"
 	droning_index = DRONING_LAKE
 	droning_index_night = DRONING_LAKE
-	background_track = 'sound/music/area/sargoth.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'sound/music/area/sleeping.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 
 ///// UNDERWORLD AREAS //////
@@ -346,7 +346,7 @@
 /area/underworld
 	name = "underworld"
 	icon_state = "underworld"
-	background_track = 'sound/music/area/underworlddrone.ogg'
+	background_track = 'sound/blank.ogg'
 	background_track_dusk = null
 	background_track_night = null
 	first_time_text = "The Forest of Repentence"
@@ -403,7 +403,7 @@
 		return
 
 	if(findtext(prayer, damned.patron.name))
-		damned.playsound_local(damned, 'sound/misc/notice (2).ogg', 100, FALSE)
+		damned.playsound_local(damned, 'sound/blank.ogg', 100, FALSE)
 		to_chat(damned, "<font color='yellow'>I, [damned.patron], have heard your prayer and yet cannot aid you.</font>")
 
 ///// DAKKATOWN AREAS //////
@@ -413,9 +413,9 @@
 	name = "sophia's cry"
 	droning_index = DRONING_LAKE
 	droning_index_night = DRONING_LAKE
-	background_track = 'sound/music/area/townstreets.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'sound/music/area/sleeping.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 
 ///// ANTAGONIST AREAS //////  - used on centcom so you can teleport there easily. Each antag area just gets one unique type, if its outdoor use generic indoors, vice versa, to avoid clutter in area list
@@ -428,12 +428,12 @@
 
 /area/outdoors/bog/inhumen_camp
 	name = "lair (Inhumen)"
-	background_track = 'sound/music/area/decap.ogg'
+	background_track = 'sound/blank.ogg'
 	first_time_text = "THE DEEP BOG"
 
 /area/indoors/lich
 	name = "lair (Lich)"
-	background_track = 'sound/music/area/churchnight.ogg'
+	background_track = 'sound/blank.ogg'
 
 /area/delver
 	delver_restrictions = TRUE
@@ -443,7 +443,7 @@
 	name = "upperdeck"
 	icon_state = "roofs"
 	droning_index = DRONING_BOAT
-	background_track = 'sound/music/area/topdeckdrone.ogg'
+	background_track = 'sound/blank.ogg'
 	background_track_dusk = null
 	background_track_night = null
 	first_time_text = "The Voyager"
@@ -453,7 +453,7 @@
 	name = "middeck"
 	icon_state = "indoors"
 	droning_index = DRONING_BOAT
-	background_track = 'sound/music/area/topdeckdrone.ogg'
+	background_track = 'sound/blank.ogg'
 	background_track_dusk = null
 	background_track_night = null
 	first_time_text = "Waist Deck"
@@ -462,7 +462,7 @@
 	name = "nobledeck"
 	icon_state = "manor"
 	droning_index = DRONING_BOAT
-	background_track = 'sound/music/area/nobledeckdrone.ogg'
+	background_track = 'sound/blank.ogg'
 	background_track_dusk = null
 	background_track_night = null
 
@@ -470,7 +470,7 @@
 	name = "shipbrig"
 	icon_state = "cell"
 	droning_index = DRONING_BOAT
-	background_track = 'sound/music/area/shipbrig.ogg'
+	background_track = 'sound/blank.ogg'
 	background_track_dusk = null
 	background_track_night = null
 	first_time_text = "The Brig"

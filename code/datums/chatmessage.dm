@@ -371,7 +371,7 @@
 
 	last_toot_time = world.time
 
-	playsound(message_loc, 'sound/effects/chat_toots/toot1.ogg', 30, frequency = rand(blip_tone[1], blip_tone[2]))
+	playsound(message_loc, 'sound/blank.ogg', 30, frequency = rand(blip_tone[1], blip_tone[2]))
 
 /datum/chatmessage/proc/do_shift(direction)
 	var/exclaimed_multiplier = exclaimed ? 3 : 1

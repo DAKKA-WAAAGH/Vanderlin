@@ -100,7 +100,7 @@
 		to_chat(user, span_notice("I pull the holy pin... but it doesn't release! Bring forth the Book of Armaments!"))
 		return
 	to_chat(user, span_userdanger("I pull the holy pin! Count to three!"))
-	playsound(user, 'sound/foley/industrial/clunk.ogg', 40, FALSE, -1)
+	playsound(user, 'sound/blank.ogg', 40, FALSE, -1)
 	icon_state = "[icon_state]_armed"
 	primed = TRUE
 	START_PROCESSING(SSfastprocess, src)

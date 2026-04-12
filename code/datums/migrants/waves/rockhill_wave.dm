@@ -41,7 +41,7 @@
 		TRAIT_MEDIUMARMOR,
 	)
 
-	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/rockhill/mayor
 	name = "Mayor of Rockhill (Migrant Wave)"
@@ -120,7 +120,7 @@
 		TRAIT_STEELHEARTED,
 	)
 
-	cmode_music = 'sound/music/cmode/nobility/CombatKnight.ogg'
+	cmode_music = 'sound/blank.ogg'
 	voicepack_m = /datum/voicepack/male/knight
 
 /datum/job/migrant/rockhill/knight/after_spawn(mob/living/carbon/human/spawned, client/player_client)

@@ -14,7 +14,7 @@
 	bypass_lastclass = TRUE
 	display_order = JDO_ABSOLVER
 	give_bank_account = 15
-	cmode_music = 'sound/music/cmode/church/CombatInquisitor.ogg'
+	cmode_music = 'sound/blank.ogg'
 	antag_role = /datum/antagonist/purishep
 
 	mind_traits = list(

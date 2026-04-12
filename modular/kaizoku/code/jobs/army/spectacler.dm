@@ -21,7 +21,7 @@
 	outfit = /datum/outfit/job/kaizoku/spectacler
 	give_bank_account = 50
 
-	cmode_music = 'sound/music/cmode/nobility/CombatDungeoneer.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/kaizoku/spectacler/pre_equip(mob/living/carbon/human/H)
 	//head = /obj/item/clothing/head/helmet/nasal

@@ -54,7 +54,7 @@ Spawn in the bog area.
 	if(!HAS_TRAIT(H, TRAIT_KAIZOKU))
 		ADD_TRAIT(H, TRAIT_KAIZOKU, TRAIT_GENERIC)
 		to_chat(H, "<span class='info'I am an Islander, and I respectively have the culture of one.</span>")
-	H.cmode_music = 'modular/kaizoku/sound/combat/combat_emperor.ogg'
+	H.cmode_music = 'sound/blank.ogg'
 	if(H.dna.species.id == "human")	// safeguard if its unlocked for more abyssariads later
 		H.skin_tone = SKIN_COLOR_TROPICALDRY
 		H.grant_language(/datum/language/abyssal)
@@ -105,7 +105,7 @@ Spawn in the bog area.
 	if(!HAS_TRAIT(H, TRAIT_KAIZOKU))
 		ADD_TRAIT(H, TRAIT_KAIZOKU, TRAIT_GENERIC)
 		to_chat(H, "<span class='info'I am an Islander, and I respectively have the culture of one.</span>")
-	H.cmode_music = 'modular/kaizoku/sound/combat/combat_emperor.ogg'
+	H.cmode_music = 'sound/blank.ogg'
 	if(H.dna.species.id == "human")	// safeguard if its unlocked for more abyssariads later
 		H.skin_tone = SKIN_COLOR_TROPICALDRY
 		H.grant_language(/datum/language/abyssal)
@@ -189,7 +189,7 @@ Spawn in the bog area.
 	if(!HAS_TRAIT(H, TRAIT_KAIZOKU))
 		ADD_TRAIT(H, TRAIT_KAIZOKU, TRAIT_GENERIC)
 		to_chat(H, "<span class='info'I am an Islander, and I respectively have the culture of one.</span>")
-	H.cmode_music = 'modular/kaizoku/sound/combat/combat_emperor.ogg'
+	H.cmode_music = 'sound/blank.ogg'
 	if(H.dna.species.id == "human")	// safeguard if its unlocked for more abyssariads later
 		H.skin_tone = SKIN_COLOR_TROPICALDRY
 	H.set_hair_style(/datum/sprite_accessory/hair/head/zamurai)

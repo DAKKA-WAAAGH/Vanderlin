@@ -17,7 +17,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	outfit = /datum/outfit/magician
 	give_bank_account = 120
-	cmode_music = 'sound/music/cmode/nobility/CombatCourtMagician.ogg'
+	cmode_music = 'sound/blank.ogg'
 	allowed_patrons = list(/datum/patron/divine/noc, /datum/patron/inhumen/zizo)
 	magic_user = TRUE
 	spell_points = 17
@@ -68,7 +68,7 @@
 	. = ..()
 	spawned.add_quirk(/datum/quirk/boon/folk_hero)
 	if(prob(1))
-		spawned.cmode_music = 'sound/music/cmode/antag/combat_evilwizard.ogg'
+		spawned.cmode_music = 'sound/blank.ogg'
 
 	if(istype(spawned.patron, /datum/patron/inhumen/zizo))
 		spawned.grant_language(/datum/language/undead)

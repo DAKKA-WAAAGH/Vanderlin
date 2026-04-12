@@ -52,8 +52,8 @@
 	H.set_patron(/datum/patron/inhumen/zizo)
 
 	owner.special_role = "Zizoid Lackey"
-	H.cmode_music = 'sound/music/cmode/antag/combat_cult.ogg'
-	H.playsound_local(get_turf(H), 'sound/music/maniac.ogg', 80, FALSE, pressure_affected = FALSE)
+	H.cmode_music = 'sound/blank.ogg'
+	H.playsound_local(get_turf(H), 'sound/blank.ogg', 80, FALSE, pressure_affected = FALSE)
 	H.verbs |= /mob/living/carbon/human/proc/communicate
 
 	if(change_stats)

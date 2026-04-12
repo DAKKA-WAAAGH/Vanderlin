@@ -101,11 +101,11 @@
 
 /datum/action/cooldown/meatvine/personal/bombard/proc/spawn_acid_zone(turf/T)
 	new /obj/effect/bombard_zone/acid(T)
-	playsound(T, 'sound/misc/bamf.ogg', 60, TRUE)
+	playsound(T, 'sound/blank.ogg', 60, TRUE)
 
 /datum/action/cooldown/meatvine/personal/bombard/proc/spawn_neurotoxin_zone(turf/T)
 	new /obj/effect/bombard_zone/neurotoxin(T)
-	playsound(T, 'sound/misc/bamf.ogg', 60, TRUE)
+	playsound(T, 'sound/blank.ogg', 60, TRUE)
 
 /datum/action/cooldown/meatvine/personal/bombard/proc/can_bombard_target(turf/start_turf, turf/target_turf)
 	var/distance = get_dist(start_turf, target_turf)
@@ -411,7 +411,7 @@
 /obj/effect/bombard_zone/neurotoxin/apply_effect(mob/living/carbon/C)
 	C.adjustOxyLoss(3)
 	C.adjust_eye_blur(4 SECONDS)
-	
+
 	if(prob(10))
 		C.apply_damage(2, TOX)
 

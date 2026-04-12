@@ -24,7 +24,7 @@
 	maxHealth = 2500
 	attack_verb_continuous = "gouges"
 	attack_verb_simple = "gouge"
-	attack_sound = 'sound/misc/demon_attack1.ogg'
+	attack_sound = 'sound/blank.ogg'
 	summon_primer = "You are ancient. A creature long since banished to the void ages past, you were trapped in a seemingly timeless abyss. Now you've been freed, returned to the world- and everything has changed. It seems some of your constructs remain buried beneath the ground. How you react to these events, only time can tell."
 	tier = 5
 	speak_emote = list("roars")
@@ -118,7 +118,7 @@
 		return
 	var/list/all_turfs = RANGE_TURFS(range, origin)
 	for(var/sound_range = 0 to range)
-		playsound(origin,'sound/misc/bamf.ogg', 600, TRUE, 10)
+		playsound(origin,'sound/blank.ogg', 600, TRUE, 10)
 		for(var/turf/stomp_turf in all_turfs)
 			if(get_dist(origin, stomp_turf) > sound_range)
 				continue
@@ -596,7 +596,7 @@
 	melee_damage_upper = 20
 	attack_verb_continuous = "slashes"
 	attack_verb_simple = "slash"
-	attack_sound = 'sound/magic/demon_attack1.ogg'
+	attack_sound = 'sound/blank.ogg'
 	speak_emote = list("roars")
 	alpha = 160
 	ai_controller = /datum/ai_controller/big_rat

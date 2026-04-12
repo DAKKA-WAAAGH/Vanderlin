@@ -69,7 +69,7 @@
 	tutorial = " You have played blademaster and strategist to the Noble-Family for so long that you are a master tactician, something you exploit with potent conviction. Let no man ever forget whose ear you whisper into. You've killed more men with swords than any spymaster could ever claim to."
 	outfit = /datum/outfit/hand/handclassic
 	category_tags = list(CTAG_HAND)
-	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
+	cmode_music = 'sound/blank.ogg'
 	exp_types_granted  = list(EXP_TYPE_NOBLE)
 
 	jobstats = list(
@@ -116,7 +116,7 @@
 	tutorial = " You have played spymaster and confidant to the Noble-Family for so long that you are a vault of intrigue, something you exploit with potent conviction. Let no man ever forget whose ear you whisper into. You've killed more men with those lips than any blademaster could ever claim to."
 	outfit = /datum/outfit/hand/spymaster
 	category_tags = list(CTAG_HAND)
-	cmode_music = 'sound/music/cmode/nobility/CombatSpymaster.ogg'
+	cmode_music = 'sound/blank.ogg'
 	exp_types_granted  = list(EXP_TYPE_NOBLE)
 
 	jobstats = list(
@@ -180,7 +180,7 @@
 	You've read more books than any blademaster or spymaster could ever claim to."
 	outfit = /datum/outfit/hand/advisor
 	category_tags = list(CTAG_HAND)
-	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
+	cmode_music = 'sound/blank.ogg'
 	exp_types_granted  = list(EXP_TYPE_NOBLE)
 
 	jobstats = list(

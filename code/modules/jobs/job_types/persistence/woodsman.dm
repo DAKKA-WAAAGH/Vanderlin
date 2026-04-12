@@ -7,7 +7,7 @@
 	allowed_races = RACES_PLAYER_ALL
 	allowed_ages = ALL_AGES_LIST
 	outfit = /datum/outfit/woodsman_p
-	cmode_music = 'sound/music/cmode/towner/CombatTowner.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	skills = list(
 		/datum/skill/combat/knives = 1,
@@ -25,7 +25,7 @@
 /datum/job/persistence/woodsman/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
 	if(prob(50))
-		spawned.cmode_music = 'sound/music/cmode/towner/CombatTowner2.ogg'
+		spawned.cmode_music = 'sound/blank.ogg'
 
 	spawned.adjust_stat_modifier(STATMOD_JOB, STATKEY_STR, pick(0,1))
 	spawned.adjust_stat_modifier(STATMOD_JOB, STATKEY_CON, pick(1,2))

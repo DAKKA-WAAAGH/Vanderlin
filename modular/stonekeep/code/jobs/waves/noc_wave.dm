@@ -48,7 +48,7 @@
 	H.change_stat(STATKEY_END, 1)
 
 	if(H.mind)
-		H.cmode_music = 'sound/music/cmode/antag/combat_cult.ogg'
+		H.cmode_music = 'sound/blank.ogg'
 
 		var/list/spells = list(/datum/action/cooldown/spell/undirected/list_target/convert_role/nocite)
 		for(var/S in spells)

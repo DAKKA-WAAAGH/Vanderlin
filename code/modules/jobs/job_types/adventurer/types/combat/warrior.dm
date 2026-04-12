@@ -4,7 +4,7 @@
 	allowed_races = RACES_PLAYER_NONEXOTIC
 	outfit = /datum/outfit/adventurer/sfighter
 	category_tags = list(CTAG_ADVENTURER)
-	cmode_music = 'sound/music/cmode/adventurer/CombatWarrior.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	skills = list(
 		/datum/skill/combat/wrestling = 2,

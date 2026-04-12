@@ -50,7 +50,7 @@
 	collection_mode = COLLECT_ONE
 	insert_verb = "slide"
 	insert_preposition = "on"
-	rustle_sound = 'sound/items/gems (1).ogg'
+	rustle_sound = 'sound/blank.ogg'
 
 /datum/component/storage/concrete/grid/keyring/New(datum/P, ...)
 	. = ..()

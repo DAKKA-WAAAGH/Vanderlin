@@ -2,7 +2,7 @@
 	title = "Death Knight"
 
 	outfit = /datum/outfit/deathknight
-	cmode_music = 'sound/music/cmode/combat_weird.ogg'
+	cmode_music = 'sound/blank.ogg'
 	antag_role = /datum/antagonist/skeleton/knight
 
 	jobstats = list(

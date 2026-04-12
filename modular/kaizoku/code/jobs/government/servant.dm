@@ -17,7 +17,7 @@
 	allowed_races = RACES_NOTNATIVE //Usually non-native. Will change to allow natives later.
 	outfit = /datum/outfit/kaizoku/menial
 	give_bank_account = TRUE
-	cmode_music = 'sound/music/cmode/towner/CombatPrisoner.ogg'
+	cmode_music = 'sound/blank.ogg'
 	can_have_apprentices = FALSE
 
 /datum/outfit/kaizoku/menial/pre_equip(mob/living/carbon/human/H)

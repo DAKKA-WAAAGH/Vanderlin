@@ -8,7 +8,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	outfit = /datum/outfit/kaizoku/lowlife/oddjobber
 	category_tags = list(CTAG_LOWLIFE)
-	cmode_music = 'sound/music/cmode/towner/CombatBeggar.ogg'
+	cmode_music = 'sound/blank.ogg'
 	allowed_ages = ALL_AGES_LIST_BLOOMING
 
 /datum/outfit/kaizoku/lowlife/oddjobber

@@ -18,7 +18,7 @@
 	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	selection_color = "#920909"
 	outfit = /datum/outfit/job/kaizoku/sieger
-	cmode_music = 'sound/music/cmode/nobility/CombatKnight.ogg' //going to change for another one.
+	cmode_music = 'sound/blank.ogg' //going to change for another one.
 
 /datum/outfit/job/kaizoku/sieger/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -498,7 +498,7 @@
 			to_chat(user, "<span class='warning'>There's nothing to ignite.</span>")
 			return
 		if(LR.on)
-			playsound(src.loc, 'modular/kaizoku/sound/hwanchafire.ogg', 100)
+			playsound(src.loc, 'sound/warfaresounds/hwanchafire.ogg', 100)
 			user.visible_message("<span class='danger'>[user] lights [src]!</span>")
 			fire(user)
 		return

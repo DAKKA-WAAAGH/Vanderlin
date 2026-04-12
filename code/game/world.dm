@@ -329,18 +329,12 @@ GLOBAL_PROTECT(tracy_init_reason)
 	qdel(src)	//shut it down
 
 /world/Reboot(reason = 0, fast_track = FALSE) //Stonekeep Edit: Remember to change here.
-	var/round_end_sound = pick('sound/roundend/knave.ogg',
-	'sound/roundend/twohours.ogg',
-	'sound/roundend/rest.ogg',
-	'sound/roundend/gather.ogg',
-	'sound/roundend/bravery.ogg',
-	'sound/roundend/enjoy.ogg',
-	'sound/roundend/fatcuppapiss.ogg',
-	'sound/roundend/intermission.ogg',
-	'sound/roundend/motherfuckers.ogg',
-	'sound/roundend/poppop.ogg',
-	'sound/roundend/cursedswords.ogg',
-	'sound/roundend/dwarfs.ogg')
+	var/round_end_sound = pick('sound/roundend/beatingswillcontinue.ogg',
+	'sound/roundend/coke.ogg',
+	'sound/roundend/katana.ogg',
+	'sound/roundend/kungfu.ogg',
+	'sound/roundend/noeffort.ogg',
+	'sound/roundend/ohmygah.ogg')
 	for(var/client/thing in GLOB.clients)
 		if(!thing)
 			continue

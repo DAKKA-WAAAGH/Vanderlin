@@ -1,5 +1,5 @@
 /datum/looping_sound/harpoon
-	mid_sounds = list('sound/zipline_mid.ogg' = 1) // place holder
+	mid_sounds = list('sound/blank.ogg' = 1) // place holder
 	volume = 5
 
 /// Fire a projectile from this atom at another atom
@@ -101,7 +101,7 @@
 		return
 	. |= TRUE
 
-	var/atom/bullet = fire_projectile(/obj/projectile/grapple_hook, attacked_atom, 'sound/zipline_fire.ogg')
+	var/atom/bullet = fire_projectile(/obj/projectile/grapple_hook, attacked_atom, 'sound/blank.ogg')
 	zipline = user.Beam(bullet, icon_state = "chain", max_distance = 9, time = INFINITY)
 	retracted_hook = FALSE
 	RegisterSignal(bullet, COMSIG_PROJECTILE_SELF_ON_HIT, PROC_REF(on_grapple_hit))
@@ -277,4 +277,4 @@
 	damage = 0
 	range = 9
 	speed = 0.7
-	hitsound = 'sound/zipline_hit.ogg'
+	hitsound = 'sound/blank.ogg'

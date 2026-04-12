@@ -37,8 +37,8 @@
 	if(usr)
 		if (usr.client)
 			if(usr.client.holder)
-				SEND_SOUND(usr.client, 'sound/misc/yeoldebwoink.ogg')
-				M.playsound_local(soundin = 'sound/misc/yeoldebwoink.ogg', vol = 100)
+				SEND_SOUND(usr.client, 'sound/blank.ogg')
+				M.playsound_local(soundin = 'sound/blank.ogg', vol = 100)
 				to_chat(M, span_big("[span_abductor("I hear a voice in my head...")] [span_mind_control(msg)]"))
 
 	log_admin("SubtlePM: [key_name(usr)] -> [key_name(M)] : [msg]")

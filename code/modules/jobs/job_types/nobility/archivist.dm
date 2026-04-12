@@ -14,7 +14,7 @@
 	allowed_races = RACES_PLAYER_NONDISCRIMINATED
 	allowed_ages = list(AGE_MIDDLEAGED, AGE_OLD, AGE_IMMORTAL)
 	blacklisted_species = list(SPEC_ID_HALFLING)
-	cmode_music = 'sound/music/cmode/nobility/CombatCourtMagician.ogg'
+	cmode_music = 'sound/blank.ogg'
 	advclass_cat_rolls = list(CTAG_ARCHIVIST = 20)
 	give_bank_account = 100
 

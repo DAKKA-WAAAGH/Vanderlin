@@ -370,7 +370,7 @@
 	character.adjust_skillrank(/datum/skill/craft/carpentry, 3, TRUE)
 	character.adjust_skillrank(/datum/skill/craft/masonry, 3, TRUE)
 	character.adjust_skillrank(/datum/skill/craft/engineering, 3, TRUE)
-	character.cmode_music = 'sound/music/cmode/towner/CombatPrisoner.ogg'  // has a burdened vibe to it
+	character.cmode_music = 'sound/blank.ogg'  // has a burdened vibe to it
 
 /datum/special_trait/richpouch
 	name = "Rich Pouch"
@@ -782,7 +782,7 @@
 			helmet = /obj/item/clothing/head/helmet/heavy/astratahelm
 			cloak = /obj/item/clothing/cloak/templar/astratan
 			weapon = /obj/item/weapon/sword/long/exe/astrata
-			character.cmode_music = 'sound/music/cmode/church/CombatAstrata.ogg'
+			character.cmode_music = 'sound/blank.ogg'
 		if(/datum/patron/divine/noc)
 			psycross = /obj/item/clothing/neck/psycross/silver/noc
 			helmet = /obj/item/clothing/head/helmet/heavy/necked/noc
@@ -802,7 +802,7 @@
 			helmet = /obj/item/clothing/head/helmet/heavy/necrahelm
 			cloak = /obj/item/clothing/cloak/templar/necran
 			weapon = /obj/item/weapon/flail/sflail/necraflail
-			character.cmode_music = 'sound/music/cmode/church/CombatGravekeeper.ogg'
+			character.cmode_music = 'sound/blank.ogg'
 		if(/datum/patron/divine/pestra)
 			psycross = /obj/item/clothing/neck/psycross/silver/pestra
 			helmet = /obj/item/clothing/head/helmet/heavy/necked/pestrahelm

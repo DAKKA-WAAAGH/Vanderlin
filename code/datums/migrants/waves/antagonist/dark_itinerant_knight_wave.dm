@@ -38,7 +38,7 @@
 
 	traits = list(TRAIT_NOBLE, TRAIT_HEAVYARMOR, TRAIT_STEELHEARTED)
 	languages = list(/datum/language/undead)
-	cmode_music = 'sound/music/cmode/antag/CombatThrall.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/dark_itinerant_knight
 	name = "Drow Knight"
@@ -93,7 +93,7 @@
 
 	traits = list(TRAIT_DODGEEXPERT)
 	languages = list(/datum/language/undead)
-	cmode_music = 'sound/music/cmode/antag/CombatThrall.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/dark_itinerant_squire
 	name = "Underling Squire"

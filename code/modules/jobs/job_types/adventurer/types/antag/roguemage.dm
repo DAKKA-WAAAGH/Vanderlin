@@ -52,7 +52,7 @@
 		spawned.adjust_spell_points(1)
 
 	if(prob(1))
-		spawned.cmode_music = 'sound/music/cmode/antag/combat_evilwizard.ogg'
+		spawned.cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/bandit/roguemage
 	name = "Rogue Mage (Bandit)"

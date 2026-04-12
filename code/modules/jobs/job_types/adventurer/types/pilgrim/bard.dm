@@ -8,7 +8,7 @@
 	outfit = /datum/outfit/pilgrim/bard
 	category_tags = list(CTAG_PILGRIM)
 	apprentice_name = "Aspiring Bard"
-	cmode_music = 'sound/music/cmode/adventurer/CombatIntense.ogg'
+	cmode_music = 'sound/blank.ogg'
 	exp_types_granted = list(EXP_TYPE_BARD)
 
 	jobstats = list(
@@ -63,7 +63,7 @@
 	spawned.clamped_adjust_skillrank(/datum/skill/misc/music, 4, 4, TRUE)
 
 	if(spawned.dna?.species?.id == SPEC_ID_DWARF)
-		spawned.cmode_music = 'sound/music/cmode/combat_dwarf.ogg'
+		spawned.cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/pilgrim/bard
 	name = "Bard (Pilgrim)"

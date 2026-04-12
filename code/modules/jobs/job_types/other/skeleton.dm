@@ -8,7 +8,7 @@
 	spawn_positions = 0
 	antag_job = TRUE
 	allowed_races = RACES_PLAYER_ALL
-	cmode_music = 'sound/music/cmode/antag/combatskeleton.ogg'
+	cmode_music = 'sound/blank.ogg'
 	outfit = /datum/outfit/skeleton
 	give_bank_account = FALSE
 	languages = list(/datum/language/undead)
@@ -65,7 +65,7 @@
 /datum/job/skeleton/raider
 	title = "Skeleton Raider"
 	outfit = /datum/outfit/skeleton/raider
-	cmode_music = 'sound/music/cmode/antag/combatskeleton.ogg'
+	cmode_music = 'sound/blank.ogg'
 	antag_role = /datum/antagonist/skeleton
 
 	traits = list(
@@ -95,7 +95,7 @@
 /datum/job/skeleton/zizoid
 	title = "Cult Summon"
 	outfit = /datum/outfit/skeleton/zizoid
-	cmode_music = 'sound/music/cmode/antag/combat_cult.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/job/skeleton/zizoid/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()

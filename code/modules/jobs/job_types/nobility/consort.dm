@@ -17,7 +17,7 @@
 	advclass_cat_rolls = list(CTAG_CONSORT = 20)
 	give_bank_account = 500
 	apprentice_name = "Servant"
-	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
+	cmode_music = 'sound/blank.ogg'
 	noble_income = 22
 
 	job_bitflag = BITFLAG_ROYALTY

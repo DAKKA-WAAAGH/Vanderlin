@@ -13,7 +13,7 @@
 
 	allowed_races = RACES_PLAYER_ALL
 	outfit = /datum/outfit/bard
-	cmode_music = 'sound/music/cmode/adventurer/CombatIntense.ogg'
+	cmode_music = 'sound/blank.ogg'
 	exp_types_granted = list(EXP_TYPE_BARD)
 
 	spells = list(
@@ -68,7 +68,7 @@
 	spawned.clamped_adjust_skillrank(/datum/skill/misc/music, 4, 4, TRUE) //Due to Harpy's innate music skill giving them legendary
 
 	if(spawned.dna?.species?.id == SPEC_ID_DWARF)
-		spawned.cmode_music = 'sound/music/cmode/combat_dwarf.ogg'
+		spawned.cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/bard
 	name = "Bard"

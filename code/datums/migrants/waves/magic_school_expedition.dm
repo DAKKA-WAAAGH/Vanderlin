@@ -40,7 +40,7 @@
 /datum/job/migrant/magic_teacher/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
 	if(prob(5))
-		spawned.cmode_music = 'sound/music/cmode/antag/combat_evilwizard.ogg'
+		spawned.cmode_music = 'sound/blank.ogg'
 	spawned.mana_pool?.set_intrinsic_recharge(MANA_ALL_LEYLINES)
 
 /datum/outfit/magic_teacher
@@ -100,7 +100,7 @@
 	. = ..()
 	spawned.adjust_skillrank(/datum/skill/magic/arcane, pick(2,2,2,3), TRUE)
 	if(prob(5))
-		spawned.cmode_music = 'sound/music/cmode/antag/combat_evilwizard.ogg'
+		spawned.cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/magic_student
 	name = "Magic School Student (Migrant Wave)"

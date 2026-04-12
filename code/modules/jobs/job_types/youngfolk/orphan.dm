@@ -16,7 +16,7 @@
 
 	outfit = /datum/outfit/orphan
 	can_have_apprentices = FALSE
-	cmode_music = 'sound/music/cmode/towner/CombatTowner.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	jobstats = list(
 		STATKEY_CON = -1,

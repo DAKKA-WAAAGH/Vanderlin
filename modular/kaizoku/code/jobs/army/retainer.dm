@@ -24,7 +24,7 @@
 	advclass_cat_rolls = list(CTAG_RETAINER = 20)	//Handles class selection.
 	give_bank_account = 25 // Considered "Slightly above average pay (20) + The government provided you with the equipments you wear."
 	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
-	cmode_music = 'modular/kaizoku/sound/combat/combat_stormwarrior.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/job/kaizoku/retainer // Reminder message
 	var/oath = "<br><br><font color='#855b14'><span class='bold'>Remember to renew your oath of loyalty to the sovereign \

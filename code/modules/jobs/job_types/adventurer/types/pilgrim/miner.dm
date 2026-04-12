@@ -6,7 +6,7 @@
 	outfit = /datum/outfit/pilgrim/miner
 	category_tags = list(CTAG_PILGRIM)
 	apprentice_name = "Miner Apprentice"
-	cmode_music = 'sound/music/cmode/towner/CombatBeggar.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	jobstats = list(
 		STATKEY_STR = 1,
@@ -34,7 +34,7 @@
 /datum/job/advclass/pilgrimminer/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
 	if(spawned.dna?.species.id == SPEC_ID_DWARF)
-		spawned.cmode_music = 'sound/music/cmode/combat_dwarf.ogg'
+		spawned.cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/pilgrim/miner
 	name = "Miner (Pilgrim)"

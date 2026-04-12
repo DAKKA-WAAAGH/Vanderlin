@@ -28,7 +28,7 @@
 
 	if(withdraw_tab.perform_action(href, href_list))
 		if(href_list["remote"])
-			playsound(src, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
+			playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 		return attack_hand(usr, "withdraw")
 
 	// If we don't get a valid option, default to returning to the directory
@@ -136,7 +136,7 @@
 				I.forceMove(T)
 				if(sound == TRUE)
 					playsound(src, 'sound/misc/hiss.ogg', 100, FALSE, -1)
-					playsound(src, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
+					playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 			if(amt)
 				if(!SStreasury.give_money_account(amt, H, "+[amt] from [R.name] bounty") && message == TRUE)
 					say("No account found. Submit your fingers to a Meister for inspection.")
@@ -167,7 +167,7 @@
 		for(var/obj/I in get_turf(src))
 			total_value += attemptsell(I, user, FALSE, FALSE)
 		playsound(src, 'sound/misc/hiss.ogg', 100, FALSE, -1)
-		playsound(src, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
+		playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 		if(user in SStreasury.bank_accounts)
 			say("Bulk sold for [total_value] mammon...")
 		else

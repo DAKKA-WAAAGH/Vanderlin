@@ -22,7 +22,7 @@
 	give_bank_account = 120
 	min_pq = 0
 
-	cmode_music = 'sound/music/cmode/antag/CombatSausageMaker.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/job/roguetown/captain/after_spawn(mob/living/L, mob/M, latejoin = TRUE)
 	..()

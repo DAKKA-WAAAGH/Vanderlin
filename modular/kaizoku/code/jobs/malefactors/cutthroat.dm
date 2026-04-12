@@ -40,7 +40,7 @@
 	outfit = /datum/outfit/kaizoku/cutthroat/gangster
 
 	category_tags = list(CTAG_ADEPT)
-	cmode_music = 'sound/music/cmode/church/CombatInquisitor.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/kaizoku/cutthroat/gangster/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -88,7 +88,7 @@
 	outfit = /datum/outfit/kaizoku/cutthroat/tekiya
 
 	category_tags = list(CTAG_ADEPT)
-	cmode_music = 'sound/music/cmode/adventurer/CombatRogue.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/kaizoku/cutthroat/tekiya/pre_equip(mob/living/carbon/human/H)
 	..()
@@ -140,7 +140,7 @@
 	outfit = /datum/outfit/kaizoku/cutthroat/kabukimono
 
 	category_tags = list(CTAG_ADEPT)
-	cmode_music = 'sound/music/cmode/towner/CombatGaffer.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/kaizoku/cutthroat/kabukimono/pre_equip(mob/living/carbon/human/H)
 	..()

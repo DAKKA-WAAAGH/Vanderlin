@@ -51,13 +51,13 @@
 
 	switch(spawned.patron?.type)
 		if(/datum/patron/inhumen/graggar)
-			spawned.cmode_music = 'sound/music/cmode/antag/combat_werewolf.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 		/*
 		if(/datum/patron/inhumen/graggar_zizo) //Stonekeep Edit: Kaizoku
-			spawned.cmode_music = 'sound/music/cmode/antag/combat_werewolf.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 		*/
 		if(/datum/patron/inhumen/zizo)
-			spawned.cmode_music = 'sound/music/cmode/antag/combat_cult.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			if(!spawned.has_language(/datum/language/undead))
 				spawned.grant_language(/datum/language/undead)
 		if(/datum/patron/inhumen/matthios)
@@ -68,7 +68,7 @@
 			spawned.cmode_music = 'sound/music/cmode/antag/CombatBaotha.ogg'
 		*/
 		else
-			spawned.cmode_music = 'sound/music/cmode/church/CombatInquisitor.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 
 	GLOB.heretical_players += spawned.real_name
 
@@ -105,7 +105,7 @@
 			pants = /obj/item/clothing/pants/platelegs/graggar
 			shoes = /obj/item/clothing/shoes/boots/armor/graggar
 			cloak = /obj/item/clothing/cloak/graggar
-			H.cmode_music = 'sound/music/cmode/antag/combat_werewolf.ogg'
+			H.cmode_music = 'sound/blank.ogg'
 		if(/datum/patron/inhumen/zizo)
 			head = /obj/item/clothing/head/helmet/visored/zizo
 			armor = /obj/item/clothing/armor/plate/full/zizo

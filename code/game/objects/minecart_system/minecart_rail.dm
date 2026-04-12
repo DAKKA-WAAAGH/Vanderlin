@@ -121,7 +121,7 @@
 	if(!choice)
 		return
 
-	playsound(src, 'sound/misc/ratchet.ogg', 20, TRUE)
+	playsound(src, 'sound/blank.ogg', 20, TRUE)
 	setDir(directions[choice])
 
 /obj/structure/minecart_rail/update_animation_effect()

@@ -53,4 +53,4 @@
 	H.change_stat(STATKEY_SPD, -1)
 
 	if(H.dna.species.id == "dwarf")
-		H.cmode_music = 'sound/music/cmode/combat_dwarf.ogg'
+		H.cmode_music = 'sound/blank.ogg'

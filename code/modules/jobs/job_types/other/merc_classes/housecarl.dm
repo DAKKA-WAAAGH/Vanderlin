@@ -5,7 +5,7 @@
 	outfit = /datum/outfit/mercenary/housecarl
 	category_tags = list(CTAG_MERCENARY)
 	total_positions = 4
-	cmode_music = 'sound/music/cmode/adventurer/CombatWarrior.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	jobstats = list(
 		STATKEY_STR = 2,
