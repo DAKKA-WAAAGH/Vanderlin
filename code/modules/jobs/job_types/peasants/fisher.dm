@@ -14,7 +14,7 @@
 
 	outfit = /datum/outfit/fisher
 	give_bank_account = 8
-	cmode_music = 'sound/music/cmode/towner/CombatTowner2.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	job_bitflag = BITFLAG_CONSTRUCTOR
 

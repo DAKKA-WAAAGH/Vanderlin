@@ -14,7 +14,7 @@
 	outfit = /datum/outfit/armorsmith
 	display_order = JDO_ARMORER
 	give_bank_account = 30
-	cmode_music = 'sound/music/cmode/towner/CombatTowner2.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	job_bitflag = BITFLAG_CONSTRUCTOR
 
@@ -104,7 +104,7 @@
 	outfit = /datum/outfit/weaponsmith
 	display_order = JDO_WSMITH
 	give_bank_account = 30
-	cmode_music = 'sound/music/cmode/towner/CombatTowner2.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 
 	jobstats = list(

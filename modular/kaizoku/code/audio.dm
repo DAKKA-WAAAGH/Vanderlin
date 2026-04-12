@@ -8,101 +8,101 @@
 	lefthand_file = 'modular/kaizoku/icons/misc/lefthand_music.dmi'
 	righthand_file = 'modular/kaizoku/icons/misc/righthand_music.dmi'
 	song_list = list(
-	"Cursed Apple" = 'modular/kaizoku/sound/instrument/shamisen1.ogg', //Credit; "Bad Apple by しゃみお - Shamisen player Shamio"
-	"Fire Dance" = 'modular/kaizoku/sound/instrument/shamisen2.ogg', //Credit; "Fire Dance by しゃみお - Shamisen player Shamio"
-	"Lute" = 'modular/kaizoku/sound/instrument/shamisen3.ogg', //Credit; "Lute (shamisen) by Museum of Fine Arts, Boston"
-	"Tsugaru Ripple" = 'modular/kaizoku/sound/instrument/shamisen4.ogg', //Credit; "Tsugaru Shamisen (using Ripple) by Shamisen Komatsuya"
-	"Tsugaru" = 'modular/kaizoku/sound/instrument/shamisen5.ogg', //Credit; "Tsugaru Shamisen by Roger Walch"
-	"Season" = 'modular/kaizoku/sound/instrument/shamisen6.ogg', //Credit; "相棒 Season 遊郭編しゃみお - Shamisen player Shamio"
-	"Parade" = 'modular/kaizoku/sound/instrument/shamisen7.ogg', //Credit; "「雨天PARADE」三味線オリジナル曲 - しゃみお - Shamisen player Shamio"
-	"Koshiro" = 'modular/kaizoku/sound/instrument/shamisen8.ogg' //Credit; “KOSHIRO” -幸四郎- by SENZO"
+	"Cursed Apple" = 'sound/instruments/shamisen1.ogg', //Credit; "Bad Apple by しゃみお - Shamisen player Shamio"
+	"Fire Dance" = 'sound/instruments/shamisen2.ogg', //Credit; "Fire Dance by しゃみお - Shamisen player Shamio"
+	"Lute" = 'sound/instruments/shamisen3.ogg', //Credit; "Lute (shamisen) by Museum of Fine Arts, Boston"
+	"Tsugaru Ripple" = 'sound/instruments/shamisen4.ogg', //Credit; "Tsugaru Shamisen (using Ripple) by Shamisen Komatsuya"
+	"Tsugaru" = 'sound/instruments/shamisen5.ogg', //Credit; "Tsugaru Shamisen by Roger Walch"
+	"Season" = 'sound/instruments/shamisen6.ogg', //Credit; "相棒 Season 遊郭編しゃみお - Shamisen player Shamio"
+	"Parade" = 'sound/instruments/shamisen7.ogg', //Credit; "「雨天PARADE」三味線オリジナル曲 - しゃみお - Shamisen player Shamio"
+	"Koshiro" = 'sound/instruments/shamisen8.ogg' //Credit; “KOSHIRO” -幸四郎- by SENZO"
 	)
 
 // =================================================================
 // ========================		AMBIENCE	============================
 
 /area/rogue/outdoors/mountains
-	background_track = 'modular/kaizoku/sound/ambience/Zephyr.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night =  'modular/kaizoku/sound/ambience/Sanctumocean.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night =  'sound/blank.ogg'
 
 /area/rogue/indoors/shelter/mountains
-	background_track = 'modular/kaizoku/sound/ambience/Zephyr.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'modular/kaizoku/sound/ambience/Sanctumocean.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/rogue/outdoors
-	background_track = 'sound/music/area/townstreets.ogg'
-	background_track_dusk = 'modular/kaizoku/sound/ambience/Diaspora.ogg'
-	background_track_night = 'sound/music/area/sleeping.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 	converted_type = /area/rogue/indoors/shelter
 
 /area/rogue/indoors/shelter
-	background_track = 'modular/kaizoku/sound/ambience/Zephyr.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'modular/kaizoku/sound/ambience/Sanctumocean.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/rogue/outdoors
-	background_track = 'sound/music/area/townstreets.ogg'
-	background_track_dusk = 'modular/kaizoku/sound/ambience/Diaspora.ogg'
-	background_track_night = 'sound/music/area/sleeping.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/rogue/indoors/shelter
-	background_track = 'modular/kaizoku/sound/ambience/Zephyr.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'modular/kaizoku/sound/ambience/Sanctumocean.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 
 /area/rogue/outdoors/woods
-	background_track = 'modular/kaizoku/sound/ambience/Sibilant.ogg'
-	background_track_dusk = 'modular/kaizoku/sound/ambience/Penumbra.ogg'
-	background_track_night = 'modular/kaizoku/sound/ambience/Sibilant_night.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/rogue/indoors/shelter/woods
-	background_track = 'modular/kaizoku/sound/ambience/Sussurus.ogg'
-	background_track_dusk = 'modular/kaizoku/sound/ambience/Diaspora.ogg'
-	background_track_night = 'modular/kaizoku/sound/ambience/Sibilant_night.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 
 /area/rogue/outdoors/river
-	background_track = 'modular/kaizoku/sound/ambience/Abyssanctum.ogg'
-	background_track_dusk = 'modular/kaizoku/sound/ambience/kaizoku.ogg'
-	background_track_night = 'modular/kaizoku/sound/ambience/Abyssariad.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/rogue/under
-	background_track = 'modular/kaizoku/sound/ambience/Oceansanct.ogg'
-	background_track_dusk = 'modular/kaizoku/sound/ambience/Town_in_Rogue.ogg'
-	background_track_night = 'modular/kaizoku/sound/ambience/Defenestration.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 
 /area/rogue/outdoors/exposed
-	background_track = 'modular/kaizoku/sound/ambience/Oceansanct.ogg'
-	background_track_dusk = 'modular/kaizoku/sound/ambience/Town_in_Rogue.ogg'
-	background_track_night = 'modular/kaizoku/sound/ambience/Defenestration.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/rogue/under/cave
-	background_track = 'modular/kaizoku/sound/ambience/Torment.ogg'
-	background_track_dusk = 'modular/kaizoku/sound/ambience/Bucolic.ogg'
-	background_track_night = 'modular/kaizoku/sound/ambience/Nebula.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/rogue/outdoors/caves
-	background_track = 'modular/kaizoku/sound/ambience/Torment.ogg'
-	background_track_dusk = 'modular/kaizoku/sound/ambience/Bucolic.ogg'
-	background_track_night = 'modular/kaizoku/sound/ambience/Nebula.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/rogue/under/cavewet
-	background_track = 'sound/music/area/caves.ogg'
-	background_track_dusk = 'modular/kaizoku/sound/ambience/Bucolic.ogg'
-	background_track_night = 'modular/kaizoku/sound/ambience/Nebula.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 
 
 /area/rogue/under/town/kaizoku
 	name = "kaizoku isle"
 	icon_state = "town"
-	background_track = 'modular/kaizoku/sound/ambience/Abyssanctum.ogg'
-	background_track_dusk = 'modular/kaizoku/sound/ambience/kaizoku.ogg'
-	background_track_night = 'modular/kaizoku/sound/ambience/Abyssariad.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 // =================================================================
 // ========================	STORAGE	================================
@@ -143,7 +143,7 @@
 			if("scream")
 				used = list('sound/vo/female/elf/scream (1).ogg','sound/vo/female/elf/scream (2).ogg','sound/vo/female/elf/scream (3).ogg','sound/vo/female/elf/scream (4).ogg')
 			if("croak") //undine only.
-				used = list('modular/kaizoku/sound/vo/general/undinecall.ogg','modular/kaizoku/sound/vo/general/undinecall2.ogg','modular/kaizoku/sound/vo/general/undinecall3.ogg','modular/kaizoku/sound/vo/general/undinecall4.ogg','modular/kaizoku/sound/vo/general/undinecall5.ogg','modular/kaizoku/sound/vo/general/undinecall6.ogg')
+				used = list('sound/vo/general/undinecall.ogg','sound/vo/general/undinecall2.ogg','sound/vo/general/undinecall3.ogg','sound/vo/general/undinecall4.ogg','sound/vo/general/undinecall5.ogg','sound/vo/general/undinecall6.ogg')
 
 	if(!used) //we haven't found a racial specific sound so use generic
 		used = ..(soundin)
@@ -192,7 +192,7 @@
 			if("scream")
 				used = list('sound/vo/male/elf/scream (1).ogg','sound/vo/male/elf/scream (2).ogg')
 			if("croak") //undine only.
-				used = list('modular/kaizoku/sound/vo/general/undinecall.ogg','modular/kaizoku/sound/vo/general/undinecall2.ogg','modular/kaizoku/sound/vo/general/undinecall3.ogg','modular/kaizoku/sound/vo/general/undinecall4.ogg','modular/kaizoku/sound/vo/general/undinecall5.ogg','modular/kaizoku/sound/vo/general/undinecall6.ogg')
+				used = list('sound/vo/general/undinecall.ogg','sound/vo/general/undinecall2.ogg','sound/vo/general/undinecall3.ogg','sound/vo/general/undinecall4.ogg','sound/vo/general/undinecall5.ogg','sound/vo/general/undinecall6.ogg')
 
 	if(!used)
 		used = ..(soundin)
@@ -209,50 +209,50 @@
 	if(!used)
 		switch(soundin)
 			if("chuckle")
-				used = list('modular/kaizoku/sound/vo/male_abyssariad/chuckle(1).ogg','modular/kaizoku/sound/vo/male_abyssariad/chuckle(2).ogg','modular/kaizoku/sound/vo/male_abyssariad/chuckle(3).ogg','modular/kaizoku/sound/vo/male_abyssariad/chuckle(4).ogg','modular/kaizoku/sound/vo/male_abyssariad/chuckle(5).ogg')
+				used = list('sound/vo/male_abyssariad/chuckle(1).ogg','sound/vo/male_abyssariad/chuckle(2).ogg','sound/vo/male_abyssariad/chuckle(3).ogg','sound/vo/male_abyssariad/chuckle(4).ogg','sound/vo/male_abyssariad/chuckle(5).ogg')
 			if("cry")
-				used = list('modular/kaizoku/sound/vo/male_abyssariad/cry(1).ogg','modular/kaizoku/sound/vo/male_abyssariad/cry(3).ogg','modular/kaizoku/sound/vo/male_abyssariad/cry(4).ogg')
+				used = list('sound/vo/male_abyssariad/cry(1).ogg','sound/vo/male_abyssariad/cry(3).ogg','sound/vo/male_abyssariad/cry(4).ogg')
 			if("embed")
-				used = list('modular/kaizoku/sound/vo/male_abyssariad/painembed(1).ogg','modular/kaizoku/sound/vo/male_abyssariad/painembed(2).ogg','modular/kaizoku/sound/vo/male_abyssariad/painembed(3).ogg','modular/kaizoku/sound/vo/male_abyssariad/painembed(4).ogg')
+				used = list('sound/vo/male_abyssariad/painembed(1).ogg','sound/vo/male_abyssariad/painembed(2).ogg','sound/vo/male_abyssariad/painembed(3).ogg','sound/vo/male_abyssariad/painembed(4).ogg')
 			if("firescream")
-				used = list('modular/kaizoku/sound/vo/male_abyssariad/painscream(1).ogg','modular/kaizoku/sound/vo/male_abyssariad/painscream(2).ogg','modular/kaizoku/sound/vo/male_abyssariad/painscream(3).ogg','modular/kaizoku/sound/vo/male_abyssariad/painscream(4).ogg','modular/kaizoku/sound/vo/male_abyssariad/painscream(5).ogg','modular/kaizoku/sound/vo/male_abyssariad/painscream(6).ogg')
+				used = list('sound/vo/male_abyssariad/painscream(1).ogg','sound/vo/male_abyssariad/painscream(2).ogg','sound/vo/male_abyssariad/painscream(3).ogg','sound/vo/male_abyssariad/painscream(4).ogg','sound/vo/male_abyssariad/painscream(5).ogg','sound/vo/male_abyssariad/painscream(6).ogg')
 			if("gasp")
-				used = list('modular/kaizoku/sound/vo/male_abyssariad/gasp(1).ogg','modular/kaizoku/sound/vo/male_abyssariad/gasp(2).ogg','modular/kaizoku/sound/vo/male_abyssariad/gasp(3).ogg')
+				used = list('sound/vo/male_abyssariad/gasp(1).ogg','sound/vo/male_abyssariad/gasp(2).ogg','sound/vo/male_abyssariad/gasp(3).ogg')
 			if("grumble")
-				used = 'modular/kaizoku/sound/vo/male_abyssariad/rude.ogg'
+				used = 'sound/vo/male_abyssariad/rude.ogg'
 			if("haltyell")
-				used = used = list('modular/kaizoku/sound/vo/male_abyssariad/halt(1).ogg','modular/kaizoku/sound/vo/male_abyssariad/halt(2).ogg','modular/kaizoku/sound/vo/male_abyssariad/halt(3).ogg')
+				used = used = list('sound/vo/male_abyssariad/halt(1).ogg','sound/vo/male_abyssariad/halt(2).ogg','sound/vo/male_abyssariad/halt(3).ogg')
 			if("huh")
-				used = list('modular/kaizoku/sound/vo/male_abyssariad/huh(1).ogg','modular/kaizoku/sound/vo/male_abyssariad/huh(2).ogg','modular/kaizoku/sound/vo/male_abyssariad/huh(3).ogg')
+				used = list('sound/vo/male_abyssariad/huh(1).ogg','sound/vo/male_abyssariad/huh(2).ogg','sound/vo/male_abyssariad/huh(3).ogg')
 			if("laugh")
-				used = list('modular/kaizoku/sound/vo/male_abyssariad/laugh(1).ogg','modular/kaizoku/sound/vo/male_abyssariad/laugh(2).ogg','modular/kaizoku/sound/vo/male_abyssariad/laugh(3).ogg','modular/kaizoku/sound/vo/male_abyssariad/laugh(4).ogg','modular/kaizoku/sound/vo/male_abyssariad/laugh(5).ogg','modular/kaizoku/sound/vo/male_abyssariad/laugh(6).ogg','modular/kaizoku/sound/vo/male_abyssariad/laugh(7).ogg','modular/kaizoku/sound/vo/male_abyssariad/laugh(8).ogg')
+				used = list('sound/vo/male_abyssariad/laugh(1).ogg','sound/vo/male_abyssariad/laugh(2).ogg','sound/vo/male_abyssariad/laugh(3).ogg','sound/vo/male_abyssariad/laugh(4).ogg','sound/vo/male_abyssariad/laugh(5).ogg','sound/vo/male_abyssariad/laugh(6).ogg','sound/vo/male_abyssariad/laugh(7).ogg','sound/vo/male_abyssariad/laugh(8).ogg')
 			if("pain")
-				used = list('modular/kaizoku/sound/vo/male_abyssariad/pain(1).ogg','modular/kaizoku/sound/vo/male_abyssariad/pain(2).ogg','modular/kaizoku/sound/vo/male_abyssariad/pain(3).ogg','modular/kaizoku/sound/vo/male_abyssariad/pain(4).ogg','modular/kaizoku/sound/vo/male_abyssariad/pain(5).ogg','modular/kaizoku/sound/vo/male_abyssariad/pain(6).ogg','modular/kaizoku/sound/vo/male_abyssariad/pain(7).ogg','modular/kaizoku/sound/vo/male_abyssariad/pain(8).ogg')
+				used = list('sound/vo/male_abyssariad/pain(1).ogg','sound/vo/male_abyssariad/pain(2).ogg','sound/vo/male_abyssariad/pain(3).ogg','sound/vo/male_abyssariad/pain(4).ogg','sound/vo/male_abyssariad/pain(5).ogg','sound/vo/male_abyssariad/pain(6).ogg','sound/vo/male_abyssariad/pain(7).ogg','sound/vo/male_abyssariad/pain(8).ogg')
 			if("paincrit")
-				used = list('modular/kaizoku/sound/vo/male_abyssariad/paincrit(1).ogg','modular/kaizoku/sound/vo/male_abyssariad/paincrit(2).ogg','modular/kaizoku/sound/vo/male_abyssariad/paincrit(3).ogg')
+				used = list('sound/vo/male_abyssariad/paincrit(1).ogg','sound/vo/male_abyssariad/paincrit(2).ogg','sound/vo/male_abyssariad/paincrit(3).ogg')
 			if("painmoan")
-				used = list('modular/kaizoku/sound/vo/male_abyssariad/paincrit(1).ogg','modular/kaizoku/sound/vo/male_abyssariad/paincrit(2).ogg','modular/kaizoku/sound/vo/male_abyssariad/paincrit(3).ogg')
+				used = list('sound/vo/male_abyssariad/paincrit(1).ogg','sound/vo/male_abyssariad/paincrit(2).ogg','sound/vo/male_abyssariad/paincrit(3).ogg')
 			if("painscream")
-				used = list('modular/kaizoku/sound/vo/male_abyssariad/painscream(1).ogg','modular/kaizoku/sound/vo/male_abyssariad/painscream(2).ogg','modular/kaizoku/sound/vo/male_abyssariad/painscream(3).ogg','modular/kaizoku/sound/vo/male_abyssariad/painscream(4).ogg','modular/kaizoku/sound/vo/male_abyssariad/painscream(5).ogg','modular/kaizoku/sound/vo/male_abyssariad/painscream(6).ogg')
+				used = list('sound/vo/male_abyssariad/painscream(1).ogg','sound/vo/male_abyssariad/painscream(2).ogg','sound/vo/male_abyssariad/painscream(3).ogg','sound/vo/male_abyssariad/painscream(4).ogg','sound/vo/male_abyssariad/painscream(5).ogg','sound/vo/male_abyssariad/painscream(6).ogg')
 			if("rage")
-				used = list('modular/kaizoku/sound/vo/male_abyssariad/rage1.ogg','modular/kaizoku/sound/vo/male_abyssariad/rage2.ogg','modular/kaizoku/sound/vo/male_abyssariad/rage3.ogg','modular/kaizoku/sound/vo/male_abyssariad/rage4.ogg')
+				used = list('sound/vo/male_abyssariad/rage1.ogg','sound/vo/male_abyssariad/rage2.ogg','sound/vo/male_abyssariad/rage3.ogg','sound/vo/male_abyssariad/rage4.ogg')
 			if("scream")
-				used = list('modular/kaizoku/sound/vo/male_abyssariad/scream(1).ogg','modular/kaizoku/sound/vo/male_abyssariad/scream(2).ogg','modular/kaizoku/sound/vo/male_abyssariad/scream(3).ogg')
-			if("hmm") //used = list('modular/kaizoku/sound/vo/male_abyssariad/huh.ogg','modular/kaizoku/sound/vo/male_abyssariad/huh(2).ogg')
-				used = list('modular/kaizoku/sound/vo/male_abyssariad/huh(4).ogg','modular/kaizoku/sound/vo/male_abyssariad/huh(5).ogg','modular/kaizoku/sound/vo/male_abyssariad/huh(6).ogg')
+				used = list('sound/vo/male_abyssariad/scream(1).ogg','sound/vo/male_abyssariad/scream(2).ogg','sound/vo/male_abyssariad/scream(3).ogg')
+			if("hmm") //used = list('sound/vo/male_abyssariad/huh.ogg','sound/vo/male_abyssariad/huh(2).ogg')
+				used = list('sound/vo/male_abyssariad/huh(4).ogg','sound/vo/male_abyssariad/huh(5).ogg','sound/vo/male_abyssariad/huh(6).ogg')
 			if("jump")
-				used = list('modular/kaizoku/sound/vo/male_abyssariad/jump(1).ogg','modular/kaizoku/sound/vo/male_abyssariad/jump(2).ogg','modular/kaizoku/sound/vo/male_abyssariad/jump(3).ogg')
+				used = list('sound/vo/male_abyssariad/jump(1).ogg','sound/vo/male_abyssariad/jump(2).ogg','sound/vo/male_abyssariad/jump(3).ogg')
 			if("leap")
-				used = list('modular/kaizoku/sound/vo/male_abyssariad/attack1.ogg','modular/kaizoku/sound/vo/male_abyssariad/attack2.ogg')
+				used = list('sound/vo/male_abyssariad/attack1.ogg','sound/vo/male_abyssariad/attack2.ogg')
 			if("yoo")
-				used = 'modular/kaizoku/sound/vo/male_abyssariad/yoooo.ogg'
+				used = 'sound/vo/male_abyssariad/yoooo.ogg'
 			if("throatsing") //need to find a way to make a bigger cooldown on this one. This emote is long.
 				if(prob(5))
-					used = 'modular/kaizoku/sound/vo/male_abyssariad/throatsing_rare.ogg' //I am not afraid. I know gundam will hate me for this one. But trust me, it's worth it
+					used = 'sound/vo/male_abyssariad/throatsing_rare.ogg' //I am not afraid. I know gundam will hate me for this one. But trust me, it's worth it
 				else
-					used = list('modular/kaizoku/sound/vo/male_abyssariad/throatsing1.ogg','modular/kaizoku/sound/vo/male_abyssariad/mthroatsing1.ogg','modular/kaizoku/sound/vo/male_abyssariad/mthroatsing2.ogg','modular/kaizoku/sound/vo/male_abyssariad/mthroatsing3.ogg','modular/kaizoku/sound/vo/male_abyssariad/mthroatsing4.ogg','modular/kaizoku/sound/vo/male_abyssariad/mthroatsing5.ogg')
+					used = list('sound/vo/male_abyssariad/throatsing1.ogg','sound/vo/male_abyssariad/mthroatsing1.ogg','sound/vo/male_abyssariad/mthroatsing2.ogg','sound/vo/male_abyssariad/mthroatsing3.ogg','sound/vo/male_abyssariad/mthroatsing4.ogg','sound/vo/male_abyssariad/mthroatsing5.ogg')
 			if("birdcall")
-				used = list('modular/kaizoku/sound/vo/general/tengucall1.ogg','modular/kaizoku/sound/vo/general/tengucall2.ogg','modular/kaizoku/sound/vo/general/tengucall3.ogg','modular/kaizoku/sound/vo/general/tengucall4.ogg','modular/kaizoku/sound/vo/general/tengucall5.ogg','modular/kaizoku/sound/vo/general/tengucall5.ogg','modular/kaizoku/sound/vo/general/tengucall6.ogg','modular/kaizoku/sound/vo/general/tengucall7.ogg','modular/kaizoku/sound/vo/general/tengucall8.ogg','modular/kaizoku/sound/vo/general/tengucall9.ogg','modular/kaizoku/sound/vo/general/tengucall10.ogg','modular/kaizoku/sound/vo/general/tengucall12.ogg','modular/kaizoku/sound/vo/general/tengucall13.ogg','modular/kaizoku/sound/vo/general/tengucall14.ogg','modular/kaizoku/sound/vo/general/brazilianmeme.ogg')
+				used = list('sound/vo/general/tengucall1.ogg','sound/vo/general/tengucall2.ogg','sound/vo/general/tengucall3.ogg','sound/vo/general/tengucall4.ogg','sound/vo/general/tengucall5.ogg','sound/vo/general/tengucall5.ogg','sound/vo/general/tengucall6.ogg','sound/vo/general/tengucall7.ogg','sound/vo/general/tengucall8.ogg','sound/vo/general/tengucall9.ogg','sound/vo/general/tengucall10.ogg','sound/vo/general/tengucall12.ogg','sound/vo/general/tengucall13.ogg','sound/vo/general/tengucall14.ogg','sound/vo/general/brazilianmeme.ogg')
 
 	if(!used)
 		used = ..(soundin)
@@ -420,56 +420,56 @@
 	if(!used)
 		switch(soundin)
 			if("fatigue")
-				used = 'modular/kaizoku/sound/vo/female_abyssariad/fatigue.ogg'
+				used = 'sound/vo/female_abyssariad/fatigue.ogg'
 			if("firescream")
-				used = list('modular/kaizoku/sound/vo/female_abyssariad/painscream1.ogg','modular/kaizoku/sound/vo/female_abyssariad/painscream2.ogg')
+				used = list('sound/vo/female_abyssariad/painscream1.ogg','sound/vo/female_abyssariad/painscream2.ogg')
 			if("gasp")
-				used = list('modular/kaizoku/sound/vo/female_abyssariad/gasp.ogg','modular/kaizoku/sound/vo/female_abyssariad/gasp2.ogg','modular/kaizoku/sound/vo/female_abyssariad/gasp3.ogg','modular/kaizoku/sound/vo/female_abyssariad/gasp4.ogg','modular/kaizoku/sound/vo/female_abyssariad/gasp5.ogg','modular/kaizoku/sound/vo/female_abyssariad/gasp6.ogg')
+				used = list('sound/vo/female_abyssariad/gasp.ogg','sound/vo/female_abyssariad/gasp2.ogg','sound/vo/female_abyssariad/gasp3.ogg','sound/vo/female_abyssariad/gasp4.ogg','sound/vo/female_abyssariad/gasp5.ogg','sound/vo/female_abyssariad/gasp6.ogg')
 			if("huh")
-				used = list('modular/kaizoku/sound/vo/female_abyssariad/huh.ogg','modular/kaizoku/sound/vo/female_abyssariad/huh1.ogg','modular/kaizoku/sound/vo/female_abyssariad/huh2.ogg')
+				used = list('sound/vo/female_abyssariad/huh.ogg','sound/vo/female_abyssariad/huh1.ogg','sound/vo/female_abyssariad/huh2.ogg')
 			if("laugh")
-				used = list('modular/kaizoku/sound/vo/female_abyssariad/laugh.ogg','modular/kaizoku/sound/vo/female_abyssariad/laugh1.ogg','modular/kaizoku/sound/vo/female_abyssariad/laugh3.ogg','modular/kaizoku/sound/vo/female_abyssariad/laugh4.ogg','modular/kaizoku/sound/vo/female_abyssariad/laugh5.ogg','modular/kaizoku/sound/vo/female_abyssariad/laugh6.ogg')
+				used = list('sound/vo/female_abyssariad/laugh.ogg','sound/vo/female_abyssariad/laugh1.ogg','sound/vo/female_abyssariad/laugh3.ogg','sound/vo/female_abyssariad/laugh4.ogg','sound/vo/female_abyssariad/laugh5.ogg','sound/vo/female_abyssariad/laugh6.ogg')
 			if("groan")
-				used = list('modular/kaizoku/sound/vo/female_abyssariad/groan.ogg','modular/kaizoku/sound/vo/female_abyssariad/DISAPPOINTMENT.ogg','modular/kaizoku/sound/vo/female_abyssariad/ah.ogg')
+				used = list('sound/vo/female_abyssariad/groan.ogg','sound/vo/female_abyssariad/DISAPPOINTMENT.ogg','sound/vo/female_abyssariad/ah.ogg')
 			if("pain")
-				used = list('modular/kaizoku/sound/vo/female_abyssariad/pain1.ogg','modular/kaizoku/sound/vo/female_abyssariad/pain2.ogg','modular/kaizoku/sound/vo/female_abyssariad/pain3.ogg','modular/kaizoku/sound/vo/female_abyssariad/pain4.ogg','modular/kaizoku/sound/vo/female_abyssariad/pain5.ogg','modular/kaizoku/sound/vo/female_abyssariad/pain6.ogg')
+				used = list('sound/vo/female_abyssariad/pain1.ogg','sound/vo/female_abyssariad/pain2.ogg','sound/vo/female_abyssariad/pain3.ogg','sound/vo/female_abyssariad/pain4.ogg','sound/vo/female_abyssariad/pain5.ogg','sound/vo/female_abyssariad/pain6.ogg')
 			if("embed")
-				used = list('modular/kaizoku/sound/vo/female_abyssariad/paincrit1.ogg','modular/kaizoku/sound/vo/female_abyssariad/paincrit2.ogg','modular/kaizoku/sound/vo/female_abyssariad/paincrit3.ogg','modular/kaizoku/sound/vo/female_abyssariad/paincrit4.ogg','modular/kaizoku/sound/vo/female_abyssariad/paincrit5.ogg')
+				used = list('sound/vo/female_abyssariad/paincrit1.ogg','sound/vo/female_abyssariad/paincrit2.ogg','sound/vo/female_abyssariad/paincrit3.ogg','sound/vo/female_abyssariad/paincrit4.ogg','sound/vo/female_abyssariad/paincrit5.ogg')
 			if("paincrit")
-				used = list('modular/kaizoku/sound/vo/female_abyssariad/paincrit1.ogg','modular/kaizoku/sound/vo/female_abyssariad/paincrit2.ogg','modular/kaizoku/sound/vo/female_abyssariad/paincrit3.ogg','modular/kaizoku/sound/vo/female_abyssariad/paincrit4.ogg','modular/kaizoku/sound/vo/female_abyssariad/paincrit5.ogg')
+				used = list('sound/vo/female_abyssariad/paincrit1.ogg','sound/vo/female_abyssariad/paincrit2.ogg','sound/vo/female_abyssariad/paincrit3.ogg','sound/vo/female_abyssariad/paincrit4.ogg','sound/vo/female_abyssariad/paincrit5.ogg')
 			if("painscream")
-				used = list('modular/kaizoku/sound/vo/female_abyssariad/painscream1.ogg','modular/kaizoku/sound/vo/female_abyssariad/painscream2.ogg','modular/kaizoku/sound/vo/female_abyssariad/painscream3.ogg')
+				used = list('sound/vo/female_abyssariad/painscream1.ogg','sound/vo/female_abyssariad/painscream2.ogg','sound/vo/female_abyssariad/painscream3.ogg')
 			if("painmoan")
-				used = 'modular/kaizoku/sound/vo/female_abyssariad/screamgasp.ogg'
+				used = 'sound/vo/female_abyssariad/screamgasp.ogg'
 			if("scream")
-				used = list('modular/kaizoku/sound/vo/female_abyssariad/scream1.ogg','modular/kaizoku/sound/vo/female_abyssariad/scream2.ogg','modular/kaizoku/sound/vo/female_abyssariad/scream3.ogg','modular/kaizoku/sound/vo/female_abyssariad/scream4.ogg','modular/kaizoku/sound/vo/female_abyssariad/scream5.ogg','modular/kaizoku/sound/vo/female_abyssariad/scream6.ogg')
+				used = list('sound/vo/female_abyssariad/scream1.ogg','sound/vo/female_abyssariad/scream2.ogg','sound/vo/female_abyssariad/scream3.ogg','sound/vo/female_abyssariad/scream4.ogg','sound/vo/female_abyssariad/scream5.ogg','sound/vo/female_abyssariad/scream6.ogg')
 			if("throatsing") //need to find a way to put a cooldown on this emote.
-				used = list('modular/kaizoku/sound/vo/female_abyssariad/fthroatsing1.ogg','modular/kaizoku/sound/vo/female_abyssariad/fthroatsing2.ogg','modular/kaizoku/sound/vo/female_abyssariad/fthroatsing3.ogg','modular/kaizoku/sound/vo/female_abyssariad/fthroatsing4.ogg')
+				used = list('sound/vo/female_abyssariad/fthroatsing1.ogg','sound/vo/female_abyssariad/fthroatsing2.ogg','sound/vo/female_abyssariad/fthroatsing3.ogg','sound/vo/female_abyssariad/fthroatsing4.ogg')
 			if("breathgasp")
-				used = list('modular/kaizoku/sound/vo/female_abyssariad/deathgasp.ogg','modular/kaizoku/sound/vo/female_abyssariad/deathgasp2.ogg','modular/kaizoku/sound/vo/female_abyssariad/deathgasp3.ogg')
+				used = list('sound/vo/female_abyssariad/deathgasp.ogg','sound/vo/female_abyssariad/deathgasp2.ogg','sound/vo/female_abyssariad/deathgasp3.ogg')
 			if("chuckle")
-				used = list('modular/kaizoku/sound/vo/female_abyssariad/chuckle3.ogg','modular/kaizoku/sound/vo/female_abyssariad/chuckle4.ogg','modular/kaizoku/sound/vo/female_abyssariad/chuckle5.ogg','modular/kaizoku/sound/vo/female_abyssariad/chuckle6.ogg')
+				used = list('sound/vo/female_abyssariad/chuckle3.ogg','sound/vo/female_abyssariad/chuckle4.ogg','sound/vo/female_abyssariad/chuckle5.ogg','sound/vo/female_abyssariad/chuckle6.ogg')
 			if("giggle")
-				used = list('modular/kaizoku/sound/vo/female_abyssariad/chuckle1.ogg','modular/kaizoku/sound/vo/female_abyssariad/chuckle2.ogg')
+				used = list('sound/vo/female_abyssariad/chuckle1.ogg','sound/vo/female_abyssariad/chuckle2.ogg')
 			if("grumble") //need to find a way to make a bigger cooldown on this one. This emote is long.
 				if(prob(5))
-					used = 'modular/kaizoku/sound/vo/female_abyssariad/wawawa.ogg' //I do not fear being murdered during my sleep.
+					used = 'sound/vo/female_abyssariad/wawawa.ogg' //I do not fear being murdered during my sleep.
 				else
-					used = list('modular/kaizoku/sound/vo/female_abyssariad/grumble1.ogg','modular/kaizoku/sound/vo/female_abyssariad/grumble2.ogg','modular/kaizoku/sound/vo/female_abyssariad/grumble3.ogg','modular/kaizoku/sound/vo/female_abyssariad/grumble4.ogg')
+					used = list('sound/vo/female_abyssariad/grumble1.ogg','sound/vo/female_abyssariad/grumble2.ogg','sound/vo/female_abyssariad/grumble3.ogg','sound/vo/female_abyssariad/grumble4.ogg')
 			if("jump")
-				used = list('modular/kaizoku/sound/vo/female_abyssariad/jump1.ogg','modular/kaizoku/sound/vo/female_abyssariad/jump2.ogg','modular/kaizoku/sound/vo/female_abyssariad/jump3.ogg')
+				used = list('sound/vo/female_abyssariad/jump1.ogg','sound/vo/female_abyssariad/jump2.ogg','sound/vo/female_abyssariad/jump3.ogg')
 			if("leap")
-				used = list('modular/kaizoku/sound/vo/female_abyssariad/jump4.ogg','modular/kaizoku/sound/vo/female_abyssariad/jump5.ogg','modular/kaizoku/sound/vo/female_abyssariad/jump6.ogg')
+				used = list('sound/vo/female_abyssariad/jump4.ogg','sound/vo/female_abyssariad/jump5.ogg','sound/vo/female_abyssariad/jump6.ogg')
 			if("rage")
-				used = list('modular/kaizoku/sound/vo/female_abyssariad/angry1.ogg','modular/kaizoku/sound/vo/female_abyssariad/angry2.ogg')
+				used = list('sound/vo/female_abyssariad/angry1.ogg','sound/vo/female_abyssariad/angry2.ogg')
 			if("sexmoanlight")
-				used = list('modular/kaizoku/sound/vo/female_abyssariad/smoan1.ogg','modular/kaizoku/sound/vo/female_abyssariad/smoan2.ogg','modular/kaizoku/sound/vo/female_abyssariad/smoan3.ogg','modular/kaizoku/sound/vo/female_abyssariad/smoan4.ogg','modular/kaizoku/sound/vo/female_abyssariad/smoan5.ogg','modular/kaizoku/sound/vo/female_abyssariad/smoan6.ogg','modular/kaizoku/sound/vo/female_abyssariad/smoan7.ogg','modular/kaizoku/sound/vo/female_abyssariad/smoan8.ogg','modular/kaizoku/sound/vo/female_abyssariad/smoan9.ogg','modular/kaizoku/sound/vo/female_abyssariad/smoan10.ogg')
+				used = list('sound/vo/female_abyssariad/smoan1.ogg','sound/vo/female_abyssariad/smoan2.ogg','sound/vo/female_abyssariad/smoan3.ogg','sound/vo/female_abyssariad/smoan4.ogg','sound/vo/female_abyssariad/smoan5.ogg','sound/vo/female_abyssariad/smoan6.ogg','sound/vo/female_abyssariad/smoan7.ogg','sound/vo/female_abyssariad/smoan8.ogg','sound/vo/female_abyssariad/smoan9.ogg','sound/vo/female_abyssariad/smoan10.ogg')
 			if("sexmoanhvy")
-				used = list('modular/kaizoku/sound/vo/female_abyssariad/moanheavy1.ogg','modular/kaizoku/sound/vo/female_abyssariad/moanheavy2.ogg','modular/kaizoku/sound/vo/female_abyssariad/moanheavy3.ogg','modular/kaizoku/sound/vo/female_abyssariad/moanheavy4.ogg','modular/kaizoku/sound/vo/female_abyssariad/moanheavy5.ogg','modular/kaizoku/sound/vo/female_abyssariad/moanheavy6.ogg','modular/kaizoku/sound/vo/female_abyssariad/moanheavy7.ogg','modular/kaizoku/sound/vo/female_abyssariad/moanheavy8.ogg','modular/kaizoku/sound/vo/female_abyssariad/moanheavy9.ogg','modular/kaizoku/sound/vo/female_abyssariad/moanheavy10.ogg','modular/kaizoku/sound/vo/female_abyssariad/moanheavy11.ogg','modular/kaizoku/sound/vo/female_abyssariad/moanheavy12.ogg','modular/kaizoku/sound/vo/female_abyssariad/moanheavy13.ogg','modular/kaizoku/sound/vo/female_abyssariad/moanheavy14.ogg','modular/kaizoku/sound/vo/female_abyssariad/moanheavy15.ogg','modular/kaizoku/sound/vo/female_abyssariad/moanheavy16.ogg','modular/kaizoku/sound/vo/female_abyssariad/moanheavy17.ogg','modular/kaizoku/sound/vo/female_abyssariad/moanheavy18.ogg','modular/kaizoku/sound/vo/female_abyssariad/moanheavy19.ogg','modular/kaizoku/sound/vo/female_abyssariad/moanheavy20.ogg')
+				used = list('sound/vo/female_abyssariad/moanheavy1.ogg','sound/vo/female_abyssariad/moanheavy2.ogg','sound/vo/female_abyssariad/moanheavy3.ogg','sound/vo/female_abyssariad/moanheavy4.ogg','sound/vo/female_abyssariad/moanheavy5.ogg','sound/vo/female_abyssariad/moanheavy6.ogg','sound/vo/female_abyssariad/moanheavy7.ogg','sound/vo/female_abyssariad/moanheavy8.ogg','sound/vo/female_abyssariad/moanheavy9.ogg','sound/vo/female_abyssariad/moanheavy10.ogg','sound/vo/female_abyssariad/moanheavy11.ogg','sound/vo/female_abyssariad/moanheavy12.ogg','sound/vo/female_abyssariad/moanheavy13.ogg','sound/vo/female_abyssariad/moanheavy14.ogg','sound/vo/female_abyssariad/moanheavy15.ogg','sound/vo/female_abyssariad/moanheavy16.ogg','sound/vo/female_abyssariad/moanheavy17.ogg','sound/vo/female_abyssariad/moanheavy18.ogg','sound/vo/female_abyssariad/moanheavy19.ogg','sound/vo/female_abyssariad/moanheavy20.ogg')
 			if("moan")
-				used = list('modular/kaizoku/sound/vo/female_abyssariad/moan1.ogg','modular/kaizoku/sound/vo/female_abyssariad/moan2.ogg','modular/kaizoku/sound/vo/female_abyssariad/moan4.ogg','modular/kaizoku/sound/vo/female_abyssariad/moan5.ogg')
+				used = list('sound/vo/female_abyssariad/moan1.ogg','sound/vo/female_abyssariad/moan2.ogg','sound/vo/female_abyssariad/moan4.ogg','sound/vo/female_abyssariad/moan5.ogg')
 			if("birdcall")
-				used = list('modular/kaizoku/sound/vo/general/tengucall1.ogg','modular/kaizoku/sound/vo/general/tengucall2.ogg','modular/kaizoku/sound/vo/general/tengucall3.ogg','modular/kaizoku/sound/vo/general/tengucall4.ogg','modular/kaizoku/sound/vo/general/tengucall5.ogg','modular/kaizoku/sound/vo/general/tengucall5.ogg','modular/kaizoku/sound/vo/general/tengucall6.ogg','modular/kaizoku/sound/vo/general/tengucall7.ogg','modular/kaizoku/sound/vo/general/tengucall8.ogg','modular/kaizoku/sound/vo/general/tengucall9.ogg','modular/kaizoku/sound/vo/general/tengucall10.ogg','modular/kaizoku/sound/vo/general/tengucall12.ogg','modular/kaizoku/sound/vo/general/tengucall13.ogg','modular/kaizoku/sound/vo/general/tengucall14.ogg','modular/kaizoku/sound/vo/general/brazilianmeme.ogg')
+				used = list('sound/vo/general/tengucall1.ogg','sound/vo/general/tengucall2.ogg','sound/vo/general/tengucall3.ogg','sound/vo/general/tengucall4.ogg','sound/vo/general/tengucall5.ogg','sound/vo/general/tengucall5.ogg','sound/vo/general/tengucall6.ogg','sound/vo/general/tengucall7.ogg','sound/vo/general/tengucall8.ogg','sound/vo/general/tengucall9.ogg','sound/vo/general/tengucall10.ogg','sound/vo/general/tengucall12.ogg','sound/vo/general/tengucall13.ogg','sound/vo/general/tengucall14.ogg','sound/vo/general/brazilianmeme.ogg')
 	if(!used) //we haven't found a racial specific sound so use generic
 		used = ..(soundin)
 	return used

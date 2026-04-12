@@ -91,7 +91,7 @@
 	. = ..()
 	to_chat(owner.current, span_userdanger("The power of dominion flows through you! Build your phylactery empire and rule from the shadows."))
 	owner.announce_objectives()
-	owner.current.playsound_local(get_turf(owner.current), 'sound/music/lichintro.ogg', 80, FALSE, pressure_affected = FALSE)
+	owner.current.playsound_local(get_turf(owner.current), 'sound/blank.ogg', 80, FALSE, pressure_affected = FALSE)
 
 /datum/antagonist/overlord/move_to_spawnpoint()
 	return
@@ -111,9 +111,9 @@
 	L.mana_pool.set_intrinsic_recharge(MANA_SOULS)
 	L.mana_pool.ethereal_recharge_rate += 0.2
 
-	L.cmode_music = 'sound/music/cmode/antag/CombatLich.ogg'
+	L.cmode_music = 'sound/blank.ogg'
 	if(prob(10))
-		L.cmode_music = 'sound/music/cmode/antag/combat_evilwizard.ogg'
+		L.cmode_music = 'sound/blank.ogg'
 	L.faction = list(FACTION_UNDEAD)
 	if(length(L.quirks))
 		L.clear_quirks()

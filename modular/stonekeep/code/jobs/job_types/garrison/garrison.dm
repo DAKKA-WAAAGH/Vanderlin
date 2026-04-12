@@ -21,7 +21,7 @@ the like.
 	give_bank_account = 20
 	min_pq = -10
 
-	cmode_music = 'modular/kaizoku/sound/combat/combat_stormwarrior.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/job/stonekeep/garrison // Reminder message
 	var/oath = "<br><br><font color='#855b14'><span class='bold'>Remember to renew your oath of loyalty to the Monarch in person at the start of the week.</span></font><br><br>"
@@ -62,7 +62,7 @@ the like.
 	H.verbs |= /mob/proc/haltyell
 	ADD_TRAIT(H, TRAIT_KNOWBANDITS, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
-	H.cmode_music = list('modular/kaizoku/sound/combat/combat_changeling.ogg','modular/kaizoku/sound/combat/combat_stormwarrior.ogg','modular/kaizoku/sound/combat/combat_searaider.ogg','modular/kaizoku/sound/combat/combat_oldtides.ogg','modular/kaizoku/sound/combat/combat_decapitator.ogg','modular/kaizoku/sound/combat/combat_emperor.ogg','modular/kaizoku/sound/combat/combat_traditional.ogg','modular/kaizoku/sound/combat/combat_navalretainers.ogg','modular/kaizoku/sound/combat/combat_kyudo.ogg')
+	H.cmode_music = list('sound/combat/combat_changeling.ogg','sound/blank.ogg','sound/blank.ogg','sound/combat/combat_oldtides.ogg','sound/blank.ogg','sound/blank.ogg','sound/blank.ogg','sound/combat/combat_navalretainers.ogg','sound/combat/combat_kyudo.ogg')
 
 /* ! ! ! Class Selection Section Below ! ! !
 Design philosphy:

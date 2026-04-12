@@ -11,7 +11,7 @@
 	spawn_positions = 1
 	bypass_lastclass = TRUE
 	selection_color = "#192bc2"
-	cmode_music = 'sound/music/cmode/towner/CombatTowner2.ogg'
+	cmode_music = 'sound/blank.ogg'
 	allowed_races = RACES_PLAYER_ALL
 	outfit = /datum/outfit/merchant
 	give_bank_account = 200

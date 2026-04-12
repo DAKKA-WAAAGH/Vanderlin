@@ -352,11 +352,11 @@
 	if(!cross_retracted)
 		icon_state = "silvermask_rimless"
 		cross_retracted = 1
-		playsound(user, 'sound/items/indexer_shut.ogg', 65, TRUE)
+		playsound(user, 'sound/blank.ogg', 65, TRUE)
 	else
 		icon_state = "silvermask"
 		cross_retracted = 0
-		playsound(user, 'sound/items/indexer_open.ogg', 65, TRUE)
+		playsound(user, 'sound/blank.ogg', 65, TRUE)
 	update_appearance(UPDATE_ICON)
 	if(loc == user && ishuman(user))
 		var/mob/living/carbon/H = user

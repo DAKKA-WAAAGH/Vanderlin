@@ -719,7 +719,7 @@
 
 
 /datum/looping_sound/wiseloop
-	mid_sounds = list('sound/music/tree.ogg')
+	mid_sounds = list('sound/blank.ogg')
 	mid_length = 1200
 	volume = 80
 	extra_range = -1

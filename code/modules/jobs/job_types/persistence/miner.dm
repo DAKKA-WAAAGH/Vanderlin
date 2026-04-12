@@ -5,7 +5,7 @@
 	job_flags = (JOB_ANNOUNCE_ARRIVAL | JOB_SHOW_IN_CREDITS | JOB_EQUIP_RANK | JOB_NEW_PLAYER_JOINABLE)
 	faction = FACTION_TOWN
 	outfit = /datum/outfit/miner_p
-	cmode_music = 'sound/music/cmode/towner/CombatTowner.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	jobstats = list(
 		STATKEY_CON = 1,
@@ -28,7 +28,7 @@
 /datum/job/persistence/miner/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
 	if(prob(50))
-		spawned.cmode_music = 'sound/music/cmode/towner/CombatTowner2.ogg'
+		spawned.cmode_music = 'sound/blank.ogg'
 
 	spawned.adjust_stat_modifier(STATMOD_JOB, STATKEY_STR, pick(0,1))
 	spawned.adjust_stat_modifier(STATMOD_JOB, STATKEY_CON, pick(0,1))

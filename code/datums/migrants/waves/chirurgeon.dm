@@ -41,7 +41,7 @@
 		TRAIT_DEADNOSE,
 	)
 
-	cmode_music = 'sound/music/cmode/towner/CombatTowner2.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/chirurgeon
 	name = "Chirurgeon (Migrant Wave)"

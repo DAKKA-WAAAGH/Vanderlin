@@ -16,7 +16,7 @@
 	outfit = /datum/outfit/steward
 	give_bank_account = 100
 	noble_income = 16
-	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
+	cmode_music = 'sound/blank.ogg'
 	job_bitflag = BITFLAG_ROYALTY
 	exp_type = list(EXP_TYPE_LIVING)
 	exp_types_granted = list(EXP_TYPE_NOBLE)

@@ -27,7 +27,7 @@ GLOBAL_LIST_EMPTY(lord_titles)
 		/datum/action/cooldown/spell/undirected/list_target/grant_nobility,
 	)
 
-	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg' // Change this wherever possible.
+	cmode_music = 'sound/blank.ogg' // Change this wherever possible.
 	can_have_apprentices = FALSE
 
 	job_bitflag = BITFLAG_ROYALTY

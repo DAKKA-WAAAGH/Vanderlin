@@ -44,18 +44,18 @@
 			if(/datum/patron/inhumen/graggar)
 				spawned.adjust_skillrank(/datum/skill/combat/axesmaces, 3, TRUE)
 				ADD_TRAIT(spawned, TRAIT_DUALWIELDER, TRAIT_GENERIC)
-				spawned.cmode_music = 'sound/music/cmode/antag/combat_werewolf.ogg'
+				spawned.cmode_music = 'sound/blank.ogg'
 			/*  //Stonekeep Edit: Kaizoku
 			if(/datum/patron/inhumen/graggar_zizo)
 				spawned.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 				spawned.adjust_skillrank(/datum/skill/combat/wrestling, 2, TRUE)
-				spawned.cmode_music = 'sound/music/cmode/antag/combat_werewolf.ogg'
+				spawned.cmode_music = 'sound/blank.ogg'
 			*/
 			if(/datum/patron/inhumen/zizo)
 				spawned.adjust_skillrank(/datum/skill/combat/swords, 3, TRUE)
 				spawned.adjust_skillrank(/datum/skill/combat/shields, 1, TRUE)
 				spawned.grant_language(/datum/language/undead)
-				spawned.cmode_music = 'sound/music/cmode/antag/combat_cult.ogg'
+				spawned.cmode_music = 'sound/blank.ogg'
 			if(/datum/patron/inhumen/matthios)
 				spawned.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 				spawned.adjust_skillrank(/datum/skill/misc/stealing, 2, TRUE)
@@ -71,7 +71,7 @@
 				spawned.cmode_music = 'sound/music/cmode/antag/CombatBaotha.ogg'
 			*/
 			else
-				spawned.cmode_music = 'sound/music/cmode/church/CombatInquisitor.ogg'
+				spawned.cmode_music = 'sound/blank.ogg'
 
 	var/holder = spawned.patron?.devotion_holder
 	if(holder)

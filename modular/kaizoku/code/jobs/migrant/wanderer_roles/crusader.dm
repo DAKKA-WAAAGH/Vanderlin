@@ -32,15 +32,15 @@
 
 	switch(H.patron?.name)
 		if("Astrata")
-			H.cmode_music = 'sound/music/cmode/church/CombatAstrata.ogg'
+			H.cmode_music = 'sound/blank.ogg'
 			cloak = /obj/item/clothing/cloak/stabard/templar/astrata // Gold for Astrata regardless of gender
 			wrists = /obj/item/clothing/neck/psycross/silver/astrata
 		if("Necra")
-			H.cmode_music = 'sound/music/cmode/church/CombatGravekeeper.ogg'
+			H.cmode_music = 'sound/blank.ogg'
 			cloak = /obj/item/clothing/cloak/stabard/templar/necra
 			wrists = /obj/item/clothing/neck/psycross/silver/necra
 		else // Failsafe
-			H.cmode_music = 'sound/music/cmode/adventurer/CombatIntense.ogg'
+			H.cmode_music = 'sound/blank.ogg'
 			cloak = /obj/item/clothing/cloak/stabard/templar/ravox // Gold version regardless of gender or patron
 			wrists = /obj/item/clothing/neck/psycross/silver/ravox
 

@@ -18,7 +18,7 @@
 
 	outfit = /datum/outfit/kaizoku/raider
 	give_bank_account = TRUE
-	cmode_music = 'sound/music/cmode/towner/CombatTowner2.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/kaizoku/raider/pre_equip(mob/living/carbon/human/H) //Not yet done.
 	..()

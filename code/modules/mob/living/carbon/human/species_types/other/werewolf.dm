@@ -4,7 +4,7 @@
 	base_strength = 15
 	base_constitution = 15
 	base_endurance = 15
-	cmode_music = 'sound/music/cmode/antag/combat_werewolf.ogg'
+	cmode_music = 'sound/blank.ogg'
 	limb_destroyer = TRUE
 	ambushable = FALSE
 	base_intents = list(INTENT_HELP, INTENT_DISARM, INTENT_GRAB)

@@ -9,7 +9,7 @@
 	outfit = /datum/outfit/kaizoku/lowlife/occultist
 	category_tags = list(CTAG_LOWLIFE)
 	allowed_patrons = list(/datum/patron/inhumen/zizo)
-	cmode_music = 'sound/music/cmode/towner/CombatBeggar.ogg'
+	cmode_music = 'sound/blank.ogg'
 	allowed_ages = ALL_AGES_LIST_BLOOMING
 
 /datum/outfit/kaizoku/lowlife/occultist

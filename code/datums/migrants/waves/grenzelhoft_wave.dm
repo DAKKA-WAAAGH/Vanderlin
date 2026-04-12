@@ -110,7 +110,7 @@
 
 	traits = list(TRAIT_MEDIUMARMOR, TRAIT_NOBLE)
 	languages = list(/datum/language/oldpsydonic)
-	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/job/migrant/grenzelhoft_countess/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()

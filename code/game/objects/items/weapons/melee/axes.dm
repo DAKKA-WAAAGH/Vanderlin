@@ -332,7 +332,7 @@
 
 	melting_material = /datum/material/copper
 	melt_amount = 150
-	pickup_sound = 'sound/foley/equip/rummaging-03.ogg'
+	pickup_sound = 'sound/foley/equip/rummaging-02.ogg'
 	sellprice = 15
 
 /obj/item/weapon/axe/copper/getonmobprop(tag)
@@ -361,7 +361,7 @@
 	minstr = 8
 
 	smeltresult = /obj/item/fertilizer/ash
-	pickup_sound = 'sound/foley/equip/rummaging-03.ogg'
+	pickup_sound = 'sound/foley/equip/rummaging-02.ogg'
 
 /obj/item/weapon/axe/boneaxe/getonmobprop(tag)
 	if(tag)

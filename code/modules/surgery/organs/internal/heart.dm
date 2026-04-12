@@ -57,7 +57,7 @@
 			if(!(my_inscryption in dreamer.hearts_seen))
 				var/wonder_code = LAZYACCESS(maniacs2wonder_ids, dreamer)
 				dreamer.hearts_seen += my_inscryption
-				SEND_SOUND(dreamer, 'sound/villain/newheart.ogg')
+				SEND_SOUND(dreamer, 'sound/blank.ogg')
 				user.log_message("got the Maniac inscryption [wonder_code ? " for Wonder #[wonder_code]" : ""][my_inscryption ? ": \"[STRIP_HTML_SIMPLE(my_inscryption, MAX_MESSAGE_LEN)].\"" : ""]", LOG_GAME)
 				if(wonder_code == 4)
 					message_admins("Maniac [ADMIN_LOOKUPFLW(user)] has obtained the fourth and final heart code.")

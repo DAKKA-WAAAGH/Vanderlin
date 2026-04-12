@@ -2,7 +2,7 @@
 ///need the entire machine
 /obj/structure/fake_machine
 	destroy_sound = 'sound/foley/breaksound.ogg'
-	break_sound = 'sound/foley/machinebreak.ogg'
+	break_sound = 'sound/blank.ogg'
 	anchored = TRUE
 	resistance_flags = INDESTRUCTIBLE
 

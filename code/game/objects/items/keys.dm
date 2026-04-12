@@ -6,7 +6,7 @@
 	w_class = WEIGHT_CLASS_TINY
 	dropshrink = 0.75
 	throwforce = 0
-	drop_sound = 'sound/items/gems (1).ogg'
+	drop_sound = 'sound/blank.ogg'
 	slot_flags = ITEM_SLOT_HIP|ITEM_SLOT_MOUTH|ITEM_SLOT_NECK|ITEM_SLOT_RING
 	grid_height = 64
 	grid_width = 32
@@ -22,7 +22,7 @@
 	max_integrity = 10
 	var/picklvl = 1
 	slot_flags = ITEM_SLOT_HIP|ITEM_SLOT_MOUTH|ITEM_SLOT_NECK
-	destroy_sound = 'sound/items/pickbreak.ogg'
+	destroy_sound = 'sound/blank.ogg'
 	grid_width = 32
 	grid_height = 64
 

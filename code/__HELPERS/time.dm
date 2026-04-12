@@ -94,9 +94,9 @@ GLOBAL_VAR_INIT(dayspassed, FALSE)
 		animate(T, alpha = 255, time = 10, easing = EASE_IN)
 		addtimer(CALLBACK(src, PROC_REF(clear_area_text), T), 35)
 	else if(GLOB.tod == "day")
-		playsound_local(src, 'sound/misc/midday.ogg', 100, FALSE)
+		playsound_local(src, 'sound/blank.ogg', 100, FALSE)
 	else if(GLOB.tod == "night")
-		playsound_local(src, 'sound/misc/nightfall.ogg', 100, FALSE)
+		playsound_local(src, 'sound/blank.ogg', 100, FALSE)
 
 	var/atom/movable/screen/daynight/D = new()
 	D.alpha = 0

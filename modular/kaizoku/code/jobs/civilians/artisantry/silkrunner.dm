@@ -14,7 +14,7 @@
 	allowed_races = RACES_PLAYER_ALL
 
 	outfit = /datum/outfit/kaizoku/silkrunner
-	cmode_music = 'sound/music/cmode/towner/CombatTowner2.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	job_bitflag = BITFLAG_CONSTRUCTOR
 

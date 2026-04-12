@@ -120,7 +120,7 @@ Spawn in the forest area.
 		if(!H.has_language(/datum/language/oldpsydonic))
 			H.grant_language(/datum/language/oldpsydonic)
 			to_chat(H, "<span class='info'>I can speak Old Psydonic with ,m before my speech.</span>")
-		H.cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
+		H.cmode_music = 'sound/blank.ogg'
 
 /datum/migrant_role/sk/grenzelhoft/preacher
 	name = "Grenzelhoft Preacher"
@@ -153,7 +153,7 @@ Spawn in the forest area.
 			H.grant_language(/datum/language/oldpsydonic)
 			to_chat(H, "<span class='info'>I can speak Old Psydonic with ,m before my speech.</span>")
 		H.set_patron(/datum/patron/psydon, TRUE)
-		H.cmode_music = 'sound/music/cmode/church/CombatInquisitor.ogg'
+		H.cmode_music = 'sound/blank.ogg'
 
 /datum/migrant_role/sk/grenzelhoft/swordmaster
 	name = "Grenzelhoft Swordmaster"

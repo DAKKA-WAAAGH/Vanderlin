@@ -86,7 +86,7 @@
 		consumed.master.spawn_spacevine_piece(start_turf, /obj/structure/meatvine/intestine_wormhole)
 
 	owner.visible_message(span_danger("[owner] burrows underground!"))
-	playsound(owner, 'sound/misc/bamf.ogg', 50, TRUE)
+	playsound(owner, 'sound/blank.ogg', 50, TRUE)
 
 	// Make invisible and intangible while underground
 	owner.alpha = 0

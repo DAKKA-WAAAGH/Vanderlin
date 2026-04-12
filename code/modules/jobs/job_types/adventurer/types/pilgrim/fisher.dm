@@ -6,7 +6,7 @@
 	outfit = /datum/outfit/pilgrim/fisher
 	category_tags = list(CTAG_PILGRIM)
 	apprentice_name = "Fisher Apprentice"
-	cmode_music = 'sound/music/cmode/towner/CombatBeggar.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	jobstats = list(
 		STATKEY_CON = 2

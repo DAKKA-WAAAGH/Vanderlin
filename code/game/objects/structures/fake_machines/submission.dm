@@ -41,7 +41,7 @@
 				I.forceMove(T)
 				if(sound == TRUE)
 					playsound(src, 'sound/misc/hiss.ogg', 100, FALSE, -1)
-					playsound(src, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
+					playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 			return
 
 /obj/structure/fake_machine/submission/attack_hand(mob/living/user)
@@ -88,7 +88,7 @@
 			attemptsell(I, user, FALSE, FALSE)
 		say("Bulk submission in progress...")
 		playsound(src, 'sound/misc/hiss.ogg', 100, FALSE, -1)
-		playsound(src, 'sound/misc/disposalflush.ogg', 100, FALSE, -1)
+		playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 		return TRUE
 
 /*				//Var for keeping track of timer

@@ -28,7 +28,7 @@ GLOBAL_LIST_EMPTY(voice_names)
 		var/answer_button = span_notice("(<a href='byond://?src=[voice_again];schizohelp=[REF(schizo_again)];ask_again=1'>ANSWER</a>)")
 		to_chat(voice_again, mentor_block("[message]  [answer_button]"))
 
-		var/sound/used = sound('sound/misc/notice (2).ogg')
+		var/sound/used = sound('sound/blank.ogg')
 		used.pitch *= 0.5
 		SEND_SOUND(voice_again, used)
 
@@ -48,7 +48,7 @@ GLOBAL_LIST_EMPTY(voice_names)
 			to_chat(voice, mentor_block("[message]  [answer_button]"))
 
 
-			var/sound/used = sound('sound/misc/notice (2).ogg')
+			var/sound/used = sound('sound/blank.ogg')
 			used.pitch *= 0.5
 			SEND_SOUND(voice, used)
 
@@ -268,7 +268,7 @@ GLOBAL_LIST_EMPTY(voice_names)
 		var/mob/schizo = owner.resolve()
 		if(!QDELETED(schizo))
 			to_chat(schizo, mentor_block("[span_notice("<i><b>My meditation goes unanswered...</b></i>")]"))
-			SEND_SOUND(schizo, 'sound/misc/notice.ogg')
+			SEND_SOUND(schizo, 'sound/blank.ogg')
 
 	qdel(src)
 
@@ -290,7 +290,7 @@ GLOBAL_LIST_EMPTY(voice_names)
 		voice_names[voice_ckey] = voice.get_voice_name()
 
 	to_chat(schizo, mentor_block("[span_notice("<i>I hear the Voice of a [voice_names[voice_ckey]] in my head...</i>\n<b>[answer]</b>")] [buttons]"))
-	var/sound/used = sound('sound/misc/notice (2).ogg')
+	var/sound/used = sound('sound/blank.ogg')
 	used.pitch *= 1.5
 	SEND_SOUND(schizo, used)
 	for(var/client/admin in GLOB.admins)

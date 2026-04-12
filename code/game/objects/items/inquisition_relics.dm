@@ -210,7 +210,7 @@
 	timer = 15 MINUTES
 
 /datum/intent/flail/strike/smash/golgotha
-	hitsound = list('sound/items/beartrap2.ogg')
+	hitsound = list('sound/blank.ogg')
 
 /obj/effect/temp_visual/censer_dust
 	icon = 'icons/effects/effects.dmi'
@@ -232,7 +232,7 @@
 	canparry = FALSE
 
 /datum/intent/flail/strike/smash/golgotha
-	hitsound = list('sound/items/beartrap2.ogg')
+	hitsound = list('sound/blank.ogg')
 
 /obj/item/flashlight/flare/torch/lantern/psycenser
 	name = "Censer of Penitence"
@@ -272,7 +272,7 @@
 			possible_item_intents = list(/datum/intent/flail/strike/smash/golgotha)
 			user.update_a_intents()
 		else
-			playsound(src.loc, 'sound/items/censer_on.ogg', 100)
+			playsound(src.loc, 'sound/blank.ogg', 100)
 			possible_item_intents = list(/datum/intent/flail/strike/smash/golgotha, /datum/intent/bless)
 			user.update_a_intents()
 			on = TRUE
@@ -292,7 +292,7 @@
 		next_smoke = world.time + smoke_interval
 
 /obj/item/flashlight/flare/torch/lantern/psycenser/turn_off()
-	playsound(src.loc, 'sound/items/censer_off.ogg', 100)
+	playsound(src.loc, 'sound/blank.ogg', 100)
 	STOP_PROCESSING(SSobj, src)
 	..()
 	if(ismob(loc))
@@ -442,7 +442,7 @@
 /obj/item/inqarticles/indexer/equipped(mob/living/carbon/human/user, slot)
 	. = ..()
 	if(active)
-		playsound(user, 'sound/items/indexer_shut.ogg', 65, TRUE)
+		playsound(user, 'sound/blank.ogg', 65, TRUE)
 		possible_item_intents = list(/datum/intent/use)
 		user.update_a_intents()
 		if(!full)
@@ -455,7 +455,7 @@
 	if(active)
 		possible_item_intents = list(/datum/intent/use)
 		user.update_a_intents()
-		playsound(user, 'sound/items/indexer_shut.ogg', 65, TRUE)
+		playsound(user, 'sound/blank.ogg', 65, TRUE)
 		if(!full)
 			active = FALSE
 			working = FALSE
@@ -477,7 +477,7 @@
 	if(working)
 		return
 	if(active)
-		playsound(src, 'sound/items/indexer_shut.ogg', 75, FALSE, 3)
+		playsound(src, 'sound/blank.ogg', 75, FALSE, 3)
 		possible_item_intents = list(/datum/intent/use)
 		tool_behaviour = initial(tool_behaviour)
 		user.update_a_intents()
@@ -493,7 +493,7 @@
 	possible_item_intents = list(/datum/intent/use, /datum/intent/dagger/cut)
 	tool_behaviour = TOOL_SCALPEL
 	user.update_a_intents()
-	playsound(src, 'sound/items/indexer_open.ogg', 75, FALSE, 3)
+	playsound(src, 'sound/blank.ogg', 75, FALSE, 3)
 	active = TRUE
 	update_appearance(UPDATE_ICON_STATE)
 
@@ -539,21 +539,21 @@
 	if(!full)
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	if(browser_alert(user, "EMPTY THE INDEXER?", "INDEXING...", "YES", "NO") != "NO")
-		playsound(src, 'sound/items/indexer_empty.ogg', 75, FALSE, 3)
+		playsound(src, 'sound/blank.ogg', 75, FALSE, 3)
 		visible_message(span_warning("[src] boils its contents away!"))
 		fullreset(user)
 	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
 /obj/item/inqarticles/indexer/proc/takeblood(mob/living/M, mob/living/user)
 	if(timestaken >= 8)
-		playsound(src, 'sound/items/indexer_finished.ogg', 75, FALSE, 3)
+		playsound(src, 'sound/blank.ogg', 75, FALSE, 3)
 		working = FALSE
 		full = TRUE
 		visible_message(span_warning("[src] finishes drawing blood!"))
 		active = FALSE
 		desc += span_notice(" It's full!")
 		if(cursedblood)
-			playsound(src, 'sound/items/indexer_cursed.ogg', 100, FALSE, 3)
+			playsound(src, 'sound/blank.ogg', 100, FALSE, 3)
 			possible_item_intents = list(/datum/intent/use)
 			user.update_a_intents()
 			active = FALSE
@@ -564,7 +564,7 @@
 		return
 
 	working = TRUE
-	playsound(src, 'sound/items/indexer_working.ogg', 75, FALSE, 3)
+	playsound(src, 'sound/blank.ogg', 75, FALSE, 3)
 	if(active && working && !full)
 		if(do_after(user, 20, M))
 			M.flash_fullscreen("redflash3")
@@ -754,7 +754,7 @@
 	max_integrity = 400
 	w_class = WEIGHT_CLASS_SMALL
 	can_parry = FALSE
-	break_sound = 'sound/items/garrotebreak.ogg'
+	break_sound = 'sound/blank.ogg'
 	gripped_intents = list(/datum/intent/garrote/grab, /datum/intent/garrote/choke)
 	var/datum/weakref/victim
 	var/datum/weakref/lastuser
@@ -765,7 +765,7 @@
 	sellprice = 0
 	wield_block = FALSE
 
-	var/static/list/wield_sounds = list('sound/items/garrote.ogg', 'sound/items/garrote2.ogg')
+	var/static/list/wield_sounds = list('sound/blank.ogg')
 
 /obj/item/inqarticles/garrote/getonmobprop(tag)
 	. = ..()
@@ -825,7 +825,7 @@
 /obj/item/inqarticles/garrote/apply_components()
 	AddComponent(/datum/component/two_handed, \
 		wieldsound = wield_sounds, \
-		unwieldsound = 'sound/items/garroteshut.ogg', \
+		unwieldsound = 'sound/blank.ogg', \
 		force_unwielded = force, \
 		force_wielded = force_wielded, \
 		icon_wielded = "garrote1", \
@@ -885,7 +885,7 @@
 			return
 		/*
 		if(HAS_TRAIT(target, TRAIT_GRABIMMUNE))
-			playsound(src, pick('sound/items/garrote.ogg', 'sound/items/garrote2.ogg'), 65, TRUE)
+			playsound(src, pick('sound/blank.ogg'), 65, TRUE)
 			user.visible_message(span_danger("[target] slips past [user]'s attempt to [src] them!"))
 			return
 		*/
@@ -906,7 +906,7 @@
 		if(istype(I, /obj/item/grabbing)) // generate an invisible grabbing item to simulate grabbing behavior
 			I.icon_state = null
 			currentgrab = I
-		playsound(loc, 'sound/items/garrotegrab.ogg', 100, TRUE)
+		playsound(loc, 'sound/blank.ogg', 100, TRUE)
 		user.visible_message(span_danger("[user] wraps the [src] around [target]'s throat!"))
 		user.adjust_stamina(25)
 		user.changeNext_move(CLICK_CD_MELEE)
@@ -923,7 +923,7 @@
 		user.adjust_stamina(rand(4, 8))
 		var/mob/living/carbon/C = garrote_victim
 		// if(get_location_accessible(C, BODY_ZONE_PRECISE_NECK))
-		playsound(src, pick('sound/items/garrotechoke1.ogg', 'sound/items/garrotechoke2.ogg', 'sound/items/garrotechoke3.ogg', 'sound/items/garrotechoke4.ogg', 'sound/items/garrotechoke5.ogg'), 100, TRUE)
+		playsound(src, pick('sound/blank.ogg'), 100, TRUE)
 		if(prob(40))
 			C.emote("choke")
 		C.adjustOxyLoss(choke_damage)
@@ -994,7 +994,7 @@
 
 /obj/item/clothing/head/inqarticles/blackbag/proc/bagsound(mob/living/M)
 	if(bagging)
-		playsound(M, pick('sound/misc/blackbag.ogg','sound/misc/blackbag2.ogg','sound/misc/blackbag3.ogg','sound/misc/blackbag4.ogg','sound/misc/blackbag5.ogg'), 100, TRUE, 4)
+		playsound(M, pick('sound/blank.ogg'), 100, TRUE, 4)
 	else
 		return
 
@@ -1022,7 +1022,7 @@
 	/*
 	if(HAS_TRAIT(M, TRAIT_GRABIMMUNE))
 		user.visible_message(span_danger("[M] slips past [user]'s attempt to black bag them!"))
-		playsound(M, pick('sound/misc/blackbag.ogg','sound/misc/blackbag2.ogg','sound/misc/blackbag3.ogg','sound/misc/blackbag4.ogg','sound/misc/blackbag5.ogg'), 100, TRUE, 4)
+		playsound(M, pick('sound/blank.ogg'), 100, TRUE, 4)
 		return
 	*/
 	if(!M.stat)
@@ -1056,8 +1056,8 @@
 	if(user.head == src)
 		bagging = FALSE
 		user.become_blind("blindfold_[REF(src)]")
-		playsound(user, pick('sound/misc/blackbagequip.ogg', 'sound/misc/blackbagequip2.ogg'), 100, TRUE, 4)
-		user.playsound_local(src, 'sound/misc/blackbagloop.ogg', 100, FALSE)
+		playsound(user, pick('sound/blank.ogg'), 100, TRUE, 4)
+		user.playsound_local(src, 'sound/blank.ogg', 100, FALSE)
 		worn = TRUE
 		ADD_TRAIT(user, TRAIT_BAGGED, TRAIT_GENERIC)
 
@@ -1076,7 +1076,7 @@
 					user.dropItemToGround(headgear)
 					return
 		headgear = initial(headgear)
-		playsound(user, pick('sound/misc/blackunbag.ogg'), 100, TRUE, 4)
+		playsound(user, pick('sound/blank.ogg'), 100, TRUE, 4)
 		user.emote("gasp", forced = TRUE)
 		return
 
@@ -1169,13 +1169,13 @@
 	var/mob/living/fixated = fixation?.resolve()
 	if(fixated)
 		fixated.clear_alert("blackmirror", TRUE)
-		fixated.playsound_local(src, 'sound/items/blackeye.ogg', 40, FALSE)
+		fixated.playsound_local(src, 'sound/blank.ogg', 40, FALSE)
 	effect = null
 	fixation = null
 	usesleft--
 	soundloop.stop()
 	visible_message(span_info("[src] clouds itself with a chilling fog."))
-	playsound(src, 'sound/items/blackmirror_no.ogg', 100, FALSE)
+	playsound(src, 'sound/blank.ogg', 100, FALSE)
 	update_appearance(UPDATE_ICON_STATE)
 	if(usesleft == 0)
 		addtimer(CALLBACK(src, PROC_REF(try_break)), 2 SECONDS)
@@ -1184,7 +1184,7 @@
 	if(QDELETED(src))
 		return
 	broken = TRUE
-	playsound(src, 'sound/items/blackmirror_break.ogg', 100, FALSE)
+	playsound(src, 'sound/blank.ogg', 100, FALSE)
 	visible_message(span_info("[src] shatters, fog spilling from the splintering shards into the dead air."))
 	openstate = "broken"
 	update_appearance(UPDATE_ICON_STATE)
@@ -1233,7 +1233,7 @@
 				if(HL.real_name == name)
 					fixation = WEAKREF(HL)
 					target = HL
-				playsound(src, 'sound/items/blackmirror_no.ogg', 100, FALSE)
+				playsound(src, 'sound/blank.ogg', 100, FALSE)
 				to_chat(user, span_warning("[src] makes a grating sound."))
 				return
 		else if(input == "BLOOD")
@@ -1250,9 +1250,9 @@
 		effect = target.throw_alert("blackmirror", /atom/movable/screen/alert/blackmirror, override = TRUE)
 		effect.source = src
 
-		target.playsound_local(target, 'sound/items/blackeye_warn.ogg', 100, FALSE)
+		target.playsound_local(target, 'sound/blank.ogg', 100, FALSE)
 
-		playsound(src, 'sound/items/blackmirror_active.ogg', 100, FALSE)
+		playsound(src, 'sound/blank.ogg', 100, FALSE)
 		addtimer(CALLBACK(src, PROC_REF(donefixating)), 2 MINUTES, TIMER_UNIQUE)
 
 		message_admins("SCRYING: [user.real_name] ([user.ckey]) has fixated on [target.real_name] ([target.ckey]) via black mirror.")
@@ -1265,7 +1265,7 @@
 		to_chat(user, span_notice("The mirror remains clear..."))
 		return
 
-	playsound(src, 'sound/items/blackmirror_use.ogg', 100, FALSE)
+	playsound(src, 'sound/blank.ogg', 100, FALSE)
 
 	ADD_TRAIT(user, TRAIT_NOSSDINDICATOR, "blackmirror")
 
@@ -1277,7 +1277,7 @@
 	user.visible_message(span_warning("[user] stares into [src], their eyes glazing over..."))
 
 	addtimer(CALLBACK(S, TYPE_PROC_REF(/mob/dead/observer, reenter_corpse)), 4 SECONDS)
-	addtimer(CALLBACK(user, GLOBAL_PROC_REF(playsound), user, 'sound/items/blackeye.ogg', 100, FALSE), 4 SECONDS)
+	addtimer(CALLBACK(user, GLOBAL_PROC_REF(playsound), user, 'sound/blank.ogg', 100, FALSE), 4 SECONDS)
 	addtimer(TRAIT_CALLBACK_REMOVE(user, TRAIT_NOSSDINDICATOR, "blackmirror"), 4 SECONDS)
 
 /obj/item/inqarticles/bmirror/attack(mob/living/carbon/human/attacked, mob/living/carbon/human/user, params)
@@ -1309,7 +1309,7 @@
 		time_taken *= 2
 
 	if(do_after(user, time_taken, attacked))
-		playsound(src, 'sound/items/blackmirror_needle.ogg', 95, FALSE, 3)
+		playsound(src, 'sound/blank.ogg', 95, FALSE, 3)
 		attacked.flash_fullscreen("redflash3")
 		attacked.adjustBruteLoss(40)
 		attacked.blood_volume = max(attacked.blood_volume - 240, 0)
@@ -1348,18 +1348,18 @@
 	if(opened)
 		if(fixated)
 			fixated.clear_alert("blackmirror", TRUE)
-			fixated.playsound_local(src, 'sound/items/blackeye.ogg', 40, FALSE)
+			fixated.playsound_local(src, 'sound/blank.ogg', 40, FALSE)
 		else if(effect)
 			QDEL_NULL(effect)
-		playsound(src, 'sound/items/blackmirror_shut.ogg', 100, FALSE)
+		playsound(src, 'sound/blank.ogg', 100, FALSE)
 		opened = FALSE
 		update_appearance(UPDATE_ICON_STATE)
 		return
 
-	playsound(src, 'sound/items/blackmirror_open.ogg', 100, FALSE)
+	playsound(src, 'sound/blank.ogg', 100, FALSE)
 
 	if(fixated)
-		fixated.playsound_local(src, 'sound/items/blackeye_warn.ogg', 100, FALSE)
+		fixated.playsound_local(src, 'sound/blank.ogg', 100, FALSE)
 		effect = fixated.throw_alert("blackmirror", /atom/movable/screen/alert/blackmirror, override = TRUE)
 		effect.source = src
 
@@ -1394,7 +1394,7 @@
 		lookat = source
 	else
 		lookat = source.feeder
-	playsound(L, 'sound/items/blackmirror_use.ogg', 100, FALSE)
+	playsound(L, 'sound/blank.ogg', 100, FALSE)
 	ADD_TRAIT(L, TRAIT_NOSSDINDICATOR, "blackmirror")
 	var/mob/living/target = lookat?.resolve()
 	if(!target)
@@ -1407,7 +1407,7 @@
 	L.visible_message(span_warning("[L] looks inward as their eyes glaze over..."))
 
 	addtimer(CALLBACK(S, TYPE_PROC_REF(/mob/dead/observer, reenter_corpse)), 4 SECONDS)
-	addtimer(CALLBACK(L, GLOBAL_PROC_REF(playsound), L, 'sound/items/blackeye.ogg', 100, FALSE), 4 SECONDS)
+	addtimer(CALLBACK(L, GLOBAL_PROC_REF(playsound), L, 'sound/blank.ogg', 100, FALSE), 4 SECONDS)
 	addtimer(TRAIT_CALLBACK_REMOVE(L, TRAIT_NOSSDINDICATOR, "blackmirror"), 4 SECONDS)
 
 // FINISH THIS AT YOUR LEISURE. I'M JUST LEAVING IT HERE UNIMPLEMENTED. IT'S INTENDED TO WORK AS A COMBINATION OF THE NOC FAR-SIGHT AND THE NOCSHADES. HAVE FUN! - YISCHE

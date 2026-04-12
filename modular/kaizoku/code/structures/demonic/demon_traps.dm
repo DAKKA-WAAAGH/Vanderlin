@@ -37,7 +37,7 @@
 	var/active = FALSE
 	max_integrity = 200
 	var/anchor_gateway
-	attacked_sound = list('modular/kaizoku/sound/woosh/zatana_nimble(1).ogg','modular/kaizoku/sound/woosh/zatana_nimble(2).ogg','modular/kaizoku/sound/woosh/zatana_nimble(3).ogg')
+	attacked_sound = list('sound/combat/wooshes/bladed/zatana_nimble(1).ogg','sound/combat/wooshes/bladed/zatana_nimble(2).ogg','sound/combat/wooshes/bladed/zatana_nimble(3).ogg')
 
 /obj/structure/demon/tendril/Initialize()
 	. = ..()

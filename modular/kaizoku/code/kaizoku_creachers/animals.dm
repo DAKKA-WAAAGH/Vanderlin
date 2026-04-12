@@ -136,7 +136,7 @@
 					dir = pick(GLOB.cardinals)
 					step(src, dir)
 					to_chat(user, "<span class='warning'>I managed to grab it, but it slides away!</span>")
-					playsound(src, pick('modular/kaizoku/sound/vo/general/undinecall.ogg','modular/kaizoku/sound/vo/general/undinecall1.ogg','modular/kaizoku/sound/vo/general/undinecall2.ogg'), 100, TRUE, -1)
+					playsound(src, pick('sound/vo/general/undinecall.ogg','sound/vo/general/undinecall1.ogg','sound/vo/general/undinecall2.ogg'), 100, TRUE, -1)
 					return
 	..()
 
@@ -147,7 +147,7 @@
 	if(!isturf(loc)) //no floating out of bags
 		return
 	if(prob(5))
-		playsound(src, pick('modular/kaizoku/sound/vo/general/undinecall3.ogg','modular/kaizoku/sound/vo/general/undinecall4.ogg','modular/kaizoku/sound/vo/general/undinecall5.ogg'), 100, TRUE, -1)
+		playsound(src, pick('sound/vo/general/undinecall3.ogg','sound/vo/general/undinecall4.ogg','sound/vo/general/undinecall5.ogg'), 100, TRUE, -1)
 	if(prob(25) && !dead)
 		dir = pick(GLOB.cardinals)
 		step(src, dir)
@@ -156,7 +156,7 @@
 	..()
 	if(!dead)
 		new /obj/item/reagent_containers/food/snacks/fogdart/dead(src)
-		playsound(src, 'modular/kaizoku/sound/vo/general/undinecall6.ogg', 100, FALSE, -1)
+		playsound(src, 'sound/vo/general/undinecall6.ogg', 100, FALSE, -1)
 		qdel(src)
 		return 1
 	. = ..()
@@ -172,7 +172,7 @@
 					dir = pick(GLOB.cardinals)
 					step(src, dir)
 					to_chat(user, "<span class='warning'>The vermin dodges my attack.</span>")
-					playsound(src, pick('modular/kaizoku/sound/vo/general/undinecall.ogg','modular/kaizoku/sound/vo/general/undinecall1.ogg','modular/kaizoku/sound/vo/general/undinecall2.ogg'), 100, TRUE, -1)
+					playsound(src, pick('sound/vo/general/undinecall.ogg','sound/vo/general/undinecall1.ogg','sound/vo/general/undinecall2.ogg'), 100, TRUE, -1)
 					return
 	..()
 

@@ -6,7 +6,7 @@
 	outfit = /datum/outfit/pilgrim/merchant
 	category_tags = list(CTAG_PILGRIM)
 	total_positions = 2
-	cmode_music = 'sound/music/cmode/towner/CombatTowner2.ogg'
+	cmode_music = 'sound/blank.ogg'
 	is_recognized = TRUE
 	var/merchant_type
 

@@ -181,17 +181,17 @@
 			P.ignore_lying = FALSE
 			P.accuracy = 95
 			P.damage = 60
-			playsound(get_turf(src), 'modular/kaizoku/sound/warfaresounds/loomshot_shotgun.ogg', 70, FALSE)
+			playsound(get_turf(src), 'sound/warfaresounds/loomshot_shotgun.ogg', 70, FALSE)
 		if("medium")
 			P.ignore_lying = FALSE
 			P.accuracy = 65
 			P.damage = 50
-			playsound(get_turf(src), 'modular/kaizoku/sound/warfaresounds/loomshot_actingup.ogg', 70, FALSE)
+			playsound(get_turf(src), 'sound/warfaresounds/loomshot_actingup.ogg', 70, FALSE)
 		if("long")
 			P.ignore_lying = TRUE
 			P.accuracy = 80
 			P.damage = 50
-			playsound(get_turf(src), 'modular/kaizoku/sound/warfaresounds/loomshot_actingup.ogg', 70, FALSE)
+			playsound(get_turf(src), 'sound/warfaresounds/loomshot_actingup.ogg', 70, FALSE)
 	P.preparePixelProjectile(current_target, src)
 	P.fire()
 
@@ -537,7 +537,7 @@
 	charging = TRUE
 	charge_finish = world.time + charge_time
 	visible_message(span_warning("[src] hums as pressure builds in its chamber."))
-	playsound(get_turf(src), 'modular/kaizoku/sound/warfaresounds/loomshot_actingup.ogg', 70, FALSE)
+	playsound(get_turf(src), 'sound/warfaresounds/loomshot_actingup.ogg', 70, FALSE)
 
 /obj/structure/sonar_cannon/proc/find_target()
 	for(var/mob/living/L in oview(fire_range, src))
@@ -554,7 +554,7 @@
 		current_target = null
 		return
 	visible_message(span_danger("[src] releases a crushing sonar blast at [current_target]!"))
-	playsound(get_turf(src), 'modular/kaizoku/sound/warfaresounds/loomshot_shotgun.ogg', 85, FALSE)
+	playsound(get_turf(src), 'sound/warfaresounds/loomshot_shotgun.ogg', 85, FALSE)
 	apply_sonar_payload(current_target)
 	current_target = null
 

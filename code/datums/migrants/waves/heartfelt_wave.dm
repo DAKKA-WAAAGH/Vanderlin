@@ -44,7 +44,7 @@
 		TRAIT_MEDIUMARMOR,
 	)
 
-	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/heartfelt_lord
 	name = "Lord of Heartfelt (Migrant Wave)"
@@ -105,7 +105,7 @@
 		TRAIT_NUTCRACKER,
 	)
 
-	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/heartfelt_lady
 	name = "Lady of Heartfelt (Migrant Wave)"
@@ -232,7 +232,7 @@
 		TRAIT_STEELHEARTED,
 	)
 
-	cmode_music = 'sound/music/cmode/nobility/CombatKnight.ogg'
+	cmode_music = 'sound/blank.ogg'
 	voicepack_m = /datum/voicepack/male/knight
 
 /datum/job/migrant/heartfelt_knight/after_spawn(mob/living/carbon/human/spawned, client/player_client)

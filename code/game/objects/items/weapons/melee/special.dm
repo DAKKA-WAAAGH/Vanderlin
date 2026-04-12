@@ -137,7 +137,7 @@
 	var/obj/item/weapon/mace/stunmace/I = get_master_item()
 	if(I)
 		if(I.on)
-			hitsound = list('sound/items/stunmace_hit (1).ogg','sound/items/stunmace_hit (2).ogg')
+			hitsound = list('sound/blank.ogg','sound/blank.ogg')
 		else
 			hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
 	. = ..()
@@ -146,7 +146,7 @@
 	var/obj/item/weapon/mace/stunmace/I = get_master_mob()
 	if(I)
 		if(I.on)
-			hitsound = list('sound/items/stunmace_hit (1).ogg','sound/items/stunmace_hit (2).ogg')
+			hitsound = list('sound/blank.ogg','sound/blank.ogg')
 		else
 			hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
 	. = ..()
@@ -187,7 +187,7 @@
 		user.visible_message("<span class='warning'>[user] flicks [src] on.</span>")
 		on = TRUE
 		charge--
-	playsound(user, pick('sound/items/stunmace_toggle (1).ogg','sound/items/stunmace_toggle (2).ogg','sound/items/stunmace_toggle (3).ogg'), 100, TRUE)
+	playsound(user, pick('sound/blank.ogg'), 100, TRUE)
 	if(user.a_intent)
 		var/datum/intent/I = user.a_intent
 		if(istype(I))
@@ -211,7 +211,7 @@
 				var/datum/intent/I = user.a_intent
 				if(istype(I))
 					I.afterchange()
-		playsound(src, pick('sound/items/stunmace_toggle (1).ogg','sound/items/stunmace_toggle (2).ogg','sound/items/stunmace_toggle (3).ogg'), 100, TRUE)
+		playsound(src, pick('sound/blank.ogg'), 100, TRUE)
 
 /obj/item/weapon/mace/stunmace/extinguish()
 	if(on)
@@ -221,7 +221,7 @@
 		on = FALSE
 		charge = 0
 		update_appearance(UPDATE_ICON_STATE)
-		playsound(src, pick('sound/items/stunmace_toggle (1).ogg','sound/items/stunmace_toggle (2).ogg','sound/items/stunmace_toggle (3).ogg'), 100, TRUE)
+		playsound(src, pick('sound/blank.ogg'), 100, TRUE)
 
 /datum/intent/katar/cut
 	name = "cut"

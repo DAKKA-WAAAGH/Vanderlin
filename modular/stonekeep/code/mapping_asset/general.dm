@@ -368,7 +368,7 @@
 	icon = 'modular/stonekeep/icons/misc.dmi'
 	icon_state = "petrignome"
 	smeltresult = null
-	drop_sound = 'sound/foley/dropsound/brick_drop.ogg'
+	drop_sound = 'sound/combat/hits/onstone/wallhit.ogg'
 	attacked_sound = 	'modular/stonekeep/sound/stone_scrape.ogg'
 
 /obj/item/statue/gnome/attackby(obj/item/W, mob/living/user, params)

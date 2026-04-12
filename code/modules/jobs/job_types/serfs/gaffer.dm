@@ -19,7 +19,7 @@
 	or bandits. For the Head Eater hungers..."
 
 	display_order = JDO_GAFFER
-	cmode_music = 'sound/music/cmode/towner/CombatGaffer.ogg'
+	cmode_music = 'sound/blank.ogg'
 	outfit = /datum/outfit/gaffer
 	give_bank_account = 20
 	bypass_lastclass = TRUE

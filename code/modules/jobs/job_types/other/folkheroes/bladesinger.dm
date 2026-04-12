@@ -5,7 +5,7 @@
 	total_positions = 1
 	outfit = /datum/outfit/folkhero/bladesinger
 	category_tags = list(CTAG_FOLKHEROES)
-	cmode_music = 'sound/music/cmode/adventurer/CombatWarrior.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	skills = list(
 		/datum/skill/combat/knives = 2,

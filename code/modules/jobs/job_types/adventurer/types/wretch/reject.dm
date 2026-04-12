@@ -14,7 +14,7 @@
 )
 	allowed_ages = list(AGE_ADULT, BLOOMING_ADULT) //Stonekeep Edit: Young Adult
 	total_positions = 1
-	cmode_music = 'sound/music/cmode/nobility/combat_noble.ogg'
+	cmode_music = 'sound/blank.ogg'
 	outfit = /datum/outfit/wretch/reject
 
 	jobstats = list(

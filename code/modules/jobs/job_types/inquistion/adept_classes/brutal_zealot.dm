@@ -4,7 +4,7 @@
 	tutorial = "You are a former thug who has been given a chance to redeem yourself by the Inquisitor. You serve him and Psydon with your physical strength and zeal."
 	outfit = /datum/outfit/adept/bzealot
 	category_tags = list(CTAG_ADEPT)
-	cmode_music = 'sound/music/cmode/church/CombatInquisitor.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	jobstats = list(
 		STATKEY_STR = 3,

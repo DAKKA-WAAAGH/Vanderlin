@@ -21,11 +21,11 @@
 	inhand_x_dimension = 64
 	inhand_y_dimension = 64
 	cartridge_wording = "bullet"
-	fire_sound = 'sound/foley/industrial/pneumaticpop.ogg'
-	load_sound = 'sound/foley/industrial/loadin.ogg'
-	equip_sound = 'sound/foley/gun_equip.ogg'
-	pickup_sound = 'sound/foley/gun_equip.ogg'
-	drop_sound = 'sound/foley/gun_drop.ogg'
+	fire_sound = 'sound/blank.ogg'
+	load_sound = 'sound/blank.ogg'
+	equip_sound = 'sound/blank.ogg'
+	pickup_sound = 'sound/blank.ogg'
+	drop_sound = 'sound/blank.ogg'
 	dropshrink = 0.7
 	var/pressure_to_use = 1
 	var/maximum_pressure = 3 //the max pressure we can set the gun to
@@ -132,7 +132,7 @@
 			num_unloaded++
 		if(num_unloaded)
 			to_chat(user, span_notice("I remove [(num_unloaded == 1) ? "the" : "[num_unloaded]"] [cartridge_wording]\s from [src]."))
-			playsound(src, 'sound/foley/industrial/loadout.ogg', 100, FALSE)
+			playsound(src, 'sound/blank.ogg', 100, FALSE)
 			update_appearance(UPDATE_ICON)
 		else
 			to_chat(user, span_warning("[src] is empty!"))
@@ -161,7 +161,7 @@
 				if(do_after(user, use_time SECONDS, src))
 					to_chat(user, span_info("I turn the knob clockwise, increasing the pressure for the airgun to use."))
 					pressure_to_use++
-					playsound(src, 'sound/foley/industrial/pneumaticpress.ogg', 100, FALSE)
+					playsound(src, 'sound/blank.ogg', 100, FALSE)
 			else
 				to_chat(user, span_warning("I try to turn the knob clockwise, but that's as far as it will go."))
 		if("Decrease Pressure")
@@ -170,7 +170,7 @@
 				if(do_after(user, use_time SECONDS, src))
 					to_chat(user, span_info("I turn the knob counter-clockwise, decreasing the pressure for the airgun to use."))
 					pressure_to_use--
-					playsound(src, 'sound/foley/industrial/pneumaticpress.ogg', 100, FALSE)
+					playsound(src, 'sound/blank.ogg', 100, FALSE)
 			else
 				to_chat(user, span_warning("I try to turn the knob counter-clockwise, but that's as far as it will go."))
 		if("Loading Chamber")
@@ -178,13 +178,13 @@
 				to_chat(user, span_info("I begin to close the loading chamber..."))
 				if(do_after(user, use_time SECONDS, src))
 					to_chat(user, span_info("I close the loading chamber."))
-					playsound(src, 'sound/foley/industrial/toggle.ogg', 100, FALSE)
+					playsound(src, 'sound/blank.ogg', 100, FALSE)
 					loading_chamber = FALSE
 			else
 				to_chat(user, span_info("I begin to open the loading chamber..."))
 				if(do_after(user, use_time SECONDS, src))
 					to_chat(user, span_info("I open the loading chamber."))
-					playsound(src, 'sound/foley/industrial/toggle.ogg', 100, FALSE)
+					playsound(src, 'sound/blank.ogg', 100, FALSE)
 					loading_chamber = TRUE
 		if("Hand Crank")
 			if(cranked)
@@ -228,7 +228,7 @@
 		spread = 0
 	if(!(cranked) || !(steam_lever) || (loading_chamber))
 		to_chat(user, span_warning("[src] refuses to fire!"))
-		playsound(src, 'sound/foley/industrial/pneumatichiss.ogg', 100, FALSE)
+		playsound(src, 'sound/blank.ogg', 100, FALSE)
 		return FALSE
 	for(var/obj/item/ammo_casing/CB in get_ammo_list(FALSE, TRUE))
 		var/obj/projectile/BB = CB.BB

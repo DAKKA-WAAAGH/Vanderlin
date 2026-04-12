@@ -77,9 +77,9 @@
 	spawned.adjust_skillrank(/datum/skill/combat/firearms, pick(1,2,3,4,5), TRUE)
 
 	if(spawned.base_strength > 16)
-		spawned.cmode_music = 'sound/music/cmode/nobility/CombatJesterSTR.ogg'
+		spawned.cmode_music = 'sound/blank.ogg'
 	else
-		spawned.cmode_music = pick('sound/music/cmode/nobility/CombatJester1.ogg', 'sound/music/cmode/nobility/CombatJester2.ogg')
+		spawned.cmode_music = pick('sound/blank.ogg', 'sound/blank.ogg')
 
 	spawned.verbs |= /mob/living/carbon/human/proc/ventriloquate
 	spawned.verbs |= /mob/living/carbon/human/proc/ear_trick

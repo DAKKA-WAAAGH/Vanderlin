@@ -224,7 +224,7 @@
 	metabolization_rate = 0.2
 
 /datum/reagent/moondust_purest/on_mob_metabolize(mob/living/M)
-	M.playsound_local(M, 'sound/ravein/small/hello_my_friend.ogg', 100, FALSE)
+	M.playsound_local(M, 'sound/blank.ogg', 100, FALSE)
 	M.overlay_fullscreen("purest_kaif", /atom/movable/screen/fullscreen/purest)
 	animate(M.client, pixel_y = 1, time = 1, loop = -1, flags = ANIMATION_RELATIVE)
 	animate(pixel_y = -1, time = 1, flags = ANIMATION_RELATIVE)

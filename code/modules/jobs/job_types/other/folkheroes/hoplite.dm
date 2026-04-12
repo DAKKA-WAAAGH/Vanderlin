@@ -5,7 +5,7 @@
 	outfit = /datum/outfit/folkhero/hoplite
 	total_positions = 1
 	category_tags = list(CTAG_FOLKHEROES)
-	cmode_music = 'sound/music/cmode/adventurer/CombatIntense.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	skills = list(
 		/datum/skill/combat/wrestling = 2,

@@ -166,7 +166,7 @@
 	name = "clay platter"
 	desc = "A fragile platter made from fired clay. Probably shouldn't throw it."
 	icon_state = "platter_clay"
-	drop_sound = 'sound/foley/dropsound/brick_drop.ogg'
+	drop_sound = 'sound/foley/cup_break.ogg'
 	resistance_flags = FIRE_PROOF
 
 /obj/item/plate/clay/set_material_information()

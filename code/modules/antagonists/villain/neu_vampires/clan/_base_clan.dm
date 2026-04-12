@@ -118,7 +118,7 @@ And it also helps for the character set panel
 		var/datum/component/vampire_disguise/disguise_comp = H.GetComponent(/datum/component/vampire_disguise)
 		disguise_comp.apply_disguise(H)
 
-		H.playsound_local(get_turf(H), 'sound/music/vampintro.ogg', 80, FALSE, pressure_affected = FALSE)
+		H.playsound_local(get_turf(H), 'sound/blank.ogg', 80, FALSE, pressure_affected = FALSE)
 		for(var/datum/coven/coven as anything in clan_covens)
 			H.give_coven(coven)
 	else
@@ -346,7 +346,7 @@ And it also helps for the character set panel
 	H.verbs |= /mob/living/carbon/human/proc/vampire_telepathy
 
 
-	H.cmode_music = 'sound/music/cmode/antag/CombatThrall.ogg'
+	H.cmode_music = 'sound/blank.ogg'
 
 	H.adjust_skillrank(/datum/skill/magic/blood, 2, TRUE)
 	H.clamped_adjust_skillrank(/datum/skill/misc/athletics, 5, 5, TRUE)

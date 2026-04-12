@@ -10,7 +10,7 @@
 	/// the range at which the raw html is sent to when activated
 	var/range_to_display_in = 8
 	/// a sound to play when activated, can be a single or a list
-	var/sounds_to_pick_from = 'sound/villain/dreamer_warning.ogg'
+	var/sounds_to_pick_from = 'sound/blank.ogg'
 	/// how close do you have to step for it to activate
 	var/activation_radius = 2
 	/// is this actor deleted on activation? if false, will be disabled for the duration of the reactivation timer on activation

@@ -59,11 +59,11 @@
 		to_chat(user, span_notice("[pick(funny)]"))
 		if(!HAS_TRAIT(user, TRAIT_KNOWBANDITS))
 			ADD_TRAIT(user, TRAIT_KNOWBANDITS, TRAIT_GENERIC)
-			user.playsound_local(user, 'sound/misc/notice (2).ogg', 100, FALSE)
+			user.playsound_local(user, 'sound/blank.ogg', 100, FALSE)
 			to_chat(user, span_notice("I can recognize these fine people anywhere now."))
 	else if(!HAS_TRAIT(user, TRAIT_KNOWBANDITS))
 		ADD_TRAIT(user, TRAIT_KNOWBANDITS, TRAIT_GENERIC)
-		user.playsound_local(user, 'sound/misc/notice (2).ogg', 100, FALSE)
+		user.playsound_local(user, 'sound/blank.ogg', 100, FALSE)
 		to_chat(user, span_notice("I can recognize these faces as wanted criminals now."))
 
 	var/dat = {"

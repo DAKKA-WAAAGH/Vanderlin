@@ -5,9 +5,9 @@
 	droning_index_night = DRONING_FOREST_NIGHT
 	ambient_index = AMBIENCE_BIRDS
 	ambient_index_night = AMBIENCE_FOREST
-	background_track = 'sound/music/area/forest.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'sound/music/area/forestnight.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 	soundenv = 15
 	ambush_times = list("night","dawn","dusk","day")
 	ambush_types = list(
@@ -42,27 +42,25 @@
 	first_time_text = "The Fermented Cackleberry"
 	droning_index = DRONING_INDOORS
 	droning_index_night = DRONING_INDOORS
-	background_track = "sound/blank.ogg"
-	background_track_dusk = "sound/blank.ogg"
-	background_track_night = "sound/blank.ogg"
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 	converted_type = /area/outdoors/exposed/tavern
 
 /area/indoors/wilderness/garrison
 	name = "garrison"
 	icon_state = "garrison"
-	background_track = 'sound/music/area/manorgarri.ogg'
-	background_track_dusk = null
-	background_track_night = null
-	background_track_dusk = null
-	background_track_night = null
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 	converted_type = /area/outdoors/exposed/manorgarri
 
 /area/indoors/wilderness/shop
 	name = "shop"
 	icon_state = "shop"
-	background_track = 'sound/music/area/shop.ogg'
-	background_track_dusk = null
-	background_track_night = null
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 	converted_type = /area/outdoors/exposed/shop
 
 /area/indoors/wilderness/magic
@@ -70,7 +68,7 @@
 	icon = 'icons/turf/areas/manor.dmi'
 	icon_state = "magiciantower"
 	ambient_index = AMBIENCE_MYSTICAL
-	background_track = 'sound/music/area/magiciantower.ogg'
-	background_track_dusk = null
-	background_track_night = null
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 	converted_type = /area/outdoors/exposed/magiciantower

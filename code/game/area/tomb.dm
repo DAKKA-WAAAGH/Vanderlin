@@ -10,9 +10,9 @@
 	soundenv = 5
 	droning_index = DRONING_BASEMENT
 	ambient_index = AMBIENCE_DUNGEON
-	background_track = 'sound/music/area/catacombs.ogg'
-	background_track_dusk = null
-	background_track_night = null
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/under/tomb/indoors
 	icon_state = "indoors"
@@ -22,25 +22,31 @@
 	icon_state = "shelter"
 	droning_index = DRONING_TOWN_DAY
 	droning_index_night = DRONING_TOWN_NIGHT
-	background_track = 'sound/music/area/townstreets.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'sound/music/area/sleeping.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/under/tomb/indoors/magic
 	icon = 'icons/turf/areas/manor.dmi'
 	icon_state = "magician"
 	ambient_index = AMBIENCE_MYSTICAL
-	background_track = 'sound/music/area/magiciantower og mix.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/under/tomb/indoors/royal
 	icon = 'icons/turf/areas/manor.dmi'
 	icon_state = "manor"
-	background_track = 'sound/music/area/manor2.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/under/tomb/indoors/church
 	icon = 'icons/turf/areas/town.dmi'
 	icon_state = "church"
-	background_track = 'sound/music/area/churchnight.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/under/tomb/wilds
 	icon_state = "woods"
@@ -49,9 +55,9 @@
 	droning_index_night = DRONING_FOREST_NIGHT
 	ambient_index = AMBIENCE_BIRDS
 	ambient_index_night = AMBIENCE_FOREST
-	background_track = 'sound/music/area/forest.ogg'
-	background_track_dusk = 'sound/music/area/septimus.ogg'
-	background_track_night = 'sound/music/area/forestnight.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/under/tomb/wilds/ambush
 
@@ -61,15 +67,17 @@
 	droning_index_night = DRONING_BOG_NIGHT
 	ambient_index = AMBIENCE_FROG
 	ambient_index_night = AMBIENCE_GENERIC
-	background_track = 'sound/music/area/bog.ogg'
-	background_track_dusk = null
-	background_track_night = null
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/under/tomb/sewer
 	icon_state = "sewer"
 	droning_index = DRONING_CAVE_WET
 	ambient_index = AMBIENCE_RAT
-	background_track = 'sound/music/area/sewers.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/under/tomb/lake
 	icon_state = "lake"
@@ -80,12 +88,16 @@
 	icon_state = "cave"
 	soundenv = 8
 	droning_index = DRONING_CAVE_GENERIC
-	background_track = 'sound/music/area/caves.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/under/tomb/cave/lava
 	icon_state = "cavelava"
 	droning_index = DRONING_CAVE_LAVA
-	background_track = 'sound/music/area/decap.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'
 
 /area/under/tomb/cave/wet
 	icon_state = "cavewet"
@@ -93,4 +105,6 @@
 
 /area/under/tomb/cave/spider
 	icon_state = "spider"
-	background_track = 'sound/music/area/spidercave.ogg'
+	background_track = 'sound/blank.ogg'
+	background_track_dusk = 'sound/blank.ogg'
+	background_track_night = 'sound/blank.ogg'

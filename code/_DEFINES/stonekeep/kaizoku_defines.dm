@@ -72,7 +72,7 @@ GLOBAL_LIST_INIT(abyssal_readme, world.file2list("strings/rt/abyssaltide.json"))
 					H.verbs |= /mob/proc/throatsing
 					H.verbs |= /mob/living/carbon/human/proc/abyssalcombat
 					H.verbs |= /mob/proc/abyssaltide
-					H.cmode_music = 'modular/kaizoku/sound/combat/combat_traditional.ogg'
+					H.cmode_music = 'sound/blank.ogg'
 					ADD_TRAIT(H, TRAIT_KAIZOKU, TRAIT_GENERIC)
 					if(H.dna.species.name == "Changeling")
 						H.verbs |= /mob/living/carbon/human/proc/toggle_changeling_maw
@@ -89,7 +89,7 @@ GLOBAL_LIST_INIT(abyssal_readme, world.file2list("strings/rt/abyssaltide.json"))
 						H.verbs |= /mob/living/carbon/human/proc/warcry
 /*				if(H.dna.species.name == "Undine") //undine ability; Making below-average armor with normal random things/butchered goods.
 					H.verbs |= /mob/living/carbon/human/proc/abyssalcombat
-					H.cmode_music = 'modular/kaizoku/sound/combat/combat_traditional.ogg'
+					H.cmode_music = 'sound/blank.ogg'
 					ADD_TRAIT(H, TRAIT_KAIZOKU, TRAIT_GENERIC)
 					H.mind.teach_crafting_recipe(/datum/crafting_recipe/reinforcedarmor)
 					H.mind.teach_crafting_recipe(/datum/crafting_recipe/reinforcedhelmet)

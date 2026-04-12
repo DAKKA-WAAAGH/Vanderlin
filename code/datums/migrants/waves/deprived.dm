@@ -30,7 +30,7 @@
 	)
 
 	traits = list(TRAIT_CRITICAL_RESISTANCE)
-	cmode_music = 'sound/music/cmode/towner/CombatPrisoner.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/deprived
 	name = "Deprived (Migrant Wave)"

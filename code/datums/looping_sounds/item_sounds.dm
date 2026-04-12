@@ -48,7 +48,7 @@
 	extra_range = MEDIUM_RANGE_SOUND_EXTRARANGE
 
 /datum/looping_sound/streetlamp1
-	mid_sounds = list('sound/misc/loops/StLight1.ogg')
+	mid_sounds = list('sound/blank.ogg')
 	mid_length = 60
 	volume = 40
 	extra_range = 0
@@ -56,7 +56,7 @@
 	ignore_walls = FALSE
 
 /datum/looping_sound/streetlamp2
-	mid_sounds = list('sound/misc/loops/StLight2.ogg')
+	mid_sounds = list('sound/blank.ogg')
 	mid_length = 40
 	volume = 40
 	extra_range = 0
@@ -64,7 +64,7 @@
 	ignore_walls = FALSE
 
 /datum/looping_sound/streetlamp3
-	mid_sounds = list('sound/misc/loops/StLight3.ogg')
+	mid_sounds = list('sound/blank.ogg')
 	mid_length = 50
 	volume = 40
 	extra_range = 0
@@ -72,26 +72,26 @@
 	ignore_walls = FALSE
 
 /datum/looping_sound/clockloop
-	mid_sounds = list('sound/misc/clockloop.ogg')
+	mid_sounds = list('sound/blank.ogg')
 	mid_length = 20
 	volume = 10
 	extra_range = -3
 	ignore_walls = FALSE
 
 /datum/looping_sound/boatloop
-	mid_sounds = list('sound/ambience/boat.ogg')
+	mid_sounds = list('sound/blank.ogg')
 	mid_length = 60
 	volume = 100
 	extra_range = -1
 
 /datum/looping_sound/blackmirror
-	mid_sounds = list('sound/items/blackmirror_amb.ogg')
+	mid_sounds = list('sound/blank.ogg')
 	mid_length = 30
 	volume = 100
 	extra_range = -3
 
 /datum/looping_sound/psydonmusicboxsound
-	mid_sounds = list('sound/magic/psydonmusicbox.ogg')
+	mid_sounds = list('sound/blank.ogg')
 	mid_length = 320
 	volume = 50
 	extra_range = 10

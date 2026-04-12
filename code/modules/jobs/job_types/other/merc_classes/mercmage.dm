@@ -56,7 +56,7 @@
 	spawned.merctype = 9
 	// Random rare combat music (1% chance)
 	if(prob(1)) //extremely rare just like court mage
-		spawned.cmode_music = 'sound/music/cmode/antag/combat_evilwizard.ogg'
+		spawned.cmode_music = 'sound/blank.ogg'
 
 	// Age-based stat adjustments
 	if(spawned.age == AGE_OLD)

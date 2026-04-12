@@ -12,7 +12,7 @@
 	give_bank_account = TRUE
 	bypass_lastclass = TRUE
 	can_have_apprentices = FALSE
-	cmode_music = 'sound/music/cmode/towner/CombatTowner2.ogg'
+	cmode_music = 'sound/blank.ogg'
 	job_bitflag = BITFLAG_CONSTRUCTOR
 
 	allowed_races = RACES_PLAYER_ALL

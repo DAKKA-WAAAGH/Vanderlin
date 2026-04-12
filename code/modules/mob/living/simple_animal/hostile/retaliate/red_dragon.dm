@@ -9,7 +9,7 @@
 	maxHealth = 2500
 	attack_verb_continuous = "gouges"
 	attack_verb_simple = "gouge"
-	attack_sound = 'sound/misc/demon_attack1.ogg'
+	attack_sound = 'sound/blank.ogg'
 	icon_state = "dragon_red"
 	icon_living = "dragon_red"
 	icon_dead = "dragon_red_dead_redemption"

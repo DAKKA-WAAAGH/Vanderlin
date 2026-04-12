@@ -204,10 +204,7 @@
 	desc = "A leather collar with a small bell attached, popular among Hollow-Kin."
 	icon_state = "bell_collar"
 	blocksound = SOFTHIT
-	equip_sound = SFX_JINGLE_BELLS
-	pickup_sound = SFX_JINGLE_BELLS
 	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = SFX_JINGLE_BELLS
 	sewrepair = TRUE
 	anvilrepair = null
 	resistance_flags = FLAMMABLE
@@ -217,9 +214,6 @@
 	max_integrity = INTEGRITY_WORST
 	prevent_crits = CUT_AND_MINOR_CRITS
 
-/obj/item/clothing/neck/bellcollar/Initialize()
-	. = ..()
-	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = list(SFX_JINGLE_BELLS))
 //..................................................................................................................................
 /*---------------\
 |			 	 |
@@ -449,7 +443,7 @@
 		visible_message(span_notice("Red aura of the [src] slowly fades away."))
 		return
 
-	playsound(src, 'sound/music/musicbox_windup.ogg', 45)
+	playsound(src, 'sound/blank.ogg', 45)
 	visible_message(span_boldwarning("A red aura begins to glow heavily from the [src], it appears to be going off!"))
 	audible_message(span_boldwarning("You hear an eerie tune coming out of [src]"))
 
@@ -483,7 +477,7 @@
 	w_class = WEIGHT_CLASS_TINY
 	dropshrink = 0.75
 	throwforce = 0
-	drop_sound = 'sound/items/gems (1).ogg'
+	drop_sound = 'sound/blank.ogg'
 	slot_flags = ITEM_SLOT_HIP|ITEM_SLOT_MOUTH|ITEM_SLOT_NECK|ITEM_SLOT_RING
 	grid_height = 64
 	grid_width = 32

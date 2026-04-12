@@ -9,9 +9,7 @@
 /atom/movable/screen/fullscreen/maniac/proc/jumpscare(mob/living/scared, silent = FALSE, fade_in = 0.2 SECONDS, duration = 0.5 SECONDS, fade_out = 1 SECONDS)
 	if(!silent)
 		var/static/list/spookies = list(
-			'sound/villain/hall_appear1.ogg',
-			'sound/villain/hall_appear2.ogg',
-			'sound/villain/hall_appear3.ogg',
+			'sound/blank.ogg'
 		)
 		scared.playsound_local(scared, pick(spookies), vol = 100, vary = FALSE)
 	icon_state = "hall[rand(1, 9)]"

@@ -10,7 +10,7 @@
 	"Undine")
 	outfit = /datum/outfit/job/stonekeep/bandit/ronin
 	category_tags = list(CTAG_BANDIT)
-	cmode_music = list('modular/kaizoku/sound/combat/combat_changeling.ogg','modular/kaizoku/sound/combat/combat_stormwarrior.ogg','modular/kaizoku/sound/combat/combat_searaider.ogg','modular/kaizoku/sound/combat/combat_oldtides.ogg','modular/kaizoku/sound/combat/combat_decapitator.ogg','modular/kaizoku/sound/combat/combat_emperor.ogg','modular/kaizoku/sound/combat/combat_traditional.ogg','modular/kaizoku/sound/combat/combat_navalretainers.ogg','modular/kaizoku/sound/combat/combat_kyudo.ogg')
+	cmode_music = list('sound/combat/combat_changeling.ogg','sound/blank.ogg','sound/blank.ogg','sound/combat/combat_oldtides.ogg','sound/blank.ogg','sound/blank.ogg','sound/blank.ogg','sound/combat/combat_navalretainers.ogg','sound/combat/combat_kyudo.ogg')
 
 
 /datum/outfit/job/stonekeep/bandit/ronin/pre_equip(mob/living/carbon/human/H)

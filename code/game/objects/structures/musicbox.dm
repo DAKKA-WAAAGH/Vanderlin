@@ -1,57 +1,21 @@
 // Music Lists
 #define MUSIC_TAVCAT_CHILL list(\
-	"Lore" = 'sound/music/jukeboxes/chill/ac-ler.ogg',\
-	"Landmarks of Lullabies" = 'sound/music/jukeboxes/chill/ac-lol.ogg',\
-	"Waters of Sacrifice" = 'sound/music/jukeboxes/chill/acn-wos.ogg',\
-	"Solar Wind" = 'sound/music/jukeboxes/chill/av_solar.ogg',\
-	"Balthasar" = 'sound/music/jukeboxes/chill/ac-balthasar.ogg',\
-	"Dead Windmills" = 'sound/music/jukeboxes/chill/dead_windmills.ogg',\
-	"In Heaven Everythin" = 'sound/music/jukeboxes/chill/in_heaven_eif.ogg',\
-	"Jazznocn" = 'sound/music/jukeboxes/chill/jazznocn.ogg',\
-	"Vivalaluna-Damla" = 'sound/music/jukeboxes/chill/vivalaluna-damla.ogg',\
-	"Taste of your Tears" = 'sound/music/jukeboxes/chill/taste_of_your_tears.ogg'\
+	"Lore" = 'sound/blank.ogg'\
 )
 #define MUSIC_TAVCAT_FUCK list(\
-	"Cure4Sorrow" = 'sound/music/jukeboxes/fuck/cure4sorrow.ogg',\
-	"Dangerous Radiation" = 'sound/music/jukeboxes/fuck/dangeradiation.ogg',\
-	"Pandora's Box" = 'sound/music/jukeboxes/fuck/fb-pandora.ogg',\
-	"Raspberry jam" = 'sound/music/jukeboxes/fuck/raspberryjam.ogg',\
-	"Stardust Memories" = 'sound/music/jukeboxes/fuck/stardstm.ogg'\
+	"Cure4Sorrow" = 'sound/blank.ogg'\
 )
 #define MUSIC_TAVCAT_PARTY list(\
-	"A Winter Kiss" = 'sound/music/jukeboxes/party/a_winter_kiss.ogg',\
-	"Analogic Tale Bearer" = 'sound/music/jukeboxes/party/ac-atb.ogg',\
-	"Allt Jag Vill" = 'sound/music/jukeboxes/party/allt_jag_vill.ogg',\
-	"Invisible" = 'sound/music/jukeboxes/party/av_invis.ogg',\
-	"Kick the Beat" = 'sound/music/jukeboxes/party/av_ktb.ogg',\
-	"dAnCe nAtion" = 'sound/music/jukeboxes/party/dance_nation_remix.ogg',\
-	"Imagine" = 'sound/music/jukeboxes/party/imagine.ogg',\
-	"My Glamorous Life" = 'sound/music/jukeboxes/party/my_glamorous_life.ogg'\
+	"A Winter Kiss" = 'sound/blank.ogg'\
 )
 #define MUSIC_TAVCAT_SCUM list(\
-	"Shades of Futility" = 'sound/music/jukeboxes/scum/fb-sofutile.ogg',\
-	"Headspin" = 'sound/music/jukeboxes/scum/headspin.ogg',\
-	"Mr Doubt" = 'sound/music/jukeboxes/scum/mr_doubt.ogg',\
-	"Stagebox" = 'sound/music/jukeboxes/scum/stagebox.remix.ogg',\
-	"Camel Without Filter" = 'sound/music/jukeboxes/scum/pedro_-_camel_without_filter.ogg',\
-	"Roll Up (Dupe Edit)" = 'sound/music/jukeboxes/scum/roll_up_dupe_edit.ogg',\
-	"Cyberride" = 'sound/music/jukeboxes/scum/cyberrid.ogg'\
+	"Shades of Futility" = 'sound/blank.ogg'\
 )
 #define MUSIC_TAVCAT_DAMN list(\
-	"Basshead" = 'sound/music/jukeboxes/damn/pedro_-_basshead.ogg',\
-	"Bubbles Up" = 'sound/music/jukeboxes/damn/pedro_-_bubbles_up.ogg',\
-	"Life Sucks" = 'sound/music/jukeboxes/damn/pedro_-_life_sucks.ogg',\
-	"Silent Avantgarde" = 'sound/music/jukeboxes/damn/pedro_-_silent_avantgarde.ogg',\
-	"What is Funk" = 'sound/music/jukeboxes/damn/what_is_funk.ogg',\
-	"Enlightenment" = 'sound/music/jukeboxes/damn/enlightenment.ogg',\
-	"Blue Curacao" = 'sound/music/jukeboxes/damn/blue_curacao.ogg',\
-	"Breath of Life" = 'sound/music/jukeboxes/damn/breath_of_life.ogg'\
+	"Basshead" = 'sound/blank.ogg'\
 )
 #define MUSIC_TAVCAT_MISC list(\
-	"Generic" = 'sound/music/jukeboxes/_misc/_generic.ogg',\
-	"AndreiKabak" = 'sound/music/jukeboxes/_misc/Andrei_Kabak-Pathologic.ogg',\
-	"Twyrine" = 'sound/music/jukeboxes/_misc/Twyrine-Pathologic2.ogg',\
-	"waitingroom" = 'sound/music/jukeboxes/_misc/waitingroom.ogg'\
+	"Generic" = 'sound/blank.ogg'\
 )
 
 /datum/looping_sound/musloop
@@ -83,7 +47,7 @@
 	unlock_sound = 'sound/misc/beep.ogg'
 	lock_sound = 'sound/misc/beep.ogg'
 	var/datum/looping_sound/musloop/soundloop
-	var/list/init_curfile = list('sound/music/jukeboxes/_misc/_generic.ogg') // A list of songs that curfile is set to on init. MUST BE IN ONE OF THE MUSIC_TAVCAT_'s. MAPPERS MAY TOUCH THIS.
+	var/list/init_curfile = list('sound/blank.ogg') // A list of songs that curfile is set to on init. MUST BE IN ONE OF THE MUSIC_TAVCAT_'s. MAPPERS MAY TOUCH THIS.
 	var/curfile // The current track that is playing right now
 	var/playing = FALSE // If music is playing or not. playmusic() deals with this don't mess with it.
 	var/curvol = 50 // The current volume at which audio is played. MAPPERS MAY TOUCH THIS.
@@ -210,11 +174,7 @@
 	curvol = 30
 	playuponspawn = TRUE
 	init_curfile = list(\
-		'sound/music/jukeboxes/_misc/Andrei_Kabak-Pathologic.ogg',\
-		'sound/music/jukeboxes/_misc/Twyrine-Pathologic2.ogg',\
-		'sound/music/jukeboxes/chill/ac-lol.ogg',
-		'sound/music/jukeboxes/chill/ac-balthasar.ogg',\
-		'sound/music/jukeboxes/chill/vivalaluna-damla.ogg',\
+		'sound/blank.ogg',\
 	)
 
 /obj/structure/fake_machine/musicbox/tavern/Initialize()

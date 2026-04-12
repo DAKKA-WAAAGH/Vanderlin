@@ -43,7 +43,7 @@
 		/datum/skill/craft/traps = 3,
 	)
 
-	cmode_music = 'sound/music/cmode/nobility/CombatDungeoneer.ogg'
+	cmode_music = 'sound/blank.ogg'
 	voicepack_m = /datum/voicepack/male/warrior
 
 /datum/job/migrant/gaoler/after_spawn(mob/living/carbon/human/spawned, client/player_client)
@@ -101,7 +101,7 @@
 		/datum/skill/misc/riding = 1,
 	)
 
-	cmode_music = 'sound/music/cmode/towner/CombatTowner.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/mig_prisoner
 	name = "Convoy Prisoner"

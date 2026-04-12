@@ -20,7 +20,7 @@
 	give_bank_account = 30 //Way above average pay, paid by the Government - not by the clan members.
 	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	///advclass_cat_rolls = list(CTAG_BACHELOR = 20)	//Content for later.
-	cmode_music = 'sound/music/cmode/nobility/CombatKnight.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/job/kaizoku/bachelor/custzamurai/pre_equip(mob/living/carbon/human/H)
 	..()

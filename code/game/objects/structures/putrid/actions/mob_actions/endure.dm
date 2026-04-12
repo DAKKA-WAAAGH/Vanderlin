@@ -13,7 +13,7 @@
 		owner.balloon_alert(owner, "already enduring")
 		return FALSE
 	owner.balloon_alert(owner, "endure began")
-	playsound(owner, 'sound/alien/alien_roar1.ogg', 100, TRUE, 8, 0.9)
+	playsound(owner, 'sound/blank.ogg', 100, TRUE, 8, 0.9)
 	to_chat(owner, span_danger("We numb our ability to feel pain, allowing us to fight until the very last for the next [endure_duration/10] seconds."))
 	addtimer(CALLBACK(src, PROC_REF(endure_deactivate)), endure_duration)
 	owner.add_filter("ravager", 4, outline_filter(1, COLOR_RED_LIGHT))

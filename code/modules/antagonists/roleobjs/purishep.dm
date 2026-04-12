@@ -46,6 +46,6 @@
 	else
 		to_chat(world, "<span class='redtext'>The [name] member [owner.name] has FAILED!</span>")
 		if(owner?.current)
-			owner.current.playsound_local(get_turf(owner.current), 'sound/misc/hel.ogg', 100, FALSE, pressure_affected = FALSE)
+			owner.current.playsound_local(get_turf(owner.current), 'sound/blank.ogg', 100, FALSE, pressure_affected = FALSE)
 
 

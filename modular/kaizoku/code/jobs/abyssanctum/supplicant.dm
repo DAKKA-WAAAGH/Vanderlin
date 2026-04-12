@@ -20,7 +20,7 @@
 	outfit = /datum/outfit/kaizoku/supplicant
 	give_bank_account = TRUE
 	can_have_apprentices = FALSE
-	cmode_music = 'sound/music/cmode/towner/CombatTowner.ogg'
+	cmode_music = 'sound/blank.ogg'
 	//job_bitflag = BITFLAG_CHURCH
 	//exp_types_granted = list(EXP_TYPE_CHURCH, EXP_TYPE_CLERIC)
 

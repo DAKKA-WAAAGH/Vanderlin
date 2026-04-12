@@ -101,7 +101,7 @@ Reel teleports the attached atom to the grabbed turf.
 		if(!isloading)
 			user.visible_message(span_info("[user] begins cranking the [src]..."))
 			isloading = TRUE
-			playsound(user, 'sound/misc/grapple_crank.ogg', 100, FALSE, 3)
+			playsound(user, 'sound/blank.ogg', 100, FALSE, 3)
 			if(do_after(user, 70 - stat, user, timed_action_flags = (IGNORE_USER_LOC_CHANGE|IGNORE_TARGET_LOC_CHANGE|IGNORE_HELD_ITEM|IGNORE_USER_DIR_CHANGE)))
 				playsound(src, 'sound/foley/trap_arm.ogg', 100, FALSE , 5)
 				to_chat(user, span_info("It's loaded!"))
@@ -216,8 +216,8 @@ Reel teleports the attached atom to the grabbed turf.
 						grabber.buckle_mob(grabby, TRUE, TRUE, FALSE, 0, 0)
 					else				// fireman carry
 						grabber.buckle_mob(grabby, TRUE, TRUE, 90, 0, 0)
-			playsound(attached, 'sound/misc/grapple_reel.ogg', 100, FALSE)
-			playsound(grappled_turf, 'sound/misc/grapple_reel.ogg', 100, FALSE)
+			playsound(attached, 'sound/blank.ogg', 100, FALSE)
+			playsound(grappled_turf, 'sound/blank.ogg', 100, FALSE)
 			destroy_eligible_objects()
 			reset_tile(silent = TRUE)
 			reset_target()
@@ -307,7 +307,7 @@ Reel teleports the attached atom to the grabbed turf.
 		if(target_effect && attached)
 			attached.cut_overlay(target_effect)
 			qdel(target_effect)
-		playsound(A,'sound/misc/grapple_attach.ogg', 100, FALSE, 5)
+		playsound(A,'sound/blank.ogg', 100, FALSE, 5)
 		attached = A
 		target_effect = mutable_appearance(icon = 'icons/effects/effects.dmi', icon_state = "aimwarn", layer = 20)
 		attached.add_overlay(target_effect)
@@ -315,7 +315,7 @@ Reel teleports the attached atom to the grabbed turf.
 //Hooks onto a turf. Used with the "GRAB" intent.
 /obj/item/grapplinghook/proc/grapple_to(turf/T)
 	unload()
-	playsound(T, 'sound/misc/grapple_land.ogg', 100, FALSE, 5)
+	playsound(T, 'sound/blank.ogg', 100, FALSE, 5)
 	tile_effect = mutable_appearance(icon = 'icons/effects/effects.dmi', icon_state = "hooked_tile", layer = 18)
 	grappled_turf = T
 	grappled_turf.add_overlay(tile_effect)

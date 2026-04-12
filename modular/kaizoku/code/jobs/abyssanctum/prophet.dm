@@ -16,7 +16,7 @@
 	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	bypass_lastclass = TRUE
 	selection_color = "#c2a45d"
-	cmode_music = 'sound/music/cmode/church/CombatAstrata.ogg'
+	cmode_music = 'sound/blank.ogg'
 	allowed_patrons = list(/datum/patron/abyssanctum/curator, /datum/patron/abyssanctum/purifier)
 
 	allowed_races = RACES_CITIZEN_PLAYERS

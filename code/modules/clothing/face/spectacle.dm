@@ -147,7 +147,7 @@
 	desc = "It is said that the original version of this mask was used for obscure rituals in Grenzelhoft, and now it has been repurposed as a veil for the cunning hand of the Ordo Venatari. Others say it is a piece of heresy, a necessary evil, capable of keeping its user safe from vile magicks. You can taste copper whenever you draw breath."
 	icon_state = "confessormask"
 	max_integrity = 200
-	equip_sound = 'sound/items/confessormaskon.ogg'
+	equip_sound = 'sound/blank.ogg'
 	melting_material = /datum/material/steel
 	melt_amount = 75
 	var/worn = FALSE
@@ -167,7 +167,7 @@
 /obj/item/clothing/face/facemask/steel/confessor/dropped(mob/user)
 	. = ..()
 	if(worn)
-		playsound(user, 'sound/items/confessormaskoff.ogg', 80)
+		playsound(user, 'sound/blank.ogg', 80)
 		worn = FALSE
 
 

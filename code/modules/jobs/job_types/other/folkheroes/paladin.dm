@@ -45,14 +45,14 @@
 
 	switch(spawned.patron?.type)
 		if(/datum/patron/psydon, /datum/patron/psydon/extremist)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatInquisitor.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			spawned.adjust_skillrank(/datum/skill/combat/swords, 1, TRUE)
 			spawned.adjust_stat_modifier(STATMOD_JOB, STATKEY_CON, 1)
 			spawned.adjust_stat_modifier(STATMOD_JOB, STATKEY_PER, 1)
 			spawned.grant_language(/datum/language/oldpsydonic)
 			ADD_TRAIT(spawned, TRAIT_PSYDONIAN_GRIT, TRAIT_GENERIC)
 		if(/datum/patron/divine/astrata)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatAstrata.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 		if(/datum/patron/divine/noc)
 			spawned.cmode_music = 'sound/music/cmode/church/CombatNoc.ogg'
 		if(/datum/patron/divine/dendor)
@@ -60,7 +60,7 @@
 		if(/datum/patron/divine/abyssor)
 			spawned.cmode_music = 'sound/music/cmode/church/CombatAbyssor.ogg'
 		if(/datum/patron/divine/necra)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatGravekeeper.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			ADD_TRAIT(spawned, TRAIT_GRAVEROBBER, TRAIT_GENERIC)
 		if(/datum/patron/divine/ravox)
 			spawned.cmode_music = 'sound/music/cmode/church/CombatRavox.ogg'
@@ -75,7 +75,7 @@
 			spawned.virginity = FALSE
 			ADD_TRAIT(spawned, TRAIT_BEAUTIFUL, TRAIT_GENERIC)
 		else
-			spawned.cmode_music = 'sound/music/cmode/church/CombatInquisitor.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 
 	if(!spawned.has_language(/datum/language/celestial) && (spawned.patron?.type in ALL_TEMPLE_PATRONS) && spawned.patron?.type != /datum/patron/psydon)
 		spawned.grant_language(/datum/language/celestial)

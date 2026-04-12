@@ -15,7 +15,7 @@
 	outfit = /datum/outfit/job/sk/adventurer/warrior
 	category_tags = list(CTAG_ADVENTURER)
 	min_pq = -10
-	cmode_music = 'sound/music/cmode/adventurer/CombatWarrior.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 
 /datum/outfit/job/sk/adventurer/warrior/pre_equip(mob/living/carbon/human/H)

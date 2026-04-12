@@ -498,13 +498,13 @@ GLOBAL_LIST_EMPTY(redstone_objs)
 	changing_state = TRUE
 	openn = !openn
 	if(openn)
-		playsound(src, 'sound/misc/kybraxorop.ogg', 100, FALSE)
+		playsound(src, 'sound/blank.ogg', 100, FALSE)
 		flick("kybraxoropening",src)
 		sleep(40)
 		icon_state = "kybraxor0"
 		changing_state = FALSE
 	else
-		playsound(src, 'sound/misc/kybraxor.ogg', 100, FALSE)
+		playsound(src, 'sound/blank.ogg', 100, FALSE)
 		flick("kybraxorclosing",src)
 		sleep(40)
 		icon_state = "kybraxor1"

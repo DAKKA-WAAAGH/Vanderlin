@@ -22,7 +22,7 @@
 	outfit = /datum/outfit/prisoner
 	give_bank_account = 173
 
-	cmode_music = 'sound/music/cmode/towner/CombatPrisoner.ogg'
+	cmode_music = 'sound/blank.ogg'
 	can_have_apprentices = FALSE
 	antag_role = /datum/antagonist/prisoner
 

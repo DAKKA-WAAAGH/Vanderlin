@@ -40,7 +40,7 @@
 	switch(spawned.patron?.type)
 		if(/datum/patron/divine/astrata)
 			spawned.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatAstrata.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 		if(/datum/patron/divine/noc)
 			spawned.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
 			ADD_TRAIT(spawned, TRAIT_DUALWIELDER, TRAIT_GENERIC)
@@ -50,7 +50,7 @@
 			spawned.cmode_music = 'sound/music/cmode/garrison/CombatForestGarrison.ogg'
 		if(/datum/patron/divine/necra)
 			spawned.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatGravekeeper.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			ADD_TRAIT(spawned, TRAIT_GRAVEROBBER, TRAIT_GENERIC)
 		if(/datum/patron/divine/pestra)
 			spawned.adjust_skillrank(/datum/skill/combat/knives, 4, TRUE)
@@ -78,17 +78,17 @@
 		if(/datum/patron/inhumen/graggar)
 			spawned.adjust_skillrank(/datum/skill/combat/axesmaces, 4, TRUE)
 			ADD_TRAIT(spawned, TRAIT_STRONGBITE, TRAIT_GENERIC)
-			spawned.cmode_music = 'sound/music/cmode/antag/combat_werewolf.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			ADD_TRAIT(spawned, TRAIT_STRONGBITE, TRAIT_GENERIC)
 
 		/*  //Stonekeep Edit: Kaizoku
 		if(/datum/patron/inhumen/graggar_zizo)
 			spawned.adjust_skillrank(/datum/skill/combat/axesmaces, 4, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/antag/combat_werewolf.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 		*/
 		if(/datum/patron/inhumen/zizo)
 			spawned.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/antag/combat_cult.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			spawned.grant_language(/datum/language/undead)
 		/*  //Stonekeep Edit: Kaizoku
 		if(/datum/patron/inhumen/matthios)
@@ -102,11 +102,11 @@
 			spawned.cmode_music = 'sound/music/cmode/antag/CombatBaotha.ogg'
 		if(/datum/patron/psydon,  /datum/patron/psydon/extremist)
 			spawned.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatInquisitor.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 			spawned.grant_language(/datum/language/oldpsydonic)
 		else
 			spawned.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatInquisitor.ogg'
+			spawned.cmode_music = 'sound/blank.ogg'
 
 	if(!spawned.has_language(/datum/language/celestial) && (spawned.patron?.type in ALL_TEMPLE_PATRONS))
 		spawned.grant_language(/datum/language/celestial)

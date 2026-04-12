@@ -72,7 +72,7 @@
 	var/obj/rotated_obj = parent
 	rotated_obj.setDir(turn(rotated_obj.dir, degrees))
 	if(rotation_flags & ROTATION_REQUIRE_WRENCH)
-		playsound(rotated_obj, 'sound/misc/ratchet.ogg', 25, TRUE)
+		playsound(rotated_obj, 'sound/blank.ogg', 25, TRUE)
 
 	AfterRotation?.InvokeAsync(user, degrees)
 

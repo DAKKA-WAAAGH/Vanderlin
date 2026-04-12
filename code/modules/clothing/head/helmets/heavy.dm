@@ -298,10 +298,6 @@
 	item_state = "xylixhelm"
 	item_weight = 6 * IRON_MULTIPLIER
 
-/obj/item/clothing/head/helmet/heavy/necked/xylix/Initialize()
-	. = ..()
-	AddComponent(/datum/component/item_equipped_movement_rustle, custom_sounds = list(SFX_JINGLE_BELLS))
-
 //................ Abyssor Helmet ............. //
 /obj/item/clothing/head/helmet/heavy/necked/abyssor
 	name = "abyssor helmet"

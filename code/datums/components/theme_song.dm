@@ -3,7 +3,7 @@
 	var/datum/looping_sound/theme_song/combat_music_loop
 	var/custom_music_track = null
 	var/last_music_change = 0
-	var/curthemefile = 'sound/music/cmode/antag/combat_maniac.ogg'
+	var/curthemefile = 'sound/blank.ogg'
 
 /datum/component/theme_music/Initialize()
 	if(!ismob(parent))

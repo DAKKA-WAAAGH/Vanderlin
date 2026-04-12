@@ -92,7 +92,7 @@ GLOBAL_LIST_EMPTY(active_penances) // List of all active penances
 		penitent.cleric.update_progression(progression_reward)
 
 	penitent.add_stress(/datum/stress_event/penance_completed)
-	penitent.playsound_local(penitent, 'sound/misc/notice (2).ogg', 100, FALSE)
+	penitent.playsound_local(penitent, 'sound/blank.ogg', 100, FALSE)
 
 	if(signal_type)
 		UnregisterSignal(penitent, signal_type)

@@ -698,7 +698,7 @@
 						L.adjustFireLoss(rand(10, 20)) //Enough damage to ensure the player will move away.
 						L.adjust_fire_stacks(3) //New addition for bugfix.
 						L.IgniteMob()
-	playsound(src.loc, 'modular/kaizoku/sound/spells/firelance.ogg', 100)
+	playsound(src.loc, 'sound/spells/firelance.ogg', 100)
 	cocked = FALSE
 	fuel_source = FALSE // Consume  fuel after use
 	update_icon()
@@ -727,7 +727,7 @@
 			for(var/zone in limb_list)
 				limb = user.get_bodypart(zone)
 				if(limb)
-					playsound(src,'sound/misc/guillotine.ogg', rand(30,60), TRUE)
+					playsound(src,'sound/blank.ogg', rand(30,60), TRUE)
 					to_chat(user, "<span class='danger'>By pressing the arm against the empty firelance, [user]'s [limb] was snatched off!</span>")
 					limb.dismember()
 					qdel(limb)
@@ -1512,7 +1512,7 @@
 			return
 
 		to_chat(src.loc, "<span class='danger'>The fuse loudly sparks and the handcannon roars to life!</span>")
-		playsound(src.loc, 'modular/kaizoku/sound/hwanchafire.ogg', 100)
+		playsound(src.loc, 'sound/warfaresounds/hwanchafire.ogg', 100)
 
 		for(var/mob/living/carbon/H in hearers(5, user))
 			shake_camera(H, 4, 3)

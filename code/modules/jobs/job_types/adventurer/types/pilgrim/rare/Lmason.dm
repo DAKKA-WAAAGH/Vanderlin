@@ -8,7 +8,7 @@
 	total_positions = 1
 	roll_chance = 0
 	apprentice_name = "Mason Apprentice"
-	cmode_music = 'sound/music/cmode/towner/CombatTowner2.ogg'
+	cmode_music = 'sound/blank.ogg'
 	is_recognized = TRUE
 
 	jobstats = list(

@@ -46,4 +46,4 @@
 		H.cmode_music = 'sound/music/cmode/combat_guard.ogg'
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	if(H.dna.species.id == "dwarf")
-		H.cmode_music = 'sound/music/cmode/combat_dwarf.ogg'
+		H.cmode_music = 'sound/blank.ogg'

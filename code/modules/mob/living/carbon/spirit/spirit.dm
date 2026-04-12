@@ -93,7 +93,7 @@
 		to_chat(src, span_danger("Your suffering has not gone unnoticed, [patron] has [paid ? "paid for your toll" : "rewarded you with your toll"]."))
 	else
 		to_chat(src, span_danger("Your suffering has not gone unnoticed, your patron has [paid ? "paid for your toll" : "rewarded you with your toll"]."))
-	playsound(src, 'sound/combat/caught.ogg', 80, TRUE, -1)
+	playsound(src, 'sound/blank.ogg', 80, TRUE, -1)
 
 /mob/living/carbon/spirit/updatehealth(amount)
 	. = ..()
@@ -151,7 +151,7 @@
 		return
 	beingmoved = TRUE
 	to_chat(src, "<B><font size=3 color=red>Your soul is dragged to an infathomably cruel place where it endures severe torment. You've all but given up hope when you feel a presence drag you back to that Forest.</font></B>")
-	playsound(src, 'sound/combat/caught.ogg', 80, TRUE, -1)
+	playsound(src, 'sound/blank.ogg', 80, TRUE, -1)
 	for(var/obj/effect/landmark/underworld/A in GLOB.landmarks_list)
 		forceMove(A.loc)
 	beingmoved = FALSE*/

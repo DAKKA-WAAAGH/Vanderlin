@@ -5,7 +5,7 @@
 	outfit = /datum/outfit/folkhero/puritan
 	total_positions = 2
 	category_tags = list(CTAG_FOLKHEROES)
-	cmode_music = 'sound/music/cmode/church/CombatInquisitor.ogg'
+	cmode_music = 'sound/blank.ogg'
 	is_recognized = TRUE
 
 	skills = list(

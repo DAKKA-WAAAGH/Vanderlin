@@ -4,7 +4,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_PLAYER_ALL
 	outfit = /datum/outfit/wretch/necromancer
-	cmode_music = 'sound/music/cmode/antag/CombatLich.ogg'
+	cmode_music = 'sound/blank.ogg'
 	total_positions = 1
 	exp_types_granted = list(EXP_TYPE_COMBAT, EXP_TYPE_MAGICK)
 	allowed_patrons = list(/datum/patron/inhumen/zizo)
@@ -48,7 +48,7 @@
 /datum/job/advclass/wretch/necromancer/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
 	if(prob(1))
-		spawned.cmode_music = 'sound/music/cmode/antag/combat_evilwizard.ogg'
+		spawned.cmode_music = 'sound/blank.ogg'
 
 	spawned.mana_pool?.intrinsic_recharge_sources &= ~MANA_ALL_LEYLINES
 	spawned.mana_pool?.set_intrinsic_recharge(MANA_SOULS)

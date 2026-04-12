@@ -9,14 +9,12 @@ GLOBAL_LIST_INIT(ambience_forest_day, list('sound/ambience/forestday.ogg'))
 GLOBAL_LIST_INIT(ambience_forest_night, list('sound/ambience/forestnight.ogg'))
 
 GLOBAL_LIST_INIT(ambience_bog_day, list(
-	'sound/ambience/bogday (1).ogg',
-	'sound/ambience/bogday (2).ogg',
-	'sound/ambience/bogday (3).ogg',
+	'sound/blank.ogg',
 ))
-GLOBAL_LIST_INIT(ambience_bog_night, list('sound/ambience/bognight.ogg'))
+GLOBAL_LIST_INIT(ambience_bog_night, list('sound/blank.ogg'))
 
-GLOBAL_LIST_INIT(ambience_jungle_day, list('sound/ambience/jungleday.ogg'))
-GLOBAL_LIST_INIT(ambience_jungle_night, list('sound/ambience/junglenight.ogg'))
+GLOBAL_LIST_INIT(ambience_jungle_day, list('sound/blank.ogg'))
+GLOBAL_LIST_INIT(ambience_jungle_night, list('sound/blank.ogg'))
 
 GLOBAL_LIST_INIT(ambience_river_day, list(
 	'sound/ambience/riverday (1).ogg',
@@ -26,7 +24,7 @@ GLOBAL_LIST_INIT(ambience_river_night, list(
 ))
 
 GLOBAL_LIST_INIT(ambience_indoors, list('sound/ambience/indoorgen.ogg'))
-GLOBAL_LIST_INIT(ambience_basement, list('sound/ambience/basement.ogg'))
+GLOBAL_LIST_INIT(ambience_basement, list('sound/blank.ogg'))
 
 GLOBAL_LIST_INIT(ambience_mountain, list(
 	'sound/ambience/MOUNTAIN (1).ogg',
@@ -134,21 +132,21 @@ GLOBAL_LIST_INIT(ambience_spooky_frog, list(
 ))
 
 GLOBAL_LIST_INIT(ambience_spooky_birds, list(
-	'sound/ambience/noises/birds (1).ogg',
-	'sound/ambience/noises/birds (1).ogg',
-	'sound/ambience/noises/birds (3).ogg',
-	'sound/ambience/noises/birds (4).ogg',
+	'sound/ambience/noises/crow (1).ogg',
+	'sound/ambience/noises/crow (1).ogg',
+	'sound/ambience/noises/crow (3).ogg',
+	'sound/ambience/noises/crow (4).ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_outside_birds, list(
-	'sound/ambience/noises/birds (6).ogg',
-	'sound/ambience/noises/birds (7).ogg',
+	'sound/ambience/noises/heron (1).ogg',
+	'sound/ambience/noises/heron (2).ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_waterside_birds, list(
-	'sound/ambience/noises/birds (9).ogg',
-	'sound/ambience/noises/birds (10).ogg',
-	'sound/ambience/noises/birds (8).ogg',
+	'sound/ambience/noises/warbler (1).ogg',
+	'sound/ambience/noises/warbler (2).ogg',
+	'sound/ambience/noises/mallard (8).ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_spooky_dogs, list(

@@ -92,7 +92,7 @@
 	stored_experience = owner.current.skills?.skill_experience.Copy()
 	owner.current.skills?.known_skills = list()
 	owner.current.skills?.skill_experience = list()
-	zombie.cmode_music ='sound/music/cmode/combat_weird.ogg'
+	zombie.cmode_music ='sound/blank.ogg'
 	zombie.bloodpool = 0 // Deadites have no vitae to drain from
 	zombie.candodge = FALSE
 	zombie.canparry = FALSE
@@ -210,7 +210,7 @@
 		if(zombie_part.can_be_disabled)
 			zombie_part.update_disabled()
 	zombie.update_body()
-	zombie.cmode_music = 'sound/music/cmode/combat_weird.ogg'
+	zombie.cmode_music = 'sound/blank.ogg'
 	zombie.set_patron(/datum/patron/inhumen/zizo)
 
 	for(var/datum/status_effect/effect in zombie.status_effects) //necessary to prevent exploits

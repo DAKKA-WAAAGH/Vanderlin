@@ -94,7 +94,7 @@
 		<div>
 			<h2>Announcement Sound</h2>
 			<select name="sound">
-				<option value="['sound/misc/alert.ogg']">Decree</option>
+				<option value="['sound/blank.ogg']">Decree</option>
 				<option value="['sound/misc/bell.ogg']" selected>Bell</option>
 				<option value="['sound/misc/lawdeclaration.ogg']">Law Declaration</option>
 				<option value="['sound/misc/evilevent.ogg']">Bad Omen</option>

@@ -14,7 +14,7 @@
 	allowed_races = RACES_PLAYER_ALL //change this
 	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	outfit = /datum/outfit/kaizoku/tosher
-	cmode_music = 'sound/music/cmode/towner/CombatTowner2.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/outfit/kaizoku/tosher/pre_equip(mob/living/carbon/human/H)
 	..()

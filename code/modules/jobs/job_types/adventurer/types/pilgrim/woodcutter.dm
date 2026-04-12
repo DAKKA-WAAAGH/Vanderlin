@@ -3,7 +3,7 @@
 	allowed_races = RACES_PLAYER_NONEXOTIC
 	outfit = /datum/outfit/pilgrim/woodcutter
 	apprentice_name = "Woodcutter"
-	cmode_music = 'sound/music/cmode/towner/CombatBeggar.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	jobstats = list(
 		STATKEY_STR = 1,

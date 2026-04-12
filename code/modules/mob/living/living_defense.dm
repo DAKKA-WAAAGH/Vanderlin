@@ -378,7 +378,7 @@
 		"<span class='danger'>I feel a powerful shock coursing through my body!</span>", \
 		"<span class='hear'>I hear a heavy electrical crack.</span>" \
 	)
-	playsound(src, pick('sound/misc/elec (1).ogg', 'sound/misc/elec (2).ogg', 'sound/misc/elec (3).ogg'), 100, FALSE)
+	playsound(src, pick('sound/blank.ogg'), 100, FALSE)
 	return shock_damage
 
 //called when the mob receives a bright flash

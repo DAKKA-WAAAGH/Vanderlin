@@ -93,7 +93,7 @@ GLOBAL_VAR_INIT(maniac_highlander, 0) // THERE CAN ONLY BE ONE!
 			dreamer.set_patron(/datum/patron/inhumen/graggar) //Stonekeep Edit: Kaizoku
 			//dreamer.set_patron(/datum/patron/inhumen/graggar_zizo)
 			old_cm = dreamer.cmode_music
-			dreamer.cmode_music = 'sound/music/cmode/antag/combat_maniac.ogg'
+			dreamer.cmode_music = 'sound/blank.ogg'
 			dreamer.adjust_skillrank(/datum/skill/combat/knives, 6, TRUE)
 			dreamer.adjust_skillrank(/datum/skill/combat/wrestling, 5, TRUE)
 			dreamer.adjust_skillrank(/datum/skill/combat/unarmed, 5, TRUE)
@@ -123,7 +123,7 @@ GLOBAL_VAR_INIT(maniac_highlander, 0) // THERE CAN ONLY BE ONE!
 	owner.learned_recipes |= recipe_progression[1]
 	forge_villain_objectives()
 	if(length(objectives))
-		SEND_SOUND(owner.current, 'sound/villain/dreamer_warning.ogg')
+		SEND_SOUND(owner.current, 'sound/blank.ogg')
 		to_chat(owner.current, span_danger("[antag_memory]"))
 		owner.announce_objectives()
 	START_PROCESSING(SSobj, src)
@@ -184,7 +184,7 @@ GLOBAL_VAR_INIT(maniac_highlander, 0) // THERE CAN ONLY BE ONE!
 	objectives += wakeup
 
 /datum/antagonist/maniac/proc/agony(mob/living/carbon/dreamer)
-	var/sound/im_sick = sound('sound/villain/imsick.ogg', TRUE, FALSE, CHANNEL_IMSICK, 100)
+	var/sound/im_sick = sound('sound/blank.ogg', TRUE, FALSE, CHANNEL_IMSICK, 100)
 	SEND_SOUND(dreamer, im_sick)
 	dreamer.overlay_fullscreen("dream", /atom/movable/screen/fullscreen/dreaming)
 	dreamer.overlay_fullscreen("wakeup", /atom/movable/screen/fullscreen/dreaming/waking_up)
@@ -246,7 +246,7 @@ GLOBAL_VAR_INIT(maniac_highlander, 0) // THERE CAN ONLY BE ONE!
 	// 	if(!connected_player.client)
 	// 		continue
 	// 	SEND_SOUND(connected_player, sound(null))
-	// 	SEND_SOUND(connected_player, 'sound/villain/dreamer_win.ogg')
+	// 	SEND_SOUND(connected_player, 'sound/blank.ogg')
 
 	/* //Stonekeep Edit. No imersion breakings slop, thank you very much.
 	var/mob/living/carbon/human/trey_liam = spawn_trey_liam()
@@ -266,7 +266,7 @@ GLOBAL_VAR_INIT(maniac_highlander, 0) // THERE CAN ONLY BE ONE!
 		if(brain)
 			qdel(brain)
 		cull_competitors(trey_liam)
-		SEND_SOUND(trey_liam, 'sound/villain/dreamer_win.ogg')
+		SEND_SOUND(trey_liam, 'sound/blank.ogg')
 		trey_liam.SetSleeping(25 SECONDS)
 		trey_liam.add_stress(/datum/stress_event/maniac_woke_up)
 		sleep(1.5 SECONDS)

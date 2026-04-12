@@ -4,7 +4,7 @@
 	tutorial = "You are a former thief who has been given a chance to redeem yourself by the Inquisitor. You serve him and Psydon with your stealth and cunning."
 	outfit = /datum/outfit/adept/rthief
 	category_tags = list(CTAG_ADEPT)
-	cmode_music = 'sound/music/cmode/adventurer/CombatRogue.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 	skills = list(
 		/datum/skill/combat/axesmaces = SKILL_LEVEL_JOURNEYMAN,

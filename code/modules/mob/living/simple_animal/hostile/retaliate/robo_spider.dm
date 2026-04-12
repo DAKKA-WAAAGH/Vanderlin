@@ -13,7 +13,7 @@
 	perfect_butcher_results = list(/obj/item/gear/metal/bronze = 2, /obj/item/natural/silk = 3)
 
 	base_intents = list(/datum/intent/simple/bite)
-	attack_sound = list('sound/misc/elec (1).ogg')
+	attack_sound = list('sound/blank.ogg')
 
 	head_butcher = null
 

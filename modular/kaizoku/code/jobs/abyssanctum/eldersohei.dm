@@ -19,7 +19,7 @@
 	outfit = /datum/outfit/job/kaizoku/mastersohei
 	// min_pq = 0 ; Stonekeep Todo - Vanderlin removed PQ, reimplement it later.
 	selection_color = "#c2a45d"
-	cmode_music = 'modular/kaizoku/sound/combat/combat_emperor.ogg'
+	cmode_music = 'sound/blank.ogg'
 	// spells = list(
 	//	/obj/effect/proc_holder/spell/self/convertrole/sohei,
 	/// )

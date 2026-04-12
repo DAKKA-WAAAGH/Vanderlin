@@ -28,7 +28,7 @@
 	outfit = /datum/outfit/job/kaizoku/quartermaster
 	give_bank_account = 100
 	selection_color = "#2a348b"
-	cmode_music = 'modular/kaizoku/sound/combat/combat_searaider.ogg' // Remove this SHET. Give it PIRATE music.
+	cmode_music = 'sound/blank.ogg' // Remove this SHET. Give it PIRATE music.
 
 /datum/outfit/job/kaizoku/quartermaster/pre_equip(mob/living/carbon/human/H)
 	..()

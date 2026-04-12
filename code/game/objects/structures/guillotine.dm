@@ -127,7 +127,7 @@
 		if (QDELETED(head))
 			return
 
-		playsound(src, 'sound/misc/guillotine.ogg', 100, TRUE)
+		playsound(src, 'sound/blank.ogg', 100, TRUE)
 
 		if(blade_sharpness >= GUILLOTINE_DECAP_MIN_SHARP || head.brute_dam >= 100)
 			if(head.dismemberable)

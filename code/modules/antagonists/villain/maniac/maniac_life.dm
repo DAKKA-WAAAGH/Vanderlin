@@ -20,10 +20,7 @@
 	//Random laughter
 	else if(prob(2))
 		var/static/list/funnies = list(
-			'sound/villain/comic1.ogg',
-			'sound/villain/comic2.ogg',
-			'sound/villain/comic3.ogg',
-			'sound/villain/comic4.ogg',
+			'sound/blank.ogg'
 		)
 		target.playsound_local(target, pick(funnies), vol = 100, vary = FALSE)
 
@@ -60,17 +57,7 @@
 	if(!length(objects))
 		return
 	var/static/list/speech_sounds = list(
-		'sound/villain/female_talk1.ogg',
-		'sound/villain/female_talk2.ogg',
-		'sound/villain/female_talk3.ogg',
-		'sound/villain/female_talk4.ogg',
-		'sound/villain/female_talk5.ogg',
-		'sound/villain/male_talk1.ogg',
-		'sound/villain/male_talk2.ogg',
-		'sound/villain/male_talk3.ogg',
-		'sound/villain/male_talk4.ogg',
-		'sound/villain/male_talk5.ogg',
-		'sound/villain/male_talk6.ogg',
+		'sound/blank.ogg'
 	)
 	var/obj/speaker = pickweight(objects)
 	var/speech
@@ -108,13 +95,6 @@
 	sleep(5)
 	if(!target?.client)
 		return
-	var/static/list/spookies = pick(
-		'sound/villain/hall_attack1.ogg',
-		'sound/villain/hall_attack2.ogg',
-		'sound/villain/hall_attack3.ogg',
-		'sound/villain/hall_attack4.ogg',
-	)
-	target.playsound_local(target, pick(spookies), 100)
 	var/chase_tiles = 7
 	var/chase_wait = rand(4,6)
 	var/caught_dreamer = FALSE
@@ -206,7 +186,7 @@
 	to_chat(target, "<font color='red' size='4'><b>-- Administrator private message --</b></font>")
 	to_chat(target, span_adminsay("Admin PM from-<b><span style='color: #0000EE; text-decoration: underline;'>[fakemin]</span></b>: [message]"))
 	to_chat(target, span_adminsay("<i>Click on the administrator's name to [pick("DIE", "CRY", "RISE", "WAKE UP")].</i>"))
-	SEND_SOUND(target, sound('sound/adminhelp.ogg'))
+	SEND_SOUND(target, sound('sound/blank.ogg'))
 
 /proc/handle_maniac_admin_ban_hallucination(mob/living/target)
 	var/datum/admins/badmin = GLOB.admin_datums[pick(GLOB.admin_datums)]

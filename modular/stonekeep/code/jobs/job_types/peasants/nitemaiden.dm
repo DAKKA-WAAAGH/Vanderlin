@@ -21,7 +21,7 @@ It´s pretty good. Also extra good mood boost for sex, but still a bit barebones
 	give_bank_account = 25
 	min_pq = -25
 
-	cmode_music = 'modular/kaizoku/sound/combat/combat_stormwarrior.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 
 //Universal stuff for all nitemaidens

@@ -24,7 +24,7 @@
 	in the depths of the Weeping God's pressuring tears, avoiding the connection to Zizo as many fleeting sorcerers do."
 	outfit = /datum/outfit/job/kaizoku/stormcaller
 	give_bank_account = 120
-	cmode_music = 'sound/music/cmode/nobility/CombatCourtMagician.ogg'
+	cmode_music = 'sound/blank.ogg'
 	magic_user = TRUE
 
 	spells = list(

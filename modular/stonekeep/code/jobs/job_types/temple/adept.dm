@@ -40,7 +40,7 @@
 	outfit = /datum/outfit/job/stonekeep/adept/bzealot
 
 	category_tags = list(CTAG_ADEPT)
-	cmode_music = 'sound/music/cmode/church/CombatInquisitor.ogg'
+	cmode_music = 'sound/blank.ogg'
 	maximum_possible_slots = 2
 
 /datum/outfit/job/stonekeep/adept/bzealot/pre_equip(mob/living/carbon/human/H)
@@ -81,7 +81,7 @@
 	outfit = /datum/outfit/job/stonekeep/adept/rthief
 
 	category_tags = list(CTAG_ADEPT)
-	cmode_music = 'sound/music/cmode/adventurer/CombatRogue.ogg'
+	cmode_music = 'sound/blank.ogg'
 	maximum_possible_slots = 2
 
 /datum/outfit/job/stonekeep/adept/rthief/pre_equip(mob/living/carbon/human/H)

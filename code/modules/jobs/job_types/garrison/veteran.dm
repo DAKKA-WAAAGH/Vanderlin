@@ -90,7 +90,7 @@
 		TRAIT_STEELHEARTED
 	)
 
-	cmode_music = 'sound/music/cmode/adventurer/CombatWarrior.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/job/advclass/veteran/battlemaster/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
@@ -226,7 +226,7 @@
 		TRAIT_STEELHEARTED
 	)
 
-	cmode_music = 'sound/music/cmode/nobility/CombatDungeoneer.ogg'
+	cmode_music = 'sound/blank.ogg'
 
 /datum/job/advclass/veteran/calvaryman/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
