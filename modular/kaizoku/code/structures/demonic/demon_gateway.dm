@@ -25,9 +25,9 @@
 
 /obj/structure/demon/gateway/Initialize()
 	. = ..()
-	if(!DEMON_HIVE)
-		DEMON_HIVE = new
-	DEMON_HIVE.gateway = src
+	if(!GLOB.DEMON_HIVE)
+		GLOB.DEMON_HIVE = new
+	GLOB.DEMON_HIVE.gateway = src
 	for(var/mob/living/carbon/human/TSeek in world)
 		if(TSeek.job == "Tideseeker")
 			to_chat(TSeek, "<span class='cult'><font size=5>I LIVE AGAIN, LITTLE TIDER</font></span>")
@@ -44,15 +44,15 @@
 	structure_slots += new /datum/structure_slot("tentacle", src)
 	structure_slots += new /datum/structure_slot("tentacle", src)
 
-	if(!DEMON_HIVE.is_active)
-		DEMON_HIVE.start(get_turf(src))
+	if(!GLOB.DEMON_HIVE.is_active)
+		GLOB.DEMON_HIVE.start(get_turf(src))
 	corruption_spread_timer = world.time
 	next_structure_spawn = world.time + 30 SECONDS
 	spread_corruption()
 	return .
 
 /obj/structure/demon/gateway/proc/spawn_next_structure()
-	if(QDELETED(src) || !DEMON_HIVE || !DEMON_HIVE.is_active)
+	if(QDELETED(src) || !GLOB.DEMON_HIVE || !GLOB.DEMON_HIVE.is_active)
 		return
 
 	var/datum/structure_slot/available_slot = null
@@ -113,7 +113,7 @@
 	next_structure_spawn = world.time + 45 SECONDS
 
 /obj/structure/demon/gateway/proc/spread_corruption()
-	if(QDELETED(src) || !DEMON_HIVE || !DEMON_HIVE.is_active)
+	if(QDELETED(src) || !GLOB.DEMON_HIVE || !GLOB.DEMON_HIVE.is_active)
 		return
 
 	var/list/cands = get_organized_spread_candidates()
@@ -126,11 +126,11 @@
 	if(world.time >= next_structure_spawn)
 		spawn_next_structure()
 
-	var/next = DEMON_HIVE ? DEMON_HIVE.next_spread_delay(6) : 6
+	var/next = GLOB.DEMON_HIVE ? GLOB.DEMON_HIVE.next_spread_delay(6) : 6
 	call_later(CALLBACK(src, /obj/structure/demon/gateway/proc/spread_corruption), next)
 
 /obj/structure/demon/gateway/proc/try_seed_core_edge()
-	if(DEMON_HIVE && DEMON_HIVE.cores && DEMON_HIVE.cores.len >= DEMON_HIVE_MAX_CORES)
+	if(GLOB.DEMON_HIVE && GLOB.DEMON_HIVE.cores && GLOB.DEMON_HIVE.cores.len >= DEMON_HIVE_MAX_CORES)
 		return
 	if(world.time < last_core_seed + DEMON_CORE_SEED_COOLDOWN)
 		return
@@ -163,7 +163,7 @@
 			continue
 
 		var/too_close_to_core = FALSE
-		for(var/obj/structure/demon/expansion/existing_core in DEMON_HIVE.cores)
+		for(var/obj/structure/demon/expansion/existing_core in GLOB.DEMON_HIVE.cores)
 			if(get_dist(existing_core, Cov2) < MIN_CORE_DISTANCE)
 				too_close_to_core = TRUE
 				break

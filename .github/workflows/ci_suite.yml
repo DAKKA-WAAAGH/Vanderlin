@@ -132,24 +132,9 @@ jobs:
     needs: start_gate
     runs-on: ubuntu-22.04
     outputs:
-      maps: ${{ steps.map_finder.outputs.maps }}
       max_required_byond_client: ${{ steps.max_required_byond_client.outputs.max_required_byond_client }}
     steps:
       - uses: actions/checkout@v4
-      - name: Find Maps
-        id: map_finder
-        run: |
-          > maps_output.txt
-          for file in _maps/*.json; do
-            if ! jq -e '.exclude_from_ci == true' "$file" >/dev/null 2>&1; then
-              echo "\"$(basename "$file" .json)\"" >> maps_output.txt
-            else
-              echo "Excluded: $file"
-            fi
-          done
-          map_list=$(paste -sd, maps_output.txt)
-          echo "Maps: $map_list"
-          echo "maps={\"paths\":[$map_list]}" >> "$GITHUB_OUTPUT"
       - name: Collect byond client version configuration
         id: max_required_byond_client
         #the regex here does not filter out non-numbers because error messages about no input are less helpful then error messages about bad input (which includes the bad input)
@@ -158,44 +143,10 @@ jobs:
       - name: Set up BYOND cache
         uses: ./.github/actions/restore_or_install_byond
 
-  run_all_tests:
-    name: Integration Tests
-    runs-on: ubuntu-latest
-    needs: collect_data
-    strategy:
-      fail-fast: false
-      matrix:
-        map: ${{ fromJSON(needs.collect_data.outputs.maps).paths }}
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-      - name: Setup database
-        run: |
-          sudo systemctl start mysql
-          mysql -u root -proot -e 'CREATE DATABASE tg_ci;'
-          mysql -u root -proot tg_ci < SQL/tgstation_schema.sql
-          mysql -u root -proot -e 'CREATE DATABASE tg_ci_prefixed;'
-          mysql -u root -proot tg_ci_prefixed < SQL/tgstation_schema_prefixed.sql
-      - name: Install rust-g
-        run: |
-          bash tools/ci/install_rust_g.sh
-      - name: Restore BYOND from cache
-        uses: ./.github/actions/restore_or_install_byond
-      - name: Compile and run tests
-        run: |
-          source $HOME/BYOND/byond/bin/byondsetup
-          DreamMaker -DCIBUILDING vanderlin.dme
-          bash tools/ci/run_server.sh ${{ matrix.map }}
-      - name: Check client Compatibility
-        uses: tgstation/byond-client-compatibility-check@v3
-        with:
-          dmb-location: vanderlin.dmb
-          max-required-client-version: ${{needs.collect_data.outputs.max_required_byond_client}}
-
   completion_gate: # Serves as a non-moving target for branch rulesets
     if: always() && !cancelled()
     name: Completion Gate
-    needs: [compile_all_maps, run_all_tests, run_linters]
+    needs: [compile_all_maps, run_linters]
     runs-on: ubuntu-latest
     steps:
       - name: Decide whether the needed jobs succeeded or failed

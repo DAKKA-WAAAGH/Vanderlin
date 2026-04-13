@@ -170,7 +170,7 @@
 		for(var/obj/structure/demon/cocoon/Cocdie in cocoons)
 			if(!QDELETED(Cocdie))
 				qdel(Cocdie)
-	DEMON_HIVE = null
+	GLOB.DEMON_HIVE = null
 	qdel(src)
 
 /datum/demon_hive/proc/next_spread_delay(base_seconds)

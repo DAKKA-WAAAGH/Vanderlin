@@ -148,7 +148,7 @@
 	visible_message("<span class='danger'>[src] hums... the fibers contracting.</span>")
 
 /obj/structure/demon/turret/process()
-	if(QDELETED(src) || !DEMON_HIVE || !DEMON_HIVE.is_active)
+	if(QDELETED(src) || !GLOB.DEMON_HIVE || !GLOB.DEMON_HIVE.is_active)
 		return
 	if(world.time < last_fire + fire_cooldown)
 		return

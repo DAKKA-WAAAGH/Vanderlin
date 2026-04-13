@@ -1118,49 +1118,49 @@ GLOBAL_LIST_INIT(name_adjustments, list())
 
 
 /datum/preferences/proc/UpdateJobPreference(mob/user, role, desiredLvl)
-    if(!SSjob || !length(SSjob.joinable_occupations))
-        return
-    var/datum/job/job = SSjob.GetJob(role)
-    if(!job || !(job.job_flags & JOB_NEW_PLAYER_JOINABLE))
-        user << browse(null, "window=mob_occupation")
-        update_menu_data(user, list("job"))
-        return
-    if(!isnum(desiredLvl))
-        to_chat(user, "<span class='danger'>UpdateJobPreference - desired level was not a number. Please notify coders!</span>")
-        CRASH("UpdateJobPreference called with desiredLvl value of [isnull(desiredLvl) ? "null" : desiredLvl]")
+	if(!SSjob || !length(SSjob.joinable_occupations))
+		return
+	var/datum/job/job = SSjob.GetJob(role)
+	if(!job || !(job.job_flags & JOB_NEW_PLAYER_JOINABLE))
+		user << browse(null, "window=mob_occupation")
+		update_menu_data(user, list("job"))
+		return
+	if(!isnum(desiredLvl))
+		to_chat(user, "<span class='danger'>UpdateJobPreference - desired level was not a number. Please notify coders!</span>")
+		CRASH("UpdateJobPreference called with desiredLvl value of [isnull(desiredLvl) ? "null" : desiredLvl]")
 
-    var/jpval = null
-    // desiredLvl comes from the links: 1=High, 2=Medium, 3=Low, 4=NEVER
-    // JP constants: JP_LOW=1, JP_MEDIUM=2, JP_HIGH=3
-    switch(desiredLvl)
-        if(1)
-            jpval = JP_HIGH  // 3
-        if(2)
-            jpval = JP_MEDIUM  // 2
-        if(3)
-            jpval = JP_LOW  // 1
-        if(4)
-            jpval = null  // NEVER
+	var/jpval = null
+	// desiredLvl comes from the links: 1=High, 2=Medium, 3=Low, 4=NEVER
+	// JP constants: JP_LOW=1, JP_MEDIUM=2, JP_HIGH=3
+	switch(desiredLvl)
+		if(1)
+			jpval = JP_HIGH  // 3
+		if(2)
+			jpval = JP_MEDIUM  // 2
+		if(3)
+			jpval = JP_LOW  // 1
+		if(4)
+			jpval = null  // NEVER
 
-    var/was_high = (jpval == JP_HIGH)
-    var/previous_high_job = null
+	var/was_high = (jpval == JP_HIGH)
+	var/previous_high_job = null
 
-    if(was_high)
-        for(var/job_title in job_preferences)
-            if(job_preferences[job_title] == JP_HIGH)
-                previous_high_job = job_title
-                break
+	if(was_high)
+		for(var/job_title in job_preferences)
+			if(job_preferences[job_title] == JP_HIGH)
+				previous_high_job = job_title
+				break
 
-    SetJobPreferenceLevel(job, jpval)
+	SetJobPreferenceLevel(job, jpval)
 
-    // Send back the desiredLvl value directly since that's what JavaScript expects
-    update_job_display(user, role, desiredLvl)
+	// Send back the desiredLvl value directly since that's what JavaScript expects
+	update_job_display(user, role, desiredLvl)
 
-    if(was_high && previous_high_job && previous_high_job != role)
-        update_job_display(user, previous_high_job, 2)  // Medium
+	if(was_high && previous_high_job && previous_high_job != role)
+		update_job_display(user, previous_high_job, 2)  // Medium
 
-    update_menu_data(user, list("job"))
-    return 1
+	update_menu_data(user, list("job"))
+	return 1
 
 
 

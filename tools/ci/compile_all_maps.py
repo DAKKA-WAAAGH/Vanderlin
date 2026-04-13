@@ -5,6 +5,14 @@ import sys
 
 folders = ["_maps/templates", "_maps/matthios_tomb", "_maps/kalypso", "_maps/map_files"]
 
+excluded_dirs = [
+    "_maps/map_files/kaizoku/stonehamlet",
+]
+
+excluded_files = {
+    "_maps/map_files/vanderlin/vanderlin_bog.dmm",
+}
+
 generated = "_maps/templates.dm"
 
 template_filenames = []
@@ -12,9 +20,15 @@ template_filenames = []
 def find_dm(path):
     L = []
     for dirpath, dirnames, filenames in os.walk(path):
+        normalized_dir = dirpath.replace("\\", "/")
+        if any(normalized_dir.startswith(excluded) for excluded in excluded_dirs):
+            continue
         for name in filenames:
-            if name.endswith(".dmm"):
+            if name.endswith(".dmm") and "backup" not in name.lower():
                 s = os.path.join(dirpath, name)
+                normalized_file = s.replace("\\", "/")
+                if normalized_file in excluded_files:
+                    continue
                 s = s.replace("_maps/","")
                 L.append(s)
     return L

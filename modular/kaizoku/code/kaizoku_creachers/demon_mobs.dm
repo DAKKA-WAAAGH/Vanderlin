@@ -165,9 +165,9 @@
 		vars["icon_dead"] = D
 
 	base_icon_ref = icon
-	base_living_state_ref = ("icon_living" in vars && vars["icon_living"]) ? vars["icon_living"] : icon_state
-	base_dead_state_ref = ("icon_dead" in vars && vars["icon_dead"]) ? vars["icon_dead"] : "[base_living_state_ref]_dead"
-	if("flip_on_death" in vars && vars["flip_on_death"])
+	base_living_state_ref = (("icon_living" in vars) && vars["icon_living"]) ? vars["icon_living"] : icon_state
+	base_dead_state_ref = (("icon_dead" in vars) && vars["icon_dead"]) ? vars["icon_dead"] : "[base_living_state_ref]_dead"
+	if(("flip_on_death" in vars) && vars["flip_on_death"])
 		flip_on_death_cached = TRUE
 
 	if(!islist(member_states)) 	// Initialize member arrays

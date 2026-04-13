@@ -147,17 +147,6 @@
 	east_offset = 3
 	west_offset = 10
 
-/datum/map_template/dungeon/room/ForgottenInn
-	mappath = "_maps/matthios_tomb/room/ForgottenInn.dmm"
-	id = "ForgottenInn"
-	width = 20
-	height = 20
-
-	north_offset = 10
-	south_offset = 10
-	east_offset = 11
-	west_offset = 11
-
 /datum/map_template/dungeon/room/fightingpit
 	mappath = "_maps/matthios_tomb/room/fightingpit.dmm"
 	id = "fightingpit"

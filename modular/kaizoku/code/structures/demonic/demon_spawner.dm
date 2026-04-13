@@ -18,8 +18,8 @@
 
 /obj/structure/demon/cocoon/Initialize()
 	. = ..()
-	if(DEMON_HIVE)
-		DEMON_HIVE.on_cocoon_created(src)
+	if(GLOB.DEMON_HIVE)
+		GLOB.DEMON_HIVE.on_cocoon_created(src)
 	matures_at = world.time + max(10, maturation_time)
 	START_PROCESSING(SSfastprocess, src)
 
@@ -27,8 +27,8 @@
 	STOP_PROCESSING(SSfastprocess, src)
 	if(target_slot)
 		target_slot.clear_reservation()
-	if(DEMON_HIVE)
-		DEMON_HIVE.on_cocoon_destroyed(src)
+	if(GLOB.DEMON_HIVE)
+		GLOB.DEMON_HIVE.on_cocoon_destroyed(src)
 	return ..()
 
 /obj/structure/demon/cocoon/process()
@@ -87,7 +87,7 @@
 
 /obj/structure/demon/spawner/Initialize()
 	. = ..()
-	apply_colony_rules(DEMON_HIVE ? DEMON_HIVE.colony_level : 1)
+	apply_colony_rules(GLOB.DEMON_HIVE ? GLOB.DEMON_HIVE.colony_level : 1)
 	matures_at = world.time + mature_delay
 	START_PROCESSING(SSfastprocess, src)
 	next_spawn = world.time + rand(5, 12)
