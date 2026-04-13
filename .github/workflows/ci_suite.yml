@@ -148,6 +148,9 @@ jobs:
             fi
           done
           map_list=$(paste -sd, maps_output.txt)
+          if [ -z "$map_list" ]; then
+            map_list='"__no_maps__"'
+          fi
           echo "Maps: $map_list"
           echo "maps={\"paths\":[$map_list]}" >> "$GITHUB_OUTPUT"
       - name: Collect byond client version configuration
@@ -183,6 +186,10 @@ jobs:
         uses: ./.github/actions/restore_or_install_byond
       - name: Compile and run tests
         run: |
+          if [ "${{ matrix.map }}" = "__no_maps__" ]; then
+            echo "No maps selected for integration tests (all excluded_from_ci=true)."
+            exit 0
+          fi
           source $HOME/BYOND/byond/bin/byondsetup
           DreamMaker -DCIBUILDING vanderlin.dme
           bash tools/ci/run_server.sh ${{ matrix.map }}
