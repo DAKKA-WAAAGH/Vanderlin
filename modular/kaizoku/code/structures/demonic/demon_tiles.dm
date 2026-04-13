@@ -16,8 +16,8 @@
 
 /obj/effect/demon/corruption/Initialize()
 	. = ..()
-	if(DEMON_HIVE)
-		DEMON_HIVE.on_corruption_created(src)
+	if(GLOB.DEMON_HIVE)
+		GLOB.DEMON_HIVE.on_corruption_created(src)
 	update_icon()
 	refresh_neighbors()
 	update_edges()
@@ -25,8 +25,8 @@
 /obj/effect/demon/corruption/Destroy()
 	refresh_neighbors()
 	clear_edge_overlays()
-	if(DEMON_HIVE)
-		DEMON_HIVE.on_corruption_destroyed(src)
+	if(GLOB.DEMON_HIVE)
+		GLOB.DEMON_HIVE.on_corruption_destroyed(src)
 	return ..()
 
 /obj/effect/demon/corruption/attackby(obj/item/I, mob/user)

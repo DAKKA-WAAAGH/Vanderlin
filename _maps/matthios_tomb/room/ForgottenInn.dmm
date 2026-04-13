@@ -110,7 +110,9 @@
 /turf/open/floor/ruinedwood/spiralfade,
 /area/under/tomb/indoors)
 "mI" = (
-/obj/effect/mapping_helpers/outfit_handler{outfit_to_equip = /datum/outfit/adventurer/barbarian},
+/obj/effect/mapping_helpers/outfit_handler{
+	outfit_to_equip = /datum/outfit/job/sk/adventurer/barbarian
+	},
 /mob/living/carbon/human/species/orc/npc,
 /turf/open/floor/ruinedwood/spiralfade,
 /area/under/tomb/indoors)
@@ -374,9 +376,6 @@
 "Rh" = (
 /obj/structure/toilet,
 /mob/living/carbon/human/species/orc/npc,
-/obj/effect/mapping_helpers/outfit_handler{
-	outfit_to_equip = /datum/outfit/adventurer/barbarian
-	},
 /turf/open/floor/ruinedwood/spiralfade,
 /area/under/tomb/indoors)
 "RA" = (

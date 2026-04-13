@@ -5,7 +5,7 @@
 /proc/visible_message(msg)
 	world << msg
 
-var/datum/demon_hive/DEMON_HIVE
+GLOBAL_DATUM(DEMON_HIVE, /datum/demon_hive)
 GLOBAL_LIST_INIT(demon_spread_dirs, list(NORTH, SOUTH, EAST, WEST))
 GLOBAL_LIST_INIT(demon_all_dirs, list(NORTH, SOUTH, EAST, WEST, NORTHEAST, NORTHWEST, SOUTHEAST, SOUTHWEST))
 GLOBAL_LIST_INIT(DEMON_SPAWNER_MATURE_TYPES, list(
@@ -85,8 +85,8 @@ GLOBAL_LIST_INIT(DEMON_SPAWNER_MATURE_TYPES, list(
 /proc/SpawnDemonIncursion(turf/center, cores = 2)
 	if(!center)
 		return
-	if(!DEMON_HIVE)
-		DEMON_HIVE = new
+	if(!GLOB.DEMON_HIVE)
+		GLOB.DEMON_HIVE = new
 	new /obj/structure/demon/gateway(center)
 	cores = min(cores, 2)
 	var/list/radials = list(NORTH, SOUTH, EAST, WEST)
@@ -103,13 +103,13 @@ GLOBAL_LIST_INIT(DEMON_SPAWNER_MATURE_TYPES, list(
 				var/obj/structure/demon/cocoon/Cc6 = new /obj/structure/demon/cocoon(Tc5)
 				Cc6.cocoon_type = "core"
 				Cc6.maturation_time = 120 SECONDS
-	DEMON_HIVE.start(center)
+	GLOB.DEMON_HIVE.start(center)
 
 /proc/DemonHiveStatus()
-	if(!DEMON_HIVE)
+	if(!GLOB.DEMON_HIVE)
 		return "No demon hive active"
-	var/colony_status = (DEMON_HIVE.colony_level == 2) ? "Second Colony" : "First Colony"
-	return "Cores: [DEMON_HIVE.cores?.len || 0] | Corruption: [DEMON_HIVE.corruptions?.len || 0] | Cocoons: [DEMON_HIVE.cocoons?.len || 0] | Hallu Sent: [DEMON_HIVE.hallucination_count] | Colony: [colony_status]"
+	var/colony_status = (GLOB.DEMON_HIVE.colony_level == 2) ? "Second Colony" : "First Colony"
+	return "Cores: [GLOB.DEMON_HIVE.cores?.len || 0] | Corruption: [GLOB.DEMON_HIVE.corruptions?.len || 0] | Cocoons: [GLOB.DEMON_HIVE.cocoons?.len || 0] | Hallu Sent: [GLOB.DEMON_HIVE.hallucination_count] | Colony: [colony_status]"
 
 // ---------------------------------------------------
 

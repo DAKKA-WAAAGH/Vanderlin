@@ -20,9 +20,9 @@
 
 /obj/structure/demon/expansion/Initialize()
 	. = ..()
-	if(!DEMON_HIVE)
-		DEMON_HIVE = new
-	DEMON_HIVE.on_core_created(src)
+	if(!GLOB.DEMON_HIVE)
+		GLOB.DEMON_HIVE = new
+	GLOB.DEMON_HIVE.on_core_created(src)
 
 	structure_slots = list()
 	structure_slots += new /datum/structure_slot("tendril", src)
@@ -41,8 +41,8 @@
 	return .
 
 /obj/structure/demon/expansion/Destroy()
-	if(DEMON_HIVE)
-		DEMON_HIVE.on_core_destroyed(src)
+	if(GLOB.DEMON_HIVE)
+		GLOB.DEMON_HIVE.on_core_destroyed(src)
 	return ..()
 
 /obj/structure/demon/expansion/proc/upgrade_to_second_colony()
@@ -66,7 +66,7 @@
 		visible_message("<span class='danger'>[src] screams!</span>")
 
 /obj/structure/demon/expansion/proc/spawn_next_structure()
-	if(QDELETED(src) || !DEMON_HIVE || !DEMON_HIVE.is_active)
+	if(QDELETED(src) || !GLOB.DEMON_HIVE || !GLOB.DEMON_HIVE.is_active)
 		return
 
 	var/datum/structure_slot/available_slot = null
@@ -125,7 +125,7 @@
 	next_structure_spawn = world.time + 60 SECONDS
 
 /obj/structure/demon/expansion/proc/spread_corruption()
-	if(QDELETED(src) || !DEMON_HIVE || !DEMON_HIVE.is_active)
+	if(QDELETED(src) || !GLOB.DEMON_HIVE || !GLOB.DEMON_HIVE.is_active)
 		return
 
 	var/list/cands = get_organized_spread_candidates(src)
@@ -151,7 +151,7 @@
 	if(world.time >= next_structure_spawn)
 		spawn_next_structure()
 
-	var/next = DEMON_HIVE ? DEMON_HIVE.next_spread_delay(8) : 8
+	var/next = GLOB.DEMON_HIVE ? GLOB.DEMON_HIVE.next_spread_delay(8) : 8
 	call_later(CALLBACK(src, /obj/structure/demon/expansion/proc/spread_corruption), next)
 
 /obj/structure/demon/expansion/proc/place_railings_around_own_corruption()
