@@ -147,12 +147,12 @@
 		)
 	)
 	to_chat(src, span_notice("Sending issue report..."))
-	//SEND_SOUND(src, 'sound/misc/compiler-stage1.ogg')
+	//SEND_SOUND(src, 'modular/kaizoku/sound/misc/compiler-stage1.ogg')
 	issue_report.begin_async()
 	UNTIL(issue_report.is_complete() || !src) //Client fuckery.
 	var/datum/http_response/issue_response = issue_report.into_response()
 	if(issue_response.errored || issue_response.status_code != 201)
-		//SEND_SOUND(src, 'sound/misc/compiler-failure.ogg')
+		//SEND_SOUND(src, 'modular/kaizoku/sound/misc/compiler-failure.ogg')
 		to_chat(src, "[span_alertwarning("Bug report FAILED!")]\n\
 		[span_warning("Please adminhelp immediately!")]\n\
 		[span_notice("Code:[issue_response.status_code || "9001 CATASTROPHIC ERROR"]")]")
@@ -169,7 +169,7 @@
 		)
 
 		return
-	//SEND_SOUND(src, 'sound/misc/compiler-stage2.ogg')
+	//SEND_SOUND(src, 'modular/kaizoku/sound/misc/compiler-stage2.ogg')
 	to_chat(src, span_notice("Bug submitted successfully."))
 
 /client/verb/list_test_merges()

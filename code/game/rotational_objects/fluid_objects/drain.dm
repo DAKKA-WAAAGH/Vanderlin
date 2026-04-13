@@ -8,7 +8,7 @@
 	plane = GAME_PLANE
 	damage_deflection = 3
 	blade_dulling = DULLING_BASHCHOP
-	attacked_sound = list('sound/combat/hits/onmetal/grille (1).ogg', 'sound/combat/hits/onmetal/grille (2).ogg', 'sound/combat/hits/onmetal/grille (3).ogg')
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onmetal/grille (1).ogg', 'modular/kaizoku/sound/combat/hits/onmetal/grille (2).ogg', 'modular/kaizoku/sound/combat/hits/onmetal/grille (3).ogg')
 	smeltresult = /obj/item/ingot/bronze
 	obj_flags = CAN_BE_HIT
 

@@ -4,7 +4,7 @@
 	allow_inverse_start = TRUE
 	extra_chance = 100
 	craft_time = 2 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	required_table = TRUE
 
 /datum/repeatable_crafting_recipe/cooking/frybird/potato
@@ -39,7 +39,7 @@
 	allow_inverse_start = TRUE
 	extra_chance = 100
 	craft_time = 2 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	required_table = TRUE
 
 /datum/repeatable_crafting_recipe/cooking/frysteak/potato
@@ -85,7 +85,7 @@
 	subtypes_allowed = TRUE
 	allow_inverse_start = TRUE
 	craft_time = 2 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	extra_chance = 100
 
 /datum/repeatable_crafting_recipe/cooking/wiener/cabbage

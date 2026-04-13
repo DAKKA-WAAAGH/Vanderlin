@@ -1,6 +1,6 @@
 /obj/item/clothing/head/crown		// doesn't hide hair
 	dynamic_hair_suffix = ""				// this just means hair does not change when item is worn
-	drop_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 	resistance_flags = FIRE_PROOF | ACID_PROOF
 	sewrepair = FALSE
 	anvilrepair = /datum/skill/craft/armorsmithing

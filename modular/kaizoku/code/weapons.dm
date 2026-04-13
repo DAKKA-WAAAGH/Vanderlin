@@ -34,7 +34,7 @@
 	resistance_flags = FLAMMABLE
 	wdefense = 6
 	coverage = 65
-	parrysound = list('sound/combat/parry/shield/towershield (1).ogg','sound/combat/parry/shield/towershield (2).ogg','sound/combat/parry/shield/towershield (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/shield/towershield (1).ogg','modular/kaizoku/sound/combat/parry/shield/towershield (2).ogg','modular/kaizoku/sound/combat/parry/shield/towershield (3).ogg')
 	max_integrity = 300
 	smeltresult = /obj/item/ingot/iron // Made with an iron ingot, let us recover it
 
@@ -62,8 +62,8 @@
 	flags_1 = CONDUCT_1
 	wdefense = 7
 	coverage = 70
-	attacked_sound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
-	parrysound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
+	attacked_sound = list('modular/kaizoku/sound/combat/parry/shield/metalshield (1).ogg','modular/kaizoku/sound/combat/parry/shield/metalshield (2).ogg','modular/kaizoku/sound/combat/parry/shield/metalshield (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/shield/metalshield (1).ogg','modular/kaizoku/sound/combat/parry/shield/metalshield (2).ogg','modular/kaizoku/sound/combat/parry/shield/metalshield (3).ogg')
 	max_integrity = 500
 	blade_dulling = DULLING_BASH
 	sellprice = 30
@@ -99,7 +99,7 @@
 	name = "nagai ono"
 	desc = "A battleaxe of Abyssariad design with a longer handle and shorter blade. The increased leverage, reduced weight, and smaller striking area give it greater use against armor."
 	icon_state = "ono"
-	parrysound = list('sound/combat/parry/wood/parrywood (1).ogg', 'sound/combat/parry/wood/parrywood (2).ogg', 'sound/combat/parry/wood/parrywood (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/wood/parrywood (1).ogg', 'modular/kaizoku/sound/combat/parry/wood/parrywood (2).ogg', 'modular/kaizoku/sound/combat/parry/wood/parrywood (3).ogg')
 	minstr = 8
 	icon = 'modular/kaizoku/icons/weapons/32.dmi'
 	max_integrity = INTEGRITY_STANDARD
@@ -146,7 +146,7 @@
 	icon_state = "throwing_ono"
 	max_blade_int = 500
 	smeltresult = /obj/item/fertilizer/ash
-	parrysound = list('sound/combat/parry/wood/parrywood (1).ogg', 'sound/combat/parry/wood/parrywood (2).ogg', 'sound/combat/parry/wood/parrywood (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/wood/parrywood (1).ogg', 'modular/kaizoku/sound/combat/parry/wood/parrywood (2).ogg', 'modular/kaizoku/sound/combat/parry/wood/parrywood (3).ogg')
 	swingsound = BLADEWOOSH_MED
 	wlength = WLENGTH_SHORT
 	associated_skill = /datum/skill/combat/axesmaces
@@ -216,9 +216,9 @@
 	W.take_damage(bonus_damage, BRUTE, "blunt", 0)
 	visible_message("<span class='danger'>[W]'s surface cracks loudly from the impact!</span>")
 	playsound(W, pick(
-		'sound/combat/parry/shield/towershield (1).ogg',
-		'sound/combat/parry/shield/towershield (2).ogg',
-		'sound/combat/parry/shield/towershield (3).ogg'), 50, TRUE)
+		'modular/kaizoku/sound/combat/parry/shield/towershield (1).ogg',
+		'modular/kaizoku/sound/combat/parry/shield/towershield (2).ogg',
+		'modular/kaizoku/sound/combat/parry/shield/towershield (3).ogg'), 50, TRUE)
 
 	if(prob(33))
 		var/datum/effect_system/spark_spread/S = new()
@@ -237,9 +237,9 @@
 	D.take_damage(bonus_damage, BRUTE, "blunt", 0)
 	visible_message("<span class='danger'>[D] shudders violently from the blow!</span>")
 	playsound(D, pick(
-		'sound/combat/parry/shield/towershield (1).ogg',
-		'sound/combat/parry/shield/towershield (2).ogg',
-		'sound/combat/parry/shield/towershield (3).ogg'), 50, TRUE)
+		'modular/kaizoku/sound/combat/parry/shield/towershield (1).ogg',
+		'modular/kaizoku/sound/combat/parry/shield/towershield (2).ogg',
+		'modular/kaizoku/sound/combat/parry/shield/towershield (3).ogg'), 50, TRUE)
 
 	if(prob(33))
 		var/datum/effect_system/spark_spread/S = new()
@@ -400,7 +400,7 @@
 	name = "cut"
 	blade_class = BCLASS_CUT
 	attack_verb = list("cuts", "slashes")
-	hitsound = list('sound/combat/hits/blunt/flailhit.ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/blunt/flailhit.ogg')
 	swingdelay = 5
 	penfactor = AP_AXE_CHOP
 	icon_state = "incut"
@@ -424,7 +424,7 @@
 	icon_state = "inchop"
 	blade_class = BCLASS_CHOP
 	attack_verb = list("chops")
-	hitsound = list('sound/combat/hits/blunt/flailhit.ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/blunt/flailhit.ogg')
 	misscost = 10
 	chargetime = 10
 
@@ -452,7 +452,7 @@
 	sharpness = IS_SHARP
 	blade_dulling = DULLING_BASHCHOP
 	smeltresult = /obj/item/ingot/steel
-	parrysound = list('sound/combat/parry/parrygen.ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/parrygen.ogg')
 	swingsound = BLUNTWOOSH_MED
 
 /obj/item/weapon/flail/kusarigama/peasant
@@ -621,8 +621,8 @@
 	minstr = 8
 	smeltresult = /obj/item/ingot/steel
 	associated_skill = /datum/skill/combat/polearms
-	drop_sound = 'sound/foley/dropsound/wooden_drop.ogg'
-	parrysound = list('sound/combat/parry/wood/parrywood (1).ogg', 'sound/combat/parry/wood/parrywood (2).ogg', 'sound/combat/parry/wood/parrywood (3).ogg')
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/wooden_drop.ogg'
+	parrysound = list('modular/kaizoku/sound/combat/parry/wood/parrywood (1).ogg', 'modular/kaizoku/sound/combat/parry/wood/parrywood (2).ogg', 'modular/kaizoku/sound/combat/parry/wood/parrywood (3).ogg')
 	dropshrink = 0.8
 	blade_dulling = DULLING_BASHCHOP
 	wlength = WLENGTH_LONG
@@ -648,13 +648,13 @@
 	if(cocked)
 		to_chat(user, "<span class='info'>The firelance's fuze starts to rebel in sparking lights.</span>")
 		user.visible_message("<span class='warning'>[user] lights a firelance! FUCKING RUN!</span>","<span class='info'>I light the firelance.</span>")
-		playsound(get_turf(src), 'sound/items/firelight.ogg', 100)
+		playsound(get_turf(src), 'modular/kaizoku/sound/items/firelight.ogg', 100)
 
 		lit = TRUE
 		update_icon()
 		spawn(20)
 			if(lit)
-				playsound(get_turf(src),  pick('sound/misc/explode/incendiary (1).ogg','sound/misc/explode/incendiary (2).ogg'), 100)
+				playsound(get_turf(src),  pick('modular/kaizoku/sound/misc/explode/incendiary (1).ogg','modular/kaizoku/sound/misc/explode/incendiary (2).ogg'), 100)
 				flamefire(user)
 				fuel_source = FALSE
 				lit = FALSE
@@ -698,7 +698,7 @@
 						L.adjustFireLoss(rand(10, 20)) //Enough damage to ensure the player will move away.
 						L.adjust_fire_stacks(3) //New addition for bugfix.
 						L.IgniteMob()
-	playsound(src.loc, 'sound/spells/firelance.ogg', 100)
+	playsound(src.loc, 'modular/kaizoku/sound/spells/firelance.ogg', 100)
 	cocked = FALSE
 	fuel_source = FALSE // Consume  fuel after use
 	update_icon()
@@ -738,7 +738,7 @@
 		if(!cocked && fuel_source)
 			to_chat(user, "<span class='info'>You start spinning the mechanisms, watching the jagged blades close. The weapon is now ready, but it needs to be lit.</span>")
 			if(do_after(user, 60 - user.STASTR, target = user))
-				playsound(user, 'sound/combat/Ranged/crossbow_medium_reload-01.ogg', 100, FALSE)
+				playsound(user, 'modular/kaizoku/sound/combat/Ranged/crossbow_medium_reload-01.ogg', 100, FALSE)
 				cocked = TRUE
 				possible_item_intents = list(SPEAR_THRUST, /datum/intent/polearm/cut/close) //More effective at thrusting while it is closed. However, it is worse at cutting.
 				update_icon()
@@ -886,7 +886,7 @@
 	wlength = 6
 	sellprice = 1
 	has_inspect_verb = TRUE
-	parrysound = list('sound/combat/parry/parrygen.ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/parrygen.ogg')
 	anvilrepair = /datum/skill/craft/weaponsmithing
 	obj_flags = CAN_BE_HIT
 	blade_dulling = DULLING_BASH
@@ -908,7 +908,7 @@
 	AddComponent(/datum/component/kaizoku/caltrop, 20, 30, 100, CALTROP_BYPASS_SHOES)
 
 /obj/item/weapon/tetsubishi/Crossed(mob/living/L)
-	playsound(loc, 'sound/foley/flesh_rem2.ogg', TRUE)
+	playsound(loc, 'modular/kaizoku/sound/foley/flesh_rem2.ogg', TRUE)
 	return ..()
 
 /datum/component/kaizoku/caltrop //Less laggy alternative for the server-destroying OG caltrops.
@@ -1187,7 +1187,7 @@
 	attack_verb = list("clangs")
 	animname = "smash"
 	blade_class = BCLASS_CHOP
-	hitsound = list('sound/combat/hits/bladed/largesword (1).ogg', 'sound/combat/hits/bladed/largesword (2).ogg', 'sound/combat/hits/bladed/largesword (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/largesword (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/largesword (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/largesword (3).ogg')
 	penfactor = 30
 	damfactor = 1.2
 	chargetime = 5
@@ -1332,7 +1332,7 @@
 /obj/structure/kaizoku/crate/attackby(obj/item/W, mob/living/user)
 	if(istype(W, /obj/item/weapon/knife))
 		to_chat(user, "<span class='danger'>You cut off the straps holding the wood planks together.</span>")
-		playsound(src, 'sound/misc/slide_wood (1).ogg', 50, TRUE)
+		playsound(src, 'modular/kaizoku/sound/misc/slide_wood (1).ogg', 50, TRUE)
 		new mob_path(get_turf(src)) // Spawn the mob
 		qdel(src) // Remove the crate
 	else
@@ -1364,11 +1364,11 @@
 	var/powdered = FALSE
 	var/inserted = FALSE
 	var/fuse_lit = FALSE
-	load_sound = 'sound/foley/nockarrow.ogg'
-	fire_sound = 'sound/combat/Ranged/muskshoot.ogg'
-	equip_sound = 'sound/foley/gun_equip.ogg'
-	pickup_sound = 'sound/foley/gun_equip.ogg'
-	drop_sound = 'sound/foley/gun_drop.ogg'
+	load_sound = 'modular/kaizoku/sound/foley/nockarrow.ogg'
+	fire_sound = 'modular/kaizoku/sound/combat/Ranged/muskshoot.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/gun_equip.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/gun_equip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/gun_drop.ogg'
 	dropshrink = 1
 	associated_skill = /datum/skill/combat/firearms
 	possible_item_intents = list(/datum/intent/mace/strike)
@@ -1405,7 +1405,7 @@
 			chambered = I
 			I.forceMove(src)
 			to_chat(user, "<span class='info'>You hear the ball of lead bouncing inside the barrel until it meets cushioning blastpowder.</span>")
-			playsound(src.loc, 'sound/combat/Ranged/muskclick.ogg', 70)
+			playsound(src.loc, 'modular/kaizoku/sound/combat/Ranged/muskclick.ogg', 70)
 		return
 
 	else if(istype(I, /obj/item/reagent_containers/glass/bottle/aflask))
@@ -1421,7 +1421,7 @@
 				I.reagents.remove_reagent(/datum/reagent/blastpowder, 5)
 				powdered = TRUE
 				to_chat(user, "<span class='info'>You pour gunpowder into the handcannon.</span>")
-				playsound(src.loc, 'sound/foley/gunpowder_fill.ogg', 70)
+				playsound(src.loc, 'modular/kaizoku/sound/foley/gunpowder_fill.ogg', 70)
 			return
 		else
 			to_chat(user, "<span class='warning'>Not enough blastpowder to charge it.</span>")
@@ -1438,7 +1438,7 @@
 		if(do_after(user, ramtime SECONDS, src))
 			rammed = TRUE
 			to_chat(user, "<span class='info'>You use [I] to tamp down the load.</span>")
-			playsound(src.loc, 'sound/foley/nockarrow.ogg', 70)
+			playsound(src.loc, 'modular/kaizoku/sound/foley/nockarrow.ogg', 70)
 			update_icon()
 			return
 
@@ -1466,7 +1466,7 @@
 			rrod.forceMove(src)
 			rod = rrod
 			to_chat(user, "<span class='info'>You place the ramrod into [src].</span>")
-		playsound(src.loc, 'sound/foley/struggle.ogg', 100)
+		playsound(src.loc, 'modular/kaizoku/sound/foley/struggle.ogg', 100)
 	update_icon()
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/handcannon/proc/tamp(mob/user)
@@ -1478,7 +1478,7 @@
 		return
 	rammed = TRUE
 	to_chat(user, "<span class='info'>You use the ramrod to tamp down the load.</span>")
-	playsound(src.loc, 'sound/foley/nockarrow.ogg', 70)
+	playsound(src.loc, 'modular/kaizoku/sound/foley/nockarrow.ogg', 70)
 	update_icon()
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/handcannon/update_icon()
@@ -1499,7 +1499,7 @@
 
 	fuse_lit = TRUE
 	to_chat(src.loc, "<span class='warning'>[user] positions the fuse near the ignition point.</span>")
-	playsound(src.loc, 'sound/items/firelight.ogg', 100)
+	playsound(src.loc, 'modular/kaizoku/sound/items/firelight.ogg', 100)
 
 	var/random_delay = rand(20, 60)
 
@@ -1512,12 +1512,12 @@
 			return
 
 		to_chat(src.loc, "<span class='danger'>The fuse loudly sparks and the handcannon roars to life!</span>")
-		playsound(src.loc, 'sound/warfaresounds/hwanchafire.ogg', 100)
+		playsound(src.loc, 'modular/kaizoku/sound/warfaresounds/hwanchafire.ogg', 100)
 
 		for(var/mob/living/carbon/H in hearers(5, user))
 			shake_camera(H, 4, 3)
 			H.adjust_eye_blur(3 SECONDS)
-			H.playsound_local(get_turf(H), 'sound/foley/tinnitus.ogg', 70)
+			H.playsound_local(get_turf(H), 'modular/kaizoku/sound/foley/tinnitus.ogg', 70)
 		step(user, get_dir(user, turn(user.dir, 180)))
 
 		new /obj/effect/particle_effect/smoke(get_turf(user))
@@ -1582,8 +1582,8 @@
 	force = 10
 	var/cocked = FALSE
 	cartridge_wording = "bolt"
-	load_sound = 'sound/foley/nockarrow.ogg'
-	fire_sound = 'sound/combat/Ranged/crossbow-small-shot-02.ogg'
+	load_sound = 'modular/kaizoku/sound/foley/nockarrow.ogg'
+	fire_sound = 'modular/kaizoku/sound/combat/Ranged/crossbow-small-shot-02.ogg'
 	associated_skill = /datum/skill/combat/crossbows
 	damfactor = 0.7 //less string power. May decrease it further or see a way to decrease crit chance.
 
@@ -1606,7 +1606,7 @@
 			return FALSE
 		to_chat(user, "<span class='info'>You stir the repeating crossbow...</span>")
 		if(do_after(user, 20 - user.STASTR, target = user))
-			playsound(user, 'sound/combat/Ranged/crossbow_medium_reload-01.ogg', 100, FALSE)
+			playsound(user, 'modular/kaizoku/sound/combat/Ranged/crossbow_medium_reload-01.ogg', 100, FALSE)
 			cocked = TRUE
 	update_icon()
 
@@ -2111,7 +2111,7 @@ Only efficient if used by two sasumata users.
 	reach = 2
 	chargetime = 1
 	warnie = "mobwarning"
-	hitsound = list('sound/foley/grab.ogg')
+	hitsound = list('modular/kaizoku/sound/foley/grab.ogg')
 	penfactor = AP_POLEARM_THRUST
 	swingdelay = 1
 	misscost = 8

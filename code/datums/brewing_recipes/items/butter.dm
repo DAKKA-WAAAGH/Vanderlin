@@ -21,7 +21,7 @@
 
 	user.adjust_stamina(20)
 	user.visible_message(span_info("[user] churns butter..."))
-	playsound(src, 'sound/foley/butterchurn.ogg', 100, TRUE, -1)
+	playsound(src, 'modular/kaizoku/sound/foley/butterchurn.ogg', 100, TRUE, -1)
 
 	if(!do_after(user, (10 SECONDS - (user.get_skill_level(/datum/skill/craft/cooking) * 9)), source))
 		return FALSE

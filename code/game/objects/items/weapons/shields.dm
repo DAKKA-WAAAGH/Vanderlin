@@ -20,7 +20,7 @@
 	resistance_flags = FLAMMABLE
 	can_parry = TRUE
 	associated_skill = /datum/skill/combat/shields
-	destroy_sound = 'sound/foley/shielddestroy.ogg'
+	destroy_sound = 'modular/kaizoku/sound/foley/shielddestroy.ogg'
 	var/coverage = 90
 	parrysound = "parrywood"
 	attacked_sound = "parrywood"
@@ -38,7 +38,7 @@
 		if(!COOLDOWN_FINISHED(src, shield_bang))
 			return
 		user.visible_message("<span class='danger'>[user] bangs [src] with [attackby_item]!</span>")
-		playsound(user, 'sound/combat/shieldbang.ogg', 50, TRUE)
+		playsound(user, 'modular/kaizoku/sound/combat/shieldbang.ogg', 50, TRUE)
 		COOLDOWN_START(src, shield_bang, SHIELD_BANG_COOLDOWN)
 		return
 
@@ -76,12 +76,12 @@
 /datum/intent/shield/bash
 	name = "bash"
 	icon_state = "inbash"
-	hitsound = list('sound/combat/shieldbash_wood.ogg')
+	hitsound = list('modular/kaizoku/sound/combat/shieldbash_wood.ogg')
 	chargetime = 0
 	item_damage_type = "blunt"
 
 /datum/intent/shield/bash/metal
-	hitsound = list('sound/combat/shieldbash_metal.ogg')
+	hitsound = list('modular/kaizoku/sound/combat/shieldbash_metal.ogg')
 
 /datum/intent/shield/block
 	name = "block"
@@ -89,14 +89,14 @@
 	tranged = 1 //we can't attack directly with this intent, but we can charge it
 	tshield = 1
 	chargetime = 5
-	hitsound = list('sound/combat/shieldbash_wood.ogg')
+	hitsound = list('modular/kaizoku/sound/combat/shieldbash_wood.ogg')
 	warnie = "shieldwarn"
 	item_damage_type = "blunt"
 	charge_pointer = 'icons/effects/mousemice/charge/shield_charging.dmi'
 	charged_pointer = 'icons/effects/mousemice/charge/shield_charged.dmi'
 
 /datum/intent/shield/block/metal
-	hitsound = list('sound/combat/shieldbash_metal.ogg')
+	hitsound = list('modular/kaizoku/sound/combat/shieldbash_metal.ogg')
 
 /obj/item/weapon/shield/wood
 	name = "wooden shield"
@@ -163,7 +163,7 @@
 	wbalance = EASY_TO_DODGE // Heavy, big shield
 	coverage = 65
 	wlength = WLENGTH_NORMAL
-	parrysound = list('sound/combat/parry/shield/towershield (1).ogg','sound/combat/parry/shield/towershield (2).ogg','sound/combat/parry/shield/towershield (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/shield/towershield (1).ogg','modular/kaizoku/sound/combat/parry/shield/towershield (2).ogg','modular/kaizoku/sound/combat/parry/shield/towershield (3).ogg')
 	max_integrity = INTEGRITY_STRONG
 	melting_material = /datum/material/iron
 	melt_amount = 75
@@ -193,8 +193,8 @@
 	possible_item_intents = list(METAL_BASH, METAL_BLOCK)
 	resistance_flags = FIRE_PROOF
 	flags_1 = CONDUCT_1
-	attacked_sound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
-	parrysound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
+	attacked_sound = list('modular/kaizoku/sound/combat/parry/shield/metalshield (1).ogg','modular/kaizoku/sound/combat/parry/shield/metalshield (2).ogg','modular/kaizoku/sound/combat/parry/shield/metalshield (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/shield/metalshield (1).ogg','modular/kaizoku/sound/combat/parry/shield/metalshield (2).ogg','modular/kaizoku/sound/combat/parry/shield/metalshield (3).ogg')
 	max_integrity = INTEGRITY_STRONGEST
 	blade_dulling = DULLING_BASH
 	melting_material = /datum/material/bronze
@@ -219,8 +219,8 @@
 	possible_item_intents = list(METAL_BASH, METAL_BLOCK)
 	resistance_flags = FIRE_PROOF
 	flags_1 = CONDUCT_1
-	attacked_sound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
-	parrysound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
+	attacked_sound = list('modular/kaizoku/sound/combat/parry/shield/metalshield (1).ogg','modular/kaizoku/sound/combat/parry/shield/metalshield (2).ogg','modular/kaizoku/sound/combat/parry/shield/metalshield (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/shield/metalshield (1).ogg','modular/kaizoku/sound/combat/parry/shield/metalshield (2).ogg','modular/kaizoku/sound/combat/parry/shield/metalshield (3).ogg')
 	max_integrity = INTEGRITY_STRONGEST
 	blade_dulling = DULLING_BASH
 	sellprice = 30
@@ -296,8 +296,8 @@
 	dropshrink = 0.75
 
 	resistance_flags = FIRE_PROOF
-	attacked_sound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
-	parrysound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg','sound/combat/parry/shield/metalshield (3).ogg')
+	attacked_sound = list('modular/kaizoku/sound/combat/parry/shield/metalshield (1).ogg','modular/kaizoku/sound/combat/parry/shield/metalshield (2).ogg','modular/kaizoku/sound/combat/parry/shield/metalshield (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/shield/metalshield (1).ogg','modular/kaizoku/sound/combat/parry/shield/metalshield (2).ogg','modular/kaizoku/sound/combat/parry/shield/metalshield (3).ogg')
 
 /obj/item/weapon/shield/tower/buckleriron/getonmobprop(tag)
 	. = ..()
@@ -318,8 +318,8 @@
 	throwforce = DAMAGE_SHIELD
 	coverage = 60
 	dropshrink = 0.8
-	attacked_sound = list('sound/combat/parry/shield/towershield (1).ogg','sound/combat/parry/shield/towershield (2).ogg','sound/combat/parry/shield/towershield (3).ogg')
-	parrysound = list('sound/combat/parry/shield/towershield (1).ogg','sound/combat/parry/shield/towershield (2).ogg','sound/combat/parry/shield/towershield (3).ogg')
+	attacked_sound = list('modular/kaizoku/sound/combat/parry/shield/towershield (1).ogg','modular/kaizoku/sound/combat/parry/shield/towershield (2).ogg','modular/kaizoku/sound/combat/parry/shield/towershield (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/shield/towershield (1).ogg','modular/kaizoku/sound/combat/parry/shield/towershield (2).ogg','modular/kaizoku/sound/combat/parry/shield/towershield (3).ogg')
 	max_integrity = INTEGRITY_STANDARD
 
 /obj/item/weapon/shield/heater/choose_design(proc_value, mob/user)

@@ -55,6 +55,6 @@
 		span_biginfo("Zizo wants you to spread corruption! Construct [new_objective.target_count] profane shrines using your newly gained knowledge to complete Zizo's will!"),
 	))
 	to_chat(chosen_one, span_notice("You can construct unholy shrines with one small log, two stones and three wooden stakes."))
-	chosen_one.playsound_local(chosen_one, 'sound/misc/gods/zizo_omen.ogg', 100)
+	chosen_one.playsound_local(chosen_one, 'modular/kaizoku/sound/misc/gods/zizo_omen.ogg', 100)
 
 	chosen_one.mind.announce_personal_objectives()

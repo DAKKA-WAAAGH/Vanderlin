@@ -14,8 +14,8 @@
 	armor = list("blunt" = 10, "slash" = 10, "stab" = 10,  "piercing" = 0, "fire" = 0, "acid" = 0)
 	damage_deflection = 10
 	CanAtmosPass = ATMOS_PASS_DENSITY
-	break_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'
-	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg', 'sound/combat/hits/onwood/woodimpact (2).ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroywalldoor.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg', 'modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
 	lock = /datum/lock/key
 	can_add_lock = TRUE
 
@@ -32,8 +32,8 @@
 	var/close_delay = 0
 	/// How long should it take for the door to change states? Ideally matches the icon's animation length
 	var/animate_time = 1 SECONDS
-	var/open_sound = 'sound/foley/doors/creak.ogg'
-	var/close_sound = 'sound/foley/doors/shut.ogg'
+	var/open_sound = 'modular/kaizoku/sound/foley/doors/creak.ogg'
+	var/close_sound = 'modular/kaizoku/sound/foley/doors/shut.ogg'
 
 	/// If we are windowed, to avoid setting opacity
 	var/windowed = FALSE
@@ -72,7 +72,7 @@
 	AddElement(/datum/element/connect_loc, loc_connections)
 
 	if(repair_thresholds || broken_repair)
-		AddComponent(/datum/component/repairable, repair_thresholds, broken_repair, 'sound/misc/wood_saw.ogg', repair_skill)
+		AddComponent(/datum/component/repairable, repair_thresholds, broken_repair, 'modular/kaizoku/sound/misc/wood_saw.ogg', repair_skill)
 
 /obj/structure/door/Destroy()
 	. = ..()
@@ -166,7 +166,7 @@
 			return
 		if(can_knock)
 			if(user.a_intent?.name == "punch")
-				playsound(src, 'sound/foley/doors/knocking.ogg', 100)
+				playsound(src, 'modular/kaizoku/sound/foley/doors/knocking.ogg', 100)
 				user.visible_message(span_warning("[user] knocks on [src]."), \
 					span_notice("I knock on [src]."))
 				return
@@ -234,7 +234,7 @@
 				user.visible_message(span_warning("[user] bashes into [src]!"))
 				take_damage(200, BRUTE, BCLASS_BLUNT, TRUE)
 			else
-				playsound(src, 'sound/combat/hits/onwood/woodimpact (1).ogg', 100)
+				playsound(src, 'modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg', 100)
 				force_open(AM)
 				user.visible_message(span_warning("[user] smashes through [src]!"))
 			return
@@ -243,7 +243,7 @@
 				user.visible_message(span_warning("The deadite bashes into [src]!"))
 				take_damage(50, BRUTE, BCLASS_BLUNT, TRUE)
 			else
-				playsound(src, 'sound/combat/hits/onwood/woodimpact (1).ogg', 90)
+				playsound(src, 'modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg', 90)
 				force_open(AM)
 				user.visible_message(span_warning("The deadite smashes through [src]!"))
 			return
@@ -398,12 +398,12 @@
 		to_chat(user, span_info("I slide the viewport open."))
 		windowed = TRUE
 		set_opacity(FALSE)
-		playsound(src, 'sound/foley/doors/windowup.ogg', 100)
+		playsound(src, 'modular/kaizoku/sound/foley/doors/windowup.ogg', 100)
 		return
 	to_chat(user, span_info("I slide the viewport closed."))
 	windowed = FALSE
 	set_opacity(TRUE)
-	playsound(src, 'sound/foley/doors/windowup.ogg', 100)
+	playsound(src, 'modular/kaizoku/sound/foley/doors/windowup.ogg', 100)
 
 /obj/structure/door/green
 	icon_state = "wcg"
@@ -426,9 +426,9 @@
 	icon_state = MAP_SWITCH("donjon", "donjondir")
 	max_integrity = 2000
 	has_viewport = TRUE
-	lock_sound = 'sound/foley/lockmetal.ogg'
-	unlock_sound = 'sound/foley/lockmetal.ogg'
-	rattle_sound = 'sound/foley/lockrattlemetal.ogg'
+	lock_sound = 'modular/kaizoku/sound/foley/lockmetal.ogg'
+	unlock_sound = 'modular/kaizoku/sound/foley/lockmetal.ogg'
+	rattle_sound = 'modular/kaizoku/sound/foley/lockrattlemetal.ogg'
 	attacked_sound = list("sound/combat/hits/onmetal/metalimpact (1).ogg", "sound/combat/hits/onmetal/metalimpact (2).ogg")
 	broken_repair = /obj/item/ingot/iron
 	metalizer_result = null
@@ -449,8 +449,8 @@
 	icon_state = "wood"
 	max_integrity = 500
 	kickthresh = 10
-	open_sound = 'sound/foley/doors/shittyopen.ogg'
-	close_sound = 'sound/foley/doors/shittyclose.ogg'
+	open_sound = 'modular/kaizoku/sound/foley/doors/shittyopen.ogg'
+	close_sound = 'modular/kaizoku/sound/foley/doors/shittyclose.ogg'
 	metalizer_result = null
 
 /obj/structure/door/weak/bolt
@@ -463,8 +463,8 @@
 	desc = "Can be locked from the inside."
 	icon_state = "serving"
 	max_integrity = 250
-	open_sound = 'sound/foley/blindsopen.ogg'
-	close_sound = 'sound/foley/blindsclose.ogg'
+	open_sound = 'modular/kaizoku/sound/foley/blindsopen.ogg'
+	close_sound = 'modular/kaizoku/sound/foley/blindsclose.ogg'
 	dir = NORTH
 	lock = /datum/lock/locked
 	animate_time = 2.1 SECONDS
@@ -478,11 +478,11 @@
 	damage_deflection = 15
 	resistance_flags = FIRE_PROOF
 	blade_dulling = DULLING_BASH
-	open_sound = 'sound/foley/doors/ironopen.ogg'
-	close_sound = 'sound/foley/doors/ironclose.ogg'
-	lock_sound = 'sound/foley/lockmetal.ogg'
-	unlock_sound = 'sound/foley/lockmetal.ogg'
-	rattle_sound = 'sound/foley/lockrattlemetal.ogg'
+	open_sound = 'modular/kaizoku/sound/foley/doors/ironopen.ogg'
+	close_sound = 'modular/kaizoku/sound/foley/doors/ironclose.ogg'
+	lock_sound = 'modular/kaizoku/sound/foley/lockmetal.ogg'
+	unlock_sound = 'modular/kaizoku/sound/foley/lockmetal.ogg'
+	rattle_sound = 'modular/kaizoku/sound/foley/lockrattlemetal.ogg'
 	attacked_sound = list("sound/combat/hits/onmetal/metalimpact (1).ogg", "sound/combat/hits/onmetal/metalimpact (2).ogg")
 	repair_thresholds = list(/obj/item/ingot/iron = 1)
 	broken_repair = /obj/item/ingot/iron
@@ -497,8 +497,8 @@
 	opacity = FALSE
 	ridethrough = TRUE
 	animate_time = 0.6 SECONDS
-	lock_sound = 'sound/foley/lock.ogg'
-	unlock_sound = 'sound/foley/unlock.ogg'
+	lock_sound = 'modular/kaizoku/sound/foley/lock.ogg'
+	unlock_sound = 'modular/kaizoku/sound/foley/unlock.ogg'
 
 /obj/structure/door/iron/bars/cell
 	name = "cell door"
@@ -508,8 +508,8 @@
 	name = "stone door"
 	icon_state = "stone"
 	armor = list("blunt" = 15, "slash" = 30, "stab" = 30,  "piercing" = 0, "fire" = 50, "acid" = 50)
-	open_sound = 'sound/foley/doors/stoneopen.ogg'
-	close_sound = 'sound/foley/doors/stoneclose.ogg'
+	open_sound = 'modular/kaizoku/sound/foley/doors/stoneopen.ogg'
+	close_sound = 'modular/kaizoku/sound/foley/doors/stoneclose.ogg'
 	repair_thresholds = list(/obj/item/natural/stone = 1)
 	broken_repair = /obj/item/natural/stone
 	repair_skill = /datum/skill/craft/masonry
@@ -528,8 +528,8 @@
 	icon_state = "abyssdoor"
 	icon = 'icons/delver/abyss_objects.dmi'
 	armor = list("blunt" = 15, "slash" = 30, "stab" = 30,  "piercing" = 0, "fire" = 50, "acid" = 50)
-	open_sound = 'sound/foley/doors/stoneopen.ogg'
-	close_sound = 'sound/foley/doors/stoneclose.ogg'
+	open_sound = 'modular/kaizoku/sound/foley/doors/stoneopen.ogg'
+	close_sound = 'modular/kaizoku/sound/foley/doors/stoneclose.ogg'
 	repair_thresholds = list(/obj/item/natural/stone = 1)
 	broken_repair = /obj/item/natural/stone
 	repair_skill = /datum/skill/craft/masonry

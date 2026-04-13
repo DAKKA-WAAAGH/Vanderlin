@@ -39,7 +39,7 @@
 
 	gripsprite = FALSE
 	w_class = WEIGHT_CLASS_HUGE
-	parrysound = list('sound/combat/parry/bladed/bladedsmall (1).ogg','sound/combat/parry/bladed/bladedsmall (2).ogg','sound/combat/parry/bladed/bladedsmall (3).ogg')
-	swingsound = list('sound/combat/wooshes/bladed/wooshsmall (1).ogg','sound/combat/wooshes/bladed/wooshsmall (2).ogg','sound/combat/wooshes/bladed/wooshsmall (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/bladed/bladedsmall (1).ogg','modular/kaizoku/sound/combat/parry/bladed/bladedsmall (2).ogg','modular/kaizoku/sound/combat/parry/bladed/bladedsmall (3).ogg')
+	swingsound = list('modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (1).ogg','modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (2).ogg','modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (3).ogg')
 	associated_skill = /datum/skill/combat/unarmed
-	pickup_sound = 'sound/foley/equip/swordsmall2.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/swordsmall2.ogg'

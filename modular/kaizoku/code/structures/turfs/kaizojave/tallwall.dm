@@ -104,7 +104,7 @@
 		return TRUE
 
 	user.changeNext_move(CLICK_CD_MELEE)
-	playsound(src, pick('sound/combat/hits/onrock/onrock (1).ogg', 'sound/combat/hits/onrock/onrock (2).ogg', 'sound/combat/hits/onrock/onrock (3).ogg', 'sound/combat/hits/onrock/onrock (4).ogg'), 100)
+	playsound(src, pick('modular/kaizoku/sound/combat/hits/onrock/onrock (1).ogg', 'modular/kaizoku/sound/combat/hits/onrock/onrock (2).ogg', 'modular/kaizoku/sound/combat/hits/onrock/onrock (3).ogg', 'modular/kaizoku/sound/combat/hits/onrock/onrock (4).ogg'), 100)
 	user.visible_message(span_info("[user] begins chiseling a hole into [src]."))
 	if(!do_after(user, 5 SECONDS, src))
 		return TRUE
@@ -112,7 +112,7 @@
 	has_murderhole = TRUE
 	opacity = FALSE
 	update_murderhole_overlay()
-	playsound(src, 'sound/foley/smash_rock.ogg', 90, FALSE)
+	playsound(src, 'modular/kaizoku/sound/foley/smash_rock.ogg', 90, FALSE)
 	QUEUE_SMOOTH(src)
 	QUEUE_SMOOTH_NEIGHBORS(src)
 	return TRUE
@@ -566,8 +566,8 @@
 	blade_dulling = DULLING_BASHCHOP
 	max_integrity = 300
 	damage_deflection = 2
-	break_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'
-	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroywalldoor.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
 	above_floor = /turf/open/floor/ruinedwood
 	baseturfs = /turf/open/floor/ruinedwood
 	//allowed_door_varieties = list("wood")
@@ -642,8 +642,8 @@
 	blade_dulling = DULLING_CUT
 	max_integrity = 1200
 	damage_deflection = 8
-	break_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'
-	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroywalldoor.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
 	above_floor = /turf/open/floor/ruinedwood
 	baseturfs = /turf/open/floor/ruinedwood
 	allowed_door_varieties = list("wood")
@@ -694,8 +694,8 @@
 	blade_dulling = DULLING_BASH
 	max_integrity = 2200
 	damage_deflection = 14
-	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
-	attacked_sound = list('sound/combat/hits/onstone/wallhit.ogg', 'sound/combat/hits/onstone/wallhit2.ogg', 'sound/combat/hits/onstone/wallhit3.ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onstone/stonedeath.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onstone/wallhit.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit2.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit3.ogg')
 	above_floor = /turf/open/floor/ruinedwood
 	baseturfs = /turf/open/floor/ruinedwood
 
@@ -779,8 +779,8 @@
 	blade_dulling = DULLING_BASH
 	max_integrity = 60000
 	damage_deflection = 30
-	break_sound = 'sound/combat/hits/onmetal/sheet (1).ogg'
-	attacked_sound = list('sound/combat/hits/onmetal/attackpipewall (1).ogg','sound/combat/hits/onmetal/attackpipewall (2).ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onmetal/sheet (1).ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onmetal/attackpipewall (1).ogg','modular/kaizoku/sound/combat/hits/onmetal/attackpipewall (2).ogg')
 	above_floor = /turf/open/floor/ruinedwood
 	baseturfs = /turf/open/floor/ruinedwood
 	burn_power = 0

@@ -11,10 +11,10 @@
 	unequip_delay_self = 30
 	resistance_flags = FIRE_PROOF
 	var/do_sound = FALSE
-	equip_sound = 'sound/foley/equip/equip_outlander_plate.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/equip_outlander_plate.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	pickup_sound = "rustle"
-	break_sound = 'sound/foley/breaksound.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
 	melt_amount = 75
 	melting_material = /datum/material/steel

@@ -14,7 +14,7 @@
 	outfit = /datum/outfit/courtphys/male
 	outfit_female = /datum/outfit/courtphys/female
 	give_bank_account = 100
-	cmode_music = 'sound/music/cmode/nobility/combat_physician.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/nobility/combat_physician.ogg'
 	spells = list(/datum/action/cooldown/spell/diagnose)
 	job_bitflag = BITFLAG_ROYALTY
 	exp_type = list(EXP_TYPE_MEDICAL)

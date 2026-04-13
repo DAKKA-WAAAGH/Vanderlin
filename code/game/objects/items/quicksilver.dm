@@ -6,7 +6,7 @@
 	desc = "A daring blend of alchemy, aberrant blood, and divine silver. This panacea fortifies the anointed's body with blessed silverdust, protecting them from the curses of vampyrism and lycanthropy."
 	w_class = WEIGHT_CLASS_TINY
 	dropshrink = 1
-	drop_sound = 'sound/items/gem.ogg'
+	drop_sound = 'modular/kaizoku/sound/items/gem.ogg'
 	resistance_flags = FIRE_PROOF
 	var/miracle_use = 0
 	var/success = 0

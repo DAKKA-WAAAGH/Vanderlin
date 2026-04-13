@@ -5,7 +5,7 @@
 	icon = 'icons/roguetown/items/gems.dmi'
 	w_class = WEIGHT_CLASS_TINY
 	slot_flags = ITEM_SLOT_MOUTH
-	drop_sound = 'sound/items/gem.ogg'
+	drop_sound = 'modular/kaizoku/sound/items/gem.ogg'
 	///I am leaving this here as a note. If you leave the price null on subtypes, you're eating the infinite recursion pill.
 	///I dont care if its negative just DONT LEAVE IT 0
 	sellprice = 0
@@ -280,7 +280,7 @@
 	w_class = WEIGHT_CLASS_TINY
 	slot_flags = ITEM_SLOT_MOUTH
 	dropshrink = 0.4
-	drop_sound = 'sound/items/gem.ogg'
+	drop_sound = 'modular/kaizoku/sound/items/gem.ogg'
 	sellprice = 454
 
 /obj/item/riddleofsteel/Initialize()

@@ -16,7 +16,7 @@
 		return
 
 	boss.visible_message("<span class='warning'>[boss] creates a swirling vortex of water!</span>")
-	playsound(T, 'sound/misc/explode/explosion.ogg', 100, TRUE) // Replace with appropriate sound
+	playsound(T, 'modular/kaizoku/sound/misc/explode/explosion.ogg', 100, TRUE) // Replace with appropriate sound
 
 	// Set cooldown
 	controller.set_blackboard_key(BB_FISHBOSS_WHIRLPOOL_COOLDOWN, world.time + 45 SECONDS)

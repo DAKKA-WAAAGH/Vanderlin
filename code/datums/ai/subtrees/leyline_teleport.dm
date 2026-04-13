@@ -48,7 +48,7 @@
 	var/turf/source = get_turf(lycan)
 	new /obj/effect/temp_visual/lycan(turf_target, lycan)
 	new /obj/effect/temp_visual/lycan(source, lycan)
-	playsound(source, 'sound/misc/portalactivate.ogg', 200, 1)
+	playsound(source, 'modular/kaizoku/sound/misc/portalactivate.ogg', 200, 1)
 
 	animate(lycan, alpha = 0, time = 2, easing = EASE_OUT) // fade out
 	lycan.visible_message(span_warning("[lycan] dives into a leyline rift!"))

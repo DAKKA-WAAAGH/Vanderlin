@@ -13,7 +13,7 @@
 	w_class = WEIGHT_CLASS_TINY
 	slot_flags = ITEM_SLOT_MOUTH
 	dropshrink = 0.2
-	drop_sound = 'sound/foley/coinphy (1).ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/coinphy (1).ogg'
 	sellprice = 0
 	static_price = TRUE
 	simpleton_price = TRUE
@@ -42,7 +42,7 @@
 	return list("shrink" = 0.10, "sx" = -6, "sy" = 6, "nx" = 6, "ny" = 7, "wx" = 0, "wy" = 5, "ex" = -1, "ey" = 7, "northabove" = 0, "southabove" = 1, "eastabove" = 1, "westabove" = 0, "nturn" = -50, "sturn" = 40, "wturn" = 50, "eturn" = -50, "nflip" = 0, "sflip" = 8, "wflip" = 8, "eflip" = 0)
 
 /obj/item/coin/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
-	playsound(src, 'sound/foley/coins1.ogg', 100, TRUE, -2)
+	playsound(src, 'modular/kaizoku/sound/foley/coins1.ogg', 100, TRUE, -2)
 	scatter(get_turf(src))
 	..()
 
@@ -90,9 +90,9 @@
 /obj/item/coin/proc/set_quantity(new_quantity)
 	quantity = new_quantity
 	if(quantity > 1)
-		drop_sound = 'sound/foley/coins1.ogg'
+		drop_sound = 'modular/kaizoku/sound/foley/coins1.ogg'
 	else
-		drop_sound = 'sound/foley/coinphy (1).ogg'
+		drop_sound = 'modular/kaizoku/sound/foley/coinphy (1).ogg'
 	if(quantity == 1 || quantity == 2)
 		dropshrink = 0.2
 	else
@@ -184,7 +184,7 @@
 		set_quantity(quantity - intended)
 
 		user.put_in_hands(new_coins)
-		playsound(src, 'sound/foley/coins1.ogg', 100, TRUE, -2)
+		playsound(src, 'modular/kaizoku/sound/foley/coins1.ogg', 100, TRUE, -2)
 		return
 	. = ..()
 
@@ -273,7 +273,7 @@
 	G.rigged_outcome = 0
 	if(G.quantity <= 0)
 		qdel(G)
-	playsound(src, 'sound/foley/coins1.ogg', 100, TRUE, -2)
+	playsound(src, 'modular/kaizoku/sound/foley/coins1.ogg', 100, TRUE, -2)
 
 /obj/item/coin/proc/rig_coin(mob/user)
 	var/outcome = alert(user, "What will you rig the next coin flip to?","XYLIX","Heads","Tails","Play fair")
@@ -327,7 +327,7 @@
 		return
 	COOLDOWN_START(src, flip_cd, 3 SECONDS)
 
-	playsound(user, 'sound/foley/coinphy (1).ogg', 100, FALSE)
+	playsound(user, 'modular/kaizoku/sound/foley/coinphy (1).ogg', 100, FALSE)
 	var/flip_outcome = rigged_outcome ? rigged_outcome : prob(50)
 	if(rigged_outcome)
 		record_featured_stat(FEATURED_STATS_CRIMINALS, user)
@@ -462,7 +462,7 @@
 	if(!COOLDOWN_FINISHED(src, flip_cd))
 		return
 	COOLDOWN_START(src, flip_cd, 3 SECONDS)
-	playsound(user, 'sound/foley/coinphy (1).ogg', 100, FALSE)
+	playsound(user, 'modular/kaizoku/sound/foley/coinphy (1).ogg', 100, FALSE)
 	if(prob(50))
 		user.visible_message(span_info("[user] flips the coin. ENDURE!"))
 		heads_tails = TRUE

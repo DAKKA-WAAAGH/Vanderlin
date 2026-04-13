@@ -54,24 +54,24 @@
 		if(/datum/patron/divine/astrata)
 			spawned.cmode_music = 'sound/blank.ogg'
 		if(/datum/patron/divine/noc)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatNoc.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatNoc.ogg'
 		if(/datum/patron/divine/dendor)
-			spawned.cmode_music = 'sound/music/cmode/garrison/CombatForestGarrison.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/garrison/CombatForestGarrison.ogg'
 		if(/datum/patron/divine/abyssor)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatAbyssor.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatAbyssor.ogg'
 		if(/datum/patron/divine/necra)
 			spawned.cmode_music = 'sound/blank.ogg'
 			ADD_TRAIT(spawned, TRAIT_GRAVEROBBER, TRAIT_GENERIC)
 		if(/datum/patron/divine/ravox)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatRavox.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatRavox.ogg'
 		if(/datum/patron/divine/xylix)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatXylix.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatXylix.ogg'
 		if(/datum/patron/divine/pestra)
-			spawned.cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatMonk.ogg'
 		if(/datum/patron/divine/malum)
-			spawned.cmode_music = 'sound/music/cmode/adventurer/CombatOutlander2.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander2.ogg'
 		if(/datum/patron/divine/eora)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatEora.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatEora.ogg'
 			spawned.virginity = FALSE
 			ADD_TRAIT(spawned, TRAIT_BEAUTIFUL, TRAIT_GENERIC)
 		else

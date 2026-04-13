@@ -28,17 +28,17 @@
 	. = ..()
 
 /obj/structure/innocent_web/attack_hand()
-	playsound(src, pick('sound/misc/jumpscare (1).ogg','sound/misc/jumpscare (2).ogg','sound/misc/jumpscare (3).ogg','sound/misc/jumpscare (4).ogg'), 100)
+	playsound(src, pick('modular/kaizoku/sound/misc/jumpscare (1).ogg','modular/kaizoku/sound/misc/jumpscare (2).ogg','modular/kaizoku/sound/misc/jumpscare (3).ogg','modular/kaizoku/sound/misc/jumpscare (4).ogg'), 100)
 	createspooder()
 	qdel(src)
 
 /obj/structure/innocent_web/attackby(obj/item, /mob/user, params)
-	playsound(src, pick('sound/misc/jumpscare (1).ogg','sound/misc/jumpscare (2).ogg','sound/misc/jumpscare (3).ogg','sound/misc/jumpscare (4).ogg'), 100)
+	playsound(src, pick('modular/kaizoku/sound/misc/jumpscare (1).ogg','modular/kaizoku/sound/misc/jumpscare (2).ogg','modular/kaizoku/sound/misc/jumpscare (3).ogg','modular/kaizoku/sound/misc/jumpscare (4).ogg'), 100)
 	createspooder()
 	qdel(src)
 
 /obj/structure/innocent_web/throw_impact(atom/hit_atom, datum/thrownthing/throwingdatum)
-	playsound(src, pick('sound/misc/jumpscare (1).ogg','sound/misc/jumpscare (2).ogg','sound/misc/jumpscare (3).ogg','sound/misc/jumpscare (4).ogg'), 100)
+	playsound(src, pick('modular/kaizoku/sound/misc/jumpscare (1).ogg','modular/kaizoku/sound/misc/jumpscare (2).ogg','modular/kaizoku/sound/misc/jumpscare (3).ogg','modular/kaizoku/sound/misc/jumpscare (4).ogg'), 100)
 	createspooder()
 	qdel(src)
 
@@ -54,7 +54,7 @@
 				to_chat(L, "<span class='warning'>The flimsy web breaks.</span>")
 				qdel(src)
 			else
-				playsound(src, pick('sound/misc/jumpscare (1).ogg','sound/misc/jumpscare (2).ogg','sound/misc/jumpscare (3).ogg','sound/misc/jumpscare (4).ogg'), 120)
+				playsound(src, pick('modular/kaizoku/sound/misc/jumpscare (1).ogg','modular/kaizoku/sound/misc/jumpscare (2).ogg','modular/kaizoku/sound/misc/jumpscare (3).ogg','modular/kaizoku/sound/misc/jumpscare (4).ogg'), 120)
 				createspooder()
 				qdel(src)
 		if(L.m_intent == MOVE_INTENT_RUN)
@@ -64,7 +64,7 @@
 				to_chat(L, "<span class='warning'>The flimsy web breaks.</span>")
 				qdel(src)
 			else
-				playsound(src, pick('sound/misc/jumpscare (1).ogg','sound/misc/jumpscare (2).ogg','sound/misc/jumpscare (3).ogg','sound/misc/jumpscare (4).ogg'), 120)
+				playsound(src, pick('modular/kaizoku/sound/misc/jumpscare (1).ogg','modular/kaizoku/sound/misc/jumpscare (2).ogg','modular/kaizoku/sound/misc/jumpscare (3).ogg','modular/kaizoku/sound/misc/jumpscare (4).ogg'), 120)
 				createspooder()
 				qdel(src)
 		else
@@ -74,7 +74,7 @@
 				to_chat(L, "<span class='warning'>The flimsy web breaks.</span>")
 				qdel(src)
 			else
-				playsound(src, pick('sound/misc/jumpscare (1).ogg','sound/misc/jumpscare (2).ogg','sound/misc/jumpscare (3).ogg','sound/misc/jumpscare (4).ogg'), 120)
+				playsound(src, pick('modular/kaizoku/sound/misc/jumpscare (1).ogg','modular/kaizoku/sound/misc/jumpscare (2).ogg','modular/kaizoku/sound/misc/jumpscare (3).ogg','modular/kaizoku/sound/misc/jumpscare (4).ogg'), 120)
 				createspooder()
 				qdel(src)
 
@@ -425,8 +425,8 @@
 	base_intents = list(/datum/intent/simple/claw)
 	attack_verb_continuous = "rips"
 	attack_verb_simple = "rend"
-	attack_sound = 'sound/combat/wooshes/bladed/wooshmed (1).ogg'
-	dodge_sound = 'sound/combat/dodge.ogg'
+	attack_sound = 'modular/kaizoku/sound/combat/wooshes/bladed/wooshmed (1).ogg'
+	dodge_sound = 'modular/kaizoku/sound/combat/dodge.ogg'
 	canparry = FALSE
 	candodge = TRUE
 	d_intent = INTENT_DODGE

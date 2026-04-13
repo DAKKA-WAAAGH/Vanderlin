@@ -6,7 +6,7 @@
 	blade_class = BCLASS_CHOP
 	attack_verb = list("chops", "hacks")
 	animname = "chop"
-	hitsound = list('sound/combat/hits/bladed/genchop (1).ogg', 'sound/combat/hits/bladed/genchop (2).ogg', 'sound/combat/hits/bladed/genchop (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/genchop (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genchop (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genchop (3).ogg')
 	penfactor = AP_AXE_CHOP
 	swingdelay = 1
 	misscost = 5
@@ -45,7 +45,7 @@
 	icon_state = "incut"
 	blade_class = BCLASS_CUT
 	attack_verb = list("cuts", "slashes")
-	hitsound = list('sound/combat/hits/bladed/smallslash (1).ogg', 'sound/combat/hits/bladed/smallslash (2).ogg', 'sound/combat/hits/bladed/smallslash (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/smallslash (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/smallslash (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/smallslash (3).ogg')
 	animname = "cut"
 	penfactor = AP_AXE_CUT
 	swingdelay = 0
@@ -77,7 +77,7 @@
 	reach = 2
 	chargetime = 1
 	warnie = "mobwarning"
-	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/genstab (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genstab (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genstab (3).ogg')
 	penfactor = AP_HEAVYAXE_STAB
 	swingdelay = 1
 	misscost = 10

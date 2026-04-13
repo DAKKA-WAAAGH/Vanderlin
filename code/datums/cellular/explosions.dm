@@ -346,7 +346,7 @@ as having entered the turf.
 
 		message_admins("Explosion with Power: [power], Falloff: [falloff], Shape: [falloff_shape] from [explosion_source] in [epicenter.loc.name] ([epicenter.x],[epicenter.y],[epicenter.z]).")
 
-		playsound(epicenter, pick('sound/misc/explode/explosionfar (1).ogg','sound/misc/explode/explosionfar (2).ogg','sound/misc/explode/explosionfar (3).ogg'), 100, 1, round(power^2,1))
+		playsound(epicenter, pick('modular/kaizoku/sound/misc/explode/explosionfar (1).ogg','modular/kaizoku/sound/misc/explode/explosionfar (2).ogg','modular/kaizoku/sound/misc/explode/explosionfar (3).ogg'), 100, 1, round(power^2,1))
 
 		if(power >= 300) //Make BIG BOOMS
 			playsound(epicenter, "bigboom", 80, 1, max(round(power,1),7))

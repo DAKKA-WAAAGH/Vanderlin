@@ -21,7 +21,7 @@
 		return FALSE
 
 	var/mob/living/simple_animal/hostile/retaliate/meatvine/consumed = owner
-	//playsound(consumed, 'sound/weapons/bladeslice.ogg', 80, TRUE)
+	//playsound(consumed, 'modular/kaizoku/sound/weapons/bladeslice.ogg', 80, TRUE)
 	consumed.spin(6, 1)
 
 	for(var/mob/living/victim in range(sweep_radius, consumed))

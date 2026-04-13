@@ -2,7 +2,7 @@
 	name = "Lightning Lure"
 	desc = "Leash lightning energy onto targets in range."
 	button_icon_state = "lightning"
-	sound = 'sound/weather/rain/thunder_1.ogg'
+	sound = 'modular/kaizoku/sound/weather/rain/thunder_1.ogg'
 	charge_sound = 'sound/magic/charging_lightning.ogg'
 	click_to_activate = FALSE
 

@@ -399,7 +399,7 @@
 							user.put_in_active_hand(I)
 							M.visible_message(span_danger("[user] takes [I] from [M]'s hand!"), \
 										span_userdanger("[user] takes [I] from my hand!"), span_hear("I hear aggressive shuffling!"), COMBAT_MESSAGE_RANGE)
-							playsound(src, 'sound/combat/weaponr1.ogg', 100, FALSE, -1) //sound queue to let them know that they got disarmed
+							playsound(src, 'modular/kaizoku/sound/combat/weaponr1.ogg', 100, FALSE, -1) //sound queue to let them know that they got disarmed
 						user.changeNext_move(CLICK_CD_MELEE)//avoids instantly attacking with the new weapon
 					else
 						M.visible_message(span_danger("[user] disarms [M] of [I]!"), \
@@ -409,7 +409,7 @@
 					user.Immobilize(10)
 					M.Immobilize(6)
 					M.visible_message(span_warning("[user.name] struggles to disarm [M.name]!"), COMBAT_MESSAGE_RANGE)
-					playsound(src, 'sound/foley/struggle.ogg', 100, FALSE, -1)
+					playsound(src, 'modular/kaizoku/sound/foley/struggle.ogg', 100, FALSE, -1)
 					downgrade_grab(silent = TRUE)
 					user.changeNext_move(CLICK_CD_GRABBING)
 			else
@@ -434,7 +434,7 @@
 					user.Immobilize(10)
 					M.Immobilize(6)
 					M.visible_message(span_warning("[user.name] struggles to disarm [M.name]!"), COMBAT_MESSAGE_RANGE)
-					playsound(src, 'sound/foley/struggle.ogg', 100, FALSE, -1)
+					playsound(src, 'modular/kaizoku/sound/foley/struggle.ogg', 100, FALSE, -1)
 					downgrade_grab(silent = TRUE)
 					user.changeNext_move(CLICK_CD_GRABBING)
 			else
@@ -512,7 +512,7 @@
 		qdel(src)
 		user.put_in_hands(I)
 		C.emote("paincrit", TRUE)
-		playsound(C, 'sound/foley/flesh_rem.ogg', 100, TRUE, -2)
+		playsound(C, 'modular/kaizoku/sound/foley/flesh_rem.ogg', 100, TRUE, -2)
 		if(usr == src)
 			user.visible_message(span_notice("[user] rips [I] out of [user.p_their()] [L.name]!"), span_notice("I rip [I] from my [L.name]."))
 		else
@@ -526,7 +526,7 @@
 		qdel(src)
 		user.put_in_hands(I)
 		M.emote("paincrit", TRUE)
-		playsound(M, 'sound/foley/flesh_rem.ogg', 100, TRUE, -2)
+		playsound(M, 'modular/kaizoku/sound/foley/flesh_rem.ogg', 100, TRUE, -2)
 		if(user == M)
 			user.visible_message(span_notice("[user] rips [I] out of [user.p_them()]self!"), span_notice("I remove [I] from myself."))
 		else
@@ -757,7 +757,7 @@
 							if(!MOBTIMER_EXISTS(user, MT_ZOMBIETRIUMPH))
 								user.adjust_triumphs(1)
 								MOBTIMER_SET(user, MT_ZOMBIETRIUMPH)
-							playsound(C, 'sound/combat/fracture/headcrush (2).ogg', 100, FALSE, -1)
+							playsound(C, 'modular/kaizoku/sound/combat/fracture/headcrush (2).ogg', 100, FALSE, -1)
 							if(C.client)
 								record_round_statistic(STATS_LIMBS_BITTEN)
 							return

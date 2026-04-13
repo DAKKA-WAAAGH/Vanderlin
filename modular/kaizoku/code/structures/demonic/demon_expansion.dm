@@ -59,7 +59,7 @@
 	if(QDELETED(src))
 		return
 	if(prob(15))
-		playsound(get_turf(src), 'sound/misc/gods/astrata_scream.ogg', 85, FALSE)
+		playsound(get_turf(src), 'modular/kaizoku/sound/misc/gods/astrata_scream.ogg', 85, FALSE)
 		for(var/mob/living/M in oview(1, src))
 			M.Knockdown(30)
 			shake_camera(M, 4, 3)

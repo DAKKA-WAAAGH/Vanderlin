@@ -11,7 +11,7 @@
 	unique = TRUE
 	firefuel = 2 MINUTES
 	dropshrink = 0.6
-	drop_sound = 'sound/foley/dropsound/book_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/book_drop.ogg'
 	force = 5
 	associated_skill = /datum/skill/misc/reading
 	name = "tome of the arcyne"
@@ -142,11 +142,11 @@
 	if(!open)
 		slot_flags &= ~ITEM_SLOT_HIP
 		open = TRUE
-		playsound(src, 'sound/items/book_open.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/items/book_open.ogg', 100, FALSE, -1)
 	else
 		slot_flags |= ITEM_SLOT_HIP
 		open = FALSE
-		playsound(src, 'sound/items/book_close.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/items/book_close.ogg', 100, FALSE, -1)
 	curpage = 1
 	update_appearance(UPDATE_ICON_STATE)
 	user.update_inv_hands()
@@ -291,7 +291,7 @@
 	w_class = WEIGHT_CLASS_NORMAL		 //upped to three because books are, y'know, pretty big. (and you could hide them inside eachother recursively forever)
 	attack_verb = list("bashed", "whacked", "educated")
 	resistance_flags = FLAMMABLE
-	drop_sound = 'sound/foley/dropsound/book_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/book_drop.ogg'
 	pickup_sound =  'sound/blank.ogg'
 
 /obj/item/spellbook_unfinished/pre_arcyne
@@ -305,7 +305,7 @@
 		if(isturf(loc)&& (found_table))
 			var/crafttime = (100 - ((user.get_skill_level(/datum/skill/magic/arcane))*5))
 			if(do_after(user, crafttime, target = src))
-				playsound(src, 'sound/items/book_close.ogg', 100, TRUE)
+				playsound(src, 'modular/kaizoku/sound/items/book_close.ogg', 100, TRUE)
 				to_chat(user, span_notice("I add the first few pages to the leather cover..."))
 				new /obj/item/spellbook_unfinished(loc)
 				qdel(P)
@@ -322,12 +322,12 @@
 			var/crafttime = (60 - ((user.get_skill_level(/datum/skill/magic/arcane))*5))
 			if(do_after(user, crafttime, target = src))
 				if(pages_left > 0)
-					playsound(src, 'sound/items/book_page.ogg', 100, TRUE)
+					playsound(src, 'modular/kaizoku/sound/items/book_page.ogg', 100, TRUE)
 					pages_left -= 1
 					to_chat(user, span_notice("[pages_left+1] left..."))
 					qdel(P)
 				else
-					playsound(src, 'sound/items/book_open.ogg', 100, TRUE)
+					playsound(src, 'modular/kaizoku/sound/items/book_open.ogg', 100, TRUE)
 					if(isarcyne(user))
 						to_chat(user, span_notice("The book is bound. I must find a catalyst to channel the arcyne into it now."))
 					else

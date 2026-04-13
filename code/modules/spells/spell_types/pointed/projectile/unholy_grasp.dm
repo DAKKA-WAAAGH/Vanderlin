@@ -2,7 +2,7 @@
 	name = "Unholy Grasp"
 	desc = "Toss forth an unholy snare of blood and guts a short distance, summoned from your leftover trophies sacrificed to Graggar. Like a net, may it snare your target! You will need Viscera to use this."
 	button_icon_state = "unholy_grasp"
-	sound = 'sound/misc/stings/generic.ogg'
+	sound = 'modular/kaizoku/sound/misc/stings/generic.ogg'
 	charge_sound = 'sound/magic/charging_lightning.ogg'
 
 	spell_type = SPELL_MIRACLE //it does count as one, funnily enough.

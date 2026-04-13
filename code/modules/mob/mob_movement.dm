@@ -558,7 +558,7 @@
 		for(var/atom/movable/screen/rogmove/selector in hud_used.static_inventory)
 			selector.update_appearance(UPDATE_ICON_STATE)
 	if(!silent)
-		playsound_local(src, 'sound/misc/click.ogg', 100)
+		playsound_local(src, 'modular/kaizoku/sound/misc/click.ogg', 100)
 
 /mob/proc/toggle_eye_intent(mob/user) //clicking the fixeye button either makes you fixeye or clears your target
 	if(fixedeye)
@@ -571,7 +571,7 @@
 
 	for(var/atom/movable/screen/eye_intent/eyet in hud_used.static_inventory)
 		eyet.update_appearance(UPDATE_ICON)
-	playsound_local(src, 'sound/misc/click.ogg', 100)
+	playsound_local(src, 'modular/kaizoku/sound/misc/click.ogg', 100)
 
 /client/proc/hearallasghost()
 	set category = "GameMaster"

@@ -116,7 +116,7 @@
 	desc = "A wooden dice cup, used for rolling dice."
 	icon_state = "wood_cup"
 	resistance_flags = FLAMMABLE
-	drop_sound = 'sound/foley/dropsound/wooden_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/wooden_drop.ogg'
 	smeltresult = /obj/item/fertilizer/ash
 	melting_material = null
 	metalizer_result = /obj/item/dice_cup

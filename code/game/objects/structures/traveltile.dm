@@ -24,7 +24,7 @@
 			if(T == src)
 				continue
 			to_chat(user, "<b>I teleport to [T].</b>")
-			playsound(src, 'sound/misc/portal_enter.ogg', 100, TRUE)
+			playsound(src, 'modular/kaizoku/sound/misc/portal_enter.ogg', 100, TRUE)
 			user.forceMove(T.loc)
 			fou = TRUE
 			break

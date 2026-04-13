@@ -80,7 +80,7 @@ GLOBAL_VAR_INIT(year_integer, text2num(year)) // = 2013???
 			L.receive_damage(I.embedding.embedded_unsafe_removal_pain_multiplier*I.w_class)//It hurts to rip it out, get surgery you dingus.
 			usr.put_in_hands(I)
 			emote("pain", TRUE)
-			playsound(src, 'sound/foley/flesh_rem.ogg', 100, TRUE, -2)
+			playsound(src, 'modular/kaizoku/sound/foley/flesh_rem.ogg', 100, TRUE, -2)
 			if(usr == src)
 				usr.visible_message(span_notice("[usr] rips [I] out of [usr.p_their()] [L.name]!"), span_notice("I successfully remove [I] from my [L.name]."))
 			else

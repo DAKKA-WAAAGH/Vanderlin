@@ -21,9 +21,9 @@
 
 /obj/item/clothing/armor/rare/Initialize()
 	. = ..()
-	AddComponent(/datum/component/squeak, list('sound/foley/footsteps/armor/fullplate (1).ogg',\
-												'sound/foley/footsteps/armor/fullplate (2).ogg',\
-												'sound/foley/footsteps/armor/fullplate (3).ogg'), 80, falloff_exponent = 20)
+	AddComponent(/datum/component/squeak, list('modular/kaizoku/sound/foley/footsteps/armor/fullplate (1).ogg',\
+												'modular/kaizoku/sound/foley/footsteps/armor/fullplate (2).ogg',\
+												'modular/kaizoku/sound/foley/footsteps/armor/fullplate (3).ogg'), 80, falloff_exponent = 20)
 
 /obj/item/clothing/armor/rare/elfplate
 	name = "dark elf plate"

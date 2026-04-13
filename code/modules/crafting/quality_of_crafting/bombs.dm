@@ -64,7 +64,7 @@
 		/obj/item/alch/firedust = 1,
 	)
 	tool_usage = list(
-		/obj/item/pestle = list(span_notice("starts to grind together"), span_notice("start to grind together"), 'sound/foley/mortarpestle.ogg'),
+		/obj/item/pestle = list(span_notice("starts to grind together"), span_notice("start to grind together"), 'modular/kaizoku/sound/foley/mortarpestle.ogg'),
 	)
 
 	attacked_atom = /obj/item/reagent_containers/glass/mortar

@@ -146,7 +146,7 @@ GLOBAL_LIST_INIT(primordial_wounds, init_primordial_wounds())
 /// Sound that plays when this wound is applied to a mob
 /datum/wound/proc/get_sound_effect(mob/living/affected, obj/item/bodypart/affected_bodypart)
 	if(critical && prob(3))
-		return 'sound/combat/CriticalHit.ogg'
+		return 'modular/kaizoku/sound/combat/CriticalHit.ogg'
 	return pick(sound_effect)
 
 /// Returns whether or not this wound can be applied to a given bodypart
@@ -309,7 +309,7 @@ GLOBAL_LIST_INIT(primordial_wounds, init_primordial_wounds())
 		if(sewing?.stringamt < 1 || QDELETED(src) || QDELETED(owner) || QDELETED(doctor) || QDELETED(sewing))
 			return FALSE
 
-		playsound(owner, 'sound/foley/sewflesh.ogg', 100, TRUE, -2)
+		playsound(owner, 'modular/kaizoku/sound/foley/sewflesh.ogg', 100, TRUE, -2)
 
 		if(!do_after(doctor, 5 SECONDS, owner))
 			return FALSE
@@ -737,7 +737,7 @@ GLOBAL_LIST_INIT(primordial_wounds, init_primordial_wounds())
 	bleed_rate = ARTERY_LIMB_BLEEDRATE
 	clotting_rate = CLOT_RATE_ARTERY
 	clotting_threshold = CLOT_THRESHOLD_ARTERY
-	playsound(owner, 'sound/combat/wound_tear.ogg', 100, TRUE)
+	playsound(owner, 'modular/kaizoku/sound/combat/wound_tear.ogg', 100, TRUE)
 	owner.visible_message(
 		span_crit("The wound gushes open from [bodypart_owner.owner]'s \
 		<b>[bodypart_owner]</b>, nicking an artery!")
@@ -757,7 +757,7 @@ GLOBAL_LIST_INIT(primordial_wounds, init_primordial_wounds())
 	bleed_rate = protected_bleed_clamp
 	if(is_armor_maxed)
 		return TRUE
-	playsound(owner, 'sound/combat/armored_wound.ogg', 100, TRUE)
+	playsound(owner, 'modular/kaizoku/sound/combat/armored_wound.ogg', 100, TRUE)
 	owner.visible_message(
 		span_crit("The wound tears open from [bodypart_owner.owner]'s \
 		<b>[bodypart_owner]</b>, but [bodypart_owner.p_their()] [armor] won't let it go any further!")

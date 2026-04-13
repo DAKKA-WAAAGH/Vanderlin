@@ -50,7 +50,7 @@
 	spawned.virginity = TRUE
 	switch(spawned.patron?.type)
 		if(/datum/patron/divine/astrata)
-			spawned.cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatMonk.ogg'
 		if(/datum/patron/divine/necra)
 			spawned.cmode_music = 'sound/blank.ogg'
 			ADD_TRAIT(spawned, TRAIT_DEADNOSE, TRAIT_GENERIC)
@@ -60,7 +60,7 @@
 			ADD_TRAIT(spawned, TRAIT_EMPATH, TRAIT_GENERIC)
 			spawned.virginity = FALSE
 			spawned.adjust_skillrank(/datum/skill/misc/music, 2, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatEora.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatEora.ogg'
 		if(/datum/patron/divine/noc)
 			spawned.adjust_skillrank(/datum/skill/labor/mathematics, 2, TRUE)
 			var/language = pickweight(list("Dwarvish" = 1, "Elvish" = 1, "Hellspeak" = 1, "Zaladin" = 1, "Orcish" = 1,))
@@ -90,20 +90,20 @@
 					to_chat(spawned,span_info("\
 					I learned the tongue of the savages in my time.")
 					)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatNoc.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatNoc.ogg'
 		if(/datum/patron/divine/pestra)
 			spawned.adjust_skillrank(/datum/skill/misc/medicine, 1, TRUE)
 			spawned.adjust_skillrank(/datum/skill/craft/alchemy, 1, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatMonk.ogg'
 		if(/datum/patron/divine/dendor)
 			spawned.adjust_skillrank(/datum/skill/labor/farming, 2, TRUE)
 			spawned.adjust_skillrank(/datum/skill/labor/taming, 1, TRUE)
 			ADD_TRAIT(spawned, TRAIT_SEEDKNOW, TRAIT_GENERIC)
-			spawned.cmode_music = 'sound/music/cmode/garrison/CombatForestGarrison.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/garrison/CombatForestGarrison.ogg'
 		if(/datum/patron/divine/abyssor)
 			spawned.adjust_skillrank(/datum/skill/labor/fishing, 2, TRUE)
 			spawned.adjust_skillrank(/datum/skill/misc/swimming, 2, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatAbyssor.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatAbyssor.ogg'
 		if(/datum/patron/divine/ravox)
 			spawned.adjust_skillrank(/datum/skill/combat/polearms, 1, TRUE)
 			var/sword_skill = rand(1,2)
@@ -112,11 +112,11 @@
 			spawned.adjust_skillrank(/datum/skill/combat/swords, sword_skill, TRUE)
 			spawned.adjust_skillrank(/datum/skill/combat/whipsflails, whip_skill, TRUE)
 			spawned.adjust_skillrank(/datum/skill/combat/axesmaces, axe_skill, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatRavox.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatRavox.ogg'
 		if(/datum/patron/divine/xylix)
 			spawned.adjust_skillrank(/datum/skill/misc/stealing, 2, TRUE)
 			spawned.adjust_skillrank(/datum/skill/misc/music, 3, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatXylix.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatXylix.ogg'
 		if(/datum/patron/divine/malum)
 			spawned.adjust_skillrank(/datum/skill/craft/blacksmithing, 2, TRUE)
 			spawned.adjust_skillrank(/datum/skill/craft/smelting, 2, TRUE)
@@ -127,7 +127,7 @@
 			spawned.adjust_skillrank(/datum/skill/craft/masonry, 1, TRUE)
 			spawned.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
 			ADD_TRAIT(spawned, TRAIT_MALUMFIRE, TRAIT_GENERIC)
-			spawned.cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatMonk.ogg'
 
 	var/holder = spawned.patron?.devotion_holder
 	if(holder)

@@ -216,7 +216,7 @@
 	var/list/mutations = list()
 	break_sound = "plantcross"
 	destroy_sound = null
-	attacked_sound = 'sound/misc/woodhit.ogg'
+	attacked_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
 
 /obj/structure/vine/Initialize()
 	. = ..()
@@ -399,7 +399,7 @@
 	icon_state = "[icon_state]d"
 	modify_max_integrity(1, can_break = FALSE)
 	update_integrity(1)
-	destroy_sound = 'sound/foley/breaksound.ogg'
+	destroy_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
 
 /obj/structure/vine/proc/grow()
 	if(!energy)

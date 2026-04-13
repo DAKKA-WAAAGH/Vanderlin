@@ -42,7 +42,7 @@
 	var/exp_flash = 2
 	var/exp_fire = 2
 	var/exp_hotspot = 1
-	var/explode_sound = list('sound/misc/explode/incendiary (1).ogg','sound/misc/explode/incendiary (2).ogg')
+	var/explode_sound = list('modular/kaizoku/sound/misc/explode/incendiary (1).ogg','modular/kaizoku/sound/misc/explode/incendiary (2).ogg')
 
 /obj/effect/temp_visual/target/meteor/fall(list/hit_atoms)
 	var/turf/T = get_turf(src)
@@ -87,7 +87,7 @@
 	var/exp_flash = 0
 	var/exp_fire = 0
 	var/exp_hotspot = 0
-	var/explode_sound = list('sound/misc/explode/incendiary (1).ogg','sound/misc/explode/incendiary (2).ogg')
+	var/explode_sound = list('modular/kaizoku/sound/misc/explode/incendiary (1).ogg','modular/kaizoku/sound/misc/explode/incendiary (2).ogg')
 
 /obj/effect/temp_visual/target/orcthrow/fall()
 	var/turf/hit_turf = get_turf(src)
@@ -111,7 +111,7 @@
 
 /obj/effect/temp_visual/lightning/Initialize(mapload)
 	. = ..()
-	playsound(src,'sound/weather/rain/thunder_1.ogg', 80, TRUE)
+	playsound(src,'modular/kaizoku/sound/weather/rain/thunder_1.ogg', 80, TRUE)
 	add_overlay(emissive_appearance(icon, icon_state))
 
 /obj/effect/temp_visual/target/lightning

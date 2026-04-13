@@ -4,9 +4,9 @@
 	desc = "Made out of interlocked steel rings. Offers superior resistance against arrows, stabs and cuts. \nUsually worn as padding for proper armor."
 	icon_state = "haubergeon"
 	blocksound = CHAINHIT
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_chain.ogg'
-	pickup_sound = 'sound/foley/equip/equip_outlander_chain.ogg'
-	equip_sound = 'sound/foley/equip/equip_outlander_chain.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_chain.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/equip_outlander_chain.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/equip_outlander_chain.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
 	melt_amount = 75
 	melting_material = /datum/material/steel

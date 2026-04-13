@@ -9,7 +9,7 @@
 /obj/structure/flora/grass/tangler/real
 	max_integrity = 40
 	integrity_failure = 0.15
-	attacked_sound = 'sound/misc/woodhit.ogg'
+	attacked_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
 	buckle_lying = FALSE
 	buckle_prevents_pull = TRUE
 	var/list/eatablez = list(/obj/item/organ, /obj/item/reagent_containers/food/snacks/meat, /obj/item/fertilizer/compost, /obj/item/natural/poo)
@@ -53,7 +53,7 @@
 				if(is_type_in_list(F, eatablez))
 					aggroed = world.time
 					last_eat = world.time
-					playsound(src,'sound/misc/eat.ogg', rand(30,60), TRUE)
+					playsound(src,'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 					qdel(F)
 					return
 		if(world.time > aggroed + 15 SECONDS)
@@ -136,7 +136,7 @@
 			last_eat = world.time
 			START_PROCESSING(SSobj, src)
 			update_appearance(UPDATE_ICON_STATE | UPDATE_NAME)
-			playsound(src,'sound/misc/eat.ogg', rand(30,60), TRUE)
+			playsound(src,'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 			qdel(AM)
 			return
 		aggroed = world.time

@@ -36,10 +36,10 @@
 	desc = "Conceals your face, whether against the rain, or the gazes of others."
 	icon_state = "basichood"
 	dynamic_hair_suffix = ""
-	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
-	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/cloak_equip.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/cloak_take_off.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
 	var/default_hidden = null

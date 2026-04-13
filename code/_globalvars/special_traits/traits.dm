@@ -788,14 +788,14 @@
 			helmet = /obj/item/clothing/head/helmet/heavy/necked/noc
 			cloak = /obj/item/clothing/cloak/stabard/templar/noc
 			weapon = /obj/item/weapon/sword/sabre/noc
-			character.cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
+			character.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatMonk.ogg'
 			ADD_TRAIT(character, TRAIT_DUALWIELDER, TRAIT_GENERIC)
 		if(/datum/patron/divine/dendor)
 			psycross = /obj/item/clothing/neck/psycross/silver/dendor
 			helmet = /obj/item/clothing/head/helmet/heavy/necked/dendorhelm
 			cloak = /obj/item/clothing/cloak/stabard/templar/dendor
 			weapon = /obj/item/weapon/polearm/halberd/bardiche/dendor
-			character.cmode_music = 'sound/music/cmode/garrison/CombatForestGarrison.ogg'
+			character.cmode_music = 'modular/kaizoku/sound/music/cmode/garrison/CombatForestGarrison.ogg'
 			character.clamped_adjust_skillrank(/datum/skill/combat/polearms, 4, 4, TRUE)
 		if(/datum/patron/divine/necra)
 			psycross = /obj/item/clothing/neck/psycross/silver/necra
@@ -809,7 +809,7 @@
 			cloak = /obj/item/clothing/cloak/templar/pestran
 			weapon = /obj/item/weapon/knife/dagger/steel/pestrasickle
 			character.mind.special_items["Second Weapon"] = /obj/item/weapon/knife/dagger/steel/pestrasickle
-			character.cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
+			character.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatMonk.ogg'
 			ADD_TRAIT(character, TRAIT_DUALWIELDER, TRAIT_GENERIC)
 			character.clamped_adjust_skillrank(/datum/skill/combat/knives, 4, 4, TRUE)
 			character.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)
@@ -818,7 +818,7 @@
 			psycross = /obj/item/clothing/neck/psycross/silver/eora
 			cloak = /obj/item/clothing/cloak/stabard/templar/eora
 			weapon = /obj/item/weapon/sword/rapier/eora
-			character.cmode_music = 'sound/music/cmode/church/CombatEora.ogg'
+			character.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatEora.ogg'
 			character.mind.special_items["Eora's Gift"] = /obj/item/clothing/head/flowercrown/rosa
 			ADD_TRAIT(character, TRAIT_BEAUTIFUL, TRAIT_GENERIC)
 		if(/datum/patron/divine/ravox)
@@ -826,20 +826,20 @@
 			helmet = /obj/item/clothing/head/helmet/heavy/ravoxhelm
 			cloak = /obj/item/clothing/cloak/stabard/templar/ravox
 			weapon = /obj/item/weapon/sword/long/ravox
-			character.cmode_music = 'sound/music/cmode/adventurer/CombatOutlander2.ogg'
+			character.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander2.ogg'
 		if(/datum/patron/divine/malum)
 			psycross = /obj/item/clothing/neck/psycross/silver/malum
 			helmet = /obj/item/clothing/head/helmet/heavy/necked/malumhelm
 			cloak = /obj/item/clothing/cloak/templar/malumite
 			weapon = /obj/item/weapon/hammer/sledgehammer/war/malum
-			character.cmode_music = 'sound/music/cmode/adventurer/CombatOutlander2.ogg'
+			character.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander2.ogg'
 			character.clamped_adjust_skillrank(/datum/skill/combat/axesmaces, 4, 4, TRUE)
 		if(/datum/patron/divine/abyssor)
 			psycross = /obj/item/clothing/neck/psycross/silver/abyssor
 			helmet = /obj/item/clothing/head/helmet/heavy/abyssorgreathelm
 			cloak = /obj/item/clothing/cloak/stabard/templar/abyssor
 			weapon = /obj/item/weapon/polearm/spear/abyssor
-			character.cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
+			character.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatMonk.ogg'
 			character.adjust_skillrank(/datum/skill/labor/fishing, 1, TRUE)
 			character.clamped_adjust_skillrank(/datum/skill/combat/polearms, 4, 4, TRUE)
 		if(/datum/patron/divine/xylix)

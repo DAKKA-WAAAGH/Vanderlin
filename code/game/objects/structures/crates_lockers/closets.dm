@@ -27,8 +27,8 @@
 	var/max_mob_size = MOB_SIZE_HUMAN //Biggest mob_size accepted by the container
 	var/mob_storage_capacity = 2 // how many human sized mob/living can fit together inside a closet.
 	var/storage_capacity = 30 //This is so that someone can't pack hundreds of items in a locker/crate then open it in a populated area to crash clients.
-	var/open_sound = 'sound/misc/cupboard_open.ogg'
-	var/close_sound = 'sound/misc/cupboard_close.ogg'
+	var/open_sound = 'modular/kaizoku/sound/misc/cupboard_open.ogg'
+	var/close_sound = 'modular/kaizoku/sound/misc/cupboard_close.ogg'
 	var/open_sound_volume = 100
 	var/close_sound_volume = 100
 	var/material_drop

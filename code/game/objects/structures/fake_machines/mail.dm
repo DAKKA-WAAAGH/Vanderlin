@@ -118,7 +118,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 				P.update_appearance()
 				P.forceMove(X.loc)
 				X.say("New mail!")
-				playsound(X, 'sound/misc/mail.ogg', 100, FALSE, -1)
+				playsound(X, 'modular/kaizoku/sound/misc/mail.ogg', 100, FALSE, -1)
 				break
 		if(found)
 			if(P.info)
@@ -149,7 +149,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 			send_ooc_note("New letter from <b>[sentfrom].</b>", name = send2place)
 			for(var/mob/living/carbon/human/H in GLOB.human_list)
 				if(H.real_name == send2place)
-					H.playsound_local(H, 'sound/misc/mail.ogg', 100, FALSE, -1)
+					H.playsound_local(H, 'modular/kaizoku/sound/misc/mail.ogg', 100, FALSE, -1)
 		else
 			to_chat(user, span_warning("The master of mails has perished?"))
 			return
@@ -231,8 +231,8 @@ GLOBAL_LIST_EMPTY(letters_sent)
 	sleep(2 SECONDS)
 
 	say("THANK YOU FOR YOUR SERVITUDE.")
-	playsound(src, 'sound/misc/mercsuccess.ogg', 100, FALSE, -1)
-	playsound(src, 'sound/misc/hiss.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/mercsuccess.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/hiss.ogg', 100, FALSE, -1)
 	to_chat(H, span_warning("A trinket comes tumbling down from the machine. Proof of your distinction."))
 
 	H.adjust_triumphs(3)
@@ -256,7 +256,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 
 /obj/structure/fake_machine/mail/proc/handle_inquisition_key(obj/item/key/K, mob/user)
 	if(keycontrol in K.lockids)
-		playsound(src, 'sound/misc/beep.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/beep.ogg', 100, FALSE, -1)
 		for(var/obj/structure/fake_machine/mail/hermes in SSroguemachine.hermailers)
 			hermes.inqlock()
 		to_chat(user, span_warning("I [inqonly ? "enable" : "disable"] the Puritan's Lock."))
@@ -272,7 +272,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 
 	for(var/obj/item/key/key in K.contents)
 		if(keycontrol in key.lockids)
-			playsound(src, 'sound/misc/beep.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/beep.ogg', 100, FALSE, -1)
 			for(var/obj/structure/fake_machine/mail/hermes in SSroguemachine.hermailers)
 				hermes.inqlock()
 			to_chat(user, span_warning("I [inqonly ? "enable" : "disable"] the Puritan's Lock."))
@@ -597,7 +597,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 				paper.update_appearance()
 				paper.forceMove(mailbox.loc)
 				mailbox.say("New mail!")
-				playsound(mailbox, 'sound/misc/mail.ogg', 100, FALSE, -1)
+				playsound(mailbox, 'modular/kaizoku/sound/misc/mail.ogg', 100, FALSE, -1)
 				break
 
 		if(found)
@@ -624,7 +624,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 	STR.handle_item_insertion(paper, prevent_warning=TRUE)
 	master.new_mail = TRUE
 	master.update_appearance()
-	playsound(src, 'sound/misc/mail.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/mail.ogg', 100, FALSE, -1)
 
 	if(paper.info)
 		GLOB.letters_sent |= remove_color_tags(paper.info)
@@ -635,7 +635,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 
 	for(var/mob/living/carbon/human/H in GLOB.human_list)
 		if(H.real_name == send_to)
-			H.playsound_local(H, 'sound/misc/mail.ogg', 100, FALSE, -1)
+			H.playsound_local(H, 'modular/kaizoku/sound/misc/mail.ogg', 100, FALSE, -1)
 
 /obj/structure/fake_machine/mail/proc/handle_inq_coin(obj/item/coin/inqcoin/coin, mob/user)
 	if(!HAS_TRAIT(user, TRAIT_INQUISITION))
@@ -648,7 +648,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 	inqcoins += coin.quantity
 	update_appearance()
 	qdel(coin)
-	playsound(src, 'sound/misc/coininsert.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/coininsert.ogg', 100, FALSE, -1)
 	display_marquette(user)
 
 /obj/structure/fake_machine/mail/proc/handle_regular_coin(obj/item/coin/coin, mob/user)
@@ -660,7 +660,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 
 	coin_loaded = coin.get_real_price()
 	qdel(coin)
-	playsound(src, 'sound/misc/coininsert.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/coininsert.ogg', 100, FALSE, -1)
 	update_appearance()
 
 
@@ -865,7 +865,7 @@ GLOBAL_LIST_EMPTY(letters_sent)
 		cat_current = href_list["changecat"]
 
 	if(href_list["locktoggle"])
-		playsound(src, 'sound/misc/beep.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/beep.ogg', 100, FALSE, -1)
 		for(var/obj/structure/fake_machine/mail/everyhermes in SSroguemachine.hermailers)
 			everyhermes.inqlock()
 

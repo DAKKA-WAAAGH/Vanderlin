@@ -100,14 +100,14 @@
 				if (do_after(user, GUILLOTINE_ACTIVATE_DELAY, src) && blade_status == GUILLOTINE_BLADE_RAISED)
 					current_action = 0
 					blade_status = GUILLOTINE_BLADE_MOVING
-					playsound(src, 'sound/misc/wood_saw.ogg', 100, TRUE)
+					playsound(src, 'modular/kaizoku/sound/misc/wood_saw.ogg', 100, TRUE)
 					icon_state = "guillotine_drop"
 					addtimer(CALLBACK(src, PROC_REF(drop_blade), user), GUILLOTINE_ANIMATION_LENGTH) // Minus two so we play the sound and decap faster
 				else
 					current_action = 0
 			else
 				blade_status = GUILLOTINE_BLADE_MOVING
-				playsound(src, 'sound/misc/wood_saw.ogg', 100, TRUE)
+				playsound(src, 'modular/kaizoku/sound/misc/wood_saw.ogg', 100, TRUE)
 				icon_state = "guillotine_drop"
 				addtimer(CALLBACK(src, PROC_REF(drop_blade)), GUILLOTINE_ANIMATION_LENGTH)
 
@@ -183,7 +183,7 @@
 					user.visible_message(span_notice("[user] sharpens the large blade of the guillotine."),
 						              span_notice("I sharpen the large blade of the guillotine."))
 					blade_sharpness += 1
-					playsound(src, 'sound/items/sharpen_long1.ogg', 100, TRUE)
+					playsound(src, 'modular/kaizoku/sound/items/sharpen_long1.ogg', 100, TRUE)
 					return
 				else
 					blade_status = GUILLOTINE_BLADE_RAISED

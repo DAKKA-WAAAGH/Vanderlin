@@ -53,6 +53,6 @@
 		span_userdanger("YOU ARE ABYSSOR'S CHOSEN!"),
 		span_notice("Abyssor demands a small respite for the creatures of the deep! Release a demanded fish back to the water to please Abyssor!"),
 	))
-	chosen_one.playsound_local(chosen_one, 'sound/items/bucket_transfer (1).ogg', 100)
+	chosen_one.playsound_local(chosen_one, 'modular/kaizoku/sound/items/bucket_transfer (1).ogg', 100)
 
 	chosen_one.mind.announce_personal_objectives()

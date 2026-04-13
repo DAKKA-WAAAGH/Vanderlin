@@ -17,7 +17,7 @@ GLOBAL_LIST_EMPTY(biggates)
 	var/list/turfsy = list()
 	var/list/blockers = list()
 	var/gid
-	attacked_sound = list('sound/combat/hits/onmetal/sheet (1).ogg', 'sound/combat/hits/onmetal/sheet (2).ogg')
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onmetal/sheet (1).ogg', 'modular/kaizoku/sound/combat/hits/onmetal/sheet (2).ogg')
 	var/obj/structure/attached_to
 	/// this is dumb but I'm not refactoring this right meow.
 	var/is_big_gate = TRUE
@@ -119,7 +119,7 @@ GLOBAL_LIST_EMPTY(biggates)
 	if(isSwitchingStates || !density)
 		return
 	isSwitchingStates = TRUE
-	playsound(src, 'sound/misc/gate.ogg', 100, extrarange = 5)
+	playsound(src, 'modular/kaizoku/sound/misc/gate.ogg', 100, extrarange = 5)
 	flick("[base_state]_opening",src)
 	layer = initial(layer)
 	sleep(15)
@@ -136,7 +136,7 @@ GLOBAL_LIST_EMPTY(biggates)
 	isSwitchingStates = TRUE
 	update_appearance(UPDATE_ICON)
 	layer = ABOVE_MOB_LAYER
-	playsound(src, 'sound/misc/gate.ogg', 100, extrarange = 5)
+	playsound(src, 'modular/kaizoku/sound/misc/gate.ogg', 100, extrarange = 5)
 	flick("[base_state]_closing",src)
 	sleep(10)
 	for(var/turf/T in turfsy)
@@ -207,7 +207,7 @@ GLOBAL_LIST_EMPTY(biggates)
 		L.changeNext_move(CLICK_CD_MELEE)
 		var/used_time = 10.5 SECONDS - (L.STASTR * 10)
 		user.visible_message("<span class='warning'>[user] cranks the winch.</span>")
-		playsound(src, 'sound/foley/winch.ogg', 100, extrarange = 3)
+		playsound(src, 'modular/kaizoku/sound/foley/winch.ogg', 100, extrarange = 3)
 		if(do_after(user, used_time))
 			attached_gate.toggle()
 

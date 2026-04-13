@@ -21,8 +21,8 @@
 	w_class = WEIGHT_CLASS_NORMAL
 	slot_flags = ITEM_SLOT_HIP
 	tool_behaviour = TOOL_IMPROVISED_SAW
-	swingsound = list('sound/combat/wooshes/blunt/shovel_swing.ogg','sound/combat/wooshes/blunt/shovel_swing2.ogg')
-	drop_sound = 'sound/foley/dropsound/shovel_drop.ogg'
+	swingsound = list('modular/kaizoku/sound/combat/wooshes/blunt/shovel_swing.ogg','modular/kaizoku/sound/combat/wooshes/blunt/shovel_swing2.ogg')
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/shovel_drop.ogg'
 	smeltresult = /obj/item/ingot/iron
 	associated_skill = /datum/skill/combat/knives
 	max_blade_int = 50
@@ -55,8 +55,8 @@
 	experimental_inhand = FALSE
 	grid_width = 64
 	grid_height = 224
-	attacked_sound = 'sound/misc/woodhit.ogg'
-	drop_sound = 'sound/foley/dropsound/wooden_drop.ogg'
+	attacked_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/wooden_drop.ogg'
 	possible_item_intents = list(/datum/intent/use)
 	force = 6
 	throwforce = 0
@@ -81,7 +81,7 @@
 	experimental_inhand = FALSE
 	grid_width = 128
 	grid_height = 224
-	drop_sound = 'sound/foley/dropsound/wooden_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/wooden_drop.ogg'
 	possible_item_intents = list(/datum/intent/use)
 	force = 0
 	throwforce = 0
@@ -110,7 +110,7 @@
 	dropshrink = 0.8
 	grid_width = 64
 	grid_height = 64
-	drop_sound = 'sound/foley/dropsound/glass_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/glass_drop.ogg'
 	possible_item_intents = list(/datum/intent/use)
 	force = 0
 	throwforce = 8
@@ -143,7 +143,7 @@
 	dropshrink = 0.8
 	grid_width = 64
 	grid_height = 64
-	drop_sound = 'sound/foley/dropsound/glass_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/glass_drop.ogg'
 	possible_item_intents = list(/datum/intent/use)
 	force = 15
 	throwforce = 18
@@ -179,7 +179,7 @@
 	experimental_inhand = FALSE
 	icon_state = "shard1"
 	item_state = "shard"
-	drop_sound = 'sound/foley/dropsound/glass_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/glass_drop.ogg'
 	possible_item_intents = list(/datum/intent/dagger/cut, /datum/intent/stab)
 	force = 3
 	throwforce = 5

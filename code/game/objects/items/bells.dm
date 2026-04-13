@@ -11,14 +11,14 @@
 	damtype = BRUTE
 	slot_flags = ITEM_SLOT_HIP
 	force = 5
-	hitsound = 'sound/items/bsmith1.ogg'
+	hitsound = 'modular/kaizoku/sound/items/bsmith1.ogg'
 	COOLDOWN_DECLARE(bell_ring)
 
 /obj/item/handheld_bell/attack_self(mob/user, params)
 	. = ..()
 	if(!COOLDOWN_FINISHED(src, bell_ring))
 		return
-	playsound(src, 'sound/misc/handbell.ogg', 50, 1)
+	playsound(src, 'modular/kaizoku/sound/misc/handbell.ogg', 50, 1)
 
 	user.visible_message("<span class='notice'>[user] rings [src].</span>", span_notice("You ring [src]."))
 	for(var/mob/M in view(10, src.loc))
@@ -29,7 +29,7 @@
 
 /obj/item/handheld_bell/proc/sound_bell(mob/living/user)
 	user.visible_message("<span class='warning'>[user] rings the bell!</span>")
-	playsound(src, 'sound/misc/handbell.ogg', 100, TRUE)
+	playsound(src, 'modular/kaizoku/sound/misc/handbell.ogg', 100, TRUE)
 	var/turf/origin_turf = get_turf(src)
 
 	for(var/mob/living/player in GLOB.player_list)
@@ -76,7 +76,7 @@
 				disttext = " very far"
 
 		//sound played for other players
-		player.playsound_local(get_turf(player), 'sound/misc/handbell.ogg', 35, FALSE, pressure_affected = FALSE)
+		player.playsound_local(get_turf(player), 'modular/kaizoku/sound/misc/handbell.ogg', 35, FALSE, pressure_affected = FALSE)
 		to_chat(player, "<span class='warning'>I hear the bell ring somewhere[disttext][dirtext]!</span>")
 
 /obj/item/handheld_bell/getonmobprop(tag)
@@ -132,7 +132,7 @@
 		for(var/mob/M in GLOB.player_list) // @everyone
 			if(M.client && M.can_hear()) // Disregard NPC's with no mind and sleeping/unconscious people
 				to_chat(M, "<span class='notice'>[src] rings, echoing solemnly far and wide across the realm.</span>")
-				M.playsound_local(M, 'sound/misc/bell.ogg', 50, 1)
+				M.playsound_local(M, 'modular/kaizoku/sound/misc/bell.ogg', 50, 1)
 		visible_message("<span class='notice'>[user] uses the [used_item] to ring the [src].</span>")
 		COOLDOWN_START(src, bell_ring, 5 SECONDS)
 	else

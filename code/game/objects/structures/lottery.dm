@@ -28,7 +28,7 @@
 
 /obj/structure/fake_machine/lottery_roguetown/attack_hand(mob/living/user)
 	say("Your current tithe is [gamblingprice] mammons. Care to spin?")
-	playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 	return
 
 
@@ -51,19 +51,19 @@
 	// Validate tithe amount
 	if(new_total > maxtithing)
 		say("This puts the starting tithe over [maxtithing] mammons.")
-		playsound(src, 'sound/misc/machineno.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machineno.ogg', 100, FALSE, -1)
 		return
 
 	if(new_total < mintithing)
 		say("This is below [mintithing] mammons.")
-		playsound(src, 'sound/misc/machineno.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machineno.ogg', 100, FALSE, -1)
 		return
 
 	// Accept the coin
 	gamblingprice += coin_value
 	qdel(P)
 	say("Your current tithe is now [gamblingprice] mammons. Care to spin?")
-	playsound(src, 'sound/misc/machinequestion.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/machinequestion.ogg', 100, FALSE, -1)
 	return
 
 
@@ -98,7 +98,7 @@
 		"Dance with ruin and wealth."\
 	))
 
-	playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 	playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 
 	gamblingprob += (user.STALUC - probpenalty)
@@ -133,7 +133,7 @@
 		"A bountiful harvest, this year- the peasant's tithe rises to [gamblingprice] mammons. Spin me again?"\
 	))
 
-	playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 	gamblingprob = gamblingbaseprob
 	oldtithe = gamblingprice
 	sleep(15)
@@ -153,7 +153,7 @@
 		"You stand just as I did; loser and a freek."\
 	))
 
-	playsound(src, 'sound/misc/bug.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/bug.ogg', 100, FALSE, -1)
 	sleep(20)
 
 	say(pick(
@@ -164,7 +164,7 @@
 		"Poor beggar! Spin me again?"\
 	))
 
-	playsound(src, 'sound/misc/bug.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/bug.ogg', 100, FALSE, -1)
 	gamblingprob = gamblingbaseprob
 	gamblingprice = 0
 	oldtithe = 0
@@ -215,7 +215,7 @@
 		return
 
 	if((coin_amt * mod) > gamblingprice)
-		playsound(src, 'sound/misc/machineno.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machineno.ogg', 100, FALSE, -1)
 		return
 
 	budget2change(coin_amt * mod, user, selection)
@@ -236,90 +236,90 @@
 	switch(chatterbox)
 		if(1)
 			say("I still remember the rain on my skin.")
-			playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 			sleep(30)
 			say("The wind in my fur...or was it hair? Either way...")
-			playsound(src, 'sound/misc/machinequestion.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machinequestion.ogg', 100, FALSE, -1)
 
 		if(2)
 			say("The worship of gods is pernicious.")
-			playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 			sleep(20)
 			say("But this punishment is not as bad as others'! Ha-ha-ha!")
-			playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 
 		if(3)
 			say("There are fates worse than death...")
-			playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 			sleep(30)
 			say("...especially for a lowly fool who thought himself a king.")
-			playsound(src, 'sound/misc/bug.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/bug.ogg', 100, FALSE, -1)
 
 		if(4)
 			say("She didn't realize Her machine would kill Her, of course.")
-			playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 			sleep(30)
 			say("...though 'tis difficult to argue what happened after that didn't benefit Her.")
-			playsound(src, 'sound/misc/bug.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/bug.ogg', 100, FALSE, -1)
 
 		if(5)
 			say("Oh, Psydon?")
-			playsound(src, 'sound/misc/machinequestion.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machinequestion.ogg', 100, FALSE, -1)
 			sleep(30)
 			say("To be honest, I'm about PSY-DONE with this whole debate! Ha-ha-h- ...No? Too soon? Alright.")
-			playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 
 		if(6)
 			say("You know, jester, those Ecclesials have the right idea.")
-			playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 			sleep(30)
 			say("Won't someone think of the deadite-loving, tax-hating, drug-using murderers?!")
-			playsound(src, 'sound/misc/bug.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/bug.ogg', 100, FALSE, -1)
 
 		if(7)
 			say("...well, don't look at me for conversation.")
-			playsound(src, 'sound/misc/bug.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/bug.ogg', 100, FALSE, -1)
 			sleep(30)
 			say("I've been the one doing all the chatting.")
-			playsound(src, 'sound/misc/machineno.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machineno.ogg', 100, FALSE, -1)
 
 		if(8)
 			say("Can't you smell the stench in the air? It's terrible.")
-			playsound(src, 'sound/misc/bug.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/bug.ogg', 100, FALSE, -1)
 			sleep(30)
 			say("It wasn't nearly so bad, before. Rot and puss. Oh, well.")
-			playsound(src, 'sound/misc/bug.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/bug.ogg', 100, FALSE, -1)
 
 		if(9)
 			say("Can't you smell the stench in the air, fool? It's terrible.")
-			playsound(src, 'sound/misc/bug.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/bug.ogg', 100, FALSE, -1)
 			sleep(30)
 			say("I don't know how you could miss it. Rot and puss. Oh, well.")
-			playsound(src, 'sound/misc/bug.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/bug.ogg', 100, FALSE, -1)
 
 		if(10)
 			say("Maybe you ought stop while you are ahead, jester.")
-			playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 			sleep(30)
 			say("...greed is what got your lot into this mess, after all.")
-			playsound(src, 'sound/misc/bug.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/bug.ogg', 100, FALSE, -1)
 
 		if(11)
 			say("A father and his son are riding a carriage through a forrest. Suddenly, Z's curse! The axle snaps!")
-			playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 			sleep(30)
 			say("The father dies, but the son- the son yet lives! He's brought to the nearby village's physician.")
-			playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 			sleep(30)
 			say("Upon seeing him, the physician ga-...what do you mean, you've heard this one before?")
-			playsound(src, 'sound/misc/bug.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/bug.ogg', 100, FALSE, -1)
 
 		else
 			say("Me? Am I anybody important...? Oh, no.")
-			playsound(src, 'sound/misc/machineyes.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machineyes.ogg', 100, FALSE, -1)
 			sleep(25)
 			say("I am nothing but a lowly jester, just like you! Ha-ha-ha!")
-			playsound(src, 'sound/misc/bug.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/bug.ogg', 100, FALSE, -1)
 
 	sleep(40)
 	checkchatter = rand(1, 11)

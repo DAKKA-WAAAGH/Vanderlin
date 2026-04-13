@@ -31,7 +31,7 @@
 	grid_height = 64
 	base_width = 64
 	base_height = 64
-	hitsound = list('sound/combat/hits/blunt/shovel_hit.ogg', 'sound/combat/hits/blunt/shovel_hit2.ogg', 'sound/combat/hits/blunt/shovel_hit3.ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/blunt/shovel_hit.ogg', 'modular/kaizoku/sound/combat/hits/blunt/shovel_hit2.ogg', 'modular/kaizoku/sound/combat/hits/blunt/shovel_hit3.ogg')
 	possible_item_intents = list(/datum/intent/use)
 	force = 2
 	throwforce = 0	// useless for throwing unless solo

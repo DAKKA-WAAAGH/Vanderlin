@@ -2,7 +2,7 @@
 	name = "Moonlit Dagger"
 	desc = "Fire off a piercing moonlit-dagger, smiting unholy creechers!"
 	button_icon_state = "moondagger"
-	sound = 'sound/misc/stings/generic.ogg'
+	sound = 'modular/kaizoku/sound/misc/stings/generic.ogg'
 	charge_sound = 'sound/magic/holycharging.ogg'
 
 	spell_type = SPELL_MIRACLE

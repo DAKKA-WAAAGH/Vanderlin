@@ -1160,7 +1160,7 @@
 	M.verbs |= /mob/living/carbon/human/proc/churchannouncement
 
 	removeomen(OMEN_NOPRIEST)
-	priority_announce("Abyssor has uplifted [M.real_name] as the true prophet to guide the champions! ASCEND!", title = "Abyssor raises once more!", sound = 'sound/misc/bell.ogg')
+	priority_announce("Abyssor has uplifted [M.real_name] as the true prophet to guide the champions! ASCEND!", title = "Abyssor raises once more!", sound = 'modular/kaizoku/sound/misc/bell.ogg')
 
 /datum/admins/proc/fix_death_area()
 	set category = "GameMaster"

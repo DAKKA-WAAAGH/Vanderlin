@@ -9,7 +9,7 @@
 	category_tags = list(CTAG_PILGRIM, CTAG_TOWNER)
 	total_positions = 2
 	apprentice_name = "Physicker Apprentice"
-	cmode_music = 'sound/music/cmode/nobility/combat_physician.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/nobility/combat_physician.ogg'
 	exp_types_granted = list(EXP_TYPE_MEDICAL)
 
 	jobstats = list(

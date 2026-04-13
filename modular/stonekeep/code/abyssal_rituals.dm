@@ -269,7 +269,7 @@ GLOBAL_VAR_INIT(ABYSS_RITUALS, null)
 		return
 
 	altar.ritual_feedback("The water mists outward, sanctifying the earth.")
-	playsound(center, 'sound/foley/water_land1.ogg', 100, FALSE)
+	playsound(center, 'modular/kaizoku/sound/foley/water_land1.ogg', 100, FALSE)
 
 	for(var/turf/open/T in range(3, center))
 		SpawnHolyTileAt(T)
@@ -369,7 +369,7 @@ GLOBAL_VAR_INIT(ABYSS_RITUALS, null)
 	if(istype(T, /turf/open)) SpawnHolyTileAt(T)
 
 	altar.ritual_feedback("Holy current flushes bane and blight from the patient.")
-	playsound(altar, 'sound/foley/water_land2.ogg', 100, FALSE)
+	playsound(altar, 'modular/kaizoku/sound/foley/water_land2.ogg', 100, FALSE)
 
 	// --- Strip cursed-but-not-biological equipment ---
 	if(ishuman(P))

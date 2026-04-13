@@ -162,15 +162,15 @@
 	set name = "Define War-Anthem"
 	set category = "ABYSSAL"
 	var/list/music_options = list(
-		"Changeling" = 'sound/music/cmode/combat_changeling.ogg',
-		"Storm Warrior" = 'sound/music/cmode/garrison/combat_stormwarrior.ogg',
-		"Sea Raider" = 'sound/music/cmode/adventurer/combat_searaider.ogg',
-		"Old Tides" = 'sound/music/cmode/combat_oldtides.ogg',
-		"Decapitator" = 'sound/music/cmode/garrison/combat_decapitator.ogg',
-		"Emperor" = 'sound/music/cmode/nobility/combat_emperor.ogg',
-		"Traditional" = 'sound/music/cmode/combat.ogg',
-		"Naval Retainers" = 'sound/music/cmode/garrison/combat_navalretainers.ogg',
-		"Kyudo" = 'sound/music/cmode/adventurer/combat_kyudo.ogg'
+		"Changeling" = 'modular/kaizoku/sound/music/cmode/combat_changeling.ogg',
+		"Storm Warrior" = 'modular/kaizoku/sound/music/cmode/garrison/combat_stormwarrior.ogg',
+		"Sea Raider" = 'modular/kaizoku/sound/music/cmode/adventurer/combat_searaider.ogg',
+		"Old Tides" = 'modular/kaizoku/sound/music/cmode/combat_oldtides.ogg',
+		"Decapitator" = 'modular/kaizoku/sound/music/cmode/garrison/combat_decapitator.ogg',
+		"Emperor" = 'modular/kaizoku/sound/music/cmode/nobility/combat_emperor.ogg',
+		"Traditional" = 'modular/kaizoku/sound/music/cmode/combat.ogg',
+		"Naval Retainers" = 'modular/kaizoku/sound/music/cmode/garrison/combat_navalretainers.ogg',
+		"Kyudo" = 'modular/kaizoku/sound/music/cmode/adventurer/combat_kyudo.ogg'
 	)
 	var/battlesong = input(src, "Choose your War-Anthem", "Abyssal Combat") as null|anything in music_options
 	if(!battlesong)
@@ -407,7 +407,7 @@
 		return
 	adjust_stamina(10, "tired", TRUE, FALSE) //High fatigue cost for moving in the vertical. You're using your own body weight against yourself here.
 	visible_message("<span class='info'>[src] flies upward.</span>")
-	playsound(src, 'sound/combat/hits/whip.ogg', 100, TRUE)
+	playsound(src, 'modular/kaizoku/sound/combat/hits/whip.ogg', 100, TRUE)
 	if(do_after(src, 30, target = src))
 		var/pulling = src.pulling
 		if(ismob(pulling))
@@ -478,7 +478,7 @@
 	add_overlay(open_maw)
 	visible_message("<span class='warning'>[src]'s face splits into a deadly maw.</span>")
 	to_chat(src, "<span class='warning'>With your maw exposed, your teeth becomes deadlier.</span>")
-	playsound(src.loc, 'sound/combat/fracture/fracturewet (2).ogg', 50, 1)
+	playsound(src.loc, 'modular/kaizoku/sound/combat/fracture/fracturewet (2).ogg', 50, 1)
 	ADD_TRAIT(src, TRAIT_STRONGBITE, TRAIT_GENERIC)
 
 	if("tail_human" in dna.features)
@@ -503,7 +503,7 @@
 	remove_overlay(open_maw)
 	add_overlay(closed_maw)
 	visible_message("<span class='warning'>[src]'s face knits together.</span>")
-	playsound(src.loc, 'sound/combat/fracture/fracturewet (2).ogg', 50, 1)
+	playsound(src.loc, 'modular/kaizoku/sound/combat/fracture/fracturewet (2).ogg', 50, 1)
 
 	if("tail_human" in dna.features)
 		dna.features["tail_human"] = "Onetail"
@@ -770,7 +770,7 @@
 	changeNext_move(mmb_intent.clickcd)
 	face_atom(L)
 	visible_message(span_danger("[src] begins grotesquely devouring [L]'s flesh"))
-	playsound(src.loc, 'sound/gore/flesh_eat_03.ogg', 50, 1)
+	playsound(src.loc, 'modular/kaizoku/sound/gore/flesh_eat_03.ogg', 50, 1)
 
 	if(!do_after(src, devour_delay, target = L))
 		return
@@ -789,7 +789,7 @@
 		if(part)
 			if(selected in list(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG, BODY_ZONE_HEAD))
 				part.dismember()
-				playsound(src.loc, 'sound/combat/dismemberment/dismem (1).ogg', 50, 1)
+				playsound(src.loc, 'modular/kaizoku/sound/combat/dismemberment/dismem (1).ogg', 50, 1)
 				qdel(part)
 				if(purifying)
 					to_chat(src, span_bloody("Feast of the righteous, your teeth sinks upon blemished flesh, corrupted. You drain their qigong—The abyss within is relished."))
@@ -810,7 +810,7 @@
 				if(!part.dismember())
 					H.gib()
 
-				playsound(src.loc, 'sound/combat/dismemberment/dismem (1).ogg', 50, 1)
+				playsound(src.loc, 'modular/kaizoku/sound/combat/dismemberment/dismem (1).ogg', 50, 1)
 				if(purifying)
 					to_chat(src, span_bloody("You devour the rest of the corruptive veil, unleashing what is within with glee."))
 					src.reagents.add_reagent(/datum/reagent/consumable/nutriment, SNACK_NUTRITIOUS)
@@ -825,7 +825,7 @@
 		return
 	else
 		// If not a human: devour entire creature as fallback
-		playsound(src.loc, 'sound/combat/dismemberment/dismem (1).ogg', 50, 1)
+		playsound(src.loc, 'modular/kaizoku/sound/combat/dismemberment/dismem (1).ogg', 50, 1)
 		to_chat(src, span_bloody("You devour the simple creature, the taste is decent, but not what you should be doing with your purifying maws."))
 		src.reagents.add_reagent(/datum/reagent/consumable/nutriment, SNACK_DECENT)
 		L.gib()

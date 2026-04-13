@@ -13,7 +13,7 @@
 		return
 	var/mob/living/L = target
 	user.changeNext_move(CLICK_CD_FAST)
-	playsound(user, 'sound/combat/feint.ogg', 100, TRUE)
+	playsound(user, 'modular/kaizoku/sound/combat/feint.ogg', 100, TRUE)
 	user.visible_message(span_danger("[user] feints an attack at [target]!"))
 	var/perc = 50
 	if(user.mind)

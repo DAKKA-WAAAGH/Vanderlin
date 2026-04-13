@@ -498,7 +498,7 @@
 			to_chat(user, "<span class='warning'>There's nothing to ignite.</span>")
 			return
 		if(LR.on)
-			playsound(src.loc, 'sound/warfaresounds/hwanchafire.ogg', 100)
+			playsound(src.loc, 'modular/kaizoku/sound/warfaresounds/hwanchafire.ogg', 100)
 			user.visible_message("<span class='danger'>[user] lights [src]!</span>")
 			fire(user)
 		return
@@ -512,7 +512,7 @@
 	for(var/mob/living/carbon/H in hearers(7, src))
 		shake_camera(H, 6, 5)
 		H.adjust_eye_blur(4 SECONDS)
-		H.playsound_local(get_turf(H), 'sound/foley/tinnitus.ogg', 75, FALSE)
+		H.playsound_local(get_turf(H), 'modular/kaizoku/sound/foley/tinnitus.ogg', 75, FALSE)
 
 	flick("hwancha_fire", src)
 
@@ -758,7 +758,7 @@
 /obj/projectile/bullet/stonefrag
 	name = "stone shard projectile"
 	ammo_type = /obj/item/natural/stone
-	hitsound = list('sound/combat/hits/blunt/genblunt (1).ogg','sound/combat/hits/blunt/genblunt (2).ogg','sound/combat/hits/blunt/genblunt (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/blunt/genblunt (1).ogg','modular/kaizoku/sound/combat/hits/blunt/genblunt (2).ogg','modular/kaizoku/sound/combat/hits/blunt/genblunt (3).ogg')
 	damage = 20
 	damage_type = BRUTE
 	icon = 'icons/roguetown/items/natural.dmi'
@@ -862,7 +862,7 @@
 	visible_message("<span class='danger'>The oil wagon ignites!</span>")
 	var/turf/T = get_turf(src)
 	if(T)
-		playsound(T, pick('sound/misc/explode/bottlebomb (1).ogg','sound/misc/explode/bottlebomb (2).ogg'), 100)
+		playsound(T, pick('modular/kaizoku/sound/misc/explode/bottlebomb (1).ogg','modular/kaizoku/sound/misc/explode/bottlebomb (2).ogg'), 100)
 		explosion(T, light_impact_range = 1, hotspot_range = 2, smoke = TRUE)
 
 		var/datum/effect_system/smoke_spread/S = new /datum/effect_system/smoke_spread
@@ -879,7 +879,7 @@
 	var/turf/T = get_turf(src)
 	if(!T) return
 	visible_message("<span class='warning'>The oil wagon detonates in a fiery explosion!</span>")
-	explosion(T, 1, 2, smoke = TRUE, soundin = pick('sound/misc/explode/bottlebomb (1).ogg','sound/misc/explode/bottlebomb (2).ogg'))
+	explosion(T, 1, 2, smoke = TRUE, soundin = pick('modular/kaizoku/sound/misc/explode/bottlebomb (1).ogg','modular/kaizoku/sound/misc/explode/bottlebomb (2).ogg'))
 	var/datum/effect_system/smoke_spread/S = new /datum/effect_system/smoke_spread
 	S.set_up(3, T)
 	S.start()
@@ -1253,7 +1253,7 @@
 	else
 		step_towards(G, T)
 
-/proc/soft_explosion(turf/center, devastation_range, heavy_impact_range, light_impact_range, flash_range = 0, soundin = 'sound/misc/explode/explosion.ogg')
+/proc/soft_explosion(turf/center, devastation_range, heavy_impact_range, light_impact_range, flash_range = 0, soundin = 'modular/kaizoku/sound/misc/explode/explosion.ogg')
 	playsound(center, soundin, 80, 1)
 	var/datum/effect_system/E = new /datum/effect_system/explosion
 	E.set_up(center)

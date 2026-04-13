@@ -29,7 +29,7 @@
 	if(!target)
 		return FALSE
 
-	playsound(owner, 'sound/misc/meteorimpact.ogg', 100, TRUE, 8, 0.9)
+	playsound(owner, 'modular/kaizoku/sound/misc/meteorimpact.ogg', 100, TRUE, 8, 0.9)
 
 	// Perform three charges in sequence
 	for(var/i in 0 to 2)
@@ -97,7 +97,7 @@
 
 /datum/action/cooldown/meatvine/personal/triple_charge/proc/on_moved(atom/source)
 	SIGNAL_HANDLER
-	playsound(source, 'sound/misc/meteorimpact.ogg', 200, TRUE, 2, TRUE)
+	playsound(source, 'modular/kaizoku/sound/misc/meteorimpact.ogg', 200, TRUE, 2, TRUE)
 
 /datum/action/cooldown/meatvine/personal/triple_charge/proc/on_bump(atom/movable/source, atom/target)
 	SIGNAL_HANDLER
@@ -133,7 +133,7 @@
 	living_target.visible_message(span_danger("[source] charges into [living_target]!"), span_userdanger("[source] charges into you!"))
 	living_target.Knockdown(0.6 SECONDS)
 	living_target.apply_damage(damage_dealt, BRUTE)
-	playsound(living_target, 'sound/misc/meteorimpact.ogg', 100, TRUE)
+	playsound(living_target, 'modular/kaizoku/sound/misc/meteorimpact.ogg', 100, TRUE)
 	shake_camera(living_target, 4, 3)
 
 /datum/action/cooldown/meatvine/personal/triple_charge/evaluate_ai_score(datum/ai_controller/controller)

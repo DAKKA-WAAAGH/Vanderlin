@@ -2,7 +2,7 @@
 	name = "Ocean's Embrace"
 	desc = "Restore the blood of a target, or drown them."
 	button_icon_state = "revive"
-	sound = 'sound/foley/jumpland/waterland.ogg'
+	sound = 'modular/kaizoku/sound/foley/jumpland/waterland.ogg'
 	charge_sound = 'sound/magic/holycharging.ogg'
 
 	cast_range = 6

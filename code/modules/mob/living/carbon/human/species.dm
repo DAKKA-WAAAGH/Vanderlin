@@ -1252,7 +1252,7 @@ GLOBAL_LIST_EMPTY(donator_races)
 			if(CONFIG_GET(flag/starvation_death))
 				H.apply_status_effect(/datum/status_effect/debuff/hungryt4)
 			if(prob(3))
-				playsound(H, pick('sound/vo/hungry1.ogg','sound/vo/hungry2.ogg','sound/vo/hungry3.ogg'), 100, TRUE, -1)
+				playsound(H, pick('modular/kaizoku/sound/vo/hungry1.ogg','modular/kaizoku/sound/vo/hungry2.ogg','modular/kaizoku/sound/vo/hungry3.ogg'), 100, TRUE, -1)
 
 	switch(H.hydration)
 		if(HYDRATION_LEVEL_THIRSTY to HYDRATION_LEVEL_SMALLTHIRST)
@@ -1519,7 +1519,7 @@ GLOBAL_LIST_EMPTY(donator_races)
 		return FALSE
 	else
 		user.do_attack_animation(target, ATTACK_EFFECT_DISARM, used_item = FALSE, atom_bounce = TRUE)
-		playsound(target, 'sound/combat/shove.ogg', 100, TRUE, -1)
+		playsound(target, 'modular/kaizoku/sound/combat/shove.ogg', 100, TRUE, -1)
 
 		if(target.wear_pants)
 			target.wear_pants.add_fingerprint(user)
@@ -1679,7 +1679,7 @@ GLOBAL_LIST_EMPTY(donator_races)
 			log_combat(user, target, "kicked")
 			user.OffBalance(balance)
 			if(!nodmg)
-				playsound(target, 'sound/combat/hits/kick/stomp.ogg', 100, TRUE, -1)
+				playsound(target, 'modular/kaizoku/sound/combat/hits/kick/stomp.ogg', 100, TRUE, -1)
 			return TRUE
 		else
 			to_chat(user, "<span class='warning'>I'm too close to get a good kick in.</span>")
@@ -1688,7 +1688,7 @@ GLOBAL_LIST_EMPTY(donator_races)
 		if(!target.kick_attack_check(user))
 			return 0
 
-		playsound(target, 'sound/combat/hits/kick/kick.ogg', 100, TRUE, -1)
+		playsound(target, 'modular/kaizoku/sound/combat/hits/kick/kick.ogg', 100, TRUE, -1)
 
 		if(target.pulling && target.grab_state < GRAB_AGGRESSIVE)
 			target.stop_pulling()
@@ -1768,7 +1768,7 @@ GLOBAL_LIST_EMPTY(donator_races)
 			affecting.bodypart_attacked_by(BCLASS_BLUNT, damage, user, selzone)
 
 		SEND_SIGNAL(user, COMSIG_MOB_KICK, target, selzone, damage_blocked)
-		playsound(target, 'sound/combat/hits/kick/kick.ogg', 100, TRUE, -1)
+		playsound(target, 'modular/kaizoku/sound/combat/hits/kick/kick.ogg', 100, TRUE, -1)
 		target.lastattacker = user.real_name
 		target.lastattackerckey = user.ckey
 		target.lastattacker_weakref = WEAKREF(user)
@@ -1877,7 +1877,7 @@ GLOBAL_LIST_EMPTY(donator_races)
 					affecting.receive_damage(I.embedding.embedded_unsafe_removal_pain_multiplier*I.w_class)//It hurts to rip it out, get surgery you dingus.
 					user.put_in_hands(I)
 					H.emote("pain", TRUE)
-					playsound(H, 'sound/foley/flesh_rem.ogg', 100, TRUE, -2)
+					playsound(H, 'modular/kaizoku/sound/foley/flesh_rem.ogg', 100, TRUE, -2)
 			I.do_special_attack_effect(user, affecting, intent, H, selzone)
 			if(istype(user.used_intent, /datum/intent/effect) && selzone)
 				var/datum/intent/effect/effect_intent = user.used_intent

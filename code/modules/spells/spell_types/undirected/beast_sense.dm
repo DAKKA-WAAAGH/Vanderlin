@@ -2,7 +2,7 @@
 	name = "Beastial Senses"
 	desc = "Grants the Dendorite a keen sense of smell and excellent vision, to better hunt with."
 	button_icon_state = "bestialsense"
-	sound = 'sound/vo/smokedrag.ogg'
+	sound = 'modular/kaizoku/sound/vo/smokedrag.ogg'
 
 	spell_type = SPELL_MIRACLE
 	antimagic_flags = MAGIC_RESISTANCE_HOLY

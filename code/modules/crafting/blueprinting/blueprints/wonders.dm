@@ -6,7 +6,7 @@
 		/obj/item/organ/stomach = 1,
 	)
 	verbage = "constructs"
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 	skillcraft = null
 	requires_learning = TRUE
 	construct_tool = null

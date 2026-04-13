@@ -10,7 +10,7 @@
 		/obj/item/grown/log/tree/small= 1,
 	)
 	tool_usage = list(
-		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'sound/items/wood_sharpen.ogg'),
+		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'modular/kaizoku/sound/items/wood_sharpen.ogg'),
 	)
 	attacked_atom = /obj/item/grown/log/tree/small
 	starting_atom = /obj/item/weapon/knife
@@ -25,7 +25,7 @@
 		/obj/item/ingot/bronze = 1,
 	)
 	tool_usage = list(
-		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'sound/items/wood_sharpen.ogg'),
+		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'modular/kaizoku/sound/items/wood_sharpen.ogg'),
 	)
 	attacked_atom = /obj/item/grown/log/tree/small
 	starting_atom = /obj/item/weapon/knife
@@ -40,7 +40,7 @@
 		/obj/item/natural/wood/plank = 4,
 	)
 	tool_usage = list(
-		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'sound/items/wood_sharpen.ogg'),
+		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'modular/kaizoku/sound/items/wood_sharpen.ogg'),
 	)
 	attacked_atom = /obj/item/grown/log/tree/small
 	starting_atom = /obj/item/weapon/knife
@@ -54,7 +54,7 @@
 		/obj/item/ingot/bronze = 1,
 	)
 	tool_usage = list(
-		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'sound/items/wood_sharpen.ogg'),
+		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'modular/kaizoku/sound/items/wood_sharpen.ogg'),
 	)
 	attacked_atom = /obj/item/grown/log/tree/small
 	starting_atom = /obj/item/weapon/knife
@@ -69,7 +69,7 @@
 		/obj/item/natural/wood/plank = 2,
 	)
 	tool_usage = list(
-		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'sound/items/wood_sharpen.ogg'),
+		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'modular/kaizoku/sound/items/wood_sharpen.ogg'),
 	)
 	attacked_atom = /obj/item/grown/log/tree/small
 	starting_atom = /obj/item/weapon/knife
@@ -83,7 +83,7 @@
 		/obj/item/natural/wood/plank = 2,
 	)
 	tool_usage = list(
-		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'sound/items/wood_sharpen.ogg'),
+		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'modular/kaizoku/sound/items/wood_sharpen.ogg'),
 	)
 	attacked_atom = /obj/item/grown/log/tree/small
 	starting_atom = /obj/item/weapon/knife
@@ -97,7 +97,7 @@
 		/obj/item/ingot/iron = 1,
 	)
 	tool_usage = list(
-		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'sound/items/bsmith2.ogg'),
+		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'modular/kaizoku/sound/items/bsmith2.ogg'),
 	)
 	attacked_atom = /obj/item/ingot/iron
 	starting_atom = /obj/item/weapon/hammer
@@ -112,7 +112,7 @@
 		/obj/item/ingot/iron = 1,
 	)
 	tool_usage = list(
-		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'sound/items/bsmith2.ogg'),
+		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'modular/kaizoku/sound/items/bsmith2.ogg'),
 	)
 	attacked_atom = /obj/item/ingot/iron
 	starting_atom = /obj/item/weapon/hammer
@@ -126,7 +126,7 @@
 		/obj/item/ingot/bronze = 1,
 	)
 	tool_usage = list(
-		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'sound/items/bsmith2.ogg'),
+		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'modular/kaizoku/sound/items/bsmith2.ogg'),
 	)
 	attacked_atom = /obj/item/ingot/bronze
 	starting_atom = /obj/item/weapon/hammer
@@ -140,7 +140,7 @@
 		/obj/item/ingot/iron = 3,
 	)
 	tool_usage = list(
-		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'sound/items/bsmith2.ogg'),
+		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'modular/kaizoku/sound/items/bsmith2.ogg'),
 	)
 	attacked_atom = /obj/item/ingot/iron
 	starting_atom = /obj/item/weapon/hammer
@@ -153,7 +153,7 @@
 		/obj/item/ingot/copper = 3,
 	)
 	tool_usage = list(
-		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'sound/items/bsmith2.ogg'),
+		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'modular/kaizoku/sound/items/bsmith2.ogg'),
 	)
 	attacked_atom = /obj/item/ingot/copper
 	starting_atom = /obj/item/weapon/hammer
@@ -167,8 +167,8 @@
 		/obj/item/ingot/bronze = 2,
 	)
 	tool_usage = list(
-		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'sound/items/wood_sharpen.ogg'),
-		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'sound/items/bsmith2.ogg'),
+		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'modular/kaizoku/sound/items/wood_sharpen.ogg'),
+		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'modular/kaizoku/sound/items/bsmith2.ogg'),
 	)
 	attacked_atom = /obj/item/grown/log/tree/small
 	starting_atom = /obj/item/weapon/knife
@@ -181,7 +181,7 @@
 		/obj/item/ingot/bronze = 1,
 	)
 	tool_usage = list(
-		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'sound/items/bsmith2.ogg'),
+		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'modular/kaizoku/sound/items/bsmith2.ogg'),
 	)
 	attacked_atom = /obj/item/ingot/bronze
 	starting_atom = /obj/item/weapon/hammer
@@ -195,7 +195,7 @@
 		/obj/item/ingot/bronze = 1,
 	)
 	tool_usage = list(
-		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'sound/items/bsmith2.ogg'),
+		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'modular/kaizoku/sound/items/bsmith2.ogg'),
 	)
 	attacked_atom = /obj/item/ingot/bronze
 	starting_atom = /obj/item/weapon/hammer
@@ -209,7 +209,7 @@
 		/obj/item/ingot/bronze = 1,
 	)
 	tool_usage = list(
-		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'sound/items/bsmith2.ogg'),
+		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'modular/kaizoku/sound/items/bsmith2.ogg'),
 	)
 	attacked_atom = /obj/item/ingot/bronze
 	starting_atom = /obj/item/weapon/hammer
@@ -223,7 +223,7 @@
 		/obj/item/ingot/bronze = 1,
 	)
 	tool_usage = list(
-		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'sound/items/bsmith2.ogg'),
+		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'modular/kaizoku/sound/items/bsmith2.ogg'),
 	)
 	attacked_atom = /obj/item/ingot/bronze
 	starting_atom = /obj/item/weapon/hammer
@@ -237,7 +237,7 @@
 		/obj/item/ingot/bronze = 2,
 	)
 	tool_usage = list(
-		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'sound/items/bsmith2.ogg'),
+		/obj/item/weapon/hammer = list(span_notice("starts to hammer"), span_notice("start to hammer"), 'modular/kaizoku/sound/items/bsmith2.ogg'),
 	)
 	attacked_atom = /obj/item/ingot/bronze
 	starting_atom = /obj/item/weapon/hammer

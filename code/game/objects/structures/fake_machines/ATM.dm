@@ -53,10 +53,10 @@
 		if(!Adjacent(user))
 			return
 		if((coin_amt*mod) > amt)
-			playsound(src, 'sound/misc/machineno.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machineno.ogg', 100, FALSE, -1)
 			return
 		if(!SStreasury.withdraw_money_account(coin_amt*mod, H))
-			playsound(src, 'sound/misc/machineno.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machineno.ogg', 100, FALSE, -1)
 			return
 		record_round_statistic(STATS_MAMMONS_WITHDRAWN, coin_amt * mod)
 		budget2change(coin_amt*mod, user, selection)
@@ -64,7 +64,7 @@
 		to_chat(user, "<span class='warning'>The machine bites my finger.</span>")
 		icon_state = "atm-b"
 		H.flash_fullscreen("redflash3")
-		playsound(H, 'sound/combat/hits/bladed/genstab (1).ogg', 100, FALSE, -1)
+		playsound(H, 'modular/kaizoku/sound/combat/hits/bladed/genstab (1).ogg', 100, FALSE, -1)
 		SStreasury.create_bank_account(H)
 		if(H.mind)
 			var/datum/job/target_job = SSjob.GetJob(H.mind.assigned_role)
@@ -72,7 +72,7 @@
 				SStreasury.noble_incomes[H] = target_job.noble_income
 		spawn(5)
 			say("New account created.")
-			playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 
 /obj/structure/fake_machine/atm/attackby(obj/item/P, mob/user, params)
 	if(ishuman(user))
@@ -98,7 +98,7 @@
 						record_featured_stat(FEATURED_STATS_TAX_PAYERS, H, deposit_results[2])
 						record_round_statistic(STATS_TAXES_COLLECTED, deposit_results[2])
 				qdel(P)
-				playsound(src, 'sound/misc/coininsert.ogg', 100, FALSE, -1)
+				playsound(src, 'modular/kaizoku/sound/misc/coininsert.ogg', 100, FALSE, -1)
 				return
 			else
 				say("No account found. Submit your fingers for inspection.")

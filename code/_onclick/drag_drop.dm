@@ -307,7 +307,7 @@
 			L.curplaying.on_mouse_up()
 		if(istype(L.used_intent, /datum/intent/shield/block))
 			L.visible_message("<span class='danger'>[L] prepares to do a shield bash!</span>")
-			playsound(L, 'sound/combat/shieldraise.ogg', 100, TRUE)
+			playsound(L, 'modular/kaizoku/sound/combat/shieldraise.ogg', 100, TRUE)
 
 		return TRUE
 

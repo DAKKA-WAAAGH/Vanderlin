@@ -41,7 +41,7 @@
 	icon_state = "eastsword2"
 	icon = 'modular/kaizoku/zeratino&cre/32.dmi'
 	possible_item_intents = list(/datum/intent/sword/thrust/rapier, /datum/intent/sword/cut/rapier)
-	parrysound = list('sound/combat/parry/bladed/bladedthin (1).ogg', 'sound/combat/parry/bladed/bladedthin (2).ogg', 'sound/combat/parry/bladed/bladedthin (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/bladed/bladedthin (1).ogg', 'modular/kaizoku/sound/combat/parry/bladed/bladedthin (2).ogg', 'modular/kaizoku/sound/combat/parry/bladed/bladedthin (3).ogg')
 	gripped_intents = null
 	swingsound = ZATANA_WOOSH
 	parrysound = "rapier"
@@ -115,8 +115,8 @@
 	name = "black gloves"
 	desc = "Sleek gloves for swordsmen that covers the hands and wrist."
 	icon_state = "eastgloves1"
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	icon = 'modular/kaizoku/zeratino&cre/iconsprites.dmi'
 	mob_overlay_icon = 'modular/kaizoku/zeratino&cre/mobsprites.dmi'
 	sleeved = 'modular/kaizoku/zeratino&cre/mobsprites.dmi'

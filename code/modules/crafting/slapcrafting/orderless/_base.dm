@@ -71,7 +71,7 @@
 					continue
 				if(!do_after(user, modified_action_time, hosted_source))
 					return
-				playsound(user, 'sound/foley/dropsound/food_drop.ogg', 30, TRUE, -1)
+				playsound(user, 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg', 30, TRUE, -1)
 				requirements[requirement]--
 				if(requirements[requirement] <= 0)
 					requirements -= list(requirement) // See Remove() behavior documentation
@@ -87,7 +87,7 @@
 		if(istype(attacking_item, requirement))
 			if(!do_after(user, modified_action_time, hosted_source))
 				return
-			playsound(user, 'sound/foley/dropsound/food_drop.ogg', 30, TRUE, -1)
+			playsound(user, 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg', 30, TRUE, -1)
 			requirements[requirement]--
 			if(requirements[requirement] <= 0)
 				requirements -= requirement
@@ -108,7 +108,7 @@
 		if(!istype(attacking_item, finishing_item))
 			return FALSE
 		var/keep_item = process_finishing_item(attacking_item, user)
-		playsound(user, 'sound/foley/dropsound/gen_drop.ogg', 30, TRUE, -1)
+		playsound(user, 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg', 30, TRUE, -1)
 		if(keep_item)
 			attacking_item.forceMove(locate(1,1,1))
 		else

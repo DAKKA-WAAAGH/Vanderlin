@@ -27,8 +27,8 @@
 	obj_damage = 1
 	melee_damage_lower = 15
 	melee_damage_upper = 25
-	attack_sound = 'sound/combat/wooshes/bladed/wooshmed (1).ogg'
-	dodge_sound = 'sound/combat/dodge.ogg'
+	attack_sound = 'modular/kaizoku/sound/combat/wooshes/bladed/wooshmed (1).ogg'
+	dodge_sound = 'modular/kaizoku/sound/combat/dodge.ogg'
 	parry_sound = "sword"
 	d_intent = INTENT_PARRY
 	speak_emote = list("growls")

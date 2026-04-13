@@ -8,7 +8,7 @@
 	plane = GAME_PLANE
 	damage_deflection = 5
 	blade_dulling = DULLING_BASHCHOP
-	attacked_sound = list('sound/combat/hits/onmetal/grille (1).ogg', 'sound/combat/hits/onmetal/grille (2).ogg', 'sound/combat/hits/onmetal/grille (3).ogg')
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onmetal/grille (1).ogg', 'modular/kaizoku/sound/combat/hits/onmetal/grille (2).ogg', 'modular/kaizoku/sound/combat/hits/onmetal/grille (3).ogg')
 	smeltresult = /obj/item/ingot/bronze
 	obj_flags = CAN_BE_HIT | BLOCK_Z_OUT_DOWN
 	accepts_water_input = TRUE
@@ -131,7 +131,7 @@
 			for(var/obj/structure/water_pipe/pipe in providers)
 				if(pipe.carrying_reagent != id)
 					visible_message(span_warning("[src] bursts from the clashing pipe streams!"))
-					playsound(src, 'sound/foley/cartdump.ogg', 75)
+					playsound(src, 'modular/kaizoku/sound/foley/cartdump.ogg', 75)
 					qdel(src)
 					return
 		providers |= added_provider

@@ -6,8 +6,8 @@
 	desc = "A simple cloak covering the body."
 	edelay_type = 1
 	equip_delay_self = 10
-	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
-	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/cloak_equip.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/cloak_take_off.ogg'
 	bloody_icon_state = "bodyblood"
 	sewrepair = TRUE
 	anvilrepair = null

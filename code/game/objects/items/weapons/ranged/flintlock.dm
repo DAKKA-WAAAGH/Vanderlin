@@ -18,11 +18,11 @@
 	var/obj/item/ramrod/rod
 	cartridge_wording = "ball"
 	var/rammed = FALSE
-	load_sound = 'sound/foley/nockarrow.ogg'
+	load_sound = 'modular/kaizoku/sound/foley/nockarrow.ogg'
 	fire_sound = null // handled in shoot_live_shot()
-	equip_sound = 'sound/foley/gun_equip.ogg'
-	pickup_sound = 'sound/foley/gun_equip.ogg'
-	drop_sound = 'sound/foley/gun_drop.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/gun_equip.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/gun_equip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/gun_drop.ogg'
 	dropshrink = 0.7
 	associated_skill = /datum/skill/combat/firearms
 	possible_item_intents = list(/datum/intent/shoot/musket, /datum/intent/shoot/musket/arc, INTENT_GENERIC)
@@ -45,14 +45,14 @@
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/pistol/shoot_live_shot(mob/living/user, pointblank, mob/pbtarget, message)
 	..()
-	user.playsound_local(get_turf(user), 'sound/foley/tinnitus.ogg', 60, FALSE) // muh realism or something
+	user.playsound_local(get_turf(user), 'modular/kaizoku/sound/foley/tinnitus.ogg', 60, FALSE) // muh realism or something
 	new /obj/effect/particle_effect/smoke(get_turf(user))
 
 	// for(var/mob/M as anything in GLOB.player_list)
 	// 	if(!is_in_zweb(M.z, src.z))
 	// 		continue
 	// 	var/turf/M_turf = get_turf(M)
-	// 	var/shot_sound = sound('sound/combat/Ranged/muskshoot.ogg')
+	// 	var/shot_sound = sound('modular/kaizoku/sound/combat/Ranged/muskshoot.ogg')
 	// 	if(M_turf)
 	// 		M.playsound_local(M_turf, null, 100, 1, get_rand_frequency(), S = shot_sound)
 
@@ -61,7 +61,7 @@
 		return
 	if(wheellock && !wound)
 		return
-	playsound(src, 'sound/combat/Ranged/muskclick.ogg', 100, FALSE)
+	playsound(src, 'modular/kaizoku/sound/combat/Ranged/muskclick.ogg', 100, FALSE)
 	cocked = FALSE
 	wound = FALSE
 	update_appearance(UPDATE_ICON_STATE)
@@ -76,9 +76,9 @@
 	if(cocked)
 		cocked = FALSE
 		to_chat(user, "<span class='warning'>I carefully de-cock \the [src].</span>")
-		playsound(src, 'sound/combat/Ranged/muskclick.ogg', 100, FALSE)
+		playsound(src, 'modular/kaizoku/sound/combat/Ranged/muskclick.ogg', 100, FALSE)
 	else
-		playsound(src, 'sound/combat/Ranged/muskclick.ogg', 100, FALSE)
+		playsound(src, 'modular/kaizoku/sound/combat/Ranged/muskclick.ogg', 100, FALSE)
 		to_chat(user, "<span class='info'>I cock \the [src].</span>")
 		cocked = TRUE
 	update_appearance(UPDATE_ICON_STATE)
@@ -101,7 +101,7 @@
 	windtime = windtime - (user.get_skill_level(/datum/skill/combat/firearms) / 2)
 	if(do_after(user, windtime SECONDS, src) && !wound)
 		to_chat(user, "<span class='info'>I wind \the [src]'s mechanism.</span>")
-		playsound(src, 'sound/foley/winding.ogg', 100, FALSE)
+		playsound(src, 'modular/kaizoku/sound/foley/winding.ogg', 100, FALSE)
 		wound = TRUE
 	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 
@@ -114,14 +114,14 @@
 			rod = null
 			ramrod_inserted = FALSE
 			to_chat(user, "<span class='info'>I remove the ramrod from \the [src].</span>")
-			playsound(src, 'sound/foley/struggle.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/foley/struggle.ogg', 100, FALSE, -1)
 		else if(istype(H.get_active_held_item(), /obj/item/ramrod))
 			var/obj/item/ramrod/rrod = H.get_active_held_item()
 			rrod.forceMove(src)
 			rod = rrod
 			ramrod_inserted = TRUE
 			to_chat(user, "<span class='info'>I put \the [rrod] into \the [src].</span>")
-			playsound(src, 'sound/foley/struggle.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/foley/struggle.ogg', 100, FALSE, -1)
 		update_appearance(UPDATE_ICON_STATE)
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/pistol/process_fire(atom/target, mob/living/user, message = TRUE, params = null, zone_override = "", bonus_spread = 0)
@@ -150,7 +150,7 @@
 			BB.bonus_accuracy += (user.STAPER - 8) //Also, increases bonus accuracy by 1, which cannot fall off due to distance.
 		BB.damage = BB.damage * damage_mult // 80 * 1.5 = 130 of damage.
 		BB.bonus_accuracy += (user.get_skill_level(/datum/skill/combat/firearms) * 3) //+3 accuracy per level in firearms
-	playsound(src, 'sound/combat/Ranged/muskclick.ogg', 100, FALSE)
+	playsound(src, 'modular/kaizoku/sound/combat/Ranged/muskclick.ogg', 100, FALSE)
 	cocked = FALSE
 	rammed = FALSE
 	powdered = FALSE
@@ -189,7 +189,7 @@
 			if(!rammed)
 				if(do_after(user, ramtime SECONDS, src))
 					to_chat(user, "<span class='info'>I ram \the [src].</span>")
-					playsound(src, 'sound/foley/nockarrow.ogg', 100, FALSE)
+					playsound(src, 'modular/kaizoku/sound/foley/nockarrow.ogg', 100, FALSE)
 					rammed = TRUE
 	else
 		// Check if the item used is a reagent container
@@ -207,7 +207,7 @@
 				// Set the 'powdered' flag on the pistol
 				powdered = TRUE
 				to_chat(user, "<span class='info'>I add blastpowder to \the [src], making it ready for a powerful shot.</span>")
-				playsound(src, 'sound/foley/gunpowder_fill.ogg', 100, FALSE)
+				playsound(src, 'modular/kaizoku/sound/foley/gunpowder_fill.ogg', 100, FALSE)
 				return 1
 			else
 				to_chat(user, "<span class='warning'>Not enough blastpowder in [I] to powder the [src].</span>")
@@ -394,7 +394,7 @@
 			force -= bayonet.force
 			bayonet = null
 			to_chat(user, span_info("I remove the bayonet from \the [src]."))
-			playsound(src, 'sound/foley/struggle.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/foley/struggle.ogg', 100, FALSE, -1)
 		update_appearance(UPDATE_ICON_STATE)
 	..()
 
@@ -421,7 +421,7 @@
 				spread += bayonet.spread
 				force += bayonet.force
 				to_chat(user, span_info("I affix the bayonet to \the [src]."))
-				playsound(src, 'sound/foley/struggle.ogg', 100, FALSE, -1)
+				playsound(src, 'modular/kaizoku/sound/foley/struggle.ogg', 100, FALSE, -1)
 			update_appearance(UPDATE_ICON_STATE)
 	..()
 

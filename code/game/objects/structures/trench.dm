@@ -65,5 +65,5 @@
 		W.try_set_parent(water)
 		W.update_appearance(UPDATE_OVERLAYS)
 		W.dir = REVERSE_DIR(direction)
-		playsound(W, 'sound/foley/waterenter.ogg', 100, FALSE)
+		playsound(W, 'modular/kaizoku/sound/foley/waterenter.ogg', 100, FALSE)
 		qdel(src)

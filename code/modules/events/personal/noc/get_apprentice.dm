@@ -67,6 +67,6 @@
 
 	to_chat(chosen_one, span_userdanger("YOU ARE NOC'S CHOSEN!"))
 	to_chat(chosen_one, span_notice("Noc wishes for you to pass your knowledge! Seek a suitable child or downtrodden and make them your new apprentice! (RMB on a target with an empty hand)"))
-	chosen_one.playsound_local(chosen_one, 'sound/ambience/noises/mystical (4).ogg', 100)
+	chosen_one.playsound_local(chosen_one, 'modular/kaizoku/sound/ambience/noises/mystical (4).ogg', 100)
 
 	chosen_one.mind.announce_personal_objectives()

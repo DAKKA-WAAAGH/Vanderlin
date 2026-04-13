@@ -137,7 +137,7 @@
 		return
 	if(cooking < 20)
 		cooking++
-		playsound(src,'sound/misc/smelter_sound.ogg', 50, FALSE)
+		playsound(src,'modular/kaizoku/sound/misc/smelter_sound.ogg', 50, FALSE)
 		actively_smelting = TRUE
 		return
 	if(cooking == 20)
@@ -147,7 +147,7 @@
 				ore -= I
 				ore += R
 				qdel(I)
-		playsound(src,'sound/misc/smelter_fin.ogg', 100, FALSE)
+		playsound(src,'modular/kaizoku/sound/misc/smelter_fin.ogg', 100, FALSE)
 		visible_message(span_notice("[src] finished smelting."))
 		cooking = 21
 		actively_smelting = FALSE
@@ -176,7 +176,7 @@
 		if(ore.len)
 			if(cooking < 30)
 				cooking++
-				playsound(src,'sound/misc/smelter_sound.ogg', 50, FALSE)
+				playsound(src,'modular/kaizoku/sound/misc/smelter_sound.ogg', 50, FALSE)
 				actively_smelting = TRUE
 			else
 				if(cooking == 30)
@@ -232,7 +232,7 @@
 								ore += R
 								qdel(I)
 					maxore = initial(maxore)
-					playsound(src,'sound/misc/smelter_fin.ogg', 100, FALSE)
+					playsound(src,'modular/kaizoku/sound/misc/smelter_fin.ogg', 100, FALSE)
 					visible_message("<span class='notice'>\The [src] finished smelting.</span>")
 					cooking = 31
 					actively_smelting = FALSE

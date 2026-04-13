@@ -20,7 +20,7 @@
 	outfit = /datum/outfit/job/stonekeep/merchant
 	give_bank_account = 100
 	selection_color = "#2a348b"
-	cmode_music = 'sound/music/cmode/combat_giza.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/combat_giza.ogg'
 
 /datum/outfit/job/stonekeep/merchant/pre_equip(mob/living/carbon/human/H)
 	..()

@@ -93,7 +93,7 @@ GLOBAL_LIST_EMPTY(redstone_objs)
 			trigger_wire_network(user)
 			toggled = !toggled
 			icon_state = "leverfloor[toggled]"
-			playsound(src, 'sound/foley/lever.ogg', 100, extrarange = 3)
+			playsound(src, 'modular/kaizoku/sound/foley/lever.ogg', 100, extrarange = 3)
 
 /obj/structure/lever/onkick(mob/user)
 	if(isliving(user))
@@ -101,14 +101,14 @@ GLOBAL_LIST_EMPTY(redstone_objs)
 		L.changeNext_move(CLICK_CD_MELEE)
 		user.visible_message("<span class='warning'>[user] kicks the lever!</span>")
 		user.log_message("kicked the lever with redstone id \"[redstone_id]\"", LOG_GAME)
-		playsound(src, 'sound/combat/hits/onwood/woodimpact (1).ogg', 100)
+		playsound(src, 'modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg', 100)
 		if(prob(L.STASTR * 4))
 			for(var/obj/structure/structure in redstone_attached)
 				INVOKE_ASYNC(structure, PROC_REF(redstone_triggered), user)
 			trigger_wire_network(user)
 			toggled = !toggled
 			icon_state = "leverfloor[toggled]"
-			playsound(src, 'sound/foley/lever.ogg', 100, extrarange = 3)
+			playsound(src, 'modular/kaizoku/sound/foley/lever.ogg', 100, extrarange = 3)
 
 /obj/structure/lever/wall
 	icon_state = "leverwall0"
@@ -145,7 +145,7 @@ GLOBAL_LIST_EMPTY(redstone_objs)
 		INVOKE_ASYNC(structure, PROC_REF(redstone_triggered), user)
 	trigger_wire_network(user)
 	toggled = !toggled
-	playsound(src, 'sound/foley/lever.ogg', 50)
+	playsound(src, 'modular/kaizoku/sound/foley/lever.ogg', 50)
 
 /obj/structure/lever/hidden/onkick(mob/user) // nice try
 	return FALSE
@@ -190,23 +190,23 @@ GLOBAL_LIST_EMPTY(redstone_objs)
 		to_chat(user, span_warning("I have no idea how to use [src]!"))
 		return
 	if(user.used_intent.type == INTENT_HARM)
-		playsound(src, 'sound/combat/hits/punch/punch (1).ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/combat/hits/punch/punch (1).ogg', 100, FALSE, -1)
 		sleep(1)
 		switch(mode)
 			if(0)
 				mode = 1
 				say("Mode: REPEATER 5 TIMES")
-				playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+				playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 			if(1)
 				mode = 2
 				say("Mode: REPEATER RANDOM")
-				playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+				playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 			if(2)
 				mode = 0
 				say("Mode: INDEFINITE, DANGEROUS")
-				playsound(src, 'sound/misc/machineno.ogg', 100, FALSE, -1)
+				playsound(src, 'modular/kaizoku/sound/misc/machineno.ogg', 100, FALSE, -1)
 		return
-	playsound(src, 'sound/misc/keyboard_enter.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/keyboard_enter.ogg', 100, FALSE, -1)
 	linked_thing = null
 	var/list/structures = list()
 	for(var/obj/structure/adjc in get_step(src, dir).contents)
@@ -215,12 +215,12 @@ GLOBAL_LIST_EMPTY(redstone_objs)
 		structures += adjc
 	var/input = browser_input_list(user, "Choose structure to link", "REPEATER", structures)
 	if(input)
-		playsound(src, 'sound/misc/keyboard_enter.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/keyboard_enter.ogg', 100, FALSE, -1)
 		if(istype(linked_thing, /obj/structure/repeater))
 			say("BZZZZZZZZ!!!")
-			playsound(src, 'sound/misc/machineno.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machineno.ogg', 100, FALSE, -1)
 			sleep(10)
-			explosion(src, light_impact_range = 1, flame_range = 2, smoke = TRUE, soundin = pick('sound/misc/explode/bottlebomb (1).ogg','sound/misc/explode/bottlebomb (2).ogg'))
+			explosion(src, light_impact_range = 1, flame_range = 2, smoke = TRUE, soundin = pick('modular/kaizoku/sound/misc/explode/bottlebomb (1).ogg','modular/kaizoku/sound/misc/explode/bottlebomb (2).ogg'))
 			qdel(src)
 			return
 		linked_thing = input
@@ -246,7 +246,7 @@ GLOBAL_LIST_EMPTY(redstone_objs)
 				if(QDELETED(src) || mode != 0)
 					break
 				if(prob(25))
-					explosion(src, light_impact_range = 1, flame_range = 2, smoke = TRUE, soundin = pick('sound/misc/explode/bottlebomb (1).ogg','sound/misc/explode/bottlebomb (2).ogg'))
+					explosion(src, light_impact_range = 1, flame_range = 2, smoke = TRUE, soundin = pick('modular/kaizoku/sound/misc/explode/bottlebomb (1).ogg','modular/kaizoku/sound/misc/explode/bottlebomb (2).ogg'))
 					qdel(src)
 					break
 				INVOKE_ASYNC(linked_thing, PROC_REF(redstone_triggered), user)
@@ -275,11 +275,11 @@ GLOBAL_LIST_EMPTY(redstone_objs)
 		var/mob/living/L = AM
 		to_chat(L, "<span class='info'>I feel something click beneath me.</span>")
 		AM.log_message("has activated a pressure plate", LOG_GAME)
-		playsound(src, 'sound/misc/pressurepad_down.ogg', 65, extrarange = 2)
+		playsound(src, 'modular/kaizoku/sound/misc/pressurepad_down.ogg', 65, extrarange = 2)
 	if(isstructure(AM))
 		var/obj/structure/structure = AM
 		if(structure.w_class >= WEIGHT_CLASS_BULKY)
-			playsound(src, 'sound/misc/pressurepad_down.ogg', 65, extrarange = 2)
+			playsound(src, 'modular/kaizoku/sound/misc/pressurepad_down.ogg', 65, extrarange = 2)
 			triggerplate()
 			trigger_wire_network(AM)
 
@@ -292,14 +292,14 @@ GLOBAL_LIST_EMPTY(redstone_objs)
 		trigger_wire_network(AM)
 
 /obj/structure/pressure_plate/proc/triggerplate()
-	playsound(src, 'sound/misc/pressurepad_up.ogg', 65, extrarange = 2)
+	playsound(src, 'modular/kaizoku/sound/misc/pressurepad_up.ogg', 65, extrarange = 2)
 	for(var/obj/structure/structure in redstone_attached)
 		INVOKE_ASYNC(structure, PROC_REF(redstone_triggered))
 
 /obj/structure/pressure_plate/attack_hand(mob/user)
 	. = ..()
 	if(user.used_intent.type == INTENT_HARM)
-		playsound(src, 'sound/combat/hits/punch/punch (1).ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/combat/hits/punch/punch (1).ogg', 100, FALSE, -1)
 		triggerplate()
 		anchored = !anchored
 
@@ -330,14 +330,14 @@ GLOBAL_LIST_EMPTY(redstone_objs)
 
 /obj/structure/activator/attack_hand(mob/user)
 	. = ..()
-	playsound(src, 'sound/misc/keyboard_enter.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/keyboard_enter.ogg', 100, FALSE, -1)
 	sleep(7)
 	if(containment)
-		playsound(src, 'sound/misc/hiss.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/hiss.ogg', 100, FALSE, -1)
 		containment.forceMove(get_turf(src))
 		containment = null
 	if(ammo)
-		playsound(src, 'sound/misc/hiss.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/hiss.ogg', 100, FALSE, -1)
 		ammo.forceMove(get_turf(src))
 		ammo = null
 	update_appearance(UPDATE_OVERLAYS)
@@ -348,13 +348,13 @@ GLOBAL_LIST_EMPTY(redstone_objs)
 		if(!user.transferItemToLoc(I, src))
 			return ..()
 		containment = I
-		playsound(src, 'sound/misc/chestclose.ogg', 25)
+		playsound(src, 'modular/kaizoku/sound/misc/chestclose.ogg', 25)
 		update_appearance(UPDATE_OVERLAYS)
 		return TRUE
 	if(!ammo && istype(I, /obj/item/ammo_holder))
 		if(!user.transferItemToLoc(I, src))
 			return
-		playsound(src, 'sound/misc/chestclose.ogg', 25)
+		playsound(src, 'modular/kaizoku/sound/misc/chestclose.ogg', 25)
 		ammo = I
 		return TRUE
 	return ..()
@@ -400,7 +400,7 @@ GLOBAL_LIST_EMPTY(redstone_objs)
 	resistance_flags = INDESTRUCTIBLE
 /*
 /obj/structure/floordoor/Initialize()
-	AddComponent(/datum/component/squeak, list('sound/foley/footsteps/FTMET_A1.ogg','sound/foley/footsteps/FTMET_A2.ogg','sound/foley/footsteps/FTMET_A3.ogg','sound/foley/footsteps/FTMET_A4.ogg'), 40)
+	AddComponent(/datum/component/squeak, list('modular/kaizoku/sound/foley/footsteps/FTMET_A1.ogg','modular/kaizoku/sound/foley/footsteps/FTMET_A2.ogg','modular/kaizoku/sound/foley/footsteps/FTMET_A3.ogg','modular/kaizoku/sound/foley/footsteps/FTMET_A4.ogg'), 40)
 	return ..()
 */
 /obj/structure/floordoor/atom_break(damage_flag)
@@ -442,7 +442,7 @@ GLOBAL_LIST_EMPTY(redstone_objs)
 	redstone_structure = TRUE
 
 /obj/structure/floordoor/gatehatch/Initialize()
-	AddComponent(/datum/component/squeak, list('sound/foley/footsteps/FTMET_A1.ogg','sound/foley/footsteps/FTMET_A2.ogg','sound/foley/footsteps/FTMET_A3.ogg','sound/foley/footsteps/FTMET_A4.ogg'), 40, extrarange = SHORT_RANGE_SOUND_EXTRARANGE)
+	AddComponent(/datum/component/squeak, list('modular/kaizoku/sound/foley/footsteps/FTMET_A1.ogg','modular/kaizoku/sound/foley/footsteps/FTMET_A2.ogg','modular/kaizoku/sound/foley/footsteps/FTMET_A3.ogg','modular/kaizoku/sound/foley/footsteps/FTMET_A4.ogg'), 40, extrarange = SHORT_RANGE_SOUND_EXTRARANGE)
 	return ..()
 
 /obj/structure/floordoor/gatehatch/redstone_triggered(mob/user)

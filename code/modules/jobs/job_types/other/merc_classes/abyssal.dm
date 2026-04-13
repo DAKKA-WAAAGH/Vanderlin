@@ -5,7 +5,7 @@
 	outfit = /datum/outfit/mercenary/abyssal
 	category_tags = list(CTAG_MERCENARY)
 	total_positions = 2
-	cmode_music = 'sound/music/cmode/adventurer/CombatOutlander3.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander3.ogg'
 
 	skills = list(
 		/datum/skill/misc/swimming = 3,

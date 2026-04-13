@@ -295,7 +295,7 @@ Works together with spawning an observer, noted above.
 				ghost.key = key
 				return ghost
 //		if(client)
-//			var/S = sound('sound/ambience/creepywind.ogg', repeat = 1, wait = 0, volume = client.prefs.musicvol, channel = CHANNEL_MUSIC)
+//			var/S = sound('modular/kaizoku/sound/ambience/creepywind.ogg', repeat = 1, wait = 0, volume = client.prefs.musicvol, channel = CHANNEL_MUSIC)
 //			play_priomusic(S)
 		var/mob/dead/observer/rogue/ghost	// Transfer safety to observer spawning proc.
 		if(drawskip)

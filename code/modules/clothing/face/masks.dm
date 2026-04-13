@@ -28,8 +28,8 @@
 	desc = "A heavy iron mask that both conceals and protects the face."
 	max_integrity = 100
 	blocksound = PLATEHIT
-	break_sound = 'sound/foley/breaksound.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	armor = list("blunt" = 80, "slash" = 80, "stab" = 80,  "piercing" = 50, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_LASHING, BCLASS_BITE, BCLASS_TWIST, BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_STAB)
 	flags_inv = HIDEFACE
@@ -126,8 +126,8 @@
 	desc = "A joapstone mask that both conceals and protects the face."
 	max_integrity = 85
 	blocksound = PLATEHIT
-	break_sound = 'sound/foley/breaksound.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	armor = list("blunt" = 80, "slash" = 80, "stab" = 80,  "piercing" = 50, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_LASHING, BCLASS_BITE, BCLASS_TWIST, BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_STAB)
 	flags_inv = HIDEFACE
@@ -146,8 +146,8 @@
 	desc = "A ceruleabaster mask that both conceals and protects the face."
 	max_integrity = 85
 	blocksound = PLATEHIT
-	break_sound = 'sound/foley/breaksound.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	armor = list("blunt" = 80, "slash" = 80, "stab" = 80,  "piercing" = 50, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_LASHING, BCLASS_BITE, BCLASS_TWIST, BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_STAB)
 	flags_inv = HIDEFACE | HIDEFACIALHAIR | HIDEHAIR
@@ -166,8 +166,8 @@
 	desc = "A rosellusk mask that both conceals and protects the face."
 	max_integrity = 85
 	blocksound = PLATEHIT
-	break_sound = 'sound/foley/breaksound.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	armor = list("blunt" = 80, "slash" = 80, "stab" = 80,  "piercing" = 50, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_LASHING, BCLASS_BITE, BCLASS_TWIST, BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_STAB)
 	flags_inv = HIDEFACE
@@ -186,8 +186,8 @@
 	desc = "A shell mask that both conceals and protects the face."
 	max_integrity = 85
 	blocksound = PLATEHIT
-	break_sound = 'sound/foley/breaksound.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	armor = list("blunt" = 80, "slash" = 80, "stab" = 80,  "piercing" = 50, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_LASHING, BCLASS_BITE, BCLASS_TWIST, BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_STAB)
 	flags_inv = HIDEFACE
@@ -206,8 +206,8 @@
 	desc = "An aoetal mask that both conceals and protects the face."
 	max_integrity = 85
 	blocksound = PLATEHIT
-	break_sound = 'sound/foley/breaksound.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	armor = list("blunt" = 80, "slash" = 80, "stab" = 80,  "piercing" = 50, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_LASHING, BCLASS_BITE, BCLASS_TWIST, BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_STAB)
 	flags_inv = HIDEFACE
@@ -226,8 +226,8 @@
 	desc = "A petriamber mask that both conceals and protects the face."
 	max_integrity = 85
 	blocksound = PLATEHIT
-	break_sound = 'sound/foley/breaksound.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	armor = list("blunt" = 80, "slash" = 80, "stab" = 80,  "piercing" = 50, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_LASHING, BCLASS_BITE, BCLASS_TWIST, BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_STAB)
 	flags_inv = HIDEFACE
@@ -246,8 +246,8 @@
 	desc = "An onyxa mask that both conceals and protects the face."
 	max_integrity = 85
 	blocksound = PLATEHIT
-	break_sound = 'sound/foley/breaksound.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	armor = list("blunt" = 80, "slash" = 80, "stab" = 80,  "piercing" = 50, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_LASHING, BCLASS_BITE, BCLASS_TWIST, BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_STAB)
 	flags_inv = HIDEFACE
@@ -266,8 +266,8 @@
 	desc = "An opaloise mask that both conceals and protects the face."
 	max_integrity = 85
 	blocksound = PLATEHIT
-	break_sound = 'sound/foley/breaksound.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	armor = list("blunt" = 80, "slash" = 80, "stab" = 80,  "piercing" = 50, "fire" = 0, "acid" = 0)
 	prevent_crits = list(BCLASS_LASHING, BCLASS_BITE, BCLASS_TWIST, BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_STAB)
 	flags_inv = HIDEFACE
@@ -462,8 +462,8 @@
 	desc = "A heavy copper mask that conceals and protects the face, though not very effectively."
 	max_integrity = 100
 	blocksound = PLATEHIT
-	break_sound = 'sound/foley/breaksound.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	armor = list("blunt" = 50, "slash" = 50, "stab" = 50,  "piercing" = 50, "fire" = 0, "acid" = 0)
 	flags_inv = HIDEFACE
 	body_parts_covered = FACE
@@ -496,8 +496,8 @@
 	icon_state = "skullmask"
 	max_integrity = 100
 	blocksound = PLATEHIT
-	break_sound = 'sound/foley/breaksound.ogg'
-	drop_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 	resistance_flags = FIRE_PROOF
 	armor = list("blunt" = 10, "slash" = 40, "stab" = 40,  "piercing" = 8, "fire" = 0, "acid" = 0)
 	prevent_crits = null

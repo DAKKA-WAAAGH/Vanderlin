@@ -24,7 +24,7 @@
 	give_bank_account = 80
 	min_pq = 0
 
-	cmode_music = 'sound/music/cmode/towner/CombatMayor.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/towner/CombatMayor.ogg'
 	can_have_apprentices = FALSE
 
 /datum/outfit/job/roguetown/mayor

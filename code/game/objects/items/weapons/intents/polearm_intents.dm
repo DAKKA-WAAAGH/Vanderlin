@@ -8,7 +8,7 @@
 	reach = 2
 	chargetime = 1
 	warnie = "mobwarning"
-	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/genstab (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genstab (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genstab (3).ogg')
 	penfactor = AP_POLEARM_THRUST
 	swingdelay = 1
 	misscost = 10
@@ -23,7 +23,7 @@
 	blade_class = BCLASS_BLUNT
 	icon_state = "inbash"
 	attack_verb = list("bashes", "strikes")
-	hitsound = list('sound/combat/hits/blunt/woodblunt (1).ogg', 'sound/combat/hits/blunt/woodblunt (2).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/blunt/woodblunt (1).ogg', 'modular/kaizoku/sound/combat/hits/blunt/woodblunt (2).ogg')
 	penfactor = AP_POLEARM_BASH
 	damfactor = 0.8
 	swingdelay = 1
@@ -41,7 +41,7 @@
 	icon_state = "incut"
 	animname = "cut"
 	damfactor = 0.8
-	hitsound = list('sound/combat/hits/bladed/genslash (1).ogg', 'sound/combat/hits/bladed/genslash (2).ogg', 'sound/combat/hits/bladed/genslash (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/genslash (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genslash (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genslash (3).ogg')
 	reach = 2
 	swingdelay = 1
 	misscost = 10
@@ -62,7 +62,7 @@
 	attack_verb = list("chops", "hacks")
 	animname = "chop"
 	blade_class = BCLASS_CHOP
-	hitsound = list('sound/combat/hits/bladed/genchop (1).ogg', 'sound/combat/hits/bladed/genchop (2).ogg', 'sound/combat/hits/bladed/genchop (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/genchop (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genchop (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genchop (3).ogg')
 	penfactor = AP_POLEARM_CHOP
 	chargetime = 1.5
 	damfactor = 1.2
@@ -82,7 +82,7 @@
 	damfactor = 1.2
 	chargetime = 10
 	no_early_release = TRUE
-	hitsound = list('sound/combat/hits/bladed/genslash (1).ogg', 'sound/combat/hits/bladed/genslash (2).ogg', 'sound/combat/hits/bladed/genslash (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/genslash (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genslash (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genslash (3).ogg')
 	item_damage_type = "slash"
 	misscost = 10
 

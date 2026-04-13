@@ -6,7 +6,7 @@
 	outfit = /datum/outfit/wretch/vigilante
 	total_positions = 10
 	roll_chance = 100
-	cmode_music = 'sound/music/cmode/antag/CombatBeest.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/antag/CombatBeest.ogg'
 	allowed_patrons = list(/datum/patron/inhumen/matthios)
 
 	jobstats = list(

@@ -23,7 +23,7 @@
 	give_bank_account = TRUE
 	min_pq = -10
 	bypass_lastclass = TRUE
-	cmode_music = 'sound/music/cmode/church/combat_templar.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/church/combat_templar.ogg'
 
 /datum/outfit/job/stonekeep/acolyte
 	name = "Acolyte"
@@ -69,7 +69,7 @@
 			neck = /obj/item/clothing/neck/psycross/silver/abyssor
 			shoes = /obj/item/clothing/shoes/boots
 			armor = /obj/item/clothing/shirt/robe/abyssor
-			H.cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
+			H.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatMonk.ogg'
 			H.adjust_skillrank(/datum/skill/labor/fishing, 1, TRUE)
 		if(/datum/patron/divine/xylix)
 			head = /obj/item/clothing/head/roguehood/random

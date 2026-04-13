@@ -12,7 +12,7 @@
 	var/intent_type
 	var/animname = "strike"
 	var/blade_class = BCLASS_BLUNT
-	var/list/hitsound = list('sound/combat/hits/blunt/bluntsmall (1).ogg', 'sound/combat/hits/blunt/bluntsmall (2).ogg')
+	var/list/hitsound = list('modular/kaizoku/sound/combat/hits/blunt/bluntsmall (1).ogg', 'modular/kaizoku/sound/combat/hits/blunt/bluntsmall (2).ogg')
 	var/canparry = TRUE
 	var/candodge = TRUE
 	var/iparrybonus = 0
@@ -310,7 +310,7 @@
 	extra_range = 3
 
 /datum/looping_sound/flailswing
-	mid_sounds = list('sound/combat/wooshes/flail_swing.ogg')
+	mid_sounds = list('modular/kaizoku/sound/combat/wooshes/flail_swing.ogg')
 	mid_length = 7
 	volume = 100
 
@@ -327,7 +327,7 @@
 	name = "stab"
 	icon_state = "instab"
 	attack_verb = list("stab")
-	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/genstab (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genstab (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genstab (3).ogg')
 	animname = "stab"
 	blade_class = BCLASS_STAB
 	item_damage_type = "stab"
@@ -338,7 +338,7 @@
 	name = "pick"
 	icon_state = "inpick"
 	attack_verb = list("picks","impales")
-	hitsound = list('sound/combat/hits/pick/genpick (1).ogg', 'sound/combat/hits/pick/genpick (2).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/pick/genpick (1).ogg', 'modular/kaizoku/sound/combat/hits/pick/genpick (2).ogg')
 	item_damage_type = "stab"
 	animname = "strike"
 	blade_class = BCLASS_PICK
@@ -349,7 +349,7 @@
 	name = "drill"
 	icon_state = "inpick"
 	attack_verb = list("drills","augers")
-	hitsound = list('sound/combat/hits/pick/genpick (1).ogg', 'sound/combat/hits/pick/genpick (2).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/pick/genpick (1).ogg', 'modular/kaizoku/sound/combat/hits/pick/genpick (2).ogg')
 	animname = "strike"
 	item_damage_type = "stab"
 	blade_class = BCLASS_DRILL

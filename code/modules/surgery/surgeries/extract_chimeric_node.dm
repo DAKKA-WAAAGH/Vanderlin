@@ -23,8 +23,8 @@
 	target_mobtypes = list(/mob/living/carbon/human, /mob/living/simple_animal)
 	time = 10 SECONDS
 	surgery_flags = SURGERY_BLOODY | SURGERY_INCISED | SURGERY_CLAMPED | SURGERY_RETRACTED | SURGERY_BROKEN
-	preop_sound = 'sound/surgery/organ2.ogg'
-	success_sound = 'sound/surgery/organ1.ogg'
+	preop_sound = 'modular/kaizoku/sound/surgery/organ2.ogg'
+	success_sound = 'modular/kaizoku/sound/surgery/organ1.ogg'
 
 /datum/surgery_step/extract_chimeric_node/preop(mob/user, mob/living/target, target_zone, obj/item/tool, datum/intent/intent)
 	if(HAS_TRAIT(target, TRAIT_NODE_EXTRACTED))

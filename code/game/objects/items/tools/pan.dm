@@ -14,7 +14,7 @@
 
 	sharpness = IS_BLUNT
 	slot_flags = ITEM_SLOT_HIP
-	drop_sound = 'sound/foley/dropsound/shovel_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/shovel_drop.ogg'
 	associated_skill = /datum/skill/combat/axesmaces
 	anvilrepair = /datum/skill/craft/blacksmithing
 	smeltresult = /obj/item/ingot/iron

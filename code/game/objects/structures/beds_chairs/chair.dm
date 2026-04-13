@@ -93,7 +93,7 @@
 	item_chair = /obj/item/chair/stool
 	max_integrity = 100
 	blade_dulling = DULLING_BASHCHOP
-	destroy_sound = 'sound/combat/hits/onwood/destroyfurniture.ogg'
+	destroy_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroyfurniture.ogg'
 	attacked_sound = "woodimpact"
 	metalizer_result = /obj/item/cooking/pan
 
@@ -141,7 +141,7 @@
 	hit_reaction_chance = 50
 	obj_flags = CAN_BE_HIT
 	max_integrity = 100
-	destroy_sound = 'sound/combat/hits/onwood/destroyfurniture.ogg'
+	destroy_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroyfurniture.ogg'
 	attacked_sound = "woodimpact"
 	sleepy = 0.1
 	var/break_chance = 23 //Likely hood of smashing the chair.

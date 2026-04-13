@@ -109,7 +109,7 @@
 					W.water_reagent = master_reagent.type
 					W.water_volume = clamp(reagent_volume, 1, 100)
 					W.handle_water()
-					playsound(W, 'sound/foley/waterenter.ogg', 100, FALSE)
+					playsound(W, 'modular/kaizoku/sound/foley/waterenter.ogg', 100, FALSE)
 					QDEL_NULL(src)
 
 /obj/structure/closet/dirthole/attackby(obj/item/attacking_item, mob/user, params)
@@ -137,7 +137,7 @@
 		return
 
 	if(attacking_shovel.heldclod)
-		playsound(src,'sound/items/empty_shovel.ogg', 100, TRUE)
+		playsound(src,'modular/kaizoku/sound/items/empty_shovel.ogg', 100, TRUE)
 		if(stage == 3) //close grave
 			if(!do_after(user, 5 SECONDS * attacking_shovel.time_multiplier, src)) //can't have nice things can we
 				return
@@ -167,19 +167,19 @@
 			var/turf/our_turf = get_turf(src)
 			var/turf/under_turf = GET_TURF_BELOW(our_turf)
 			if(under_turf && our_turf && isopenturf(under_turf))
-				playsound(src,'sound/items/dig_shovel.ogg', 100, TRUE)
+				playsound(src,'modular/kaizoku/sound/items/dig_shovel.ogg', 100, TRUE)
 				user.visible_message("[user] starts digging out the bottom of [src]", "I start digging out the bottom of [src].")
 				if(!do_after(user, 10 SECONDS * attacking_shovel.time_multiplier, src))
 					return TRUE
 				attacking_shovel.heldclod = new(attacking_shovel)
 				attacking_shovel.update_appearance(UPDATE_ICON_STATE)
-				playsound(our_turf,'sound/items/dig_shovel.ogg', 100, TRUE)
+				playsound(our_turf,'modular/kaizoku/sound/items/dig_shovel.ogg', 100, TRUE)
 				our_turf.ScrapeAway(flags = CHANGETURF_INHERIT_AIR)
 				qdel(src)
 				return
 			to_chat(user, "<span class='warning'>I think that's deep enough.</span>")
 			return
-		playsound(src,'sound/items/dig_shovel.ogg', 100, TRUE)
+		playsound(src,'modular/kaizoku/sound/items/dig_shovel.ogg', 100, TRUE)
 		var/used_str = 10
 		if(iscarbon(user))
 			var/mob/living/carbon/C = user

@@ -1,6 +1,6 @@
 /datum/component/storage/concrete/scabbard
 	max_items = 1
-	rustle_sound = 'sound/foley/equip/scabbard_holster.ogg'
+	rustle_sound = 'modular/kaizoku/sound/foley/equip/scabbard_holster.ogg'
 	max_w_class = WEIGHT_CLASS_BULKY
 	quickdraw = TRUE
 	allow_look_inside = FALSE
@@ -21,7 +21,7 @@
 
 /datum/component/storage/concrete/boots
 	max_items = 1
-	rustle_sound = 'sound/foley/equip/scabbard_holster.ogg'
+	rustle_sound = 'modular/kaizoku/sound/foley/equip/scabbard_holster.ogg'
 	max_w_class = WEIGHT_CLASS_SMALL
 	quickdraw = TRUE
 	allow_look_inside = FALSE

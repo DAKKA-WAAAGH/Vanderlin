@@ -9,7 +9,7 @@
 	outfit = /datum/outfit/adventurer/heartfeltlord
 	total_positions = 1
 	roll_chance = 50
-	cmode_music = 'sound/music/cmode/adventurer/CombatDream.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatDream.ogg'
 	skills = list(
 		/datum/skill/combat/axesmaces = 2,
 		/datum/skill/combat/crossbows = 3,

@@ -12,8 +12,8 @@
 	max_integrity = 100
 	var/base_state = "tent_door"
 	blade_dulling = DULLING_BASHCHOP
-	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
-	destroy_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
+	destroy_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroywalldoor.ogg'
 
 /obj/structure/roguetent/Initialize()
 	. = ..()
@@ -28,14 +28,14 @@
 
 /obj/structure/roguetent/proc/open_up(mob/user)
 	visible_message("<span class='info'>[user] opens [src].</span>")
-	playsound(src, 'sound/foley/equip/rummaging-02.ogg', 100, FALSE)
+	playsound(src, 'modular/kaizoku/sound/foley/equip/rummaging-02.ogg', 100, FALSE)
 	density = FALSE
 	opacity = FALSE
 	update_appearance(UPDATE_ICON_STATE)
 
 /obj/structure/roguetent/proc/close_up(mob/user)
 	visible_message("<span class='info'>[user] closes [src].</span>")
-	playsound(src, 'sound/foley/equip/rummaging-02.ogg', 100, FALSE)
+	playsound(src, 'modular/kaizoku/sound/foley/equip/rummaging-02.ogg', 100, FALSE)
 	density = TRUE
 	opacity = TRUE
 	update_appearance(UPDATE_ICON_STATE)

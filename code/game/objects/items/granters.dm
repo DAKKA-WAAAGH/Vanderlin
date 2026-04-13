@@ -143,7 +143,7 @@
 	desc = "A scroll of potential known only to those that can decipher its secrets."
 	icon = 'icons/roguetown/items/misc.dmi'
 	oneuse = TRUE
-	drop_sound = 'sound/foley/dropsound/paper_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/paper_drop.ogg'
 	pickup_sound =  'sound/blank.ogg'
 
 /obj/item/book/granter/spell/magick/onlearned(mob/living/carbon/user)
@@ -202,7 +202,7 @@
 	icon_state = "scrollpurple"
 	icon = 'icons/roguetown/items/misc.dmi'
 	oneuse = TRUE
-	drop_sound = 'sound/foley/dropsound/paper_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/paper_drop.ogg'
 	pickup_sound =  'sound/blank.ogg'
 
 /obj/item/book/granter/spell_points/on_reading_finished(mob/living/user)

@@ -2,7 +2,7 @@
 	name = "Lively Bloom"
 	desc = "Summons a gardener that will tend your crops."
 	button_icon_state = "garden"
-	sound = 'sound/items/dig_shovel.ogg'
+	sound = 'modular/kaizoku/sound/items/dig_shovel.ogg'
 	invocation = "Treefather, whisper life into this herb."
 	invocation_type = INVOCATION_WHISPER
 	spell_type = SPELL_MIRACLE

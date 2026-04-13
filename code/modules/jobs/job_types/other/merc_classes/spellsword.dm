@@ -5,7 +5,7 @@
 	outfit = /datum/outfit/mercenary/spellsword
 	category_tags = list(CTAG_MERCENARY)
 	total_positions = 5
-	cmode_music = 'sound/music/cmode/adventurer/CombatSorcerer.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatSorcerer.ogg'
 	allowed_patrons = list(/datum/patron/divine/noc, /datum/patron/inhumen/zizo)
 	blacklisted_species = list(SPEC_ID_HALFLING)
 	exp_types_granted = list(EXP_TYPE_MERCENARY, EXP_TYPE_COMBAT, EXP_TYPE_MAGICK)

@@ -96,7 +96,7 @@
 	outfit = /datum/outfit/tapster
 	give_bank_account = TRUE
 	can_have_apprentices = FALSE
-	cmode_music = 'sound/music/cmode/towner/CombatInn.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/towner/CombatInn.ogg'
 
 	allowed_races = RACES_PLAYER_ALL
 

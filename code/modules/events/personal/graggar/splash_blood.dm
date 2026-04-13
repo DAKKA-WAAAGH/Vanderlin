@@ -48,6 +48,6 @@
 		span_userdanger("YOU ARE GRAGGAR'S CHOSEN!"),
 		span_notice("There is power in blood. Splash a bucket full of blood on yourself to honor Graggar!"),
 	))
-	chosen_one.playsound_local(chosen_one, 'sound/misc/gods/graggar_omen.ogg', 100)
+	chosen_one.playsound_local(chosen_one, 'modular/kaizoku/sound/misc/gods/graggar_omen.ogg', 100)
 
 	chosen_one.mind.announce_personal_objectives()

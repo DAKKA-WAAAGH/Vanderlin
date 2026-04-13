@@ -115,13 +115,13 @@
 		if((REALTIMEOFDAY > lower_range) && (REALTIMEOFDAY < upper_range))
 			anvil_presses -= anvil_presses[choice]
 			user.balloon_alert(user, "Great Hit!")
-			playsound(host_anvil, pick('sound/items/bsmith1.ogg','sound/items/bsmith2.ogg','sound/items/bsmith3.ogg','sound/items/bsmith4.ogg'), 100, FALSE)
+			playsound(host_anvil, pick('modular/kaizoku/sound/items/bsmith1.ogg','modular/kaizoku/sound/items/bsmith2.ogg','modular/kaizoku/sound/items/bsmith3.ogg','modular/kaizoku/sound/items/bsmith4.ogg'), 100, FALSE)
 
 			// for(var/mob/player as anything in GLOB.player_list)
 			// 	if(!is_in_zweb(player.z, host_anvil.z))
 			// 		continue
 			// 	var/turf/player_turf = get_turf(player)
-			// 	var/far_smith_sound = sound(pick('sound/items/smithdist1.ogg','sound/items/smithdist2.ogg','sound/items/smithdist3.ogg'))
+			// 	var/far_smith_sound = sound(pick('modular/kaizoku/sound/items/smithdist1.ogg','modular/kaizoku/sound/items/smithdist2.ogg','modular/kaizoku/sound/items/smithdist3.ogg'))
 			// 	if(player_turf)
 			// 		var/dist = get_dist(player_turf, host_anvil.loc)
 			// 		if(dist < 7)

@@ -632,7 +632,7 @@
 	if(ishuman(target))
 		var/mob/living/carbon/H = target
 		H.add_stress(/datum/stress_event/hug)
-		playsound(target, pick('sound/vo/hug.ogg'), 100, FALSE, -1)
+		playsound(target, pick('modular/kaizoku/sound/vo/hug.ogg'), 100, FALSE, -1)
 
 		if(user.mind)
 			SEND_SIGNAL(user, COMSIG_MOB_HUGGED, H)
@@ -658,7 +658,7 @@
 	/* Stonekeep Edit
 	if(ishuman(target))
 		var/mob/living/carbon/human/H = target
-		playsound(target, pick('sound/vo/hug.ogg'), 100, FALSE, -1)
+		playsound(target, pick('modular/kaizoku/sound/vo/hug.ogg'), 100, FALSE, -1)
 		if(israkshari(H))
 			if(prob(10))
 				H.emote("purr")
@@ -747,7 +747,7 @@
 				message_param = "kisses %t on the brow."
 			else
 				message_param = "kisses %t on \the [parse_zone(H.zone_selected)]."
-	playsound(target, pick('sound/vo/kiss (1).ogg','sound/vo/kiss (2).ogg'), 100, FALSE, -1)
+	playsound(target, pick('modular/kaizoku/sound/vo/kiss (1).ogg','modular/kaizoku/sound/vo/kiss (2).ogg'), 100, FALSE, -1)
 	if(user.mind)
 		record_round_statistic(STATS_KISSES_MADE)
 
@@ -1076,7 +1076,7 @@
 		var/mob/living/carbon/human/H = target
 		H.flash_fullscreen("redflash3")
 		H.AdjustSleeping(-50)
-		playsound(target, pick('sound/foley/slap (1).ogg','sound/foley/slap (2).ogg'), 50, FALSE, -1)
+		playsound(target, pick('modular/kaizoku/sound/foley/slap (1).ogg','modular/kaizoku/sound/foley/slap (2).ogg'), 50, FALSE, -1)
 
 /datum/emote/living/scream
 	key = "scream"

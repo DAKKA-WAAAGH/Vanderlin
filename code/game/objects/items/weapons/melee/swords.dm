@@ -25,8 +25,8 @@
 	swingsound = BLADEWOOSH_MED
 	associated_skill = /datum/skill/combat/swords
 	pickup_sound = "unsheathe_sword"
-	equip_sound = 'sound/foley/dropsound/holster_sword.ogg'
-	drop_sound = 'sound/foley/dropsound/blade_drop.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/dropsound/holster_sword.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/blade_drop.ogg'
 	flags_1 = CONDUCT_1
 	thrown_bclass = BCLASS_CUT
 	melting_material = /datum/material/steel
@@ -220,7 +220,7 @@
 	gripped_intents = null
 	minstr = 5
 
-	parrysound = list('sound/combat/parry/bladed/bladedthin (1).ogg', 'sound/combat/parry/bladed/bladedthin (2).ogg', 'sound/combat/parry/bladed/bladedthin (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/bladed/bladedthin (1).ogg', 'modular/kaizoku/sound/combat/parry/bladed/bladedthin (2).ogg', 'modular/kaizoku/sound/combat/parry/bladed/bladedthin (3).ogg')
 	swingsound = BLADEWOOSH_SMALL
 
 /obj/item/weapon/sword/sabre/dec
@@ -444,7 +444,7 @@
 	minstr = 6
 
 	bigboy = TRUE
-	parrysound = list('sound/combat/parry/bladed/bladedthin (1).ogg', 'sound/combat/parry/bladed/bladedthin (2).ogg', 'sound/combat/parry/bladed/bladedthin (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/bladed/bladedthin (1).ogg', 'modular/kaizoku/sound/combat/parry/bladed/bladedthin (2).ogg', 'modular/kaizoku/sound/combat/parry/bladed/bladedthin (3).ogg')
 	parrysound = "rapier"
 	swingsound = BLADEWOOSH_SMALL
 	SET_BASE_PIXEL(-16, -16)
@@ -1312,7 +1312,7 @@
 	lefthand_file = 'icons/mob/inhands/weapons/roguebig_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/roguebig_righthand.dmi'
 	swingsound = BLADEWOOSH_LARGE
-	pickup_sound = 'sound/foley/equip/swordlarge2.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/swordlarge2.ogg'
 	inhand_x_dimension = 64
 	inhand_y_dimension = 64
 	slot_flags = ITEM_SLOT_BACK|ITEM_SLOT_HIP
@@ -1349,7 +1349,7 @@
 	max_integrity = INTEGRITY_POOR + 80
 
 	parrysound = "sword"
-	pickup_sound = 'sound/foley/equip/swordlarge2.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/swordlarge2.ogg'
 	slot_flags = ITEM_SLOT_BACK//how the fuck you could put this thing on your hip?
 	melting_material = /datum/material/copper
 	sellprice = 25//lets make the two bars worth it
@@ -1600,7 +1600,7 @@
 	icon_state = "intake"
 	animname = "strike"
 	blade_class = null	//We don't use a blade class because it has on damage.
-	hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/blunt/metalblunt (1).ogg', 'modular/kaizoku/sound/combat/hits/blunt/metalblunt (2).ogg', 'modular/kaizoku/sound/combat/hits/blunt/metalblunt (3).ogg')
 	penfactor = -100
 	swingdelay = 2	//Small delay to hook
 	damfactor = 0.1	//No real damage
@@ -1640,7 +1640,7 @@
 				M.visible_message(span_danger("[user] takes [I] from [M]'s hand!"), \
 				span_userdanger("[user] takes [I] from my hand!"), span_hear("I hear a sickening sound of pugilism!"), COMBAT_MESSAGE_RANGE)
 				user.changeNext_move(12)//avoids instantly attacking with the new weapon
-				playsound(src, 'sound/combat/weaponr1.ogg', 100, FALSE, -1) //sound queue to let them know that they got disarmed
+				playsound(src, 'modular/kaizoku/sound/combat/weaponr1.ogg', 100, FALSE, -1) //sound queue to let them know that they got disarmed
 				if(!M.mind)	//If you hit an NPC - they pick up weapons instantly. So, we do more stuff.
 					M.Stun(10)
 			else
@@ -1657,7 +1657,7 @@
 					user.Immobilize(10)
 					M.Immobilize(10)
 					M.visible_message(span_notice("[user.name] struggles to disarm [M.name]!"))
-					playsound(src, 'sound/foley/struggle.ogg', 100, FALSE, -1)
+					playsound(src, 'modular/kaizoku/sound/foley/struggle.ogg', 100, FALSE, -1)
 		if(!isliving(M))
 			to_chat(user, span_warning("You cannot disarm this enemy!"))
 			return
@@ -1681,7 +1681,7 @@
 	max_integrity = INTEGRITY_STRONG
 
 	parrysound = "bladedmedium"
-	pickup_sound = 'sound/foley/equip/swordlarge2.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/swordlarge2.ogg'
 	dropshrink = 1
 	melting_material = /datum/material/gold
 

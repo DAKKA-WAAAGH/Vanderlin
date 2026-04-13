@@ -63,10 +63,10 @@
 			spawned.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
 			spawned.adjust_skillrank(/datum/skill/labor/mathematics, 2, TRUE)
 			ADD_TRAIT(spawned, TRAIT_DUALWIELDER, TRAIT_GENERIC)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatNoc.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatNoc.ogg'
 		if(/datum/patron/divine/dendor)
 			spawned.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/garrison/CombatForestGarrison.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/garrison/CombatForestGarrison.ogg'
 		if(/datum/patron/divine/necra)
 			spawned.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
 			ADD_TRAIT(spawned, TRAIT_DEADNOSE, TRAIT_GENERIC)
@@ -76,11 +76,11 @@
 			spawned.adjust_skillrank(/datum/skill/combat/knives, 4, TRUE)
 			spawned.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)
 			ADD_TRAIT(spawned, TRAIT_DUALWIELDER, TRAIT_GENERIC)
-			spawned.cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatMonk.ogg'
 		if(/datum/patron/divine/eora)
 			spawned.virginity = FALSE
 			ADD_TRAIT(spawned, TRAIT_BEAUTIFUL, TRAIT_GENERIC)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatEora.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatEora.ogg'
 			var/static/list/selectable = list(
 				"Heartstring (Rapier)" = /obj/item/weapon/sword/rapier/eora,
 				"Close Caress (Knuckles)" = /obj/item/weapon/knuckles/eora,
@@ -95,13 +95,13 @@
 					spawned.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 		if(/datum/patron/divine/ravox)
 			spawned.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatRavox.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatRavox.ogg'
 		if(/datum/patron/divine/malum)
 			spawned.adjust_skillrank(/datum/skill/combat/axesmaces, 4, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/adventurer/CombatOutlander2.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander2.ogg'
 		if(/datum/patron/divine/abyssor)
 			spawned.adjust_skillrank(/datum/skill/labor/fishing, 2, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatAbyssor.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatAbyssor.ogg'
 			var/static/list/selectable = list(
 				"DepthSeeker (Spear)" = /obj/item/weapon/polearm/spear/abyssor,
 				"Barotrauma (Katars)" = /obj/item/weapon/katar/abyssor,
@@ -116,7 +116,7 @@
 					spawned.adjust_skillrank(/datum/skill/combat/unarmed, 2, TRUE)
 		if(/datum/patron/divine/xylix)
 			spawned.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatXylix.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatXylix.ogg'
 
 	var/holder = spawned.patron?.devotion_holder
 	if(holder)

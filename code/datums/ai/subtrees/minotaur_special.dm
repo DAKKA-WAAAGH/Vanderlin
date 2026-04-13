@@ -75,7 +75,7 @@
 	switch(charge_stage)
 		if(0)
 			boss.visible_message("<span class='danger'>[boss] lowers its head and prepares to charge!</span>")
-			playsound(boss, 'sound/misc/meteorimpact.ogg', 50, TRUE)
+			playsound(boss, 'modular/kaizoku/sound/misc/meteorimpact.ogg', 50, TRUE)
 			show_charge_path(boss, target)
 			charge_stage = 1
 			addtimer(CALLBACK(src, PROC_REF(advance_stage), controller, target_key), 2 SECONDS)
@@ -108,7 +108,7 @@
 
 	boss.setDir(direction)
 	boss.visible_message("<span class='danger'>[boss] charges forward!</span>")
-	playsound(boss, 'sound/combat/hits/kick/stomp.ogg', 50, TRUE)
+	playsound(boss, 'modular/kaizoku/sound/combat/hits/kick/stomp.ogg', 50, TRUE)
 
 	controller.PauseAi(charge_distance * delay)
 	boss.AddComponent(/datum/component/after_image)
@@ -139,7 +139,7 @@
 				M.Knockdown(2 SECONDS)
 				M.adjustBruteLoss(20)
 				M.throw_at(get_edge_target_turf(boss, direction), 4, 1)
-				playsound(M, pick('sound/combat/hits/punch/punch_hard (1).ogg','sound/combat/hits/punch/punch_hard (2).ogg','sound/combat/hits/punch/punch_hard (3).ogg'), 50, TRUE)
+				playsound(M, pick('modular/kaizoku/sound/combat/hits/punch/punch_hard (1).ogg','modular/kaizoku/sound/combat/hits/punch/punch_hard (2).ogg','modular/kaizoku/sound/combat/hits/punch/punch_hard (3).ogg'), 50, TRUE)
 
 			else if(isstructure(A) && !A.density)
 				var/obj/structure/S = A
@@ -148,7 +148,7 @@
 		boss.forceMove(next_turf)
 		sleep(delay)
 
-	playsound(boss, 'sound/misc/meteorimpact.ogg', 50, TRUE)
+	playsound(boss, 'modular/kaizoku/sound/misc/meteorimpact.ogg', 50, TRUE)
 	for(var/mob/living/L in orange(1, boss))
 		if(L != boss)
 			L.Knockdown(1 SECONDS)
@@ -290,7 +290,7 @@
 
 	controller.set_blackboard_key(BB_MINOTAUR_SLAM_COOLDOWN, world.time + 20 SECONDS)
 	boss.visible_message("<span class='danger'>[boss] raises its fists high into the air!</span>")
-	playsound(boss, 'sound/combat/hits/kick/stomp.ogg', 50, TRUE)
+	playsound(boss, 'modular/kaizoku/sound/combat/hits/kick/stomp.ogg', 50, TRUE)
 
 	addtimer(CALLBACK(src, PROC_REF(do_slam), controller), 1.5 SECONDS)
 
@@ -301,7 +301,7 @@
 		return
 
 	boss.visible_message("<span class='danger'>[boss] slams the ground with tremendous force!</span>")
-	playsound(boss, 'sound/misc/explode/explosionfar (1).ogg', 50, TRUE)
+	playsound(boss, 'modular/kaizoku/sound/misc/explode/explosionfar (1).ogg', 50, TRUE)
 
 	// Create shockwave visual effect
 	new /obj/effect/temp_visual/minotaur_slam(get_turf(boss))

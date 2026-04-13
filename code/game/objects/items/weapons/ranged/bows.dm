@@ -12,7 +12,7 @@
 	var/base_icon = "bow"
 	possible_item_intents = list(/datum/intent/shoot/bow, /datum/intent/arc/bow,INTENT_GENERIC)
 	mag_type = /obj/item/ammo_box/magazine/internal/shot/bow
-	fire_sound = 'sound/combat/Ranged/flatbow-shot-01.ogg'
+	fire_sound = 'modular/kaizoku/sound/combat/Ranged/flatbow-shot-01.ogg'
 	slot_flags = ITEM_SLOT_BACK|ITEM_SLOT_HIP
 	w_class = WEIGHT_CLASS_BULKY
 	randomspread = 0
@@ -21,7 +21,7 @@
 	force = 15
 	verbage = "nock"
 	cartridge_wording = "arrow"
-	load_sound = 'sound/foley/nockarrow.ogg'
+	load_sound = 'modular/kaizoku/sound/foley/nockarrow.ogg'
 	metalizer_result = /obj/item/restraints/legcuffs/beartrap/armed
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/bow/getonmobprop(tag)
@@ -133,7 +133,7 @@
 	var/mob/master = get_master_mob()
 	if(master)
 		master.visible_message("<span class='warning'>[master] draws [get_master_item()]!</span>")
-		playsound(master, pick('sound/combat/Ranged/bow-draw-01.ogg'), 100, FALSE)
+		playsound(master, pick('modular/kaizoku/sound/combat/Ranged/bow-draw-01.ogg'), 100, FALSE)
 
 /datum/intent/shoot/bow/get_chargetime()
 	var/mob/living/master = get_master_mob()
@@ -173,7 +173,7 @@
 	var/obj/item/master_item = get_master_item()
 	if(master_item && master_mob)
 		master_mob.visible_message("<span class='warning'>[master_mob] draws [master_item]!</span>")
-		playsound(master_mob, pick('sound/combat/Ranged/bow-draw-01.ogg'), 100, FALSE)
+		playsound(master_mob, pick('modular/kaizoku/sound/combat/Ranged/bow-draw-01.ogg'), 100, FALSE)
 
 /datum/intent/arc/bow/get_chargetime()
 	var/mob/living/master = get_master_mob()
@@ -207,7 +207,7 @@
 	item_state = "longbow"
 	base_icon = "longbow"
 	possible_item_intents = list(/datum/intent/shoot/bow/long, /datum/intent/arc/bow/long,INTENT_GENERIC)
-	fire_sound = 'sound/combat/Ranged/flatbow-shot-03.ogg'
+	fire_sound = 'modular/kaizoku/sound/combat/Ranged/flatbow-shot-03.ogg'
 	slot_flags = ITEM_SLOT_BACK
 	force = 12
 	damfactor = 1.2
@@ -217,14 +217,14 @@
 	var/obj/item/master_item = get_master_item()
 	if(master_mob && master_item)
 		master_mob.visible_message("<span class='warning'>[master_mob] draws [master_item]!</span>")
-		playsound(master_mob, pick('sound/combat/Ranged/bow-draw-04.ogg'), 100, FALSE)
+		playsound(master_mob, pick('modular/kaizoku/sound/combat/Ranged/bow-draw-04.ogg'), 100, FALSE)
 
 /datum/intent/arc/bow/long/prewarning()
 	var/mob/master_mob = get_master_mob()
 	var/obj/item/master_item = get_master_item()
 	if(master_mob && master_item)
 		master_mob.visible_message("<span class='warning'>[master_mob] draws [master_item]!</span>")
-		playsound(master_mob, pick('sound/combat/Ranged/bow-draw-04.ogg'), 100, FALSE)
+		playsound(master_mob, pick('modular/kaizoku/sound/combat/Ranged/bow-draw-04.ogg'), 100, FALSE)
 
 /datum/intent/shoot/bow/long
 	chargetime = 1.5

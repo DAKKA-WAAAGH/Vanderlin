@@ -3,7 +3,7 @@
 	skillcraft = /datum/skill/magic/arcane
 	category = "Arcane"
 	construct_tool = /obj/item/weapon/hammer
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 	verbage = "weave"
 	verbage_tp = "weaves"
 

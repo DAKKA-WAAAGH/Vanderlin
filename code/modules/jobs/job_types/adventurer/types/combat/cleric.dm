@@ -40,7 +40,7 @@
 
 	languages = list(/datum/language/celestial)
 
-	cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatMonk.ogg'
 
 /datum/job/advclass/combat/cleric/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
@@ -55,29 +55,29 @@
 			if(/datum/patron/divine/astrata)
 				spawned.cmode_music = 'sound/blank.ogg'
 			if(/datum/patron/divine/dendor)
-				spawned.cmode_music = 'sound/music/cmode/garrison/CombatForestGarrison.ogg'
+				spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/garrison/CombatForestGarrison.ogg'
 			if(/datum/patron/divine/necra)
 				spawned.cmode_music = 'sound/blank.ogg'
 				ADD_TRAIT(spawned, TRAIT_DEADNOSE, TRAIT_GENERIC)
 				ADD_TRAIT(spawned, TRAIT_GRAVEROBBER, TRAIT_GENERIC)
 			if(/datum/patron/divine/eora)
-				spawned.cmode_music = 'sound/music/cmode/church/CombatEora.ogg'
+				spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatEora.ogg'
 				spawned.virginity = FALSE
 				ADD_TRAIT(spawned, TRAIT_BEAUTIFUL, TRAIT_GENERIC)
 			if(/datum/patron/divine/ravox)
-				spawned.cmode_music = 'sound/music/cmode/church/CombatRavox.ogg'
+				spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatRavox.ogg'
 				spawned.adjust_skillrank(/datum/skill/combat/unarmed, 1, TRUE)
 			if(/datum/patron/divine/noc)
-				spawned.cmode_music = 'sound/music/cmode/church/CombatNoc.ogg'
+				spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatNoc.ogg'
 			if(/datum/patron/divine/pestra)
-				spawned.cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
+				spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatMonk.ogg'
 			if(/datum/patron/divine/abyssor)
-				spawned.cmode_music = 'sound/music/cmode/church/CombatAbyssor.ogg'
+				spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatAbyssor.ogg'
 				spawned.adjust_skillrank(/datum/skill/labor/fishing, 2, TRUE)
 			if(/datum/patron/divine/malum)
-				spawned.cmode_music = 'sound/music/cmode/adventurer/CombatOutlander2.ogg'
+				spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander2.ogg'
 			if(/datum/patron/divine/xylix)
-				spawned.cmode_music = 'sound/music/cmode/church/CombatXylix.ogg'
+				spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatXylix.ogg'
 			else
 				spawned.cmode_music = 'sound/blank.ogg'
 

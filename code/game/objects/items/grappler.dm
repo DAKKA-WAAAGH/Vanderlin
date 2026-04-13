@@ -103,7 +103,7 @@ Reel teleports the attached atom to the grabbed turf.
 			isloading = TRUE
 			playsound(user, 'sound/blank.ogg', 100, FALSE, 3)
 			if(do_after(user, 70 - stat, user, timed_action_flags = (IGNORE_USER_LOC_CHANGE|IGNORE_TARGET_LOC_CHANGE|IGNORE_HELD_ITEM|IGNORE_USER_DIR_CHANGE)))
-				playsound(src, 'sound/foley/trap_arm.ogg', 100, FALSE , 5)
+				playsound(src, 'modular/kaizoku/sound/foley/trap_arm.ogg', 100, FALSE , 5)
 				to_chat(user, span_info("It's loaded!"))
 				isloading = FALSE
 				is_loaded = TRUE
@@ -131,7 +131,7 @@ Reel teleports the attached atom to the grabbed turf.
 		qdel(tile_effect)
 		grappled_turf = null
 	if(!silent)	//Silent is used during a successful reel because it has its own distinct sounds
-		playsound(src, 'sound/foley/trap.ogg', 100, FALSE , 5)
+		playsound(src, 'modular/kaizoku/sound/foley/trap.ogg', 100, FALSE , 5)
 	is_loaded = FALSE
 	update_appearance(UPDATE_ICON_STATE)
 
@@ -253,7 +253,7 @@ Reel teleports the attached atom to the grabbed turf.
 					else if (T.density)
 						reason = "It's a wall!"
 					to_chat(user, span_info("The hook fails! "+"[reason]"))
-					playsound(user, 'sound/foley/trap.ogg', 100, FALSE , 5)
+					playsound(user, 'modular/kaizoku/sound/foley/trap.ogg', 100, FALSE , 5)
 					unload(failure = TRUE)
 				else if(T.z == user.z)
 					if(max_range_noz >= get_dist(user, T) && !T.density)

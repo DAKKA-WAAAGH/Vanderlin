@@ -115,7 +115,7 @@ GLOBAL_LIST_EMPTY(active_chimeric_surgeries)
 	if(!do_after(user, 3 SECONDS, src))
 		return
 
-	playsound(src, 'sound/surgery/scalpel1.ogg', 50, TRUE)
+	playsound(src, 'modular/kaizoku/sound/surgery/scalpel1.ogg', 50, TRUE)
 	to_chat(user, span_notice("The humor is exposed. You can now modify its essence with the proper tools."))
 
 	var/datum/chimeric_surgery_state/surgery = new()
@@ -139,7 +139,7 @@ GLOBAL_LIST_EMPTY(active_chimeric_surgeries)
 	if(!do_after(user, 4 SECONDS, src))
 		return FALSE
 
-	playsound(src, 'sound/surgery/hemostat1.ogg', 50, TRUE)
+	playsound(src, 'modular/kaizoku/sound/surgery/hemostat1.ogg', 50, TRUE)
 	surgery.extracted = TRUE
 	to_chat(user, span_notice("The essence has been extracted. Use a <b>retractor</b> to select a new node type."))
 	return TRUE
@@ -169,7 +169,7 @@ GLOBAL_LIST_EMPTY(active_chimeric_surgeries)
 		return FALSE
 
 	surgery.selected_node = node_lookup[choice]
-	playsound(src, 'sound/surgery/retractor1.ogg', 50, TRUE)
+	playsound(src, 'modular/kaizoku/sound/surgery/retractor1.ogg', 50, TRUE)
 	to_chat(user, span_notice("You prepare the [initial(surgery.selected_node.name)] essence. Use a <b>cautery</b> to seal the new node."))
 	return TRUE
 
@@ -182,7 +182,7 @@ GLOBAL_LIST_EMPTY(active_chimeric_surgeries)
 	if(!do_after(user, 5 SECONDS, src))
 		return FALSE
 
-	playsound(src, 'sound/surgery/cautery1.ogg', 50, TRUE)
+	playsound(src, 'modular/kaizoku/sound/surgery/cautery1.ogg', 50, TRUE)
 
 	var/old_name = stored_node.name
 	var/new_node_type = surgery.selected_node

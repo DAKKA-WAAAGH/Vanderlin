@@ -211,7 +211,7 @@
 	dodgecd = TRUE
 	dodge_speed = (11 - dodge_speed)
 
-	playsound(src, 'sound/combat/dodge.ogg', 100, FALSE)
+	playsound(src, 'modular/kaizoku/sound/combat/dodge.ogg', 100, FALSE)
 	throw_at(target_turf, 1, dodge_speed, src, FALSE)
 
 	var/drained = STASPD > 15 ? 0 : 5  // Just a proxy to determine if it was an "easy" dodge

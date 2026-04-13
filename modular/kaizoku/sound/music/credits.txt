@@ -1,0 +1,178 @@
+combat_maniac.ogg: Thomas Bangalter - Stress
+combat_vamp1.ogg: Vampire The Masquerade: Bloodlines - Dangerous Places Combat
+combat_vamp2.ogg: Filmmaker - Mystic Circles
+combat_desertrider.ogg: Two Fingers- You Ain't Down
+combat_jester.ogg: OFF - Pepper Steak
+combat_bandit.ogg: Deus Ex - Battery Park Combat
+combat_bandit2.ogg: Cruelty Squad  - Rent Due
+combat_physician.ogg: Pathologic (Classic) - Utroba Aggression
+combat_dwarf.ogg: Filip Lackovic - Drums of the Horde
+combat_assassin2.ogg: Fear & Hunger 2: Termina - Monologue With The Moon
+combat_noble.ogg: Aram Khachaturian - Masquerade Suite - Waltz
+combatskeleton.ogg: Storkrieg - Genocide Of The Fittest
+combat_evilwizard.ogg: Burialgoods - Low Income Barony
+
+roundend.ogg: Fear & Hunger 2: Termina - Dark Outside Extended
+accord (8).ogg: Tchaikovsky - Dance of the Sugar Plum Fairy. Cover by Amy Turk
+lute (8).ogg: Oblivion - Harvest Dawn. Cover by Daniel Estrem
+drum (5).ogg: Middle East Loop - Malfulf 90 bpm. Kettem BEAT
+guitar (15).ogg: Fear & Hunger - Prelude to Darkness Guitar Part Only
+flute (8).ogg: Elden Ring - Scribe Flute Song
+manor2.ogg: Fear & Hunger 2: Termina - Midnight Hour
+night.ogg: Vampire The Masquerade: Bloodlines - Hollywood
+spice2.ogg: The Appolo Stars - Power Of The Source
+churchnight.ogg: Fear & Hunger 2: Termina - Cathedral Whispers
+
+CombatRogueMage.ogg : (APAB) All Paladins Are Bastards - Burialgoods (He gave us permission, god bless you Burialgoods - https://www.youtube.com/watch?v=3Z_cOxF1o48)
+CombatBeest.ogg : Last Day As A Man (First Night As A Beast) - Burialgoods - https://youtu.be/zznEa8EhpuQ
+
+
+TRACKS MADE FOR VANDERLIN:
+
+    T87-Sulfurhead (https://www.youtube.com/@T87-Sulfurhead)
+Slums202 - Title2
+DURANDAL - Royal Knight
+The Reckoning - Bulwark
+Ninth Circle - Outlander (Zaladin)
+Manasurge - Court Wizard
+Manasurge (Original) - Sorcerer
+How Sausage is Made - Captain
+Burning Hovel - Guard
+Metamorphosis - Forest Warden
+Catharsis - Towner Combat
+Formerly Known as Toulouse Lautrec - Gravetender / Necran Theme
+God is Dead - Inquisition
+Age of Degeneration - Forest (Day)
+Further Below - Sewers
+Murderers Providence - Bog
+abinadab3 - Forest (Night)
+Damocles - Manor Day
+RATEATER - Dungeoneer
+Men at War - Outlander (Barbarian)
+Cutpurse - Bandit
+STOLEN SKY - Vampire
+MORTEM OBIRE - Outlander (Assassin)
+Snicker Snacker - Warrior
+Family Melts Away - Eoran Theme
+Amontillado - Prisoner
+Hellions - Servant (Cook, Innkeeper, etc)
+ABedOfMoss - Matron
+Archetype of the Dark Star - Werewolf
+heliotrix - Priest / Astratan Theme
+DEMESNE - Lich
+Ready or Not - Man-at-Arms
+OZYMANDIAS - Dungeon Track 3
+Black Powder - Grenzelhoft
+mechadh - Gaffer
+TRINITY (You Cant Kill Me) - Sacresants
+Good Men Die Young - Gaffer
+(BRASS) - Sling Blade - Xylixian theme
+(BRASS) - Triumph Over Evil - Ravoxian theme
+(BRASS) - Phases of the moon - Noccite theme
+(BRASS) - Four-Man Party - Town Elder (other than Mayor & Acolyte)
+(BRASS) - Thread Softly - Veteran
+(BRASS) - Turncoat - Abyssorian theme
+SALON (BETA) - Combat Dream
+
+
+    SeanPhillips (https://youtube.com/@seanphillipsmusic / www.seanphillipsmusic.co.uk)
+    Dungeon Track 1 - Unnamed(?)
+    Dungeon Track 2 - Unnamed (?)
+
+    YourLocalShadow (https://www.youtube.com/@YourLocalShadow)
+Bewildered Magic - Wizard Tower
+
+    flleeppyy / fleepy (https://flleeppyy.bandcamp.com/ / https://fleepy.tv/)
+Neglection - Title1
+Veil of Heresy - Cultist Theme
+Retina - Title3
+
+INSTRUMENTS
+
+Sea Shanty 2 Runescape Arrangements:
+lute (b1).ogg: https://www.youtube.com/watch?v=n-wlB48Sq94
+harp (b1).ogg: https://www.youtube.com/watch?v=DaGdjI4HGTg
+flute (b1).ogg: https://www.youtube.com/watch?v=_bhiGbnfMT4
+viola (b1): https://www.youtube.com/watch?v=qmS-rX0_qRQ
+
+KAIZOKU:
+
+Music:
+
+credits.ogg: Ending theme from Shadowman(1999) soundtrack
+guraga.ogg: Wounded Warsong by Akira Yamaoka for the Silent Hill 4: The Room soundtrack
+shop.ogg: S4 M32 Jingle (S4 M32 Jingle) from Way of the Samurai 4 soundtrack
+palace_night.ogg: Way from Way of the Samurai 3 soundtrack
+casino.ogg: Sultry Night from the Godhand soundtrack
+heartfelt.ogg: Foreigner from Way of the Samurai 4 soundtrack
+gangland_night.ogg: Sneaking from Way of the Samurai 4 soundtrack
+shixo.ogg: Hoshingoeika from Siren soundtrack
+underpater.ogg: Hirunotsuka from Siren soundtrack
+industrial_night.ogg: dino synth. a song in a day for a year, day 22
+ghetto_night.ogg: Nobushi by Avery Alexander on Youtube https://www.youtube.com/channel/UCUCQAFyjDmGSK68SfQ3iBVQ
+titleold.ogg is Stealth Music - Ninja by Avery Alexander on Youtube https://www.youtube.com/channel/UCUCQAFyjDmGSK68SfQ3iBVQ
+underwater_dungeon.ogg is Gryning by Ulf Söderberg
+title3.ogg is Kami of the Dust by Amos Roddy
+lorddeath.ogg is Prelude to Darkness from Fear & Hunger soundtrack
+title.ogg is Grace Omega by Mizoguchi Hajime for the Jin-Roh: The Wolf Brigade(1999) soundtrack
+
+Combat:
+
+combat_shixoid.ogg: Torture from Way of the Samurai 4 soundtrack
+combat_ascended_shixoid.ogg: Final Battle from Way of the Samurai 3 soundtrack
+combat_shinobi.ogg: Battle Night from Way of the Samurai 4 soundtrack
+combat_bandit.ogg: S4 M33 Jingle (S4 M33 Jingle) from Way of the Samurai 4 soundtrack
+combat_cutthroat.ogg: Season of the Samurai from No More Heroes soundtrack
+combat_cutthroat_boss.ogg: Fiercest Warrior from Like a Dragon: Ishin! soundtrack
+combat_bard.ogg: War of the Strings from Like a Dragon: Ishin! soundtrack
+combat_thief.ogg: Deadly Tengu Gang! from Like a Dragon: Ishin! soundtrack
+combat_zamurai.ogg: For My Sake from Like a Dragon: Ishin! soundtrack
+combat_spectacler.ogg: Receive and Doubt You from Like a Dragon: Ishin! soundtrack
+combat_doyen.ogg: Innocence for Violence from Like a Dragon: Ishin! soundtrack
+combat_kabuki.ogg: Four Unrestful Flowers from Like a Dragon: Ishin! soundtrack
+combat_law.ogg: The Rhapsody of Chivalry from Like a Dragon: Ishin! soundtrack
+combat_heart.ogg: Butterfly from Like a Dragon: Ishin! soundtrack
+combat_hero.ogg: Wild from Like a Dragon: Ishin! soundtrack
+combat_eldersohei.ogg: Last Battle from Way of the Samurai 4 soundtrack
+combat_guragaronic.ogg: Battle Against Clown by Geinoh Yamashirogumi for the Akira(1988) soundtrack
+combat_ronin.ogg: Normal Battle from Way of the Samurai 3 soundtrack
+combat_abyssanctum.ogg: Track 12 from Way of the Samurai 1 soundtrack
+combat_government.ogg: Kurofune from Way of the Samurai 4 soundtrack
+combat_champion.ogg: Boss Battle from Way of the Samurai 3 soundtrack
+combat_denmorian.ogg: Battle Boss from Way of the Samurai 4 soundtrack
+combat_custodian.ogg: The Tiger Warrior (Jago's Theme) from Killer Instinct 2013 soundtrack
+fisherchain (1-3).ogg, crabsplates (1-3).ogg, lobsterplate (1-3).ogg from Pixabay.com
+
+Foley:
+purification1.ogg: Godly Purification I from Okami soundtrack
+purification2.ogg: Godly Purification II from Okami soundtrack
+purification3.ogg: Godly Purification III from Okami soundtrack
+offeringsmall.ogg: Small Success from Okami soundtrack
+offeringmedium.ogg: Medium Success from Okami soundtrack
+offeringbig.ogg: Big Success from Okami soundtrack
+offeringhuge.ogg: Super Big Success from Okami soundtrack
+miracle.ogg: Miracle from Okami soundtrack
+bad_omen.ogg: Death from Okami soundtrack
+deth.ogg: The Beginning from Okami soundtrack
+forbiddenritual.ogg: Oratio -Hoshingoeika- from Siren soundtrack
+fog_start.ogg/fog_loop.ogg/fog_end.ogg: Amb 16 from Siren soundtrack
+engrave.ogg: Cocoon_engrave.ogg from Fear & Hunger 2: Termina soundtrack
+towerannounce1: Bobby1.ogg from Fear & Hunger 2: Termina soundtrack
+towerannounce2: Bobby2.ogg from Fear & Hunger 2: Termina soundtrack
+towerannounce3: Bobby3.ogg from Fear & Hunger 2: Termina soundtrack
+flesh.ogg: Living_flesh.ogg from Fear & Hunger 2: Termina soundtrack
+fleshform.ogg: Giant_head_push.ogg from Fear & Hunger 2: Termina soundtrack
+ozium.ogg: Xeno Arcadia from Hylics 2 soundtrack
+spice.ogg: Prevailing Westerlies from Hylics 2 soundtrack
+equip_chain_armor.ogg and armor_drop_chain.ogg are by Riftjaw on the Mine-Imator forums
+equip_armor_lamellar.ogg and armor_drop_lamellar.ogg are by InspiredCosplay on Youtube
+whip.ogg and whipgrab.ogg is by Adam-Winrich on Youtube
+chain (1-3).ogg is by GFX Sounds
+
+Instrument:
+Shakuhachi music is taken from Kohachiro Miyata (Full)
+Guzheng music is taken from Austin Guzheng Studio 望舒琴行
+Morin Khuur music is taken from Bukhu Ganburged, with morinkhuur3.ogg being taken from the Civilization 6 soundtrack Mongolia theme (Ancient)
+
+An IMMENSE number of sounds are taken from Taira Komori, who made a royalty free library of sounds to use. There are far too many sounds to individually credit, so please check them out if ever you're in need of sounds. https://taira-komori.net/freesounden.html
+

@@ -91,5 +91,5 @@
 
 	steam_charge = min(max_steam_charge, steam_charge + fuel_amount)
 
-	playsound(user, 'sound/items/firelight.ogg', 50, TRUE)
+	playsound(user, 'modular/kaizoku/sound/items/firelight.ogg', 50, TRUE)
 	return TRUE

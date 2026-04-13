@@ -103,7 +103,7 @@ GLOBAL_LIST_INIT(dungeon_exits, list())
 	var/atom/exit = pick(dungeon_exits)
 
 	if(!is_ghost)
-		playsound(src, 'sound/foley/ladder.ogg', 100, FALSE)
+		playsound(src, 'modular/kaizoku/sound/foley/ladder.ogg', 100, FALSE)
 		if(!do_after(user, 3 SECONDS, src))
 			return
 	movable_travel_z_level(user, get_turf(exit))
@@ -171,7 +171,7 @@ GLOBAL_LIST_INIT(dungeon_exits, list())
 	if(!attempt_entry(user, is_ghost))
 		return
 	if(!is_ghost)
-		playsound(src, 'sound/foley/ladder.ogg', 100, FALSE)
+		playsound(src, 'modular/kaizoku/sound/foley/ladder.ogg', 100, FALSE)
 		if(!do_after(user, 3 SECONDS, src))
 			return
 	movable_travel_z_level(user, get_turf(entry))

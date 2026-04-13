@@ -1,6 +1,6 @@
 /datum/wound/facial
 	name = "facial trauma"
-	sound_effect = 'sound/combat/crit.ogg'
+	sound_effect = 'modular/kaizoku/sound/combat/crit.ogg'
 	severity = WOUND_SEVERITY_SEVERE
 	whp = null
 	woundpain = 10
@@ -295,7 +295,7 @@
 		"The tissue is irreversibly rended!",
 		"The %BODYPART is thoroughly disfigured!",
 	)
-	sound_effect = 'sound/combat/crit.ogg'
+	sound_effect = 'modular/kaizoku/sound/combat/crit.ogg'
 	whp = 80
 	woundpain = 30
 	can_sew = FALSE

@@ -147,7 +147,7 @@
 		/obj/item/grown/log/tree/stick = 1,
 	)
 	tool_usage = list(
-		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'sound/items/wood_sharpen.ogg'),
+		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'modular/kaizoku/sound/items/wood_sharpen.ogg'),
 	)
 	attacked_atom = /obj/item/grown/log/tree/stick
 	starting_atom = /obj/item/weapon/knife
@@ -162,7 +162,7 @@
 		/obj/item/alch/bone = 1,
 	)
 	tool_usage = list(
-		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'sound/items/wood_sharpen.ogg'),
+		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'modular/kaizoku/sound/items/wood_sharpen.ogg'),
 	)
 	attacked_atom = /obj/item/alch/bone
 	starting_atom = /obj/item/weapon/knife
@@ -177,7 +177,7 @@
 		/obj/item/reagent_containers/glass/cup/wooden = 1,
 	)
 	tool_usage = list(
-		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'sound/items/wood_sharpen.ogg'),
+		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'modular/kaizoku/sound/items/wood_sharpen.ogg'),
 	)
 	attacked_atom = /obj/item/reagent_containers/glass/cup/wooden
 	starting_atom = /obj/item/weapon/knife

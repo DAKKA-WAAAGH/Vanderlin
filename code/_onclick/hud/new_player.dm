@@ -85,7 +85,7 @@ INITIALIZE_IMMEDIATE(/atom/movable/screen/lobby)
 
 	flick("[base_icon_state]_pressed", src)
 	if(select_sound_play)
-		hud.mymob.playsound_local(soundin = 'sound/menu/button_press.ogg', vol = 50, vary = TRUE)
+		hud.mymob.playsound_local(soundin = 'modular/kaizoku/sound/menu/button_press.ogg', vol = 50, vary = TRUE)
 	return TRUE
 
 /atom/movable/screen/lobby/button/MouseEntered(location, control, params)

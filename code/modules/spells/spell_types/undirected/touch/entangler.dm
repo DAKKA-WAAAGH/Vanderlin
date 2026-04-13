@@ -2,7 +2,7 @@
 	name = "Hand of Dendor"
 	desc = "Invoke a hand which will create living vines and grant protection."
 	button_icon_state = "entangle"
-	sound = 'sound/items/dig_shovel.ogg'
+	sound = 'modular/kaizoku/sound/items/dig_shovel.ogg'
 
 	spell_type = SPELL_MIRACLE
 	associated_skill = /datum/skill/magic/holy

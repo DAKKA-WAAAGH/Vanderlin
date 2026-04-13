@@ -11,7 +11,7 @@
 	. = ..()
 	if(ishuman(hit_atom))
 		var/mob/living/carbon/human/H = hit_atom
-		playsound(H, 'sound/foley/meatslap.ogg', 100, TRUE)
+		playsound(H, 'modular/kaizoku/sound/foley/meatslap.ogg', 100, TRUE)
 		if(HAS_TRAIT(H, TRAIT_STINKY))
 			H.add_stress(/datum/stress_event/poohit_nice)
 		else

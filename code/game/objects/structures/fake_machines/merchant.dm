@@ -84,7 +84,7 @@
 				E.budget2change(budgie)
 				budgie = 0
 		if(play_sound)
-			playsound(src, 'sound/misc/hiss.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/hiss.ogg', 100, FALSE, -1)
 
 /////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////
@@ -103,9 +103,9 @@
 	blade_dulling = DULLING_BASH
 	anchored = TRUE
 	layer = BELOW_OBJ_LAYER
-	rattle_sound = 'sound/misc/machineno.ogg'
-	unlock_sound = 'sound/misc/beep.ogg'
-	lock_sound = 'sound/misc/beep.ogg'
+	rattle_sound = 'modular/kaizoku/sound/misc/machineno.ogg'
+	unlock_sound = 'modular/kaizoku/sound/misc/beep.ogg'
+	lock_sound = 'modular/kaizoku/sound/misc/beep.ogg'
 	lock = /datum/lock/key/goldface
 	var/list/held_items = list()
 	var/budget = 200
@@ -142,7 +142,7 @@
 		budget += money
 		qdel(I)
 		to_chat(user, span_info("I put [money] mammon in [src]."))
-		playsound(src, 'sound/misc/machinevomit.ogg', 100, TRUE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machinevomit.ogg', 100, TRUE, -1)
 		return attack_hand(user)
 	return ..()
 
@@ -208,10 +208,10 @@
 		switch(select)
 			if("Enable Paying Taxes")
 				upgrade_flags &= ~UPGRADE_NOTAX
-				playsound(src, 'sound/misc/beep.ogg', 100, FALSE, -1)
+				playsound(src, 'modular/kaizoku/sound/misc/beep.ogg', 100, FALSE, -1)
 			if("Stop Paying Taxes")
 				upgrade_flags |= UPGRADE_NOTAX
-				playsound(src, 'sound/misc/beep.ogg', 100, FALSE, -1)
+				playsound(src, 'modular/kaizoku/sound/misc/beep.ogg', 100, FALSE, -1)
 	return attack_hand(usr)
 
 /obj/structure/fake_machine/merchantvend/attack_hand(mob/living/user)
@@ -224,7 +224,7 @@
 		to_chat(user, "<span class='warning'>It's locked. Of course.</span>")
 		return
 	user.changeNext_move(CLICK_CD_MELEE)
-	playsound(src, 'sound/misc/beep.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/beep.ogg', 100, FALSE, -1)
 	var/canread = user.can_read(src, TRUE)
 	var/contents
 	contents = "<center>GOLDFACE - In the name of greed.<BR>"

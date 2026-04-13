@@ -6,7 +6,7 @@
 	icon = 'icons/roguetown/misc/structure.dmi'
 	icon_state = "washbin"
 	var/base_state
-	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
 	density = TRUE
 	opacity = FALSE
 	anchored = FALSE
@@ -55,16 +55,16 @@
 	if(isliving(user))
 		var/mob/living/L = user
 		if(kover)
-			playsound(src, 'sound/combat/hits/onwood/woodimpact (1).ogg', 100)
+			playsound(src, 'modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg', 100)
 			user.visible_message("<span class='warning'>[user] kicks [src]!</span>", \
 				"<span class='warning'>I kick [src]!</span>")
 			return
 		if(prob(L.STASTR * 8))
-			playsound(src, 'sound/combat/hits/onwood/woodimpact (1).ogg', 100)
+			playsound(src, 'modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg', 100)
 			user.visible_message("<span class='warning'>[user] kicks over [src]!</span>", \
 				"<span class='warning'>I kick over [src]!</span>")
 			kover = TRUE
-			playsound(src, pick('sound/foley/water_land1.ogg','sound/foley/water_land2.ogg', 'sound/foley/water_land3.ogg'), 100, FALSE)
+			playsound(src, pick('modular/kaizoku/sound/foley/water_land1.ogg','modular/kaizoku/sound/foley/water_land2.ogg', 'modular/kaizoku/sound/foley/water_land3.ogg'), 100, FALSE)
 			chem_splash(loc, 2, list(reagents), adminlog = TRUE)
 			var/datum/component/storage/STR = GetComponent(/datum/component/storage)
 			if(STR)
@@ -73,7 +73,7 @@
 					STR.remove_from_storage(I, get_turf(src))
 			update_appearance(UPDATE_ICON_STATE)
 		else
-			playsound(src, 'sound/combat/hits/onwood/woodimpact (1).ogg', 100)
+			playsound(src, 'modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg', 100)
 			user.visible_message("<span class='warning'>[user] kicks [src]!</span>", \
 				"<span class='warning'>I kick [src]!</span>")
 
@@ -114,7 +114,7 @@
 			to_chat(user, "<span class='warning'>No water to wash these stains.</span>")
 			return
 
-	var/list/wash = list('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg')
+	var/list/wash = list('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg')
 	if(to_wash == user)
 		user.visible_message("<span class='info'>[user] starts to wash in [src].</span>")
 	else
@@ -178,7 +178,7 @@
 					to_chat(user, "<span class='warning'>Need more water to quench in.</span>")
 					return
 			reagents.remove_reagent(removereg, 5)
-			playsound(src,pick('sound/items/quench_barrel1.ogg','sound/items/quench_barrel2.ogg'), 100, FALSE)
+			playsound(src,pick('modular/kaizoku/sound/items/quench_barrel1.ogg','modular/kaizoku/sound/items/quench_barrel2.ogg'), 100, FALSE)
 			user.visible_message("<span class='info'>[user] tempers \the [T.held_item.name] in \the [src], hot metal sizzling.</span>")
 			T.held_item.remove_quench()
 			update_appearance(UPDATE_ICON)

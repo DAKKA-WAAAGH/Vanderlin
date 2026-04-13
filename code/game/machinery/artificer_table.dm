@@ -63,7 +63,7 @@
 		if(result & COMPONENT_AUGMENT_SUCCESS)
 			qdel(kit)
 			user.adjust_experience(/datum/skill/craft/engineering, user.STAINT * 2)
-			playsound(src, 'sound/effects/sparks1.ogg', 75, TRUE)
+			playsound(src, 'modular/kaizoku/sound/effects/sparks1.ogg', 75, TRUE)
 		return
 
 	if(buckled && (istype(I, /obj/item/weapon/hammer)))
@@ -96,7 +96,7 @@
 			if(!choose_recipe(user))
 				return
 		if(material.artrecipe.hammered || material.artrecipe.progress == 100)
-			playsound(src,'sound/combat/hits/onmetal/sheet (2).ogg', 100, TRUE)
+			playsound(src,'modular/kaizoku/sound/combat/hits/onmetal/sheet (2).ogg', 100, TRUE)
 			shake_camera(user, 1, 1)
 		var/datum/effect_system/spark_spread/S = new()
 		var/turf/front = get_turf(src)
@@ -117,13 +117,13 @@
 		if(skill < material.artrecipe.craftdiff)
 			if(prob(max(0, 25 - user.goodluck(2) - (skill * 2))))
 				to_chat(user, span_warning("Ah yes, my incompetence bears fruit."))
-				playsound(src,'sound/combat/hits/onwood/destroyfurniture.ogg', 100, FALSE)
+				playsound(src,'modular/kaizoku/sound/combat/hits/onwood/destroyfurniture.ogg', 100, FALSE)
 				user.adjust_experience(material.artrecipe.appro_skill, user.STAINT * material.artrecipe.craftdiff * 0.25) // Getting exp for failing
 				qdel(material)
 				material = null
 				return
 		if(!material.artrecipe.hammered)
-			playsound(src, pick('sound/combat/hits/onwood/fence_hit1.ogg', 'sound/combat/hits/onwood/fence_hit2.ogg', 'sound/combat/hits/onwood/fence_hit3.ogg'), 100, FALSE)
+			playsound(src, pick('modular/kaizoku/sound/combat/hits/onwood/fence_hit1.ogg', 'modular/kaizoku/sound/combat/hits/onwood/fence_hit2.ogg', 'modular/kaizoku/sound/combat/hits/onwood/fence_hit3.ogg'), 100, FALSE)
 			material.artrecipe.advance(I, user)
 
 	if(material && material.artrecipe && material.artrecipe.hammered && istype(I, material.artrecipe.needed_item))

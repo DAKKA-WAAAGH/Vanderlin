@@ -4,7 +4,7 @@
 	button_icon_state = "tamebeast"
 	self_cast_possible = FALSE
 
-	sound = 'sound/items/dig_shovel.ogg'
+	sound = 'modular/kaizoku/sound/items/dig_shovel.ogg'
 
 	antimagic_flags = NONE
 	associated_stat = STATKEY_CON

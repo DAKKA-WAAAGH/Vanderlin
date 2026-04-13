@@ -72,7 +72,7 @@
 	var/turf/start_turf = get_turf(owner)
 
 	owner.visible_message(span_danger("[owner] begins burrowing into the ground!"))
-	//playsound(owner, 'sound/effects/break_stone.ogg', 75, TRUE)
+	//playsound(owner, 'modular/kaizoku/sound/effects/break_stone.ogg', 75, TRUE)
 
 	animate(owner, alpha = 150, time = burrow_time)
 	ADD_TRAIT(owner, TRAIT_IMMOBILIZED, "burrow")
@@ -109,7 +109,7 @@
 		consumed.master.spawn_spacevine_piece(exit_turf, /obj/structure/meatvine/intestine_wormhole)
 
 	owner.visible_message(span_danger("[owner] bursts out from underground!"))
-	//playsound(owner, 'sound/effects/break_stone.ogg', 75, TRUE)
+	//playsound(owner, 'modular/kaizoku/sound/effects/break_stone.ogg', 75, TRUE)
 
 	owner.alpha = 255
 	owner.density = TRUE

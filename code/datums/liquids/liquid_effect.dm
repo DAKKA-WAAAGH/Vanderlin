@@ -241,10 +241,10 @@
 	if(liquid_group.group_overlay_state >= LIQUID_STATE_ANKLES)
 		if(prob(30))
 			var/sound_to_play = pick(list(
-				'sound/misc/water_wade1.ogg',
-				'sound/misc/water_wade2.ogg',
-				'sound/misc/water_wade3.ogg',
-				'sound/misc/water_wade4.ogg'
+				'modular/kaizoku/sound/misc/water_wade1.ogg',
+				'modular/kaizoku/sound/misc/water_wade2.ogg',
+				'modular/kaizoku/sound/misc/water_wade3.ogg',
+				'modular/kaizoku/sound/misc/water_wade4.ogg'
 				))
 			playsound(T, sound_to_play, 50, 0)
 		if(iscarbon(AM))

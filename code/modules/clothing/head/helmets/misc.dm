@@ -219,9 +219,9 @@
 	icon_state = "battlenun"
 	dynamic_hair_suffix = ""	// this hides all hair
 	flags_inv = HIDEEARS|HIDEHAIR
-	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
-	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
-	break_sound = 'sound/foley/cloth_rip.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/cloak_equip.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/cloak_take_off.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
 	blocksound = CHAINHIT
 	resistance_flags = FIRE_PROOF
 
@@ -236,9 +236,9 @@
 	icon_state = "battlenun"
 	dynamic_hair_suffix = ""	// this hides all hair
 	flags_inv = HIDEEARS|HIDEHAIR
-	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
-	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
-	break_sound = 'sound/foley/cloth_rip.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/cloak_equip.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/cloak_take_off.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
 	blocksound = CHAINHIT
 	resistance_flags = FIRE_PROOF
 
@@ -326,7 +326,7 @@
 	name = "parent visored helmet"
 	desc = "If you're reading this, someone forgot to set an item description or spawned the wrong item. Yell at them."
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
-	equip_sound = 'sound/foley/equip/equip_outlander_plate.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/equip_outlander_plate.ogg'
 	adjustable = CAN_CADJUST
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	block2add = FOV_BEHIND

@@ -42,7 +42,7 @@
 		TRAIT_NOBLE,
 	)
 
-	cmode_music = 'sound/music/cmode/adventurer/CombatOutlander2.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander2.ogg'
 
 /datum/job/migrant/khan/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()

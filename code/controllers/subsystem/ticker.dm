@@ -167,7 +167,7 @@ SUBSYSTEM_DEF(ticker)
 	else
 		login_music = "[global.config.directory]/title_music/sounds/[pick(music)]"
 
-	login_music = pick('sound/music/title.ogg')
+	login_music = pick('modular/kaizoku/sound/music/title.ogg')
 
 	start_at = world.time + (CONFIG_GET(number/lobby_countdown) * 10)
 	if(CONFIG_GET(flag/randomize_shift_time))
@@ -377,9 +377,9 @@ SUBSYSTEM_DEF(ticker)
 		if(!C?.mob)
 			continue
 		if(C.mob == SSticker.rulermob)
-			C.mob.playsound_local(C.mob, 'sound/misc/royal_roundstart.ogg', 100, FALSE)
+			C.mob.playsound_local(C.mob, 'modular/kaizoku/sound/misc/royal_roundstart.ogg', 100, FALSE)
 		else
-			C.mob.playsound_local(C.mob, 'sound/misc/roundstart.ogg', 100, FALSE)
+			C.mob.playsound_local(C.mob, 'modular/kaizoku/sound/misc/roundstart.ogg', 100, FALSE)
 
 	for(var/datum_type in SStriumphs.communal_pools)
 		var/datum/triumph_buy/communal/preround/triumph_buy_preround = locate(datum_type) in SStriumphs.triumph_buy_datums

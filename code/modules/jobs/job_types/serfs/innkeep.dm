@@ -15,7 +15,7 @@
 
 	outfit = /datum/outfit/innkeep
 	give_bank_account = 60
-	cmode_music = 'sound/music/cmode/towner/CombatInn.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/towner/CombatInn.ogg'
 
 	job_bitflag = BITFLAG_CONSTRUCTOR
 

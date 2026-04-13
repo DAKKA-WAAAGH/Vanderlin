@@ -42,7 +42,7 @@
 	)
 
 	languages = list(/datum/language/zalad)
-	cmode_music = 'sound/music/cmode/adventurer/CombatOutlander.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander.ogg'
 
 /datum/job/migrant/zalad_migration/emir/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
@@ -127,7 +127,7 @@
 	)
 
 	languages = list(/datum/language/zalad)
-	cmode_music = 'sound/music/cmode/adventurer/CombatOutlander.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander.ogg'
 
 /datum/job/migrant/zalad_migration/amirah/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
@@ -211,7 +211,7 @@
 	)
 
 	languages = list(/datum/language/zalad)
-	cmode_music = 'sound/music/cmode/adventurer/CombatOutlander.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander.ogg'
 
 /datum/job/migrant/zalad_migration/furusiyya/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
@@ -288,7 +288,7 @@
 		TRAIT_MEDIUMARMOR,
 	)
 	languages = list(/datum/language/zalad)
-	cmode_music = 'sound/music/cmode/adventurer/CombatOutlander.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander.ogg'
 
 /datum/job/migrant/zalad_migration/zalad_guard/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
@@ -365,7 +365,7 @@
 		TRAIT_STEELHEARTED,
 	)
 	languages = list(/datum/language/zalad)
-	cmode_music = 'sound/music/cmode/adventurer/CombatOutlander3.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander3.ogg'
 
 /datum/job/migrant/zalad_migration/qatil/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()

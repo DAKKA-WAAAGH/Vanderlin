@@ -139,7 +139,7 @@
 		if(I.on)
 			hitsound = list('sound/blank.ogg','sound/blank.ogg')
 		else
-			hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
+			hitsound = list('modular/kaizoku/sound/combat/hits/blunt/metalblunt (1).ogg', 'modular/kaizoku/sound/combat/hits/blunt/metalblunt (2).ogg', 'modular/kaizoku/sound/combat/hits/blunt/metalblunt (3).ogg')
 	. = ..()
 
 /datum/intent/mace/smash/stunner/afterchange()
@@ -148,7 +148,7 @@
 		if(I.on)
 			hitsound = list('sound/blank.ogg','sound/blank.ogg')
 		else
-			hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
+			hitsound = list('modular/kaizoku/sound/combat/hits/blunt/metalblunt (1).ogg', 'modular/kaizoku/sound/combat/hits/blunt/metalblunt (2).ogg', 'modular/kaizoku/sound/combat/hits/blunt/metalblunt (3).ogg')
 	. = ..()
 
 /obj/item/weapon/mace/stunmace/Initialize()
@@ -229,7 +229,7 @@
 	attack_verb = list("cuts", "slashes")
 	animname = "cut"
 	blade_class = BCLASS_CUT
-	hitsound = list('sound/combat/hits/bladed/smallslash (1).ogg', 'sound/combat/hits/bladed/smallslash (2).ogg', 'sound/combat/hits/bladed/smallslash (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/smallslash (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/smallslash (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/smallslash (3).ogg')
 	penfactor = 0
 	chargetime = 0
 	swingdelay = 0
@@ -242,7 +242,7 @@
 	attack_verb = list("thrusts")
 	animname = "stab"
 	blade_class = BCLASS_STAB
-	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/genstab (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genstab (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genstab (3).ogg')
 	penfactor = 30
 	chargetime = 0
 	clickcd = 14
@@ -264,10 +264,10 @@
 	gripsprite = FALSE
 	w_class = WEIGHT_CLASS_SMALL
 	slot_flags = ITEM_SLOT_HIP
-	parrysound = list('sound/combat/parry/bladed/bladedsmall (1).ogg','sound/combat/parry/bladed/bladedsmall (2).ogg','sound/combat/parry/bladed/bladedsmall (3).ogg')
-	swingsound = list('sound/combat/wooshes/bladed/wooshsmall (1).ogg','sound/combat/wooshes/bladed/wooshsmall (2).ogg','sound/combat/wooshes/bladed/wooshsmall (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/bladed/bladedsmall (1).ogg','modular/kaizoku/sound/combat/parry/bladed/bladedsmall (2).ogg','modular/kaizoku/sound/combat/parry/bladed/bladedsmall (3).ogg')
+	swingsound = list('modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (1).ogg','modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (2).ogg','modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (3).ogg')
 	associated_skill = /datum/skill/combat/unarmed
-	pickup_sound = 'sound/foley/equip/swordsmall2.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/swordsmall2.ogg'
 	thrown_bclass = BCLASS_CUT
 	melting_material = /datum/material/steel
 	melt_amount = 75
@@ -293,7 +293,7 @@
 	name = "punch"
 	blade_class = BCLASS_BLUNT
 	attack_verb = list("punches", "clocks")
-	hitsound = list('sound/combat/hits/punch/punch_hard (1).ogg', 'sound/combat/hits/punch/punch_hard (2).ogg', 'sound/combat/hits/punch/punch_hard (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/punch/punch_hard (1).ogg', 'modular/kaizoku/sound/combat/hits/punch/punch_hard (2).ogg', 'modular/kaizoku/sound/combat/hits/punch/punch_hard (3).ogg')
 	chargetime = 0
 	penfactor = -100
 	clickcd = 8
@@ -306,7 +306,7 @@
 	name = "smash"
 	blade_class = BCLASS_SMASH
 	attack_verb = list("smashes")
-	hitsound = list('sound/combat/hits/punch/punch_hard (1).ogg', 'sound/combat/hits/punch/punch_hard (2).ogg', 'sound/combat/hits/punch/punch_hard (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/punch/punch_hard (1).ogg', 'modular/kaizoku/sound/combat/hits/punch/punch_hard (2).ogg', 'modular/kaizoku/sound/combat/hits/punch/punch_hard (3).ogg')
 	penfactor = -100
 	damfactor = 1.1
 	clickcd = CLICK_CD_MELEE
@@ -330,9 +330,9 @@
 	gripsprite = FALSE
 	w_class = WEIGHT_CLASS_SMALL
 	slot_flags = ITEM_SLOT_HIP
-	parrysound = list('sound/combat/parry/pugilism/unarmparry (1).ogg','sound/combat/parry/pugilism/unarmparry (2).ogg','sound/combat/parry/pugilism/unarmparry (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/pugilism/unarmparry (1).ogg','modular/kaizoku/sound/combat/parry/pugilism/unarmparry (2).ogg','modular/kaizoku/sound/combat/parry/pugilism/unarmparry (3).ogg')
 	sharpness = IS_BLUNT
-	swingsound = list('sound/combat/wooshes/punch/punchwoosh (1).ogg','sound/combat/wooshes/punch/punchwoosh (2).ogg','sound/combat/wooshes/punch/punchwoosh (3).ogg')
+	swingsound = list('modular/kaizoku/sound/combat/wooshes/punch/punchwoosh (1).ogg','modular/kaizoku/sound/combat/wooshes/punch/punchwoosh (2).ogg','modular/kaizoku/sound/combat/wooshes/punch/punchwoosh (3).ogg')
 	associated_skill = /datum/skill/combat/unarmed
 	anvilrepair = /datum/skill/craft/weaponsmithing
 	melting_material = /datum/material/steel

@@ -14,7 +14,7 @@
 	slipouttime = 30 SECONDS
 	possible_item_intents = list(/datum/intent/tie)
 	firefuel = 5 MINUTES
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	var/legcuff_multiplicative_slowdown = 3
 
 /obj/item/rope/mob_can_equip(mob/living/M, mob/living/equipper, slot, disable_warning, bypass_equip_delay_self)
@@ -142,7 +142,7 @@
 	possible_item_intents = list(/datum/intent/tie, /datum/intent/whip)
 	blade_dulling = DULLING_BASHCHOP
 	slot_flags = ITEM_SLOT_HIP|ITEM_SLOT_WRISTS
-	parrysound = list('sound/combat/parry/parrygen.ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/parrygen.ogg')
 	swingsound = WHIPWOOSH
 	w_class = WEIGHT_CLASS_SMALL
 	associated_skill = /datum/skill/combat/whipsflails
@@ -153,7 +153,7 @@
 	melting_material = /datum/material/iron
 	melt_amount = 40
 	firefuel = null
-	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/chain_drop.ogg'
 
 /datum/intent/whip
 	name = "strike"
@@ -251,7 +251,7 @@
 	if (W.get_sharpness())
 		if(do_after(user, 1 SECONDS, src))
 			new /obj/item/rope(loc)
-			playsound(src, 'sound/foley/dropsound/cloth_drop.ogg', 50, TRUE)
+			playsound(src, 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg', 50, TRUE)
 			if (istype(src, /obj/structure/noose/gallows))
 				new /obj/machinery/light/fueled/lanternpost/unfixed(loc)
 				user.visible_message(span_notice("[user] cuts the noose down from the gallows."), span_notice("I cut the noose down from the gallows."), span_hear("I hear something snap."))
@@ -264,7 +264,7 @@
 /obj/structure/noose/bullet_act(obj/projectile/P, def_zone, piercing_hit = FALSE)
 	. = ..()
 	new /obj/item/rope(loc)
-	playsound(src, 'sound/foley/dropsound/cloth_drop.ogg', 50, TRUE)
+	playsound(src, 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg', 50, TRUE)
 	if(istype(src, /obj/structure/noose/gallows))
 		new /obj/machinery/light/fueled/lanternpost/unfixed(loc)
 		visible_message(span_danger("The noose is shot down from the gallows!"))
@@ -288,7 +288,7 @@
 				to_chat(M, "<span class='userdanger'>I tie \the [src] over my neck...</span>")
 			else
 				to_chat(M, "<span class='userdanger'>[user] ties \the [src] over my neck!</span>")
-			playsound(user, 'sound/foley/noosed.ogg', 50, 1, -1)
+			playsound(user, 'modular/kaizoku/sound/foley/noosed.ogg', 50, 1, -1)
 			return TRUE
 	user.visible_message("<span class='warning'>[user] fails to tie \the [src] over [M]'s neck!</span>")
 	to_chat(user, "<span class='warning'>I fail to tie \the [src] over [M]'s neck.</span>")
@@ -326,7 +326,7 @@
 											"<span class='danger'>[buckled_mob]'s hands are desperately clutching the noose.</span>",\
 											"<span class='danger'>[buckled_mob]'s limbs sway back and forth with diminishing strength.</span>")
 					buckled_mob.visible_message(pick(flavor_text))
-				playsound(buckled_mob, 'sound/foley/noose_idle.ogg', 30, 1, -3)
+				playsound(buckled_mob, 'modular/kaizoku/sound/foley/noose_idle.ogg', 30, 1, -3)
 			else
 				if(prob(1))
 					var/obj/item/bodypart/head/head = buckled_mob.get_bodypart("head")

@@ -5,7 +5,7 @@
 	Show those fools in the town what REAL magic looks like."
 	outfit = /datum/outfit/bandit/roguemage
 	category_tags = list(CTAG_BANDIT)
-	cmode_music = 'sound/music/cmode/antag/CombatRogueMage.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/antag/CombatRogueMage.ogg'
 	exp_types_granted = list(EXP_TYPE_COMBAT, EXP_TYPE_MAGICK)
 	magic_user = TRUE
 	allowed_patrons = list(/datum/patron/inhumen/zizo)

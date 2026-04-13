@@ -16,8 +16,8 @@
 	blade_dulling = DULLING_PICK
 	max_integrity = 700
 	damage_deflection = 10
-	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
-	attacked_sound = list('sound/combat/hits/onrock/onrock (1).ogg', 'sound/combat/hits/onrock/onrock (2).ogg', 'sound/combat/hits/onrock/onrock (3).ogg', 'sound/combat/hits/onrock/onrock (4).ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onstone/stonedeath.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onrock/onrock (1).ogg', 'modular/kaizoku/sound/combat/hits/onrock/onrock (2).ogg', 'modular/kaizoku/sound/combat/hits/onrock/onrock (3).ogg', 'modular/kaizoku/sound/combat/hits/onrock/onrock (4).ogg')
 	var/icon/frill_icon = 'modular/kaizoku/icons/tileset/newwallset/natural/graniterock_frill.dmi'
 	var/wall_variety = "stone"
 	var/mob/living/lastminer = null
@@ -422,8 +422,8 @@
 	hardness = 5
 	blade_dulling = DULLING_CUT
 	max_integrity = 450
-	break_sound = 'sound/misc/woodhit.ogg'
-	attacked_sound = 'sound/misc/woodhit.ogg'
+	break_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
+	attacked_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
 	baseturfs = /turf/open/floor/dirt
 	above_floor = /turf/open/floor/dirt
 	stone_drop_min = 0

@@ -55,7 +55,7 @@
 		span_userdanger("YOU ARE DENDOR'S CHOSEN!"),
 		span_biginfo("Dendor wants you to choose suitable trees, which are to become guardians of the forest! [new_objective.explanation_text]"),
 	))
-	chosen_one.playsound_local(chosen_one, 'sound/ambience/noises/genspooky (1).ogg', 100)
+	chosen_one.playsound_local(chosen_one, 'modular/kaizoku/sound/ambience/noises/genspooky (1).ogg', 100)
 
 	to_chat(chosen_one, span_notice("Dendor grants you the power to transform trees into guardian wise trees!"))
 

@@ -55,7 +55,7 @@
 		span_userdanger("YOU ARE GRAGGAR'S CHOSEN!"),
 		span_biginfo("Graggar hungers! [new_objective.explanation_text]"),
 	))
-	chosen_one.playsound_local(chosen_one, 'sound/misc/gods/graggar_omen.ogg', 100)
+	chosen_one.playsound_local(chosen_one, 'modular/kaizoku/sound/misc/gods/graggar_omen.ogg', 100)
 
 	to_chat(chosen_one, span_notice("Graggar grants you a power to extract hearts from the dead!"))
 

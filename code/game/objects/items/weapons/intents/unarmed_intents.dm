@@ -8,7 +8,7 @@
 	attack_verb = list("punches", "jabs", "clocks")
 	chargetime = 0
 	animname = "punch"
-	hitsound = list('sound/combat/hits/punch/punch (1).ogg', 'sound/combat/hits/punch/punch (2).ogg', 'sound/combat/hits/punch/punch (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/punch/punch (1).ogg', 'modular/kaizoku/sound/combat/hits/punch/punch (2).ogg', 'modular/kaizoku/sound/combat/hits/punch/punch (3).ogg')
 	misscost = 5
 	releasedrain = 1
 	swingdelay = 0

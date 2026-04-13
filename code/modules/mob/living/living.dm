@@ -111,21 +111,21 @@
 			return
 	if(movement_type & FLYING)
 		to_chat(src, span_info("You glide down to a more manageable height."))
-		playsound(src, 'sound/mobs/wingflap.ogg', 75, FALSE)
+		playsound(src, 'modular/kaizoku/sound/mobs/wingflap.ogg', 75, FALSE)
 		return
 	var/dex_save = src.get_skill_level(/datum/skill/misc/climbing)
 	if(dex_save >= 5) // Master climbers can fall down 2 levels without hurting themselves
 		if(levels <= 2)
 			to_chat(src, span_info("My dexterity allowed me to land on my feet unscathed!"))
 			if(m_intent != MOVE_INTENT_SNEAK) // If we're sneaking, don't make a sound
-				playsound(src, 'sound/foley/bodyfall (1).ogg', 100, FALSE)
+				playsound(src, 'modular/kaizoku/sound/foley/bodyfall (1).ogg', 100, FALSE)
 			return
 	var/points
 	for(var/i in 2 to levels)
 		i++
 		points += "!"
 	visible_message(span_danger("[src] falls down[points]"), span_danger("I fall down[points]"))
-	playsound(src, 'sound/foley/zfall.ogg', 100, FALSE)
+	playsound(src, 'modular/kaizoku/sound/foley/zfall.ogg', 100, FALSE)
 	if(!isgroundlessturf(T))
 		ZImpactDamage(T, levels)
 		record_round_statistic(STATS_MOAT_FALLERS)
@@ -503,7 +503,7 @@
 			stop_pulling()
 			return
 		log_combat(src, M, "grabbed", addition="passive grab")
-		playsound(src, 'sound/combat/shove.ogg', 50, TRUE, -1)
+		playsound(src, 'modular/kaizoku/sound/combat/shove.ogg', 50, TRUE, -1)
 		if(iscarbon(M))
 			var/mob/living/carbon/C = M
 			var/obj/item/grabbing/O = new()
@@ -547,7 +547,7 @@
 		set_pull_offsets(M, max(state, grab_state))
 	else
 		if(!suppress_message)
-			var/sound_to_play = 'sound/combat/shove.ogg'
+			var/sound_to_play = 'modular/kaizoku/sound/combat/shove.ogg'
 			playsound(src, sound_to_play, 50, TRUE, -1)
 		var/obj/item/grabbing/O = new(src)
 		O.name = "[AM.name]"
@@ -823,7 +823,7 @@
 				to_chat(src, span_notice("You will now lay down as soon as you are able to."))
 		else
 			if(!silent)
-				playsound(src, 'sound/foley/toggledown.ogg', 100, FALSE)
+				playsound(src, 'modular/kaizoku/sound/foley/toggledown.ogg', 100, FALSE)
 				src.visible_message(span_info("[src] lays down."))
 			set_lying_down()
 	else
@@ -1276,7 +1276,7 @@
 		drop_all_held_items()
 		Stun(150)
 		src.visible_message("<span class='notice'>[src] yields!</span>")
-		playsound(src, 'sound/misc/surrender.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/surrender.ogg', 100, FALSE, -1)
 		toggle_cmode()
 		sleep(150)
 		log_attack("[key_name(src)] has yielded!")
@@ -1344,7 +1344,7 @@
 		adjust_stamina(rand(3,5))
 		pulledby?.adjust_stamina(rand(3,5))
 
-		playsound(src, 'sound/combat/grabbreak.ogg', 75, TRUE, -1)
+		playsound(src, 'modular/kaizoku/sound/combat/grabbreak.ogg', 75, TRUE, -1)
 		return TRUE
 	else
 		// visible_message(span_warning("[src] and [pulledby] struggle against each other's grips!"))
@@ -1606,12 +1606,12 @@
 		to_chat(pulledby, "<span class='danger'>[src] breaks free of my grip!</span>")
 		log_combat(pulledby, src, "broke grab")
 		pulledby.stop_pulling(pulling_broke_free = TRUE)
-		playsound(src.loc, 'sound/combat/grabbreak.ogg', 50, TRUE, -1)
+		playsound(src.loc, 'modular/kaizoku/sound/combat/grabbreak.ogg', 50, TRUE, -1)
 		. = FALSE
 	else
 		visible_message(span_warning("[src] struggles to break free from [L]'s grasp!"), \
 						span_warning("I struggle against [L]'s grasp![shitte]"), null, null)
-		playsound(src.loc, 'sound/combat/grabstruggle.ogg', 50, TRUE, -1)
+		playsound(src.loc, 'modular/kaizoku/sound/combat/grabstruggle.ogg', 50, TRUE, -1)
 		pulledby.Immobilize(rand(1, 3))
 
 	SEND_SIGNAL(src, COMSIG_LIVING_RESIST_GRAB, src, pulledby, moving_resist, .)
@@ -1629,14 +1629,14 @@
 							visible_message("<span class='warning'>[src] struggles to break free from [pulledby]'s grip!</span>", \
 											"<span class='warning'>I struggle against [pulledby]'s grip!</span>", null, null, pulledby)
 							to_chat(pulledby, "<span class='warning'>[src] struggles against my grip!</span>")
-							playsound(src, 'sound/combat/grabstruggle.ogg', 50, TRUE, -1)
+							playsound(src, 'modular/kaizoku/sound/combat/grabstruggle.ogg', 50, TRUE, -1)
 							client?.move_delay = world.time + 20
 							return TRUE
 						if(HAS_TRAIT(H, TRAIT_EARGRAB) && G.sublimb_grabbed == BODY_ZONE_PRECISE_EARS)
 							visible_message("<span class='warning'>[src] struggles to break free from [pulledby]'s grip!</span>", \
 												"<span class='warning'>I struggle against [pulledby]'s grip!</span>", null, null, pulledby)
 							to_chat(pulledby, "<span class='warning'>[src] struggles against my grip!</span>")
-							playsound(src, 'sound/combat/grabstruggle.ogg', 50, TRUE, -1)
+							playsound(src, 'modular/kaizoku/sound/combat/grabstruggle.ogg', 50, TRUE, -1)
 							client?.move_delay = world.time + 20
 							return TRUE
 	return ..()

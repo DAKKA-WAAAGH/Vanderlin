@@ -60,7 +60,7 @@
 		return
 
 	if(source.body_position == LYING_DOWN) //play crawling sound if we're lying
-		playsound(turf, 'sound/foley/footsteps/crawl1.ogg', 15 * volume, falloff_distance = 1, vary = sound_vary)
+		playsound(turf, 'modular/kaizoku/sound/foley/footsteps/crawl1.ogg', 15 * volume, falloff_distance = 1, vary = sound_vary)
 		return
 
 	if(iscarbon(source))

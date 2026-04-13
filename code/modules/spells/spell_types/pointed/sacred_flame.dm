@@ -40,6 +40,6 @@
 		"<font color='yellow'>[owner] points at [heretic], igniting [heretic.p_them()] with sacred flames!!</font>",
 		"<font color='yellow'>I point at [heretic], igniting  [heretic.p_them()] with sacred flames!!</font>",
 	)
-	playsound(heretic, 'sound/items/flint.ogg', 150, FALSE)
+	playsound(heretic, 'modular/kaizoku/sound/items/flint.ogg', 150, FALSE)
 	heretic.adjust_divine_fire_stacks(stacks_to_add)
 	heretic.IgniteMob()

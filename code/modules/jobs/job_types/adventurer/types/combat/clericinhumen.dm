@@ -61,14 +61,14 @@
 				spawned.adjust_skillrank(/datum/skill/misc/stealing, 2, TRUE)
 				spawned.adjust_skillrank(/datum/skill/misc/sneaking, 2, TRUE)
 				spawned.adjust_skillrank(/datum/skill/misc/lockpicking, 1, TRUE)
-				spawned.cmode_music = 'sound/music/cmode/antag/CombatBandit1.ogg'
+				spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/antag/CombatBandit1.ogg'
 			/*  //Stonekeep Edit: Kaizoku
 			if(/datum/patron/inhumen/baotha)
 				spawned.adjust_skillrank(/datum/skill/combat/crossbows, 3, TRUE)
 				spawned.adjust_skillrank(/datum/skill/combat/knives, 2, TRUE)
 				spawned.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)
 				spawned.adjust_skillrank(/datum/skill/craft/crafting, 1, TRUE)
-				spawned.cmode_music = 'sound/music/cmode/antag/CombatBaotha.ogg'
+				spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/antag/CombatBaotha.ogg'
 			*/
 			else
 				spawned.cmode_music = 'sound/blank.ogg'

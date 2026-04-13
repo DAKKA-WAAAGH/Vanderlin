@@ -12,8 +12,8 @@
 	desc = "Ever since the Ogruns has been dignified on Abyssariad fold, they have been exalted in war masks - and this became their default pattern for menpos ever since. "
 	max_integrity = INTEGRITY_WORST
 	blocksound = PLATEHIT
-	break_sound = 'sound/foley/breaksound.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop.ogg'
 	resistance_flags = FIRE_PROOF
 	armor = ARMOR_PLATE_BAD
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT, BCLASS_TWIST)
@@ -125,8 +125,8 @@
 	icon_state = "bmask"
 	max_integrity = 300 //Unique and very protective. You will need it. Trust me.
 	blocksound = PLATEHIT
-	break_sound = 'sound/foley/breaksound.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop.ogg'
 	resistance_flags = FIRE_PROOF
 	armor = ARMOR_LEATHER_GOOD
 	prevent_crits = list(BCLASS_CUT, BCLASS_CHOP, BCLASS_BLUNT)

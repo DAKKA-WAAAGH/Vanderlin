@@ -52,7 +52,7 @@
 		span_userdanger("YOU ARE ABYSSOR'S CHOSEN!"),
 		span_blue("Abyssor wants everyone to remember him! Create an army of holy abyssoid leeches and distribute them among the ingrates!"),
 	))
-	chosen_one.playsound_local(chosen_one, 'sound/items/bucket_transfer (1).ogg', 100)
+	chosen_one.playsound_local(chosen_one, 'modular/kaizoku/sound/items/bucket_transfer (1).ogg', 100)
 
 	to_chat(chosen_one, span_notice("Abyssor grants you a power to create abyssoids from the common leeches! You will just need to pay a small blood price..."))
 

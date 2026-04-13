@@ -2,7 +2,7 @@
 /datum/repeatable_crafting_recipe/narcotics
 	abstract_type = /datum/repeatable_crafting_recipe/narcotics
 	tool_usage = list(
-		/obj/item/pestle = list("starts to grind materials in the mortar", "start to grind materials in the mortar", 'sound/foley/mortarpestle.ogg'),
+		/obj/item/pestle = list("starts to grind materials in the mortar", "start to grind materials in the mortar", 'modular/kaizoku/sound/foley/mortarpestle.ogg'),
 	)
 
 	reagent_requirements = list(

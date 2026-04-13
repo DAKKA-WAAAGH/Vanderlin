@@ -20,9 +20,9 @@
 	associated_skill = /datum/skill/combat/whipsflails
 	melting_material = /datum/material/iron
 	melt_amount = 100
-	pickup_sound = 'sound/foley/equip/equip_outlander_chain.ogg'
-	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
-	equip_sound = 'sound/foley/equip/equip_outlander_chain.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/equip_outlander_chain.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/chain_drop.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/equip_outlander_chain.ogg'
 	swingsound = BLUNTWOOSH_MED
 	sellprice = 20
 

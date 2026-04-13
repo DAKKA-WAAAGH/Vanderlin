@@ -8,7 +8,7 @@
 	attack_verb = list("chops", "hacks")
 	animname = "chop"
 	blade_class = BCLASS_CHOP
-	hitsound = list('sound/combat/hits/bladed/genchop (1).ogg', 'sound/combat/hits/bladed/genchop (2).ogg', 'sound/combat/hits/bladed/genchop (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/genchop (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genchop (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genchop (3).ogg')
 	penfactor = AP_SWORD_CHOP
 	damfactor = 1.1
 	swingdelay = 1
@@ -40,7 +40,7 @@
 	attack_verb = list("stabs")
 	animname = "stab"
 	blade_class = BCLASS_STAB
-	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/genstab (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genstab (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genstab (3).ogg')
 	penfactor = AP_SWORD_THRUST
 	misscost = 5
 	item_damage_type = "stab"
@@ -83,7 +83,7 @@
 	attack_verb = list("bashes", "clubs")
 	animname = "strike"
 	blade_class = BCLASS_BLUNT
-	hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/blunt/metalblunt (1).ogg', 'modular/kaizoku/sound/combat/hits/blunt/metalblunt (2).ogg', 'modular/kaizoku/sound/combat/hits/blunt/metalblunt (3).ogg')
 	chargetime = 0
 	penfactor = AP_CLUB_STRIKE
 	swingdelay = 1
@@ -99,7 +99,7 @@
 	name = "pommel bash"
 	icon_state = "inbash"
 	attack_verb = list("bashes", "strikes")
-	hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/blunt/metalblunt (1).ogg', 'modular/kaizoku/sound/combat/hits/blunt/metalblunt (2).ogg', 'modular/kaizoku/sound/combat/hits/blunt/metalblunt (3).ogg')
 	blade_class = BCLASS_BLUNT
 	chargetime = 1
 	charging_slowdown = 0.8
@@ -117,7 +117,7 @@
 	attack_verb = list("cuts", "slashes")
 	animname = "cut"
 	blade_class = BCLASS_CUT
-	hitsound = list('sound/combat/hits/bladed/genslash (1).ogg', 'sound/combat/hits/bladed/genslash (2).ogg', 'sound/combat/hits/bladed/genslash (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/genslash (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genslash (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genslash (3).ogg')
 	misscost = 4
 	item_damage_type = "slash"
 
@@ -152,7 +152,7 @@
 	attack_verb = list("cuts", "slashes")
 	animname = "cut"
 	blade_class = BCLASS_CUT
-	hitsound = list('sound/combat/hits/bladed/genslash (1).ogg', 'sound/combat/hits/bladed/genslash (2).ogg', 'sound/combat/hits/bladed/genslash (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/genslash (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genslash (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genslash (3).ogg')
 	item_damage_type = "slash"
 	damfactor = 1.1
 	misscost = 10
@@ -179,7 +179,7 @@
 	attack_verb = list("lunges")
 	animname = "stab"
 	blade_class = BCLASS_STAB
-	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/genstab (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genstab (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genstab (3).ogg')
 	reach = 2
 	penfactor = AP_SWORD_THRUST+30 //50 total
 	chargetime = 5
@@ -193,7 +193,7 @@
 	attack_verb = list("sweeps", "arcs")
 	animname = "cut"
 	blade_class = BCLASS_CUT
-	hitsound = list('sound/combat/hits/bladed/genslash (1).ogg', 'sound/combat/hits/bladed/genslash (2).ogg', 'sound/combat/hits/bladed/genslash (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/genslash (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genslash (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genslash (3).ogg')
 	item_damage_type = "slash"
 	reach = 2
 	swingdelay = 1.5
@@ -206,7 +206,7 @@
 	attack_verb = list("precision-cuts", "clean-slashes")
 	animname = "cut"
 	blade_class = BCLASS_CUT
-	hitsound = list('sound/combat/hits/bladed/genslash (1).ogg', 'sound/combat/hits/bladed/genslash (2).ogg', 'sound/combat/hits/bladed/genslash (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/genslash (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genslash (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genslash (3).ogg')
 	item_damage_type = "slash"
 	damfactor = 1.2
 	penfactor = AP_SWORD_THRUST+5

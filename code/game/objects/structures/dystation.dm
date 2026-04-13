@@ -7,7 +7,7 @@
 	density = TRUE
 	anchored = FALSE
 	max_integrity = 80
-	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
 	var/final/atom/movable/inserted = null
 	var/final/active_color = null
 	/// Allow holder'd mobs
@@ -156,7 +156,7 @@
 			if(!active_color)
 				return
 
-			playsound(src, pick('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg'), 50, FALSE)
+			playsound(src, pick('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg'), 50, FALSE)
 			user.visible_message( \
 				null, \
 				null, \
@@ -194,7 +194,7 @@
 	if(!istype(user))
 		return
 
-	playsound(src, 'sound/combat/hits/onwood/woodimpact (1).ogg', 100)
+	playsound(src, 'modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg', 100)
 	user.visible_message( \
 		span_warning("[user] kicks [src]!"), \
 		span_warning("I kick [src]!"), \

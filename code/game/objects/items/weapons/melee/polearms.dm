@@ -20,8 +20,8 @@
 	melting_material = null
 	melt_amount = 75 //For the ones it paths to
 	associated_skill = /datum/skill/combat/polearms
-	drop_sound = 'sound/foley/dropsound/wooden_drop.ogg'
-	parrysound = list('sound/combat/parry/wood/parrywood (1).ogg', 'sound/combat/parry/wood/parrywood (2).ogg', 'sound/combat/parry/wood/parrywood (3).ogg')
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/wooden_drop.ogg'
+	parrysound = list('modular/kaizoku/sound/combat/parry/wood/parrywood (1).ogg', 'modular/kaizoku/sound/combat/parry/wood/parrywood (2).ogg', 'modular/kaizoku/sound/combat/parry/wood/parrywood (3).ogg')
 	dropshrink = 0.8
 	blade_dulling = DULLING_BASHCHOP
 	thrown_bclass = BCLASS_STAB
@@ -173,7 +173,7 @@
 	desc = "A polearm with a twisting trident head perfect for mangling the bodies of the impure."
 	icon = 'icons/roguetown/weapons/64/psydonite.dmi'
 	icon_state = "psyspear"
-	drop_sound = 'sound/foley/dropsound/blade_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/blade_drop.ogg'
 	wdefense = AVERAGE_PARRY
 	wbalance = EASY_TO_DODGE
 	max_integrity = INTEGRITY_STRONG
@@ -207,7 +207,7 @@
 	max_blade_int = 100
 	max_integrity = INTEGRITY_STRONG
 	resistance_flags = FIRE_PROOF
-	drop_sound = 'sound/foley/dropsound/blade_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/blade_drop.ogg'
 	melting_material = /datum/material/steel
 	melt_amount = 75
 	sellprice = 60
@@ -295,7 +295,7 @@
 	max_integrity = INTEGRITY_STRONGEST
 
 	slot_flags = ITEM_SLOT_BACK
-	drop_sound = 'sound/foley/dropsound/blade_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/blade_drop.ogg'
 	dropshrink = 0.8
 	melting_material = /datum/material/steel
 	melt_amount = 150
@@ -325,7 +325,7 @@
 	minstr = 8
 
 	bigboy = TRUE
-	parrysound = list('sound/combat/parry/wood/parrywood (1).ogg', 'sound/combat/parry/wood/parrywood (2).ogg', 'sound/combat/parry/wood/parrywood (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/wood/parrywood (1).ogg', 'modular/kaizoku/sound/combat/parry/wood/parrywood (2).ogg', 'modular/kaizoku/sound/combat/parry/wood/parrywood (3).ogg')
 	resistance_flags = FLAMMABLE // Weapon made mostly of wood
 	associated_skill = /datum/skill/combat/axesmaces //It's ultimately a massive axe
 	dropshrink = 0.95
@@ -361,7 +361,7 @@
 	minstr = 10
 
 	bigboy = TRUE
-	parrysound = list('sound/combat/parry/wood/parrywood (1).ogg', 'sound/combat/parry/wood/parrywood (2).ogg', 'sound/combat/parry/wood/parrywood (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/wood/parrywood (1).ogg', 'modular/kaizoku/sound/combat/parry/wood/parrywood (2).ogg', 'modular/kaizoku/sound/combat/parry/wood/parrywood (3).ogg')
 	resistance_flags = FLAMMABLE // Weapon made mostly of wood
 	associated_skill = /datum/skill/combat/axesmaces
 	dropshrink = 0.95
@@ -560,7 +560,7 @@
 	slot_flags = ITEM_SLOT_BACK
 	resistance_flags = FLAMMABLE // Weapon made mostly of wood
 	associated_skill = /datum/skill/combat/polearms
-	drop_sound = 'sound/foley/dropsound/blade_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/blade_drop.ogg'
 	dropshrink = 0.75
 	blade_dulling = DULLING_BASHCHOP
 	melting_material = /datum/material/iron

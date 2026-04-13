@@ -17,9 +17,9 @@
 	w_class = WEIGHT_CLASS_SMALL
 	grid_width = 32
 	grid_height = 32
-	drinksounds = list('sound/items/drink_bottle (1).ogg','sound/items/drink_bottle (2).ogg')
-	fillsounds = list('sound/items/fillcup.ogg')
-	poursounds = list('sound/items/fillbottle.ogg')
+	drinksounds = list('modular/kaizoku/sound/items/drink_bottle (1).ogg','modular/kaizoku/sound/items/drink_bottle (2).ogg')
+	fillsounds = list('modular/kaizoku/sound/items/fillcup.ogg')
+	poursounds = list('modular/kaizoku/sound/items/fillbottle.ogg')
 	experimental_onhip = TRUE
 	sellprice = 1
 
@@ -52,7 +52,7 @@
 		reagent_flags |= TRANSFERABLE
 		reagents.flags = reagent_flags
 		to_chat(user, span_notice("You thumb off the cork from [src]."))
-		playsound(user,'sound/items/uncork.ogg', 100, TRUE)
+		playsound(user,'modular/kaizoku/sound/items/uncork.ogg', 100, TRUE)
 		spillable = TRUE
 		desc += "The cork appears to be off."
 	update_appearance(UPDATE_OVERLAYS)

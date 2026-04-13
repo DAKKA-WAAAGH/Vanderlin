@@ -47,7 +47,7 @@
 	if(weapon && isturf(loc))
 		var/turf/location = get_turf(src)
 		if(seed && (user.used_intent.blade_class == BCLASS_BLUNT) && (!user.used_intent.noaa))
-			playsound(src,'sound/items/seedextract.ogg', 100, FALSE)
+			playsound(src,'modular/kaizoku/sound/items/seedextract.ogg', 100, FALSE)
 			if(prob(5))
 				user.visible_message("<span class='info'>[user] fails to extract the seeds.</span>")
 				qdel(src)

@@ -123,7 +123,7 @@ GLOBAL_LIST_EMPTY(mana_fountains)
 	var/datum/reagents/reagents = new()
 	reagents.add_reagent(/datum/reagent/medicine/manapot/weak, 2)
 	reagents.trans_to(user, reagents.total_volume, transfered_by = user, method = INGEST)
-	playsound(user,pick('sound/items/drink_gen (1).ogg','sound/items/drink_gen (2).ogg','sound/items/drink_gen (3).ogg'), 100, TRUE)
+	playsound(user,pick('modular/kaizoku/sound/items/drink_gen (1).ogg','modular/kaizoku/sound/items/drink_gen (2).ogg','modular/kaizoku/sound/items/drink_gen (3).ogg'), 100, TRUE)
 
 
 /obj/structure/well/fountain/mana/attackby(obj/item/I, mob/user, params)
@@ -141,7 +141,7 @@ GLOBAL_LIST_EMPTY(mana_fountains)
 			var/list/waterl = list(/datum/reagent/medicine/manapot/weak = mana_amount)
 			W.reagents.add_reagent_list(waterl)
 			to_chat(user, "<span class='notice'>I fill [W] from [src].</span>")
-			playsound(user, pick('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg'), 80, FALSE)
+			playsound(user, pick('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg'), 80, FALSE)
 			return
 	if(istype(I, /obj/item/grabbing))
 		if(mana_pool.amount < 500)
@@ -155,7 +155,7 @@ GLOBAL_LIST_EMPTY(mana_fountains)
 			return
 		grabbed.mana_pool.set_intrinsic_recharge(MANA_ALL_LEYLINES)
 		SEND_SIGNAL(grabbed, COMSIG_BAPTISM_RECEIVED, user)
-		playsound(user, pick('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg'), 80, FALSE)
+		playsound(user, pick('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg'), 80, FALSE)
 		return
 
 	return ..()

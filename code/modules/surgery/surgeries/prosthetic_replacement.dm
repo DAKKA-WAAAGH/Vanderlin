@@ -133,8 +133,8 @@
 	skill_min = SKILL_LEVEL_NOVICE
 	skill_median = SKILL_LEVEL_EXPERT
 	surgery_flags = NONE
-	preop_sound = 'sound/foley/sewflesh.ogg'
-	success_sound = 'sound/items/wood_sharpen.ogg'
+	preop_sound = 'modular/kaizoku/sound/foley/sewflesh.ogg'
+	success_sound = 'modular/kaizoku/sound/items/wood_sharpen.ogg'
 
 /datum/surgery_step/remove_prosthetic/preop(mob/user, mob/living/target, target_zone, obj/item/tool, datum/intent/intent)
 	display_results(user, target, span_notice("I begin to saw through the base of [target]'s [parse_zone(target_zone)] prosthetic..."),

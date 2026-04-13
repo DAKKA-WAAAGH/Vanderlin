@@ -95,7 +95,7 @@
 
 /obj/item/reagent_containers/food/snacks/rotten/mince/throw_impact(atom/hit_atom, datum/thrownthing/thrownthing)
 	new /obj/effect/decal/cleanable/food/mess/rotting/get_turf(src)
-	playsound(src, 'sound/foley/meatslap.ogg', 100, TRUE, -1)
+	playsound(src, 'modular/kaizoku/sound/foley/meatslap.ogg', 100, TRUE, -1)
 	..()
 	qdel(src)
 
@@ -167,8 +167,8 @@
 	volume = 25
 	obj_flags = CAN_BE_HIT
 	sellprice = 1
-	drinksounds = list('sound/items/drink_cup (1).ogg','sound/items/drink_cup (2).ogg','sound/items/drink_cup (3).ogg','sound/items/drink_cup (4).ogg','sound/items/drink_cup (5).ogg')
-	fillsounds = list('sound/items/fillcup.ogg')
+	drinksounds = list('modular/kaizoku/sound/items/drink_cup (1).ogg','modular/kaizoku/sound/items/drink_cup (2).ogg','modular/kaizoku/sound/items/drink_cup (3).ogg','modular/kaizoku/sound/items/drink_cup (4).ogg','modular/kaizoku/sound/items/drink_cup (5).ogg')
+	fillsounds = list('modular/kaizoku/sound/items/fillcup.ogg')
 	metalizer_result = /obj/item/reagent_containers/glass/bowl/iron
 	smeltresult = /obj/item/fertilizer/ash
 	var/max_usages = 5
@@ -262,7 +262,7 @@
 		if(particle_spewer)
 			qdel(particle_spewer)
 		update_appearance(UPDATE_OVERLAYS)
-	playsound(src, 'sound/misc/eat.ogg', rand(30, 60), TRUE)
+	playsound(src, 'modular/kaizoku/sound/misc/eat.ogg', rand(30, 60), TRUE)
 	user.visible_message(span_info("[user] eats from [src]."), \
 			span_notice("I swallow a gulp of [src]."))
 	addtimer(CALLBACK(reagents, TYPE_PROC_REF(/datum/reagents, trans_to), user, min(amount_per_transfer_from_this, 5), TRUE, TRUE, FALSE, user, FALSE, INGEST), 5 DECISECONDS)
@@ -276,7 +276,7 @@
 /obj/item/reagent_containers/glass/bowl/iron
 	icon_state = "bowl_iron"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	melting_material = /datum/material/iron
 	melt_amount = 20
 	max_usages = 7
@@ -284,7 +284,7 @@
 /obj/item/reagent_containers/glass/bowl/pewter
 	icon_state = "bowl_iron"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	melting_material = /datum/material/tin
 	melt_amount = 20
 	max_usages = 7
@@ -294,7 +294,7 @@
 	desc = "A bowl carved out of joapstone."
 	icon_state = "bowl_jade"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 55
 	max_usages = 10
 
@@ -303,7 +303,7 @@
 	desc = "A bowl carved out of onyxa."
 	icon_state = "bowl_onyxa"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 35
 	max_usages = 10
 
@@ -312,7 +312,7 @@
 	desc = "A bowl carved out of rosellusk."
 	icon_state = "bowl_rose"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 20
 	max_usages = 10
 
@@ -321,7 +321,7 @@
 	desc = "A bowl carved out of petriamber."
 	icon_state = "bowl_amber"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 55
 	max_usages = 10
 
@@ -330,7 +330,7 @@
 	desc = "A bowl carved out of ceruleabaster."
 	icon_state = "bowl_turq"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 80
 	max_usages = 10
 
@@ -339,7 +339,7 @@
 	desc = "A bowl carved out of shell."
 	icon_state = "bowl_shell"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 15
 	max_usages = 10
 
@@ -348,7 +348,7 @@
 	desc = "A bowl carved out of aoetal."
 	icon_state = "bowl_coral"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 65
 	max_usages = 10
 
@@ -357,7 +357,7 @@
 	desc = "A bowl carved out of opaloise."
 	icon_state = "bowl_opal"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 85
 	max_usages = 10
 
@@ -366,7 +366,7 @@
 	desc = "Made from fired clay."
 	icon_state = "bowl_clay"
 	fill_icon_state = "bowl"
-	drop_sound = 'sound/combat/hits/onstone/wallhit.ogg'
+	drop_sound = 'modular/kaizoku/sound/combat/hits/onstone/wallhit.ogg'
 
 /obj/item/reagent_containers/glass/bowl/clay/set_material_information()
 	. = ..()
@@ -374,7 +374,7 @@
 
 /obj/item/reagent_containers/glass/bowl/clay/throw_impact(atom/hit_atom, datum/thrownthing/thrownthing)
 	new /obj/effect/decal/cleanable/shreds/clay(get_turf(src))
-	playsound(src, 'sound/foley/break_clay.ogg', 90, TRUE)
+	playsound(src, 'modular/kaizoku/sound/foley/break_clay.ogg', 90, TRUE)
 	..()
 	qdel(src)
 
@@ -383,7 +383,7 @@
 	icon = 'icons/roguetown/items/cooking.dmi'
 	icon_state = "peppermill"
 	layer = CLOSED_BLASTDOOR_LAYER // obj layer + a little, small obj layering above convenient
-	drop_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 	list_reagents = list(/datum/reagent/consumable/blackpepper = 5)
 
 /*-------------\
@@ -586,7 +586,7 @@
 			to_chat(user, span_notice("Needs more water to work it."))
 			return TRUE
 		to_chat(user, span_notice("Adding water, now it's time to knead it..."))
-		playsound(get_turf(user), 'sound/foley/splishy.ogg', 100, TRUE, -1)
+		playsound(get_turf(user), 'modular/kaizoku/sound/foley/splishy.ogg', 100, TRUE, -1)
 		if(do_after(user, 1.5 SECONDS, src))
 			name = "wet flour"
 			desc = "Destined for greatness, at your hands."
@@ -599,7 +599,7 @@
 /obj/item/reagent_containers/powder/flour/attack_hand(mob/living/user)
 	if(water_added)
 		short_cooktime = (40 - ((user.get_skill_level(/datum/skill/craft/cooking))*5))
-		playsound(get_turf(user), 'sound/foley/kneading_alt.ogg', 90, TRUE, -1)
+		playsound(get_turf(user), 'modular/kaizoku/sound/foley/kneading_alt.ogg', 90, TRUE, -1)
 		if(do_after(user, short_cooktime, src))
 			var/obj/item/reagent_containers/food/snacks/dough_base/base = new /obj/item/reagent_containers/food/snacks/dough_base(get_turf(src))
 			base.set_quality(recipe_quality)

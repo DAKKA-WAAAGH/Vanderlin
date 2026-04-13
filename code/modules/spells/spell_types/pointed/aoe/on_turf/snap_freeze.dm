@@ -22,12 +22,12 @@
 
 /datum/action/cooldown/spell/aoe/on_turf/snap_freeze/cast_on_thing_in_aoe(turf/victim, atom/caster)
 	new /obj/effect/temp_visual/trapice(victim)
-	playsound(victim, 'sound/combat/wooshes/blunt/wooshhuge (2).ogg', 80, TRUE, soundping = TRUE)
+	playsound(victim, 'modular/kaizoku/sound/combat/wooshes/blunt/wooshhuge (2).ogg', 80, TRUE, soundping = TRUE)
 	addtimer(CALLBACK(src, PROC_REF(do_freeze), victim), 0.5 SECONDS)
 
 /datum/action/cooldown/spell/aoe/on_turf/snap_freeze/proc/do_freeze(turf/victim)
 	new /obj/effect/temp_visual/snap_freeze(victim)
-	playsound(victim, 'sound/combat/newstuck.ogg', 80, TRUE)
+	playsound(victim, 'modular/kaizoku/sound/combat/newstuck.ogg', 80, TRUE)
 	for(var/mob/living/L in victim)
 		if(L.can_block_magic(MAGIC_RESISTANCE))
 			L.visible_message(span_warning("The ice fades away around [L]."))

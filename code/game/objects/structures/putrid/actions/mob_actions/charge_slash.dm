@@ -89,7 +89,7 @@
 
 	sleep(delay)
 
-	playsound(charger, 'sound/misc/meteorimpact.ogg', 100, TRUE, 8, 0.9)
+	playsound(charger, 'modular/kaizoku/sound/misc/meteorimpact.ogg', 100, TRUE, 8, 0.9)
 	var/time_to_hit = min(get_dist(charger, target), charge_distance) * charge_speed
 
 	var/datum/move_loop/new_loop = SSmove_manager.home_onto(charger, target, delay = charge_speed, timeout = time_to_hit, priority = MOVEMENT_ABOVE_SPACE_PRIORITY)
@@ -135,7 +135,7 @@
 
 /datum/action/cooldown/meatvine/personal/charge_slash/proc/on_moved(atom/source)
 	SIGNAL_HANDLER
-	playsound(source, 'sound/misc/meteorimpact.ogg', 200, TRUE, 2, TRUE)
+	playsound(source, 'modular/kaizoku/sound/misc/meteorimpact.ogg', 200, TRUE, 2, TRUE)
 
 /datum/action/cooldown/meatvine/personal/charge_slash/proc/on_bump(atom/movable/source, atom/target)
 	SIGNAL_HANDLER
@@ -180,7 +180,7 @@
 	)
 	living_target.Knockdown(0.6 SECONDS)
 	living_target.apply_damage(damage_dealt, BRUTE)
-	playsound(living_target,  pick('sound/combat/hits/bladed/genslash (1).ogg','sound/combat/hits/bladed/genslash (2).ogg','sound/combat/hits/bladed/genslash (3).ogg'), 75, TRUE)
+	playsound(living_target,  pick('modular/kaizoku/sound/combat/hits/bladed/genslash (1).ogg','modular/kaizoku/sound/combat/hits/bladed/genslash (2).ogg','modular/kaizoku/sound/combat/hits/bladed/genslash (3).ogg'), 75, TRUE)
 
 /datum/action/cooldown/meatvine/personal/charge_slash/proc/enter_slash_ready_state()
 	var/mob/living/simple_animal/hostile/retaliate/meatvine/user = owner
@@ -231,7 +231,7 @@
 		span_boldnotice("You unleash a devastating slash!")
 	)
 
-	//playsound(user, 'sound/weapons/bladeslice.ogg', 100, TRUE)
+	//playsound(user, 'modular/kaizoku/sound/weapons/bladeslice.ogg', 100, TRUE)
 	shake_camera(user, 2, 2)
 
 	var/hit_count = 0
@@ -253,7 +253,7 @@
 
 			victim.apply_damage(slash_damage, BRUTE)
 			victim.add_splatter_floor()
-			playsound(victim, pick('sound/combat/hits/bladed/genslash (1).ogg','sound/combat/hits/bladed/genslash (2).ogg','sound/combat/hits/bladed/genslash (3).ogg'), 75, TRUE)
+			playsound(victim, pick('modular/kaizoku/sound/combat/hits/bladed/genslash (1).ogg','modular/kaizoku/sound/combat/hits/bladed/genslash (2).ogg','modular/kaizoku/sound/combat/hits/bladed/genslash (3).ogg'), 75, TRUE)
 
 			// Small knockback effect
 			var/throw_dir = get_dir(user, victim)

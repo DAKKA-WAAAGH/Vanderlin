@@ -18,7 +18,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	blade_dulling = 0
 	slot_flags = ITEM_SLOT_HIP
-	drop_sound = 'sound/combat/hits/onstone/wallhit.ogg'
+	drop_sound = 'modular/kaizoku/sound/combat/hits/onstone/wallhit.ogg'
 	associated_skill = /datum/skill/combat/knives
 	dropshrink = 0.9
 	grid_height = 64
@@ -31,7 +31,7 @@
 	name = "chisel"
 	icon_state = "inchisel"
 	attack_verb = list("chisels")
-	hitsound = list('sound/combat/hits/pick/genpick (1).ogg', 'sound/combat/hits/pick/genpick (2).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/pick/genpick (1).ogg', 'modular/kaizoku/sound/combat/hits/pick/genpick (2).ogg')
 	blade_class = null
 	no_attack = TRUE
 	noaa = TRUE

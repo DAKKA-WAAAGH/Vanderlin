@@ -12,7 +12,7 @@
 	result_type = /obj/structure/fluff/psycross/crafted/shrine/dendor_gote
 	verbage = "consecrate"
 	verbage_tp = "consecrates"
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 
 /datum/blueprint_recipe/dendor/shrine/saiga
 	name = "stinging shrine to Dendor (unique)"

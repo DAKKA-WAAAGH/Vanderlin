@@ -65,7 +65,7 @@
 	if(burn_stuff(AM))
 		START_PROCESSING(SSobj, src)
 		if(ishuman(AM))
-			playsound(src, 'sound/misc/lava_death.ogg', 100, FALSE)
+			playsound(src, 'modular/kaizoku/sound/misc/lava_death.ogg', 100, FALSE)
 
 /turf/open/lava/Exited(atom/movable/Obj, atom/newloc)
 	. = ..()
@@ -77,7 +77,7 @@
 /turf/open/lava/hitby(atom/movable/AM, skipcatch, hitpush, blocked, datum/thrownthing/throwingdatum, damage_type = "blunt")
 	if(burn_stuff(AM))
 		START_PROCESSING(SSobj, src)
-		playsound(src, 'sound/misc/lava_death.ogg', 100, FALSE)
+		playsound(src, 'modular/kaizoku/sound/misc/lava_death.ogg', 100, FALSE)
 
 /turf/open/lava/process()
 	if(!burn_stuff(null))

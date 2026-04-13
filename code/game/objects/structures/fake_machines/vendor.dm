@@ -8,9 +8,9 @@
 	integrity_failure = 0.1
 	anchored = TRUE
 	layer = BELOW_OBJ_LAYER
-	rattle_sound = 'sound/misc/machineno.ogg'
-	unlock_sound = 'sound/misc/beep.ogg'
-	lock_sound = 'sound/misc/beep.ogg'
+	rattle_sound = 'modular/kaizoku/sound/misc/machineno.ogg'
+	unlock_sound = 'modular/kaizoku/sound/misc/beep.ogg'
+	lock_sound = 'modular/kaizoku/sound/misc/beep.ogg'
 	lock = /datum/lock/key/vendor
 	var/list/held_items = list()
 	var/budget = 0
@@ -85,7 +85,7 @@
 		budget += money
 		qdel(I)
 		to_chat(user, span_info("I put [money] mammon in \the [src]."))
-		playsound(src, 'sound/misc/machinevomit.ogg', 100, TRUE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machinevomit.ogg', 100, TRUE, -1)
 		attack_hand(user)
 		return
 	return ..()
@@ -118,7 +118,7 @@
 	held_items[I]["NAME"] = I.name
 	held_items[I]["PRICE"] = 0
 	I.forceMove(src)
-	playsound(src, 'sound/misc/machinevomit.ogg', 100, TRUE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/machinevomit.ogg', 100, TRUE, -1)
 	update_appearance(UPDATE_ICON)
 
 /obj/structure/fake_machine/vendor/Topic(href, href_list)
@@ -202,7 +202,7 @@
 	if(.)
 		return
 	user.changeNext_move(CLICK_CD_MELEE)
-	playsound(src, 'sound/misc/beep.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/beep.ogg', 100, FALSE, -1)
 	var/canread = user.can_read(src, TRUE)
 	var/contents
 	if(canread)
@@ -357,23 +357,23 @@
 			cachey[user] = list()
 		cachey[user]["moneydonate"] += P.get_real_price()
 		qdel(P)
-		playsound(src, 'sound/misc/machinevomit.ogg', 100, TRUE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machinevomit.ogg', 100, TRUE, -1)
 
 		if(cachey[user]["moneydonate"] > 99)
 			if(!cachey[user]["trisawarded"])
 				cachey[user]["trisawarded"] = 1
 				user.adjust_triumphs(1)
 				say("[user] has purchased a prole dwelling.")
-				playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+				playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 		if(cachey[user]["moneydonate"] > 499)
 			if(cachey[user]["trisawarded"] < 2)
 				cachey[user]["trisawarded"] = 2
 				user.adjust_triumphs(1)
 				say("[user] has been upgraded to a space in a serf apartment.")
-				playsound(src, pick('sound/misc/machinetalk.ogg'), 100, FALSE, -1)
+				playsound(src, pick('modular/kaizoku/sound/misc/machinetalk.ogg'), 100, FALSE, -1)
 		if(cachey[user]["moneydonate"] > 999)
 			if(cachey[user]["trisawarded"] < 3)
 				cachey[user]["trisawarded"] = 3
 				user.adjust_triumphs(1)
 				say("[user] HAS BEEN UPGRADED TO A NOBLE BEDCHAMBER!")
-				playsound(src, 'sound/misc/machinelong.ogg', 100, FALSE, -1)
+				playsound(src, 'modular/kaizoku/sound/misc/machinelong.ogg', 100, FALSE, -1)

@@ -12,7 +12,7 @@
 	required_table = TRUE
 	minimum_skill_level = 1
 	craft_time = 6 SECONDS
-	crafting_sound = 'sound/foley/eggbreak.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/eggbreak.ogg'
 	sound_volume = 100
 	crafting_message = "work egg into the dough"
 	extra_chance = 100
@@ -21,7 +21,7 @@
 	abstract_type = /datum/repeatable_crafting_recipe/cooking/unbaked_griddlecake
 	required_table = TRUE
 	craft_time = 5 SECONDS
-	crafting_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 	extra_chance = 100
 	attacked_atom = /obj/item/reagent_containers/food/snacks/foodbase/griddlecake_raw
 

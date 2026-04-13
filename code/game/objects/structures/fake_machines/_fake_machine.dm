@@ -1,7 +1,7 @@
 ///basically subtypes of these process kinda like a machine but don't
 ///need the entire machine
 /obj/structure/fake_machine
-	destroy_sound = 'sound/foley/breaksound.ogg'
+	destroy_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
 	break_sound = 'sound/blank.ogg'
 	anchored = TRUE
 	resistance_flags = INDESTRUCTIBLE
@@ -68,4 +68,4 @@
 		if(user)
 			user.put_in_hands(G)
 
-	playsound(T, 'sound/misc/coindispense.ogg', 100, FALSE, -1)
+	playsound(T, 'modular/kaizoku/sound/misc/coindispense.ogg', 100, FALSE, -1)

@@ -4,7 +4,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_PLAYER_ALL
 	outfit = /datum/outfit/wretch/hedgemage
-	cmode_music = 'sound/music/cmode/antag/CombatRogueMage.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/antag/CombatRogueMage.ogg'
 	total_positions = 2
 
 	allowed_patrons = list(/datum/patron/divine/noc, /datum/patron/inhumen/zizo)

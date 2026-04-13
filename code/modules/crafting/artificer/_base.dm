@@ -55,7 +55,7 @@
 /datum/artificer_recipe/proc/item_added(mob/user)
 	user.visible_message(span_info("[user] adds [initial(needed_item.name)]."))
 	if(istype(needed_item, /obj/item/natural/wood/plank))
-		playsound(user, 'sound/misc/wood_saw.ogg', 100, TRUE)
+		playsound(user, 'modular/kaizoku/sound/misc/wood_saw.ogg', 100, TRUE)
 	needed_item = null
 	hammers_per_item = initial(hammers_per_item)
 	hammered = FALSE

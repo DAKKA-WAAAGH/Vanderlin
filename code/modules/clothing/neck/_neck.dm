@@ -8,8 +8,8 @@
 
 	equip_sound = "rustle"
 	pickup_sound = "rustle"
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 
 	body_parts_covered = NECK
 	slot_flags = ITEM_SLOT_NECK

@@ -256,7 +256,7 @@
 		log_message("has thrown [thrown_thing]", LOG_ATTACK)
 		thrown_thing.safe_throw_at(end_T, thrown_range, thrown_speed, src, null, null, null, move_force)
 		if(!used_sound)
-			used_sound = pick('sound/items/weapons/thudswoosh.ogg', 'sound/items/weapons/thudswoosh2.ogg')
+			used_sound = pick('modular/kaizoku/sound/items/weapons/thudswoosh.ogg', 'modular/kaizoku/sound/items/weapons/thudswoosh2.ogg')
 		playsound(src, used_sound, 60, FALSE)
 
 /mob/living/carbon/proc/canBeHandcuffed()
@@ -597,10 +597,10 @@
 		Immobilize(59)
 
 	if(!blood)
-		playsound(src, pick('sound/vo/vomit.ogg','sound/vo/vomit_2.ogg'), 100, TRUE)
+		playsound(src, pick('modular/kaizoku/sound/vo/vomit.ogg','modular/kaizoku/sound/vo/vomit_2.ogg'), 100, TRUE)
 	else
 		if(stat != DEAD)
-			playsound(src, pick('sound/vo/throat.ogg','sound/vo/throat2.ogg','sound/vo/throat3.ogg'), 100, FALSE)
+			playsound(src, pick('modular/kaizoku/sound/vo/throat.ogg','modular/kaizoku/sound/vo/throat2.ogg','modular/kaizoku/sound/vo/throat3.ogg'), 100, FALSE)
 
 	set_eye_blur_if_lower(20 SECONDS)
 

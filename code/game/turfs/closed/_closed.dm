@@ -156,7 +156,7 @@
 		if(isliving(user))
 			var/turf/user_turf = get_turf(user)
 			var/mob/living/L = user
-			var/climbsound = 'sound/foley/climb.ogg'
+			var/climbsound = 'modular/kaizoku/sound/foley/climb.ogg'
 			if(L.stat != CONSCIOUS)
 				return
 			var/turf/target = GET_TURF_ABOVE(user_turf)
@@ -194,7 +194,7 @@
 					if(WL)
 						if(get_dir(WL.loc,src) == WL.dir)
 							myskill += 8
-							climbsound = 'sound/foley/ladder.ogg'
+							climbsound = 'modular/kaizoku/sound/foley/ladder.ogg'
 
 				if(myskill < climbdiff)
 					to_chat(user, "<span class='warning'>I'm not capable of climbing this.</span>")
@@ -210,7 +210,7 @@
 				user.forceMove(target)
 				user.start_pulling(pulling,suppress_message = TRUE)
 				if(user.m_intent != MOVE_INTENT_SNEAK)
-					playsound(user, 'sound/foley/climb.ogg', 100, TRUE)
+					playsound(user, 'modular/kaizoku/sound/foley/climb.ogg', 100, TRUE)
 				if(L.mind)
 					L.adjust_experience(/datum/skill/misc/climbing, floor(amt2raise * boon), FALSE)
 	else

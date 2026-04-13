@@ -28,7 +28,7 @@
 	)
 	var/amount_blessed = 0
 	for(var/obj/structure/soil/soil in view(4, owner))
-		playsound(soil, 'sound/vo/smokedrag.ogg', 100, TRUE)
+		playsound(soil, 'modular/kaizoku/sound/vo/smokedrag.ogg', 100, TRUE)
 		soil.bless_soil()
 		amount_blessed++
 		new /obj/effect/temp_visual/bless_swirl(get_turf(soil))

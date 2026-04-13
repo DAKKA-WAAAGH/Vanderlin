@@ -56,9 +56,9 @@
 	if(should_activate != active)
 		active = should_activate
 		if(active)
-			playsound(src, 'sound/misc/pressurepad_down.ogg', 65, extrarange = 2)
+			playsound(src, 'modular/kaizoku/sound/misc/pressurepad_down.ogg', 65, extrarange = 2)
 		else
-			playsound(src, 'sound/misc/pressurepad_up.ogg', 65, extrarange = 2)
+			playsound(src, 'modular/kaizoku/sound/misc/pressurepad_up.ogg', 65, extrarange = 2)
 		schedule_network_update()
 
 /obj/structure/redstone/pressure_plate/examine(mob/user)

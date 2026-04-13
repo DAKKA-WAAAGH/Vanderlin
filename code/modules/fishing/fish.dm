@@ -349,7 +349,7 @@ GLOBAL_LIST_INIT(fish_compatible_fluid_types, list(
 		update_size_and_weight()
 
 /obj/item/reagent_containers/food/snacks/fish/proc/released(atom/location, mob/living/user)
-	playsound(location, 'sound/effects/splash.ogg', 50)
+	playsound(location, 'modular/kaizoku/sound/effects/splash.ogg', 50)
 	SEND_SIGNAL(location, COMSIG_FISH_RELEASED_INTO, src, user)
 	qdel(src)
 
@@ -1133,13 +1133,13 @@ GLOBAL_LIST_INIT(fish_compatible_fluid_types, list(
 			)
 		var/body_zone = pick(BODY_ZONE_R_ARM, BODY_ZONE_L_ARM)
 		user.apply_damage((force * 0.2) + w_class * 2, BRUTE, body_zone, user.run_armor_check(body_zone))
-		playsound(src,'sound/items/weapons/bite.ogg', 45, TRUE, -1)
+		playsound(src,'modular/kaizoku/sound/items/weapons/bite.ogg', 45, TRUE, -1)
 	else
 		if(in_aquarium)
 			to_chat(user, span_notice("[src] dances around!"))
 		else
 			to_chat(user, span_notice("You pet [src] as you hold it."))
-		playsound(src, 'sound/items/weapons/thudswoosh.ogg', 30, TRUE, -1)
+		playsound(src, 'modular/kaizoku/sound/items/weapons/thudswoosh.ogg', 30, TRUE, -1)
 	addtimer(CALLBACK(src, PROC_REF(undo_petted)), 30 SECONDS)
 	return TRUE
 
@@ -1314,7 +1314,7 @@ GLOBAL_LIST_INIT(fish_compatible_fluid_types, list(
 	var/found_table = locate(/obj/structure/table) in (loc)
 	if(isturf(loc)&& (found_table))
 		if(istype(I, /obj/item/reagent_containers/food/snacks/chocolate))
-			playsound(user, 'sound/foley/dropsound/food_drop.ogg', 40, TRUE, -1)
+			playsound(user, 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg', 40, TRUE, -1)
 			to_chat(user, span_notice("Creating an insult against cooking..."))
 			if(do_after(user, short_cooktime, src))
 				new /obj/item/reagent_containers/food/snacks/chocolate_carp(loc)

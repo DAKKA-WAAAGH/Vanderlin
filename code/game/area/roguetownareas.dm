@@ -84,7 +84,7 @@
 	background_track_dusk = 'sound/blank.ogg'
 	background_track_night = 'sound/blank.ogg'
 	first_time_text = "MALUMS ANVIL"
-	custom_area_sound = 'sound/misc/stings/MalumSting.ogg'
+	custom_area_sound = 'modular/kaizoku/sound/misc/stings/MalumSting.ogg'
 	ambush_times = list("night","dawn","dusk","day")
 
 	converted_type = /area/indoors/shelter/mountains/decap
@@ -177,7 +177,7 @@
 				/mob/living/simple_animal/hostile/retaliate/troll/bog = 35)
 
 	first_time_text = "THE TERRORBOG"
-	custom_area_sound = 'sound/misc/stings/BogSting.ogg'
+	custom_area_sound = 'modular/kaizoku/sound/misc/stings/BogSting.ogg'
 	converted_type = /area/indoors/shelter/bog
 
 /area/indoors/shelter/bog
@@ -240,7 +240,7 @@
 
 /area/outdoors/caves
 	icon_state = "caves"
-	background_track = 'sound/music/area/caves.ogg'
+	background_track = 'modular/kaizoku/sound/music/area/caves.ogg'
 	background_track_dusk = null
 	background_track_night = null
 

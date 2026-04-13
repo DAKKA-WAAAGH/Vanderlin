@@ -213,7 +213,7 @@ GLOBAL_LIST_INIT(island_ascents, list())
 
 	if(!is_ghost)
 		to_chat(user, span_notice("You descend into the depths..."))
-		playsound(src, 'sound/foley/ladder.ogg', 100, FALSE)
+		playsound(src, 'modular/kaizoku/sound/foley/ladder.ogg', 100, FALSE)
 		if(!do_after(user, 3 SECONDS, src))
 			return
 
@@ -324,7 +324,7 @@ GLOBAL_LIST_INIT(island_ascents, list())
 
 	if(!is_ghost)
 		to_chat(user, span_notice("You ascend back to the surface..."))
-		playsound(src, 'sound/foley/ladder.ogg', 100, FALSE)
+		playsound(src, 'modular/kaizoku/sound/foley/ladder.ogg', 100, FALSE)
 		if(!do_after(user, 3 SECONDS, src))
 			return
 

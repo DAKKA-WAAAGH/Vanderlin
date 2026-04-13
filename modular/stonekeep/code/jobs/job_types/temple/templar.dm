@@ -13,7 +13,7 @@
 	allowed_patrons = SK_TEMPLAR_PATRONS
 
 	outfit = /datum/outfit/job/stonekeep/templar
-	cmode_music = 'sound/music/cmode/church/combat_templar.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/church/combat_templar.ogg'
 
 /datum/outfit/job/stonekeep/templar
 	name = "Templar"
@@ -189,7 +189,7 @@
 	desc = "Grants a temporary heightened darkvision."
 	button_icon_state = "moonlight"
 	button_icon = 'modular/stonekeep/icons/screen_alert.dmi'
-	sound = 'sound/vo/smokedrag.ogg'
+	sound = 'modular/kaizoku/sound/vo/smokedrag.ogg'
 
 	spell_type = SPELL_MIRACLE
 	antimagic_flags = MAGIC_RESISTANCE_HOLY

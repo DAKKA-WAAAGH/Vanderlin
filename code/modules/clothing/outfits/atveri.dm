@@ -74,8 +74,8 @@
 	throwforce = DAMAGE_SHIELD
 	dropshrink = 0.8
 	coverage = 80
-	attacked_sound = list('sound/combat/parry/shield/towershield (1).ogg','sound/combat/parry/shield/towershield (2).ogg','sound/combat/parry/shield/towershield (3).ogg')
-	parrysound = list('sound/combat/parry/shield/towershield (1).ogg','sound/combat/parry/shield/towershield (2).ogg','sound/combat/parry/shield/towershield (3).ogg')
+	attacked_sound = list('modular/kaizoku/sound/combat/parry/shield/towershield (1).ogg','modular/kaizoku/sound/combat/parry/shield/towershield (2).ogg','modular/kaizoku/sound/combat/parry/shield/towershield (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/shield/towershield (1).ogg','modular/kaizoku/sound/combat/parry/shield/towershield (2).ogg','modular/kaizoku/sound/combat/parry/shield/towershield (3).ogg')
 	max_integrity = 300
 	experimental_inhand = FALSE
 

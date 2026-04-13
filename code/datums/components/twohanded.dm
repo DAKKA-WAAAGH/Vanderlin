@@ -16,7 +16,7 @@
 	/// The force of the item when unwielded
 	var/force_unwielded = 0
 	/// Play sound when wielded
-	var/wieldsound = list('sound/combat/weaponr1.ogg','sound/combat/weaponr2.ogg')
+	var/wieldsound = list('modular/kaizoku/sound/combat/weaponr1.ogg','modular/kaizoku/sound/combat/weaponr2.ogg')
 	/// Play sound when unwielded
 	var/unwieldsound = FALSE
 	/// Play sound on attack when wielded

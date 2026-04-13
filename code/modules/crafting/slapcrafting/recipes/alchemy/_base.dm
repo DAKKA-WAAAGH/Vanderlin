@@ -8,6 +8,6 @@
 	anchor_craft = TRUE
 	subcategory = SLAP_SUBCAT_STRUCTURE
 	assembly_weight_class = WEIGHT_CLASS_HUGE
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 	category = "Structure"
 

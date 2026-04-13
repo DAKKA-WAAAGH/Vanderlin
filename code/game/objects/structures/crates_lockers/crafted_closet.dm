@@ -7,8 +7,8 @@
 	drag_slowdown = 4
 	horizontal = FALSE
 	allow_dense = FALSE
-	open_sound = 'sound/foley/doors/creak.ogg'
-	close_sound = 'sound/foley/latch.ogg'
+	open_sound = 'modular/kaizoku/sound/foley/doors/creak.ogg'
+	close_sound = 'modular/kaizoku/sound/foley/latch.ogg'
 	max_integrity = 200
 	blade_dulling = DULLING_BASHCHOP
 	dense_when_open = FALSE

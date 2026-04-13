@@ -76,7 +76,7 @@
 		to_chat(H, span_notice("You transform the tree into a wise tree. [uses] use\s remaining."))
 	else
 		to_chat(H, span_notice("You transform the tree into a wise tree."))
-	playsound(T, 'sound/ambience/noises/mystical (4).ogg', 50, TRUE)
+	playsound(T, 'modular/kaizoku/sound/ambience/noises/mystical (4).ogg', 50, TRUE)
 
 	if(uses <= 0)
 		to_chat(H, span_warning("Dendor's blessing fades from you."))

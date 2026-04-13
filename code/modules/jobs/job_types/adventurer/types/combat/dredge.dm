@@ -216,7 +216,7 @@
 		if("Axe")
 			spawned.adjust_skillrank(/datum/skill/combat/axesmaces, 3, TRUE)
 			spawned.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/adventurer/CombatOutlander2.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander2.ogg'
 			to_chat(spawned,span_info("\
 			I prefer a practical instrument of war.")
 			)
@@ -260,7 +260,7 @@
 			spawned.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
 			spawned.change_stat(STATKEY_STR, 1)
 			spawned.change_stat(STATKEY_SPD, -2)
-			spawned.cmode_music = 'sound/music/cmode/adventurer/CombatOutlander.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander.ogg'
 			to_chat(spawned,span_info("\
 			I dare a motherfucker try and disarm me.")
 			)
@@ -278,7 +278,7 @@
 			spawned.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 			spawned.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
 			spawned.change_stat(STATKEY_END, 1)
-			spawned.cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatMonk.ogg'
 			to_chat(spawned,span_info("\
 			I'm the lord of the harvest. I will shepherd the damned to Necra herself.")
 			)
@@ -287,7 +287,7 @@
 			spawned.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
 			spawned.change_stat(STATKEY_STR, 1)
 			spawned.change_stat(STATKEY_END, 1)
-			spawned.cmode_music = 'sound/music/cmode/adventurer/CombatOutlander.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander.ogg'
 			to_chat(spawned,span_info("\
 			The flail is an ancient weapon. If it's good enough for my ancestors, it's good enough for me.")
 			)
@@ -305,7 +305,7 @@
 		if("Spear")
 			spawned.adjust_skillrank(/datum/skill/combat/polearms, 3, TRUE)
 			spawned.adjust_skillrank(/datum/skill/misc/athletics, 1, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/towner/CombatInn.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/towner/CombatInn.ogg'
 			to_chat(spawned,span_info("\
 			I'm a cautious sort, I prefer to keep my enemies at range.")
 			)
@@ -366,7 +366,7 @@
 			spawned.change_stat(STATKEY_CON, -2)
 			spawned.change_stat(STATKEY_SPD, -2)
 			spawned.adjust_spell_points(6)
-			spawned.cmode_music = 'sound/music/cmode/adventurer/CombatSorcerer.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatSorcerer.ogg'
 			to_chat(spawned,span_info("\
 			I've studied the arcyne, those who step to me shall perish.")
 			)
@@ -385,7 +385,7 @@
 			spawned.change_stat(STATKEY_END, 2)
 			spawned.change_stat(STATKEY_SPD, -1)
 			spawned.change_stat(STATKEY_PER, -2)
-			spawned.cmode_music = 'sound/music/cmode/towner/CombatInn.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/towner/CombatInn.ogg'
 			to_chat(spawned,span_info("\
 			I am an instrument of pain. The humen body is my canvas.")
 			)
@@ -396,7 +396,7 @@
 			spawned.adjust_skillrank(/datum/skill/misc/athletics, 2, TRUE)
 			spawned.change_stat(STATKEY_SPD, 1)
 			spawned.change_stat(STATKEY_STR, 1)
-			spawned.cmode_music = 'sound/music/cmode/Adventurer/CombatMonk.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/Adventurer/CombatMonk.ogg'
 			to_chat(spawned,span_info("\
 			My mind is a temple, and my body is a weapon of war. I can parry any attack sent my way.")
 			)

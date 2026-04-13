@@ -30,7 +30,7 @@
 
 	var/debris = null
 	var/static_debris = null
-	var/destroy_sound = 'sound/foley/breaksound.ogg'
+	var/destroy_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
 	var/destroy_message = null
 
 	var/animate_dmg = TRUE
@@ -66,10 +66,10 @@
 	/// This is depreciated but I don't want to replace it yet
 	var/lockid
 
-	var/lock_sound = 'sound/foley/doors/woodlock.ogg'
-	var/unlock_sound = 'sound/foley/doors/woodlock.ogg'
+	var/lock_sound = 'modular/kaizoku/sound/foley/doors/woodlock.ogg'
+	var/unlock_sound = 'modular/kaizoku/sound/foley/doors/woodlock.ogg'
 	/// Sound we play when a key fails to unlock
-	var/rattle_sound = 'sound/foley/lockrattle.ogg'
+	var/rattle_sound = 'modular/kaizoku/sound/foley/lockrattle.ogg'
 	/// If this is currently being lockpicked
 	var/being_picked = FALSE
 

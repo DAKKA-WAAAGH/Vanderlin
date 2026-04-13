@@ -55,7 +55,7 @@
 	spawned.adjust_skillrank(/datum/skill/misc/music, pick(1,2))
 
 	if(istype(spawned.patron, /datum/patron/inhumen/baotha))
-		spawned.cmode_music = 'sound/music/cmode/antag/CombatBaotha.ogg'
+		spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/antag/CombatBaotha.ogg'
 
 	var/static/list/selectable = list( \
 		"Dagger" = /obj/item/weapon/knife/dagger/silver, \

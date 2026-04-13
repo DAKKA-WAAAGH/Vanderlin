@@ -131,7 +131,7 @@
 			to_chat(user, span_warning("There is nothing to harvest!"))
 			return TRUE
 		user_harvests(user)
-		playsound(src,'sound/items/seed.ogg', 100, FALSE)
+		playsound(src,'modular/kaizoku/sound/items/seed.ogg', 100, FALSE)
 		return TRUE
 	return FALSE
 
@@ -146,7 +146,7 @@
 			attacking_item = pick(seeds)
 
 	if(istype(attacking_item, /obj/item/neuFarm/seed)) //SLOP OBJECT PROC SHARING
-		playsound(src, pick('sound/foley/touch1.ogg','sound/foley/touch2.ogg','sound/foley/touch3.ogg'), 100, TRUE)	// STONEKEEP EDIT
+		playsound(src, pick('modular/kaizoku/sound/foley/touch1.ogg','modular/kaizoku/sound/foley/touch2.ogg','modular/kaizoku/sound/foley/touch3.ogg'), 100, TRUE)	// STONEKEEP EDIT
 		if(do_after(user, get_farming_do_time(user, 15), src))
 			if(old_item)
 				SEND_SIGNAL(old_item, COMSIG_TRY_STORAGE_TAKE, attacking_item, get_turf(user), TRUE)
@@ -159,10 +159,10 @@
 	if(istype(attacking_item, /obj/item/weapon/shovel))
 		var/obj/item/weapon/shovel/shovel = attacking_item
 		to_chat(user, span_notice("I begin to uproot the crop..."))
-		playsound(src,'sound/items/dig_shovel.ogg', 100, TRUE)
+		playsound(src,'modular/kaizoku/sound/items/dig_shovel.ogg', 100, TRUE)
 		if(do_after(user, get_farming_do_time(user, 4 SECONDS * shovel.time_multiplier), src))
 			to_chat(user, span_notice("I uproot the crop."))
-			playsound(src,'sound/items/dig_shovel.ogg', 100, TRUE)
+			playsound(src,'modular/kaizoku/sound/items/dig_shovel.ogg', 100, TRUE)
 			uproot()
 		return TRUE
 	return FALSE
@@ -171,10 +171,10 @@
 	if(istype(attacking_item, /obj/item/weapon/hoe))
 		var/obj/item/weapon/hoe/hoe = attacking_item
 		to_chat(user, span_notice("I begin to till the soil..."))
-		playsound(src,'sound/items/dig_shovel.ogg', 100, TRUE)
+		playsound(src,'modular/kaizoku/sound/items/dig_shovel.ogg', 100, TRUE)
 		if(do_after(user, get_farming_do_time(user, 3 SECONDS * hoe.time_multiplier), src))
 			to_chat(user, span_notice("I till the soil."))
-			playsound(src,'sound/items/dig_shovel.ogg', 100, TRUE)
+			playsound(src,'modular/kaizoku/sound/items/dig_shovel.ogg', 100, TRUE)
 			user_till_soil(user)
 		return TRUE
 	return FALSE
@@ -196,7 +196,7 @@
 			to_chat(user, span_warning("There's no water in \the [container]!"))
 			return TRUE
 	if(water_amount > 0)
-		var/list/wash = list('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg')
+		var/list/wash = list('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg')
 		playsound(user, pick_n_take(wash), 100, FALSE)
 		to_chat(user, span_notice("I water the soil."))
 		adjust_water(water_amount)
@@ -267,12 +267,12 @@
 	if(istype(attacking_item, /obj/item/weapon/shovel))
 		to_chat(user, span_notice("I begin flattening the soil with \the [attacking_item]..."))
 		var/obj/item/weapon/shovel/shovel = attacking_item
-		playsound(src,'sound/items/dig_shovel.ogg', 100, TRUE)
+		playsound(src,'modular/kaizoku/sound/items/dig_shovel.ogg', 100, TRUE)
 		if(do_after(user, get_farming_do_time(user, 3 SECONDS * shovel.time_multiplier), src))
 			if(plant)
 				return FALSE
 			apply_farming_fatigue(user, 10)
-			playsound(src,'sound/items/dig_shovel.ogg', 100, TRUE)
+			playsound(src,'modular/kaizoku/sound/items/dig_shovel.ogg', 100, TRUE)
 			to_chat(user, span_notice("I flatten the soil."))
 			decay_soil()
 		return TRUE
@@ -282,7 +282,7 @@
 	if(plant && produce_ready)
 		to_chat(user, span_notice("I begin collecting the produce..."))
 		if(do_after(user, get_farming_do_time(user, 4 SECONDS), src))
-			playsound(src,'sound/items/seed.ogg', 100, FALSE)
+			playsound(src,'modular/kaizoku/sound/items/seed.ogg', 100, FALSE)
 			user_harvests(user)
 		return
 	if(plant && plant_dead)
@@ -292,7 +292,7 @@
 				return
 			apply_farming_fatigue(user, 10)
 			to_chat(user, span_notice("I remove the crop."))
-			playsound(src,'sound/items/seed.ogg', 100, FALSE)
+			playsound(src,'modular/kaizoku/sound/items/seed.ogg', 100, FALSE)
 			uproot()
 			user.adjust_experience(/datum/skill/labor/farming, user.STAINT * 0.2) // STONEKEEP EDIT
 			// add_sleep_experience(user, /datum/skill/labor/farming, user.STAINT * 0.2)

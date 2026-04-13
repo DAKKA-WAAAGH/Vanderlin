@@ -138,13 +138,13 @@
 
 ///Called when someone steps OFF and we're ready, make sure to call post_triggered()
 /obj/structure/trap/proc/trigger_step_off(mob/living/victim)
-	playsound(src, 'sound/misc/pressurepad_up.ogg', 65, extrarange = 2)
+	playsound(src, 'modular/kaizoku/sound/misc/pressurepad_up.ogg', 65, extrarange = 2)
 	return
 
 ///Called when someone steps ON and we're ready, make sure to call post_triggered()
 /obj/structure/trap/proc/trigger_step_on(mob/living/victim)
 	to_chat(victim, span_info("I feel a 'click' beneath me..."))
-	playsound(src, 'sound/misc/pressurepad_down.ogg', 65, extrarange = 2)
+	playsound(src, 'modular/kaizoku/sound/misc/pressurepad_down.ogg', 65, extrarange = 2)
 	return
 
 /obj/structure/trap/shock
@@ -206,7 +206,7 @@
 
 /obj/structure/trap/bomb/trigger_step_off(mob/living/victim)
 	..()
-	explosion(src, light_impact_range = 1, hotspot_range = 2, smoke = TRUE, soundin = pick('sound/misc/explode/bottlebomb (1).ogg','sound/misc/explode/bottlebomb (2).ogg'))
+	explosion(src, light_impact_range = 1, hotspot_range = 2, smoke = TRUE, soundin = pick('modular/kaizoku/sound/misc/explode/bottlebomb (1).ogg','modular/kaizoku/sound/misc/explode/bottlebomb (2).ogg'))
 	post_triggered()
 
 /obj/structure/trap/mine
@@ -216,7 +216,7 @@
 
 /obj/structure/trap/mine/trigger_step_off(mob/living/victim)
 	..()
-	explosion(src, heavy_impact_range = 2, light_impact_range = 3, flash_range = 2, smoke = TRUE, soundin = pick('sound/misc/explode/bottlebomb (1).ogg','sound/misc/explode/bottlebomb (2).ogg'))
+	explosion(src, heavy_impact_range = 2, light_impact_range = 3, flash_range = 2, smoke = TRUE, soundin = pick('modular/kaizoku/sound/misc/explode/bottlebomb (1).ogg','modular/kaizoku/sound/misc/explode/bottlebomb (2).ogg'))
 	post_triggered()
 
 /obj/structure/trap/saw_blades

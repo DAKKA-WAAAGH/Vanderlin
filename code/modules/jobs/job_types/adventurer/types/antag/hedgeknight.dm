@@ -3,7 +3,7 @@
 	tutorial = "A noble fallen from grace, your tarnished armor sits upon your shoulders as a heavy reminder of the life you've lost. Take back what is rightfully yours."
 	outfit = /datum/outfit/bandit/hedgeknight
 	category_tags = list(CTAG_BANDIT)
-	cmode_music = 'sound/music/cmode/antag/CombatBandit1.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/antag/CombatBandit1.ogg'
 
 	jobstats = list(
 		STATKEY_STR = 2,

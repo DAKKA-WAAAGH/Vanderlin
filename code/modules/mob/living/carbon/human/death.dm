@@ -91,7 +91,7 @@
 				addomen(OMEN_NOLORD)
 				for(var/mob/living/carbon/human/HU in GLOB.player_list)
 					if(HU.stat <= CONSCIOUS && is_in_roguetown(HU))
-						HU.playsound_local(get_turf(HU), 'sound/music/lorddeath.ogg', 80, FALSE, pressure_affected = FALSE)
+						HU.playsound_local(get_turf(HU), 'modular/kaizoku/sound/music/lorddeath.ogg', 80, FALSE, pressure_affected = FALSE)
 
 			if(is_priest_job(mind.assigned_role))
 				addomen(OMEN_NOPRIEST)

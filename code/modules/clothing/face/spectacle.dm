@@ -2,7 +2,7 @@
 	name = "spectacles"
 	icon_state = "glasses"
 	break_sound = "glassbreak"
-	attacked_sound = 'sound/combat/hits/onglass/glasshit.ogg'
+	attacked_sound = 'modular/kaizoku/sound/combat/hits/onglass/glasshit.ogg'
 	max_integrity = 20
 	integrity_failure = 0.5
 	resistance_flags = FIRE_PROOF
@@ -22,7 +22,7 @@
 	name = "golden spectacles"
 	icon_state = "goggles"
 	break_sound = "glassbreak"
-	attacked_sound = 'sound/combat/hits/onglass/glasshit.ogg'
+	attacked_sound = 'modular/kaizoku/sound/combat/hits/onglass/glasshit.ogg'
 	max_integrity = 35
 	integrity_failure = 0.5
 	resistance_flags = FIRE_PROOF
@@ -53,7 +53,7 @@
 	name = "inquisitorial spectacles"
 	icon_state = "bglasses"
 	desc = "Spectacles evoking the stained glass of Grenzelhoftian cathedrals. See all evil."
-	attacked_sound = 'sound/combat/hits/onglass/glasshit.ogg'
+	attacked_sound = 'modular/kaizoku/sound/combat/hits/onglass/glasshit.ogg'
 	max_integrity = 300
 	integrity_failure = 0.5
 	resistance_flags = FIRE_PROOF
@@ -108,8 +108,8 @@
 	desc = "A brown sack with eyeholes cut into it."
 	icon_state = "sackmask"
 	blocksound = SOFTHIT
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	max_integrity = 200
 	prevent_crits = list(BCLASS_BLUNT)
 	slot_flags = ITEM_SLOT_HEAD|ITEM_SLOT_MASK
@@ -130,8 +130,8 @@
 	desc = "The mechanisms inside hum in a strange, mechanical unison - Glowing Gems radiate a dull light outwards, piercing the dark. You have a feeling that this mask has seen things you wouldn't believe."
 	icon_state = "antiqmask"
 	blocksound = SOFTHIT
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	max_integrity = 400 // Respect the drip.
 	sellprice = 300 // Strange foreign device, BOY do I want to sell the shit outta THAT.
 	prevent_crits = list(BCLASS_BLUNT)

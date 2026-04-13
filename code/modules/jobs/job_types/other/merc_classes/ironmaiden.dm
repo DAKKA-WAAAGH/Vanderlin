@@ -7,7 +7,7 @@
 	category_tags = list(CTAG_MERCENARY)
 	total_positions = 5
 
-	cmode_music = 'sound/music/cmode/adventurer/CombatDream.ogg' // Medicators are from the isle of Enigma, they're loosely related to Heartfelt
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatDream.ogg' // Medicators are from the isle of Enigma, they're loosely related to Heartfelt
 	exp_types_granted = list(EXP_TYPE_MERCENARY, EXP_TYPE_COMBAT, EXP_TYPE_MEDICAL)
 
 	jobstats = list(

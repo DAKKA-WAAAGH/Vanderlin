@@ -19,7 +19,7 @@
 	resistance_flags = FLAMMABLE
 	climb_offset = 0
 	climb_time = 30
-	climb_sound = 'sound/foley/waterwash (1).ogg'
+	climb_sound = 'modular/kaizoku/sound/foley/waterwash (1).ogg'
 
 /obj/structure/table/wood/bathtub/Initialize()
 	. = ..()
@@ -76,7 +76,7 @@
 		return
 
 	user.visible_message("<span class='info'>[user] begins scrubbing [target] with the [src].</span>")	// Applies the special bonus only if Nitemaiden using the soap
-	playsound(src.loc, pick('sound/items/soaping.ogg'), 100)
+	playsound(src.loc, pick('modular/kaizoku/sound/items/soaping.ogg'), 100)
 	if(do_after(user, 5 SECONDS, target = target))
 		if((user.job == "Nitemaiden"))
 			user.visible_message(span_info("[user] expertly scrubs and soothes [target] with the [src]."))
@@ -368,7 +368,7 @@
 	icon = 'modular/stonekeep/icons/misc.dmi'
 	icon_state = "petrignome"
 	smeltresult = null
-	drop_sound = 'sound/combat/hits/onstone/wallhit.ogg'
+	drop_sound = 'modular/kaizoku/sound/combat/hits/onstone/wallhit.ogg'
 	attacked_sound = 	'modular/stonekeep/sound/stone_scrape.ogg'
 
 /obj/item/statue/gnome/attackby(obj/item/W, mob/living/user, params)
@@ -381,7 +381,7 @@
 		if(istype(W, /obj/item/weapon/chisel))
 			var/obj/item/weapon/chisel/chisel = W
 			work_time *= chisel.time_multiplier
-		playsound(src.loc, pick('sound/combat/hits/onrock/onrock (1).ogg', 'sound/combat/hits/onrock/onrock (2).ogg', 'sound/combat/hits/onrock/onrock (3).ogg', 'sound/combat/hits/onrock/onrock (4).ogg'), 100)
+		playsound(src.loc, pick('modular/kaizoku/sound/combat/hits/onrock/onrock (1).ogg', 'modular/kaizoku/sound/combat/hits/onrock/onrock (2).ogg', 'modular/kaizoku/sound/combat/hits/onrock/onrock (3).ogg', 'modular/kaizoku/sound/combat/hits/onrock/onrock (4).ogg'), 100)
 		user.visible_message("<span class='info'>[user] begins chiseling [src] into blocks.</span>")
 		if(do_after(user, work_time))
 			playsound(src.loc, 'modular/stonekeep/sound/vo/mobs/gnome/scream.ogg', 20)
@@ -389,7 +389,7 @@
 			new /obj/item/natural/stoneblock(get_turf(src.loc))
 			if(prob(50))
 				new /obj/effect/decal/cleanable/debris/stone(get_turf(src))
-			playsound(src.loc, 'sound/foley/smash_rock.ogg', 100)
+			playsound(src.loc, 'modular/kaizoku/sound/foley/smash_rock.ogg', 100)
 			sleep()
 			user.visible_message(span_info("There is a faint cry of agony as the statue is demolished. Must be the wind."))
 			qdel(src)
@@ -397,7 +397,7 @@
 			// user.mind.add_sleep_experience(/datum/skill/craft/masonry, (user.STAINT*0.2))
 		return TRUE
 	if(istype(W, /obj/item/stonetofleshpotion))
-		playsound(src, 'sound/foley/waterenter.ogg', 100, FALSE)
+		playsound(src, 'modular/kaizoku/sound/foley/waterenter.ogg', 100, FALSE)
 		qdel(W)
 		sleep(10)
 		small_shake()
@@ -421,7 +421,7 @@
 		big_shake()
 		sleep(1)
 		big_shake()
-		playsound(get_turf(src), 'sound/foley/break_clay.ogg', 90, TRUE)
+		playsound(get_turf(src), 'modular/kaizoku/sound/foley/break_clay.ogg', 90, TRUE)
 		new /obj/effect/decal/cleanable/debris/stone(get_turf(src))
 		new /mob/living/simple_animal/hostile/insanegnome(get_turf(src))
 		playsound(src.loc, 'modular/stonekeep/sound/vo/mobs/gnome/laugh.ogg', 90)
@@ -459,7 +459,7 @@
 /obj/item/stonetofleshpotion/throw_impact(atom/hit_atom, datum/thrownthing/thrownthing)
 	. = ..()
 	new /obj/effect/decal/cleanable/shreds/clay(get_turf(src))
-	playsound(get_turf(src), 'sound/foley/break_clay.ogg', 90, TRUE)
+	playsound(get_turf(src), 'modular/kaizoku/sound/foley/break_clay.ogg', 90, TRUE)
 	new /obj/effect/decal/cleanable/food/mess(get_turf(src))
 	qdel(src)
 
@@ -807,7 +807,7 @@
 /obj/structure/fluff/psycross/crafted/shrine/malum/fire_act(added, maxstacks)
 	if(refueled)
 		if(!on)
-			playsound(src.loc, 'sound/items/firelight.ogg', 100)
+			playsound(src.loc, 'modular/kaizoku/sound/items/firelight.ogg', 100)
 			soundloop = new /datum/looping_sound/fireloop(src,FALSE)
 			soundloop.start()
 			on = TRUE
@@ -932,7 +932,7 @@
 	beauty = -100
 /obj/effect/decal/cleanable/debris/glassy/Crossed(mob/living/L)
 	. = ..()
-	playsound(loc,'sound/foley/glass_step.ogg', 50, FALSE)
+	playsound(loc,'modular/kaizoku/sound/foley/glass_step.ogg', 50, FALSE)
 
 /obj/effect/decal/cleanable/debris/stony
 	name = "stone chippings"
@@ -960,13 +960,13 @@
 
 /obj/item/kitchen/platter/clay/throw_impact(atom/hit_atom, datum/thrownthing/thrownthing)
 	new /obj/effect/decal/cleanable/debris/clay(get_turf(src))
-	playsound(get_turf(src), 'sound/foley/break_clay.ogg', 90, TRUE)
+	playsound(get_turf(src), 'modular/kaizoku/sound/foley/break_clay.ogg', 90, TRUE)
 	..()
 	qdel(src)
 
 /obj/item/reagent_containers/glass/bowl/clay/throw_impact(atom/hit_atom, datum/thrownthing/thrownthing)
 	new /obj/effect/decal/cleanable/debris/clay(get_turf(src))
-	playsound(get_turf(src), 'sound/foley/break_clay.ogg', 90, TRUE)
+	playsound(get_turf(src), 'modular/kaizoku/sound/foley/break_clay.ogg', 90, TRUE)
 	..()
 	qdel(src)
 
@@ -1214,8 +1214,8 @@
 	icon = 'modular/stonekeep/icons/bear.dmi'
 	alpha = 240
 	max_buckled_mobs = 2
-	attacked_sound = 'sound/foley/cloth_rip.ogg'
-	break_sound = 'sound/foley/cloth_rip.ogg'
+	attacked_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
 	debris = list(/obj/item/natural/fur/mole = 1)
 	pixel_y = -16
 	pixel_x = -16

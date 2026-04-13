@@ -19,12 +19,12 @@
 	dropshrink = 0.8
 	thrown_bclass = BCLASS_CUT
 	w_class = WEIGHT_CLASS_SMALL
-	parrysound = list('sound/combat/parry/bladed/bladedsmall (1).ogg','sound/combat/parry/bladed/bladedsmall (2).ogg','sound/combat/parry/bladed/bladedsmall (3).ogg')
-	swingsound = list('sound/combat/wooshes/bladed/wooshmed (1).ogg','sound/combat/wooshes/bladed/wooshmed (2).ogg','sound/combat/wooshes/bladed/wooshmed (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/bladed/bladedsmall (1).ogg','modular/kaizoku/sound/combat/parry/bladed/bladedsmall (2).ogg','modular/kaizoku/sound/combat/parry/bladed/bladedsmall (3).ogg')
+	swingsound = list('modular/kaizoku/sound/combat/wooshes/bladed/wooshmed (1).ogg','modular/kaizoku/sound/combat/wooshes/bladed/wooshmed (2).ogg','modular/kaizoku/sound/combat/wooshes/bladed/wooshmed (3).ogg')
 	associated_skill = /datum/skill/combat/knives
-	pickup_sound = 'sound/foley/equip/swordsmall2.ogg'
-	equip_sound = 'sound/foley/dropsound/holster_sword.ogg'
-	drop_sound = 'sound/foley/dropsound/blade_drop.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/swordsmall2.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/dropsound/holster_sword.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/blade_drop.ogg'
 	melting_material = /datum/material/iron
 	melt_amount = 50
 	sharpness = IS_SHARP
@@ -115,7 +115,7 @@
 			var/probability = max(0, 50 - (skill_level * 10))
 			if(prob(probability)) // We are dumb and we failed!
 				to_chat(user, span_warning("I ruined some of the materials due to my lack of skill..."))
-				playsound(item, 'sound/foley/cloth_rip.ogg', 50, TRUE)
+				playsound(item, 'modular/kaizoku/sound/foley/cloth_rip.ogg', 50, TRUE)
 				qdel(item)
 				user.adjust_experience(/datum/skill/misc/sewing, (user.STAINT)) // STONEKEEP EDIT
 				// user.mind.add_sleep_experience(/datum/skill/misc/sewing, (user.STAINT)) //Getting exp for failing
@@ -125,7 +125,7 @@
 				var/obj/item/Sr = new item.salvage_result(get_turf(item))
 				Sr.color = item.color
 			user.visible_message(span_notice("[user] salvages [item] into usable materials."))
-			playsound(item, 'sound/items/flint.ogg', 100, TRUE) //In my mind this sound was more fitting for a scissor
+			playsound(item, 'modular/kaizoku/sound/items/flint.ogg', 100, TRUE) //In my mind this sound was more fitting for a scissor
 			qdel(item)
 			user.adjust_experience(/datum/skill/misc/sewing, (user.STAINT)) // STONEKEEP EDIT
 			// user.mind.add_sleep_experience(/datum/skill/misc/sewing, (user.STAINT)) //We're getting experience for salvaging!
@@ -153,8 +153,8 @@
 	experimental_inhand = FALSE
 	experimental_onhip = FALSE
 	experimental_onback = FALSE
-	parrysound = list('sound/combat/parry/bladed/bladedmedium (1).ogg','sound/combat/parry/bladed/bladedmedium (2).ogg','sound/combat/parry/bladed/bladedmedium (3).ogg')
-	swingsound = list('sound/combat/wooshes/bladed/wooshmed (1).ogg','sound/combat/wooshes/bladed/wooshmed (2).ogg','sound/combat/wooshes/bladed/wooshmed (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/bladed/bladedmedium (1).ogg','modular/kaizoku/sound/combat/parry/bladed/bladedmedium (2).ogg','modular/kaizoku/sound/combat/parry/bladed/bladedmedium (3).ogg')
+	swingsound = list('modular/kaizoku/sound/combat/wooshes/bladed/wooshmed (1).ogg','modular/kaizoku/sound/combat/wooshes/bladed/wooshmed (2).ogg','modular/kaizoku/sound/combat/wooshes/bladed/wooshmed (3).ogg')
 	max_integrity = INTEGRITY_POOR
 	slot_flags = ITEM_SLOT_HIP
 	thrown_bclass = BCLASS_CHOP

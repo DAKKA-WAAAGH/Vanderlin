@@ -137,7 +137,7 @@
 
 /obj/item/kaizoku/grenade/smoke_bomb/prime()
 	update_mob()
-	playsound(src, 'sound/items/smokebomb.ogg', 50, TRUE, -3)
+	playsound(src, 'modular/kaizoku/sound/items/smokebomb.ogg', 50, TRUE, -3)
 	var/datum/effect_system/smoke_spread/bad/smoke = new
 	smoke.set_up(4, src)
 	smoke.start()
@@ -168,7 +168,7 @@
 
 /obj/item/kaizoku/grenade/smoke_bomb/poison/prime()
 	update_mob()
-	playsound(src, 'sound/items/smokebomb.ogg', 50, TRUE, -3)
+	playsound(src, 'modular/kaizoku/sound/items/smokebomb.ogg', 50, TRUE, -3)
 	var/datum/effect_system/smoke_spread/bad/stupid/smoke = new
 	smoke.set_up(4, src)
 	smoke.start()
@@ -214,7 +214,7 @@
 		icon_state = active_icon_state
 		lit = TRUE
 		ignited_by = igniter
-		playsound(src.loc, 'sound/items/firelight.ogg', 100)
+		playsound(src.loc, 'modular/kaizoku/sound/items/firelight.ogg', 100)
 		to_chat(src.loc, "<span class='warning'>The [name] starts to fizzle!</span>")
 		if(ismob(src.loc))
 			var/mob/M = src.loc
@@ -226,7 +226,7 @@
 		STOP_PROCESSING(SSfastprocess, src)
 		icon_state = initial_icon_state
 		ignited_by = null
-		playsound(src.loc, 'sound/items/firesnuff.ogg', 100)
+		playsound(src.loc, 'modular/kaizoku/sound/items/firesnuff.ogg', 100)
 		to_chat(src.loc, "<span class='notice'>\The [name] has been snuffed out.</span>")
 		if(ismob(src.loc))
 			var/mob/M = src.loc
@@ -245,12 +245,12 @@
 			if(!skipprob && prob(prob_fail))
 				stop_ignition()
 			else
-				explosion(T, light_impact_range = 2, flame_range = 4, smoke = TRUE, soundin = pick('sound/misc/explode/bottlebomb (1).ogg','sound/misc/explode/bottlebomb (2).ogg'))
+				explosion(T, light_impact_range = 2, flame_range = 4, smoke = TRUE, soundin = pick('modular/kaizoku/sound/misc/explode/bottlebomb (1).ogg','modular/kaizoku/sound/misc/explode/bottlebomb (2).ogg'))
 		else
 			if(prob(prob2fail))
 				stop_ignition()
 			else
-				playsound(T, 'sound/items/firesnuff.ogg', 100)
+				playsound(T, 'modular/kaizoku/sound/items/firesnuff.ogg', 100)
 				new /obj/effect/decal/cleanable/debris/clay(T)
 	qdel(src)
 
@@ -278,13 +278,13 @@
 				if(fuze > 30)
 					fuze = 30
 					to_chat(user, "<span class='warning'>You shorten [src]'s fuse to 3 seconds.</span>")
-					playsound(src.loc, 'sound/items/sharpen_short2.ogg', 100)
+					playsound(src.loc, 'modular/kaizoku/sound/items/sharpen_short2.ogg', 100)
 				else
 					to_chat(user, "<span class='warning'>The fuse is already short enough.</span>")
 			if("Make booby trap (instant)")
 				fuze = 0
 				to_chat(user, "<span class='danger'>You shorten [src]'s fuse, turning it into a booby trap!</span>")
-				playsound(src.loc, 'sound/items/sharpen_short2.ogg', 100)
+				playsound(src.loc, 'modular/kaizoku/sound/items/sharpen_short2.ogg', 100)
 		return
 	if(istype(C, /obj/item/natural/cloth))
 		if(fuze < 50)

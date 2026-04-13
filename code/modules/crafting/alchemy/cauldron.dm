@@ -26,7 +26,7 @@
 
 /obj/machinery/light/fueled/cauldron/Destroy()
 	chem_splash(loc, 2, list(reagents))
-	playsound(src, pick('sound/foley/water_land1.ogg','sound/foley/water_land2.ogg', 'sound/foley/water_land3.ogg'), 100, FALSE)
+	playsound(src, pick('modular/kaizoku/sound/foley/water_land1.ogg','modular/kaizoku/sound/foley/water_land2.ogg', 'modular/kaizoku/sound/foley/water_land3.ogg'), 100, FALSE)
 	lastuser = null
 	selected_recipe = null
 	return ..()
@@ -231,14 +231,14 @@
 						L.adjust_experience(/datum/skill/craft/alchemy, amt2raise * boon, FALSE)
 
 					playsound(src, "bubbles", 100, TRUE)
-					playsound(src, 'sound/misc/smelter_fin.ogg', 30, FALSE)
+					playsound(src, 'modular/kaizoku/sound/misc/smelter_fin.ogg', 30, FALSE)
 					brewing = 21
 					update_appearance(UPDATE_OVERLAYS)
 				else
 					brewing = 0
 					essence_contents = list() // Clear failed recipe
 					src.visible_message(span_info("The essences in the [src] fail to combine properly..."))
-					playsound(src, 'sound/misc/smelter_fin.ogg', 30, FALSE)
+					playsound(src, 'modular/kaizoku/sound/misc/smelter_fin.ogg', 30, FALSE)
 					update_appearance(UPDATE_OVERLAYS)
 
 					// If auto-repeat is on and we failed, try again

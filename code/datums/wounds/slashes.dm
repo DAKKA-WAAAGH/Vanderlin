@@ -86,7 +86,7 @@
 	check_name = "<span class='userdanger'><B>GUTS</B></span>"
 	severity = WOUND_SEVERITY_FATAL
 	crit_message = "%VICTIM spills %P_THEIR organs!"
-	sound_effect = 'sound/combat/crit2.ogg'
+	sound_effect = 'modular/kaizoku/sound/combat/crit2.ogg'
 	whp = 100
 	sewn_whp = 35
 	bleed_rate = 30

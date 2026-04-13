@@ -16,7 +16,7 @@
 /datum/action/cooldown/spell/stone_throw/proc/prepare_stone(atom/target)
 	var/static/list/transforms
 	owner.visible_message(span_boldwarning("[owner] digs into the ground for rocks!"))
-	playsound(owner,'sound/items/dig_shovel.ogg', 100, TRUE)
+	playsound(owner,'modular/kaizoku/sound/items/dig_shovel.ogg', 100, TRUE)
 
 	if(!transforms)
 		var/matrix/M1 = matrix()
@@ -39,7 +39,7 @@
 		return
 
 	owner.visible_message(span_boldwarning("[owner] chucks a huge stone rock!"))
-	playsound(owner, 'sound/combat/shieldraise.ogg', 100)
+	playsound(owner, 'modular/kaizoku/sound/combat/shieldraise.ogg', 100)
 	var/turf/target_turf = get_turf(target)
 	new /obj/effect/temp_visual/target/orcthrow(target_turf)
 

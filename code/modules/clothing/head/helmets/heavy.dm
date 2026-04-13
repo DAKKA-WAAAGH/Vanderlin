@@ -2,7 +2,7 @@
 	name = "helmet template"
 	icon_state = "barbute"
 	flags_inv = HIDEEARS|HIDEFACE
-	equip_sound = 'sound/foley/equip/equip_outlander_plate.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/equip_outlander_plate.ogg'
 	flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 	block2add = FOV_RIGHT|FOV_LEFT
 	equip_delay_self = 3 SECONDS

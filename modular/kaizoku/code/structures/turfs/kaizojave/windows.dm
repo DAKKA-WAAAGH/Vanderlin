@@ -17,9 +17,9 @@
 	CanAtmosPass = ATMOS_PASS_PROC
 	climb_time = 20
 	climb_offset = 10
-	attacked_sound = 'sound/combat/hits/onglass/glasshit.ogg'
+	attacked_sound = 'modular/kaizoku/sound/combat/hits/onglass/glasshit.ogg'
 	break_sound = "glassbreak"
-	destroy_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'
+	destroy_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroywalldoor.ogg'
 	smoothing_groups = SMOOTH_GROUP_KAIZOJAVE_WALL
 	smoothing_list = SMOOTH_GROUP_KAIZOJAVE_WALL
 
@@ -396,7 +396,7 @@
 		return
 
 	if(istype(src, /obj/structure/window/kaizojave/ground))
-		playsound(src, 'sound/foley/glass_step.ogg', 40, FALSE)
+		playsound(src, 'modular/kaizoku/sound/foley/glass_step.ogg', 40, FALSE)
 
 	if(crossing_clears_glass)
 		clear_broken_glass(mover, FALSE)
@@ -477,7 +477,7 @@
 	broken_glass_cleared = TRUE
 	if(manual_cleanup && actor)
 		to_chat(actor, span_notice("I start to push away the shattered glass."))
-		playsound(src, 'sound/foley/glass_step.ogg', 40, FALSE)
+		playsound(src, 'modular/kaizoku/sound/foley/glass_step.ogg', 40, FALSE)
 		var/turf/drop_turf = get_turf(actor)
 		if(!drop_turf)
 			drop_turf = get_turf(src)
@@ -879,8 +879,8 @@
 	integrity_failure = 0.8
 	damage_deflection = 14
 	armor = list("blunt" = 30, "slash" = 28, "stab" = 22, "piercing" = 18, "fire" = 0, "acid" = 0)
-	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
-	break_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroywalldoor.ogg'
 
 /obj/structure/window/kaizojave/solid/Initialize(mapload)
 	. = ..()
@@ -906,8 +906,8 @@
 	integrity_failure = 0.80
 	damage_deflection = 18
 	armor = list("blunt" = 42, "slash" = 40, "stab" = 32, "piercing" = 24, "fire" = 0, "acid" = 0)
-	attacked_sound = list('sound/combat/hits/onrock/onrock (1).ogg','sound/combat/hits/onrock/onrock (2).ogg')
-	break_sound = 'sound/combat/hits/onrock/onrock (3).ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onrock/onrock (1).ogg','modular/kaizoku/sound/combat/hits/onrock/onrock (2).ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onrock/onrock (3).ogg'
 
 /obj/structure/window/kaizojave/solid/iron
 	desc = "A heavy iron-framed opening built upon the wall. Light, protective and somewhat cheap."
@@ -919,8 +919,8 @@
 	integrity_failure = 0.85
 	damage_deflection = 22
 	armor = list("blunt" = 52, "slash" = 48, "stab" = 40, "piercing" = 30, "fire" = 0, "acid" = 0)
-	attacked_sound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg')
-	break_sound = 'sound/combat/parry/shield/metalshield (3).ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/parry/shield/metalshield (1).ogg','modular/kaizoku/sound/combat/parry/shield/metalshield (2).ogg')
+	break_sound = 'modular/kaizoku/sound/combat/parry/shield/metalshield (3).ogg'
 
 /obj/structure/window/kaizojave/solid/steel
 	desc = "Practically impenetrable to conventional weapons, this steel fortification will endure."
@@ -932,8 +932,8 @@
 	integrity_failure = 0.75
 	damage_deflection = 26
 	armor = list("blunt" = 60, "slash" = 55, "stab" = 48, "piercing" = 36, "fire" = 0, "acid" = 0)
-	attacked_sound = list('sound/combat/parry/shield/metalshield (1).ogg','sound/combat/parry/shield/metalshield (2).ogg')
-	break_sound = 'sound/combat/parry/shield/metalshield (3).ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/parry/shield/metalshield (1).ogg','modular/kaizoku/sound/combat/parry/shield/metalshield (2).ogg')
+	break_sound = 'modular/kaizoku/sound/combat/parry/shield/metalshield (3).ogg'
 
 /obj/structure/window/kaizojave/glass
 	name = "window"
@@ -945,7 +945,7 @@
 	shard_projectile_type = /obj/projectile/bullet/glass
 	repair_thresholds = list(/obj/item/natural/glass = 1)
 	broken_repair = /obj/item/natural/glass
-	attacked_sound = 'sound/combat/hits/onglass/glasshit.ogg'
+	attacked_sound = 'modular/kaizoku/sound/combat/hits/onglass/glasshit.ogg'
 	break_sound = "glassbreak"
 
 /obj/structure/window/kaizojave/glass/winblue1

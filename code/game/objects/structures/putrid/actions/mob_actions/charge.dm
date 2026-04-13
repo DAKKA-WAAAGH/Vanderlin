@@ -56,7 +56,7 @@
 
 	sleep(delay)
 
-	playsound(charger, 'sound/misc/meteorimpact.ogg', 100, TRUE, 8, 0.9)
+	playsound(charger, 'modular/kaizoku/sound/misc/meteorimpact.ogg', 100, TRUE, 8, 0.9)
 	var/time_to_hit = min(get_dist(charger, target), charge_distance) * charge_speed
 
 	var/datum/move_loop/new_loop = SSmove_manager.home_onto(charger, target, delay = charge_speed, timeout = time_to_hit, priority = MOVEMENT_ABOVE_SPACE_PRIORITY)
@@ -94,7 +94,7 @@
 
 /datum/action/cooldown/meatvine/personal/charge_attack/proc/on_moved(atom/source)
 	SIGNAL_HANDLER
-	playsound(source, 'sound/misc/meteorimpact.ogg', 200, TRUE, 2, TRUE)
+	playsound(source, 'modular/kaizoku/sound/misc/meteorimpact.ogg', 200, TRUE, 2, TRUE)
 
 /datum/action/cooldown/meatvine/personal/charge_attack/proc/on_bump(atom/movable/source, atom/target)
 	SIGNAL_HANDLER
@@ -130,7 +130,7 @@
 	living_target.visible_message(span_danger("[source] charges into [living_target]!"), span_userdanger("[source] charges into you!"))
 	living_target.Knockdown(0.6 SECONDS)
 	living_target.apply_damage(damage_dealt, BRUTE)
-	playsound(living_target, 'sound/misc/meteorimpact.ogg', 100, TRUE)
+	playsound(living_target, 'modular/kaizoku/sound/misc/meteorimpact.ogg', 100, TRUE)
 	shake_camera(living_target, 4, 3)
 
 /datum/action/cooldown/meatvine/personal/charge_attack/evaluate_ai_score(datum/ai_controller/controller)

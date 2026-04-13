@@ -14,7 +14,7 @@
 
 	// Create dramatic effect
 	boss.visible_message("<span class='warning'>[boss] calls forth the power of the depths! The water around you trembles with ancient power!</span>")
-	playsound(boss, 'sound/misc/explode/explosion.ogg', 100, TRUE)
+	playsound(boss, 'modular/kaizoku/sound/misc/explode/explosion.ogg', 100, TRUE)
 	new /obj/effect/temp_visual/cult/sparks(get_turf(boss))
 
 	// Buff all existing minions

@@ -81,7 +81,7 @@
 		span_userdanger("Your [chosen] catastrophically fails and explodes!")
 	)
 
-	playsound(H, 'sound/misc/explode/explosion.ogg', 75, TRUE)
+	playsound(H, 'modular/kaizoku/sound/misc/explode/explosion.ogg', 75, TRUE)
 	var/datum/effect_system/spark_spread/S = new()
 	S.set_up(3, 1, H.loc)
 	S.start()
@@ -95,7 +95,7 @@
 		span_userdanger("CRITICAL FAILURE - SYSTEM MELTDOWN!")
 	)
 
-	playsound(H, 'sound/misc/explode/explosion.ogg', 100, TRUE)
+	playsound(H, 'modular/kaizoku/sound/misc/explode/explosion.ogg', 100, TRUE)
 
 	for(var/obj/item/bodypart/BP in H.bodyparts)
 		if(BP.body_zone != BODY_ZONE_CHEST && BP.body_zone != BODY_ZONE_HEAD)

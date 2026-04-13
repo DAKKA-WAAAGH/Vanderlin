@@ -540,7 +540,7 @@
 		embedder.add_mob_blood(owner)
 		if(!silent)
 			owner.emote("embed")
-			playsound(owner, 'sound/combat/newstuck.ogg', 100, vary = TRUE)
+			playsound(owner, 'modular/kaizoku/sound/combat/newstuck.ogg', 100, vary = TRUE)
 		if(crit_message)
 			owner.next_attack_msg += " <span class='userdanger'>[embedder] runs through [owner]'s [src.name]!</span>"
 		if(can_be_disabled)

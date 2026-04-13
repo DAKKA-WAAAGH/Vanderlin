@@ -5,7 +5,7 @@
 
 	outfit = /datum/outfit/bandit/sellsword
 	category_tags = list(CTAG_BANDIT)
-	cmode_music = 'sound/music/cmode/antag/combat_bandit2.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/antag/combat_bandit2.ogg'
 
 	jobstats = list(
 		STATKEY_STR = 2,

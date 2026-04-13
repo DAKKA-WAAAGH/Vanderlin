@@ -153,7 +153,7 @@ datum/migrant_role/inquisitor
 	H.change_stat(STATKEY_CON, 1)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_STEELHEARTED, TRAIT_GENERIC)
-	H.cmode_music = 'sound/music/cmode/church/combat_templar.ogg'
+	H.cmode_music = 'modular/kaizoku/sound/music/cmode/church/combat_templar.ogg'
 	H.mind.teach_crafting_recipe(/datum/blueprint_recipe/confessional)
 	if(!H.has_language(/datum/language/oldpsydonic))
 		H.grant_language(/datum/language/oldpsydonic)

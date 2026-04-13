@@ -139,7 +139,7 @@
 
 	if(!success)
 		shake_camera(user, 1, 1)
-		playsound(src, 'sound/items/bsmithfail.ogg', 100, FALSE)
+		playsound(src, 'modular/kaizoku/sound/items/bsmithfail.ogg', 100, FALSE)
 
 	if(success)
 		var/skill_boost = 0

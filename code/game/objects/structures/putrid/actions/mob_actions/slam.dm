@@ -43,7 +43,7 @@
 		span_boldnotice("You slam the ground!")
 	)
 
-	playsound(epicenter, 'sound/misc/meteorimpact.ogg', 80, TRUE)
+	playsound(epicenter, 'modular/kaizoku/sound/misc/meteorimpact.ogg', 80, TRUE)
 	playsound(epicenter, 'sound/blank.ogg', 50, TRUE)
 	shake_camera(user, 3, 3)
 
@@ -97,7 +97,7 @@
 
 	shake_camera(victim, 5, 4)
 
-	//playsound(victim, 'sound/effects/splat.ogg', 50, TRUE)
+	//playsound(victim, 'modular/kaizoku/sound/effects/splat.ogg', 50, TRUE)
 
 /datum/action/cooldown/meatvine/personal/ground_slam/proc/apply_shockwave(mob/living/target, mob/living/user, turf/target_turf, turf/epicenter)
 	var/distance = get_dist(target_turf, epicenter)

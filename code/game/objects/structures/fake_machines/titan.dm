@@ -74,8 +74,8 @@ GLOBAL_LIST_EMPTY(roundstart_court_agents)
 		old_crown.anti_stall()
 
 	say("The crown is summoned!")
-	playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
-	playsound(src, 'sound/misc/hiss.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/hiss.ogg', 100, FALSE, -1)
 	src.visible_message(span_warning("Ashes circle around the THROAT and the crown rematerialises!"))
 	return new /obj/item/clothing/head/crown/serpcrown(src.loc)
 
@@ -86,8 +86,8 @@ GLOBAL_LIST_EMPTY(roundstart_court_agents)
 		old_master_key.anti_stall()
 
 	say("The key is summoned!")
-	playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
-	playsound(src, 'sound/misc/hiss.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/hiss.ogg', 100, FALSE, -1)
 	src.visible_message(span_warning("The key flies around the THROAT and gently falls down!"))
 
 	return new /obj/item/key/lord
@@ -99,7 +99,7 @@ GLOBAL_LIST_EMPTY(roundstart_court_agents)
 /obj/structure/fake_machine/titan/proc/is_valid_mob(mob/living/carbon/human/checked_mob)
 	if(!istype(checked_mob))
 		say("Get off me vile creature!")
-		playsound(src, 'sound/misc/machineno.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machineno.ogg', 100, FALSE, -1)
 		return FALSE
 	return TRUE
 
@@ -107,7 +107,7 @@ GLOBAL_LIST_EMPTY(roundstart_court_agents)
 /obj/structure/fake_machine/titan/proc/is_worthy(mob/living/carbon/human/checked_mob)
 	if(!(SSticker.rulermob == checked_mob || SSticker.regent_mob == checked_mob))
 		say("You are not worthy!")
-		playsound(src, 'sound/misc/machineno.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machineno.ogg', 100, FALSE, -1)
 		return FALSE
 	return TRUE
 
@@ -115,7 +115,7 @@ GLOBAL_LIST_EMPTY(roundstart_court_agents)
 /obj/structure/fake_machine/titan/proc/has_crown(mob/living/carbon/human/checked_mob)
 	if(!checked_mob.head || !istype(checked_mob.head, /obj/item/clothing/head/crown/serpcrown))
 		say("You need the crown!")
-		playsound(src, 'sound/misc/machineno.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machineno.ogg', 100, FALSE, -1)
 		return FALSE
 	return TRUE
 
@@ -123,7 +123,7 @@ GLOBAL_LIST_EMPTY(roundstart_court_agents)
 /obj/structure/fake_machine/titan/proc/check_cooldown(mob/living/carbon/human/user)
 	if(!SScommunications.can_announce(user))
 		say("I must gather my strength!")
-		playsound(src, 'sound/misc/machineno.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machineno.ogg', 100, FALSE, -1)
 		return FALSE
 	return TRUE
 
@@ -161,27 +161,27 @@ GLOBAL_LIST_EMPTY(roundstart_court_agents)
 	// message is already sanitized
 	if(findtext(message, "make announcement") && perform_check(user, FALSE))
 		say("All will hear your word.")
-		playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 		switch_mode(MODE_MAKE_ANNOUNCEMENT)
 		return
 	if(findtext(message, "make decree") && perform_check(user))
 		say("Speak and they will obey.")
-		playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 		switch_mode(MODE_MAKE_DECREE)
 		return
 	if(findtext(message, "make law") && perform_check(user))
 		say("Speak and they will obey.")
-		playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 		switch_mode(MODE_MAKE_LAW)
 		return
 	if(findtext(message, "declare outlaw") && perform_check(user))
 		say("Who should be outlawed?")
-		playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 		switch_mode(MODE_DECLARE_OUTLAW)
 		return
 	if(findtext(message, "pardon outlaw") && perform_check(user))
 		say("Who should be pardoned?")
-		playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 		switch_mode(MODE_PARDON_OUTLAW)
 		return
 	if(findtext(message, "help") && is_valid_mob(user))
@@ -221,7 +221,7 @@ GLOBAL_LIST_EMPTY(roundstart_court_agents)
 /obj/structure/fake_machine/titan/proc/help()
 	var/commands = get_commands()
 	say("My commands are: [commands]")
-	playsound(src, 'sound/misc/machinelong.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/machinelong.ogg', 100, FALSE, -1)
 
 /// Tries summoning the crown to the user's hand
 /obj/structure/fake_machine/titan/proc/summon_crown(mob/living/carbon/human/user)
@@ -237,11 +237,11 @@ GLOBAL_LIST_EMPTY(roundstart_court_agents)
 		if(crown_holder.stat != DEAD)
 			if(crown in crown_holder.held_items)
 				say("[crown_holder.real_name] holds the crown!")
-				playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+				playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 				return
 			if(crown_holder.head == crown)
 				say("[crown_holder.real_name] wears the crown!")
-				playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+				playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 				return
 		else
 			crown_holder.dropItemToGround(crown, TRUE) //If you're dead, forcedrop it, then kill it for the kool message..
@@ -262,7 +262,7 @@ GLOBAL_LIST_EMPTY(roundstart_court_agents)
 		var/mob/living/carbon/human/key_holder = master_key.loc
 		if(key_holder.stat != DEAD)
 			say("[key_holder.real_name] holds the key!")
-			playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 			return
 		else
 			key_holder.dropItemToGround(master_key, TRUE) //If you're dead, forcedrop it, then move it.
@@ -304,10 +304,10 @@ GLOBAL_LIST_EMPTY(roundstart_court_agents)
 		reset_mode()
 		return FALSE
 	say("That decree shall be gone!")
-	playsound(src, 'sound/misc/machineyes.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/machineyes.ogg', 100, FALSE, -1)
 	var/decree_text = GLOB.lord_decrees[decree_index]
 	GLOB.lord_decrees -= decree_text
-	priority_announce("[decree_index]. [decree_text]", "A DECREE IS ABOLISHED", 'sound/misc/lawdeclaration.ogg', "Captain")
+	priority_announce("[decree_index]. [decree_text]", "A DECREE IS ABOLISHED", 'modular/kaizoku/sound/misc/lawdeclaration.ogg', "Captain")
 	reset_mode()
 	return TRUE
 
@@ -316,7 +316,7 @@ GLOBAL_LIST_EMPTY(roundstart_court_agents)
 		return
 	GLOB.laws_of_the_land += message
 	record_round_statistic(STATS_LAWS_AND_DECREES_MADE)
-	priority_announce("[length(GLOB.laws_of_the_land)]. [message]", "A LAW IS DECLARED", 'sound/misc/lawdeclaration.ogg', "Captain")
+	priority_announce("[length(GLOB.laws_of_the_land)]. [message]", "A LAW IS DECLARED", 'modular/kaizoku/sound/misc/lawdeclaration.ogg', "Captain")
 	reset_mode()
 
 /// Removes a law
@@ -328,25 +328,25 @@ GLOBAL_LIST_EMPTY(roundstart_court_agents)
 		reset_mode()
 		return FALSE
 	say("That law shall be gone!")
-	playsound(src, 'sound/misc/machineyes.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/machineyes.ogg', 100, FALSE, -1)
 	var/law_text = GLOB.laws_of_the_land[law_index]
 	GLOB.laws_of_the_land -= law_text
-	priority_announce("[law_index]. [law_text]", "A LAW IS ABOLISHED", 'sound/misc/lawdeclaration.ogg', "Captain")
+	priority_announce("[law_index]. [law_text]", "A LAW IS ABOLISHED", 'modular/kaizoku/sound/misc/lawdeclaration.ogg', "Captain")
 	reset_mode()
 	return TRUE
 
 /// Removes all laws
 /obj/structure/fake_machine/titan/proc/purge_laws()
 	say("All laws shall be purged!")
-	playsound(src, 'sound/misc/machineyes.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/machineyes.ogg', 100, FALSE, -1)
 	GLOB.laws_of_the_land = list()
-	priority_announce("All laws of the land have been purged!", "LAWS PURGED", 'sound/misc/lawspurged.ogg', "Captain")
+	priority_announce("All laws of the land have been purged!", "LAWS PURGED", 'modular/kaizoku/sound/misc/lawspurged.ogg', "Captain")
 
 /// Declares someone an outlaw
 /obj/structure/fake_machine/titan/proc/declare_outlaw(mob/living/carbon/human/user, message)
 	if(message in GLOB.outlawed_players)
 		say("That person is already an outlaw!")
-		playsound(src, 'sound/misc/machineno.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machineno.ogg', 100, FALSE, -1)
 		reset_mode()
 		return FALSE
 	var/found = FALSE
@@ -355,12 +355,12 @@ GLOBAL_LIST_EMPTY(roundstart_court_agents)
 			found = TRUE
 		if(to_be_outlawed.job == "Faceless One")
 			say("Who? That person doesn't exist!")
-			playsound(src, 'sound/misc/machineno.ogg', 100, FALSE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machineno.ogg', 100, FALSE, -1)
 			reset_mode()
 			return FALSE
 	if(!found)
 		say("That person doesn't exist!")
-		playsound(src, 'sound/misc/machineno.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machineno.ogg', 100, FALSE, -1)
 		reset_mode()
 		return FALSE
 	GLOB.outlawed_players |= message
@@ -377,7 +377,7 @@ GLOBAL_LIST_EMPTY(roundstart_court_agents)
 		return TRUE
 	else
 		say("That person is not an outlaw!")
-		playsound(src, 'sound/misc/machineno.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machineno.ogg', 100, FALSE, -1)
 		reset_mode()
 		return FALSE
 
@@ -406,19 +406,19 @@ GLOBAL_LIST_EMPTY(roundstart_court_agents)
 		return
 	var/list/mob/possible_mobs = orange(2, src)
 	if(!possible_mobs)
-		playsound(src, 'sound/misc/machineno.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machineno.ogg', 100, FALSE, -1)
 		say("No one around!")
 		return
 
 	say("Who should change their post?")
-	playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 
 	var/mob/victim = input(user, "Who should change their post?", src, null) as null|mob in possible_mobs - user
 	if(isnull(victim) || !Adjacent(user))
 		return
 
 	say("Select their new position.")
-	playsound(src, 'sound/misc/machinetalk.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/machinetalk.ogg', 100, FALSE, -1)
 	var/list/possible_positions = list()
 	possible_positions += GLOB.noble_positions
 	possible_positions += GLOB.garrison_positions
@@ -452,7 +452,7 @@ GLOBAL_LIST_EMPTY(roundstart_court_agents)
 /obj/structure/fake_machine/titan/proc/appoint_regent(mob/living/carbon/human/user)
 	if(user != SSticker.rulermob)
 		say("You are not the true ruler!")
-		playsound(src, 'sound/misc/machineno.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machineno.ogg', 100, FALSE, -1)
 		return FALSE
 	if(SSticker.regent_mob)
 		var/mob/living/carbon/human/regent = SSticker.regent_mob
@@ -460,7 +460,7 @@ GLOBAL_LIST_EMPTY(roundstart_court_agents)
 		return TRUE
 	var/list/mob/living/carbon/possible_mobs = orange(2, src)
 	if(!possible_mobs)
-		playsound(src, 'sound/misc/machineno.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/machineno.ogg', 100, FALSE, -1)
 		say("No one around!")
 		return
 	var/mob/living/carbon/new_regent = input(user, "Who will rule when you sleep?", src, null) as null|mob in possible_mobs - user

@@ -286,7 +286,7 @@ GLOBAL_LIST_INIT(stone_personality_descs, list(
 	if(. == SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN)
 		return
 	if(istype(weapon, /obj/item/natural/stone))
-		playsound(src, pick('sound/items/stonestone.ogg'), 100)
+		playsound(src, pick('modular/kaizoku/sound/items/stonestone.ogg'), 100)
 		if(prob(10))
 			user.visible_message(span_info("[user] strikes the stones together."))
 			var/datum/effect_system/spark_spread/S = new()
@@ -306,7 +306,7 @@ GLOBAL_LIST_INIT(stone_personality_descs, list(
 		if(istype(W, /obj/item/weapon/chisel))
 			var/obj/item/weapon/chisel/chisel = W
 			work_time *= chisel.time_multiplier
-		playsound(src, pick('sound/combat/hits/onrock/onrock (1).ogg', 'sound/combat/hits/onrock/onrock (2).ogg', 'sound/combat/hits/onrock/onrock (3).ogg', 'sound/combat/hits/onrock/onrock (4).ogg'), 100)
+		playsound(src, pick('modular/kaizoku/sound/combat/hits/onrock/onrock (1).ogg', 'modular/kaizoku/sound/combat/hits/onrock/onrock (2).ogg', 'modular/kaizoku/sound/combat/hits/onrock/onrock (3).ogg', 'modular/kaizoku/sound/combat/hits/onrock/onrock (4).ogg'), 100)
 		user.visible_message("<span class='info'>[user] begins chiseling [src] into blocks.</span>")
 		var/stone_amount = rand(1, max(round(skill_level)/2, 1))
 		if(do_after(user, work_time))
@@ -314,7 +314,7 @@ GLOBAL_LIST_INIT(stone_personality_descs, list(
 				new /obj/item/natural/stoneblock(get_turf(src.loc))
 			if(prob(10))
 				new /obj/effect/decal/cleanable/debris/stone(get_turf(src))
-			playsound(src, 'sound/foley/smash_rock.ogg', 100)
+			playsound(src, 'modular/kaizoku/sound/foley/smash_rock.ogg', 100)
 			qdel(src)
 			user.adjust_experience(/datum/skill/craft/masonry, (user.STAINT*0.2)) // STONEKEEP EDIT
 			// user.mind.add_sleep_experience(/datum/skill/craft/masonry, (user.STAINT*0.2))
@@ -338,8 +338,8 @@ GLOBAL_LIST_INIT(stone_personality_descs, list(
 	var/mineralAmt = 1
 	blade_dulling = DULLING_BASH
 	max_integrity = 50
-	destroy_sound = 'sound/foley/smash_rock.ogg'
-	attacked_sound = 'sound/foley/hit_rock.ogg'
+	destroy_sound = 'modular/kaizoku/sound/foley/smash_rock.ogg'
+	attacked_sound = 'modular/kaizoku/sound/foley/hit_rock.ogg'
 
 /obj/item/natural/rock/apply_components()
 	AddComponent(/datum/component/two_handed, require_twohands=TRUE)
@@ -393,7 +393,7 @@ GLOBAL_LIST_INIT(stone_personality_descs, list(
 		return
 	user.changeNext_move(CLICK_CD_MELEE)
 	if(istype(weapon, /obj/item/natural/stone))
-		playsound(src, 'sound/items/stonestone.ogg', 100)
+		playsound(src, 'modular/kaizoku/sound/items/stonestone.ogg', 100)
 		if(prob(35))
 			user.visible_message(span_info("[user] strikes the stone against the rock.</span>"))
 			var/datum/effect_system/spark_spread/S = new()
@@ -403,7 +403,7 @@ GLOBAL_LIST_INIT(stone_personality_descs, list(
 		user.changeNext_move(CLICK_CD_FAST)
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 	if(istype(weapon, /obj/item/natural/rock))
-		playsound(src, pick('sound/items/stonestone.ogg'), 100)
+		playsound(src, pick('modular/kaizoku/sound/items/stonestone.ogg'), 100)
 		if(prob(10))
 			user.visible_message(span_info("[user] strikes the rocks together."))
 			var/datum/effect_system/spark_spread/S = new()
@@ -422,7 +422,7 @@ GLOBAL_LIST_INIT(stone_personality_descs, list(
 		if(istype(W, /obj/item/weapon/chisel))
 			var/obj/item/weapon/chisel/chisel = W
 			work_time *= chisel.time_multiplier
-		playsound(src, pick('sound/combat/hits/onrock/onrock (1).ogg', 'sound/combat/hits/onrock/onrock (2).ogg', 'sound/combat/hits/onrock/onrock (3).ogg', 'sound/combat/hits/onrock/onrock (4).ogg'), 100)
+		playsound(src, pick('modular/kaizoku/sound/combat/hits/onrock/onrock (1).ogg', 'modular/kaizoku/sound/combat/hits/onrock/onrock (2).ogg', 'modular/kaizoku/sound/combat/hits/onrock/onrock (3).ogg', 'modular/kaizoku/sound/combat/hits/onrock/onrock (4).ogg'), 100)
 		user.visible_message("<span class='info'>[user] begins chiseling a part of [src] off.</span>")
 		if(do_after(user, work_time))
 			new /obj/item/natural/stoneblock(get_turf(src.loc))
@@ -487,8 +487,8 @@ GLOBAL_LIST_INIT(stone_personality_descs, list(
 	righthand_file = 'icons/roguetown/onmob/righthand.dmi'
 	item_state = "block"
 	experimental_inhand = FALSE
-	drop_sound = 'sound/combat/hits/onstone/wallhit.ogg'
-	hitsound = 'sound/combat/hits/onstone/wallhit.ogg'
+	drop_sound = 'modular/kaizoku/sound/combat/hits/onstone/wallhit.ogg'
+	hitsound = 'modular/kaizoku/sound/combat/hits/onstone/wallhit.ogg'
 	possible_item_intents = list(INTENT_GENERIC)
 	force = 10
 	throwforce = 18 //brick is valid weapon
@@ -510,8 +510,8 @@ GLOBAL_LIST_INIT(stone_personality_descs, list(
 	grid_height = 64
 	base_width = 64
 	base_height = 64
-	drop_sound = 'sound/combat/hits/onstone/wallhit.ogg'
-	pickup_sound = 'sound/combat/hits/onstone/wallhit.ogg'
+	drop_sound = 'modular/kaizoku/sound/combat/hits/onstone/wallhit.ogg'
+	pickup_sound = 'modular/kaizoku/sound/combat/hits/onstone/wallhit.ogg'
 	possible_item_intents = list(/datum/intent/use)
 	force = 2
 	throwforce = 0	// useless for throwing unless solo
