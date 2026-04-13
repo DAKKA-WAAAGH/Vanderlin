@@ -9,6 +9,10 @@ excluded_dirs = [
     "_maps/map_files/kaizoku/stonehamlet",
 ]
 
+excluded_files = {
+    "_maps/map_files/vanderlin/vanderlin_bog.dmm",
+}
+
 generated = "_maps/templates.dm"
 
 template_filenames = []
@@ -22,6 +26,9 @@ def find_dm(path):
         for name in filenames:
             if name.endswith(".dmm") and "backup" not in name.lower():
                 s = os.path.join(dirpath, name)
+                normalized_file = s.replace("\\", "/")
+                if normalized_file in excluded_files:
+                    continue
                 s = s.replace("_maps/","")
                 L.append(s)
     return L
