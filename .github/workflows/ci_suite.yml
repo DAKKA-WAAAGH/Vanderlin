@@ -173,6 +173,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
       - name: Setup database
+        if: ${{ matrix.map != '__no_maps__' }}
         run: |
           sudo systemctl start mysql
           mysql -u root -proot -e 'CREATE DATABASE tg_ci;'
@@ -180,20 +181,23 @@ jobs:
           mysql -u root -proot -e 'CREATE DATABASE tg_ci_prefixed;'
           mysql -u root -proot tg_ci_prefixed < SQL/tgstation_schema_prefixed.sql
       - name: Install rust-g
+        if: ${{ matrix.map != '__no_maps__' }}
         run: |
           bash tools/ci/install_rust_g.sh
       - name: Restore BYOND from cache
+        if: ${{ matrix.map != '__no_maps__' }}
         uses: ./.github/actions/restore_or_install_byond
+      - name: No integration maps selected
+        if: ${{ matrix.map == '__no_maps__' }}
+        run: echo "No maps selected for integration tests (all excluded_from_ci=true)."
       - name: Compile and run tests
+        if: ${{ matrix.map != '__no_maps__' }}
         run: |
-          if [ "${{ matrix.map }}" = "__no_maps__" ]; then
-            echo "No maps selected for integration tests (all excluded_from_ci=true)."
-            exit 0
-          fi
           source $HOME/BYOND/byond/bin/byondsetup
           DreamMaker -DCIBUILDING vanderlin.dme
           bash tools/ci/run_server.sh ${{ matrix.map }}
       - name: Check client Compatibility
+        if: ${{ matrix.map != '__no_maps__' }}
         uses: tgstation/byond-client-compatibility-check@v3
         with:
           dmb-location: vanderlin.dmb
