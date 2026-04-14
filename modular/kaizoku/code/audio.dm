@@ -8,14 +8,14 @@
 	lefthand_file = 'modular/kaizoku/icons/misc/lefthand_music.dmi'
 	righthand_file = 'modular/kaizoku/icons/misc/righthand_music.dmi'
 	song_list = list(
-	"Cursed Apple" = 'sound/instruments/shamisen1.ogg', //Credit; "Bad Apple by しゃみお - Shamisen player Shamio"
-	"Fire Dance" = 'sound/instruments/shamisen2.ogg', //Credit; "Fire Dance by しゃみお - Shamisen player Shamio"
-	"Lute" = 'sound/instruments/shamisen3.ogg', //Credit; "Lute (shamisen) by Museum of Fine Arts, Boston"
-	"Tsugaru Ripple" = 'sound/instruments/shamisen4.ogg', //Credit; "Tsugaru Shamisen (using Ripple) by Shamisen Komatsuya"
-	"Tsugaru" = 'sound/instruments/shamisen5.ogg', //Credit; "Tsugaru Shamisen by Roger Walch"
-	"Season" = 'sound/instruments/shamisen6.ogg', //Credit; "相棒 Season 遊郭編しゃみお - Shamisen player Shamio"
-	"Parade" = 'sound/instruments/shamisen7.ogg', //Credit; "「雨天PARADE」三味線オリジナル曲 - しゃみお - Shamisen player Shamio"
-	"Koshiro" = 'sound/instruments/shamisen8.ogg' //Credit; “KOSHIRO” -幸四郎- by SENZO"
+	"Cursed Apple" = 'modular/kaizoku/sound/instruments/shamisen1.ogg', //Credit; "Bad Apple by しゃみお - Shamisen player Shamio"
+	"Fire Dance" = 'modular/kaizoku/sound/instruments/shamisen2.ogg', //Credit; "Fire Dance by しゃみお - Shamisen player Shamio"
+	"Lute" = 'modular/kaizoku/sound/instruments/shamisen3.ogg', //Credit; "Lute (shamisen) by Museum of Fine Arts, Boston"
+	"Tsugaru Ripple" = 'modular/kaizoku/sound/instruments/shamisen4.ogg', //Credit; "Tsugaru Shamisen (using Ripple) by Shamisen Komatsuya"
+	"Tsugaru" = 'modular/kaizoku/sound/instruments/shamisen5.ogg', //Credit; "Tsugaru Shamisen by Roger Walch"
+	"Season" = 'modular/kaizoku/sound/instruments/shamisen6.ogg', //Credit; "相棒 Season 遊郭編しゃみお - Shamisen player Shamio"
+	"Parade" = 'modular/kaizoku/sound/instruments/shamisen7.ogg', //Credit; "「雨天PARADE」三味線オリジナル曲 - しゃみお - Shamisen player Shamio"
+	"Koshiro" = 'modular/kaizoku/sound/instruments/shamisen8.ogg' //Credit; “KOSHIRO” -幸四郎- by SENZO"
 	)
 
 // =================================================================
@@ -252,7 +252,7 @@
 				else
 					used = list('modular/kaizoku/sound/vo/male_abyssariad/throatsing1.ogg','modular/kaizoku/sound/vo/male_abyssariad/mthroatsing1.ogg','modular/kaizoku/sound/vo/male_abyssariad/mthroatsing2.ogg','modular/kaizoku/sound/vo/male_abyssariad/mthroatsing3.ogg','modular/kaizoku/sound/vo/male_abyssariad/mthroatsing4.ogg','modular/kaizoku/sound/vo/male_abyssariad/mthroatsing5.ogg')
 			if("birdcall")
-				used = list('sound/vo/general/tengucall1.ogg','sound/vo/general/tengucall2.ogg','sound/vo/general/tengucall3.ogg','sound/vo/general/tengucall4.ogg','sound/vo/general/tengucall5.ogg','sound/vo/general/tengucall5.ogg','sound/vo/general/tengucall6.ogg','sound/vo/general/tengucall7.ogg','sound/vo/general/tengucall8.ogg','sound/vo/general/tengucall9.ogg','sound/vo/general/tengucall10.ogg','sound/vo/general/tengucall12.ogg','sound/vo/general/tengucall13.ogg','sound/vo/general/tengucall14.ogg','sound/vo/general/brazilianmeme.ogg')
+				used = list('modular/kaizoku/sound/vo/general/tengucall1.ogg','modular/kaizoku/sound/vo/general/tengucall2.ogg','modular/kaizoku/sound/vo/general/tengucall3.ogg','modular/kaizoku/sound/vo/general/tengucall4.ogg','modular/kaizoku/sound/vo/general/tengucall5.ogg','modular/kaizoku/sound/vo/general/tengucall5.ogg','modular/kaizoku/sound/vo/general/tengucall6.ogg','modular/kaizoku/sound/vo/general/tengucall7.ogg','modular/kaizoku/sound/vo/general/tengucall8.ogg','modular/kaizoku/sound/vo/general/tengucall9.ogg','modular/kaizoku/sound/vo/general/tengucall10.ogg','modular/kaizoku/sound/vo/general/tengucall12.ogg','modular/kaizoku/sound/vo/general/tengucall13.ogg','modular/kaizoku/sound/vo/general/tengucall14.ogg','modular/kaizoku/sound/vo/general/brazilianmeme.ogg')
 
 	if(!used)
 		used = ..(soundin)
@@ -469,7 +469,7 @@
 			if("moan")
 				used = list('modular/kaizoku/sound/vo/female_abyssariad/moan1.ogg','modular/kaizoku/sound/vo/female_abyssariad/moan2.ogg','modular/kaizoku/sound/vo/female_abyssariad/moan4.ogg','modular/kaizoku/sound/vo/female_abyssariad/moan5.ogg')
 			if("birdcall")
-				used = list('sound/vo/general/tengucall1.ogg','sound/vo/general/tengucall2.ogg','sound/vo/general/tengucall3.ogg','sound/vo/general/tengucall4.ogg','sound/vo/general/tengucall5.ogg','sound/vo/general/tengucall5.ogg','sound/vo/general/tengucall6.ogg','sound/vo/general/tengucall7.ogg','sound/vo/general/tengucall8.ogg','sound/vo/general/tengucall9.ogg','sound/vo/general/tengucall10.ogg','sound/vo/general/tengucall12.ogg','sound/vo/general/tengucall13.ogg','sound/vo/general/tengucall14.ogg','sound/vo/general/brazilianmeme.ogg')
+				used = list('modular/kaizoku/sound/vo/general/tengucall1.ogg','modular/kaizoku/sound/vo/general/tengucall2.ogg','modular/kaizoku/sound/vo/general/tengucall3.ogg','modular/kaizoku/sound/vo/general/tengucall4.ogg','modular/kaizoku/sound/vo/general/tengucall5.ogg','modular/kaizoku/sound/vo/general/tengucall5.ogg','modular/kaizoku/sound/vo/general/tengucall6.ogg','modular/kaizoku/sound/vo/general/tengucall7.ogg','modular/kaizoku/sound/vo/general/tengucall8.ogg','modular/kaizoku/sound/vo/general/tengucall9.ogg','modular/kaizoku/sound/vo/general/tengucall10.ogg','modular/kaizoku/sound/vo/general/tengucall12.ogg','modular/kaizoku/sound/vo/general/tengucall13.ogg','modular/kaizoku/sound/vo/general/tengucall14.ogg','modular/kaizoku/sound/vo/general/brazilianmeme.ogg')
 	if(!used) //we haven't found a racial specific sound so use generic
 		used = ..(soundin)
 	return used
