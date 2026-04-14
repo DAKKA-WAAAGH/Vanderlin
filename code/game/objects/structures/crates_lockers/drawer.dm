@@ -6,8 +6,8 @@
 	icon_state = "drawer5"
 	base_icon_state = "drawer5"
 	drag_slowdown = 2
-	open_sound = 'sound/misc/chestopen.ogg'
-	close_sound = 'sound/misc/chestclose.ogg'
+	open_sound = 'modular/kaizoku/sound/misc/chestopen.ogg'
+	close_sound = 'modular/kaizoku/sound/misc/chestclose.ogg'
 	sellprice = 1
 	max_integrity = 50
 	blade_dulling = DULLING_BASHCHOP

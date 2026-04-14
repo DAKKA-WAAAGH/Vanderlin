@@ -14,7 +14,7 @@
 	total_positions = 1
 	roll_chance = 25
 	category_tags = list(CTAG_ADVENTURER)
-	cmode_music = 'sound/music/cmode/adventurer/CombatOutlander3.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander3.ogg'
 
 	skills = list(
 		/datum/skill/combat/knives = 4,

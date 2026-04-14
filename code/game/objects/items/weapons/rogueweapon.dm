@@ -13,8 +13,8 @@
 	sellprice = 1
 	has_inspect_verb = TRUE
 	pickup_sound = "rustle" // Sound list define strings are in code/game/sound.dm
-	parrysound = list('sound/combat/parry/parrygen.ogg')
-	drop_sound = 'sound/foley/dropsound/mace_drop.ogg'
+	parrysound = list('modular/kaizoku/sound/combat/parry/parrygen.ogg')
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/mace_drop.ogg'
 	anvilrepair = /datum/skill/craft/weaponsmithing
 	obj_flags = CAN_BE_HIT
 	blade_dulling = DULLING_BASH

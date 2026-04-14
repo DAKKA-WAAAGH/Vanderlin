@@ -119,7 +119,7 @@
 	if (world.time < spark_cd + sparkspeed)
 		return FALSE
 	spark_cd = world.time
-	playsound(owner, 'sound/foley/finger-snap.ogg', 100, FALSE)
+	playsound(owner, 'modular/kaizoku/sound/foley/finger-snap.ogg', 100, FALSE)
 	owner.visible_message(span_notice("[owner] snaps [owner.p_their()] fingers, producing a spark!"), span_notice("I will forth a tiny spark with a snap of my fingers."))
 	flick("flintstrike", src)
 

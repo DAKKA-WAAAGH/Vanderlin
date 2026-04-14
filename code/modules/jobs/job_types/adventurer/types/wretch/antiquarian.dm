@@ -7,7 +7,7 @@
 	allowed_races = RACES_PLAYER_ALL
 	outfit = /datum/outfit/wretch/antiquarian
 	total_positions = 10
-	cmode_music = 'sound/music/cmode/adventurer/CombatDream.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatDream.ogg'
 
 // The idea is that they're a slippery bastard. Cantrip focused, stealth-focused. They rely on their spells.
 	languages = list(/datum/language/thievescant)

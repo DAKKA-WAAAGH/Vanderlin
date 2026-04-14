@@ -11,7 +11,7 @@
 	output = /obj/item/reagent_containers/food/snacks/foodbase/biscuit_raw
 	required_table = TRUE
 	craft_time = 6 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	crafting_message = "start adding berries to the dough"
 	extra_chance = 100
 
@@ -53,7 +53,7 @@
 	output = /obj/item/reagent_containers/food/snacks/foodbase/cheesebun_raw
 	required_table = TRUE
 	craft_time = 5 SECONDS
-	crafting_sound = 'sound/foley/kneading_alt.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/kneading_alt.ogg'
 	crafting_message = "incorporate fresh gote cheese into the dough"
 	extra_chance = 100
 
@@ -68,7 +68,7 @@
 	output = /obj/item/reagent_containers/food/snacks/foodbase/cheesebun_raw
 	required_table = TRUE
 	craft_time = 5 SECONDS
-	crafting_sound = 'sound/foley/kneading_alt.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/kneading_alt.ogg'
 	crafting_message = "incorporate cheese into the dough"
 	extra_chance = 100
 
@@ -83,7 +83,7 @@
 	output = /obj/item/reagent_containers/food/snacks/foodbase/cheesebun_raw
 	required_table = TRUE
 	craft_time = 5 SECONDS
-	crafting_sound = 'sound/foley/kneading_alt.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/kneading_alt.ogg'
 	crafting_message = "incorporate fresh cheese into the dough"
 	extra_chance = 100
 
@@ -100,5 +100,5 @@
 	allow_inverse_start = TRUE
 	output = /obj/item/reagent_containers/food/snacks/grenzelbun
 	craft_time = 6 SECONDS
-	crafting_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 	extra_chance = 100

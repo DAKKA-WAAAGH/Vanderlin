@@ -343,7 +343,7 @@
 	if(user.get_skill_level(/datum/skill/misc/climbing) <= 4)	// Climb 4 and above can chimney climb
 		to_chat(user, "<span class='warning'>I would not fit in a chimney, stop thinking foolish things.</span>")
 		return
-	playsound(src, 'sound/foley/ladder.ogg', 100, FALSE)
+	playsound(src, 'modular/kaizoku/sound/foley/ladder.ogg', 100, FALSE)
 	if(!do_after(user, 3 SECONDS, src))
 		return
 	user.visible_message("<span class='notice'>[user] slides down [src].</span>", "<span class='notice'>I slide down [src].</span>")
@@ -540,8 +540,8 @@
 	icon = 'modular/stonekeep/icons/brewing.dmi'
 
 /obj/structure/barricade
-	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
-	destroy_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
+	destroy_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroywalldoor.ogg'
 
 // =================================================================
 // =========================	FLORA	============================
@@ -600,7 +600,7 @@
 	icon_state = "deadbush_1"
 	stump_type = /obj/item/grown/log/tree/stick
 	max_integrity = 80
-	destroy_sound = 'sound/misc/woodhit.ogg'
+	destroy_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
 	static_debris = list(/obj/item/grown/log/tree/stick = 1)
 //	pixel_x = -28
 //	pixel_y = 6
@@ -626,7 +626,7 @@
 	icon_state = "bramblesc"
 	stump_type = /obj/item/grown/log/tree/stick
 	max_integrity = 120
-	destroy_sound = 'sound/misc/woodhit.ogg'
+	destroy_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
 	static_debris = list(/obj/item/grown/log/tree/stick = 1)
 	alpha = 255
 	pixel_x = 0
@@ -669,7 +669,7 @@
 	icon_state = "bramblescorner"
 	stump_type = /obj/item/grown/log/tree/stick
 	max_integrity = 120
-	destroy_sound = 'sound/misc/woodhit.ogg'
+	destroy_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
 	static_debris = list(/obj/item/grown/log/tree/stick = 1)
 	alpha = 255
 	opacity = TRUE
@@ -700,7 +700,7 @@
 		var/mob/living/L = AM
 		if(L.z == z)
 			L.consider_ambush()
-			playsound(src, pick('sound/foley/touch1.ogg','sound/foley/touch2.ogg','sound/foley/touch3.ogg'), 50, TRUE)
+			playsound(src, pick('modular/kaizoku/sound/foley/touch1.ogg','modular/kaizoku/sound/foley/touch2.ogg','modular/kaizoku/sound/foley/touch3.ogg'), 50, TRUE)
 	. = ..()
 
 /obj/structure/flora/rock/pebbles/gray/Initialize()
@@ -764,8 +764,8 @@
 	pixel_x = -16
 	plane = -4
 	layer = 4.81
-	attacked_sound = 'sound/misc/woodhit.ogg'
-	destroy_sound = 'sound/misc/woodhit.ogg'
+	attacked_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
+	destroy_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
 	static_debris = list( /obj/item/grown/log/tree/small = 1)
 	dir = SOUTH
 
@@ -883,10 +883,10 @@
 							I = new /obj/item/clothing/ring/gold/protection(user.loc)
 					if(I)
 						I.sellprice = 0
-					playsound(loc,'sound/items/carvgood.ogg', 50, TRUE)
+					playsound(loc,'modular/kaizoku/sound/items/carvgood.ogg', 50, TRUE)
 				else
-					playsound(loc,'sound/items/carvty.ogg', 50, TRUE)
-				playsound(loc,'sound/misc/eat.ogg', rand(30,60), TRUE)
+					playsound(loc,'modular/kaizoku/sound/items/carvty.ogg', 50, TRUE)
+				playsound(loc,'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 				qdel(W)
 				return
 	..()
@@ -972,10 +972,10 @@
 							I = new /obj/item/clothing/ring/gold/protection(user.loc)
 					if(I)
 						I.sellprice = 0
-					playsound(loc,'sound/items/carvgood.ogg', 50, TRUE)
+					playsound(loc,'modular/kaizoku/sound/items/carvgood.ogg', 50, TRUE)
 				else
-					playsound(loc,'sound/items/carvty.ogg', 50, TRUE)
-				playsound(loc,'sound/misc/eat.ogg', rand(30,60), TRUE)
+					playsound(loc,'modular/kaizoku/sound/items/carvty.ogg', 50, TRUE)
+				playsound(loc,'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 				qdel(W)
 				return
 	..()
@@ -1006,7 +1006,7 @@
 			var/list/waterl = list(/datum/reagent/yuck/cursed_soup = 100)
 			W.reagents.add_reagent_list(waterl)
 			to_chat(user, "<span class='notice'>I fill [W] from [src].</span>")
-			playsound(user, pick('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg'), 80, FALSE)
+			playsound(user, pick('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg'), 80, FALSE)
 			return
 	else ..()
 

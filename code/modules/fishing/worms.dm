@@ -16,7 +16,7 @@
 	fishloot = list(/obj/item/reagent_containers/food/snacks/fish/carp = 10,
 					/obj/item/reagent_containers/food/snacks/fish/eel = 5,
 					/obj/item/reagent_containers/food/snacks/fish/angler = 1)
-	drop_sound = 'sound/foley/dropsound/food_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	bundletype = /obj/item/natural/bundle/worms
 	bait_flag = MEAT
 
@@ -40,7 +40,7 @@
 
 /obj/item/natural/worms/grub_silk/attack_self(mob/living/user, params)
 	user.visible_message(span_notice("[user] crushes [src], forcing the silk out."), span_notice("I crush [src], forcing the silk out."))
-	playsound(src, 'sound/foley/meatslap.ogg', 100, TRUE, -1)
+	playsound(src, 'modular/kaizoku/sound/foley/meatslap.ogg', 100, TRUE, -1)
 	var/obj/item/natural/silk/M = new
 	qdel(src)
 	user.put_in_hands(M)

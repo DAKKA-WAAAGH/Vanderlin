@@ -132,7 +132,7 @@ SUBSYSTEM_DEF(ambience)
 	else if(music_enabled && HAS_TRAIT(src, TRAIT_SCHIZO_AMBIENCE))
 		used = 'sound/blank.ogg'
 	else if(music_enabled && HAS_TRAIT(src, TRAIT_DRUQK))
-		used = 'sound/music/spice.ogg'
+		used = 'modular/kaizoku/sound/music/spice.ogg'
 
 	if(!used || vol <= 0)
 		cancel_looping_ambience()

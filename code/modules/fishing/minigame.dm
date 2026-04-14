@@ -243,7 +243,7 @@ GLOBAL_LIST_EMPTY(fishing_challenges_by_user)
 	RegisterSignal(user, COMSIG_MOB_CLICKON, PROC_REF(handle_click))
 	start_baiting_phase()
 	to_chat(user, span_notice("You start fishing..."))
-	playsound(location, 'sound/effects/splash.ogg', 100)
+	playsound(location, 'modular/kaizoku/sound/effects/splash.ogg', 100)
 
 ///Set the timers for lure that need to be spun at intervals.
 /datum/fishing_challenge/proc/set_lure_timers()
@@ -369,7 +369,7 @@ GLOBAL_LIST_EMPTY(fishing_challenges_by_user)
 		return
 
 	if(reward_path != FISHING_DUD)
-		playsound(location, 'sound/effects/bigsplash.ogg', 100)
+		playsound(location, 'modular/kaizoku/sound/effects/bigsplash.ogg', 100)
 
 	SEND_SIGNAL(user, COMSIG_MOB_COMPLETE_FISHING, src, TRUE)
 	if(!QDELETED(src))
@@ -403,7 +403,7 @@ GLOBAL_LIST_EMPTY(fishing_challenges_by_user)
 	SEND_SIGNAL(src, COMSIG_FISHING_CHALLENGE_ROLL_REWARD, used_rod, user, location, rewards)
 	if(length(rewards))
 		reward_path = pick(rewards)
-	playsound(location, 'sound/effects/fish_splash.ogg', 100)
+	playsound(location, 'modular/kaizoku/sound/effects/fish_splash.ogg', 100)
 
 	send_alert("!!!")
 	animate(float, pixel_z = 3, time = 5, loop = -1, flags = ANIMATION_RELATIVE)
@@ -621,16 +621,16 @@ GLOBAL_LIST_EMPTY(fishing_challenges_by_user)
 		switch(current_active_effect)
 			if(FISHING_MINIGAME_RULE_ANTIGRAV)
 				fishing_hud.icon_state = "background_antigrav"
-				SEND_SOUND(user, sound('sound/effects/arcade_jump.ogg', volume = 50))
+				SEND_SOUND(user, sound('modular/kaizoku/sound/effects/arcade_jump.ogg', volume = 50))
 				COOLDOWN_START(src, active_effect_cd, rand(6, 9) SECONDS)
 			if(FISHING_MINIGAME_RULE_FLIP)
 				fishing_hud.icon_state = "background_flip"
 				fishing_hud.transform = fishing_hud.transform.Scale(1, -1)
-				SEND_SOUND(user, sound('sound/effects/boing.ogg'))
+				SEND_SOUND(user, sound('modular/kaizoku/sound/effects/boing.ogg'))
 				COOLDOWN_START(src, active_effect_cd, rand(5, 6) SECONDS)
 			if(FISHING_MINIGAME_RULE_CAMO)
 				fishing_hud.icon_state = "background_camo"
-				SEND_SOUND(user, sound('sound/effects/nightmare_poof.ogg', volume = 15))
+				SEND_SOUND(user, sound('modular/kaizoku/sound/effects/nightmare_poof.ogg', volume = 15))
 				COOLDOWN_START(src, active_effect_cd, rand(6, 8) SECONDS)
 				animate(fishing_hud.hud_fish, alpha = 7, time = 2 SECONDS)
 		return
@@ -638,7 +638,7 @@ GLOBAL_LIST_EMPTY(fishing_challenges_by_user)
 	///go back to normal
 	switch(current_active_effect)
 		if(FISHING_MINIGAME_RULE_ANTIGRAV)
-			var/sound/inverted_sound = sound('sound/effects/arcade_jump.ogg', volume = 50)
+			var/sound/inverted_sound = sound('modular/kaizoku/sound/effects/arcade_jump.ogg', volume = 50)
 			inverted_sound.frequency = -1
 			SEND_SOUND(user, inverted_sound)
 			COOLDOWN_START(src, active_effect_cd, rand(10, 13) SECONDS)
@@ -647,7 +647,7 @@ GLOBAL_LIST_EMPTY(fishing_challenges_by_user)
 			COOLDOWN_START(src, active_effect_cd, rand(8, 12) SECONDS)
 		if(FISHING_MINIGAME_RULE_CAMO)
 			COOLDOWN_START(src, active_effect_cd, rand(9, 16) SECONDS)
-			SEND_SOUND(user, sound('sound/effects/nightmare_reappear.ogg', volume = 15))
+			SEND_SOUND(user, sound('modular/kaizoku/sound/effects/nightmare_reappear.ogg', volume = 15))
 			animate(fishing_hud.hud_fish, alpha = 255, time = 1.2 SECONDS)
 
 	fishing_hud.icon_state = background

@@ -42,7 +42,7 @@
 	. = ..()
 	addtimer(CALLBACK(SSfamilytree, TYPE_PROC_REF(/datum/controller/subsystem/familytree, AddRoyal), spawned, (spawned.gender == FEMALE) ? FAMILY_MOTHER : FAMILY_FATHER), 7 SECONDS)
 	if(istype(spawned.patron, /datum/patron/inhumen/baotha))
-		spawned.cmode_music = 'sound/music/cmode/antag/CombatBaotha.ogg'
+		spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/antag/CombatBaotha.ogg'
 
 /datum/outfit/consort
 	name = "Consort"

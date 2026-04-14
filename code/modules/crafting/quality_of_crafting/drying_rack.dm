@@ -196,7 +196,7 @@
 	output_amount = 4
 	starting_atom = /obj/item/weapon/knife
 	tool_usage = list(
-		/obj/item/weapon/knife = list("starts to prepare the hide", "start to prepare the hide", 'sound/combat/hits/bladed/genstab (1).ogg'),
+		/obj/item/weapon/knife = list("starts to prepare the hide", "start to prepare the hide", 'modular/kaizoku/sound/combat/hits/bladed/genstab (1).ogg'),
 	)
 	requirements = list(
 		/obj/item/natural/hide = 1,
@@ -218,7 +218,7 @@
 	output_amount = 4
 	starting_atom = /obj/item/weapon/knife
 	tool_usage = list(
-		/obj/item/weapon/knife = list("starts to prepare the log", "start to prepare the log", 'sound/combat/hits/bladed/genstab (1).ogg'),
+		/obj/item/weapon/knife = list("starts to prepare the log", "start to prepare the log", 'modular/kaizoku/sound/combat/hits/bladed/genstab (1).ogg'),
 	)
 	requirements = list(
 		/obj/item/grown/log/tree/small = 1,
@@ -238,7 +238,7 @@
 		/obj/item/paper = 1,
 	)
 	tool_usage = list(
-		/obj/item/weapon/knife = list(span_notice("starts to cut"), span_notice("start to cut"), 'sound/items/sharpen_long1.ogg'),
+		/obj/item/weapon/knife = list(span_notice("starts to cut"), span_notice("start to cut"), 'modular/kaizoku/sound/items/sharpen_long1.ogg'),
 	)
 	reagent_requirements = null
 	attacked_atom = /obj/item/paper

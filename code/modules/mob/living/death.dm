@@ -5,7 +5,7 @@ GLOBAL_LIST_EMPTY(last_words)
 	if(stat != DEAD)
 		death(TRUE)
 
-	playsound(src, pick('sound/combat/gib (1).ogg','sound/combat/gib (2).ogg'), 200, FALSE, 3)
+	playsound(src, pick('modular/kaizoku/sound/combat/gib (1).ogg','modular/kaizoku/sound/combat/gib (2).ogg'), 200, FALSE, 3)
 
 	if(!prev_lying)
 		gib_animation()
@@ -82,7 +82,7 @@ GLOBAL_LIST_EMPTY(last_words)
 	if(prob(0.1))
 		src.playsound_local(src, 'sound/blank.ogg', 250)
 	else
-		src.playsound_local(src, 'sound/misc/deth.ogg', 100)
+		src.playsound_local(src, 'modular/kaizoku/sound/misc/deth.ogg', 100)
 
 	set_disgust(0)
 	SetSleeping(0)

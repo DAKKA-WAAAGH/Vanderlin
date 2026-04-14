@@ -10,7 +10,7 @@
 	)
 	outfit = /datum/outfit/adventurer/barbarian
 	category_tags = list(CTAG_ADVENTURER)
-	cmode_music = 'sound/music/cmode/adventurer/CombatOutlander2.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander2.ogg'
 
 	allowed_patrons = list(/datum/patron/divine/ravox, /datum/patron/divine/abyssor, /datum/patron/divine/necra, /datum/patron/divine/dendor,/datum/patron/inhumen/graggar, /datum/patron/godless, /datum/patron/godless/autotheist, /datum/patron/godless/defiant, /datum/patron/godless/dystheist, /datum/patron/godless/naivety, /datum/patron/godless/rashan, /datum/patron/godless/galadros)
 

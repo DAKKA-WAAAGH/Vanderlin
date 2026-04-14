@@ -84,7 +84,7 @@
 
 			soil.user_harvests(pawn)
 			pawn.visible_message(span_notice("[pawn] harvests [soil]."))
-			playsound(soil, 'sound/items/seed.ogg', 100, FALSE)
+			playsound(soil, 'modular/kaizoku/sound/items/seed.ogg', 100, FALSE)
 			current_task = "scanning"
 			return ACTION_STATE_CONTINUE
 
@@ -99,7 +99,7 @@
 
 			soil.weeds = max(0, soil.weeds - 25)
 			pawn.visible_message(span_notice("[pawn] carefully removes weeds from [soil]."))
-			playsound(soil, pick('sound/foley/touch1.ogg','sound/foley/touch2.ogg','sound/foley/touch3.ogg'), 100, TRUE)
+			playsound(soil, pick('modular/kaizoku/sound/foley/touch1.ogg','modular/kaizoku/sound/foley/touch2.ogg','modular/kaizoku/sound/foley/touch3.ogg'), 100, TRUE)
 			current_task = "scanning"
 			return ACTION_STATE_CONTINUE
 
@@ -133,7 +133,7 @@
 			if(carried.reagents && carried.reagents.has_reagent(/datum/reagent/water, 15))
 				soil.adjust_water(150)
 				pawn.visible_message(span_notice("[pawn] waters [soil]."))
-				var/list/wash = list('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg')
+				var/list/wash = list('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg')
 				playsound(pawn, pick(wash), 100, FALSE)
 
 				pawn.dropItemToGround(carried)
@@ -180,7 +180,7 @@
 			farm_seed.try_plant_seed(pawn, soil)
 			controller.clear_blackboard_key(BB_SIMPLE_CARRY_ITEM)
 			pawn.visible_message(span_notice("[pawn] plants [seed] in [soil]."))
-			playsound(soil, pick('sound/foley/touch1.ogg','sound/foley/touch2.ogg','sound/foley/touch3.ogg'), 170, TRUE)
+			playsound(soil, pick('modular/kaizoku/sound/foley/touch1.ogg','modular/kaizoku/sound/foley/touch2.ogg','modular/kaizoku/sound/foley/touch3.ogg'), 170, TRUE)
 
 			current_task = "scanning"
 			return ACTION_STATE_CONTINUE

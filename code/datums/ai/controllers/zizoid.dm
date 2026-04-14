@@ -52,7 +52,7 @@
 			return
 
 	if(prob(5))
-		playsound(flesh, pick('sound/effects/wounds/crack2.ogg', 'sound/effects/wounds/pierce1.ogg', 'sound/effects/wounds/splatter.ogg'), 100, TRUE)
+		playsound(flesh, pick('modular/kaizoku/sound/effects/wounds/crack2.ogg', 'modular/kaizoku/sound/effects/wounds/pierce1.ogg', 'modular/kaizoku/sound/effects/wounds/splatter.ogg'), 100, TRUE)
 		flesh.visible_message("<span class='warning'>[flesh] makes a disturbing wet sound.</span>")
 
 	var/move_prob = 50

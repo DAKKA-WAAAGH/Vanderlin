@@ -2,7 +2,7 @@
 	name = "Regenerate"
 	desc = "Your wounds painfully mend back together."
 	button_icon_state = "bloodrage"
-	sound = 'sound/misc/vampirespell.ogg'
+	sound = 'modular/kaizoku/sound/misc/vampirespell.ogg'
 
 	antimagic_flags = NONE
 	spell_flags = SPELL_IGNORE_SPELLBLOCK

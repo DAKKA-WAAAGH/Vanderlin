@@ -37,7 +37,7 @@
 	var/active = FALSE
 	max_integrity = 200
 	var/anchor_gateway
-	attacked_sound = list('sound/combat/wooshes/bladed/zatana_nimble(1).ogg','sound/combat/wooshes/bladed/zatana_nimble(2).ogg','sound/combat/wooshes/bladed/zatana_nimble(3).ogg')
+	attacked_sound = list('modular/kaizoku/sound/combat/wooshes/bladed/zatana_nimble(1).ogg','modular/kaizoku/sound/combat/wooshes/bladed/zatana_nimble(2).ogg','modular/kaizoku/sound/combat/wooshes/bladed/zatana_nimble(3).ogg')
 
 /obj/structure/demon/tendril/Initialize()
 	. = ..()
@@ -173,7 +173,7 @@
 	var/spread = rand(-6, 6)
 	P.fire(base + spread)
 	flick("turret_crack", src)
-	playsound(get_turf(src), 'sound/foley/meatslap.ogg', 60, FALSE)
+	playsound(get_turf(src), 'modular/kaizoku/sound/foley/meatslap.ogg', 60, FALSE)
 
 /obj/projectile/demon/glop
 	name = "rot"
@@ -299,7 +299,7 @@
 	armed = FALSE
 
 	visible_message("<span class='userdanger'>[src]'s acidic pus is sprayed as it explodes!</span>")
-	playsound(get_turf(src), 'sound/misc/explode/explosionclose (1).ogg', 100, FALSE)
+	playsound(get_turf(src), 'modular/kaizoku/sound/misc/explode/explosionclose (1).ogg', 100, FALSE)
 
 	new /obj/effect/temp_visual/explosion(get_turf(src))
 

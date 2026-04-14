@@ -3,7 +3,7 @@
 	skillcraft = /datum/skill/misc/reading
 
 	tool_usage = list(
-		/obj/item/natural/feather = list("starts to write", "start writing", 'sound/items/wood_sharpen.ogg'),
+		/obj/item/natural/feather = list("starts to write", "start writing", 'modular/kaizoku/sound/items/wood_sharpen.ogg'),
 	)
 	requirements = list(
 		/obj/item/paper = 1,

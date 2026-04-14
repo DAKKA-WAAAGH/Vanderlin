@@ -9,7 +9,7 @@
 	output = /obj/item/reagent_containers/food/snacks/dough
 	required_table = TRUE
 	craft_time = 5 SECONDS
-	crafting_sound = 'sound/foley/kneading.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/kneading.ogg'
 	crafting_message = "knead in more flour"
 	extra_chance = 100
 
@@ -25,7 +25,7 @@
 	output = /obj/item/reagent_containers/food/snacks/dough
 	required_table = TRUE
 	craft_time = 5 SECONDS
-	crafting_sound = 'sound/foley/kneading.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/kneading.ogg'
 	crafting_message = "knead in more flour"
 	extra_chance = 100
 
@@ -40,7 +40,7 @@
 	output = /obj/item/reagent_containers/food/snacks/butterdough
 	required_table = TRUE
 	craft_time = 5 SECONDS
-	crafting_sound = 'sound/foley/kneading_alt.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/kneading_alt.ogg'
 	crafting_message = "knead butter into the dough"
 	extra_chance = 100
 
@@ -56,7 +56,7 @@
 	output = /obj/item/reagent_containers/food/snacks/raisindough_poison
 	required_table = TRUE
 	craft_time = 5 SECONDS
-	crafting_sound = 'sound/foley/kneading.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/kneading.ogg'
 	crafting_message = "knead the dough and adding raisins"
 	extra_chance = 100
 
@@ -71,7 +71,7 @@
 	output = /obj/item/reagent_containers/food/snacks/raisindough
 	required_table = TRUE
 	craft_time = 5 SECONDS
-	crafting_sound = 'sound/foley/kneading.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/kneading.ogg'
 	crafting_message = "knead the dough and adding raisins"
 	extra_chance = 100
 
@@ -86,6 +86,6 @@
 	required_table = TRUE
 	craftdiff = 0
 	craft_time = 5 SECONDS
-	crafting_sound = 'sound/foley/kneading.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/kneading.ogg'
 	crafting_message = "combine dough slices"
 	extra_chance = 100

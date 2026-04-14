@@ -426,8 +426,8 @@
 	buckle_lying = FALSE
 	max_buckled_mobs = 2
 	max_integrity = 260
-	attacked_sound = 'sound/misc/woodhit.ogg'
-	destroy_sound = 'sound/misc/treefall.ogg'
+	attacked_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
+	destroy_sound = 'modular/kaizoku/sound/misc/treefall.ogg'
 	var/awakened = FALSE
 	var/next_wave = 0
 	var/wave_interval = 11.5 SECONDS
@@ -597,7 +597,7 @@
 	if(!limb || QDELETED(limb))
 		return
 	if(limb.dismember())
-		playsound(src, 'sound/misc/eat.ogg', rand(30,60), TRUE)
+		playsound(src, 'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 		qdel(limb)
 
 /obj/structure/flora/tree/kaizoku_hidden/proc/complete_final_devour(mob/living/L)
@@ -607,7 +607,7 @@
 	if(L.stat == DEAD || L.buckled != src)
 		finish_eating_victim()
 		return
-	playsound(src, 'sound/misc/eat.ogg', rand(30,60), TRUE)
+	playsound(src, 'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 	L.gib(TRUE, TRUE, TRUE, TRUE)
 	finish_eating_victim()
 

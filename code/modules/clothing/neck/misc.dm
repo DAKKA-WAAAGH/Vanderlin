@@ -8,20 +8,20 @@
 	name = "gold amulet"
 	icon_state = "amuletg"
 	slot_flags = ITEM_SLOT_NECK
-	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
-	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/cloak_equip.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/cloak_take_off.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	sellprice = 60
 
 /obj/item/clothing/neck/silveramulet
 	name = "silver amulet"
 	icon_state = "amulets"
 	slot_flags = ITEM_SLOT_NECK | ITEM_SLOT_WRISTS // It needs this or else it is less useful than a psycross
-	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
-	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/cloak_equip.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/cloak_take_off.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	sellprice = 35
 
 /obj/item/clothing/neck/silveramulet/Initialize()
@@ -32,80 +32,80 @@
 	name = "joapstone amulet"
 	icon_state = "amulet_jade"
 	slot_flags = ITEM_SLOT_NECK
-	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
-	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/cloak_equip.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/cloak_take_off.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	sellprice = 60
 
 /obj/item/clothing/neck/turqamulet
 	name = "ceruleabaster amulet"
 	icon_state = "amulet_turq"
 	slot_flags = ITEM_SLOT_NECK
-	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
-	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/cloak_equip.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/cloak_take_off.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	sellprice = 85
 
 /obj/item/clothing/neck/onyxaamulet
 	name = "onyxa amulet"
 	icon_state = "amulet_onyxa"
 	slot_flags = ITEM_SLOT_NECK
-	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
-	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/cloak_equip.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/cloak_take_off.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	sellprice = 40
 
 /obj/item/clothing/neck/coralamulet
 	name = "aoetal amulet"
 	icon_state = "amulet_coral"
 	slot_flags = ITEM_SLOT_NECK
-	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
-	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/cloak_equip.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/cloak_take_off.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	sellprice = 70
 
 /obj/item/clothing/neck/amberamulet
 	name = "petriamber amulet"
 	icon_state = "amulet_amber"
 	slot_flags = ITEM_SLOT_NECK
-	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
-	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/cloak_equip.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/cloak_take_off.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	sellprice = 60
 
 /obj/item/clothing/neck/opalamulet
 	name = "opaloise amulet"
 	icon_state = "amulet_opal"
 	slot_flags = ITEM_SLOT_NECK
-	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
-	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/cloak_equip.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/cloak_take_off.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	sellprice = 90
 
 /obj/item/clothing/neck/roseamulet
 	name = "rosellusk amulet"
 	icon_state = "amulet_rose"
 	slot_flags = ITEM_SLOT_NECK
-	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
-	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/cloak_equip.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/cloak_take_off.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	sellprice = 25
 
 /obj/item/clothing/neck/shellamulet
 	name = "shell amulet"
 	icon_state = "amulet_shell"
 	slot_flags = ITEM_SLOT_NECK
-	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
-	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/cloak_equip.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/cloak_take_off.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	sellprice = 25
 
 /obj/item/clothing/neck/coif
@@ -116,10 +116,10 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HEAD
 	blocksound = SOFTHIT
-	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
-	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/cloak_equip.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/cloak_take_off.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
 	sewrepair = TRUE
@@ -186,10 +186,10 @@
 	desc = "A fashionable piece of neckwear popular among Hollow-Kin."
 	icon_state = "collar"
 	blocksound = SOFTHIT
-	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
-	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/cloak_equip.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/cloak_take_off.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	sewrepair = TRUE
 	anvilrepair = null
 	resistance_flags = FLAMMABLE
@@ -204,7 +204,7 @@
 	desc = "A leather collar with a small bell attached, popular among Hollow-Kin."
 	icon_state = "bell_collar"
 	blocksound = SOFTHIT
-	break_sound = 'sound/foley/cloth_rip.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
 	sewrepair = TRUE
 	anvilrepair = null
 	resistance_flags = FLAMMABLE
@@ -229,9 +229,9 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 	resistance_flags = FIRE_PROOF
 	slot_flags = ITEM_SLOT_NECK|ITEM_SLOT_HEAD
-	pickup_sound = 'sound/foley/equip/equip_outlander_chain.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_chain.ogg'
-	break_sound = 'sound/foley/breaksound.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/equip_outlander_chain.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_chain.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
 	blocksound = CHAINHIT
@@ -314,9 +314,9 @@
 	melting_material = /datum/material/steel
 	melt_amount = 100
 	melting_material = /datum/material/steel
-	equip_sound = 'sound/foley/equip/equip_outlander_plate.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
-	break_sound = 'sound/foley/breaksound.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/equip_outlander_plate.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
 	slot_flags = ITEM_SLOT_NECK
 	blocksound = PLATEHIT
 	clothing_flags = CANT_SLEEP_IN
@@ -350,9 +350,9 @@
 	resistance_flags = FIRE_PROOF
 	slot_flags = ITEM_SLOT_NECK
 	blocksound = PLATEHIT
-	equip_sound = 'sound/foley/equip/equip_outlander_plate.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
-	break_sound = 'sound/foley/breaksound.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/equip_outlander_plate.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
 	smeltresult = /obj/item/ingot/iron
 	melting_material = /datum/material/iron
 	clothing_flags = CANT_SLEEP_IN
@@ -513,9 +513,9 @@
 	flags_inv = HIDEFACE|HIDEFACIALHAIR
 	armor = ARMOR_MAILLE_GOOD
 	resistance_flags = FIRE_PROOF
-	pickup_sound = 'sound/foley/equip/equip_outlander_chain.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_chain.ogg'
-	break_sound = 'sound/foley/breaksound.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/equip_outlander_chain.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_chain.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
 	adjustable = CAN_CADJUST
 	toggle_icon_state = TRUE
 	blocksound = CHAINHIT

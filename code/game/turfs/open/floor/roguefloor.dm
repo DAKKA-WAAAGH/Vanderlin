@@ -6,7 +6,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_WOOD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/woodland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/woodland.ogg'
 	neighborlay = "dirtedge"
 	damage_deflection = 8
 	max_integrity = 600
@@ -56,7 +56,7 @@
 	footstep = FOOTSTEP_GRASS
 	barefootstep = FOOTSTEP_SOFT_BAREFOOT
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/grassland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/grassland.ogg'
 	slowdown = 0
 	damage_deflection = 6
 	max_integrity = 300
@@ -80,7 +80,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_WOOD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/woodland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/woodland.ogg'
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_WOOD
 	damage_deflection = 8
@@ -102,7 +102,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_WOOD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/woodland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/woodland.ogg'
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_WOOD
 	damage_deflection = 8
@@ -145,7 +145,7 @@
 	footstep = FOOTSTEP_GRASS
 	barefootstep = FOOTSTEP_SOFT_BAREFOOT
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/grassland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/grassland.ogg'
 	slowdown = 0
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_GRASS
@@ -211,7 +211,7 @@
 	footstep = FOOTSTEP_GRASS
 	barefootstep = FOOTSTEP_SOFT_BAREFOOT
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/grassland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/grassland.ogg'
 	slowdown = 0
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_SNOW
@@ -244,7 +244,7 @@
 	footstep = FOOTSTEP_GRASS
 	barefootstep = FOOTSTEP_SOFT_BAREFOOT
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/dirtland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/dirtland.ogg'
 	slowdown = 2
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_DIRT
@@ -372,7 +372,7 @@
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SOFT_BAREFOOT
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/dirtland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/dirtland.ogg'
 	slowdown = 0
 
 /turf/open/floor/underworld/road/Initialize()
@@ -387,7 +387,7 @@
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SOFT_BAREFOOT
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/dirtland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/dirtland.ogg'
 	slowdown = 0
 
 /turf/open/floor/underworld/arena/Initialize()
@@ -401,7 +401,7 @@
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SOFT_BAREFOOT
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/dirtland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/dirtland.ogg'
 	slowdown = 50
 
 /turf/open/floor/underworld/space/sparkle_quiet
@@ -423,7 +423,7 @@
 	barefootstep = FOOTSTEP_SOFT_BAREFOOT
 	clawfootstep = FOOTSTEP_SAND
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/dirtland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/dirtland.ogg'
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_DIRT
 	smoothing_list = SMOOTH_GROUP_FLOOR_DIRT_ROAD + SMOOTH_GROUP_FLOOR_GRASS + SMOOTH_GROUP_FLOOR_STONE
@@ -441,7 +441,7 @@
 	footstep = FOOTSTEP_GRASS
 	barefootstep = FOOTSTEP_SOFT_BAREFOOT
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/grassland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/grassland.ogg'
 	slowdown = 0
 
 /*	..................   Stone Block Floors   ................... */
@@ -452,7 +452,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 	damage_deflection = 10
 	max_integrity = 2800
 
@@ -505,12 +505,12 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 	icon = 'icons/turf/greenstone.dmi'
 	damage_deflection = 10
 	max_integrity = 800
-	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
-	attacked_sound = list('sound/combat/hits/onstone/wallhit.ogg', 'sound/combat/hits/onstone/wallhit2.ogg', 'sound/combat/hits/onstone/wallhit3.ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onstone/stonedeath.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onstone/wallhit.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit2.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit3.ogg')
 
 /turf/open/floor/greenstone/atom_destruction(damage_flag)
 	. = ..()
@@ -544,11 +544,11 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 	damage_deflection = 10
 	max_integrity = 800
-	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
-	attacked_sound = list('sound/combat/hits/onstone/wallhit.ogg', 'sound/combat/hits/onstone/wallhit2.ogg', 'sound/combat/hits/onstone/wallhit3.ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onstone/stonedeath.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onstone/wallhit.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit2.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit3.ogg')
 
 /turf/open/floor/hexstone/Initialize()
 	. = ..()
@@ -567,12 +567,12 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 
 	damage_deflection = 10
 	max_integrity = 800
-	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
-	attacked_sound = list('sound/combat/hits/onstone/wallhit.ogg', 'sound/combat/hits/onstone/wallhit2.ogg', 'sound/combat/hits/onstone/wallhit3.ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onstone/stonedeath.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onstone/wallhit.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit2.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit3.ogg')
 	shine = SHINE_SHINY
 
 /turf/open/floor/churchmarble/Initialize()
@@ -590,11 +590,11 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 	damage_deflection = 10
 	max_integrity = 800
-	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
-	attacked_sound = list('sound/combat/hits/onstone/wallhit.ogg', 'sound/combat/hits/onstone/wallhit2.ogg', 'sound/combat/hits/onstone/wallhit3.ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onstone/stonedeath.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onstone/wallhit.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit2.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit3.ogg')
 
 /turf/open/floor/church/atom_destruction(damage_flag)
 	. = ..()
@@ -611,11 +611,11 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 	damage_deflection = 10
 	max_integrity = 800
-	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
-	attacked_sound = list('sound/combat/hits/onstone/wallhit.ogg', 'sound/combat/hits/onstone/wallhit2.ogg', 'sound/combat/hits/onstone/wallhit3.ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onstone/stonedeath.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onstone/wallhit.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit2.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit3.ogg')
 
 /turf/open/floor/churchbrick/atom_destruction(damage_flag)
 	. = ..()
@@ -632,11 +632,11 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 	damage_deflection = 10
 	max_integrity = 800
-	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
-	attacked_sound = list('sound/combat/hits/onstone/wallhit.ogg', 'sound/combat/hits/onstone/wallhit2.ogg', 'sound/combat/hits/onstone/wallhit3.ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onstone/stonedeath.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onstone/wallhit.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit2.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit3.ogg')
 
 /turf/open/floor/churchrough/atom_destruction(damage_flag)
 	. = ..()
@@ -715,7 +715,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_STONE
 	smoothing_list = SMOOTH_GROUP_FLOOR_DIRT_ROAD + SMOOTH_GROUP_FLOOR_GRASS
@@ -723,8 +723,8 @@
 
 	damage_deflection = 10
 	max_integrity = 800
-	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
-	attacked_sound = list('sound/combat/hits/onstone/wallhit.ogg', 'sound/combat/hits/onstone/wallhit2.ogg', 'sound/combat/hits/onstone/wallhit3.ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onstone/stonedeath.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onstone/wallhit.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit2.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit3.ogg')
 
 /turf/open/floor/herringbone/atom_destruction(damage_flag)
 	. = ..()
@@ -738,7 +738,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_STONE
 	smoothing_list = SMOOTH_GROUP_FLOOR_DIRT_ROAD + SMOOTH_GROUP_FLOOR_GRASS
@@ -785,7 +785,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_STONE
 	smoothing_list = SMOOTH_GROUP_FLOOR_DIRT_ROAD + SMOOTH_GROUP_FLOOR_GRASS
@@ -838,7 +838,7 @@
 /turf/open/floor/tile
 	icon = 'icons/turf/constructed/tile.dmi'
 	icon_state = "chess"
-	landsound = 'sound/foley/jumpland/tileland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/tileland.ogg'
 	footstep = FOOTSTEP_FLOOR
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
@@ -899,15 +899,15 @@
 /turf/open/floor/concrete
 	icon = 'icons/turf/constructed/stone.dmi'
 	icon_state = "concretefloor1"
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 	footstep = FOOTSTEP_STONE
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
 	damage_deflection = 10
 	max_integrity = 1200
-	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
-	attacked_sound = list('sound/combat/hits/onstone/wallhit.ogg', 'sound/combat/hits/onstone/wallhit2.ogg', 'sound/combat/hits/onstone/wallhit3.ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onstone/stonedeath.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onstone/wallhit.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit2.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit3.ogg')
 
 /turf/open/floor/concrete/atom_destruction(damage_flag)
 	. = ..()
@@ -922,7 +922,7 @@
 /turf/open/floor/metal
 	icon = 'icons/turf/constructed/metal.dmi'
 	icon_state = "plating1"
-	landsound = 'sound/foley/jumpland/metalland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/metalland.ogg'
 	footstep = FOOTSTEP_PLATING
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
@@ -930,7 +930,7 @@
 	footstepstealth = TRUE
 	damage_deflection = 16
 	max_integrity = 1400
-	attacked_sound = list('sound/combat/hits/onmetal/grille (1).ogg', 'sound/combat/hits/onmetal/grille (2).ogg', 'sound/combat/hits/onmetal/grille (3).ogg')
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onmetal/grille (1).ogg', 'modular/kaizoku/sound/combat/hits/onmetal/grille (2).ogg', 'modular/kaizoku/sound/combat/hits/onmetal/grille (3).ogg')
 	flags_1 = CONDUCT_1
 
 /turf/open/floor/metal/alt
@@ -989,7 +989,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/grassland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/grassland.ogg'
 
 /turf/open/floor/plank
 	icon = 'icons/turf/constructed/misc.dmi'
@@ -998,7 +998,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_WOOD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/woodland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/woodland.ogg'
 	damage_deflection = 8
 	max_integrity = 1000
 
@@ -1029,7 +1029,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/grassland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/grassland.ogg'
 
 /*	..................  Platforms   ................... */
 /turf/open/floor/ruinedwood/platform
@@ -1037,24 +1037,24 @@
 	desc = "A destructible platform to traverse gaps."
 	damage_deflection = 6
 	max_integrity = 600
-	break_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'
-	attacked_sound = list('sound/combat/hits/onwood/fence_hit1.ogg','sound/combat/hits/onwood/fence_hit2.ogg','sound/combat/hits/onwood/fence_hit3.ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroywalldoor.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/fence_hit1.ogg','modular/kaizoku/sound/combat/hits/onwood/fence_hit2.ogg','modular/kaizoku/sound/combat/hits/onwood/fence_hit3.ogg')
 
 /turf/open/floor/twig/platform
 	name = "twig platform"
 	desc = "A destructible platform to traverse gaps."
 	damage_deflection = 4
 	max_integrity = 150
-	break_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'
-	attacked_sound = list('sound/combat/hits/onwood/fence_hit1.ogg','sound/combat/hits/onwood/fence_hit2.ogg','sound/combat/hits/onwood/fence_hit3.ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroywalldoor.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/fence_hit1.ogg','modular/kaizoku/sound/combat/hits/onwood/fence_hit2.ogg','modular/kaizoku/sound/combat/hits/onwood/fence_hit3.ogg')
 
 /turf/open/floor/blocks/platform
 	name = "stone platform"
 	desc = "A destructible platform to traverse gaps."
 	damage_deflection = 8
 	max_integrity = 800
-	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
-	attacked_sound = list('sound/combat/hits/onstone/wallhit.ogg', 'sound/combat/hits/onstone/wallhit2.ogg', 'sound/combat/hits/onstone/wallhit3.ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onstone/stonedeath.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onstone/wallhit.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit2.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit3.ogg')
 
 
 /turf/open/glass
@@ -1077,7 +1077,7 @@
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SOFT_BAREFOOT
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/grassland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/grassland.ogg'
 	slowdown = 0
 
 /turf/open/floor/abyss_sand/path
@@ -1092,7 +1092,7 @@
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SOFT_BAREFOOT
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/grassland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/grassland.ogg'
 	slowdown = 0
 	var/randomized = TRUE
 	var/blood_sand = FALSE

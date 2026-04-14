@@ -3,7 +3,7 @@
 	name = "lash"
 	blade_class = BCLASS_LASHING
 	attack_verb = list("lashes", "whips")
-	hitsound = list('sound/combat/hits/blunt/flailhit.ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/blunt/flailhit.ogg')
 	chargetime = 5
 	recovery = 5
 	penfactor = 5
@@ -15,7 +15,7 @@
 
 /datum/intent/whip/lash/metal
 	chargetime = 10
-	hitsound = list('sound/combat/hits/blunt/flailhit.ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/blunt/flailhit.ogg')
 	recovery = 5
 	penfactor = 15
 
@@ -35,7 +35,7 @@
 	name = "cut"
 	blade_class = BCLASS_CUT
 	attack_verb = list("slashes", "lacerates")
-	hitsound = list('sound/combat/hits/bladed/genslash (1).ogg', 'sound/combat/hits/bladed/genslash (2).ogg', 'sound/combat/hits/bladed/genslash (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/genslash (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genslash (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genslash (3).ogg')
 	chargetime = 5
 	recovery = 5
 	penfactor = 5
@@ -50,7 +50,7 @@
 	name = "crack"
 	blade_class = BCLASS_BLUNT
 	attack_verb = list("cracks", "strikes") //something something dwarf fotresss
-	hitsound = list('sound/combat/hits/blunt/flailhit.ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/blunt/flailhit.ogg')
 	chargetime = 0
 	recovery = 5
 	penfactor = 10

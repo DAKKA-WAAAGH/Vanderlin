@@ -75,9 +75,9 @@
 	speak_chance = 2
 	attack_sound = list() // Placeholder - will use attack_hit_sound instead
 	var/list/attack_hit_sound = list(
-		'sound/combat/hits/bladed/genslash (3).ogg',  // Placeholder - will replace with actual hit sounds
-		'sound/combat/hits/bladed/genslash (2).ogg',
-		'sound/combat/hits/bladed/genslash (1).ogg',
+		'modular/kaizoku/sound/combat/hits/bladed/genslash (3).ogg',  // Placeholder - will replace with actual hit sounds
+		'modular/kaizoku/sound/combat/hits/bladed/genslash (2).ogg',
+		'modular/kaizoku/sound/combat/hits/bladed/genslash (1).ogg',
 	)
 	var/attack_sound_chance = 40 // 40% chance to play hit sound on attack
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/fat = 1,
@@ -559,7 +559,7 @@
 /*
 /mob/living/simple_animal/hostile/retaliate/custodianpet/falcon/get_sound(input)
 	if("idle")
-		return pick('sound/animals/saintalon/saintalon_3.ogg','sound/animals/saintalon/saintalon_4.ogg','sound/animals/saintalon/saintalon_5.ogg','sound/animals/saintalon/saintalon_6.ogg')
+		return pick('modular/kaizoku/sound/animals/saintalon/saintalon_3.ogg','modular/kaizoku/sound/animals/saintalon/saintalon_4.ogg','modular/kaizoku/sound/animals/saintalon/saintalon_5.ogg','modular/kaizoku/sound/animals/saintalon/saintalon_6.ogg')
 */
 
 /mob/living/carbon/human
@@ -785,7 +785,7 @@ GLOBAL_LIST_INIT(whistle_command_cooldowns, list())
 /obj/item/kaizoku/falcon_crate/attackby(obj/item/W, mob/living/user)
 	if(istype(W, /obj/item/weapon/knife))
 		to_chat(user, "<span class='info'>You carefully cut the bindings on the crate, and a falcon bursts out!</span>")
-		playsound(src, 'sound/misc/slide_wood (1).ogg', 50, TRUE)
+		playsound(src, 'modular/kaizoku/sound/misc/slide_wood (1).ogg', 50, TRUE)
 		var/mob/living/simple_animal/hostile/retaliate/custodianpet/falcon/F = new mob_path(get_turf(user))
 		F.summoner = user
 		if(F.ai_controller)

@@ -39,7 +39,7 @@
 	retreat_distance = 10
 	minimum_distance = 10
 	candodge = TRUE
-	dodge_sound = 'sound/combat/dodge.ogg'
+	dodge_sound = 'modular/kaizoku/sound/combat/dodge.ogg'
 	can_saddle = FALSE
 
 	//Should turn this into a flag thing but i dont want to touch too many things
@@ -193,7 +193,7 @@
 		return
 
 	face_atom(A)
-	playsound(src,'sound/misc/eat.ogg', rand(30,60), TRUE)
+	playsound(src,'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 	target = null
 	qdel(A)
 	SEND_SIGNAL(src, COMSIG_MOB_FEED, A, 30, source)

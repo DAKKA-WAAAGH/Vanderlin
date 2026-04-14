@@ -56,6 +56,6 @@
 	else
 		cast_on.adjustBruteLoss(helditemvalue / 2)
 		cast_on.adjustFireLoss(helditemvalue / 2)
-	playsound(owner, 'sound/combat/hits/burn (2).ogg', 100, TRUE)
+	playsound(owner, 'modular/kaizoku/sound/combat/hits/burn (2).ogg', 100, TRUE)
 	if(!QDELETED(held_item))
 		qdel(held_item) // we might already be qdeleting from mob holder

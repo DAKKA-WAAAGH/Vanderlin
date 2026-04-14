@@ -28,7 +28,7 @@
 	nodamage = FALSE
 	damage_type = BRUTE
 	range = 10
-	hitsound = 'sound/combat/hits/hi_arrow2.ogg'
+	hitsound = 'modular/kaizoku/sound/combat/hits/hi_arrow2.ogg'
 	embedchance = 15
 	armor_penetration = 10
 	woundclass = BCLASS_STAB

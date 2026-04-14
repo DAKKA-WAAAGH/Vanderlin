@@ -34,7 +34,7 @@
 	)
 
 	traits = list(TRAIT_CRITICAL_RESISTANCE, TRAIT_NOPAINSTUN)
-	cmode_music = 'sound/music/cmode/adventurer/CombatOutlander.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander.ogg'
 
 /datum/outfit/bodyguard
 	name = "Bodyguard (Migrant Wave)"

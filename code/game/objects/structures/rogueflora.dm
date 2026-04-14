@@ -22,8 +22,8 @@
 	blade_dulling = DULLING_CUT
 	SET_BASE_PIXEL(-16, 0)
 	plane = GAME_PLANE_UPPER
-	attacked_sound = 'sound/misc/woodhit.ogg'
-	destroy_sound = 'sound/misc/treefall.ogg'
+	attacked_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
+	destroy_sound = 'modular/kaizoku/sound/misc/treefall.ogg'
 	debris = list(/obj/item/grown/log/tree/stick = 2)
 	static_debris = list(/obj/item/grown/log/tree = 1)
 	var/stump_type = /obj/structure/table/wood/treestump
@@ -241,7 +241,7 @@
 /obj/structure/table/wood/treestump/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/weapon/shovel))
 		to_chat(user, "I start unearthing the stump...")
-		playsound(src,'sound/items/dig_shovel.ogg', 100, TRUE)
+		playsound(src,'modular/kaizoku/sound/items/dig_shovel.ogg', 100, TRUE)
 		if(do_after(user, 5 SECONDS))
 			user.visible_message("<span class='notice'>[user] unearths \the [src].</span>", \
 								"<span class='notice'>I unearth \the [src].</span>")
@@ -461,7 +461,7 @@
 	density = TRUE
 	max_integrity = 150
 	debris = list(/obj/item/natural/fibers = 1, /obj/item/grown/log/tree/stick = 1, /obj/item/natural/thorn = 1)
-	attacked_sound = 'sound/misc/woodhit.ogg'
+	attacked_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
 
 /obj/structure/flora/grass/bush/wall/tundra
 	name = "tundra great bush"
@@ -594,8 +594,8 @@
 	max_integrity = 120
 	blade_dulling = DULLING_CUT
 	SET_BASE_PIXEL(-16, 0)
-	attacked_sound = 'sound/misc/woodhit.ogg'
-	destroy_sound = 'sound/misc/woodhit.ogg'
+	attacked_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
+	destroy_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
 	static_debris = list(/obj/item/grown/log/tree/small = 1)
 
 /obj/structure/flora/shroom_tree/attack_hand_secondary(mob/user, params)
@@ -668,8 +668,8 @@
 	density = TRUE
 	layer = TABLE_LAYER
 	blade_dulling = DULLING_BASH
-	destroy_sound = 'sound/foley/smash_rock.ogg'
-	attacked_sound = 'sound/foley/hit_rock.ogg'
+	destroy_sound = 'modular/kaizoku/sound/foley/smash_rock.ogg'
+	attacked_sound = 'modular/kaizoku/sound/foley/hit_rock.ogg'
 	static_debris = list(/obj/item/natural/stone = 1)
 
 /obj/structure/roguerock/Initialize()

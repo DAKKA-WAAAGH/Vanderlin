@@ -225,7 +225,7 @@
 		else
 			self_message = span_warning("I struggle with [user]!")
 		visible_message(span_warning("[user] struggles with [src]!"), self_message, span_hear("I hear aggressive shuffling!"))
-		playsound(src, 'sound/foley/struggle.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/foley/struggle.ogg', 100, FALSE, -1)
 		user.Immobilize(1 SECONDS)
 		user.changeNext_move(1 SECONDS)
 		user.adjust_stamina(rand(2,6))
@@ -234,7 +234,7 @@
 		return
 
 	if(!instant)
-		var/sound_to_play = 'sound/foley/grab.ogg'
+		var/sound_to_play = 'modular/kaizoku/sound/foley/grab.ogg'
 		playsound(src, sound_to_play, 100, FALSE, -1)
 
 	user.setGrabState(GRAB_AGGRESSIVE)

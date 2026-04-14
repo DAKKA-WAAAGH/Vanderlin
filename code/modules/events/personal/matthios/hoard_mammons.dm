@@ -53,6 +53,6 @@
 		span_userdanger("YOU ARE MATTHIOS' CHOSEN!"),
 		span_notice("Accumulate [new_objective.target_mammons] mammons to prove your greed to Matthios!"),
 	))
-	chosen_one.playsound_local(chosen_one, 'sound/misc/gods/matthios_omen.ogg', 100)
+	chosen_one.playsound_local(chosen_one, 'modular/kaizoku/sound/misc/gods/matthios_omen.ogg', 100)
 
 	chosen_one.mind.announce_personal_objectives()

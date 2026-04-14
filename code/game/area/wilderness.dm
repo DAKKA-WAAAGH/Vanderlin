@@ -18,7 +18,7 @@
 				/mob/living/carbon/human/species/goblin/npc/ambush = 45,
 				/mob/living/simple_animal/hostile/retaliate/mole = 25)
 	first_time_text = "THE MURDERWOOD"
-	custom_area_sound = 'sound/misc/stings/ForestSting.ogg'
+	custom_area_sound = 'modular/kaizoku/sound/misc/stings/ForestSting.ogg'
 	converted_type = /area/indoors/shelter/woods
 
 /area/outdoors/wilderness/outpost

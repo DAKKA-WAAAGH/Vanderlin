@@ -5,11 +5,11 @@
 	icon_state = "undies"
 	resistance_flags = FLAMMABLE
 	obj_flags = CAN_BE_HIT
-	break_sound = 'sound/foley/cloth_rip.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
 	blade_dulling = DULLING_CUT
 	max_integrity = 200
 	integrity_failure = 0.1
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	var/gendered = MALE
 	var/race
 	var/cached_undies

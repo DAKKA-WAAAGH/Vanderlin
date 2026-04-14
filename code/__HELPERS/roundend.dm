@@ -122,7 +122,7 @@
 	for(var/client/C in GLOB.clients)
 		if(C.mob)
 			C.mob.cancel_looping_ambience()
-			C.mob.playsound_local(C.mob, 'sound/music/credits.ogg', 100, FALSE)
+			C.mob.playsound_local(C.mob, 'modular/kaizoku/sound/music/credits.ogg', 100, FALSE)
 		if(isliving(C.mob) && C.ckey)
 			key_list += C.ckey
 
@@ -137,7 +137,7 @@
 
 	for(var/mob/M in GLOB.mob_list)
 		M.do_game_over()
-		M.playsound_local(M, 'sound/music/credits.ogg', 100, FALSE)
+		M.playsound_local(M, 'modular/kaizoku/sound/music/credits.ogg', 100, FALSE)
 
 	for(var/datum/callback/cb as anything in round_end_events)
 		cb.InvokeAsync()

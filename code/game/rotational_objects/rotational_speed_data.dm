@@ -276,7 +276,7 @@
 
 /obj/structure/proc/rotation_break()
 	visible_message(span_warning("[src] breaks apart from the opposing directions!"))
-	playsound(src, 'sound/foley/cartdump.ogg', 75)
+	playsound(src, 'modular/kaizoku/sound/foley/cartdump.ogg', 75)
 	for(var/obj/item/rotation_contraption/item as anything in subtypesof(/obj/item/rotation_contraption))
 		if(type == initial(item.placed_type))
 			new item(get_turf(src))

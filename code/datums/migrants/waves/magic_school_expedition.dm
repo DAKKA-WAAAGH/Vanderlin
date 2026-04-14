@@ -34,7 +34,7 @@
 	spells = list(/datum/action/cooldown/spell/undirected/touch/prestidigitation)
 	spell_points = 10
 
-	cmode_music = 'sound/music/cmode/adventurer/CombatSorcerer.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatSorcerer.ogg'
 	voicepack_m = /datum/voicepack/male/wizard
 
 /datum/job/migrant/magic_teacher/after_spawn(mob/living/carbon/human/spawned, client/player_client)

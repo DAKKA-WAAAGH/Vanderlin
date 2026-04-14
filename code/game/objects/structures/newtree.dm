@@ -9,8 +9,8 @@
 	blade_dulling = DULLING_CUT
 	opacity = 1
 	density = 1
-	attacked_sound = 'sound/misc/woodhit.ogg'
-	destroy_sound = 'sound/misc/woodhit.ogg'
+	attacked_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
+	destroy_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
 	climbable = FALSE
 	static_debris = list(/obj/item/grown/log/tree = 1)
 	obj_flags = CAN_BE_HIT | BLOCK_Z_IN_UP | BLOCK_Z_OUT_DOWN
@@ -78,7 +78,7 @@
 				if(CH)
 					myskill += 1
 			used_time = max(7 SECONDS - (myskill * 1 SECONDS) - (L.STASPD * 3), 3 SECONDS)
-		playsound(user, 'sound/foley/climb.ogg', 100, TRUE)
+		playsound(user, 'modular/kaizoku/sound/foley/climb.ogg', 100, TRUE)
 		user.visible_message("<span class='warning'>[user] starts to climb [src].</span>", "<span class='warning'>I start to climb [src]...</span>")
 		if(do_after(L, used_time, src))
 			var/pulling = user.pulling
@@ -86,7 +86,7 @@
 				user.pulling.forceMove(target)
 			user.forceMove(target)
 			user.start_pulling(pulling,suppress_message = TRUE)
-			playsound(user, 'sound/foley/climb.ogg', 100, TRUE)
+			playsound(user, 'modular/kaizoku/sound/foley/climb.ogg', 100, TRUE)
 			if(L.mind)
 				L.adjust_experience(/datum/skill/misc/climbing, exp_to_gain, FALSE)
 
@@ -192,7 +192,7 @@
 	if(!transformation)
 		if(!istype(NT, /turf/open/openspace) && !(locate(/obj/structure/table/wood/treestump) in NT)) //if i don't add the stump check it spawns however many zlevels it goes up because of src recursion
 			new /obj/structure/table/wood/treestump(NT)
-		playsound(src, 'sound/misc/treefall.ogg', 100, FALSE)
+		playsound(src, 'modular/kaizoku/sound/misc/treefall.ogg', 100, FALSE)
 
 /obj/structure/flora/newtree/proc/build_trees()
 	var/turf/target = GET_TURF_ABOVE(get_turf(src))
@@ -413,7 +413,7 @@
 	icon = 'icons/roguetown/misc/tree.dmi'
 	icon_state = "branch-end1"
 	base_icon_state = "branch-end"
-	attacked_sound = 'sound/misc/woodhit.ogg'
+	attacked_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
 	obj_flags = CAN_BE_HIT | BLOCK_Z_OUT_DOWN
 	static_debris = list(/obj/item/grown/log/tree/stick = 1)
 	max_integrity = 30
@@ -425,7 +425,7 @@
 	. = ..()
 	AddComponent(\
 		/datum/component/squeak,\
-		list('sound/foley/plantcross1.ogg','sound/foley/plantcross2.ogg','sound/foley/plantcross3.ogg','sound/foley/plantcross4.ogg'),\
+		list('modular/kaizoku/sound/foley/plantcross1.ogg','modular/kaizoku/sound/foley/plantcross2.ogg','modular/kaizoku/sound/foley/plantcross3.ogg','modular/kaizoku/sound/foley/plantcross4.ogg'),\
 		100,\
 		extrarange = SHORT_RANGE_SOUND_EXTRARANGE,\
 	)

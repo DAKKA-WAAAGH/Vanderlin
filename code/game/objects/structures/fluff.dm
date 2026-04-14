@@ -277,12 +277,12 @@
 	damage_deflection = 5
 	blade_dulling = DULLING_BASHCHOP
 	obj_flags = CAN_BE_HIT | BLOCK_Z_OUT_DOWN | BLOCK_Z_IN_UP
-	attacked_sound = list('sound/combat/hits/onmetal/grille (1).ogg', 'sound/combat/hits/onmetal/grille (2).ogg', 'sound/combat/hits/onmetal/grille (3).ogg')
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onmetal/grille (1).ogg', 'modular/kaizoku/sound/combat/hits/onmetal/grille (2).ogg', 'modular/kaizoku/sound/combat/hits/onmetal/grille (3).ogg')
 	redstone_structure = TRUE
 	var/togg = FALSE
 
 /obj/structure/bars/grille/Initialize()
-	AddComponent(/datum/component/squeak, list('sound/foley/footsteps/FTMET_A1.ogg','sound/foley/footsteps/FTMET_A2.ogg','sound/foley/footsteps/FTMET_A3.ogg','sound/foley/footsteps/FTMET_A4.ogg'), 40, extrarange = SHORT_RANGE_SOUND_EXTRARANGE)
+	AddComponent(/datum/component/squeak, list('modular/kaizoku/sound/foley/footsteps/FTMET_A1.ogg','modular/kaizoku/sound/foley/footsteps/FTMET_A2.ogg','modular/kaizoku/sound/foley/footsteps/FTMET_A3.ogg','modular/kaizoku/sound/foley/footsteps/FTMET_A4.ogg'), 40, extrarange = SHORT_RANGE_SOUND_EXTRARANGE)
 	dir = pick(GLOB.cardinals)
 	return ..()
 
@@ -294,7 +294,7 @@
 	if(obj_broken)
 		return
 	togg = !togg
-	playsound(src, 'sound/foley/trap_arm.ogg', 100)
+	playsound(src, 'modular/kaizoku/sound/foley/trap_arm.ogg', 100)
 	if(togg)
 		icon_state = "floorgrilleopen"
 		obj_flags = CAN_BE_HIT
@@ -329,7 +329,7 @@
 	damage_deflection = 5
 	blade_dulling = DULLING_BASHCHOP
 	obj_flags = CAN_BE_HIT | BLOCK_Z_OUT_DOWN | BLOCK_Z_IN_UP
-	attacked_sound = list('sound/combat/hits/onmetal/grille (1).ogg', 'sound/combat/hits/onmetal/grille (2).ogg', 'sound/combat/hits/onmetal/grille (3).ogg')
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onmetal/grille (1).ogg', 'modular/kaizoku/sound/combat/hits/onmetal/grille (2).ogg', 'modular/kaizoku/sound/combat/hits/onmetal/grille (3).ogg')
 	smeltresult = /obj/item/ingot/bronze
 	var/togg = FALSE
 
@@ -356,8 +356,8 @@
 	integrity_failure = 0.5
 	dir = SOUTH
 	break_sound = "glassbreak"
-	destroy_sound = 'sound/combat/hits/onwood/destroyfurniture.ogg'
-	attacked_sound = 'sound/combat/hits/onglass/glasshit.ogg'
+	destroy_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroyfurniture.ogg'
+	attacked_sound = 'modular/kaizoku/sound/combat/hits/onglass/glasshit.ogg'
 	var/datum/looping_sound/clockloop/soundloop
 	drag_slowdown = 3
 	metalizer_result = /obj/item/gear/metal/bronze
@@ -379,7 +379,7 @@
 	icon_state = "b[initial(icon_state)]"
 	if(soundloop)
 		soundloop.stop()
-	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
 
 /obj/structure/fluff/clock/atom_fix()
 	. = ..()
@@ -458,8 +458,8 @@
 	integrity_failure = 0.5
 	var/datum/looping_sound/clockloop/soundloop
 	break_sound = "glassbreak"
-	destroy_sound = 'sound/combat/hits/onwood/destroyfurniture.ogg'
-	attacked_sound = 'sound/combat/hits/onglass/glasshit.ogg'
+	destroy_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroyfurniture.ogg'
+	attacked_sound = 'modular/kaizoku/sound/combat/hits/onglass/glasshit.ogg'
 	SET_BASE_PIXEL(0, 32)
 	metalizer_result = /obj/item/gear/metal/bronze
 
@@ -500,7 +500,7 @@
 	icon_state = "b[initial(icon_state)]"
 	if(soundloop)
 		soundloop.stop()
-	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
 
 /obj/structure/fluff/wallclock/atom_fix()
 	. = ..()
@@ -545,8 +545,8 @@
 	plane = GAME_PLANE_UPPER
 	blade_dulling = DULLING_BASHCHOP
 	max_integrity = 500
-	destroy_sound = 'sound/combat/hits/onwood/destroyfurniture.ogg'
-	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
+	destroy_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroyfurniture.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
 
 /obj/structure/fluff/signage/examine(mob/user)
 	. = ..()
@@ -913,12 +913,12 @@
 									amt2raise = 0
 						if(amt2raise > 0)
 							user.adjust_experience(W.associated_skill, amt2raise * boon, FALSE)
-						playsound(src,pick('sound/combat/hits/onwood/education1.ogg','sound/combat/hits/onwood/education2.ogg','sound/combat/hits/onwood/education3.ogg'), rand(50,100), FALSE)
+						playsound(src,pick('modular/kaizoku/sound/combat/hits/onwood/education1.ogg','modular/kaizoku/sound/combat/hits/onwood/education2.ogg','modular/kaizoku/sound/combat/hits/onwood/education3.ogg'), rand(50,100), FALSE)
 					else
 						user.visible_message("<span class='danger'>[user] trains on [src], but [src] ripostes!</span>")
 						L.AdjustKnockdown(1)
 						L.throw_at(get_step(L, get_dir(src,L)), 2, 2, L, spin = FALSE)
-						playsound(src, 'sound/combat/hits/kick/stomp.ogg', 100, TRUE, -1)
+						playsound(src, 'modular/kaizoku/sound/combat/hits/kick/stomp.ogg', 100, TRUE, -1)
 					flick(pick("p_dummy_smashed","p_dummy_smashedalt"),src)
 					return
 			else //sanity
@@ -929,7 +929,7 @@
 			user.visible_message("<span class='danger'>[user] awkwardly tries to hit \the [src] with \the [W], but \the [src] ripostes!</span>")
 			goof.AdjustKnockdown(1)
 			goof.throw_at(get_step(goof, get_dir(src,goof)), 2, 2, goof, spin = FALSE)
-			playsound(src, 'sound/combat/hits/kick/stomp.ogg', 100, TRUE, -1)
+			playsound(src, 'modular/kaizoku/sound/combat/hits/kick/stomp.ogg', 100, TRUE, -1)
 			flick(pick("p_dummy_smashed","p_dummy_smashedalt"),src)
 			return
 	..()
@@ -957,7 +957,7 @@
 	if(istype(W, objective))
 		if(user.mind)
 			if(isdarkelf(user))
-				playsound(src,'sound/misc/eat.ogg', rand(30,60), TRUE)
+				playsound(src,'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 				current += 1
 				SSmapping.retainer.delf_ears += 1
 				if(current >= goal)
@@ -1003,8 +1003,8 @@
 			if(B.contrib >= 80)
 				give_rewards(B, user)
 			else
-				playsound(src,'sound/items/matidol1.ogg', 50, TRUE)
-			playsound(src,'sound/misc/eat.ogg', rand(30, 60), TRUE)
+				playsound(src,'modular/kaizoku/sound/items/matidol1.ogg', 50, TRUE)
+			playsound(src,'modular/kaizoku/sound/misc/eat.ogg', rand(30, 60), TRUE)
 			qdel(W)
 			return
 
@@ -1043,7 +1043,7 @@
 	if(offering_bandit.contrib >= 100 && offering_bandit.tri_amt < 8)
 		give_rewards(offering_bandit, user)
 	else
-		playsound(src,'sound/items/matidol2.ogg', 50, TRUE)
+		playsound(src,'modular/kaizoku/sound/items/matidol2.ogg', 50, TRUE)
 				if(B.contrib >= 100)
 					B.tri_amt++
 					user.mind.adjust_triumphs(1)
@@ -1072,10 +1072,10 @@
 							I = new /obj/item/clothing/pants/chainlegs(user.loc)
 					if(I)
 						I.sellprice = 0
-					playsound(loc,'sound/items/matidol2.ogg', 50, TRUE)
+					playsound(loc,'modular/kaizoku/sound/items/matidol2.ogg', 50, TRUE)
 				else
-					playsound(loc,'sound/items/matidol1.ogg', 50, TRUE)
-				playsound(loc,'sound/misc/eat.ogg', rand(30,60), TRUE)
+					playsound(loc,'modular/kaizoku/sound/items/matidol1.ogg', 50, TRUE)
+				playsound(loc,'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 				qdel(W)
 				return
 	..()*/
@@ -1085,8 +1085,8 @@
 	desc = "A towering monument to the Ten. Marriages are performed under its shadow."
 	icon_state = "psycross"
 	icon = 'icons/roguetown/misc/tallstructure.dmi'
-	break_sound = 'sound/combat/hits/onwood/destroyfurniture.ogg'
-	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroyfurniture.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
 	density = TRUE
 	anchored = TRUE
 	blade_dulling = DULLING_BASHCHOP
@@ -1333,7 +1333,7 @@
 
 	if(!secret_marriage)
 		var/announcement_message = "Eora [groom.gender == bride.gender ? "begrudgingly accepts" : "proudly embraces"] the marriage between [groom.real_name] and [bride_first_name]!"
-		priority_announce(announcement_message, title = "Holy Union!", sound = 'sound/misc/bell.ogg')
+		priority_announce(announcement_message, title = "Holy Union!", sound = 'modular/kaizoku/sound/misc/bell.ogg')
 
 	SEND_GLOBAL_SIGNAL(COMSIG_GLOBAL_MARRIAGE, groom, bride)
 	record_round_statistic(STATS_MARRIAGES)

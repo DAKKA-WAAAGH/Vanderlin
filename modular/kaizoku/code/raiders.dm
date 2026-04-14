@@ -367,7 +367,7 @@ GLOBAL_LIST_INIT(custodian_handsoff, world.file2list("strings/rt/custodian_hands
 			W.throw_at(item_target, 6, 1) //KICKED AWAY!
 		target.visible_message(span_danger("[src] strikes [target]'s arm with an open palm, bruising the tendons!"))
 		emote("laugh")
-		playsound(get_turf(src),'sound/combat/shieldraise.ogg', 200, TRUE)
+		playsound(get_turf(src),'modular/kaizoku/sound/combat/shieldraise.ogg', 200, TRUE)
 	else
 		KnockbackAttack(target)
 
@@ -409,7 +409,7 @@ GLOBAL_LIST_INIT(custodian_handsoff, world.file2list("strings/rt/custodian_hands
 	target.visible_message(span_danger("[src] looms over [target] and crushes them with their feet!"))
 	target.apply_damage(rand(30, 50), BRUTE, BP) // Big oof.
 	target.SetSleeping(20) // Just to give a scare. Not really to make the player sleep midbattle.
-	playsound(get_turf(src),'sound/combat/shieldbash_wood.ogg', 200, TRUE)
+	playsound(get_turf(src),'modular/kaizoku/sound/combat/shieldbash_wood.ogg', 200, TRUE)
 	if(BP)
 		BP.add_wound(/datum/wound/fracture)
 		BP.update_disabled() // HAHAHAHA. GET CLAPPED MAN

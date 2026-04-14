@@ -20,7 +20,7 @@
 
 	outfit = /datum/outfit/watchman
 	advclass_cat_rolls = list(CTAG_MENATARMS = 20)
-	cmode_music = 'sound/music/cmode/garrison/CombatManAtArms.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/garrison/CombatManAtArms.ogg'
 	give_bank_account = 30
 
 	job_bitflag = BITFLAG_GARRISON

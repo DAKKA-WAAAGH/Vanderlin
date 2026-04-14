@@ -4,7 +4,7 @@
 	allowed_races = RACES_PLAYER_ALL
 	outfit = /datum/outfit/adventurer/corsair
 	category_tags = list(CTAG_MERCENARY)
-	cmode_music = 'sound/music/cmode/adventurer/CombatOutlander.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander.ogg'
 	total_positions = 5
 
 	jobstats = list(

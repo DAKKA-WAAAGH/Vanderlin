@@ -69,7 +69,7 @@
 
 	cleaner_component.cleaning_effectiveness = (effectiveness * 100) % 100
 	cleaner_component.cleaning_strength = CLEAN_WASH
-	playsound(cleaner, pick('sound/foley/cloth_wipe (1).ogg','sound/foley/cloth_wipe (2).ogg', 'sound/foley/cloth_wipe (3).ogg'), 25, FALSE)
+	playsound(cleaner, pick('modular/kaizoku/sound/foley/cloth_wipe (1).ogg','modular/kaizoku/sound/foley/cloth_wipe (2).ogg', 'modular/kaizoku/sound/foley/cloth_wipe (3).ogg'), 25, FALSE)
 	cleaner.nobles_seen_servant_work()
 	return TRUE
 
@@ -141,7 +141,7 @@
 		if(do_after(user, clean_speed, O))
 			O.reagents.trans_to(src, reagents.maximum_volume, 1, transfered_by = user)
 			user.visible_message(span_small("[user] soaks \the [src] in \the [O]."), span_small("I soak \the [src] in \the [O]."), vision_distance = 2)
-			playsound(O, pick('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg'), 25, FALSE)
+			playsound(O, pick('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg'), 25, FALSE)
 	else if(isturf(target))
 		var/turf/T = target
 		if(istype(T, /turf/open/water))
@@ -149,7 +149,7 @@
 			if(do_after(user, clean_speed, T))
 				reagents.add_reagent(W.water_reagent, reagents.maximum_volume)
 				user.visible_message(span_small("[user] soaks \the [src] in \the [T]."), span_small("I soak \the [src] in \the [T]."), vision_distance = 2)
-				playsound(T, pick('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg'), 25, FALSE)
+				playsound(T, pick('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg'), 25, FALSE)
 		else
 			var/datum/liquid_group/lg = T.liquids?.liquid_group
 			if(!lg)
@@ -158,7 +158,7 @@
 			if(do_after(user, clean_speed * 2, T))
 				lg.transfer_to_atom(null, reagents.maximum_volume, src)
 				user.visible_message(span_small("[user] soaks \the [src]."), span_small("I soak \the [src]."), vision_distance = 2)
-				playsound(T, pick('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg'), 25, FALSE)
+				playsound(T, pick('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg'), 25, FALSE)
 	update_appearance()
 
 /obj/item/natural/cloth/proc/wring_cloth(atom/target, mob/living/user)
@@ -175,20 +175,20 @@
 		if(do_after(user, clean_speed * 2.5, O))
 			reagents.trans_to(O, reagents.total_volume, 1, transfered_by = user)
 			user.visible_message(span_small("[user] wrings out \the [src] in \the [O]."), span_small("I wring out \the [src] in \the [O]."), vision_distance = 2)
-			playsound(O, pick('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg'), 25, FALSE)
+			playsound(O, pick('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg'), 25, FALSE)
 	else if(isturf(target))
 		var/turf/T = target
 		if(istype(T, /turf/open/water))
 			if(do_after(user, clean_speed * 2.5, T))
 				reagents.clear_reagents()
 				user.visible_message(span_small("[user] wrings out \the [src] in \the [T]."), span_small("I wring out \the [src] in \the [T]."), vision_distance = 2)
-				playsound(T, pick('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg'), 25, FALSE)
+				playsound(T, pick('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg'), 25, FALSE)
 		else
 			if(do_after(user, clean_speed * 2.5, T))
 				T.add_liquid_from_reagents(reagents, amount = reagents.maximum_volume)
 				reagents.clear_reagents()
 				user.visible_message(span_small("[user] wrings out \the [src]."), span_small("I wring out \the [src]."), vision_distance = 2)
-				playsound(T, pick('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg'), 25, FALSE)
+				playsound(T, pick('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg'), 25, FALSE)
 
 	update_appearance()
 
@@ -209,10 +209,10 @@
 		to_chat(user, "<span class='warning'>There is already a bandage.</span>")
 		return
 	var/used_time = bandage_speed * (1 - (H.get_skill_level(/datum/skill/misc/medicine) * 0.15))
-	playsound(src, 'sound/foley/bandage.ogg', 100, FALSE)
+	playsound(src, 'modular/kaizoku/sound/foley/bandage.ogg', 100, FALSE)
 	if(!do_after(user, used_time, M))
 		return
-	playsound(src, 'sound/foley/bandage.ogg', 100, FALSE)
+	playsound(src, 'modular/kaizoku/sound/foley/bandage.ogg', 100, FALSE)
 
 	user.dropItemToGround(src)
 	affecting.try_bandage(src)

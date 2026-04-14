@@ -373,7 +373,7 @@
 	icon_state = "borc1"
 	base_icon_state = "borc"
 	projectiletype = /obj/projectile/bullet/reusable/arrow/orc
-	projectilesound = 'sound/combat/Ranged/flatbow-shot-01.ogg'
+	projectilesound = 'modular/kaizoku/sound/combat/Ranged/flatbow-shot-01.ogg'
 	ranged = 1
 	retreat_distance = 2
 	minimum_distance = 5
@@ -612,8 +612,8 @@
 	base_intents = list(/datum/intent/simple/claw)
 	attack_verb_continuous = "rips"
 	attack_verb_simple = "rend"
-	attack_sound = 'sound/combat/wooshes/bladed/wooshmed (1).ogg'
-	dodge_sound = 'sound/combat/dodge.ogg'
+	attack_sound = 'modular/kaizoku/sound/combat/wooshes/bladed/wooshmed (1).ogg'
+	dodge_sound = 'modular/kaizoku/sound/combat/dodge.ogg'
 	canparry = FALSE
 	candodge = TRUE
 	d_intent = INTENT_DODGE

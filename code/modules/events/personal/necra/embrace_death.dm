@@ -59,6 +59,6 @@
 		span_userdanger("YOU ARE MARKED BY NECRA!"),
 		span_biginfo("You have lived a good life as a follower of the Ten, but everything must come to an end. Necra wishes you to embrace death and earn a well deserved rest. Say goodbye to your loved ones, and take care of all remaining affairs, for this death will final. Your soul will have a guaranteed place in the Cycle."),
 	))
-	chosen_one.playsound_local(chosen_one, 'sound/ambience/noises/genspooky (1).ogg', 100)
+	chosen_one.playsound_local(chosen_one, 'modular/kaizoku/sound/ambience/noises/genspooky (1).ogg', 100)
 
 	chosen_one.mind.announce_personal_objectives()

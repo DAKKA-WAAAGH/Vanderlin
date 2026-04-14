@@ -7,7 +7,7 @@
 	lefthand_file = 'icons/roguetown/onmob/lefthand.dmi'
 	righthand_file = 'icons/roguetown/onmob/righthand.dmi'
 	experimental_inhand = FALSE
-	attacked_sound = 'sound/misc/woodhit.ogg'
+	attacked_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
 	blade_dulling = DULLING_CUT
 	max_integrity = 30
 	static_debris = list(/obj/item/grown/log/tree/small = 2)
@@ -32,7 +32,7 @@
 		var/lumber_time = (4 SECONDS - (skill_level * 5))
 		var/minimum = 1
 		var/boon = user?.get_learning_boon(/datum/skill/labor/lumberjacking) // STONEKEEP EDIT
-		playsound(src, 'sound/misc/woodhit.ogg', 100, TRUE)
+		playsound(src, 'modular/kaizoku/sound/misc/woodhit.ogg', 100, TRUE)
 		if(!do_after(user, lumber_time, user))
 			return
 		if(skill_level > 0) // If skill level is 1 or higher, we get more minimum wood!
@@ -45,7 +45,7 @@
 				if(!essence_sound_played)
 					essence_sound_played = TRUE
 					to_chat(user, span_warning("Dendor watches over us..."))
-					playsound(src,pick('sound/items/gem.ogg'), 100, FALSE)
+					playsound(src,pick('modular/kaizoku/sound/items/gem.ogg'), 100, FALSE)
 			else
 				new lumber(get_turf(src))
 		if(prob(10))
@@ -69,7 +69,7 @@
 		var/skill_level = user.get_skill_level(/datum/skill/labor/lumberjacking)
 		var/lumber_time = (4 SECONDS - (skill_level * 5))
 		var/minimum = 1
-		playsound(src, 'sound/misc/woodhit.ogg', 100, TRUE)
+		playsound(src, 'modular/kaizoku/sound/misc/woodhit.ogg', 100, TRUE)
 		if(!do_after(user, lumber_time, user))
 			return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
 		if(skill_level > 0) // If skill level is 1 or higher, we get more minimum wood!
@@ -82,7 +82,7 @@
 				if(!essence_sound_played)
 					essence_sound_played = TRUE
 					to_chat(user, span_warning("Dendor watches over us..."))
-					playsound(src,pick('sound/items/gem.ogg'), 100, FALSE)
+					playsound(src,pick('modular/kaizoku/sound/items/gem.ogg'), 100, FALSE)
 			else
 				new lumber_alt(get_turf(src))
 		if(!skill_level)
@@ -126,7 +126,7 @@
 	lefthand_file = 'icons/roguetown/onmob/lefthand.dmi'
 	righthand_file = 'icons/roguetown/onmob/righthand.dmi'
 	experimental_inhand = FALSE
-	attacked_sound = 'sound/misc/woodhit.ogg'
+	attacked_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
 	max_integrity = 30
 	static_debris = list(/obj/item/grown/log/tree/stick = 2)
 	firefuel = 20 MINUTES
@@ -177,7 +177,7 @@
 		if(L.m_intent == MOVE_INTENT_RUN)
 			prob2break = 100
 		if(prob(prob2break))
-			playsound(src,'sound/items/seedextract.ogg', 100, FALSE)
+			playsound(src,'modular/kaizoku/sound/items/seedextract.ogg', 100, FALSE)
 			qdel(src)
 			if (L.alpha == 0 && L.rogue_sneaking) // not anymore you're not
 				L.update_sneak_invis(TRUE)
@@ -185,7 +185,7 @@
 
 /obj/item/grown/log/tree/stick/attack_self(mob/living/user, params)
 	user.visible_message("<span class='warning'>[user] snaps [src].</span>")
-	playsound(user,'sound/items/seedextract.ogg', 100, FALSE)
+	playsound(user,'modular/kaizoku/sound/items/seedextract.ogg', 100, FALSE)
 	qdel(src)
 
 /obj/item/grown/log/tree/stick/attackby(obj/item/I, mob/living/user, params)
@@ -279,7 +279,7 @@
 	name = "essence of lumber"
 	desc = "A mystical essence imbued with the power of Dendor. Very good source of fuel."
 	icon_state = "lessence"
-	attacked_sound = 'sound/misc/woodhit.ogg'
+	attacked_sound = 'modular/kaizoku/sound/misc/woodhit.ogg'
 	static_debris = null
 	gripped_intents = null
 	firefuel = 60 MINUTES // Extremely poweful fuel.

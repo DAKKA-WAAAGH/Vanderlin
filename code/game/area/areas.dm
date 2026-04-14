@@ -369,7 +369,7 @@ GLOBAL_LIST_EMPTY(teleportlocs)
 	T.maptext_height = 209
 	T.maptext_x = 12
 	T.maptext_y = 64
-	var/used_sound = 'sound/misc/stings/generic.ogg'
+	var/used_sound = 'modular/kaizoku/sound/misc/stings/generic.ogg'
 	var/map_sound = SSmapping.config.custom_area_sound
 	var/area_sound = A.custom_area_sound
 	if(area_sound)

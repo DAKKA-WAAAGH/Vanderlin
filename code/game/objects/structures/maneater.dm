@@ -66,7 +66,7 @@
 			var/obj/item/bodypart/BP = F
 			if(BP.status == BODYPART_ROBOTIC)
 				continue // they're still gonna eat that wooden arm off you as a carbon
-		playsound(src,'sound/misc/eat.ogg', rand(30,60), TRUE)
+		playsound(src,'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 		qdel(F)
 		COOLDOWN_START(src, activity_cooldown, sleep_time)
 		return
@@ -74,7 +74,7 @@
 /obj/structure/flora/grass/maneater/real/proc/munch(mob/living/L)
 	if(!(L?.buckled == src))
 		return
-	playsound(src,'sound/misc/eat.ogg', rand(30,60), TRUE)
+	playsound(src,'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 	if(iscarbon(L))
 		var/mob/living/carbon/C = L
 		var/obj/item/bodypart/limb = C.get_bodypart_complex(list(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM)) || C.get_bodypart(BODY_ZONE_HEAD)
@@ -153,7 +153,7 @@
 			if(BP.status == BODYPART_ROBOTIC)
 				return
 		START_PROCESSING(SSobj, src)
-		playsound(src,'sound/misc/eat.ogg', rand(30,60), TRUE)
+		playsound(src,'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 		qdel(AM)
 		COOLDOWN_START(src, activity_cooldown, sleep_time)
 		update_appearance(UPDATE_ICON_STATE | UPDATE_NAME)

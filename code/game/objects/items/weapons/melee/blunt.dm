@@ -26,7 +26,7 @@
 	associated_skill = /datum/skill/combat/axesmaces
 	melting_material = /datum/material/iron
 	melt_amount = 75
-	parrysound = list('sound/combat/parry/parrygen.ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/parrygen.ogg')
 	swingsound = BLUNTWOOSH_MED
 	blade_dulling = DULLING_BASHCHOP
 	sellprice = 20

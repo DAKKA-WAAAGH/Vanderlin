@@ -24,7 +24,7 @@
 	///Casing used to shoot during retaliation
 	var/ranged_attack_casing = /obj/item/ammo_casing/caseless/arrow
 	///Sound to make while doing a retalitory attack
-	var/ranged_attack_sound = 'sound/combat/Ranged/flatbow-shot-01.ogg'
+	var/ranged_attack_sound = 'modular/kaizoku/sound/combat/Ranged/flatbow-shot-01.ogg'
 	///Weapon path, for visuals
 	var/held_weapon_visual = /obj/item/gun/ballistic/revolver/grenadelauncher/bow
 

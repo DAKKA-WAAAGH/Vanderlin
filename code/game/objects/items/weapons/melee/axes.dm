@@ -63,7 +63,7 @@
 	minstr = 10 //meant to be a orc weapon or barbarian weapon
 
 	parrysound = "sword"
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	melting_material = /datum/material/steel
 	melt_amount = 150
 	sellprice = 60
@@ -97,7 +97,7 @@
 	melting_material = /datum/material/iron
 	melt_amount = 100
 	parrysound = "sword"
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 
 	sellprice = 20
 
@@ -157,7 +157,7 @@
 	melting_material = /datum/material/bronze
 	melt_amount = 100
 	parrysound = "sword"
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 
 	sellprice = 20
 
@@ -191,7 +191,7 @@
 	melting_material = /datum/material/silver
 	melt_amount = 75
 	parrysound = "sword"
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	sellprice = 60
 
 /obj/item/weapon/axe/psydon/Initialize(mapload)
@@ -233,7 +233,7 @@
 	melting_material = /datum/material/steel
 	melt_amount = 175
 	resistance_flags = FIRE_PROOF
-	parrysound = list('sound/combat/parry/wood/parrywood (1).ogg', 'sound/combat/parry/wood/parrywood (2).ogg', 'sound/combat/parry/wood/parrywood (3).ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/wood/parrywood (1).ogg', 'modular/kaizoku/sound/combat/parry/wood/parrywood (2).ogg', 'modular/kaizoku/sound/combat/parry/wood/parrywood (3).ogg')
 	swingsound = BLADEWOOSH_MED
 	sellprice = 50
 	pickmult = 1.2 // It's a pick...
@@ -332,7 +332,7 @@
 
 	melting_material = /datum/material/copper
 	melt_amount = 150
-	pickup_sound = 'sound/foley/equip/rummaging-02.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/rummaging-02.ogg'
 	sellprice = 15
 
 /obj/item/weapon/axe/copper/getonmobprop(tag)
@@ -361,7 +361,7 @@
 	minstr = 8
 
 	smeltresult = /obj/item/fertilizer/ash
-	pickup_sound = 'sound/foley/equip/rummaging-02.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/rummaging-02.ogg'
 
 /obj/item/weapon/axe/boneaxe/getonmobprop(tag)
 	if(tag)

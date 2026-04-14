@@ -9,8 +9,8 @@
 	climbable = TRUE
 	anchored = TRUE
 	blade_dulling = DULLING_BASHCHOP
-	destroy_sound = 'sound/combat/hits/onwood/destroyfurniture.ogg'
-	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
+	destroy_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroyfurniture.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
 
 /obj/machinery/tanningrack/examine(mob/user)
 	. = ..()
@@ -44,10 +44,10 @@
 			var/pieces_to_spawn = rand(1, min(skill_level + 1, 6)) //Random number from 1 to skill level
 			//var/sound_played = FALSE // Stonekeep edit: Unused.
 			to_chat(user, span_warning("I begin scraping the hide's skin..."))
-			playsound(src, 'sound/foley/shaving.ogg', 80, TRUE, -1)	// STONEKEEP EDIT
+			playsound(src, 'modular/kaizoku/sound/foley/shaving.ogg', 80, TRUE, -1)	// STONEKEEP EDIT
 			if(!do_after(user, work_time))
 				return
-			playsound(src,pick('sound/items/book_open.ogg','sound/items/book_page.ogg'), 100, FALSE)
+			playsound(src,pick('modular/kaizoku/sound/items/book_open.ogg','modular/kaizoku/sound/items/book_page.ogg'), 100, FALSE)
 			QDEL_NULL(hide)
 			user.adjust_experience(/datum/skill/craft/tanning, user.STAINT * 2) // STONEKEEP EDIT
 			// user.mind.add_sleep_experience(/datum/skill/craft/tanning, user.STAINT * 2) //these numbers may need some revision
@@ -58,7 +58,7 @@
 //					if(!sound_played)
 //						sound_played = TRUE
 //						to_chat(user, span_warning("Dendor provides..."))
-//						playsound(src,pick('sound/items/gem.ogg'), 100, FALSE)
+//						playsound(src,pick('modular/kaizoku/sound/items/gem.ogg'), 100, FALSE)
 //				else
 				new /obj/item/natural/hide/cured(get_turf(user))
 			return
@@ -72,7 +72,7 @@
 		else
 			anchored = TRUE
 			to_chat(user, span_warning("You anchor [src]."))
-		playsound(src,pick('sound/foley/woodclimb.ogg'), 100, TRUE)
+		playsound(src,pick('modular/kaizoku/sound/foley/woodclimb.ogg'), 100, TRUE)
 		return
 	. = ..()
 

@@ -4,7 +4,7 @@
 	allowed_sexes = list(MALE, FEMALE)
 	allowed_races = RACES_PLAYER_ALL
 	outfit = /datum/outfit/wretch/rouschild
-	cmode_music = 'sound/music/cmode/adventurer/CombatOutlander2.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander2.ogg'
 	total_positions = 2
 	faction = FACTION_RATS
 

@@ -17,7 +17,7 @@
 					stock_announce("[B.amount] units of [R.name] has been submitted to the stockpile.")
 				qdel(B)
 				if(sound == TRUE)
-					playsound(src, 'sound/misc/hiss.ogg', 100, FALSE, -1)
+					playsound(src, 'modular/kaizoku/sound/misc/hiss.ogg', 100, FALSE, -1)
 			continue
 		else if(istype(I, R.item_type))
 			if(!R.check_item(I))
@@ -28,7 +28,7 @@
 				if(message == TRUE)
 					stock_announce("[R.name] has been submitted to the stockpile.")
 				if(sound == TRUE)
-					playsound(src, 'sound/misc/hiss.ogg', 100, FALSE, -1)
+					playsound(src, 'modular/kaizoku/sound/misc/hiss.ogg', 100, FALSE, -1)
 			else
 				var/area/A = GLOB.areas_by_type[R.transport_item]
 				if(!A && message == TRUE)
@@ -40,7 +40,7 @@
 				var/turf/T = pick(turfs)
 				I.forceMove(T)
 				if(sound == TRUE)
-					playsound(src, 'sound/misc/hiss.ogg', 100, FALSE, -1)
+					playsound(src, 'modular/kaizoku/sound/misc/hiss.ogg', 100, FALSE, -1)
 					playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 			return
 
@@ -49,7 +49,7 @@
 	if(.)
 		return
 	user.changeNext_move(CLICK_CD_MELEE)
-	playsound(src, 'sound/misc/beep.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/beep.ogg', 100, FALSE, -1)
 	var/canread = user.can_read(src, TRUE)
 	var/contents = "<center>SUBMISSION HOLE<BR>"
 
@@ -87,7 +87,7 @@
 		for(var/obj/I in get_turf(src))
 			attemptsell(I, user, FALSE, FALSE)
 		say("Bulk submission in progress...")
-		playsound(src, 'sound/misc/hiss.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/hiss.ogg', 100, FALSE, -1)
 		playsound(src, 'sound/blank.ogg', 100, FALSE, -1)
 		return TRUE
 
@@ -113,7 +113,7 @@ GLOBAL_VAR(feeding_hole_reset_timer)
 
 		GLOB.feeding_hole_wheat_count++
 */
-		playsound(src, 'sound/misc/beep.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/beep.ogg', 100, FALSE, -1)
 		user.visible_message("<span class='notice'>[user] feeds [P] into the [src].</span>",
 			"<span class='notice'>You feed the [P] into the [src].</span>")
 	else if(istype(P, /obj/item/reagent_containers/food/snacks/meat/steak))
@@ -132,7 +132,7 @@ GLOBAL_VAR(feeding_hole_reset_timer)
 	if(.)
 		return
 	user.changeNext_move(CLICK_CD_MELEE)
-	playsound(src, 'sound/misc/beep.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/beep.ogg', 100, FALSE, -1)
 	var/canread = user.can_read(src, TRUE)
 	var/contents = "<center>FEEDING HOLE<BR>"
 

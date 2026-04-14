@@ -277,7 +277,7 @@
 	background_track = 'sound/blank.ogg'
 	background_track_dusk = 'sound/blank.ogg'
 	background_track_night = 'sound/blank.ogg'
-	custom_area_sound = 'sound/misc/stings/SewerSting.ogg'
+	custom_area_sound = 'modular/kaizoku/sound/misc/stings/SewerSting.ogg'
 	converted_type = /area/outdoors/exposed/under/sewer
 
 /area/under/town/sewer/Initialize()

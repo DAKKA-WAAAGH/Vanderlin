@@ -140,7 +140,7 @@
 		return FALSE
 
 	to_chat(L, span_notice("I tug and rip out the parasite."))
-	playsound(L, 'sound/foley/flesh_rem.ogg', 100, TRUE, -2)
+	playsound(L, 'modular/kaizoku/sound/foley/flesh_rem.ogg', 100, TRUE, -2)
 
 	L.remove_status_effect(/datum/status_effect/bugged)
 

@@ -59,6 +59,6 @@
 		span_userdanger("YOU ARE NOC'S CHOSEN!"),
 		span_notice("Noc demands that you learn the ways of the arcyne! Seek baptism in the mana fountain to earn Noc's favor!"),
 	))
-	chosen_one.playsound_local(chosen_one, 'sound/ambience/noises/mystical (4).ogg', 100)
+	chosen_one.playsound_local(chosen_one, 'modular/kaizoku/sound/ambience/noises/mystical (4).ogg', 100)
 
 	chosen_one.mind.announce_personal_objectives()

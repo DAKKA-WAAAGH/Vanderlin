@@ -31,7 +31,7 @@
 	barefootstep = null
 	clawfootstep = null
 	heavyfootstep = null
-	landsound = 'sound/foley/jumpland/waterland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/waterland.ogg'
 	shine = SHINE_SHINY
 	no_over_text = FALSE
 	water_level = 2
@@ -209,7 +209,7 @@
 			user.visible_message("[user] starts to fill [src].", "You start to fill [src].")
 			if(do_after(user, 3 SECONDS, src))
 				if(bucket.reagents.remove_reagent(container_reagent.type, clamp(container_reagent.volume, 1, 100)))
-					playsound(src, 'sound/foley/waterenter.ogg', 100, FALSE)
+					playsound(src, 'modular/kaizoku/sound/foley/waterenter.ogg', 100, FALSE)
 					adjust_originate_watervolume(water_count)
 
 /turf/open/water/Initialize()
@@ -336,7 +336,7 @@
 
 /turf/open/water/hitby(atom/movable/AM, skipcatch, hitpush, blocked, datum/thrownthing/throwingdatum, damage_type = "blunt")
 	..()
-	playsound(src, pick('sound/foley/water_land1.ogg','sound/foley/water_land2.ogg','sound/foley/water_land3.ogg'), 100, FALSE)
+	playsound(src, pick('modular/kaizoku/sound/foley/water_land1.ogg','modular/kaizoku/sound/foley/water_land2.ogg','modular/kaizoku/sound/foley/water_land3.ogg'), 100, FALSE)
 
 /turf/open/water/Entered(atom/movable/AM, atom/oldLoc)
 	. = ..()
@@ -370,9 +370,9 @@
 			L.SoakMob(FEET, dirty_water_turf)
 		if(water_overlay)
 			if(water_level > 1 && !istype(oldLoc, type))
-				playsound(AM, 'sound/foley/waterenter.ogg', 100, FALSE)
+				playsound(AM, 'modular/kaizoku/sound/foley/waterenter.ogg', 100, FALSE)
 			else
-				playsound(AM, pick('sound/foley/watermove (1).ogg','sound/foley/watermove (2).ogg'), 100, FALSE)
+				playsound(AM, pick('modular/kaizoku/sound/foley/watermove (1).ogg','modular/kaizoku/sound/foley/watermove (2).ogg'), 100, FALSE)
 			if(istype(oldLoc, type) && (get_dir(src, oldLoc) != SOUTH))
 				water_overlay.layer = ABOVE_MOB_LAYER
 				water_overlay.plane = GAME_PLANE_UPPER
@@ -394,7 +394,7 @@
 				return
 			if(do_after(user, 8 DECISECONDS, src))
 				user.changeNext_move(CLICK_CD_MELEE)
-				playsound(user, 'sound/foley/drawwater.ogg', 100, FALSE)
+				playsound(user, 'modular/kaizoku/sound/foley/drawwater.ogg', 100, FALSE)
 				if(!mapped && C.reagents.add_reagent(water_reagent, 10))
 					adjust_originate_watervolume(-10)
 
@@ -411,7 +411,7 @@
 				return
 			if(do_after(user, 8 DECISECONDS, src))
 				user.changeNext_move(CLICK_CD_MELEE)
-				playsound(user, 'sound/foley/drawwater.ogg', 100, FALSE)
+				playsound(user, 'modular/kaizoku/sound/foley/drawwater.ogg', 100, FALSE)
 				var/water_count = C.reagents.get_reagent_amount(water_reagent.type)
 				if(!mapped && C.reagents.remove_reagent(water_reagent,  C.reagents.total_volume))
 					set_watervolume(clamp(water_volume + water_count, 1, water_maximum))
@@ -425,7 +425,7 @@
 		return
 	if(water_volume < 10)
 		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
-	var/list/wash = list('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg')
+	var/list/wash = list('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg')
 	if(isliving(user))
 		var/mob/living/L = user
 		user.visible_message("<span class='info'>[user] starts to wash in [src].</span>")
@@ -457,7 +457,7 @@
 		return
 	if(user.cmode)
 		return
-	var/list/wash = list('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg')
+	var/list/wash = list('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg')
 	playsound(user, pick_n_take(wash), 100, FALSE)
 	user.visible_message("<span class='info'>[user] starts to wash [item2wash] in [src].</span>")
 	if(do_after(user, 3 SECONDS, src))
@@ -480,7 +480,7 @@
 		return
 	if(water_volume < 10)
 		return TRUE
-	playsound(user, pick('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg'), 100, FALSE)
+	playsound(user, pick('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg'), 100, FALSE)
 	user.visible_message(span_info("[user] starts to drink from [src]."))
 	if(!do_after(user, 2.5 SECONDS, src))
 		return TRUE
@@ -489,7 +489,7 @@
 	reagents.trans_to(user, reagents.total_volume, transfered_by = user, method = INGEST)
 	if(!mapped)
 		adjust_originate_watervolume(-2)
-	playsound(user,pick('sound/items/drink_gen (1).ogg','sound/items/drink_gen (2).ogg','sound/items/drink_gen (3).ogg'), 100, TRUE)
+	playsound(user,pick('modular/kaizoku/sound/items/drink_gen (1).ogg','modular/kaizoku/sound/items/drink_gen (2).ogg','modular/kaizoku/sound/items/drink_gen (3).ogg'), 100, TRUE)
 	return TRUE
 
 /turf/open/water/Destroy()

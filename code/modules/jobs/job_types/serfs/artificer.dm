@@ -14,7 +14,7 @@
 
 	outfit = /datum/outfit/artificer
 	give_bank_account = 8
-	cmode_music = 'sound/music/cmode/adventurer/CombatDream.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatDream.ogg'
 
 	job_bitflag = BITFLAG_CONSTRUCTOR
 

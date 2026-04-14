@@ -20,8 +20,8 @@
 	force = 10
 	var/cocked = FALSE
 	cartridge_wording = "bolt"
-	load_sound = 'sound/foley/nockarrow.ogg'
-	fire_sound = 'sound/combat/Ranged/crossbow-small-shot-02.ogg'
+	load_sound = 'modular/kaizoku/sound/foley/nockarrow.ogg'
+	fire_sound = 'modular/kaizoku/sound/combat/Ranged/crossbow-small-shot-02.ogg'
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/slurbow
 	name = "slurbow"
@@ -164,7 +164,7 @@
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/crossbow/shoot_with_empty_chamber()
 	if(cocked)
-		playsound(src, 'sound/combat/Ranged/crossbow-small-shot-02.ogg', 100, FALSE)
+		playsound(src, 'modular/kaizoku/sound/combat/Ranged/crossbow-small-shot-02.ogg', 100, FALSE)
 		cocked = FALSE
 		update_appearance(UPDATE_ICON_STATE)
 
@@ -177,11 +177,11 @@
 		to_chat(user, span_info("I step on the stirrup and use all my might..."))
 		if(!movingreload)
 			if(do_after(user, reloadtime - user.STASTR, target = user))
-				playsound(user, 'sound/combat/Ranged/crossbow_medium_reload-01.ogg', 100, FALSE)
+				playsound(user, 'modular/kaizoku/sound/combat/Ranged/crossbow_medium_reload-01.ogg', 100, FALSE)
 				cocked = TRUE
 		else
 			if(do_after(user, reloadtime - user.STASTR, user, timed_action_flags = (IGNORE_USER_LOC_CHANGE|IGNORE_TARGET_LOC_CHANGE|IGNORE_HELD_ITEM|IGNORE_USER_DIR_CHANGE)))
-				playsound(user, 'sound/combat/Ranged/crossbow_medium_reload-01.ogg', 100, FALSE)
+				playsound(user, 'modular/kaizoku/sound/combat/Ranged/crossbow_medium_reload-01.ogg', 100, FALSE)
 				cocked = TRUE
 	else
 		to_chat(user, span_warning("I carefully de-cock the crossbow."))

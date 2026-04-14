@@ -9,10 +9,10 @@
 	sleevetype = "leg"
 	bloody_icon_state = "shoeblood"
 
-	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
-	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/cloak_equip.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/cloak_take_off.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 
 	body_parts_covered = FEET
 	slot_flags = ITEM_SLOT_SHOES

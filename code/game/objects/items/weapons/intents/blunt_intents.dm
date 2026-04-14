@@ -5,7 +5,7 @@
 	name = "strike"
 	blade_class = BCLASS_BLUNT
 	attack_verb = list("strikes", "hits")
-	hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/blunt/metalblunt (1).ogg', 'modular/kaizoku/sound/combat/hits/blunt/metalblunt (2).ogg', 'modular/kaizoku/sound/combat/hits/blunt/metalblunt (3).ogg')
 	chargetime = 0
 	penfactor = AP_CLUB_STRIKE
 	swingdelay = 0
@@ -14,7 +14,7 @@
 	item_damage_type = "blunt"
 
 /datum/intent/mace/strike/wood
-	hitsound = list('sound/combat/hits/blunt/woodblunt (1).ogg', 'sound/combat/hits/blunt/woodblunt (2).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/blunt/woodblunt (1).ogg', 'modular/kaizoku/sound/combat/hits/blunt/woodblunt (2).ogg')
 
 /datum/intent/mace/strike/heavy
 	penfactor = AP_CLUB_HEAVY_STRIKE
@@ -23,7 +23,7 @@
 	misscost = 12
 
 /datum/intent/mace/strike/shovel
-	hitsound = list('sound/combat/hits/blunt/shovel_hit.ogg', 'sound/combat/hits/blunt/shovel_hit2.ogg', 'sound/combat/hits/blunt/shovel_hit3.ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/blunt/shovel_hit.ogg', 'modular/kaizoku/sound/combat/hits/blunt/shovel_hit2.ogg', 'modular/kaizoku/sound/combat/hits/blunt/shovel_hit3.ogg')
 	penfactor = 10
 	icon_state = "instrike"
 
@@ -32,7 +32,7 @@
 	name = "smash"
 	blade_class = BCLASS_SMASH
 	attack_verb = list("smashes")
-	hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/blunt/metalblunt (1).ogg', 'modular/kaizoku/sound/combat/hits/blunt/metalblunt (2).ogg', 'modular/kaizoku/sound/combat/hits/blunt/metalblunt (3).ogg')
 	penfactor = AP_CLUB_SMASH
 	damfactor = 1.1
 	chargetime = 3
@@ -43,7 +43,7 @@
 	item_damage_type = "blunt"
 
 /datum/intent/mace/smash/wood
-	hitsound = list('sound/combat/hits/blunt/woodblunt (1).ogg', 'sound/combat/hits/blunt/woodblunt (2).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/blunt/woodblunt (1).ogg', 'modular/kaizoku/sound/combat/hits/blunt/woodblunt (2).ogg')
 
 /datum/intent/mace/smash/wood/ranged
 	reach = 2
@@ -65,7 +65,7 @@
 	reach = 2
 	chargetime = 1
 	warnie = "mobwarning"
-	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/genstab (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genstab (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genstab (3).ogg')
 	penfactor = 40
 	swingdelay = 1
 	misscost = 15
@@ -77,7 +77,7 @@
 	blade_class = BCLASS_STAB
 	attack_verb = list("thrusts", "stabs")
 	animname = "stab"
-	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/genstab (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genstab (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genstab (3).ogg')
 	penfactor = 20
 	damfactor = 0.8
 	item_damage_type = "stab"
@@ -88,7 +88,7 @@
 	blade_class = BCLASS_PICK
 	attack_verb = list("picks", "impales")
 	animname = "stab"
-	hitsound = list('sound/combat/hits/blunt/metalblunt (1).ogg', 'sound/combat/hits/blunt/metalblunt (2).ogg', 'sound/combat/hits/blunt/metalblunt (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/blunt/metalblunt (1).ogg', 'modular/kaizoku/sound/combat/hits/blunt/metalblunt (2).ogg', 'modular/kaizoku/sound/combat/hits/blunt/metalblunt (3).ogg')
 	chargetime = 14
 	chargedrain = 1
 	misscost = 1
@@ -103,7 +103,7 @@
 	name = "strike"
 	icon_state = "instrike"
 	blade_class = BCLASS_BLUNT
-	hitsound = list('sound/combat/hits/blunt/flailhit.ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/blunt/flailhit.ogg')
 	swingdelay = 5
 	misscost = 5
 	attack_verb = list("strikes", "hits")

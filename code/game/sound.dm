@@ -296,130 +296,130 @@
 	if(istext(soundin))
 		switch(soundin)
 			if (SFX_SPARKS)
-				soundin = pick('sound/effects/sparks1.ogg','sound/effects/sparks2.ogg','sound/effects/sparks3.ogg','sound/effects/sparks4.ogg')
+				soundin = pick('modular/kaizoku/sound/effects/sparks1.ogg','modular/kaizoku/sound/effects/sparks2.ogg','modular/kaizoku/sound/effects/sparks3.ogg','modular/kaizoku/sound/effects/sparks4.ogg')
 			if ("rustle")
-				soundin = pick('sound/foley/equip/rummaging-01.ogg','sound/foley/equip/rummaging-02.ogg')
+				soundin = pick('modular/kaizoku/sound/foley/equip/rummaging-01.ogg','modular/kaizoku/sound/foley/equip/rummaging-02.ogg')
 			if ("bodyfall")
-				soundin = pick('sound/foley/bodyfall (1).ogg','sound/foley/bodyfall (2).ogg','sound/foley/bodyfall (3).ogg','sound/foley/bodyfall (4).ogg')
+				soundin = pick('modular/kaizoku/sound/foley/bodyfall (1).ogg','modular/kaizoku/sound/foley/bodyfall (2).ogg','modular/kaizoku/sound/foley/bodyfall (3).ogg','modular/kaizoku/sound/foley/bodyfall (4).ogg')
 			if ("clothwipe")
-				soundin = pick('sound/foley/cloth_wipe (1).ogg','sound/foley/cloth_wipe (2).ogg','sound/foley/cloth_wipe (3).ogg')
+				soundin = pick('modular/kaizoku/sound/foley/cloth_wipe (1).ogg','modular/kaizoku/sound/foley/cloth_wipe (2).ogg','modular/kaizoku/sound/foley/cloth_wipe (3).ogg')
 			if ("glassbreak")
-				soundin = pick('sound/combat/hits/onglass/glassbreak (1).ogg','sound/combat/hits/onglass/glassbreak (2).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/hits/onglass/glassbreak (1).ogg','modular/kaizoku/sound/combat/hits/onglass/glassbreak (2).ogg')
 			if ("parrywood")
-				soundin = pick('sound/combat/parry/wood/parrywood (1).ogg', 'sound/combat/parry/wood/parrywood (2).ogg', 'sound/combat/parry/wood/parrywood (3).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/parry/wood/parrywood (1).ogg', 'modular/kaizoku/sound/combat/parry/wood/parrywood (2).ogg', 'modular/kaizoku/sound/combat/parry/wood/parrywood (3).ogg')
 			if ("unarmparry")
-				soundin = pick('sound/combat/parry/pugilism/unarmparry (1).ogg','sound/combat/parry/pugilism/unarmparry (2).ogg','sound/combat/parry/pugilism/unarmparry (3).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/parry/pugilism/unarmparry (1).ogg','modular/kaizoku/sound/combat/parry/pugilism/unarmparry (2).ogg','modular/kaizoku/sound/combat/parry/pugilism/unarmparry (3).ogg')
 			if ("dagger")
-				soundin = pick('sound/combat/parry/bladed/bladedsmall (1).ogg', 'sound/combat/parry/bladed/bladedsmall (2).ogg', 'sound/combat/parry/bladed/bladedsmall (3).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/parry/bladed/bladedsmall (1).ogg', 'modular/kaizoku/sound/combat/parry/bladed/bladedsmall (2).ogg', 'modular/kaizoku/sound/combat/parry/bladed/bladedsmall (3).ogg')
 			if ("rapier")
-				soundin = pick('sound/combat/parry/bladed/bladedthin (1).ogg', 'sound/combat/parry/bladed/bladedthin (2).ogg', 'sound/combat/parry/bladed/bladedthin (3).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/parry/bladed/bladedthin (1).ogg', 'modular/kaizoku/sound/combat/parry/bladed/bladedthin (2).ogg', 'modular/kaizoku/sound/combat/parry/bladed/bladedthin (3).ogg')
 			if ("sword")
-				soundin = pick('sound/combat/parry/bladed/bladedmedium (1).ogg', 'sound/combat/parry/bladed/bladedmedium (2).ogg', 'sound/combat/parry/bladed/bladedmedium (3).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/parry/bladed/bladedmedium (1).ogg', 'modular/kaizoku/sound/combat/parry/bladed/bladedmedium (2).ogg', 'modular/kaizoku/sound/combat/parry/bladed/bladedmedium (3).ogg')
 			if ("largeblade")
-				soundin = pick('sound/combat/parry/bladed/bladedlarge (1).ogg', 'sound/combat/parry/bladed/bladedlarge (2).ogg', 'sound/combat/parry/bladed/bladedlarge (3).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/parry/bladed/bladedlarge (1).ogg', 'modular/kaizoku/sound/combat/parry/bladed/bladedlarge (2).ogg', 'modular/kaizoku/sound/combat/parry/bladed/bladedlarge (3).ogg')
 			if ("unsheathe_sword")
-				soundin = pick('sound/foley/equip/swordsmall1.ogg', 'sound/foley/equip/swordsmall2.ogg')
+				soundin = pick('modular/kaizoku/sound/foley/equip/swordsmall1.ogg', 'modular/kaizoku/sound/foley/equip/swordsmall2.ogg')
 			if ("brandish_blade")
-				soundin = pick('sound/foley/equip/swordlarge1.ogg', 'sound/foley/equip/swordlarge2.ogg')
+				soundin = pick('modular/kaizoku/sound/foley/equip/swordlarge1.ogg', 'modular/kaizoku/sound/foley/equip/swordlarge2.ogg')
 			if ("burn")
-				soundin = pick('sound/combat/hits/burn (1).ogg','sound/combat/hits/burn (2).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/hits/burn (1).ogg','modular/kaizoku/sound/combat/hits/burn (2).ogg')
 			if ("nodmg")
-				soundin = pick('sound/combat/hits/nodmg (1).ogg','sound/combat/hits/nodmg (2).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/hits/nodmg (1).ogg','modular/kaizoku/sound/combat/hits/nodmg (2).ogg')
 			if ("plantcross")
-				soundin = pick('sound/foley/plantcross1.ogg','sound/foley/plantcross2.ogg','sound/foley/plantcross3.ogg','sound/foley/plantcross4.ogg')
+				soundin = pick('modular/kaizoku/sound/foley/plantcross1.ogg','modular/kaizoku/sound/foley/plantcross2.ogg','modular/kaizoku/sound/foley/plantcross3.ogg','modular/kaizoku/sound/foley/plantcross4.ogg')
 			if ("smashlimb")
-				soundin = pick('sound/combat/hits/smashlimb (1).ogg','sound/combat/hits/smashlimb (2).ogg','sound/combat/hits/smashlimb (3).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/hits/smashlimb (1).ogg','modular/kaizoku/sound/combat/hits/smashlimb (2).ogg','modular/kaizoku/sound/combat/hits/smashlimb (3).ogg')
 			if("genblunt")
-				soundin = pick('sound/combat/hits/blunt/genblunt (1).ogg','sound/combat/hits/blunt/genblunt (2).ogg','sound/combat/hits/blunt/genblunt (3).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/hits/blunt/genblunt (1).ogg','modular/kaizoku/sound/combat/hits/blunt/genblunt (2).ogg','modular/kaizoku/sound/combat/hits/blunt/genblunt (3).ogg')
 			if("wetbreak")
-				soundin = pick('sound/combat/fracture/fracturewet (1).ogg',
-'sound/combat/fracture/fracturewet (2).ogg',
-'sound/combat/fracture/fracturewet (3).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/fracture/fracturewet (1).ogg',
+'modular/kaizoku/sound/combat/fracture/fracturewet (2).ogg',
+'modular/kaizoku/sound/combat/fracture/fracturewet (3).ogg')
 			if("fracturedry")
-				soundin = pick('sound/combat/fracture/fracturedry (1).ogg',
-'sound/combat/fracture/fracturedry (2).ogg',
-'sound/combat/fracture/fracturedry (3).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/fracture/fracturedry (1).ogg',
+'modular/kaizoku/sound/combat/fracture/fracturedry (2).ogg',
+'modular/kaizoku/sound/combat/fracture/fracturedry (3).ogg')
 			if("headcrush")
-				soundin = pick('sound/combat/fracture/headcrush (1).ogg',
-'sound/combat/fracture/headcrush (2).ogg',
-'sound/combat/fracture/headcrush (3).ogg',
-'sound/combat/fracture/headcrush (4).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/fracture/headcrush (1).ogg',
+'modular/kaizoku/sound/combat/fracture/headcrush (2).ogg',
+'modular/kaizoku/sound/combat/fracture/headcrush (3).ogg',
+'modular/kaizoku/sound/combat/fracture/headcrush (4).ogg')
 			if("punch")
-				soundin = pick('sound/combat/hits/punch/punch (1).ogg','sound/combat/hits/punch/punch (2).ogg','sound/combat/hits/punch/punch (3).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/hits/punch/punch (1).ogg','modular/kaizoku/sound/combat/hits/punch/punch (2).ogg','modular/kaizoku/sound/combat/hits/punch/punch (3).ogg')
 			if("punch_hard")
-				soundin = pick('sound/combat/hits/punch/punch_hard (1).ogg','sound/combat/hits/punch/punch_hard (2).ogg','sound/combat/hits/punch/punch_hard (3).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/hits/punch/punch_hard (1).ogg','modular/kaizoku/sound/combat/hits/punch/punch_hard (2).ogg','modular/kaizoku/sound/combat/hits/punch/punch_hard (3).ogg')
 			if("smallslash")
-				soundin = pick('sound/combat/hits/bladed/smallslash (1).ogg', 'sound/combat/hits/bladed/smallslash (2).ogg', 'sound/combat/hits/bladed/smallslash (3).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/hits/bladed/smallslash (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/smallslash (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/smallslash (3).ogg')
 			if("fart")
-				soundin = pick('sound/vo/fart1.ogg','sound/vo/fart2.ogg','sound/vo/fart3.ogg')
+				soundin = pick('modular/kaizoku/sound/vo/fart1.ogg','modular/kaizoku/sound/vo/fart2.ogg','modular/kaizoku/sound/vo/fart3.ogg')
 			if("woodimpact")
-				soundin = pick('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
 			if("bubbles")
-				soundin = pick('sound/foley/bubb (1).ogg','sound/foley/bubb (2).ogg','sound/foley/bubb (3).ogg','sound/foley/bubb (4).ogg','sound/foley/bubb (5).ogg')
+				soundin = pick('modular/kaizoku/sound/foley/bubb (1).ogg','modular/kaizoku/sound/foley/bubb (2).ogg','modular/kaizoku/sound/foley/bubb (3).ogg','modular/kaizoku/sound/foley/bubb (4).ogg','modular/kaizoku/sound/foley/bubb (5).ogg')
 			if("parrywood")
-				soundin = pick('sound/combat/parry/wood/parrywood (1).ogg','sound/combat/parry/wood/parrywood (2).ogg','sound/combat/parry/wood/parrywood (3).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/parry/wood/parrywood (1).ogg','modular/kaizoku/sound/combat/parry/wood/parrywood (2).ogg','modular/kaizoku/sound/combat/parry/wood/parrywood (3).ogg')
 			if("whiz")
-				soundin = pick('sound/foley/whiz (1).ogg','sound/foley/whiz (2).ogg','sound/foley/whiz (3).ogg','sound/foley/whiz (4).ogg')
+				soundin = pick('modular/kaizoku/sound/foley/whiz (1).ogg','modular/kaizoku/sound/foley/whiz (2).ogg','modular/kaizoku/sound/foley/whiz (3).ogg','modular/kaizoku/sound/foley/whiz (4).ogg')
 			if("genslash")
-				soundin = pick('sound/combat/hits/bladed/genslash (1).ogg','sound/combat/hits/bladed/genslash (2).ogg','sound/combat/hits/bladed/genslash (3).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/hits/bladed/genslash (1).ogg','modular/kaizoku/sound/combat/hits/bladed/genslash (2).ogg','modular/kaizoku/sound/combat/hits/bladed/genslash (3).ogg')
 			if("bladewooshsmall")
-				soundin = pick('sound/combat/wooshes/bladed/wooshsmall (1).ogg','sound/combat/wooshes/bladed/wooshsmall (2).ogg','sound/combat/wooshes/bladed/wooshsmall (3).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (1).ogg','modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (2).ogg','modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (3).ogg')
 			if("bluntwooshmed")
-				soundin = pick('sound/combat/wooshes/blunt/wooshmed (1).ogg','sound/combat/wooshes/blunt/wooshmed (2).ogg','sound/combat/wooshes/blunt/wooshmed (3).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/wooshes/blunt/wooshmed (1).ogg','modular/kaizoku/sound/combat/wooshes/blunt/wooshmed (2).ogg','modular/kaizoku/sound/combat/wooshes/blunt/wooshmed (3).ogg')
 			if("bluntwooshlarge")
-				soundin = pick('sound/combat/wooshes/blunt/wooshlarge (1).ogg','sound/combat/wooshes/blunt/wooshlarge (2).ogg','sound/combat/wooshes/blunt/wooshlarge (3).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/wooshes/blunt/wooshlarge (1).ogg','modular/kaizoku/sound/combat/wooshes/blunt/wooshlarge (2).ogg','modular/kaizoku/sound/combat/wooshes/blunt/wooshlarge (3).ogg')
 			if("punchwoosh")
-				soundin = pick('sound/combat/wooshes/punch/punchwoosh (1).ogg','sound/combat/wooshes/punch/punchwoosh (2).ogg','sound/combat/wooshes/punch/punchwoosh (3).ogg')
+				soundin = pick('modular/kaizoku/sound/combat/wooshes/punch/punchwoosh (1).ogg','modular/kaizoku/sound/combat/wooshes/punch/punchwoosh (2).ogg','modular/kaizoku/sound/combat/wooshes/punch/punchwoosh (3).ogg')
 			if("changeling_absorb") // turn these into defines
 				soundin = pick(
-					'sound/surgery/changeling_absorb/changeling_absorb1.ogg',
-					'sound/surgery/changeling_absorb/changeling_absorb2.ogg',
-					'sound/surgery/changeling_absorb/changeling_absorb3.ogg',
-					'sound/surgery/changeling_absorb/changeling_absorb4.ogg',
-					'sound/surgery/changeling_absorb/changeling_absorb5.ogg',
+					'modular/kaizoku/sound/surgery/changeling_absorb/changeling_absorb1.ogg',
+					'modular/kaizoku/sound/surgery/changeling_absorb/changeling_absorb2.ogg',
+					'modular/kaizoku/sound/surgery/changeling_absorb/changeling_absorb3.ogg',
+					'modular/kaizoku/sound/surgery/changeling_absorb/changeling_absorb4.ogg',
+					'modular/kaizoku/sound/surgery/changeling_absorb/changeling_absorb5.ogg',
 				)
 			if(SFX_OUTLANDER_CHAIN_STEP)
-				soundin = pick('sound/foley/footsteps/armor/chain (1).ogg',\
-							'sound/foley/footsteps/armor/chain (2).ogg',\
-							'sound/foley/footsteps/armor/chain (3).ogg',\
+				soundin = pick('modular/kaizoku/sound/foley/footsteps/armor/chain (1).ogg',\
+							'modular/kaizoku/sound/foley/footsteps/armor/chain (2).ogg',\
+							'modular/kaizoku/sound/foley/footsteps/armor/chain (3).ogg',\
 							)
 			if(SFX_OUTLANDER_PLATE_STEP)
-				soundin = pick('sound/foley/footsteps/armor/plate (1).ogg',\
-							'sound/foley/footsteps/armor/plate (2).ogg',\
-							'sound/foley/footsteps/armor/plate (3).ogg',\
+				soundin = pick('modular/kaizoku/sound/foley/footsteps/armor/plate (1).ogg',\
+							'modular/kaizoku/sound/foley/footsteps/armor/plate (2).ogg',\
+							'modular/kaizoku/sound/foley/footsteps/armor/plate (3).ogg',\
 							)
 			if(SFX_OUTLANDER_PLATE_COAT_STEP)
-				soundin = pick('sound/foley/footsteps/armor/coatplates (1).ogg',\
-							'sound/foley/footsteps/armor/coatplates (2).ogg',\
-							'sound/foley/footsteps/armor/coatplates (3).ogg',\
+				soundin = pick('modular/kaizoku/sound/foley/footsteps/armor/coatplates (1).ogg',\
+							'modular/kaizoku/sound/foley/footsteps/armor/coatplates (2).ogg',\
+							'modular/kaizoku/sound/foley/footsteps/armor/coatplates (3).ogg',\
 							)
 			if(SFX_CHAIN_STEP)
-				soundin = pick('sound/foley/footsteps/armor/fisherchain (1).ogg',\
-							'sound/foley/footsteps/armor/fisherchain (2).ogg',\
-							'sound/foley/footsteps/armor/fisherchain (3).ogg',\
+				soundin = pick('modular/kaizoku/sound/foley/footsteps/armor/fisherchain (1).ogg',\
+							'modular/kaizoku/sound/foley/footsteps/armor/fisherchain (2).ogg',\
+							'modular/kaizoku/sound/foley/footsteps/armor/fisherchain (3).ogg',\
 							)
 			if(SFX_PLATE_STEP)
-				soundin = pick('sound/foley/footsteps/armor/crabsplate (1).ogg',\
-							'sound/foley/footsteps/armor/crabsplate (2).ogg',\
-							'sound/foley/footsteps/armor/crabsplate (3).ogg',\
+				soundin = pick('modular/kaizoku/sound/foley/footsteps/armor/crabsplate (1).ogg',\
+							'modular/kaizoku/sound/foley/footsteps/armor/crabsplate (2).ogg',\
+							'modular/kaizoku/sound/foley/footsteps/armor/crabsplate (3).ogg',\
 							)
 			if(SFX_LAMELLAR_STEP)
-				soundin = pick('sound/foley/footsteps/armor/lobsterplate (1).ogg',\
-							'sound/foley/footsteps/armor/lobsterplate (2).ogg',\
-							'sound/foley/footsteps/armor/lobsterplate (3).ogg',\
+				soundin = pick('modular/kaizoku/sound/foley/footsteps/armor/lobsterplate (1).ogg',\
+							'modular/kaizoku/sound/foley/footsteps/armor/lobsterplate (2).ogg',\
+							'modular/kaizoku/sound/foley/footsteps/armor/lobsterplate (3).ogg',\
 							)
 			if(SFX_INQUIS_BOOT_STEP)
-				soundin = pick('sound/foley/footsteps/armor/inquisitorboot (1).ogg',\
-							'sound/foley/footsteps/armor/inquisitorboot (2).ogg',\
-							'sound/foley/footsteps/armor/inquisitorboot (3).ogg',\
-							'sound/foley/footsteps/armor/inquisitorboot (4).ogg'\
+				soundin = pick('modular/kaizoku/sound/foley/footsteps/armor/inquisitorboot (1).ogg',\
+							'modular/kaizoku/sound/foley/footsteps/armor/inquisitorboot (2).ogg',\
+							'modular/kaizoku/sound/foley/footsteps/armor/inquisitorboot (3).ogg',\
+							'modular/kaizoku/sound/foley/footsteps/armor/inquisitorboot (4).ogg'\
 							)
 			if(SFX_WATCH_BOOT_STEP)
-				soundin = pick('sound/foley/footsteps/armor/heavy-footstep (1).ogg',\
-							'sound/foley/footsteps/armor/heavy-footstep (2).ogg',\
-							'sound/foley/footsteps/armor/heavy-footstep (3).ogg',\
-							'sound/foley/footsteps/armor/heavy-footstep (4).ogg',\
-							'sound/foley/footsteps/armor/heavy-footstep (5).ogg'\
+				soundin = pick('modular/kaizoku/sound/foley/footsteps/armor/heavy-footstep (1).ogg',\
+							'modular/kaizoku/sound/foley/footsteps/armor/heavy-footstep (2).ogg',\
+							'modular/kaizoku/sound/foley/footsteps/armor/heavy-footstep (3).ogg',\
+							'modular/kaizoku/sound/foley/footsteps/armor/heavy-footstep (4).ogg',\
+							'modular/kaizoku/sound/foley/footsteps/armor/heavy-footstep (5).ogg'\
 							)
 			if(SFX_CAT_MEOW)
 				soundin = pickweight(list(
@@ -441,19 +441,19 @@
 				)
 			if(SFX_DEFAULT_FISH_SLAP)
 				soundin = pick(
-					'sound/mobs/non-humanoids/fish/fish_slap1.ogg',
+					'modular/kaizoku/sound/mobs/non-humanoids/fish/fish_slap1.ogg',
 				)
 
 			if(SFX_ALT_FISH_SLAP)
 				soundin = pick(
-					'sound/mobs/non-humanoids/fish/fish_slap2.ogg',
+					'modular/kaizoku/sound/mobs/non-humanoids/fish/fish_slap2.ogg',
 				)
 			if(SFX_REEL)
 				soundin = pick(
-					'sound/items/reel/reel1.ogg',
-					'sound/items/reel/reel2.ogg',
-					'sound/items/reel/reel3.ogg',
-					'sound/items/reel/reel4.ogg',
-					'sound/items/reel/reel5.ogg',
+					'modular/kaizoku/sound/items/reel/reel1.ogg',
+					'modular/kaizoku/sound/items/reel/reel2.ogg',
+					'modular/kaizoku/sound/items/reel/reel3.ogg',
+					'modular/kaizoku/sound/items/reel/reel4.ogg',
+					'modular/kaizoku/sound/items/reel/reel5.ogg',
 				)
 	return soundin

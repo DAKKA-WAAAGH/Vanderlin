@@ -3,7 +3,7 @@
 	icon = 'icons/turf/constructed/carpet.dmi'
 	icon_state = "carpet"
 	flags_1 = NONE
-	landsound = 'sound/foley/jumpland/carpetland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/carpetland.ogg'
 	footstep = FOOTSTEP_CARPET
 	barefootstep = FOOTSTEP_SOFT_BAREFOOT
 	clawfootstep = FOOTSTEP_CARPET_BAREFOOT

@@ -215,7 +215,7 @@
 /proc/showCandidatePollWindow(mob/M, poll_time, Question, list/candidates, ignore_category, time_passed, flashwindow = TRUE)
 	set waitfor = 0
 
-//	SEND_SOUND(M, 'sound/misc/roundstart.ogg') //Alerting them to their consideration
+//	SEND_SOUND(M, 'modular/kaizoku/sound/misc/roundstart.ogg') //Alerting them to their consideration
 	if(flashwindow)
 		window_flash(M.client)
 	var/options = ignore_category ? list(CHOICE_YES, CHOICE_NO, CHOICE_NEVER) : DEFAULT_INPUT_CHOICES

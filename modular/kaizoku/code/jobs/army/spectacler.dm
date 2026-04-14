@@ -205,7 +205,7 @@
 	w_class = WEIGHT_CLASS_SMALL
 	flags_1 = CONDUCT_1
 	associated_skill = /datum/skill/combat/knives
-	hitsound = 'sound/combat/hits/bladed/genchop (2).ogg'
+	hitsound = 'modular/kaizoku/sound/combat/hits/bladed/genchop (2).ogg'
 	var/obj/item/clothing/wrists/bracers/kaizoku/scissorblade/wrist_ref
 
 /obj/item/weapon/clobber/Initialize()

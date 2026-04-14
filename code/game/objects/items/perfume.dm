@@ -48,7 +48,7 @@
 	uses_remaining--
 	update_appearance(UPDATE_OVERLAYS)
 	user.changeNext_move(CLICK_CD_RANGE * 2)
-	playsound(user, 'sound/items/perfume.ogg', 100, TRUE)
+	playsound(user, 'modular/kaizoku/sound/items/perfume.ogg', 100, TRUE)
 
 	if(proximity_flag)
 		// Direct application at close range

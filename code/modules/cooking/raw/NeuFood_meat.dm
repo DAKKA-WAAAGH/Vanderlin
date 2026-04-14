@@ -21,7 +21,7 @@
 	rotprocess = SHELFLIFE_SHORT
 	chopping_sound = TRUE
 	foodtype = RAW | MEAT
-	drop_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 	become_rot_type = /obj/item/reagent_containers/food/snacks/rotten/meat
 
 /*	.............   Raw meat   ................ */
@@ -110,7 +110,7 @@
 
 /obj/item/reagent_containers/food/snacks/meat/mince/throw_impact(atom/hit_atom, datum/thrownthing/thrownthing)
 	new /obj/effect/decal/cleanable/food/mess(get_turf(src))
-	playsound(src, 'sound/foley/meatslap.ogg', 100, TRUE, -1)
+	playsound(src, 'modular/kaizoku/sound/foley/meatslap.ogg', 100, TRUE, -1)
 	..()
 	qdel(src)
 

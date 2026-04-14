@@ -10,7 +10,7 @@
 	volume = 10
 
 /datum/looping_sound/torchloop
-	mid_sounds = list('sound/items/torchloop.ogg')
+	mid_sounds = list('modular/kaizoku/sound/items/torchloop.ogg')
 	mid_length = 75
 	volume = 25
 	extra_range = -1
@@ -24,7 +24,7 @@
 	extra_range = -1
 
 /datum/looping_sound/fireloop
-	mid_sounds = list('sound/misc/fire_place.ogg')
+	mid_sounds = list('modular/kaizoku/sound/misc/fire_place.ogg')
 	mid_length = 35
 	volume = 100
 	extra_range = -2
@@ -32,7 +32,7 @@
 	sound_group = /datum/sound_group/fire_loop
 
 /datum/looping_sound/boiling
-	mid_sounds = list('sound/foley/bubb (1).ogg','sound/foley/bubb (2).ogg','sound/foley/bubb (3).ogg','sound/foley/bubb (4).ogg','sound/foley/bubb (5).ogg')
+	mid_sounds = list('modular/kaizoku/sound/foley/bubb (1).ogg','modular/kaizoku/sound/foley/bubb (2).ogg','modular/kaizoku/sound/foley/bubb (3).ogg','modular/kaizoku/sound/foley/bubb (4).ogg','modular/kaizoku/sound/foley/bubb (5).ogg')
 	mid_length = 3 SECONDS
 	volume = 30
 	falloff_exponent = SOUND_FALLOFF_EXPONENT / 2
@@ -40,7 +40,7 @@
 	extra_range = SHORT_RANGE_SOUND_EXTRARANGE
 
 /datum/looping_sound/frying
-	mid_sounds = 'sound/misc/frying.ogg'
+	mid_sounds = 'modular/kaizoku/sound/misc/frying.ogg'
 	mid_length = 3 SECONDS
 	volume = 50
 	falloff_exponent = SOUND_FALLOFF_EXPONENT / 2

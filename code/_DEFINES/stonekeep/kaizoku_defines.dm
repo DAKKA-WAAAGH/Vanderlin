@@ -110,7 +110,7 @@ H.mind.teach_crafting_recipe(/datum/repeatable_crafting_recipe/dendor/visage)
 	attacked_atom = /obj/item/grown/log/tree/small
 	starting_atom = /obj/item/weapon/knife
 	tool_usage = list(
-		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'sound/items/wood_sharpen.ogg'),
+		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'modular/kaizoku/sound/items/wood_sharpen.ogg'),
 	)
 	requirements = list(/obj/item/grown/log/tree/small = 1)
 	output = /obj/item/clothing/face/druid
@@ -159,7 +159,7 @@ H.mind.teach_crafting_recipe(/datum/repeatable_crafting_recipe/dendor/visage)
 				"<span class='danger'>[who] grabs [src]'s exposed arm before slamming them on the ground!</span>")
 			src.AdjustKnockdown(5 + rand(3, 5))
 			src.apply_damage(rand(5, 10), BRUTE, BODY_ZONE_CHEST)
-			playsound(get_turf(src), 'sound/combat/shieldraise.ogg', 100, TRUE)
+			playsound(get_turf(src), 'modular/kaizoku/sound/combat/shieldraise.ogg', 100, TRUE)
 			if(length(GLOB.custodian_handsoff))
 				who.say(pick(GLOB.custodian_handsoff))
 			return

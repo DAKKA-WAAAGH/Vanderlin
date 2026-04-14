@@ -52,7 +52,7 @@
 		span_userdanger("YOU ARE ZIZO'S CHOSEN!"),
 		span_biginfo("Zizo demands suffering! Extract information through pain to earn Zizo's favor!"),
 	))
-	chosen_one.playsound_local(chosen_one, 'sound/misc/gods/zizo_omen.ogg', 100)
+	chosen_one.playsound_local(chosen_one, 'modular/kaizoku/sound/misc/gods/zizo_omen.ogg', 100)
 
 	to_chat(chosen_one, span_notice("You have gained an ability to <b>torture</b> others!"))
 

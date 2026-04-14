@@ -41,7 +41,7 @@
 			to_chat(user, span_warning("Gelatine is much too strange for you."))
 			return
 		to_chat(user, span_notice("Congealing the sugar..."))
-		playsound(user, 'sound/foley/splishy.ogg', 100, TRUE, -1)
+		playsound(user, 'modular/kaizoku/sound/foley/splishy.ogg', 100, TRUE, -1)
 		if(do_after(user, long_cooktime, src))
 			new /obj/item/reagent_containers/food/snacks/jellycake_base(loc)
 			user.adjust_experience(/datum/skill/craft/cooking, (user.STAINT*0.5)) // STONEKEEP EDIT
@@ -380,7 +380,7 @@
 			return
 		user.adjust_stamina(40) // forgot stamina is our lovely stamloss proc here
 		user.visible_message("<span class='info'>[user] churns butter...</span>")
-		playsound(user, 'sound/foley/butterchurn.ogg', 100, TRUE, -1)
+		playsound(user, 'modular/kaizoku/sound/foley/butterchurn.ogg', 100, TRUE, -1)
 		if(do_after(user, long_cooktime, src))
 			user.adjust_stamina(50)
 			if(reagents.has_reagent(/datum/reagent/consumable/milk/salted, 15))
@@ -477,7 +477,7 @@
 				to_chat(user, span_warning("The [I.name] is still soaked with something."))
 			else
 				user.visible_message("<span class='info'>[user] strains fresh cheese...</span>")
-				playsound(src, pick('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg'), 100, FALSE)
+				playsound(src, pick('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg'), 100, FALSE)
 				if(do_after(user, long_cooktime, src))
 					reagents.remove_reagent(milk, 5)
 					new cheese(drop_location())
@@ -493,7 +493,7 @@
 	if(istype(I, /obj/item/reagent_containers/food/snacks/cheese))
 		if(isturf(loc)&& (found_table))
 			user.visible_message("<span class='info'>[user] starts packing the cloth with fresh cheese...</span>")
-			playsound(user, 'sound/foley/dropsound/food_drop.ogg', 30, TRUE, -1)
+			playsound(user, 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg', 30, TRUE, -1)
 			if(do_after(user,3 SECONDS, src))
 				new /obj/item/reagent_containers/food/snacks/foodbase/cheesewheel_start(loc)
 				user.adjust_experience(/datum/skill/craft/cooking, (user.STAINT*0.5)) // STONEKEEP EDIT
@@ -520,7 +520,7 @@
 		short_cooktime = (50 - ((user.get_skill_level(/datum/skill/craft/cooking))*8))
 	if(istype(I, /obj/item/reagent_containers/food/snacks/cheese))
 		if(isturf(loc)&& (found_table))
-			playsound(user, 'sound/foley/dropsound/food_drop.ogg', 30, TRUE, -1)
+			playsound(user, 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg', 30, TRUE, -1)
 			if(do_after(user, short_cooktime, src))
 				new /obj/item/reagent_containers/food/snacks/foodbase/cheesewheel_two(loc)
 				qdel(I)
@@ -544,7 +544,7 @@
 		short_cooktime = (50 - ((user.get_skill_level(/datum/skill/craft/cooking))*8))
 	if(istype(I, /obj/item/reagent_containers/food/snacks/cheese))
 		if(isturf(loc)&& (found_table))
-			playsound(user, 'sound/foley/dropsound/food_drop.ogg', 30, TRUE, -1)
+			playsound(user, 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg', 30, TRUE, -1)
 			if(do_after(user, short_cooktime, src))
 				new /obj/item/reagent_containers/food/snacks/foodbase/cheesewheel_three(loc)
 				qdel(I)
@@ -568,9 +568,9 @@
 		short_cooktime = (50 - ((user.get_skill_level(/datum/skill/craft/cooking))*8))
 	if(istype(I, /obj/item/reagent_containers/food/snacks/cheese) && icon_state != "cheesewheel_end")
 		if(isturf(loc)&& (found_table))
-			playsound(get_turf(user), 'sound/foley/dropsound/food_drop.ogg', 30, TRUE, -1)
+			playsound(get_turf(user), 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg', 30, TRUE, -1)
 			user.adjust_experience(/datum/skill/craft/cooking, (user.STAINT*0.5)) // STONEKEEP EDIT
-			playsound(user, 'sound/foley/dropsound/food_drop.ogg', 30, TRUE, -1)
+			playsound(user, 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg', 30, TRUE, -1)
 			//user.mind.add_sleep_experience(/datum/skill/craft/cooking, (user.STAINT*0.5))
 			if(do_after(user, short_cooktime, src))
 				qdel(I)
@@ -585,7 +585,7 @@
 		return ..()
 
 /obj/item/reagent_containers/food/snacks/foodbase/cheesewheel_three/proc/maturing_done()
-	playsound(src, 'sound/foley/rustle2.ogg', 100, TRUE, -1)
+	playsound(src, 'modular/kaizoku/sound/foley/rustle2.ogg', 100, TRUE, -1)
 	new /obj/item/reagent_containers/food/snacks/cheddar(get_turf(src))
 	new /obj/item/natural/cloth(get_turf(src))
 	qdel(src)

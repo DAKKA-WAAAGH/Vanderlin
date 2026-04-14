@@ -110,7 +110,7 @@
 			user.cleric?.update_devotion(-1)
 
 			if(prob(80))
-				playsound(user, 'sound/items/fillcup.ogg', 55, TRUE)
+				playsound(user, 'modular/kaizoku/sound/items/fillcup.ogg', 55, TRUE)
 
 		handle_xp(user, fatigue_spent)
 		return TRUE

@@ -2,11 +2,11 @@
 	name = "clothing"
 	resistance_flags = FLAMMABLE
 	obj_flags = CAN_BE_HIT
-	break_sound = 'sound/foley/cloth_rip.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
 	blade_dulling = DULLING_CUT
 	max_integrity = 200
 	integrity_failure = 0.1
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 
 	//Here we have salvage vars!
 	salvage_result = /obj/item/natural/cloth
@@ -214,7 +214,7 @@
 				torn_sleeve_number += 1
 				r_sleeve_status = SLEEVE_TORN
 				user.visible_message(span_notice("[user] tears [src]."))
-				playsound(src, 'sound/foley/cloth_rip.ogg', 50, TRUE)
+				playsound(src, 'modular/kaizoku/sound/foley/cloth_rip.ogg', 50, TRUE)
 				if(r_sleeve_zone == BODY_ZONE_R_ARM)
 					body_parts_covered &= ~ARM_RIGHT
 				if(r_sleeve_zone == BODY_ZONE_R_LEG)
@@ -241,7 +241,7 @@
 				torn_sleeve_number += 1
 				l_sleeve_status = SLEEVE_TORN
 				user.visible_message(span_notice("[user] tears [src]."))
-				playsound(src, 'sound/foley/cloth_rip.ogg', 50, TRUE)
+				playsound(src, 'modular/kaizoku/sound/foley/cloth_rip.ogg', 50, TRUE)
 				if(l_sleeve_zone == BODY_ZONE_L_ARM)
 					body_parts_covered &= ~ARM_LEFT
 				if(l_sleeve_zone == BODY_ZONE_L_LEG)

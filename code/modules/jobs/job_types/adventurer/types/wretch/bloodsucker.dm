@@ -286,4 +286,4 @@
 
 /datum/job_pack/bloodsucker_vagrant/pick_pack(mob/living/carbon/human/picker)
 	. = ..()
-	picker.cmode_music = 'sound/music/cmode/antag/CombatBeest.ogg'
+	picker.cmode_music = 'modular/kaizoku/sound/music/cmode/antag/CombatBeest.ogg'

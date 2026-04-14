@@ -3,7 +3,7 @@
 	skillcraft = /datum/skill/craft/masonry
 	category = "Masonry"
 	construct_tool = /obj/item/weapon/hammer
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 	verbage = "construct"
 	verbage_tp = "constructs"
 

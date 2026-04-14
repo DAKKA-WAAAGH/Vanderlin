@@ -34,7 +34,7 @@
 	)
 
 	traits = list(TRAIT_ORPHAN)
-	cmode_music = 'sound/music/cmode/towner/CombatInn.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/towner/CombatInn.ogg'
 
 /datum/job/migrant/urchinbrain/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()
@@ -83,7 +83,7 @@
 	)
 
 	traits = list(TRAIT_ORPHAN)
-	cmode_music = 'sound/music/cmode/towner/CombatInn.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/towner/CombatInn.ogg'
 
 /datum/job/migrant/urchinbrawn/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()

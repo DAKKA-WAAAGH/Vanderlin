@@ -13,7 +13,7 @@
 		return FALSE
 
 	var/mob/living/simple_animal/hostile/retaliate/meatvine/consumed = owner
-	playsound(consumed, 'sound/misc/terror.ogg', 100, FALSE, 8, 0.9)
+	playsound(consumed, 'modular/kaizoku/sound/misc/terror.ogg', 100, FALSE, 8, 0.9)
 	shake_camera(owner, 2, 2)
 
 	for(var/mob/living/carbon/human/screech_target in get_hearers_in_view(screech_range, get_turf(consumed)))

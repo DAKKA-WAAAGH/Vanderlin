@@ -9,7 +9,7 @@
 	throwforce = 0
 	w_class = WEIGHT_CLASS_SMALL
 	resistance_flags = FLAMMABLE
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	sellprice = 5
 /obj/item/natural/hide/cured
 	name = "cured leather"
@@ -48,7 +48,7 @@
 	throwforce = 0
 	w_class = WEIGHT_CLASS_SMALL
 	resistance_flags = FLAMMABLE
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	sellprice = 5
 
 /obj/item/natural/fur/gote
@@ -132,7 +132,7 @@
 			var/used_time = 8
 			used_time = (used_time - 0.5 * butchering_skill) SECONDS
 			visible_message("[user] begins to butcher \the [src].")
-			playsound(src, 'sound/foley/gross.ogg', 100, FALSE)
+			playsound(src, 'modular/kaizoku/sound/foley/gross.ogg', 100, FALSE)
 			var/amt2raise = user.STAINT/4
 			if(do_after(user, used_time, src))
 				var/obj/item/I = new meat_to_give(get_turf(src))
@@ -273,7 +273,7 @@
 			if(!target.has_buckled_mobs())
 				user.visible_message("<span class='warning'>[user] tries to saddle [target]...</span>")
 				if(do_after(user, 4 SECONDS, target))
-					playsound(src, 'sound/foley/saddledismount.ogg', 100, FALSE)
+					playsound(src, 'modular/kaizoku/sound/foley/saddledismount.ogg', 100, FALSE)
 					user.dropItemToGround(src)
 					S.ssaddle = src
 					src.forceMove(S)

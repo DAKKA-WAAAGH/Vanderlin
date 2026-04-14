@@ -39,7 +39,7 @@
 	. = ..()
 	if(.)
 		return
-	playsound(user, pick('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg'), 100, FALSE)
+	playsound(user, pick('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg'), 100, FALSE)
 	user.visible_message(span_info("[user] starts to drink from [src]."))
 	if(do_after(user, 2.5 SECONDS, src))
 		drink_from(user)
@@ -49,7 +49,7 @@
 	var/datum/reagents/reagents = new()
 	reagents.add_reagent(/datum/reagent/water/gross, 2)
 	reagents.trans_to(user, reagents.total_volume, transfered_by = user, method = INGEST)
-	playsound(user,pick('sound/items/drink_gen (1).ogg','sound/items/drink_gen (2).ogg','sound/items/drink_gen (3).ogg'), 100, TRUE)
+	playsound(user,pick('modular/kaizoku/sound/items/drink_gen (1).ogg','modular/kaizoku/sound/items/drink_gen (2).ogg','modular/kaizoku/sound/items/drink_gen (3).ogg'), 100, TRUE)
 
 /obj/structure/well/attackby(obj/item/I, mob/user, params)
 	if(istype(I, /obj/item/reagent_containers/glass/bucket))
@@ -61,7 +61,7 @@
 			var/list/waterl = list(/datum/reagent/water = 100)
 			W.reagents.add_reagent_list(waterl)
 			to_chat(user, "<span class='notice'>I fill [W] from [src].</span>")
-			playsound(user, pick('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg'), 80, FALSE)
+			playsound(user, pick('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg'), 80, FALSE)
 			return
 	else ..()
 
@@ -72,7 +72,7 @@
 		return
 	if(!in_range(src, user))
 		return
-	playsound(src, 'sound/foley/ladder.ogg', 100, FALSE)
+	playsound(src, 'modular/kaizoku/sound/foley/ladder.ogg', 100, FALSE)
 	if(!do_after(user, 3 SECONDS, src))
 		return
 	user.visible_message("<span class='notice'>[user] climbs down [src].</span>", "<span class='notice'>I climb down [src].</span>")

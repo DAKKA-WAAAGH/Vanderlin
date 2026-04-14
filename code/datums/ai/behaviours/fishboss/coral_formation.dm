@@ -6,7 +6,7 @@
 	plane = GAME_PLANE
 	light_outer_range = 2
 	duration = 1.2 SECONDS
-	var/explode_sound = list('sound/misc/explode/incendiary (1).ogg','sound/misc/explode/incendiary (2).ogg')
+	var/explode_sound = list('modular/kaizoku/sound/misc/explode/incendiary (1).ogg','modular/kaizoku/sound/misc/explode/incendiary (2).ogg')
 
 /obj/effect/temp_visual/coral_spawn/Initialize(mapload, list/flame_hit)
 	. = ..()
@@ -56,7 +56,7 @@
 /obj/structure/coral_formation/Bumped(atom/movable/AM)
 	. = ..()
 	if(isliving(AM) && !("deepone" in AM:faction))
-		playsound(src, pick('sound/combat/hits/bladed/smallslash (1).ogg', 'sound/combat/hits/bladed/smallslash (2).ogg', 'sound/combat/hits/bladed/smallslash (3).ogg'), 50, FALSE)
+		playsound(src, pick('modular/kaizoku/sound/combat/hits/bladed/smallslash (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/smallslash (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/smallslash (3).ogg'), 50, FALSE)
 		for(var/mob/living/mob in range(range, src))
 			mob.apply_damage(damage_on_contact, BRUTE)
 			to_chat(mob, "<span class='danger'>Coral shard fly into you!</span>")
@@ -90,7 +90,7 @@
 		return
 
 	boss.visible_message("<span class='warning'>[boss] gestures, causing coral to violently erupt from the ground!</span>")
-	//playsound(boss, 'sound/effects/break_stone.ogg', 100, TRUE) // Replace with appropriate sound
+	//playsound(boss, 'modular/kaizoku/sound/effects/break_stone.ogg', 100, TRUE) // Replace with appropriate sound
 
 	// Create a line of coral between the boss and its target
 	var/atom/target = controller.blackboard[BB_BASIC_MOB_CURRENT_TARGET]

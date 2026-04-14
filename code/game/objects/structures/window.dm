@@ -15,9 +15,9 @@
 	CanAtmosPass = ATMOS_PASS_PROC
 	climb_time = 20
 	climb_offset = 10
-	attacked_sound = 'sound/combat/hits/onglass/glasshit.ogg'
+	attacked_sound = 'modular/kaizoku/sound/combat/hits/onglass/glasshit.ogg'
 	break_sound = "glassbreak"
-	destroy_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'
+	destroy_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroywalldoor.ogg'
 
 	var/lockdir = 0
 
@@ -31,7 +31,7 @@
 	update_appearance(UPDATE_ICON_STATE)
 
 	if(repair_thresholds || broken_repair)
-		AddComponent(/datum/component/repairable, repair_thresholds, broken_repair,  'sound/misc/wood_saw.ogg', repair_skill)
+		AddComponent(/datum/component/repairable, repair_thresholds, broken_repair,  'modular/kaizoku/sound/misc/wood_saw.ogg', repair_skill)
 
 /obj/structure/window/get_explosion_resistance()
 	if(!climbable)
@@ -142,7 +142,7 @@
 	if(istype(attacking_item, /obj/item/weapon/knife/dagger) && !climbable && !user.cmode)
 		to_chat(user, span_notice("I start trying to pry the window open..."))
 		if(do_after(user, 6 SECONDS, src))
-			playsound(src, 'sound/foley/doors/windowup.ogg', 100, FALSE)
+			playsound(src, 'modular/kaizoku/sound/foley/doors/windowup.ogg', 100, FALSE)
 			src.force_open()
 	else
 		return ..()
@@ -158,7 +158,7 @@
 /obj/structure/window/proc/open_up(mob/user)
 	if(user)
 		visible_message("<span class='info'>[user] opens [src].</span>")
-	playsound(src, 'sound/foley/doors/windowup.ogg', 100, FALSE)
+	playsound(src, 'modular/kaizoku/sound/foley/doors/windowup.ogg', 100, FALSE)
 	climbable = TRUE
 	update_appearance(UPDATE_ICON_STATE)
 	air_update_turf(TRUE)
@@ -166,7 +166,7 @@
 /obj/structure/window/proc/close_up(mob/user)
 	if(user)
 		visible_message("<span class='info'>[user] closes [src].</span>")
-	playsound(src, 'sound/foley/doors/windowdown.ogg', 100, FALSE)
+	playsound(src, 'modular/kaizoku/sound/foley/doors/windowdown.ogg', 100, FALSE)
 	climbable = FALSE
 	update_appearance(UPDATE_ICON_STATE)
 	air_update_turf(TRUE)
@@ -201,7 +201,7 @@
 		return TRUE
 
 /obj/structure/window/proc/force_open()
-	playsound(src, 'sound/foley/doors/windowup.ogg', 100, FALSE)
+	playsound(src, 'modular/kaizoku/sound/foley/doors/windowup.ogg', 100, FALSE)
 	climbable = TRUE
 	opacity = FALSE
 	update_appearance(UPDATE_ICON_STATE)
@@ -225,11 +225,11 @@
 	user.changeNext_move(CLICK_CD_MELEE)
 	src.visible_message("<span class='info'>[user] knocks on [src].</span>")
 	add_fingerprint(user)
-	playsound(src, 'sound/misc/glassknock.ogg', 100)
+	playsound(src, 'modular/kaizoku/sound/misc/glassknock.ogg', 100)
 
 /obj/structure/window/atom_break(damage_flag, silent)
 	if(!obj_broken)
-		attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
+		attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
 		new /obj/item/natural/glass/shard (get_turf(src))
 		climbable = TRUE
 	..()

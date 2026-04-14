@@ -50,7 +50,7 @@
 		to_chat(user, span_red("[message]"))
 		heard_messages += message
 		if(prob(50))
-			user.playsound_local(user, 'sound/effects/ghost.ogg', 75)
+			user.playsound_local(user, 'modular/kaizoku/sound/effects/ghost.ogg', 75)
 
 	if(time_spent >= time_required && !completed)
 		complete_objective()

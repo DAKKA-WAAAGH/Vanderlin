@@ -32,7 +32,7 @@ GLOBAL_LIST_EMPTY(explosions)
 		EX_PREPROCESS_EXIT_CHECK\
 	}
 
-/datum/explosion/New(atom/epicenter, devastation_range, heavy_impact_range, light_impact_range, flash_range, adminlog, ignorecap, flame_range, hotspot_range, silent, visfx = "explosion", smoke, soundin = 'sound/misc/explode/explosion.ogg')
+/datum/explosion/New(atom/epicenter, devastation_range, heavy_impact_range, light_impact_range, flash_range, adminlog, ignorecap, flame_range, hotspot_range, silent, visfx = "explosion", smoke, soundin = 'modular/kaizoku/sound/misc/explode/explosion.ogg')
 	set waitfor = FALSE
 
 	var/id = ++id_counter
@@ -112,7 +112,7 @@ GLOBAL_LIST_EMPTY(explosions)
 			var/list/shitty = soundin
 			soundin = pick(shitty)
 		var/sound/explosion_sound = sound(soundin)
-		var/sound/far_explosion_sound = sound(pick('sound/misc/explode/explosionfar (1).ogg','sound/misc/explode/explosionfar (2).ogg','sound/misc/explode/explosionfar (3).ogg'))
+		var/sound/far_explosion_sound = sound(pick('modular/kaizoku/sound/misc/explode/explosionfar (1).ogg','modular/kaizoku/sound/misc/explode/explosionfar (2).ogg','modular/kaizoku/sound/misc/explode/explosionfar (3).ogg'))
 
 		for(var/mob/M in GLOB.player_list)
 			// Double check for client

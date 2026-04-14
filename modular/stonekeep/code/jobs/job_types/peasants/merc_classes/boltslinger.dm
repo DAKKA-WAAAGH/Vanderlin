@@ -43,7 +43,7 @@
 		H.change_stat("perception", 3)
 		H.change_stat("endurance", 1)
 		H.change_stat("strength", 1)
-		H.cmode_music = 'sound/music/cmode/combat_guard.ogg'
+		H.cmode_music = 'modular/kaizoku/sound/music/cmode/combat_guard.ogg'
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 	if(H.dna.species.id == "dwarf")
 		H.cmode_music = 'sound/blank.ogg'

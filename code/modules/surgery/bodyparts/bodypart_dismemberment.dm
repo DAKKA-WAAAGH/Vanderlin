@@ -12,11 +12,11 @@
 	var/dismember_wound
 	/// Sound we make when violently dismembered
 	var/list/dismemsound = list(
-		'sound/combat/dismemberment/dismem (1).ogg',
-		'sound/combat/dismemberment/dismem (2).ogg',
-		'sound/combat/dismemberment/dismem (3).ogg',
-		'sound/combat/dismemberment/dismem (5).ogg',
-		'sound/combat/dismemberment/dismem (6).ogg',
+		'modular/kaizoku/sound/combat/dismemberment/dismem (1).ogg',
+		'modular/kaizoku/sound/combat/dismemberment/dismem (2).ogg',
+		'modular/kaizoku/sound/combat/dismemberment/dismem (3).ogg',
+		'modular/kaizoku/sound/combat/dismemberment/dismem (5).ogg',
+		'modular/kaizoku/sound/combat/dismemberment/dismem (6).ogg',
 	)
 
 //Dismember a limb
@@ -120,7 +120,7 @@
 	var/organ_spilled = 0
 	var/turf/T = get_turf(C)
 	C.add_splatter_floor(T)
-	playsound(C, 'sound/combat/crit2.ogg', 100, FALSE, 5)
+	playsound(C, 'modular/kaizoku/sound/combat/crit2.ogg', 100, FALSE, 5)
 	C.emote("painscream")
 	for(var/obj/item/organ/O as anything in C.internal_organs)
 		var/org_zone = check_zone(O.zone)

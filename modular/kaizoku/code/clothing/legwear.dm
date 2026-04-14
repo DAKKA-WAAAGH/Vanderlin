@@ -158,7 +158,7 @@
 	body_parts_covered = GROIN|LEGS|FEET
 	blocksound = PLATEHIT
 	var/do_sound = FALSE
-	drop_sound = 'sound/foley/dropsound/armor_drop_lamellar.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_lamellar.ogg'
 	anvilrepair = /datum/skill/craft/armorsmithing
 	alternate_worn_layer = SHOESLEEVE_LAYER
 

@@ -13,7 +13,7 @@
 	total_positions = 2
 	roll_chance = 30
 	category_tags = list(CTAG_ADVENTURER)
-	cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatMonk.ogg'
 	outfit = /datum/outfit/adventurer/sekketianshinobi
 
 	jobstats = list(

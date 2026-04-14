@@ -2,7 +2,7 @@
 	name = "Profane"
 	desc = "Fire forth a splinter of unholy bone, tearing flesh and causing bleeding. If you hold pieces of bone in your other hand, you will coax a much stronger lance of bone into being."
 	button_icon_state = "profane"
-	sound = 'sound/misc/stings/generic.ogg'
+	sound = 'modular/kaizoku/sound/misc/stings/generic.ogg'
 	charge_sound = 'sound/magic/vlightning.ogg'
 
 	spell_type = SPELL_MIRACLE

@@ -26,8 +26,8 @@
 	max_integrity = 500
 	explosion_block = 20
 	damage_deflection = 10
-	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
-	attacked_sound = list('sound/combat/hits/onrock/onrock (1).ogg', 'sound/combat/hits/onrock/onrock (2).ogg', 'sound/combat/hits/onrock/onrock (3).ogg', 'sound/combat/hits/onrock/onrock (4).ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onstone/stonedeath.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onrock/onrock (1).ogg', 'modular/kaizoku/sound/combat/hits/onrock/onrock (2).ogg', 'modular/kaizoku/sound/combat/hits/onrock/onrock (3).ogg', 'modular/kaizoku/sound/combat/hits/onrock/onrock (4).ogg')
 	neighborlay = "dirtedge"
 
 /turf/closed/mineral/Destroy()

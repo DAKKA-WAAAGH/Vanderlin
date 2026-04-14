@@ -14,4 +14,4 @@
 	craftdiff = 1
 	verbage = "construct"
 	verbage_tp = "constructs"
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'

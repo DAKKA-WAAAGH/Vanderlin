@@ -70,7 +70,7 @@
 	)
 
 	victim.balloon_alert(victim, "flung!")
-	playsound(user, 'sound/items/weapons/thudswoosh.ogg', 50, TRUE)
+	playsound(user, 'modular/kaizoku/sound/items/weapons/thudswoosh.ogg', 50, TRUE)
 
 	victim.Knockdown(stun_duration)
 	var/turf/start_turf = get_turf(victim)
@@ -98,7 +98,7 @@
 
 		victim.apply_damage(collision_damage, BRUTE, def_zone = null, blocked = FALSE, forced = TRUE)
 
-		playsound(victim, 'sound/misc/meteorimpact.ogg', 40, TRUE)
+		playsound(victim, 'modular/kaizoku/sound/misc/meteorimpact.ogg', 40, TRUE)
 		victim.add_splatter_floor()
 
 		victim.Paralyze(0.5 SECONDS)

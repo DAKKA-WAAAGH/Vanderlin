@@ -14,9 +14,9 @@
 	obj_flags = CAN_BE_HIT
 	reagent_flags = TRANSFERABLE | AMOUNT_VISIBLE
 	w_class =  WEIGHT_CLASS_NORMAL
-	drinksounds = list('sound/items/drink_bottle (1).ogg','sound/items/drink_bottle (2).ogg')
-	fillsounds = list('sound/items/fillcup.ogg')
-	poursounds = list('sound/items/fillbottle.ogg')
+	drinksounds = list('modular/kaizoku/sound/items/drink_bottle (1).ogg','modular/kaizoku/sound/items/drink_bottle (2).ogg')
+	fillsounds = list('modular/kaizoku/sound/items/fillcup.ogg')
+	poursounds = list('modular/kaizoku/sound/items/fillbottle.ogg')
 	sewrepair = TRUE
 	grid_width = 32
 	grid_height = 64

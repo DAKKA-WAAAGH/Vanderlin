@@ -136,11 +136,11 @@
 			else
 				if(old)
 					user.visible_message(span_warning("The old [src.name] breaks under stress!"))
-					playsound(src, 'sound/foley/breaksound.ogg', 100, TRUE, -1)
+					playsound(src, 'modular/kaizoku/sound/foley/breaksound.ogg', 100, TRUE, -1)
 					qdel(src)
 				else
 					user.visible_message(span_warning("Curses! I couldn't keep [src.name] open tight enough!"))
-					playsound(src, 'sound/items/beartrap.ogg', 300, TRUE, -1)
+					playsound(src, 'modular/kaizoku/sound/items/beartrap.ogg', 300, TRUE, -1)
 					return
 
 /obj/item/restraints/legcuffs/beartrap/proc/close_trap(atom/triggerer, atom/item)
@@ -148,7 +148,7 @@
 	anchored = FALSE // Take it off the ground
 	alpha = 255
 	update_appearance(UPDATE_ICON_STATE)
-	playsound(src, 'sound/items/beartrap.ogg', 300, TRUE, -1)
+	playsound(src, 'modular/kaizoku/sound/items/beartrap.ogg', 300, TRUE, -1)
 	triggerer.log_message("has triggered the [src][item ? " with [item]" : ""]!", LOG_ATTACK)
 
 /obj/item/restraints/legcuffs/beartrap/Crossed(AM as mob|obj)

@@ -2,7 +2,7 @@
 	name = "Summon Trident"
 	desc = "Summon a trident with magic"
 	button_icon_state = "lightning"
-	sound = 'sound/foley/jumpland/waterland.ogg'
+	sound = 'modular/kaizoku/sound/foley/jumpland/waterland.ogg'
 
 	associated_skill = /datum/skill/magic/arcane
 
@@ -21,7 +21,7 @@
 	name = "Summon Abyssal Trident"
 	desc = "Summon a trident from Abyssor's domain."
 	button_icon_state = "lightning"
-	sound = 'sound/foley/jumpland/waterland.ogg'
+	sound = 'modular/kaizoku/sound/foley/jumpland/waterland.ogg'
 
 	spell_type = SPELL_MIRACLE
 	antimagic_flags = MAGIC_RESISTANCE_HOLY

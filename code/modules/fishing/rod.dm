@@ -116,7 +116,7 @@
 				I.forceMove(src)
 				baited = I
 				user.visible_message("<span class='notice'>[user] hooks something to [src].</span>", "<span class='notice'>I hook [I] to [src].</span>")
-				playsound(src, 'sound/foley/pierce.ogg', 50, FALSE)
+				playsound(src, 'modular/kaizoku/sound/foley/pierce.ogg', 50, FALSE)
 		else if(istype(I, /obj/item/natural/bundle/worms))
 			if(!baited)
 				var/obj/item/natural/bundle/worms/W = I
@@ -126,13 +126,13 @@
 					new W.stacktype(get_turf(user))
 					qdel(W)
 				user.visible_message("<span class='notice'>[user] hooks something to [src].</span>", "<span class='notice'>I hook [W.stacktype] to [src].</span>")
-				playsound(src, 'sound/foley/pierce.ogg', 50, FALSE)
+				playsound(src, 'modular/kaizoku/sound/foley/pierce.ogg', 50, FALSE)
 		else
 			if(!baited)
 				I.forceMove(src)
 				baited = I
 				user.visible_message("<span class='notice'>[user] hooks something to the line.</span>", "<span class='notice'>I hook [I] to my line.</span>")
-				playsound(src, 'sound/foley/pierce.ogg', 50, FALSE)
+				playsound(src, 'modular/kaizoku/sound/foley/pierce.ogg', 50, FALSE)
 
 	else if(istype(I, /obj/item/fishing)) //bait has a null attachtype and is accounted for in the previous check so i don't have to worry about it
 		var/obj/item/fishing/T = I

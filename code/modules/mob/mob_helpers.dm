@@ -647,7 +647,7 @@
 	if(input == d_intent)
 		return
 	d_intent = input
-	playsound_local(src, 'sound/misc/click.ogg', 100)
+	playsound_local(src, 'modular/kaizoku/sound/misc/click.ogg', 100)
 	if(hud_used)
 		if(hud_used.def_intent)
 			hud_used.def_intent.update_appearance(UPDATE_ICON_STATE)
@@ -670,14 +670,14 @@
 		return
 
 	if(cmode)
-		playsound_local(src, 'sound/misc/comboff.ogg', 100)
+		playsound_local(src, 'modular/kaizoku/sound/misc/comboff.ogg', 100)
 		cmode = FALSE
 		if(client && HAS_TRAIT(src, TRAIT_SCHIZO_AMBIENCE) && !HAS_TRAIT(src, TRAIT_SCREENSHAKE))
 			animate(client, pixel_y) // stops screenshake if you're not on 4th wonder yet.
 		cmode_timer = addtimer(TRAIT_CALLBACK_REMOVE(src, TRAIT_BLOCKED_DIAGONAL, "combat"), 10 SECONDS, TIMER_STOPPABLE | TIMER_OVERRIDE | TIMER_UNIQUE)
 	else
 		cmode = TRUE
-		playsound_local(src, 'sound/misc/combon.ogg', 100)
+		playsound_local(src, 'modular/kaizoku/sound/misc/combon.ogg', 100)
 		ADD_TRAIT(src, TRAIT_BLOCKED_DIAGONAL, "combat")
 		deltimer(cmode_timer)
 
@@ -687,7 +687,7 @@
 /mob
 	var/last_aimhchange = 0
 	var/aimheight = 11
-	var/cmode_music = 'sound/music/cmode/combat.ogg'
+	var/cmode_music = 'modular/kaizoku/sound/music/cmode/combat.ogg'
 
 /mob/proc/aimheight_change(input)
 	var/old_zone = zone_selected
@@ -739,7 +739,7 @@
 			zone_selected = BODY_ZONE_PRECISE_L_FOOT
 
 	if(zone_selected != old_zone)
-		playsound_local(src, 'sound/misc/click.ogg', 50, TRUE)
+		playsound_local(src, 'modular/kaizoku/sound/misc/click.ogg', 50, TRUE)
 		if(hud_used)
 			if(hud_used.zone_select)
 				hud_used.zone_select.update_appearance(UPDATE_OVERLAYS)

@@ -6,7 +6,7 @@
 	name = "Tomb of Matthios"
 	icon_state = "basement"
 	first_time_text = "THE TOMB OF MATTHIOS"
-	custom_area_sound = 'sound/misc/stings/TombSting.ogg'
+	custom_area_sound = 'modular/kaizoku/sound/misc/stings/TombSting.ogg'
 	soundenv = 5
 	droning_index = DRONING_BASEMENT
 	ambient_index = AMBIENCE_DUNGEON

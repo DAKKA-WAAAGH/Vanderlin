@@ -104,18 +104,18 @@
 	if(isliving(user))
 		var/mob/living/L = user
 		if(icon_state == "[base_state]over")
-			playsound(src, 'sound/combat/hits/onwood/woodimpact (1).ogg', 100)
+			playsound(src, 'modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg', 100)
 			user.visible_message("<span class='warning'>[user] kicks [src]!</span>", \
 				"<span class='warning'>I kick [src]!</span>")
 			return
 		if(prob(L.STASTR * 8))
-			playsound(src, 'sound/combat/hits/onwood/woodimpact (1).ogg', 100)
+			playsound(src, 'modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg', 100)
 			user.visible_message("<span class='warning'>[user] kicks over [src]!</span>", \
 				"<span class='warning'>I kick over [src]!</span>")
 			burn_out()
 			knock_over()
 		else
-			playsound(src, 'sound/combat/hits/onwood/woodimpact (1).ogg', 100)
+			playsound(src, 'modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg', 100)
 			user.visible_message("<span class='warning'>[user] kicks [src]!</span>", \
 				"<span class='warning'>I kick [src]!</span>")
 
@@ -264,7 +264,7 @@
 		if(!on)
 			if(torchy.fuel > 0)
 				torchy.spark_act()
-				playsound(src, 'sound/items/firelight.ogg', 100)
+				playsound(src, 'modular/kaizoku/sound/items/firelight.ogg', 100)
 				on = TRUE
 				update()
 				update_appearance(UPDATE_ICON_STATE)
@@ -312,7 +312,7 @@
 		on = FALSE
 		update()
 		update_appearance(UPDATE_ICON_STATE)
-		playsound(src, 'sound/foley/torchfixturetake.ogg', 70)
+		playsound(src, 'modular/kaizoku/sound/foley/torchfixturetake.ogg', 70)
 
 /obj/machinery/light/fueled/torchholder/burn_out()
 	if(torchy && torchy.on)
@@ -330,7 +330,7 @@
 				else
 					torchy.spark_act()
 					user.visible_message("<span class='info'>[user] lights [src].</span>")
-					playsound(src, 'sound/items/firelight.ogg', 100)
+					playsound(src, 'modular/kaizoku/sound/items/firelight.ogg', 100)
 					on = TRUE
 					update()
 					update_appearance(UPDATE_ICON_STATE)
@@ -353,7 +353,7 @@
 					return
 				torchy = LR
 				update_appearance(UPDATE_ICON_STATE)
-			playsound(src, 'sound/foley/torchfixtureput.ogg', 70)
+			playsound(src, 'modular/kaizoku/sound/foley/torchfixtureput.ogg', 70)
 		return
 	. = ..()
 
@@ -420,7 +420,7 @@
 /obj/machinery/light/fueled/hearth/attackby(obj/item/W, mob/living/user, params)
 	if(!attachment)
 		if(istype(W, /obj/item/cooking/pan) || istype(W, /obj/item/reagent_containers/glass/bucket/pot) || istype(W, /obj/item/reagent_containers/glass/carafe/teapot))
-			playsound(user, 'sound/foley/dropsound/shovel_drop.ogg', 40, TRUE, -1)
+			playsound(user, 'modular/kaizoku/sound/foley/dropsound/shovel_drop.ogg', 40, TRUE, -1)
 
 			if(user.transferItemToLoc(W, src, silent = TRUE))
 				attachment = W
@@ -446,7 +446,7 @@
 /obj/machinery/light/fueled/hearth/fire_act(added, maxstacks)
 	. = ..()
 	if(food)
-		playsound(src, 'sound/misc/frying.ogg', 80, FALSE, extrarange = 2)
+		playsound(src, 'modular/kaizoku/sound/misc/frying.ogg', 80, FALSE, extrarange = 2)
 
 /obj/machinery/light/fueled/hearth/update_overlays()
 	. = ..()

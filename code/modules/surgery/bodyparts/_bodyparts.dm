@@ -187,7 +187,7 @@
 				if(user.mind)
 					used_time -= (user.get_skill_level(/datum/skill/labor/butchering) * 3 SECONDS)
 				visible_message("[user] begins to butcher \the [src].")
-				playsound(src, 'sound/foley/gross.ogg', 100, FALSE)
+				playsound(src, 'modular/kaizoku/sound/foley/gross.ogg', 100, FALSE)
 				var/steaks = 1
 				switch(user.get_skill_level(/datum/skill/labor/butchering))
 					if(3)
@@ -212,7 +212,7 @@
 	else if(isanimal(user))
 		if(!skeletonized)
 			visible_message("[user] begins to eat \the [src].")
-			playsound(src, 'sound/foley/gross.ogg', 100, FALSE)
+			playsound(src, 'modular/kaizoku/sound/foley/gross.ogg', 100, FALSE)
 			if(do_after(user, 3 SECONDS, src))
 				var/obj/item/reagent_containers/food/snacks/meat/steak/steak
 				var/steak_type = S?.meat || /obj/item/reagent_containers/food/snacks/meat/steak
@@ -244,7 +244,7 @@
 /obj/item/bodypart/head/attackby(obj/item/I, mob/user, params)
 	if(length(contents) && I.get_sharpness() && !user.cmode)
 		add_fingerprint(user)
-		playsound(src, 'sound/combat/hits/bladed/genstab (1).ogg', 60, vary = FALSE)
+		playsound(src, 'modular/kaizoku/sound/combat/hits/bladed/genstab (1).ogg', 60, vary = FALSE)
 		user.visible_message("<span class='warning'>[user] begins to cut open [src].</span>",\
 			"<span class='notice'>You begin to cut open [src]...</span>")
 		if(do_after(user, 5 SECONDS, src))

@@ -52,6 +52,6 @@
 		span_userdanger("YOU ARE ZIZO'S CHOSEN!"),
 		span_notice("Men are weak and must be dominated. Kick a male in the nuts to satisfy Zizo!"),
 	))
-	chosen_one.playsound_local(chosen_one, 'sound/misc/gods/zizo_omen.ogg', 100)
+	chosen_one.playsound_local(chosen_one, 'modular/kaizoku/sound/misc/gods/zizo_omen.ogg', 100)
 
 	chosen_one.mind.announce_personal_objectives()

@@ -31,7 +31,7 @@
 	else
 		broken_states = typelist("broken_states", broken_states)
 	if (!attacked_sound)
-		attacked_sound = typelist("attacked_sound", list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg'))
+		attacked_sound = typelist("attacked_sound", list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg'))
 	else
 		attacked_sound = typelist("attacked_sound", attacked_sound)
 	burnt_states = typelist("burnt_states", burnt_states)

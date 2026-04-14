@@ -81,7 +81,7 @@ All foods are distributed among various categories. Use common sense.
 
 	var/fertamount = 50
 
-	drop_sound = 'sound/foley/dropsound/food_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	smeltresult = /obj/item/fertilizer/ash
 	//Placeholder for effect that trigger on eating that aren't tied to reagents.
 
@@ -429,7 +429,7 @@ All foods are distributed among various categories. Use common sense.
 		if(reagents)								//Handle ingestion of the reagent.
 			if(M.satiety > -200)
 				M.satiety -= junkiness
-			playsound(M,'sound/misc/eat.ogg', rand(30,60), TRUE)
+			playsound(M,'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 			if(reagents.total_volume)
 				SEND_SIGNAL(src, COMSIG_FOOD_EATEN, M, user)
 				SEND_SIGNAL(M, COMSIG_MOB_FOOD_EAT, src)
@@ -451,7 +451,7 @@ All foods are distributed among various categories. Use common sense.
 				if(bitecount >= bitesize && !QDELETED(src))
 					qdel(src)
 				return TRUE
-		playsound(M,'sound/misc/eat.ogg', rand(30,60), TRUE)
+		playsound(M,'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 		qdel(src)
 		return FALSE
 	else if(isanimal(M))
@@ -513,9 +513,9 @@ All foods are distributed among various categories. Use common sense.
 		return FALSE
 
 	if(slice_sound)
-		playsound(user, 'sound/foley/slicing.ogg', 60, TRUE, -1) // added some choppy sound
+		playsound(user, 'modular/kaizoku/sound/foley/slicing.ogg', 60, TRUE, -1) // added some choppy sound
 	if(chopping_sound)
-		playsound(user, 'sound/foley/chopping_block.ogg', 60, TRUE, -1) // added some choppy sound
+		playsound(user, 'modular/kaizoku/sound/foley/chopping_block.ogg', 60, TRUE, -1) // added some choppy sound
 	if(slice_batch)
 		if(!do_after(user, 3 SECONDS, src))
 			return FALSE
@@ -604,7 +604,7 @@ All foods are distributed among various categories. Use common sense.
 				M.emote("me", 1, "nibbles away at \the [src]")
 			bitecount++
 			SEND_SIGNAL(L, COMSIG_MOB_FEED, src, 30)
-			playsound(L, 'sound/misc/eat.ogg', 25, TRUE)
+			playsound(L, 'modular/kaizoku/sound/misc/eat.ogg', 25, TRUE)
 			L.taste(reagents) // why should carbons get all the fun?
 			if(bitecount >= 5)
 				var/sattisfaction_text = pick("burps from enjoyment", "meows for more", "looks at the area where \the [src] was")
@@ -686,7 +686,7 @@ All foods are distributed among various categories. Use common sense.
 	experimental_inhand = FALSE
 	inhand_x_dimension = 32
 	inhand_y_dimension = 32
-	drop_sound = 'sound/foley/dropsound/wooden_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/wooden_drop.ogg'
 
 // Proc for important vars when reaching meal level
 /obj/item/reagent_containers/food/snacks/proc/meal_properties()

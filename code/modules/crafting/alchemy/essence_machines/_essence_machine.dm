@@ -37,7 +37,7 @@
 
 	new /obj/effect/essence_orb(source_turf, target, essence_type, travel_time)
 
-	//playsound(src, 'sound/misc/essence_transfer.ogg', 25, TRUE)
+	//playsound(src, 'modular/kaizoku/sound/misc/essence_transfer.ogg', 25, TRUE)
 
 /obj/machinery/essence/proc/get_target_storage(obj/machinery/essence/target)
 	if(!istype(target))

@@ -14,7 +14,7 @@
 	force = 6
 	var/cocked = FALSE
 	cartridge_wording = "dart"
-	fire_sound = 'sound/combat/Ranged/blowgun_shot.ogg'
+	fire_sound = 'modular/kaizoku/sound/combat/Ranged/blowgun_shot.ogg'
 
 /obj/item/gun/ballistic/revolver/grenadelauncher/blowgun/getonmobprop(tag)
 	. = ..()

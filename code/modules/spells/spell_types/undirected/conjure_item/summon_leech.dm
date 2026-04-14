@@ -2,7 +2,7 @@
 	name = "Summon Leech"
 	desc = "Summon a leech from Abyssor's domain."
 	button_icon_state = "curse2"
-	sound = 'sound/foley/jumpland/waterland.ogg'
+	sound = 'modular/kaizoku/sound/foley/jumpland/waterland.ogg'
 
 	spell_type = SPELL_MIRACLE
 	antimagic_flags = MAGIC_RESISTANCE_HOLY

@@ -2,7 +2,7 @@
 /datum/repeatable_crafting_recipe/cooking/soap
 	name = "soap"
 	tool_usage = list(
-		/obj/item/pestle = list("starts to grind materials in the mortar", "start to grind materials in the mortar", 'sound/foley/mortarpestle.ogg'),
+		/obj/item/pestle = list("starts to grind materials in the mortar", "start to grind materials in the mortar", 'modular/kaizoku/sound/foley/mortarpestle.ogg'),
 	)
 
 	reagent_requirements = list(
@@ -21,7 +21,7 @@
 /datum/repeatable_crafting_recipe/cooking/soap/bath
 	name = "herbal soap "
 	tool_usage = list(
-		/obj/item/pestle = list("starts to grind materials in the mortar", "start to grind materials in the mortar", 'sound/foley/mortarpestle.ogg'),
+		/obj/item/pestle = list("starts to grind materials in the mortar", "start to grind materials in the mortar", 'modular/kaizoku/sound/foley/mortarpestle.ogg'),
 	)
 
 	requirements = list(
@@ -43,7 +43,7 @@
 	output = /obj/item/reagent_containers/food/snacks/foodbase/fritter_raw
 	required_table = TRUE
 	craft_time = 6 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	crafting_message = "add apple bits to the dough"
 	extra_chance = 100
 
@@ -87,7 +87,7 @@
 	allow_inverse_start = TRUE
 	output = /obj/item/reagent_containers/food/snacks/meat/mince/beef/mett
 	craft_time = 5 SECONDS
-	crafting_sound = 'sound/foley/kneading_alt.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/kneading_alt.ogg'
 	crafting_message = "knead onions into the mince"
 	extra_chance = 100
 
@@ -105,7 +105,7 @@
 	allow_inverse_start = TRUE
 	output = /obj/item/reagent_containers/food/snacks/meat/sausage
 	craft_time = 9 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	crafting_message = "stuff a wiener"
 	extra_chance = 100
 
@@ -121,7 +121,7 @@
 	starting_atom = /obj/item/reagent_containers/food/snacks/meat/mince
 	output = /obj/item/reagent_containers/food/snacks/meat/sausage
 	craft_time = 9 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	crafting_message = "stuff a wiener"
 	extra_chance = 100
 
@@ -137,7 +137,7 @@
 	starting_atom = /obj/item/grown/log/tree/stick
 	output = /obj/item/reagent_containers/food/snacks/pestranstick
 	craft_time = 5 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	crafting_message = "skewer the butter"
 	extra_chance = 100
 
@@ -152,7 +152,7 @@
 	starting_atom = /obj/item/reagent_containers/food/snacks/cooked/egg
 	output = /obj/item/reagent_containers/food/snacks/cooked/twin_egg
 	craft_time = 5 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	extra_chance = 100
 
 /datum/repeatable_crafting_recipe/cooking/valorian_omlette
@@ -168,7 +168,7 @@
 	allow_inverse_start = TRUE
 	output = /obj/item/reagent_containers/food/snacks/cooked/valorian_omlette
 	craft_time = 5 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	extra_chance = 100
 
 /datum/repeatable_crafting_recipe/cooking/royal_truffle
@@ -184,7 +184,7 @@
 	allow_inverse_start = TRUE
 	output = /obj/item/reagent_containers/food/snacks/cooked/royal_truffle
 	craft_time = 2 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	extra_chance = 100
 
 /datum/repeatable_crafting_recipe/cooking/royal_truffle_toxic
@@ -201,13 +201,13 @@
 	allow_inverse_start = TRUE
 	output = /obj/item/reagent_containers/food/snacks/cooked/royal_truffle/toxin
 	craft_time = 2 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	extra_chance = 100
 
 /datum/repeatable_crafting_recipe/cooking/herbs
 	name = "herbs and spices"
 	tool_usage = list(
-		/obj/item/pestle = list("starts to grind and mix herbs in the mortar", "start to grind and mix herbs in the mortar", 'sound/foley/mortarpestle.ogg'),
+		/obj/item/pestle = list("starts to grind and mix herbs in the mortar", "start to grind and mix herbs in the mortar", 'modular/kaizoku/sound/foley/mortarpestle.ogg'),
 	)
 	requirements = list(
 		/obj/item/alch/herb = 4,
@@ -231,7 +231,7 @@
 	output = /obj/item/reagent_containers/food/snacks/roastseeds
 	output_amount = 3
 	craft_time = 8 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	crafting_message = "mix the salt and seeds"
 	extra_chance = 100
 

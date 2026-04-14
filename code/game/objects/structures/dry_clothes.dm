@@ -8,8 +8,8 @@
 	climbable = TRUE
 	anchored = TRUE
 	blade_dulling = DULLING_BASHCHOP
-	destroy_sound = 'sound/combat/hits/onwood/destroyfurniture.ogg'
-	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
+	destroy_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroyfurniture.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
 	var/drying_timer
 	var/has_wet_items = FALSE
 

@@ -69,7 +69,7 @@
 		span_boldnotice("You lunge forward and strike [victim][targeted_limb ? " in the [targeted_limb]" : ""]!")
 	)
 
-	playsound(user, pick('sound/combat/hits/bladed/smallslash (1).ogg', 'sound/combat/hits/bladed/smallslash (2).ogg', 'sound/combat/hits/bladed/smallslash (3).ogg'), 50, TRUE)
+	playsound(user, pick('modular/kaizoku/sound/combat/hits/bladed/smallslash (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/smallslash (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/smallslash (3).ogg'), 50, TRUE)
 
 	if(targeted_limb)
 		targeted_limb.receive_damage(brute = damage)

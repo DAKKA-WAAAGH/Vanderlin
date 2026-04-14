@@ -34,7 +34,7 @@
 				return
 			qdel(W)
 			to_chat(user, span_info("The reliquary lock takes my key as it opens, I take a moment to ponder what power was delivered to us..."))
-			playsound(src, 'sound/foley/doors/woodlock.ogg', 60)
+			playsound(src, 'modular/kaizoku/sound/foley/doors/woodlock.ogg', 60)
 			to_chat(user,)
 			var/relics = list("Melancholic Crankbox - Antimagic", "Daybreak - Silver Whip", "Sanctum - Silver Halberd", "Crusade - Silver Greatsword", "Censer of Penitence")
 			var/relicchoice = input(user, "Choose your tool", "RELICS") as anything in relics
@@ -70,7 +70,7 @@
 	var/cranking = FALSE
 	force = 15
 	max_integrity = 100
-	attacked_sound = 'sound/combat/hits/onwood/education2.ogg'
+	attacked_sound = 'modular/kaizoku/sound/combat/hits/onwood/education2.ogg'
 	gripped_intents = list(/datum/intent/hit)
 	possible_item_intents = list(/datum/intent/hit)
 	obj_flags = CAN_BE_HIT
@@ -577,7 +577,7 @@
 			subject = WEAKREF(M)
 			desc += span_notice(" It contains the blood of [M.real_name]!")
 			visible_message(span_warning("[src] draws from [M]!"))
-			playsound(M, 'sound/combat/hits/bladed/genstab (1).ogg', 30, FALSE, -1)
+			playsound(M, 'modular/kaizoku/sound/combat/hits/bladed/genstab (1).ogg', 30, FALSE, -1)
 			timestaken++
 			M.blood_volume = max(M.blood_volume-30, 0)
 			M.handle_blood()
@@ -715,7 +715,7 @@
 	breakouttime = 8 SECONDS
 	slipouttime = 900 // 1:30.
 	possible_item_intents = list(/datum/intent/tie)
-	//cuffsound = 'sound/misc/cordage.ogg'
+	//cuffsound = 'modular/kaizoku/sound/misc/cordage.ogg'
 	grid_height = 32
 	grid_width = 32
 	slot_flags = ITEM_SLOT_HIP|ITEM_SLOT_WRISTS
@@ -972,8 +972,8 @@
 	icon = 'icons/roguetown/clothing/head.dmi'
 	mob_overlay_icon = 'icons/roguetown/clothing/onmob/head.dmi'
 	blocksound = SOFTHIT
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	armor = ARMOR_BLACKBAG
 	prevent_crits = list(BCLASS_CUT, BCLASS_BLUNT, BCLASS_TWIST, BCLASS_PIERCE, BCLASS_CHOP, BCLASS_LASHING, BCLASS_STAB)
 	unequip_delay_self = 45

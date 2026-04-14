@@ -18,7 +18,7 @@
 	can_have_apprentices = FALSE
 	traits = list(TRAIT_NOAMBUSH)
 	antag_role = /datum/antagonist/wretch
-	cmode_music = 'sound/music/cmode/antag/combat_bandit2.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/antag/combat_bandit2.ogg'
 
 	exp_type = list(EXP_TYPE_LIVING)
 	exp_types_granted = list(EXP_TYPE_COMBAT)

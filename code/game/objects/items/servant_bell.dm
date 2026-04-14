@@ -61,7 +61,7 @@
 		return
 	if(length(bound_servants) >= max_servants)
 		to_chat(user, span_warning("It can hold no more minds without relinquishing another."))
-	playsound(src, 'sound/items/servant_bell.ogg', 80, TRUE)
+	playsound(src, 'modular/kaizoku/sound/items/servant_bell.ogg', 80, TRUE)
 	user.visible_message(span_noticesmall("[user] rings [src] in front of [user == H ? "[user.p_them()]self" : H] like a pendulum..."))
 	if(do_after(user, 6 SECONDS, H))
 		if((H.real_name in bound_servants) && H.name == H.real_name)
@@ -116,11 +116,11 @@
 			ring_bell(user)
 			COOLDOWN_START(src, ring_bell, cooldown)
 		else
-			playsound(src, 'sound/items/servant_bell.ogg', 80, TRUE)
+			playsound(src, 'modular/kaizoku/sound/items/servant_bell.ogg', 80, TRUE)
 
 /obj/item/servant_bell/proc/ring_bell(mob/living/user)
 	user.visible_message("[user] rings [src].")
-	playsound(src, 'sound/items/servant_bell.ogg', 100, TRUE)
+	playsound(src, 'modular/kaizoku/sound/items/servant_bell.ogg', 100, TRUE)
 	var/turf/origin_turf = get_turf(src)
 	for(var/servant in get_servants())
 		var/datum/weakref/wr = bound_servants[servant]
@@ -160,7 +160,7 @@
 		if(distance <= 7)
 			continue
 		//sound played for other players, by fem_tanyl !!!1!!
-		player.playsound_local(get_turf(player), 'sound/items/servant_bell.ogg', 35, FALSE, pressure_affected = FALSE)
+		player.playsound_local(get_turf(player), 'modular/kaizoku/sound/items/servant_bell.ogg', 35, FALSE, pressure_affected = FALSE)
 
 /obj/item/servant_bell/proc/add_servant(mob/living/carbon/human/H)
 	if(length(bound_servants) >= max_servants)

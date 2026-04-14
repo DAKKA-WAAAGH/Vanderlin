@@ -88,9 +88,9 @@
 		if(C.stress >= heart_value && (prob(50)))
 			C.heart_attack()
 			if(mustype == 1)
-				playsound(src, pick('sound/misc/jumpscare (1).ogg','sound/misc/jumpscare (2).ogg','sound/misc/jumpscare (3).ogg','sound/misc/jumpscare (4).ogg'), 100)
+				playsound(src, pick('modular/kaizoku/sound/misc/jumpscare (1).ogg','modular/kaizoku/sound/misc/jumpscare (2).ogg','modular/kaizoku/sound/misc/jumpscare (3).ogg','modular/kaizoku/sound/misc/jumpscare (4).ogg'), 100)
 			else
-				playsound(src, pick('sound/misc/jumphumans (1).ogg','sound/misc/jumphumans (2).ogg','sound/misc/jumphumans (3).ogg'), 100)
+				playsound(src, pick('modular/kaizoku/sound/misc/jumphumans (1).ogg','modular/kaizoku/sound/misc/jumphumans (2).ogg','modular/kaizoku/sound/misc/jumphumans (3).ogg'), 100)
 			shake_camera(src, 2, 2)
 
 /mob/living/proc/is_in_wilderness_ambush_area() //STONEKEEP EDIT start

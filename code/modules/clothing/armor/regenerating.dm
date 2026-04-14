@@ -60,8 +60,8 @@
 
 /obj/item/clothing/armor/regenerating/skin
 	name = "regenerating skin"
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 
 	resistance_flags = FIRE_PROOF
 	body_parts_covered = COVERAGE_FULL

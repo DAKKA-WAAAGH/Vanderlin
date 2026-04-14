@@ -141,9 +141,9 @@
 		return FALSE
 
 	user.visible_message(span_info("\The [user] begins scrubbing \the [target] with [src]."))
-	playsound(T, pick('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg'), 100, FALSE)
+	playsound(T, pick('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg'), 100, FALSE)
 	if(do_after(user, 5 SECONDS, target))
-		playsound(T, pick('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg'), 100, FALSE)
+		playsound(T, pick('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg'), 100, FALSE)
 		scrub_scrub(target, user)
 		return TRUE
 	return FALSE

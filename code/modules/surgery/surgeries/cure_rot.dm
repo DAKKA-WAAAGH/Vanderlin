@@ -21,8 +21,8 @@
 	surgery_flags = SURGERY_INCISED
 	skill_min = SKILL_LEVEL_APPRENTICE
 	skill_median = SKILL_LEVEL_JOURNEYMAN
-	preop_sound = 'sound/surgery/cautery1.ogg'
-	success_sound = 'sound/surgery/cautery2.ogg'
+	preop_sound = 'modular/kaizoku/sound/surgery/cautery1.ogg'
+	success_sound = 'modular/kaizoku/sound/surgery/cautery2.ogg'
 
 /datum/surgery_step/burn_rot/preop(mob/user, mob/living/target, target_zone, obj/item/tool, datum/intent/intent)
 	display_results(user, target, span_notice("I begin to burn the rot within [target]..."),

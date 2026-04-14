@@ -16,7 +16,7 @@
 	required_materials = list(/obj/item/natural/stone = 2)
 	verbage = "build"
 	verbage_tp = "builds"
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 	skillcraft = /datum/skill/craft/masonry
 	craftdiff = 3
 /datum/blueprint_recipe/structure/stonetable/end

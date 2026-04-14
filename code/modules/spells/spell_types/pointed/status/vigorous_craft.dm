@@ -2,7 +2,7 @@
 	name = "Virgorous Craftsmanship"
 	desc = ""
 	button_icon_state = "craft_buff"
-	sound = 'sound/items/bsmithfail.ogg'
+	sound = 'modular/kaizoku/sound/items/bsmithfail.ogg'
 
 	cast_range = 2
 	spell_type = SPELL_MIRACLE

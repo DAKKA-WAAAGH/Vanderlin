@@ -582,7 +582,7 @@
 		return
 
 	H.apply_damage(rand(10, 20), BURN, picked_def_zone)
-	playsound(get_turf(src), pick('sound/misc/water_wade1.ogg','sound/misc/water_wade2.ogg','sound/misc/water_wade3.ogg','sound/misc/water_wade4.ogg'), 50, FALSE)
+	playsound(get_turf(src), pick('modular/kaizoku/sound/misc/water_wade1.ogg','modular/kaizoku/sound/misc/water_wade2.ogg','modular/kaizoku/sound/misc/water_wade3.ogg','modular/kaizoku/sound/misc/water_wade4.ogg'), 50, FALSE)
 
 	var/mob_id = "\ref[H]"
 	var/next_allowed = mob_cooldowns[mob_id]
@@ -785,7 +785,7 @@
 /proc/create_area_fire(turf/center, radius)
 	if(!center)
 		return
-	playsound(center, pick('sound/misc/explode/bottlebomb (1).ogg','sound/misc/explode/bottlebomb (2).ogg'), 100)
+	playsound(center, pick('modular/kaizoku/sound/misc/explode/bottlebomb (1).ogg','modular/kaizoku/sound/misc/explode/bottlebomb (2).ogg'), 100)
 
 	for(var/turf/T in range(radius, center))
 		if(!locate(/obj/effect/area_fire) in T)
@@ -794,7 +794,7 @@
 /proc/create_normal_fire_explosion(turf/center, range = 1)
 	if(!center)
 		return
-	playsound(center, pick('sound/misc/explode/bottlebomb (1).ogg','sound/misc/explode/bottlebomb (2).ogg'), 100)
+	playsound(center, pick('modular/kaizoku/sound/misc/explode/bottlebomb (1).ogg','modular/kaizoku/sound/misc/explode/bottlebomb (2).ogg'), 100)
 	explosion(center, light_impact_range = range, hotspot_range = range + 1, smoke = TRUE)
 	for(var/turf/T in range(range, center))
 		if(prob(60))

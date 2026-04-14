@@ -2,7 +2,7 @@
 	name = "Sundering Lightning"
 	desc = "Summons forth dangerous rapid lightning strikes."
 	button_icon_state = "sundering"
-	sound = 'sound/weather/rain/thunder_1.ogg'
+	sound = 'modular/kaizoku/sound/weather/rain/thunder_1.ogg'
 
 	point_cost = 8
 	cast_range = 4

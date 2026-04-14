@@ -8,7 +8,7 @@
 	w_class = WEIGHT_CLASS_TINY
 	slot_flags = ITEM_SLOT_MOUTH
 	dropshrink = 0.4
-	drop_sound = 'sound/items/gem.ogg'
+	drop_sound = 'modular/kaizoku/sound/items/gem.ogg'
 	var/usage_prompt
 	resistance_flags = FIRE_PROOF
 

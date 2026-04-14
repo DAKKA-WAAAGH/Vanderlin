@@ -236,7 +236,7 @@
 	var/canparry = FALSE
 	var/candodge = FALSE
 
-	var/dodge_sound = 'sound/combat/dodge.ogg'
+	var/dodge_sound = 'modular/kaizoku/sound/combat/dodge.ogg'
 	var/parry_sound = "unarmparry"
 
 	var/dodgecd = FALSE

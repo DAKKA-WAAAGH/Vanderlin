@@ -2,7 +2,7 @@
 	abstract_type = /datum/repeatable_crafting_recipe/cooking/handpie
 	attacked_atom = /obj/item/reagent_containers/food/snacks/piedough
 	craft_time = 6 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	extra_chance = 100
 
 /datum/repeatable_crafting_recipe/cooking/handpie/mushroom

@@ -142,7 +142,7 @@
 		T.pollute_turf(/datum/pollutant/rot, 0.25)
 
 /datum/looping_sound/fliesloop
-	mid_sounds = list('sound/misc/fliesloop.ogg')
+	mid_sounds = list('modular/kaizoku/sound/misc/fliesloop.ogg')
 	mid_length = 60
 	volume = 50
 	extra_range = 0

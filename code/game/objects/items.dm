@@ -48,12 +48,12 @@ GLOBAL_DATUM_INIT(fire_overlay, /mutable_appearance, mutable_appearance('icons/e
 	///Sound used when picking the item up (putting it on your hands)
 	var/pickup_sound = "rustle"
 	///Sound used when dropping the item, or when it's thrown.
-	var/drop_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	var/drop_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 	///Whether or not we use stealthy audio levels for this item's attack sounds
 	var/stealthy_audio = FALSE
 
 	// Sound used when being placed on a table
-	var/place_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	var/place_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 	var/list/swingsound = PUNCHWOOSH
 	var/list/parrysound = "parrywood"
 	var/w_class = WEIGHT_CLASS_NORMAL
@@ -1413,7 +1413,7 @@ GLOBAL_DATUM_INIT(fire_overlay, /mutable_appearance, mutable_appearance('icons/e
 	if(impactee.lying)
 		target_zone = BODY_ZONE_CHEST
 	*/
-	playsound(impactee, pick('sound/combat/gib (1).ogg','sound/combat/gib (2).ogg'), 200, FALSE, 3)
+	playsound(impactee, pick('modular/kaizoku/sound/combat/gib (1).ogg','modular/kaizoku/sound/combat/gib (2).ogg'), 200, FALSE, 3)
 	add_blood_DNA(GET_ATOM_BLOOD_DNA(impactee))
 	impactee.visible_message(span_danger("[src] crashes into [impactee]'s [target_zone]!"), span_danger("A [src] hits you in your [target_zone]!"))
 	impactee.apply_damage(item_weight * fall_speed, BRUTE, target_zone, impactee.run_armor_check(target_zone, "blunt", damage = item_weight * fall_speed))

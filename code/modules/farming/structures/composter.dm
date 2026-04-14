@@ -64,7 +64,7 @@
 	if(do_after(user, get_farming_do_time(user, do_time), src))
 		apply_farming_fatigue(user, fatigue)
 		if(using_tool)
-			playsound(src,'sound/items/dig_shovel.ogg', 100, TRUE)
+			playsound(src,'modular/kaizoku/sound/items/dig_shovel.ogg', 100, TRUE)
 		addtimer(CALLBACK(src, PROC_REF(flip_compost)), 1 SECONDS)
 
 	return TRUE

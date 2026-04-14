@@ -27,7 +27,7 @@
 	icon = 'icons/roguetown/weapons/64/godweapons.dmi'
 	icon_state = "gorefeast"
 	parrysound = "sword"
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
 	force = DAMAGE_HEAVYAXE_WIELD
 	force_wielded = DAMAGE_HEAVYAXE_WIELD + 5
 	wdefense = GOOD_PARRY
@@ -48,11 +48,11 @@
 	var/message
 	if(!HAS_TRAIT(user, TRAIT_ORGAN_EATER))
 		to_chat(user, span_danger("The beating heart of the blade seems to slow down at the sight of you... disinterested."))
-		user.playsound_local(user, pick('sound/misc/godweapons/gorefeast1.ogg', 'sound/misc/godweapons/gorefeast2.ogg', 'sound/misc/godweapons/gorefeast3.ogg'), 70)
+		user.playsound_local(user, pick('modular/kaizoku/sound/misc/godweapons/gorefeast1.ogg', 'modular/kaizoku/sound/misc/godweapons/gorefeast2.ogg', 'modular/kaizoku/sound/misc/godweapons/gorefeast3.ogg'), 70)
 		message = pick(GOREFEAST_UNWORTHY)
 	else
 		to_chat(user, span_danger("Gorefeast begins to thump ecstatically upon your touch on the boney shaft."))
-		user.playsound_local(user, pick('sound/misc/godweapons/gorefeast4.ogg', 'sound/misc/godweapons/gorefeast5.ogg', 'sound/misc/godweapons/gorefeast6.ogg'), 70)
+		user.playsound_local(user, pick('modular/kaizoku/sound/misc/godweapons/gorefeast4.ogg', 'modular/kaizoku/sound/misc/godweapons/gorefeast5.ogg', 'modular/kaizoku/sound/misc/godweapons/gorefeast6.ogg'), 70)
 		message = pick(GOREFEAST_WORTHY)
 	addtimer(CALLBACK(src, PROC_REF(do_message), message), 2 SECONDS)
 
@@ -98,7 +98,7 @@
 	desc = "A dark scythe with a long chain, used to cut the life essence from people, or whip them into shape. The blade is an ominous purple."
 	icon_state = "neant"
 	icon = 'icons/roguetown/weapons/64/godweapons.dmi'
-	drop_sound = 'sound/foley/dropsound/blade_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/blade_drop.ogg'
 	force = DAMAGE_SPEARPLUS + 2
 	force_wielded = DAMAGE_SPEAR_WIELD
 	throwforce = DAMAGE_SPEAR_WIELD
@@ -147,11 +147,11 @@
 		var/obj/item/bodypart/chest/C = H.get_bodypart(BODY_ZONE_CHEST)
 		if(!C)
 			return
-		playsound(user, 'sound/surgery/scalpel2.ogg', 70)
+		playsound(user, 'modular/kaizoku/sound/surgery/scalpel2.ogg', 70)
 		if(do_after(user, 0.5 SECONDS, target))
 			C.add_wound(/datum/wound/slash/incision)
 
-		playsound(user, 'sound/surgery/organ2.ogg', 70)
+		playsound(user, 'modular/kaizoku/sound/surgery/organ2.ogg', 70)
 		if(do_after(user, 0.5 SECONDS, target))
 			C.add_wound(/datum/wound/fracture/chest)
 
@@ -179,7 +179,7 @@
 	PJ.firer = user
 	PJ.fired_from = src
 	PJ.original = target
-	playsound(user,'sound/effects/neantspecial.ogg', 70)
+	playsound(user,'modular/kaizoku/sound/effects/neantspecial.ogg', 70)
 
 	if(user.STAPER > 8)
 		PJ.accuracy += (user.STAPER - 8) * 2 //each point of perception above 8 increases standard accuracy by 2.
@@ -199,7 +199,7 @@
 	name = "Profane Evisceration"
 	icon = 'icons/effects/effects.dmi'
 	icon_state = "neantprojectile"
-	hitsound = 'sound/combat/hits/hi_arrow2.ogg'
+	hitsound = 'modular/kaizoku/sound/combat/hits/hi_arrow2.ogg'
 	range = 8
 	damage = 20
 	armor_penetration = 30
@@ -244,7 +244,7 @@
 	SET_BASE_PIXEL(-16, -16)
 	bigboy = TRUE
 	dropshrink = 0.75
-	fire_sound = 'sound/combat/Ranged/turbulentafire.ogg'
+	fire_sound = 'modular/kaizoku/sound/combat/Ranged/turbulentafire.ogg'
 	possible_item_intents = list(/datum/intent/shoot/bow/turbulenta, /datum/intent/arc/bow/turbulenta)
 	force = 12
 	damfactor = 1.1

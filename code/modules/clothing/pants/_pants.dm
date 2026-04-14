@@ -15,10 +15,10 @@
 	slot_flags = ITEM_SLOT_PANTS
 	armor = list("blunt" = 0, "slash" = 0, "stab" = 0,  "piercing" = 0, "fire" = 0, "acid" = 0)
 
-	equip_sound = 'sound/foley/equip/cloak_equip.ogg'
-	pickup_sound = 'sound/foley/equip/cloak_take_off.ogg'
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/cloak_equip.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/cloak_take_off.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 
 	dropshrink = 0.8
 

@@ -55,7 +55,7 @@
 			return
 
 	if(!edge)
-		playsound(AM, pick('sound/foley/watermove (1).ogg','sound/foley/watermove (2).ogg'), 40, FALSE)
+		playsound(AM, pick('modular/kaizoku/sound/foley/watermove (1).ogg','modular/kaizoku/sound/foley/watermove (2).ogg'), 40, FALSE)
 
 /obj/structure/hotspring/border
 	icon_state = "hotspring_border_1"

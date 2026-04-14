@@ -3,7 +3,7 @@
 	check_name = "<span class='artery'><B>ARTERY</B></span>"
 	severity = WOUND_SEVERITY_CRITICAL
 	crit_message = "Blood sprays from %VICTIM's %BODYPART!"
-	sound_effect = 'sound/combat/crit.ogg'
+	sound_effect = 'modular/kaizoku/sound/combat/crit.ogg'
 	whp = 50
 	sewn_whp = 20
 	bleed_rate = ARTERY_LIMB_BLEEDRATE

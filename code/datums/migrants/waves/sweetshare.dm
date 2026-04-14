@@ -33,7 +33,7 @@
 	)
 
 	traits = list(TRAIT_STEELHEARTED)
-	cmode_music = 'sound/music/cmode/antag/CombatBandit1.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/antag/CombatBandit1.ogg'
 
 /datum/job/migrant/sweetshare/after_spawn(mob/living/carbon/human/spawned, client/player_client)
 	. = ..()

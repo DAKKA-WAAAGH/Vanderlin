@@ -47,9 +47,9 @@
 	anchored = TRUE
 	layer = BELOW_OBJ_LAYER
 
-	rattle_sound = 'sound/misc/machineno.ogg'
-	unlock_sound = 'sound/misc/beep.ogg'
-	lock_sound = 'sound/misc/beep.ogg'
+	rattle_sound = 'modular/kaizoku/sound/misc/machineno.ogg'
+	unlock_sound = 'modular/kaizoku/sound/misc/beep.ogg'
+	lock_sound = 'modular/kaizoku/sound/misc/beep.ogg'
 	lock = /datum/lock/key/nerve
 
 	var/current_tab = TAB_MAIN
@@ -60,7 +60,7 @@
 		record_round_statistic(STATS_MAMMONS_DEPOSITED, I.get_real_price())
 		SStreasury.give_money_treasury(I.get_real_price(), "NERVE MASTER deposit")
 		qdel(I)
-		playsound(src, 'sound/misc/coininsert.ogg', 100, FALSE, -1)
+		playsound(src, 'modular/kaizoku/sound/misc/coininsert.ogg', 100, FALSE, -1)
 		return
 	return ..()
 
@@ -325,7 +325,7 @@
 		turfs += T
 	var/turf/T = pick(turfs)
 	I.forceMove(T)
-	playsound(T, 'sound/misc/hiss.ogg', 100, FALSE, -1)
+	playsound(T, 'modular/kaizoku/sound/misc/hiss.ogg', 100, FALSE, -1)
 	number += 1
 	addtimer(CALLBACK(src, PROC_REF(do_import), D.type, number), 3 SECONDS)
 
@@ -337,7 +337,7 @@
 		to_chat(user, "<span class='warning'>It's locked. Of course.</span>")
 		return
 	user.changeNext_move(CLICK_CD_MELEE)
-	playsound(src, 'sound/misc/keyboard_enter.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/keyboard_enter.ogg', 100, FALSE, -1)
 	var/canread = user.can_read(src, TRUE)
 	SSassets.transport.send_assets(user?.client, list("try4_border.png", "try5.png", "slop_menustyle2.css"))
 	var/contents

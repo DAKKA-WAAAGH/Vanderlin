@@ -5,8 +5,8 @@
 	icon_state = "chestweird2"
 	base_icon_state = "chestweird2"
 	drag_slowdown = 2
-	open_sound = 'sound/misc/chestopen.ogg'
-	close_sound = 'sound/misc/chestclose.ogg'
+	open_sound = 'modular/kaizoku/sound/misc/chestopen.ogg'
+	close_sound = 'modular/kaizoku/sound/misc/chestclose.ogg'
 	sellprice = 1 // crate recycling program
 	max_integrity = 200
 	blade_dulling = DULLING_BASHCHOP
@@ -74,9 +74,9 @@
 	desc = "Fibers interwoven to make a cheap storage bin."
 	base_icon_state = "wicker"
 	icon_state = "wicker"
-	open_sound = 'sound/items/book_open.ogg'
-	open_sound = 'sound/items/book_close.ogg'
-	close_sound = 'sound/items/book_close.ogg'
+	open_sound = 'modular/kaizoku/sound/items/book_open.ogg'
+	open_sound = 'modular/kaizoku/sound/items/book_close.ogg'
+	close_sound = 'modular/kaizoku/sound/items/book_close.ogg'
 	sellprice = 0
 
 /obj/structure/closet/crate/chest/wicker/random_soilson/populate_contents()

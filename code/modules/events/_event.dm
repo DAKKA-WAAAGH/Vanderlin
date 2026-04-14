@@ -411,7 +411,7 @@ GLOBAL_LIST_INIT(badomens, list())
 /datum/round_event_control/proc/badomen(eventreason)
 	var/used = "Zizo."
 	var/title = "Bad Omen"
-	var/sound = 'sound/misc/evilevent.ogg'
+	var/sound = 'modular/kaizoku/sound/misc/evilevent.ogg'
 	switch(eventreason)
 		if(OMEN_ROUNDSTART)
 			used = pick( \
@@ -431,7 +431,7 @@ GLOBAL_LIST_INIT(badomens, list())
 				"She Peers", \
 				"Zizo Smirks", \
 			)
-			sound = 'sound/misc/gods/zizo_omen.ogg'
+			sound = 'modular/kaizoku/sound/misc/gods/zizo_omen.ogg'
 		if(OMEN_NOLORD)
 			used = "The Monarch is dead! We need a new ruler."
 		if(OMEN_NOPRIEST)

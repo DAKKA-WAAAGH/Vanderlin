@@ -7,7 +7,7 @@
 	outfit = /datum/outfit/adventurer/monk
 
 	category_tags = list(CTAG_ADVENTURER)
-	cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatMonk.ogg'
 	exp_types_granted = list(EXP_TYPE_ADVENTURER, EXP_TYPE_COMBAT, EXP_TYPE_CLERIC)
 	allowed_patrons = ALL_TEMPLE_PATRONS  // randomize patron if not in ten
 

@@ -1,12 +1,12 @@
 //======== Regular
 
-GLOBAL_LIST_INIT(ambience_town_day, list('sound/ambience/townday.ogg'))
+GLOBAL_LIST_INIT(ambience_town_day, list('modular/kaizoku/sound/ambience/townday.ogg'))
 GLOBAL_LIST_INIT(ambience_town_night, list(
-	'sound/ambience/townnight.ogg',
+	'modular/kaizoku/sound/ambience/townnight.ogg',
 ))
 
-GLOBAL_LIST_INIT(ambience_forest_day, list('sound/ambience/forestday.ogg'))
-GLOBAL_LIST_INIT(ambience_forest_night, list('sound/ambience/forestnight.ogg'))
+GLOBAL_LIST_INIT(ambience_forest_day, list('modular/kaizoku/sound/ambience/forestday.ogg'))
+GLOBAL_LIST_INIT(ambience_forest_night, list('modular/kaizoku/sound/ambience/forestnight.ogg'))
 
 GLOBAL_LIST_INIT(ambience_bog_day, list(
 	'sound/blank.ogg',
@@ -17,161 +17,161 @@ GLOBAL_LIST_INIT(ambience_jungle_day, list('sound/blank.ogg'))
 GLOBAL_LIST_INIT(ambience_jungle_night, list('sound/blank.ogg'))
 
 GLOBAL_LIST_INIT(ambience_river_day, list(
-	'sound/ambience/riverday (1).ogg',
+	'modular/kaizoku/sound/ambience/riverday (1).ogg',
 ))
 GLOBAL_LIST_INIT(ambience_river_night, list(
-	'sound/ambience/rivernight (1).ogg',
+	'modular/kaizoku/sound/ambience/rivernight (1).ogg',
 ))
 
-GLOBAL_LIST_INIT(ambience_indoors, list('sound/ambience/indoorgen.ogg'))
+GLOBAL_LIST_INIT(ambience_indoors, list('modular/kaizoku/sound/ambience/indoorgen.ogg'))
 GLOBAL_LIST_INIT(ambience_basement, list('sound/blank.ogg'))
 
 GLOBAL_LIST_INIT(ambience_mountain, list(
-	'sound/ambience/MOUNTAIN (1).ogg',
-	'sound/ambience/MOUNTAIN (2).ogg',
+	'modular/kaizoku/sound/ambience/MOUNTAIN (1).ogg',
+	'modular/kaizoku/sound/ambience/MOUNTAIN (2).ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_lake, list(
-	'sound/ambience/lake.ogg',
+	'modular/kaizoku/sound/ambience/lake.ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_boat, list(
-	'sound/ambience/boat.ogg',
+	'modular/kaizoku/sound/ambience/boat.ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_outskirts, list(
-	'sound/ambience/outskirts.ogg',
+	'modular/kaizoku/sound/ambience/outskirts.ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_outskirts_night, list(
-	'sound/ambience/outskirts_night.ogg',
+	'modular/kaizoku/sound/ambience/outskirts_night.ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_dungeon, list(
-	'sound/ambience/dungeon.ogg',
+	'modular/kaizoku/sound/ambience/dungeon.ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_sewer, list(
-	'sound/ambience/sewer.ogg',
+	'modular/kaizoku/sound/ambience/sewer.ogg',
 ))
 
-GLOBAL_LIST_INIT(ambience_rain_indoors, list('sound/ambience/rainin.ogg'))
-GLOBAL_LIST_INIT(ambience_rain_outdoors, list('sound/ambience/rainout.ogg'))
-GLOBAL_LIST_INIT(ambience_rain_sewer, list('sound/ambience/rainsewer.ogg'))
+GLOBAL_LIST_INIT(ambience_rain_indoors, list('modular/kaizoku/sound/ambience/rainin.ogg'))
+GLOBAL_LIST_INIT(ambience_rain_outdoors, list('modular/kaizoku/sound/ambience/rainout.ogg'))
+GLOBAL_LIST_INIT(ambience_rain_sewer, list('modular/kaizoku/sound/ambience/rainsewer.ogg'))
 
 //======== Cave
 
-GLOBAL_LIST_INIT(ambience_cave_generic, list('sound/ambience/cave.ogg'))
+GLOBAL_LIST_INIT(ambience_cave_generic, list('modular/kaizoku/sound/ambience/cave.ogg'))
 GLOBAL_LIST_INIT(ambience_cave_wet, list(
-	'sound/ambience/cavewater.ogg'
+	'modular/kaizoku/sound/ambience/cavewater.ogg'
 ))
 GLOBAL_LIST_INIT(ambience_cave_lava, list(
-	'sound/ambience/cavelava (1).ogg',
-	'sound/ambience/cavelava (2).ogg',
-	'sound/ambience/cavelava (3).ogg',
+	'modular/kaizoku/sound/ambience/cavelava (1).ogg',
+	'modular/kaizoku/sound/ambience/cavelava (2).ogg',
+	'modular/kaizoku/sound/ambience/cavelava (3).ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_ghetto, list(
-	'sound/ambience/ghetto.ogg',
+	'modular/kaizoku/sound/ambience/ghetto.ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_ghetto_night, list(
-	'sound/ambience/ghetto_night.ogg',
+	'modular/kaizoku/sound/ambience/ghetto_night.ogg',
 ))
 
 //======== Spooky
 
 GLOBAL_LIST_INIT(ambience_spooky_generic, list(
-	'sound/ambience/noises/genspooky (1).ogg',
-	'sound/ambience/noises/genspooky (2).ogg',
-	'sound/ambience/noises/genspooky (3).ogg',
-	'sound/ambience/noises/genspooky (4).ogg',
-	'sound/ambience/noises/genspooky (5).ogg',
+	'modular/kaizoku/sound/ambience/noises/genspooky (1).ogg',
+	'modular/kaizoku/sound/ambience/noises/genspooky (2).ogg',
+	'modular/kaizoku/sound/ambience/noises/genspooky (3).ogg',
+	'modular/kaizoku/sound/ambience/noises/genspooky (4).ogg',
+	'modular/kaizoku/sound/ambience/noises/genspooky (5).ogg',
 ))
 
 // Places
 
 GLOBAL_LIST_INIT(ambience_spooky_cave, list(
-	'sound/ambience/noises/cave (1).ogg',
-	'sound/ambience/noises/cave (2).ogg',
-	'sound/ambience/noises/cave (3).ogg',
-	'sound/ambience/noises/cave (4).ogg',
-	'sound/ambience/noises/cave (5).ogg',
-	'sound/ambience/noises/cave (6).ogg',
-	'sound/ambience/noises/cave (7).ogg',
-	'sound/ambience/noises/cave (8).ogg',
-	'sound/ambience/noises/cave (9).ogg',
-	'sound/ambience/noises/cave (10).ogg',
+	'modular/kaizoku/sound/ambience/noises/cave (1).ogg',
+	'modular/kaizoku/sound/ambience/noises/cave (2).ogg',
+	'modular/kaizoku/sound/ambience/noises/cave (3).ogg',
+	'modular/kaizoku/sound/ambience/noises/cave (4).ogg',
+	'modular/kaizoku/sound/ambience/noises/cave (5).ogg',
+	'modular/kaizoku/sound/ambience/noises/cave (6).ogg',
+	'modular/kaizoku/sound/ambience/noises/cave (7).ogg',
+	'modular/kaizoku/sound/ambience/noises/cave (8).ogg',
+	'modular/kaizoku/sound/ambience/noises/cave (9).ogg',
+	'modular/kaizoku/sound/ambience/noises/cave (10).ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_spooky_forest, list(
-	'sound/ambience/noises/owl.ogg',
-	'sound/ambience/noises/howl.ogg',
-	'sound/ambience/noises/howl2.ogg',
-	'sound/ambience/noises/howl3.ogg',
+	'modular/kaizoku/sound/ambience/noises/owl.ogg',
+	'modular/kaizoku/sound/ambience/noises/howl.ogg',
+	'modular/kaizoku/sound/ambience/noises/howl2.ogg',
+	'modular/kaizoku/sound/ambience/noises/howl3.ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_spooky_dungeon, list(
-	'sound/ambience/noises/dungeon (1).ogg',
-	'sound/ambience/noises/dungeon (2).ogg',
-	'sound/ambience/noises/dungeon (3).ogg',
-	'sound/ambience/noises/dungeon (4).ogg',
-	'sound/ambience/noises/dungeon (5).ogg',
+	'modular/kaizoku/sound/ambience/noises/dungeon (1).ogg',
+	'modular/kaizoku/sound/ambience/noises/dungeon (2).ogg',
+	'modular/kaizoku/sound/ambience/noises/dungeon (3).ogg',
+	'modular/kaizoku/sound/ambience/noises/dungeon (4).ogg',
+	'modular/kaizoku/sound/ambience/noises/dungeon (5).ogg',
 ))
 
 // Animals
 
 GLOBAL_LIST_INIT(ambience_spooky_rat, list(
-	'sound/ambience/noises/RAT1.ogg',
-	'sound/ambience/noises/RAT2.ogg',
+	'modular/kaizoku/sound/ambience/noises/RAT1.ogg',
+	'modular/kaizoku/sound/ambience/noises/RAT2.ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_spooky_frog, list(
-	'sound/ambience/noises/frog (1).ogg',
-	'sound/ambience/noises/frog (2).ogg',
+	'modular/kaizoku/sound/ambience/noises/frog (1).ogg',
+	'modular/kaizoku/sound/ambience/noises/frog (2).ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_spooky_birds, list(
-	'sound/ambience/noises/crow (1).ogg',
-	'sound/ambience/noises/crow (1).ogg',
-	'sound/ambience/noises/crow (3).ogg',
-	'sound/ambience/noises/crow (4).ogg',
+	'modular/kaizoku/sound/ambience/noises/crow (1).ogg',
+	'modular/kaizoku/sound/ambience/noises/crow (1).ogg',
+	'modular/kaizoku/sound/ambience/noises/crow (3).ogg',
+	'modular/kaizoku/sound/ambience/noises/crow (4).ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_outside_birds, list(
-	'sound/ambience/noises/heron (1).ogg',
-	'sound/ambience/noises/heron (2).ogg',
+	'modular/kaizoku/sound/ambience/noises/heron (1).ogg',
+	'modular/kaizoku/sound/ambience/noises/heron (2).ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_waterside_birds, list(
-	'sound/ambience/noises/warbler (1).ogg',
-	'sound/ambience/noises/warbler (2).ogg',
-	'sound/ambience/noises/mallard (8).ogg',
+	'modular/kaizoku/sound/ambience/noises/warbler (1).ogg',
+	'modular/kaizoku/sound/ambience/noises/warbler (2).ogg',
+	'modular/kaizoku/sound/ambience/noises/mallard (8).ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_spooky_dogs, list(
-	'sound/ambience/noises/dog (1).ogg',
-	'sound/ambience/noises/dog (2).ogg',
-	'sound/ambience/noises/dog (3).ogg',
-	'sound/ambience/noises/dog (4).ogg',
-	'sound/ambience/noises/dog (5).ogg',
+	'modular/kaizoku/sound/ambience/noises/dog (1).ogg',
+	'modular/kaizoku/sound/ambience/noises/dog (2).ogg',
+	'modular/kaizoku/sound/ambience/noises/dog (3).ogg',
+	'modular/kaizoku/sound/ambience/noises/dog (4).ogg',
+	'modular/kaizoku/sound/ambience/noises/dog (5).ogg',
 ))
 
 GLOBAL_LIST_INIT(ambience_spooky_sewer, list(
-	'sound/ambience/noises/sewer (1).ogg',
-	'sound/ambience/noises/sewer (2).ogg',
-	'sound/ambience/noises/sewer (3).ogg',
+	'modular/kaizoku/sound/ambience/noises/sewer (1).ogg',
+	'modular/kaizoku/sound/ambience/noises/sewer (2).ogg',
+	'modular/kaizoku/sound/ambience/noises/sewer (3).ogg',
 ))
 
 // Misc
 
 GLOBAL_LIST_INIT(ambience_spooky_mystical, list(
-	'sound/ambience/noises/mystical (1).ogg',
-	'sound/ambience/noises/mystical (1).ogg',
-	'sound/ambience/noises/mystical (3).ogg',
-	'sound/ambience/noises/mystical (4).ogg',
-	'sound/ambience/noises/mystical (5).ogg',
-	'sound/ambience/noises/mystical (6).ogg',
+	'modular/kaizoku/sound/ambience/noises/mystical (1).ogg',
+	'modular/kaizoku/sound/ambience/noises/mystical (1).ogg',
+	'modular/kaizoku/sound/ambience/noises/mystical (3).ogg',
+	'modular/kaizoku/sound/ambience/noises/mystical (4).ogg',
+	'modular/kaizoku/sound/ambience/noises/mystical (5).ogg',
+	'modular/kaizoku/sound/ambience/noises/mystical (6).ogg',
 ))
 
 /// Sound effects

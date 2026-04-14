@@ -84,14 +84,14 @@ GLOBAL_LIST_EMPTY(street_lamp_lights)
 	fool.dust(drop_items = TRUE)
 
 /datum/looping_sound/astratanshard_hum
-	mid_sounds = list('sound/misc/loops/LightCrystal1.ogg')
+	mid_sounds = list('modular/kaizoku/sound/misc/loops/LightCrystal1.ogg')
 	mid_length = 145
 	volume = 100
 	extra_range = 1
 	vary = TRUE
 
 /datum/looping_sound/astratanshard_broken
-	mid_sounds = list('sound/misc/loops/LightCrystal2.ogg')
+	mid_sounds = list('modular/kaizoku/sound/misc/loops/LightCrystal2.ogg')
 	mid_length = 145
 	volume = 100
 	extra_range = 1

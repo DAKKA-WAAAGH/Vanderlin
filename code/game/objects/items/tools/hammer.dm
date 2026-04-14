@@ -61,7 +61,7 @@
 		else
 			repair_percent *= user.get_skill_level(attacked_prosthetic.anvilrepair)
 
-		playsound(src,'sound/items/bsmith3.ogg', 100, FALSE)
+		playsound(src,'modular/kaizoku/sound/items/bsmith3.ogg', 100, FALSE)
 		if(repair_percent)
 			var/amt2raise = floor(user.STAINT * 0.25)
 			attacked_prosthetic.repair_damage(attacked_prosthetic.max_integrity * repair_percent)
@@ -95,7 +95,7 @@
 		else
 			repair_percent *= user.get_skill_level(attacked_item.anvilrepair)
 
-		playsound(src,'sound/items/bsmithfail.ogg', 40, FALSE)
+		playsound(src,'modular/kaizoku/sound/items/bsmithfail.ogg', 40, FALSE)
 		if(repair_percent)
 			var/amt2raise = floor(user.STAINT * 0.25)
 			attacked_item.repair_damage( attacked_item.max_integrity * repair_percent)
@@ -123,7 +123,7 @@
 		repair_percent *= user.get_skill_level(attacked_structure.hammer_repair)
 		attacked_structure.repair_damage(attacked_structure.max_integrity * repair_percent)
 		user.adjust_experience(attacked_structure.hammer_repair, amt2raise) // STONEKEEP EDIT
-		playsound(src,'sound/items/bsmithfail.ogg', 100, FALSE)
+		playsound(src,'modular/kaizoku/sound/items/bsmithfail.ogg', 100, FALSE)
 		user.visible_message(span_info("[user] repairs [attacked_structure]!"))
 		return
 

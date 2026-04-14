@@ -40,7 +40,7 @@
 			user.visible_message("<span class='notice'>[user] hungrily [eatverb]s \the [source], gobbling it down!</span>", "<span class='notice'>I hungrily [eatverb] \the [source], gobbling it down!</span>")
 			M.changeNext_move(CLICK_CD_MELEE * 0.5)
 
-	playsound(M,'sound/misc/eat.ogg', rand(30,60), TRUE)
+	playsound(M,'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 	SEND_SIGNAL(source, COMSIG_FOOD_EATEN, M, user)
 	SEND_SIGNAL(user, COMSIG_MOB_FOOD_EAT, source)
 	source.on_consume(user)
@@ -58,8 +58,8 @@
 	while(do_after(user, rand(2.5, 1.75) SECONDS, T, display_over_user = TRUE, extra_checks = CALLBACK(src, PROC_REF(turf_check), T)) && user.adjust_stamina(7))
 		var/damage = user.STASTR * (HAS_TRAIT(user, TRAIT_STRONGBITE) ? 30 : 15) * rand(0.8, 1.2)
 		T.take_damage(damage, BRUTE, "stab", FALSE)
-		playsound(T, 'sound/combat/hits/onstone/stonedeath.ogg', rand(50,75), TRUE)
-		playsound(user, 'sound/misc/eat.ogg', rand(50,75), TRUE)
+		playsound(T, 'modular/kaizoku/sound/combat/hits/onstone/stonedeath.ogg', rand(50,75), TRUE)
+		playsound(user, 'modular/kaizoku/sound/misc/eat.ogg', rand(50,75), TRUE)
 		count %= 3
 		if(!count)
 			user.visible_message(span_warning("[user] tunnels into [T]!"), span_warning("I tunnel into [T]!"), span_warning("I hear the sound of crunching terrain."))

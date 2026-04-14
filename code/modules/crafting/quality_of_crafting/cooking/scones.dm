@@ -12,7 +12,7 @@
 	required_table = TRUE
 	craft_time = 6 SECONDS
 	minimum_skill_level = 2
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	crafting_message = "add sugar to the dough"
 	extra_chance = 100
 
@@ -29,7 +29,7 @@
 	output = /obj/item/reagent_containers/food/snacks/foodbase/biscuitpoison_raw
 	required_table = TRUE
 	craft_time = 6 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	crafting_message = "add raisins to the dough"
 	extra_chance = 100
 
@@ -45,7 +45,7 @@
 	starting_atom = /obj/item/reagent_containers/food/snacks/produce/fruit/tangerine
 	output = /obj/item/reagent_containers/food/snacks/foodbase/scone_raw_tangerine
 	craft_time = 5 SECONDS
-	crafting_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 	crafting_message = "add tangerine to the scone"
 	extra_chance = 100
 
@@ -61,6 +61,6 @@
 	starting_atom = /obj/item/reagent_containers/food/snacks/produce/fruit/plum
 	output = /obj/item/reagent_containers/food/snacks/foodbase/scone_raw_plum
 	craft_time = 5 SECONDS
-	crafting_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 	crafting_message = "add plum to the scone"
 	extra_chance = 100

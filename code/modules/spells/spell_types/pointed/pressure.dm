@@ -1,7 +1,7 @@
 /datum/action/cooldown/spell/pressure
 	name = "Arcane Tides"
 	desc = "Drown one with arcane tides"
-	sound = 'sound/foley/jumpland/waterland.ogg'
+	sound = 'modular/kaizoku/sound/foley/jumpland/waterland.ogg'
 
 	cast_range = 6
 	associated_skill = /datum/skill/magic/arcane

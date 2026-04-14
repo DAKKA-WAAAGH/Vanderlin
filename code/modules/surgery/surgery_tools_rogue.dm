@@ -39,9 +39,9 @@
 	icon_state = "scalpel"
 	possible_item_intents = list(DAGGER_CUT, DAGGER_THRUST)
 	slot_flags = ITEM_SLOT_HIP|ITEM_SLOT_MOUTH
-	parrysound = list('sound/combat/parry/bladed/bladedsmall (1).ogg','sound/combat/parry/bladed/bladedsmall (2).ogg','sound/combat/parry/bladed/bladedsmall (3).ogg')
-	swingsound = list('sound/combat/wooshes/bladed/wooshsmall (1).ogg','sound/combat/wooshes/bladed/wooshsmall (2).ogg','sound/combat/wooshes/bladed/wooshsmall (3).ogg')
-	pickup_sound = 'sound/foley/equip/swordsmall2.ogg'
+	parrysound = list('modular/kaizoku/sound/combat/parry/bladed/bladedsmall (1).ogg','modular/kaizoku/sound/combat/parry/bladed/bladedsmall (2).ogg','modular/kaizoku/sound/combat/parry/bladed/bladedsmall (3).ogg')
+	swingsound = list('modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (1).ogg','modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (2).ogg','modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (3).ogg')
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/swordsmall2.ogg'
 	tool_behaviour = TOOL_SCALPEL
 
 /obj/item/weapon/surgery/saw
@@ -55,9 +55,9 @@
 	armor_penetration = 0
 	possible_item_intents = list(DAGGER_CUT, CLEAVER_CHOP)
 	slot_flags = ITEM_SLOT_HIP
-	parrysound = list('sound/combat/parry/bladed/bladedmedium (1).ogg','sound/combat/parry/bladed/bladedmedium (2).ogg','sound/combat/parry/bladed/bladedmedium (3).ogg')
-	swingsound = list('sound/combat/wooshes/bladed/wooshmed (1).ogg','sound/combat/wooshes/bladed/wooshmed (2).ogg','sound/combat/wooshes/bladed/wooshmed (3).ogg')
-	pickup_sound = 'sound/foley/equip/swordsmall2.ogg'
+	parrysound = list('modular/kaizoku/sound/combat/parry/bladed/bladedmedium (1).ogg','modular/kaizoku/sound/combat/parry/bladed/bladedmedium (2).ogg','modular/kaizoku/sound/combat/parry/bladed/bladedmedium (3).ogg')
+	swingsound = list('modular/kaizoku/sound/combat/wooshes/bladed/wooshmed (1).ogg','modular/kaizoku/sound/combat/wooshes/bladed/wooshmed (2).ogg','modular/kaizoku/sound/combat/wooshes/bladed/wooshmed (3).ogg')
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/swordsmall2.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	thrown_bclass = BCLASS_CHOP
 	tool_behaviour = TOOL_SAW
@@ -68,9 +68,9 @@
 	icon_state = "forceps"
 	possible_item_intents = list(INTENT_USE)
 	slot_flags = ITEM_SLOT_HIP|ITEM_SLOT_MOUTH
-	parrysound = list('sound/combat/parry/bladed/bladedsmall (1).ogg','sound/combat/parry/bladed/bladedsmall (2).ogg','sound/combat/parry/bladed/bladedsmall (3).ogg')
-	swingsound = list('sound/combat/wooshes/bladed/wooshsmall (1).ogg','sound/combat/wooshes/bladed/wooshsmall (2).ogg','sound/combat/wooshes/bladed/wooshsmall (3).ogg')
-	pickup_sound = 'sound/foley/equip/swordsmall2.ogg'
+	parrysound = list('modular/kaizoku/sound/combat/parry/bladed/bladedsmall (1).ogg','modular/kaizoku/sound/combat/parry/bladed/bladedsmall (2).ogg','modular/kaizoku/sound/combat/parry/bladed/bladedsmall (3).ogg')
+	swingsound = list('modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (1).ogg','modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (2).ogg','modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (3).ogg')
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/swordsmall2.ogg'
 	tool_behaviour = TOOL_HEMOSTAT
 	sharpness = IS_BLUNT
 
@@ -80,9 +80,9 @@
 	icon_state = "speculum"
 	possible_item_intents = list(INTENT_USE)
 	slot_flags = ITEM_SLOT_HIP
-	parrysound = list('sound/combat/parry/bladed/bladedsmall (1).ogg','sound/combat/parry/bladed/bladedsmall (2).ogg','sound/combat/parry/bladed/bladedsmall (3).ogg')
-	swingsound = list('sound/combat/wooshes/bladed/wooshsmall (1).ogg','sound/combat/wooshes/bladed/wooshsmall (2).ogg','sound/combat/wooshes/bladed/wooshsmall (3).ogg')
-	pickup_sound = 'sound/foley/equip/swordsmall2.ogg'
+	parrysound = list('modular/kaizoku/sound/combat/parry/bladed/bladedsmall (1).ogg','modular/kaizoku/sound/combat/parry/bladed/bladedsmall (2).ogg','modular/kaizoku/sound/combat/parry/bladed/bladedsmall (3).ogg')
+	swingsound = list('modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (1).ogg','modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (2).ogg','modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (3).ogg')
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/swordsmall2.ogg'
 	w_class = WEIGHT_CLASS_NORMAL
 	thrown_bclass = BCLASS_BLUNT
 	tool_behaviour = TOOL_RETRACTOR
@@ -94,9 +94,9 @@
 	icon_state = "bonesetter"
 	possible_item_intents = list(INTENT_USE)
 	slot_flags = ITEM_SLOT_HIP|ITEM_SLOT_MOUTH
-	parrysound = list('sound/combat/parry/bladed/bladedsmall (1).ogg','sound/combat/parry/bladed/bladedsmall (2).ogg','sound/combat/parry/bladed/bladedsmall (3).ogg')
-	swingsound = list('sound/combat/wooshes/bladed/wooshsmall (1).ogg','sound/combat/wooshes/bladed/wooshsmall (2).ogg','sound/combat/wooshes/bladed/wooshsmall (3).ogg')
-	pickup_sound = 'sound/foley/equip/swordsmall2.ogg'
+	parrysound = list('modular/kaizoku/sound/combat/parry/bladed/bladedsmall (1).ogg','modular/kaizoku/sound/combat/parry/bladed/bladedsmall (2).ogg','modular/kaizoku/sound/combat/parry/bladed/bladedsmall (3).ogg')
+	swingsound = list('modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (1).ogg','modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (2).ogg','modular/kaizoku/sound/combat/wooshes/bladed/wooshsmall (3).ogg')
+	pickup_sound = 'modular/kaizoku/sound/foley/equip/swordsmall2.ogg'
 	tool_behaviour = TOOL_BONESETTER
 	sharpness = IS_BLUNT
 
@@ -109,7 +109,7 @@
 	wbalance = EASY_TO_DODGE
 	possible_item_intents = list(INTENT_USE, MACE_STRIKE, MACE_SMASH)
 	slot_flags = ITEM_SLOT_HIP
-	parrysound = list('sound/combat/parry/parrygen.ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/parrygen.ogg')
 	swingsound = BLUNTWOOSH_MED
 
 	associated_skill = /datum/skill/combat/axesmaces
@@ -147,7 +147,7 @@
 /obj/item/weapon/surgery/cautery/fire_act(added, maxstacks)
 	. = ..()
 	if(!heated)
-		playsound(src, 'sound/items/firelight.ogg', 100, vary = TRUE)
+		playsound(src, 'modular/kaizoku/sound/items/firelight.ogg', 100, vary = TRUE)
 	update_heated(TRUE)
 	if(cool_timer)
 		deltimer(cool_timer)
@@ -175,7 +175,7 @@
 	wbalance = EASY_TO_DODGE
 	possible_item_intents = list(INTENT_USE, MACE_STRIKE, MACE_SMASH)
 	slot_flags = ITEM_SLOT_HIP
-	parrysound = list('sound/combat/parry/parrygen.ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/parrygen.ogg')
 	swingsound = BLUNTWOOSH_MED
 	associated_skill = /datum/skill/combat/axesmaces
 	sharpness = IS_BLUNT

@@ -6,7 +6,7 @@
 	outfit = /datum/outfit/folkhero/longbeard
 	total_positions = 1
 	category_tags = list(CTAG_FOLKHEROES)
-	cmode_music = 'sound/music/cmode/adventurer/CombatOutlander2.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander2.ogg'
 
 	skills = list(
 		/datum/skill/combat/axesmaces = 4,

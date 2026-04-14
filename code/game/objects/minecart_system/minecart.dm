@@ -5,8 +5,8 @@
 	icon_state = "minecart"
 	base_icon_state = "minecart"
 	drag_slowdown = 2
-	//open_sound = 'sound/machines/trapdoor/trapdoor_open.ogg'
-	//close_sound = 'sound/machines/trapdoor/trapdoor_shut.ogg'
+	//open_sound = 'modular/kaizoku/sound/machines/trapdoor/trapdoor_open.ogg'
+	//close_sound = 'modular/kaizoku/sound/machines/trapdoor/trapdoor_shut.ogg'
 	buckle_lying = FALSE
 	horizontal = FALSE
 
@@ -102,7 +102,7 @@
 			span_danger("[src] smashes into [smacked], breaking into pieces!"),
 			span_userdanger("You are smacked by [src] as it breaks into pieces!"),
 		)
-		//playsound(src, 'sound/effects/break_stone.ogg', 50, vary = TRUE)
+		//playsound(src, 'modular/kaizoku/sound/effects/break_stone.ogg', 50, vary = TRUE)
 		momentum = 0
 
 	else
@@ -110,7 +110,7 @@
 			span_danger("[src] smashes into [smacked]!"),
 			span_userdanger("You are smacked by [src]!"),
 		)
-	//playsound(src, 'sound/effects/bang.ogg', 50, vary = TRUE)
+	//playsound(src, 'modular/kaizoku/sound/effects/bang.ogg', 50, vary = TRUE)
 	take_damage(max_integrity * 0.05)
 	momentum = floor(momentum / momentum_mod)
 	if(smacked.body_position == LYING_DOWN)
@@ -184,7 +184,7 @@
 	update_rail_state(FALSE)
 	Move(new_destination)
 	/*
-	var/sound/thud_sound = sound('sound/weapons/thudswoosh.ogg')
+	var/sound/thud_sound = sound('modular/kaizoku/sound/weapons/thudswoosh.ogg')
 	thud_sound.pitch = 0.5
 	playsound(src, thud_sound, 50, TRUE)
 	*/
@@ -205,7 +205,7 @@
 	setDir(set_rail.dir)
 	update_rail_state(TRUE)
 	/*
-	var/sound/click_sound = sound('sound/machines/click.ogg')
+	var/sound/click_sound = sound('modular/kaizoku/sound/machines/click.ogg')
 	click_sound.pitch = 0.5
 	playsound(src, click_sound, 50, TRUE)
 	*/

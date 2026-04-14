@@ -17,8 +17,8 @@
 	armor = list("blunt" = 10, "slash" = 10, "stab" = 10, "piercing" = 0, "fire" = 0, "acid" = 0)
 	damage_deflection = 10
 	CanAtmosPass = ATMOS_PASS_DENSITY
-	break_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'
-	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroywalldoor.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
 	lock = /datum/lock/key
 	can_add_lock = TRUE
 	smoothing_groups = SMOOTH_GROUP_KAIZOJAVE_WALL
@@ -904,7 +904,7 @@
 	transition = null
 	if(!windowed)
 		set_opacity(FALSE)
-	playsound(src, 'sound/foley/doors/shittyopen.ogg', 50, TRUE)
+	playsound(src, 'modular/kaizoku/sound/foley/doors/shittyopen.ogg', 50, TRUE)
 	play_open_close_animation(TRUE)
 	density = FALSE
 	door_opened = TRUE
@@ -923,7 +923,7 @@
 	transition = null
 	if(!windowed)
 		set_opacity(TRUE)
-	playsound(src, 'sound/foley/doors/shittyclose.ogg', 50, TRUE)
+	playsound(src, 'modular/kaizoku/sound/foley/doors/shittyclose.ogg', 50, TRUE)
 	play_open_close_animation(FALSE)
 	density = TRUE
 	door_opened = FALSE
@@ -954,7 +954,7 @@
 	if(door_opened)
 		if(isliving(user))
 			var/mob/living/L = user
-			playsound(src, 'sound/items/weapons/thudswoosh.ogg', 50, TRUE)
+			playsound(src, 'modular/kaizoku/sound/items/weapons/thudswoosh.ogg', 50, TRUE)
 			user.visible_message(span_warning("[user] kicks at [src], the leg swinging through nothing."), span_notice("I tried to kick this, but the momentum carried me too far..."))
 			L.Knockdown(2 SECONDS)
 		return

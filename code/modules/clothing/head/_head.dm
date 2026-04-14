@@ -14,8 +14,8 @@
 
 	equip_sound = "rustle"
 	pickup_sound = "rustle"
-	break_sound = 'sound/foley/cloth_rip.ogg'
-	drop_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/cloth_rip.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 
 	grid_height = 32
 	grid_width = 64

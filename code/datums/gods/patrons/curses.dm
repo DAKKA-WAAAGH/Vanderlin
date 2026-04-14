@@ -16,13 +16,13 @@
 	if(!silent)
 		to_chat(owner, span_userdanger("Something is wrong... I feel cursed."))
 		to_chat(owner, span_danger(description))
-	owner.playsound_local(get_turf(owner), 'sound/misc/cursed.ogg', 80, FALSE, pressure_affected = FALSE)
+	owner.playsound_local(get_turf(owner), 'modular/kaizoku/sound/misc/cursed.ogg', 80, FALSE, pressure_affected = FALSE)
 	return
 
 /datum/curse/proc/on_loss(mob/living/carbon/human/owner)
 	REMOVE_TRAIT(owner, trait, TRAIT_CURSE)
 	to_chat(owner, span_userdanger("Something has changed... I feel relieved."))
-	owner.playsound_local(get_turf(owner), 'sound/misc/curse_lifted.ogg', 80, FALSE, pressure_affected = FALSE)
+	owner.playsound_local(get_turf(owner), 'modular/kaizoku/sound/misc/curse_lifted.ogg', 80, FALSE, pressure_affected = FALSE)
 	qdel(src)
 	return
 
@@ -192,7 +192,7 @@
 		if(4)
 			var/obj/item/bodypart/BP = pick(owner.bodyparts)
 			BP.rotted = TRUE
-			owner.playsound_local(get_turf(owner), 'sound/foley/butcher.ogg', 80, FALSE, pressure_affected = FALSE)
+			owner.playsound_local(get_turf(owner), 'modular/kaizoku/sound/foley/butcher.ogg', 80, FALSE, pressure_affected = FALSE)
 			owner.regenerate_icons()
 
 /datum/curse/baotha/on_life(mob/living/carbon/human/owner)

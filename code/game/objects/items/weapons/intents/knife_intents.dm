@@ -9,7 +9,7 @@
 	attack_verb = list("cuts", "slashes")
 	animname = "cut"
 	blade_class = BCLASS_CUT
-	hitsound = list('sound/combat/hits/bladed/smallslash (1).ogg', 'sound/combat/hits/bladed/smallslash (2).ogg', 'sound/combat/hits/bladed/smallslash (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/smallslash (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/smallslash (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/smallslash (3).ogg')
 	penfactor = 10
 	chargetime = 0
 	swingdelay = 1
@@ -22,7 +22,7 @@
 	attack_verb = list("stabs")
 	animname = "stab"
 	blade_class = BCLASS_STAB
-	hitsound = list('sound/combat/hits/bladed/genstab (1).ogg', 'sound/combat/hits/bladed/genstab (2).ogg', 'sound/combat/hits/bladed/genstab (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/genstab (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genstab (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genstab (3).ogg')
 	penfactor = 30
 	chargetime = 0
 	clickcd = CLICK_CD_FAST
@@ -41,7 +41,7 @@
 	attack_verb = list("chops")
 	animname = "chop"
 	blade_class = BCLASS_CHOP
-	hitsound = list('sound/combat/hits/bladed/smallslash (1).ogg', 'sound/combat/hits/bladed/smallslash (2).ogg', 'sound/combat/hits/bladed/smallslash (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/smallslash (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/smallslash (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/smallslash (3).ogg')
 	penfactor = 10
 	damfactor = 1.5
 	swingdelay = 1
@@ -49,7 +49,7 @@
 	item_damage_type = "slash"
 
 /datum/intent/dagger/chop/cleaver
-	hitsound = list('sound/combat/hits/bladed/genchop (1).ogg', 'sound/combat/hits/bladed/genchop (2).ogg', 'sound/combat/hits/bladed/genchop (3).ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/bladed/genchop (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genchop (2).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genchop (3).ogg')
 	damfactor = 2
 
 /datum/intent/snip // The salvaging intent! Used only for the scissors for now!

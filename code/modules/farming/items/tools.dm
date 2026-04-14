@@ -27,7 +27,7 @@
 	sharpness = IS_BLUNT
 	w_class = WEIGHT_CLASS_BULKY
 	gripsprite = TRUE
-	drop_sound = 'sound/foley/dropsound/wooden_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/wooden_drop.ogg'
 	smeltresult = /obj/item/fertilizer/ash
 	associated_skill = /datum/skill/combat/whipsflails
 
@@ -144,7 +144,7 @@
 	wlength = 10
 	slot_flags = ITEM_SLOT_HIP
 	thrown_bclass = BCLASS_CUT
-	drop_sound = 'sound/foley/dropsound/blade_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/blade_drop.ogg'
 	max_blade_int = 50
 	melting_material = /datum/material/iron
 	melt_amount = 50
@@ -195,7 +195,7 @@
 	slot_flags = ITEM_SLOT_BACK
 	minstr = 5
 	sharpness = IS_BLUNT
-	drop_sound = 'sound/foley/dropsound/wooden_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/wooden_drop.ogg'
 	melting_material = /datum/material/iron
 	melt_amount = 75
 	associated_skill = /datum/skill/combat/polearms
@@ -272,16 +272,16 @@
 			return
 		user.changeNext_move(CLICK_CD_MELEE)
 		if(istype(T, /turf/open/floor/grass))
-			playsound(T,'sound/items/dig_shovel.ogg', 100, TRUE)
+			playsound(T,'modular/kaizoku/sound/items/dig_shovel.ogg', 100, TRUE)
 			if(do_after(user, 3 SECONDS * time_multiplier, src))
 				apply_farming_fatigue(user, 10)
 				T.ChangeTurf(/turf/open/floor/dirt, flags = CHANGETURF_INHERIT_AIR)
-				playsound(T,'sound/items/dig_shovel.ogg', 100, TRUE)
+				playsound(T,'modular/kaizoku/sound/items/dig_shovel.ogg', 100, TRUE)
 			return
 		if(istype(T, /turf/open/floor/dirt))
-			playsound(T,'sound/items/dig_shovel.ogg', 100, TRUE)
+			playsound(T,'modular/kaizoku/sound/items/dig_shovel.ogg', 100, TRUE)
 			if(do_after(user, 2 SECONDS * time_multiplier, src))
-				playsound(T,'sound/items/dig_shovel.ogg', 100, TRUE)
+				playsound(T,'modular/kaizoku/sound/items/dig_shovel.ogg', 100, TRUE)
 				var/obj/structure/soil/soil = get_soil_on_turf(T)
 				if(soil)
 					soil.user_till_soil(user)
@@ -338,7 +338,7 @@
 	slot_flags = ITEM_SLOT_BACK
 	blade_dulling = DULLING_BASHCHOP
 	minstr = 6
-	drop_sound = 'sound/foley/dropsound/wooden_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/wooden_drop.ogg'
 	melting_material = /datum/material/iron
 	melt_amount = 75
 	associated_skill = /datum/skill/combat/polearms

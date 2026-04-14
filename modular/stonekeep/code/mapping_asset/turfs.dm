@@ -96,7 +96,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 
 
 /turf/open/floor/sandstone/shaded
@@ -121,7 +121,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 	neighborlay = "cobstonemoss"
 	max_integrity = 1200
 
@@ -361,7 +361,7 @@
 	footstep = FOOTSTEP_GRASS
 	barefootstep = FOOTSTEP_SOFT_BAREFOOT
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/grassland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/grassland.ogg'
 	slowdown = 0
 
 /obj/effect/decal/haycorner
@@ -406,8 +406,8 @@
 	blade_dulling = DULLING_BASH
 	max_integrity = 1200
 	sheet_type = /obj/item/natural/stone
-	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
-	attacked_sound = list('sound/combat/hits/onstone/wallhit.ogg', 'sound/combat/hits/onstone/wallhit2.ogg', 'sound/combat/hits/onstone/wallhit3.ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onstone/stonedeath.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onstone/wallhit.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit2.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit3.ogg')
 	above_floor = /turf/open/floor/blocks
 	baseturfs = list(/turf/open/floor/blocks)
 	neighborlay = "dirtedge"

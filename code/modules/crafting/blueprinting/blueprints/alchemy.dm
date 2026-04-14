@@ -3,7 +3,7 @@
 	skillcraft = /datum/skill/craft/alchemy
 	category = "Alchemy"
 	construct_tool = /obj/item/weapon/hammer
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 	verbage = "infuse"
 	verbage_tp = "infuses"
 

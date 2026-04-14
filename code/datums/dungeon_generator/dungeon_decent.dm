@@ -78,7 +78,7 @@ GLOBAL_LIST_INIT(descent_level_map, list()) // Maps z-levels to their descent ob
 
 	if(!is_ghost)
 		to_chat(user, span_notice("You descend deeper into the dungeon..."))
-		playsound(src, 'sound/foley/ladder.ogg', 100, FALSE)
+		playsound(src, 'modular/kaizoku/sound/foley/ladder.ogg', 100, FALSE)
 		if(!do_after(user, 3 SECONDS, src))
 			return
 

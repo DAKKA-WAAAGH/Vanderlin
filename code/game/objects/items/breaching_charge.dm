@@ -20,7 +20,7 @@
 	var/exp_heavy = 1
 	var/exp_light = 1
 	var/exp_flash = 5
-	var/explode_sound = 'sound/misc/explode/bomb.ogg'
+	var/explode_sound = 'modular/kaizoku/sound/misc/explode/bomb.ogg'
 
 /obj/item/breach_charge/afterattack(atom/movable/bomb_target, mob/user, flag)
 	. = ..()
@@ -79,7 +79,7 @@
 /obj/item/breach_charge/fire_act(added, maxstacks)
 	if(deployed && !ignited)
 		visible_message(span_warning("[src] ignites!"))
-		playsound(src, 'sound/items/fuse.ogg', 100)
+		playsound(src, 'modular/kaizoku/sound/items/fuse.ogg', 100)
 		ignited = TRUE
 		icon_state = "[initial(icon_state)]_ignited"
 		fuse_timer = addtimer(CALLBACK(src, PROC_REF(detonate)), fuse_duration, TIMER_STOPPABLE)
@@ -109,7 +109,7 @@
 		..()
 
 /obj/item/breach_charge/proc/defuse(mob/defuser)
-	playsound(src, 'sound/items/firesnuff.ogg', 100, FALSE)
+	playsound(src, 'modular/kaizoku/sound/items/firesnuff.ogg', 100, FALSE)
 	ignited = FALSE
 	deltimer(fuse_timer)
 	fuse_timer = null
@@ -127,7 +127,7 @@
 	if(iswallturf(target_turf) && !ismineralturf(target_turf))
 		target_turf.ScrapeAway()
 	explosion(target_turf, exp_devi, exp_heavy, exp_light, soundin = explode_sound)
-	playsound(src, 'sound/combat/hits/onstone/stonedeath.ogg', 100, FALSE)
+	playsound(src, 'modular/kaizoku/sound/combat/hits/onstone/stonedeath.ogg', 100, FALSE)
 	qdel(src)
 	target_turf.pollute_turf(/datum/pollutant/smoke/thicc, 100) // allways smoke AFTER explosions , or the explosion will Qdel the smoke
 	if(ismineralturf(target_turf))
@@ -147,7 +147,7 @@
 			for(var/turf/closed/mineral/mineral_wave in turfs) // now we kill all the stones
 				mineral_wave.gets_drilled(detonator)
 				mineral_wave.pollute_turf(/datum/pollutant/smoke/thicc, 70)
-			playsound(target_turf, 'sound/combat/hits/onstone/stonedeath.ogg', 100, FALSE)
+			playsound(target_turf, 'modular/kaizoku/sound/combat/hits/onstone/stonedeath.ogg', 100, FALSE)
 			if(length(next_pass))
 				turfs += next_pass
 				next_pass.Cut()

@@ -3,7 +3,7 @@
 	tutorial = "Not all followers of Matthios take by force. Thieves, poachers, and ne'er-do-wells of all forms steal from others from the shadows, long gone before their marks realize their misfortune."
 	outfit = /datum/outfit/bandit/knave
 	category_tags = list(CTAG_BANDIT)
-	cmode_music = 'sound/music/cmode/antag/CombatBandit1.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/antag/CombatBandit1.ogg'
 	exp_types_granted = list(EXP_TYPE_COMBAT, EXP_TYPE_THIEF)
 
 	jobstats = list(

@@ -36,7 +36,7 @@
 	if(!damage)
 		return
 	shake_camera(user, 2, 1)
-	playsound(get_turf(src), 'sound/foley/meatslap.ogg', 50, TRUE)
+	playsound(get_turf(src), 'modular/kaizoku/sound/foley/meatslap.ogg', 50, TRUE)
 	health -= damage
 	if(health <= 0)
 		qdel(src)

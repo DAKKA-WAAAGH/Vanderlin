@@ -160,7 +160,7 @@
 	GLOB.badomens -= OMEN_NOLORD
 	say("By the authority of the Gods, I pronounce you Ruler of all [SSmapping.config.map_name]!")
 	priority_announce("[real_name] the [mind.assigned_role.get_informed_title(src)] has named [coronated.real_name] the inheritor of [SSmapping.config.map_name]!", \
-	title = "Long Live [lord_job.get_informed_title(coronated)] [coronated.real_name]!", sound = 'sound/misc/bell.ogg')
+	title = "Long Live [lord_job.get_informed_title(coronated)] [coronated.real_name]!", sound = 'modular/kaizoku/sound/misc/bell.ogg')
 
 /mob/living/carbon/human/proc/churchexcommunicate()
 	set name = "Excommunicate"
@@ -174,7 +174,7 @@
 			return FALSE
 		if(inputty in GLOB.excommunicated_players)
 			GLOB.excommunicated_players -= inputty
-			priority_announce("[real_name] has forgiven [inputty]. The Ten hear their prayers once more!", title = "Hail the Ten!", sound = 'sound/misc/bell.ogg')
+			priority_announce("[real_name] has forgiven [inputty]. The Ten hear their prayers once more!", title = "Hail the Ten!", sound = 'modular/kaizoku/sound/misc/bell.ogg')
 			for(var/mob/living/carbon/human/H in GLOB.human_list)
 				if(H.real_name == inputty)
 					H.cleric?.recommunicate()
@@ -190,7 +190,7 @@
 					return FALSE
 				H.cleric?.excommunicate()
 				GLOB.excommunicated_players += inputty
-				priority_announce("[real_name] has excommunicated [inputty]! The Ten have turned away from them!", title = "SHAME", sound = 'sound/misc/excomm.ogg')
+				priority_announce("[real_name] has excommunicated [inputty]! The Ten have turned away from them!", title = "SHAME", sound = 'modular/kaizoku/sound/misc/excomm.ogg')
 				break
 
 /mob/living/carbon/human/proc/churchcurse()
@@ -205,7 +205,7 @@
 			return FALSE
 		if(inputty in GLOB.heretical_players)
 			GLOB.heretical_players -= inputty
-			priority_announce("[real_name] has forgiven [inputty]. Once more walk in the light!", title = "Hail the Ten!", sound = 'sound/misc/bell.ogg')
+			priority_announce("[real_name] has forgiven [inputty]. Once more walk in the light!", title = "Hail the Ten!", sound = 'modular/kaizoku/sound/misc/bell.ogg')
 			for(var/mob/living/carbon/H in GLOB.player_list)
 				if(H.real_name == inputty)
 					H.remove_stress(/datum/stress_event/psycurse)
@@ -220,7 +220,7 @@
 					return FALSE
 				H.add_stress(/datum/stress_event/psycurse)
 				GLOB.heretical_players += inputty
-				priority_announce("[real_name] has put Xylix's curse of woe on [inputty] for offending the church!", title = "SHAME", sound = 'sound/misc/excomm.ogg')
+				priority_announce("[real_name] has put Xylix's curse of woe on [inputty] for offending the church!", title = "SHAME", sound = 'modular/kaizoku/sound/misc/excomm.ogg')
 				break
 
 /mob/living/carbon/human/proc/churchannouncement()
@@ -233,5 +233,5 @@
 		if(!istype(get_area(src), /area/indoors/town/church/chapel))
 			to_chat(src, "<span class='warning'>I need to do this from the chapel.</span>")
 			return FALSE
-		priority_announce("[inputty]", title = "The [get_role_title()] Speaks", sound = 'sound/misc/bell.ogg')
+		priority_announce("[inputty]", title = "The [get_role_title()] Speaks", sound = 'modular/kaizoku/sound/misc/bell.ogg')
 		src.log_talk("[TIMETOTEXT4LOGS] [inputty]", LOG_SAY, tag="Priest announcement")

@@ -31,8 +31,8 @@
 	var/deconstruction_ready = 1
 	max_integrity = 100
 	integrity_failure = 0.33
-	destroy_sound = 'sound/combat/hits/onwood/destroyfurniture.ogg'
-	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
+	destroy_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroyfurniture.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
 	blade_dulling = DULLING_BASHCHOP
 
 /obj/structure/table/Initialize()
@@ -408,8 +408,8 @@
 	anchored = TRUE
 	pass_flags_self = LETPASSTHROW|PASSTABLE
 	max_integrity = 40
-	destroy_sound = 'sound/combat/hits/onwood/destroyfurniture.ogg'
-	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
+	destroy_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroyfurniture.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
 	blade_dulling = DULLING_BASHCHOP
 
 /obj/structure/rack/CanAStarPass(ID, dir, requester)

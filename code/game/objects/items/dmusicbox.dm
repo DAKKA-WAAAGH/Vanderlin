@@ -59,7 +59,7 @@
 			loaded=TRUE
 			qdel(P)
 			update_appearance(UPDATE_ICON_STATE)
-			playsound(src, 'sound/misc/machinevomit.ogg', 100, TRUE, -1)
+			playsound(src, 'modular/kaizoku/sound/misc/machinevomit.ogg', 100, TRUE, -1)
 			return
 	return ..()
 
@@ -89,7 +89,7 @@
 	if(!loaded)
 		say("A GOLD COIN FOR A CAROL!")
 		return
-	playsound(src, 'sound/misc/beep.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/beep.ogg', 100, FALSE, -1)
 	var/infile = input(user, "CHOOSE A NEW SONG", src) as null|file
 
 	if(!infile)
@@ -120,7 +120,7 @@
 	if(.)
 		return
 	user.changeNext_move(CLICK_CD_MELEE)
-	playsound(src, 'sound/misc/beep.ogg', 100, FALSE, -1)
+	playsound(src, 'modular/kaizoku/sound/misc/beep.ogg', 100, FALSE, -1)
 	if(!playing)
 		if(curfile)
 			playing = TRUE

@@ -3,7 +3,7 @@
 	required_table = TRUE
 	minimum_skill_level = 3
 	craft_time = 9 SECONDS
-	crafting_sound = 'sound/foley/kneading_alt.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/kneading_alt.ogg'
 	extra_chance = 100
 	attacked_atom = /obj/item/reagent_containers/food/snacks/jellycake_base
 

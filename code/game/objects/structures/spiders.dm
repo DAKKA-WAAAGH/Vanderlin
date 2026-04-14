@@ -14,7 +14,7 @@
 	user.visible_message(span_notice("[user] snips [src] up into silk."))
 	user.adjust_experience(/datum/skill/misc/sewing, (user.STAINT / 2)) //Stonekeep Edit
 	// user.mind.add_sleep_experience(/datum/skill/misc/sewing, (user.STAINT / 2)) //We're getting experience for harvesting silk!
-	playsound(src, 'sound/items/flint.ogg', 100, TRUE)
+	playsound(src, 'modular/kaizoku/sound/items/flint.ogg', 100, TRUE)
 	qdel(src)
 	return TRUE
 

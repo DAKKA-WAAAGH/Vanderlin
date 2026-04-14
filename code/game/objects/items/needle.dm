@@ -94,7 +94,7 @@
 			armor_value += I.armor.getRating(key)
 		if((armor_value == 0 && skill_level < 1) || (armor_value > 0 && skill_level < 2))
 			to_chat(user, span_warning("I should probably not be doing this..."))
-		playsound(src, 'sound/foley/sewflesh.ogg', 100, TRUE, -2)
+		playsound(src, 'modular/kaizoku/sound/foley/sewflesh.ogg', 100, TRUE, -2)
 		var/skill_multiplied = (skill_level * 10)
 		var/sewtime = (6 SECONDS - skill_multiplied)
 		if(!do_after(user, sewtime, I))
@@ -108,7 +108,7 @@
 			if(prob(20 - user.STALUC)) //Unlucky here!
 				I.take_damage(150, BRUTE, "slash")
 				user.visible_message(span_warning("[user] was extremely unlucky and ruined [I] while futilely trying to repair it!"))
-				playsound(src, 'sound/foley/cloth_rip.ogg', 50, TRUE)
+				playsound(src, 'modular/kaizoku/sound/foley/cloth_rip.ogg', 50, TRUE)
 			else if(prob(user.STALUC)) //Lucky here!
 				I.repair_damage(50)
 				playsound(src, 'sound/magic/ahh2.ogg', 50, TRUE)
@@ -116,7 +116,7 @@
 			else
 				I.take_damage(50, BRUTE, "slash")
 				user.visible_message(span_warning("[user] damaged [I] due to a lack of skill!"))
-				playsound(src, 'sound/foley/cloth_rip.ogg', 50, TRUE)
+				playsound(src, 'modular/kaizoku/sound/foley/cloth_rip.ogg', 50, TRUE)
 			user.adjust_experience(/datum/skill/misc/sewing, (user.STAINT) / 2) // STONEKEEP EDIT
 			// user.mind.add_sleep_experience(/datum/skill/misc/sewing, (user.STAINT) / 2) // Only failing if we have no idea what we're doing
 		return TRUE

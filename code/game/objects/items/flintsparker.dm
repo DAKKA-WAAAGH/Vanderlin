@@ -18,7 +18,7 @@
 	if(world.time < flintcd + 10)
 		return
 	flintcd = world.time
-	playsound(user, 'sound/items/flint.ogg', 100, FALSE)
+	playsound(user, 'modular/kaizoku/sound/items/flint.ogg', 100, FALSE)
 	flick("flintstrike", src)
 	if(prob(80))
 		user.flash_fullscreen("whiteflash")
@@ -34,7 +34,7 @@
 	if(world.time < flintcd + 10)
 		return
 	flintcd = world.time
-	playsound(user, 'sound/items/flint.ogg', 100, FALSE)
+	playsound(user, 'modular/kaizoku/sound/items/flint.ogg', 100, FALSE)
 	flick("flintstrike", src)
 	if(prob(50))
 		A.spark_act()

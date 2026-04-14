@@ -84,4 +84,4 @@
 		dna.species.send_voice(src)
 
 /datum/species/proc/send_voice(mob/living/carbon/human/H)
-	playsound(H, 'sound/misc/talk.ogg', 100, FALSE, -1)
+	playsound(H, 'modular/kaizoku/sound/misc/talk.ogg', 100, FALSE, -1)

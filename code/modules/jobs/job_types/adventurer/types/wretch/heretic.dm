@@ -44,10 +44,10 @@
 		if(/datum/patron/divine/noc)
 			spawned.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
 			ADD_TRAIT(spawned, TRAIT_DUALWIELDER, TRAIT_GENERIC)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatNoc.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatNoc.ogg'
 		if(/datum/patron/divine/dendor)
 			spawned.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/garrison/CombatForestGarrison.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/garrison/CombatForestGarrison.ogg'
 		if(/datum/patron/divine/necra)
 			spawned.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
 			spawned.cmode_music = 'sound/blank.ogg'
@@ -56,25 +56,25 @@
 			spawned.adjust_skillrank(/datum/skill/combat/knives, 4, TRUE)
 			spawned.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)
 			ADD_TRAIT(spawned, TRAIT_DUALWIELDER, TRAIT_GENERIC)
-			spawned.cmode_music = 'sound/music/cmode/adventurer/CombatMonk.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatMonk.ogg'
 		if(/datum/patron/divine/eora)
 			spawned.virginity = FALSE
 			ADD_TRAIT(spawned, TRAIT_BEAUTIFUL, TRAIT_GENERIC)
 			spawned.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatEora.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatEora.ogg'
 		if(/datum/patron/divine/ravox)
 			spawned.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatRavox.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatRavox.ogg'
 		if(/datum/patron/divine/malum)
 			spawned.adjust_skillrank(/datum/skill/combat/axesmaces, 4, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/adventurer/CombatOutlander2.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander2.ogg'
 		if(/datum/patron/divine/abyssor)
 			spawned.adjust_skillrank(/datum/skill/labor/fishing, 1, TRUE)
 			spawned.adjust_skillrank(/datum/skill/combat/polearms, 4, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatAbyssor.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatAbyssor.ogg'
 		if(/datum/patron/divine/xylix)
 			spawned.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/church/CombatXylix.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/church/CombatXylix.ogg'
 		if(/datum/patron/inhumen/graggar)
 			spawned.adjust_skillrank(/datum/skill/combat/axesmaces, 4, TRUE)
 			ADD_TRAIT(spawned, TRAIT_STRONGBITE, TRAIT_GENERIC)
@@ -93,13 +93,13 @@
 		/*  //Stonekeep Edit: Kaizoku
 		if(/datum/patron/inhumen/matthios)
 			spawned.adjust_skillrank(/datum/skill/combat/whipsflails, 4, TRUE)
-			spawned.cmode_music = 'sound/music/cmode/antag/CombatBandit1.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/antag/CombatBandit1.ogg'
 		*/
 		if(/datum/patron/inhumen/baotha)
 			spawned.adjust_skillrank(/datum/skill/combat/knives, 4, TRUE)
 			spawned.adjust_skillrank(/datum/skill/craft/alchemy, 2, TRUE)
 			ADD_TRAIT(spawned, TRAIT_DUALWIELDER, TRAIT_GENERIC)
-			spawned.cmode_music = 'sound/music/cmode/antag/CombatBaotha.ogg'
+			spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/antag/CombatBaotha.ogg'
 		if(/datum/patron/psydon,  /datum/patron/psydon/extremist)
 			spawned.adjust_skillrank(/datum/skill/combat/swords, 4, TRUE)
 			spawned.cmode_music = 'sound/blank.ogg'

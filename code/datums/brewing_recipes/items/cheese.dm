@@ -20,7 +20,7 @@
 		return FALSE
 
 	user.visible_message("<span class='info'>[user] strains out fresh cheese...</span>")
-	playsound(src, pick('sound/foley/waterwash (1).ogg','sound/foley/waterwash (2).ogg'), 100, FALSE)
+	playsound(src, pick('modular/kaizoku/sound/foley/waterwash (1).ogg','modular/kaizoku/sound/foley/waterwash (2).ogg'), 100, FALSE)
 
 	if(!do_after(user, (90 - (user.get_skill_level(/datum/skill/craft/cooking) * 15)), source))
 		return FALSE

@@ -131,7 +131,7 @@
 	actively_smelting = TRUE
 	cooking = 0
 	visible_message("<span class='notice'>The forge roars to life, as lava fumes start to rise.</span>")
-	playsound(src.loc, 'sound/misc/smelter_sound.ogg', 50, FALSE)
+	playsound(src.loc, 'modular/kaizoku/sound/misc/smelter_sound.ogg', 50, FALSE)
 	update_icon()
 
 	spawn(3 SECONDS)
@@ -142,7 +142,7 @@
 			ore -= I
 			qdel(I)
 		carbon = max(0, carbon - 1)
-		playsound(src, 'sound/misc/smelter_fin.ogg', 100, FALSE)
+		playsound(src, 'modular/kaizoku/sound/misc/smelter_fin.ogg', 100, FALSE)
 		visible_message("<span class='notice'>\The [src]'s automatas released the steel into an ingot.</span>")
 		var/turf/T = get_turf(src)
 		var/turf/front_turf = locate(T.x, T.y - 1, T.z)

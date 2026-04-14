@@ -19,7 +19,7 @@
 /datum/round_event_control/worldsiege/preRunEvent()
 	. = ..()
 	if(. == EVENT_READY)
-		priority_announce(raid_text, "", 'sound/misc/evilevent.ogg')
+		priority_announce(raid_text, "", 'modular/kaizoku/sound/misc/evilevent.ogg')
 	last_siege = world.time
 
 /datum/round_event/worldsiege

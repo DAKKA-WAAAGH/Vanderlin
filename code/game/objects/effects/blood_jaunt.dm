@@ -204,7 +204,7 @@
 		make_bresenham_step(distA, distB, dA, dB)
 	if (dist < 10 && !landing)
 		landing = 1
-		playsound(src.target, 'sound/effects/vampire/cultjaunt_prepare.ogg', 75, 0, -3)
+		playsound(src.target, 'modular/kaizoku/sound/effects/vampire/cultjaunt_prepare.ogg', 75, 0, -3)
 		landing_animation = anim(target = src.target, a_icon = 'icons/effects/vampire.dmi', flick_anim = "cult_jaunt_prepare", plane = GAME_PLANE_UPPER, lay = ABOVE_ALL_MOB_LAYER)
 	return make_bresenham_step(distA, distB, dA, dB)
 
@@ -256,9 +256,9 @@
 
 /obj/effect/bloodcult_jaunt/proc/bump_target_check()
 	if (loc == target || failsafe <= 0)
-		playsound(target, 'sound/effects/vampire/cultjaunt_land.ogg', 30, 0, -3)
+		playsound(target, 'modular/kaizoku/sound/effects/vampire/cultjaunt_land.ogg', 30, 0, -3)
 		if (force_jaunt)
-			playsound(target, 'sound/effects/vampire/convert_failure.ogg', 30, 0, -1)
+			playsound(target, 'modular/kaizoku/sound/effects/vampire/convert_failure.ogg', 30, 0, -1)
 		if (rider)
 			rider.forceMove(target)
 			if (ismob(rider))

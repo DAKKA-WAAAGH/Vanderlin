@@ -66,7 +66,7 @@
 	var/mob/living/target = cast_on
 	var/turf/T = get_turf(owner)
 
-	playsound(T, 'sound/weather/rain/thunder_1.ogg', 80, TRUE)
+	playsound(T, 'modular/kaizoku/sound/weather/rain/thunder_1.ogg', 80, TRUE)
 	T.visible_message(span_boldwarning("Water boils around [owner], crackling in essence beyond matter."))
 
 	spawn(20)

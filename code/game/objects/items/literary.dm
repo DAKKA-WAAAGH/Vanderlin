@@ -13,7 +13,7 @@
 	throw_speed = 1
 	throw_range = 5
 	dropshrink = 0.6
-	drop_sound = 'sound/foley/dropsound/book_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/book_drop.ogg'
 	attack_verb = list("bashed", "whacked", "educated")
 	drop_sound = 'sound/blank.ogg'
 	pickup_sound =  'sound/blank.ogg'
@@ -97,7 +97,7 @@
 		if(!user.CanReach(src))
 			return
 		to_chat(user, span_notice("You begin writing in [src] concepts about [lowertext(skill)] of [lowertext(level_name)] difficulty."))
-		playsound(src, 'sound/items/write.ogg', 50, FALSE, ignore_walls = FALSE)
+		playsound(src, 'modular/kaizoku/sound/items/write.ogg', 50, FALSE, ignore_walls = FALSE)
 		skilltoteach = teachable_skills[skill]
 		if(do_after(user, 10 SECONDS, src))
 			skill_name = lowertext(level_name)
@@ -106,7 +106,7 @@
 			update_appearance(UPDATE_DESC | UPDATE_NAME)
 			to_chat(user, span_notice("You finish writing [src]."))
 			icon_state = "basic_book_1"
-			playsound(src, 'sound/items/write.ogg', 50, FALSE, ignore_walls = FALSE)
+			playsound(src, 'modular/kaizoku/sound/items/write.ogg', 50, FALSE, ignore_walls = FALSE)
 		else
 			skilltoteach = null
 		return TRUE

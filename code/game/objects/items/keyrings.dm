@@ -13,7 +13,7 @@
 	slot_flags = ITEM_SLOT_HIP|ITEM_SLOT_NECK|ITEM_SLOT_MOUTH|ITEM_SLOT_WRISTS
 	experimental_inhand = FALSE
 	dropshrink = 0.7
-	drop_sound = 'sound/foley/dropsound/chain_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/chain_drop.ogg'
 	component_type = /datum/component/storage/concrete/grid/keyring
 	var/list/keys = list() //Used to generate starting keys on initialization, check contents instead for actual keys
 	var/list/combined_access

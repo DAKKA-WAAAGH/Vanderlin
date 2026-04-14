@@ -1,8 +1,8 @@
 /obj/item/clothing/head/helmet
-	equip_sound = 'sound/foley/equip/equip_outlander_plate.ogg'
-	drop_sound = 'sound/foley/dropsound/armor_drop_outlander_plate.ogg'
-	break_sound = 'sound/foley/breaksound.ogg'
-	pickup_sound = 'sound/foley/dropsound/cloth_drop.ogg'
+	equip_sound = 'modular/kaizoku/sound/foley/equip/equip_outlander_plate.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/armor_drop_outlander_plate.ogg'
+	break_sound = 'modular/kaizoku/sound/foley/breaksound.ogg'
+	pickup_sound = 'modular/kaizoku/sound/foley/dropsound/cloth_drop.ogg'
 	blocksound = PLATEHIT
 	resistance_flags = FIRE_PROOF
 	anvilrepair = /datum/skill/craft/armorsmithing

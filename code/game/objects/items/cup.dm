@@ -17,8 +17,8 @@
 	volume = 25
 	obj_flags = CAN_BE_HIT
 	sellprice = 1
-	drinksounds = list('sound/items/drink_cup (1).ogg','sound/items/drink_cup (2).ogg','sound/items/drink_cup (3).ogg','sound/items/drink_cup (4).ogg','sound/items/drink_cup (5).ogg')
-	fillsounds = list('sound/items/fillcup.ogg')
+	drinksounds = list('modular/kaizoku/sound/items/drink_cup (1).ogg','modular/kaizoku/sound/items/drink_cup (2).ogg','modular/kaizoku/sound/items/drink_cup (3).ogg','modular/kaizoku/sound/items/drink_cup (4).ogg','modular/kaizoku/sound/items/drink_cup (5).ogg')
+	fillsounds = list('modular/kaizoku/sound/items/fillcup.ogg')
 	gripped_intents = list(INTENT_POUR)
 
 /obj/item/reagent_containers/glass/cup/Initialize(mapload, vol)
@@ -31,7 +31,7 @@
 	icon_state = "cup_wooden"
 	resistance_flags = FLAMMABLE
 	grid_height = 32
-	drop_sound = 'sound/foley/dropsound/wooden_drop.ogg'
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/wooden_drop.ogg'
 	metalizer_result = /obj/item/reagent_containers/glass/cup
 
 /obj/item/reagent_containers/glass/cup/steel

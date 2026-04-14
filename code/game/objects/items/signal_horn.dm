@@ -22,7 +22,7 @@
 /obj/item/signal_horn/proc/sound_horn(mob/living/user)
 	user.visible_message(span_warning("[user] sounds the alarm!"))
 	// New sound made by fem_tanyl
-	playsound(src, 'sound/items/signalhorn.ogg', 100, TRUE)
+	playsound(src, 'modular/kaizoku/sound/items/signalhorn.ogg', 100, TRUE)
 	var/turf/origin_turf = get_turf(src)
 
 	for(var/mob/living/player in GLOB.player_list)
@@ -72,7 +72,7 @@
 				disttext = " very far"
 
 		//sound played for other players, by fem_tanyl !!!1!!
-		player.playsound_local(get_turf(player), 'sound/items/signalhorn.ogg', 35, FALSE, pressure_affected = FALSE)
+		player.playsound_local(get_turf(player), 'modular/kaizoku/sound/items/signalhorn.ogg', 35, FALSE, pressure_affected = FALSE)
 		to_chat(player, span_warning("I hear the horn alarm somewhere[disttext][dirtext]!"))
 
 /datum/status_effect/signal_horn

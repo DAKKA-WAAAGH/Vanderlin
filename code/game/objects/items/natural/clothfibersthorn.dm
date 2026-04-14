@@ -62,7 +62,7 @@
 	max_integrity = 20
 /obj/item/natural/thorn/attack_self(mob/living/user, params)
 	user.visible_message("<span class='warning'>[user] snaps [src].</span>")
-	playsound(user,'sound/items/seedextract.ogg', 100, FALSE)
+	playsound(user,'modular/kaizoku/sound/items/seedextract.ogg', 100, FALSE)
 	qdel(src)
 
 /obj/item/natural/thorn/Crossed(mob/living/L)
@@ -74,7 +74,7 @@
 		if(L.m_intent == MOVE_INTENT_RUN)
 			prob2break = 100
 		if(prob(prob2break))
-			playsound(src,'sound/items/seedextract.ogg', 100, FALSE)
+			playsound(src,'modular/kaizoku/sound/items/seedextract.ogg', 100, FALSE)
 			qdel(src)
 			if (L.alpha == 0 && L.rogue_sneaking) // not anymore you're not
 				L.update_sneak_invis(TRUE)

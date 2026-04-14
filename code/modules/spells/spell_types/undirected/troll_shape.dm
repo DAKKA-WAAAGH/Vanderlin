@@ -41,19 +41,19 @@
 	var/next_stage_time
 	switch(stage)
 		if(TROLL_SHAPE_STAGE_1)
-			playsound(druid, 'sound/vo/smokedrag.ogg', 100, TRUE)
+			playsound(druid, 'modular/kaizoku/sound/vo/smokedrag.ogg', 100, TRUE)
 			druid.emote("rage", forced = TRUE)
 			druid.Immobilize(3 SECONDS)
 			next_stage_time = 3 SECONDS
 		if(TROLL_SHAPE_STAGE_2)
-			playsound(druid, 'sound/foley/sewflesh.ogg', 100, TRUE)
+			playsound(druid, 'modular/kaizoku/sound/foley/sewflesh.ogg', 100, TRUE)
 			to_chat(druid, span_warning("My body is transforming, growing! Unbearable pain, Dendor has answered my prayers!"))
 			druid.emote("pain", forced = TRUE)
 			druid.do_jitter_animation(4 SECONDS)
 			druid.Immobilize(4 SECONDS)
 			next_stage_time = 4 SECONDS
 		if(TROLL_SHAPE_STAGE_3)
-			playsound(druid, 'sound/gore/flesh_eat_03.ogg', 100, TRUE)
+			playsound(druid, 'modular/kaizoku/sound/gore/flesh_eat_03.ogg', 100, TRUE)
 			druid.emote("pain", forced = TRUE)
 			druid.Immobilize(2 SECONDS)
 			druid.do_jitter_animation(2 SECONDS)

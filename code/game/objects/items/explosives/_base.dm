@@ -124,7 +124,7 @@
  */
 /obj/item/explosive/proc/arm_grenade(mob/user, delayoverride, msg = TRUE, volume = 60)
 	log_grenade(user) //Inbuilt admin procs already handle null users
-	playsound(src, 'sound/items/fuse.ogg', 100)
+	playsound(src, 'modular/kaizoku/sound/items/fuse.ogg', 100)
 	if(user)
 		add_fingerprint(user)
 		if(msg)
@@ -155,7 +155,7 @@
 
 	SEND_SIGNAL(src, COMSIG_GRENADE_DETONATE, lanced_by)
 	if(ex_dev || ex_heavy || ex_light || ex_flame)
-		explosion(src, ex_dev, ex_heavy, ex_light, flame_range = ex_flame, smoke = ex_smoke, hotspot_range = ex_hotspot_range, soundin = pick('sound/misc/explode/bottlebomb (1).ogg','sound/misc/explode/bottlebomb (2).ogg'))
+		explosion(src, ex_dev, ex_heavy, ex_light, flame_range = ex_flame, smoke = ex_smoke, hotspot_range = ex_hotspot_range, soundin = pick('modular/kaizoku/sound/misc/explode/bottlebomb (1).ogg','modular/kaizoku/sound/misc/explode/bottlebomb (2).ogg'))
 
 	new turf_debris (get_turf(src))
 

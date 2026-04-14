@@ -30,7 +30,7 @@ GLOBAL_LIST_EMPTY(blueprint_recipes)
 	var/craftdiff = 0 // Difficulty modifier (0 = easy, higher = harder)
 	var/verbage = "construct" // What the user does (e.g., "build", "assemble")
 	var/verbage_tp = "constructs" // Third person version
-	var/craftsound = 'sound/foley/bandage.ogg'
+	var/craftsound = 'modular/kaizoku/sound/foley/bandage.ogg'
 	var/edge_density = TRUE
 	var/requires_learning = FALSE
 	var/pixel_offsets = TRUE

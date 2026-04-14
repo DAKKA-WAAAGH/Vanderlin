@@ -7,7 +7,7 @@
 	category_tags = list(CTAG_MERCENARY)
 
 	total_positions = 2
-	cmode_music = 'sound/music/cmode/adventurer/CombatOutlander.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander.ogg'
 
 	jobstats = list(
 		STATKEY_STR = 1,

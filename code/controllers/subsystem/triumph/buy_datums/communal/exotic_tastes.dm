@@ -15,4 +15,4 @@
 	for(var/client/C in GLOB.clients)
 		if(!C?.mob)
 			continue
-		C.mob.playsound_local(C.mob, 'sound/misc/gods/baotha_omen.ogg', 100)
+		C.mob.playsound_local(C.mob, 'modular/kaizoku/sound/misc/gods/baotha_omen.ogg', 100)

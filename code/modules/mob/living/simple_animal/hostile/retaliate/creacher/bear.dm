@@ -50,7 +50,7 @@
 /datum/action/cooldown/mob_cooldown/bear_swipe/proc/do_swipe(atom/target, mob/living/L)
 	var/dist = get_dist(owner, target)
 	if(can_see(owner, target, range) && dist < range && dist <= 1)
-		playsound(owner, 'sound/combat/shieldraise.ogg', 100)
+		playsound(owner, 'modular/kaizoku/sound/combat/shieldraise.ogg', 100)
 		if(ismob(target))
 			var/mob/living/victim = target
 			def_zone = pick(BODY_ZONE_L_LEG, BODY_ZONE_R_LEG, BODY_ZONE_CHEST, BODY_ZONE_HEAD, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM)
@@ -59,7 +59,7 @@
 			var/turf/target_turf = get_turf(target)
 			new /obj/effect/temp_visual/paw_swipe(target_turf)
 			to_chat(target, span_userdanger("You're hit by a powerful swipe!"))
-			playsound(target, 'sound/combat/hits/punch/punch (1).ogg', 100, TRUE)
+			playsound(target, 'modular/kaizoku/sound/combat/hits/punch/punch (1).ogg', 100, TRUE)
 	else
 		owner.visible_message(span_alert("[owner] roars in frustration as you distance yourself from its swipe."))
 	return

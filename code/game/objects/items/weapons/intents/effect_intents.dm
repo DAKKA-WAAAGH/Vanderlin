@@ -17,7 +17,7 @@
 	attack_verb = list("dazes")
 	animname = "strike"
 	blade_class = BCLASS_BLUNT
-	hitsound = list('sound/combat/hits/blunt/daze_hit.ogg')
+	hitsound = list('modular/kaizoku/sound/combat/hits/blunt/daze_hit.ogg')
 	chargetime = 0
 	penfactor = 50
 	swingdelay = 6

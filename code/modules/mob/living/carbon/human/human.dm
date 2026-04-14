@@ -6,7 +6,7 @@
 	if(user.cmode)
 		if(held_item && (user.zone_selected == BODY_ZONE_PRECISE_NECK))
 			if(held_item.get_sharpness() && held_item.wlength == WLENGTH_SHORT)
-				playsound(src, 'sound/surgery/scalpel1.ogg', 100, TRUE, -1)
+				playsound(src, 'modular/kaizoku/sound/surgery/scalpel1.ogg', 100, TRUE, -1)
 				if(user == src)
 					user.visible_message("<span class='danger'>[user] starts to slit [user.p_their()] throat with [held_item].</span>")
 				else
@@ -17,7 +17,7 @@
 
 	else if(held_item && (user.zone_selected == BODY_ZONE_PRECISE_SKULL))
 		if(held_item.get_sharpness() && held_item.wlength == WLENGTH_SHORT)
-			playsound(src, 'sound/foley/shaving.ogg', 100, TRUE, -1)
+			playsound(src, 'modular/kaizoku/sound/foley/shaving.ogg', 100, TRUE, -1)
 			if(user == src)
 				user.visible_message(span_danger("[user] starts to shave [user.p_their()] hair with [held_item].</span>"))
 			else
@@ -30,7 +30,7 @@
 			if(held_item.get_sharpness() && held_item.wlength == WLENGTH_SHORT)
 				var/datum/bodypart_feature/hair/facial = get_bodypart_feature_of_slot(BODYPART_FEATURE_FACIAL_HAIR)
 				if(has_stubble)
-					playsound(src, 'sound/foley/shaving.ogg', 100, TRUE, -1)
+					playsound(src, 'modular/kaizoku/sound/foley/shaving.ogg', 100, TRUE, -1)
 					if(user == src)
 						user.visible_message("<span class='danger'>[user] starts to shave [user.p_their()] stubble with [held_item].</span>")
 					else
@@ -41,7 +41,7 @@
 					else
 						held_item.melee_attack_chain(user, src, params)
 				else if(facial?.accessory_type != /datum/sprite_accessory/hair/facial/none)
-					playsound(src, 'sound/foley/shaving.ogg', 100, TRUE, -1)
+					playsound(src, 'modular/kaizoku/sound/foley/shaving.ogg', 100, TRUE, -1)
 					if(user == src)
 						user.visible_message("<span class='danger'>[user] starts to shave [user.p_their()] facehairs with [held_item].</span>")
 					else
@@ -684,7 +684,7 @@
 		SSticker.rulermob = coronated
 		GLOB.badomens -= OMEN_NOLORD
 		priority_announce("The Ten have named [coronated.real_name] the inheritor of [SSmapping.config.map_name]!", \
-		title = "Long Live [lord_job.get_informed_title(coronated)] [coronated.real_name]!", sound = 'sound/misc/bell.ogg')
+		title = "Long Live [lord_job.get_informed_title(coronated)] [coronated.real_name]!", sound = 'modular/kaizoku/sound/misc/bell.ogg')
 	if(href_list[VV_HK_CHANGE_TITLE])
 		if(!mind?.assigned_role)
 			return

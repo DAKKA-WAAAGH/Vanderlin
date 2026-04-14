@@ -5,7 +5,7 @@
 	outfit = /datum/outfit/pilgrim/zalad
 	category_tags = list(CTAG_PILGRIM)
 	total_positions = 1
-	cmode_music = 'sound/music/cmode/adventurer/CombatOutlander.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander.ogg'
 	is_recognized = TRUE
 
 	jobstats = list(

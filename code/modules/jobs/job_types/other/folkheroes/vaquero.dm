@@ -3,7 +3,7 @@
 	tutorial = "You have been taming beasts of burden all your life, and riding since you were old enough to walk. Perhaps these lands will have use for your skills?"
 	allowed_races = list(SPEC_ID_TIEFLING)
 	outfit = /datum/outfit/folkhero/vaquero
-	cmode_music = 'sound/music/cmode/adventurer/combat_vaquero.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/combat_vaquero.ogg'
 	category_tags = list(CTAG_FOLKHEROES)
 	total_positions = 1
 

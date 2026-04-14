@@ -39,7 +39,7 @@ SUBSYSTEM_DEF(nightshift)
 	check_nightshift()
 
 /datum/controller/subsystem/nightshift/proc/announce(message)
-	priority_announce(message, sound='sound/misc/bell.ogg', sender_override="Automated Lighting System Announcement")
+	priority_announce(message, sound='modular/kaizoku/sound/misc/bell.ogg', sender_override="Automated Lighting System Announcement")
 
 /datum/controller/subsystem/nightshift/proc/check_nightshift()
 	var/curtod = settod()

@@ -22,7 +22,7 @@
 	)
 
 	// Play bell sound for everyone in the vicinity
-	playsound(src, 'sound/misc/deadbell.ogg', 100, TRUE)
+	playsound(src, 'modular/kaizoku/sound/misc/deadbell.ogg', 100, TRUE)
 
 	// Alert all players in the area
 	var/list/nearby_players = get_hearers_in_view(ring_range, src)
@@ -49,7 +49,7 @@
 	)
 
 	// Play bell sound for everyone in the vicinity
-	playsound(src, 'sound/misc/deadbell.ogg', 100, TRUE)
+	playsound(src, 'modular/kaizoku/sound/misc/deadbell.ogg', 100, TRUE)
 
 	// Alert all players in the area
 	var/list/nearby_players = get_hearers_in_view(ring_range, src)

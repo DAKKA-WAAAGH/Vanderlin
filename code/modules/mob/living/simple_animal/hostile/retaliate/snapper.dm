@@ -11,7 +11,7 @@
 	butcher_results = list(/obj/item/gear/metal/bronze = 2)
 	perfect_butcher_results = list(/obj/item/gear/metal/bronze = 3)
 
-	attack_sound = 'sound/items/beartrap.ogg'
+	attack_sound = 'modular/kaizoku/sound/items/beartrap.ogg'
 
 	health = 100
 	maxHealth = 100

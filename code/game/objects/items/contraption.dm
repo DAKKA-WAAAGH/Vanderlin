@@ -69,7 +69,7 @@
 
 /obj/item/contraption/proc/battery_collapse(atom/A, mob/living/user)
 	to_chat(user, span_info("The [accepted_power_source.name] wastes away into nothing."))
-	playsound(src, pick('sound/combat/hits/onmetal/grille (1).ogg', 'sound/combat/hits/onmetal/grille (2).ogg', 'sound/combat/hits/onmetal/grille (3).ogg'), 100, FALSE)
+	playsound(src, pick('modular/kaizoku/sound/combat/hits/onmetal/grille (1).ogg', 'modular/kaizoku/sound/combat/hits/onmetal/grille (2).ogg', 'modular/kaizoku/sound/combat/hits/onmetal/grille (3).ogg'), 100, FALSE)
 	shake_camera(user, 1, 1)
 	var/datum/effect_system/spark_spread/S = new()
 	var/turf/front = get_turf(src)
@@ -81,12 +81,12 @@
 	user.adjust_experience(/datum/skill/craft/engineering, (user.STAINT * 5)) // STONEKEEP EDIT
 	// user.mind.add_sleep_experience(/datum/skill/craft/engineering, (user.STAINT * 5))
 	to_chat(user, span_info("Oh fuck."))
-	playsound(src, 'sound/misc/bell.ogg', 100)
+	playsound(src, 'modular/kaizoku/sound/misc/bell.ogg', 100)
 	addtimer(CALLBACK(src, PROC_REF(misfire_result), A, user), rand(5, 30))
 
 /obj/item/contraption/proc/misfire_result(atom/A, mob/living/user)
 	misfiring = TRUE
-	explosion(src, light_impact_range = 3, flame_range = 1, smoke = TRUE, soundin = pick('sound/misc/explode/bottlebomb (1).ogg','sound/misc/explode/bottlebomb (2).ogg'))
+	explosion(src, light_impact_range = 3, flame_range = 1, smoke = TRUE, soundin = pick('modular/kaizoku/sound/misc/explode/bottlebomb (1).ogg','modular/kaizoku/sound/misc/explode/bottlebomb (2).ogg'))
 	qdel(src)
 
 /obj/item/contraption/proc/charge_deduction(atom/A, mob/living/user, deduction)
@@ -106,7 +106,7 @@
 		else
 			name = initial(name)
 		qdel(cog)
-		playsound(src, pick('sound/combat/hits/onwood/fence_hit1.ogg', 'sound/combat/hits/onwood/fence_hit2.ogg', 'sound/combat/hits/onwood/fence_hit3.ogg'), 100, FALSE)
+		playsound(src, pick('modular/kaizoku/sound/combat/hits/onwood/fence_hit1.ogg', 'modular/kaizoku/sound/combat/hits/onwood/fence_hit2.ogg', 'modular/kaizoku/sound/combat/hits/onwood/fence_hit3.ogg'), 100, FALSE)
 		shake_camera(user, 1, 1)
 		S.set_up(1, 1, front)
 		S.start()
@@ -118,12 +118,12 @@
 		S.start()
 		if(current_charge)
 			to_chat(user, span_info("I try to insert the [I.name] but there's already \a [initial(accepted_power_source.name)] inside!"))
-			playsound(src, 'sound/combat/hits/blunt/woodblunt (2).ogg', 100, TRUE)
+			playsound(src, 'modular/kaizoku/sound/combat/hits/blunt/woodblunt (2).ogg', 100, TRUE)
 			shake_camera(user, 1, 1)
 		else
 			to_chat(user, span_info("I insert the [I.name] and the [name] starts ticking."))
 			current_charge = charge_per_source
-			playsound(src, 'sound/combat/hits/blunt/woodblunt (2).ogg', 100, TRUE)
+			playsound(src, 'modular/kaizoku/sound/combat/hits/blunt/woodblunt (2).ogg', 100, TRUE)
 			qdel(I)
 			addtimer(CALLBACK(src, PROC_REF(play_clock_sound)), 5)
 	if(istype(I, /obj/item/weapon/hammer))
@@ -134,7 +134,7 @@
 	user.changeNext_move(CLICK_CD_FAST)
 	flick(off_icon, src)
 	user.visible_message(span_info("[user] beats the [name] into submission!"))
-	playsound(src, pick('sound/combat/hits/onmetal/sheet (1).ogg', 'sound/combat/hits/onmetal/sheet (2).ogg', 'sound/combat/hits/onmetal/grille (1).ogg', 'sound/combat/hits/onmetal/grille (2).ogg', 'sound/combat/hits/onmetal/grille (3).ogg'), 100, TRUE)
+	playsound(src, pick('modular/kaizoku/sound/combat/hits/onmetal/sheet (1).ogg', 'modular/kaizoku/sound/combat/hits/onmetal/sheet (2).ogg', 'modular/kaizoku/sound/combat/hits/onmetal/grille (1).ogg', 'modular/kaizoku/sound/combat/hits/onmetal/grille (2).ogg', 'modular/kaizoku/sound/combat/hits/onmetal/grille (3).ogg'), 100, TRUE)
 	shake_camera(user, 1, 1)
 	var/datum/effect_system/spark_spread/S = new()
 	var/turf/front = get_turf(I)
@@ -154,7 +154,7 @@
 		misfire_chance = rand(10, 100)
 
 /obj/item/contraption/proc/play_clock_sound()
-	playsound(src, 'sound/misc/clockloop.ogg', 25, TRUE)
+	playsound(src, 'modular/kaizoku/sound/misc/clockloop.ogg', 25, TRUE)
 
 /obj/item/contraption/pre_attack(atom/A, mob/living/user, params)
 	if(!current_charge)
@@ -191,7 +191,7 @@
 		return
 	if(!O.metalizer_result)
 		to_chat(user, span_info("The [name] refuses to function."))
-		playsound(user, 'sound/items/flint.ogg', 100, FALSE)
+		playsound(user, 'modular/kaizoku/sound/items/flint.ogg', 100, FALSE)
 		flick(off_icon, src)
 		var/datum/effect_system/spark_spread/S = new()
 		var/turf/front = get_turf(O)
@@ -230,7 +230,7 @@
 			new object.metalizer_result(get_turf(object))
 			playsound(object, 'sound/magic/swap.ogg', 100, TRUE)
 			qdel(object)
-	explosion(src, heavy_impact_range = 1, light_impact_range = 3, flame_range = 1, smoke = TRUE, soundin = pick('sound/misc/explode/bottlebomb (1).ogg','sound/misc/explode/bottlebomb (2).ogg'))
+	explosion(src, heavy_impact_range = 1, light_impact_range = 3, flame_range = 1, smoke = TRUE, soundin = pick('modular/kaizoku/sound/misc/explode/bottlebomb (1).ogg','modular/kaizoku/sound/misc/explode/bottlebomb (2).ogg'))
 	qdel(src)
 
 /obj/item/contraption/smelter
@@ -260,18 +260,18 @@
 				continue
 			object.popcorn_smelt()
 
-	explosion(src, light_impact_range = 3, flame_range = 1, hotspot_range = 1, smoke = TRUE, soundin = pick('sound/misc/explode/bottlebomb (1).ogg','sound/misc/explode/bottlebomb (2).ogg'))
+	explosion(src, light_impact_range = 3, flame_range = 1, hotspot_range = 1, smoke = TRUE, soundin = pick('modular/kaizoku/sound/misc/explode/bottlebomb (1).ogg','modular/kaizoku/sound/misc/explode/bottlebomb (2).ogg'))
 	qdel(src)
 
 /obj/proc/popcorn_smelt()
 	var/turf/T = get_turf(src)
 	moveToNullspace()
-	playsound(T, pick('sound/combat/hits/burn (1).ogg','sound/combat/hits/burn (2).ogg'), 50)
+	playsound(T, pick('modular/kaizoku/sound/combat/hits/burn (1).ogg','modular/kaizoku/sound/combat/hits/burn (2).ogg'), 50)
 	addtimer(CALLBACK(src, PROC_REF(popcorn_smelt_result), T), rand(10, 40))
 
 /obj/proc/popcorn_smelt_result(turf)
 	new smeltresult(turf)
-	playsound(turf, pick('sound/combat/hits/onmetal/sheet (1).ogg', 'sound/combat/hits/onmetal/sheet (2).ogg'), 100, TRUE)
+	playsound(turf, pick('modular/kaizoku/sound/combat/hits/onmetal/sheet (1).ogg', 'modular/kaizoku/sound/combat/hits/onmetal/sheet (2).ogg'), 100, TRUE)
 	qdel(src)
 
 /obj/item/contraption/smelter/attack_atom(atom/attacked_atom, mob/living/user)
@@ -284,7 +284,7 @@
 		return
 	if(!O.smeltresult)
 		to_chat(user, span_info("The [name] refuses to function."))
-		playsound(user, 'sound/items/flint.ogg', 100, FALSE)
+		playsound(user, 'modular/kaizoku/sound/items/flint.ogg', 100, FALSE)
 		flick(off_icon, src)
 		var/datum/effect_system/spark_spread/S = new()
 		var/turf/front = get_turf(O)
@@ -295,14 +295,14 @@
 	// user.mind.add_sleep_experience(/datum/skill/craft/engineering, (user.STAINT / 3))
 	charge_deduction(O, user, 1)
 	flick(on_icon, src)
-	playsound(src, 'sound/misc/machinevomit.ogg', 50, TRUE)
+	playsound(src, 'modular/kaizoku/sound/misc/machinevomit.ogg', 50, TRUE)
 	addtimer(CALLBACK(src, PROC_REF(smelt_part2), O, user), 5)
 	return
 
 /obj/item/contraption/smelter/proc/smelt_part2(obj/O, mob/living/user)
 	var/skill = user.get_skill_level(/datum/skill/craft/engineering)
 	var/turf/turf = get_turf(O)
-	playsound(O, pick('sound/combat/hits/burn (1).ogg','sound/combat/hits/burn (2).ogg'), 100)
+	playsound(O, pick('modular/kaizoku/sound/combat/hits/burn (1).ogg','modular/kaizoku/sound/combat/hits/burn (2).ogg'), 100)
 	O.moveToNullspace()
 	if(misfire_chance && prob(max(0, misfire_chance - user.stat_roll(STATKEY_LCK,2,10) - skill)))
 		misfire(O, user)

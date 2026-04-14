@@ -169,7 +169,7 @@
 		TRAIT_SEEPRICES,
 	)
 
-	cmode_music = 'sound/music/cmode/adventurer/CombatDream.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatDream.ogg'
 
 /datum/outfit/heartfelt_hand
 	name = "Hand of Heartfelt (Migrant Wave)"
@@ -322,7 +322,7 @@
 	)
 
 	traits = list(TRAIT_SEEPRICES)
-	cmode_music = 'sound/music/cmode/adventurer/CombatDream.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatDream.ogg'
 
 /datum/outfit/heartfelt_artificer
 	name = "Supreme Artificer (Migrant Wave)"

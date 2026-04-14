@@ -26,7 +26,7 @@ SUBSYSTEM_DEF(communications)
 		priority_announce(html_decode(user.treat_message(input)), "[user.real_name], The [used_title] Decrees", 'sound/blank.ogg', "Captain")
 		silicon_message_cooldown = world.time + 5 SECONDS
 	else
-		priority_announce(html_decode(user.treat_message(input)), "[used_title] Speaks", 'sound/misc/bell.ogg', "Captain")
+		priority_announce(html_decode(user.treat_message(input)), "[used_title] Speaks", 'modular/kaizoku/sound/misc/bell.ogg', "Captain")
 		nonsilicon_message_cooldown = world.time + 5 SECONDS
 
 	user.log_talk(input, LOG_SAY, tag="priority announcement")

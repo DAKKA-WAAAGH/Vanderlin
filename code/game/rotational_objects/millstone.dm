@@ -110,7 +110,7 @@
 		return
 	if(!length(millable_contents))
 		return
-	playsound(src, 'sound/foley/milling.ogg', 100, TRUE, -1)
+	playsound(src, 'modular/kaizoku/sound/foley/milling.ogg', 100, TRUE, -1)
 	if(powered)
 		mill_progress += rotations_per_minute * 2
 	else

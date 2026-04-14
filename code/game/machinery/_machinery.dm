@@ -26,7 +26,7 @@
 	var/climb_time = 0
 	var/climb_stun = 0
 	var/climbable = FALSE
-	var/climb_sound = 'sound/foley/woodclimb.ogg'
+	var/climb_sound = 'modular/kaizoku/sound/foley/woodclimb.ogg'
 	var/climb_offset = 0 //offset up when climbed
 	var/mob/living/structureclimber
 

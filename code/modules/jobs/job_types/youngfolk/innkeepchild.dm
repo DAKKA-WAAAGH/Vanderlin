@@ -16,7 +16,7 @@
 
 	outfit = /datum/outfit/innkeep_son
 	can_have_apprentices = FALSE
-	cmode_music = 'sound/music/cmode/towner/CombatInn.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/towner/CombatInn.ogg'
 
 	job_bitflag = BITFLAG_CONSTRUCTOR
 

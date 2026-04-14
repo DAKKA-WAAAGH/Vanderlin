@@ -8,7 +8,7 @@
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_STONE + SMOOTH_GROUP_FLOOR_GRASS
 	smoothing_list = SMOOTH_GROUP_FLOOR_DIRT_ROAD
-	landsound = 'sound/foley/jumpland/dirtland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/dirtland.ogg'
 	neighborlay = "sandedge"
 
 /turf/open/floor/fogsand/Initialize()
@@ -22,7 +22,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_STONE
 	smoothing_list = SMOOTH_GROUP_FLOOR_DIRT_ROAD + SMOOTH_GROUP_FLOOR_GRASS
@@ -46,7 +46,7 @@
 	footstep = FOOTSTEP_GRASS
 	barefootstep = FOOTSTEP_SOFT_BAREFOOT
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/grassland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/grassland.ogg'
 	slowdown = 0
 	icon = 'modular/kaizoku/icons/mapset/kaizoku_pufftiles.dmi'
 	smoothing_flags = SMOOTH_EDGE
@@ -439,7 +439,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_STONE
 	smoothing_list = SMOOTH_GROUP_FLOOR_DIRT_ROAD + SMOOTH_GROUP_FLOOR_GRASS
@@ -458,7 +458,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 
 /turf/open/floor/abyssflax
 	icon = 'modular/kaizoku/icons/mapset/kaizoku_tiles.dmi'
@@ -467,7 +467,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 
 /turf/open/floor/abyssflax_alt
 	icon = 'modular/kaizoku/icons/mapset/kaizoku_tiles.dmi'
@@ -476,7 +476,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 
 /turf/open/floor/stonechis
 	icon = 'modular/kaizoku/icons/mapset/kaizoku_tiles.dmi'
@@ -485,7 +485,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 
 /turf/open/floor/stonegrate
 	icon = 'modular/kaizoku/icons/mapset/kaizoku_tiles.dmi'
@@ -494,7 +494,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 
 /turf/open/floor/stonegrate_close
 	icon = 'modular/kaizoku/icons/mapset/kaizoku_tiles.dmi'
@@ -503,7 +503,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 
 /turf/open/floor/starslab
 	icon = 'modular/kaizoku/icons/mapset/kaizoku_tiles.dmi'
@@ -512,7 +512,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 
 /turf/open/floor/quintessential
 	icon = 'modular/kaizoku/icons/mapset/kaizoku_tiles.dmi'
@@ -521,7 +521,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 
 /turf/open/floor/petrichor
 	icon = 'modular/kaizoku/icons/mapset/kaizoku_tiles.dmi'
@@ -530,7 +530,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 
 /turf/open/floor/syzygy
 	icon = 'modular/kaizoku/icons/mapset/kaizoku_tiles.dmi'
@@ -539,7 +539,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 
 /turf/open/floor/bricketts
 	icon = 'modular/kaizoku/icons/mapset/kaizoku_tiles.dmi'
@@ -548,7 +548,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 
 /turf/open/floor/reverted_bricks
 	icon = 'modular/kaizoku/icons/mapset/kaizoku_tiles.dmi'
@@ -557,7 +557,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 
 /turf/open/floor/abyssplate_dworf
 	icon = 'modular/kaizoku/icons/mapset/kaizoku_tiles.dmi'
@@ -566,7 +566,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 
 /turf/open/floor/ornabyss
 	icon = 'modular/kaizoku/icons/mapset/kaizoku_tiles.dmi'
@@ -576,7 +576,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR
 
@@ -589,7 +589,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR
 
@@ -602,7 +602,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR
 
@@ -614,7 +614,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_WOOD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/woodland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/woodland.ogg'
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_STONE + SMOOTH_GROUP_FLOOR_WOOD
 	smoothing_list = SMOOTH_GROUP_FLOOR_DIRT_ROAD + SMOOTH_GROUP_FLOOR_GRASS
@@ -627,7 +627,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_WOOD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/woodland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/woodland.ogg'
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_STONE + SMOOTH_GROUP_FLOOR_WOOD
 	smoothing_list = SMOOTH_GROUP_FLOOR_DIRT_ROAD + SMOOTH_GROUP_FLOOR_GRASS
@@ -640,7 +640,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_WOOD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/woodland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/woodland.ogg'
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_STONE + SMOOTH_GROUP_FLOOR_WOOD
 	smoothing_list = SMOOTH_GROUP_FLOOR_DIRT_ROAD + SMOOTH_GROUP_FLOOR_GRASS
@@ -653,7 +653,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/woodland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/woodland.ogg'
 	smoothing_flags = SMOOTH_EDGE
 	smoothing_groups = SMOOTH_GROUP_OPEN_FLOOR + SMOOTH_GROUP_FLOOR_STONE + SMOOTH_GROUP_FLOOR_WOOD
 	smoothing_list = SMOOTH_GROUP_FLOOR_DIRT_ROAD + SMOOTH_GROUP_FLOOR_GRASS
@@ -664,7 +664,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 
 /turf/open/floor/abyssplate_chis/Initialize()
 	. = ..()
@@ -676,7 +676,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 
 /turf/open/floor/stonechis/Initialize()
 	. = ..()
@@ -688,7 +688,7 @@
 	barefootstep = FOOTSTEP_HARD_BAREFOOT
 	clawfootstep = FOOTSTEP_HARD_CLAW
 	heavyfootstep = FOOTSTEP_GENERIC_HEAVY
-	landsound = 'sound/foley/jumpland/stoneland.ogg'
+	landsound = 'modular/kaizoku/sound/foley/jumpland/stoneland.ogg'
 
 /turf/open/floor/stoneslab/Initialize()
 	. = ..()

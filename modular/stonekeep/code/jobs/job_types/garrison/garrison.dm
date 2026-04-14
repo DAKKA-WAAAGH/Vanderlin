@@ -62,7 +62,7 @@ the like.
 	H.verbs |= /mob/proc/haltyell
 	ADD_TRAIT(H, TRAIT_KNOWBANDITS, TRAIT_GENERIC)
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
-	H.cmode_music = list('sound/combat/combat_changeling.ogg','sound/blank.ogg','sound/blank.ogg','sound/combat/combat_oldtides.ogg','sound/blank.ogg','sound/blank.ogg','sound/blank.ogg','sound/combat/combat_navalretainers.ogg','sound/combat/combat_kyudo.ogg')
+	H.cmode_music = list('modular/kaizoku/sound/combat/combat_changeling.ogg','sound/blank.ogg','sound/blank.ogg','modular/kaizoku/sound/combat/combat_oldtides.ogg','sound/blank.ogg','sound/blank.ogg','sound/blank.ogg','modular/kaizoku/sound/combat/combat_navalretainers.ogg','modular/kaizoku/sound/combat/combat_kyudo.ogg')
 
 /* ! ! ! Class Selection Section Below ! ! !
 Design philosphy:

@@ -191,26 +191,26 @@
 				to_chat(user, span_info("I begin to turn the crank counter-clockwise..."))
 				if(do_after(user, use_time SECONDS, src))
 					to_chat(user, span_info("I turn the crank counter-clockwise, decompressing the spring."))
-					playsound(src, 'sound/foley/winding.ogg', 100, FALSE)
+					playsound(src, 'modular/kaizoku/sound/foley/winding.ogg', 100, FALSE)
 					cranked = FALSE
 			else
 				to_chat(user, span_info("I begin to turn the crank clockwise..."))
 				if(do_after(user, use_time SECONDS, src))
 					to_chat(user, span_info("I turn the crank clockwise, compressing the spring."))
-					playsound(src, 'sound/foley/winding.ogg', 100, FALSE)
+					playsound(src, 'modular/kaizoku/sound/foley/winding.ogg', 100, FALSE)
 					cranked = TRUE
 		if("Steam Lever")
 			if(steam_lever)
 				to_chat(user, span_info("I begin to pull the steam lever down..."))
 				if(do_after(user, use_time SECONDS, src))
 					to_chat(user, span_info("I pull the steam lever down, disabling the flow of steam."))
-					playsound(src, 'sound/foley/lock.ogg', 100, FALSE)
+					playsound(src, 'modular/kaizoku/sound/foley/lock.ogg', 100, FALSE)
 					steam_lever = FALSE
 			else
 				to_chat(user, span_info("I begin to pull the steam lever up..."))
 				if(do_after(user, use_time SECONDS, src))
 					to_chat(user, span_info("I pull the steam lever up, enabling the flow of steam."))
-					playsound(src, 'sound/foley/lock.ogg', 100, FALSE)
+					playsound(src, 'modular/kaizoku/sound/foley/lock.ogg', 100, FALSE)
 					steam_lever = TRUE
 	update_appearance(UPDATE_ICON_STATE)
 	return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN

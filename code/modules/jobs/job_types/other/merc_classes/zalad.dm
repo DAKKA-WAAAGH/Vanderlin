@@ -15,7 +15,7 @@
 	outfit = /datum/outfit/mercenary/zalad
 	category_tags = list(CTAG_MERCENARY)
 	total_positions = 5
-	cmode_music = 'sound/music/cmode/adventurer/CombatOutlander.ogg' //Forgive me, Combat_DesertRider, I'm sorry, I'll miss you.
+	cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander.ogg' //Forgive me, Combat_DesertRider, I'm sorry, I'll miss you.
 	languages = list(/datum/language/zalad)
 
 	jobstats = list(

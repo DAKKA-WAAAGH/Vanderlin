@@ -49,7 +49,7 @@
 		/obj/item/grown/log/tree/small = 1,
 	)
 	tool_usage = list(
-		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'sound/items/wood_sharpen.ogg'),
+		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'modular/kaizoku/sound/items/wood_sharpen.ogg'),
 	)
 	attacked_atom = /obj/item/grown/log/tree/small
 	starting_atom = /obj/item/weapon/knife
@@ -74,7 +74,7 @@
 		/obj/item/grown/log/tree/stick= 1,
 	)
 	tool_usage = list(
-		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'sound/items/wood_sharpen.ogg'),
+		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'modular/kaizoku/sound/items/wood_sharpen.ogg'),
 	)
 	attacked_atom = /obj/item/grown/log/tree/stick
 	starting_atom = /obj/item/weapon/knife
@@ -86,7 +86,7 @@
 		/obj/item/grown/log/tree/small= 1,
 	)
 	tool_usage = list(
-		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'sound/items/wood_sharpen.ogg'),
+		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'modular/kaizoku/sound/items/wood_sharpen.ogg'),
 	)
 	attacked_atom = /obj/item/grown/log/tree/small
 	starting_atom = /obj/item/weapon/knife
@@ -99,7 +99,7 @@
 		/obj/item/natural/fibers = 2,
 	)
 	tool_usage = list(
-		/obj/item/weapon/knife = list(span_notice("starts to cut"), span_notice("start to cut"), 'sound/items/sharpen_long1.ogg'),
+		/obj/item/weapon/knife = list(span_notice("starts to cut"), span_notice("start to cut"), 'modular/kaizoku/sound/items/sharpen_long1.ogg'),
 	)
 	attacked_atom = /obj/item/natural/fibers
 	starting_atom = /obj/item/weapon/knife
@@ -123,7 +123,7 @@
 		/obj/item/grown/log/tree/small= 1,
 	)
 	tool_usage = list(
-		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'sound/items/wood_sharpen.ogg'),
+		/obj/item/weapon/knife = list(span_notice("starts to whittle"), span_notice("start to whittle"), 'modular/kaizoku/sound/items/wood_sharpen.ogg'),
 	)
 	attacked_atom = /obj/item/grown/log/tree/small
 	starting_atom = /obj/item/weapon/knife

@@ -9,7 +9,7 @@
 	starting_atom = /obj/item/grown/log/tree/stick
 	output = /obj/item/reagent_containers/food/snacks/cooked/sausage_sticked
 	craft_time = 3 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	extra_chance = 100
 	crafting_message = "skewer the sausage"
 
@@ -26,7 +26,7 @@
 	output = /obj/item/reagent_containers/food/snacks/foodbase/griddledog_raw
 	required_table = TRUE
 	craft_time = 6 SECONDS
-	crafting_sound = 'sound/foley/kneading_alt.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/kneading_alt.ogg'
 	sound_volume = 90
 	crafting_message = "cover the sausage with dough"
 	extra_chance = 100

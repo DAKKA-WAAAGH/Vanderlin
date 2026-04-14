@@ -30,7 +30,7 @@
 	var/turf/T = get_turf(src)
 	if(!T)
 		return
-	playsound(src, 'sound/items/smokebomb.ogg' , 50)
+	playsound(src, 'modular/kaizoku/sound/items/smokebomb.ogg' , 50)
 	var/radius = 3
 	var/datum/effect_system/smoke_spread/S = new datum_to_spread
 	S.set_up(radius, T)

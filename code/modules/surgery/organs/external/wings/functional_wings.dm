@@ -168,7 +168,7 @@
 	owner.movement_type |= FLYING
 	flying = TRUE
 	to_chat(owner, span_notice("I start flying."))
-	playsound(owner, 'sound/mobs/wingflap.ogg', 75, FALSE)
+	playsound(owner, 'modular/kaizoku/sound/mobs/wingflap.ogg', 75, FALSE)
 	init_signals()
 	if(turf != get_turf(owner))
 		var/matrix/original = owner.transform
@@ -196,7 +196,7 @@
 		if(owner.can_zTravel(direction = DOWN))
 			turf = GET_TURF_BELOW(turf)
 	to_chat(owner, span_notice("I stop flying."))
-	playsound(owner, 'sound/mobs/wingflap.ogg', 75, FALSE)
+	playsound(owner, 'modular/kaizoku/sound/mobs/wingflap.ogg', 75, FALSE)
 	if(turf != get_turf(owner))
 		var/matrix/original = owner.transform
 		var/prev_alpha = owner.alpha

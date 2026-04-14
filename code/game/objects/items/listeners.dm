@@ -30,7 +30,7 @@
 /obj/item/speakerinq/attack_self(mob/user, params)
 	. = ..()
 	user.changeNext_move(6)
-	playsound(loc, 'sound/misc/beep.ogg', 100, FALSE, -1)
+	playsound(loc, 'modular/kaizoku/sound/misc/beep.ogg', 100, FALSE, -1)
 	speaking = !speaking
 	update_appearance(UPDATE_ICON_STATE)
 	to_chat(user, span_info("I [speaking ? "unsilence" : "silence"] the whisperer."))
@@ -165,7 +165,7 @@
 	if(.)
 		return
 	user.changeNext_move(CLICK_CD_MELEE)
-	playsound(loc, 'sound/misc/bug.ogg', 50, FALSE, -1)
+	playsound(loc, 'modular/kaizoku/sound/misc/bug.ogg', 50, FALSE, -1)
 	active = !active
 	to_chat(user, span_info("I [active ? "undeafen" : "deafen"] the Listener."))
 	update_appearance(UPDATE_ICON_STATE)

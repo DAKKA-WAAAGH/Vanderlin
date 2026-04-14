@@ -4,7 +4,7 @@
 	tutorial = "Cast from society, you use your powerful physical might and endurance to take from those who are weaker from you."
 	outfit = /datum/outfit/bandit/brigand
 	category_tags = list(CTAG_BANDIT)
-	cmode_music = 'sound/music/cmode/antag/combat_bandit_brigand.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/antag/combat_bandit_brigand.ogg'
 
 	jobstats = list(
 		STATKEY_STR = 2,

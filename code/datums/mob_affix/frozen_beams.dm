@@ -73,7 +73,7 @@
 
 	new /obj/effect/temp_visual/snap_freeze(get_turf(victim))
 
-	playsound(victim, 'sound/items/stonestone.ogg', 100)
+	playsound(victim, 'modular/kaizoku/sound/items/stonestone.ogg', 100)
 	victim.visible_message(
 		span_danger("[victim] is struck by the ray of frost!"),
 		span_userdanger("I'm struck by the ray of frost!"),)

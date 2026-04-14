@@ -44,7 +44,7 @@
 
 	// Species-specific adjustments
 	if(spawned.dna?.species?.id == SPEC_ID_DWARF)
-		spawned.cmode_music = 'sound/music/cmode/adventurer/CombatOutlander2.ogg'
+		spawned.cmode_music = 'modular/kaizoku/sound/music/cmode/adventurer/CombatOutlander2.ogg'
 
 		// Dwarf-specific skill adjustments
 		spawned.adjust_skillrank(/datum/skill/combat/axesmaces, 3)

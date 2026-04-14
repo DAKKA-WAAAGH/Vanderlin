@@ -131,13 +131,13 @@
 			container.visible_message(span_warning("Something inside [container] is getting very hot!"))
 		if(BURN_STAGE_SMOKING)
 			container.visible_message(span_warning("Something inside [container] is starting to smoke!"))
-			playsound(container, 'sound/foley/dropsound/food_drop.ogg', 30, TRUE)
+			playsound(container, 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg', 30, TRUE)
 			if(create_smoke)
 				var/turf/turf = get_turf(container)
 				turf.pollute_turf(/datum/pollutant/smoke, 50)
 		if(BURN_STAGE_CRITICAL)
 			container.visible_message(span_danger("Something inside [container] is burning!"))
-			playsound(container, 'sound/foley/dropsound/food_drop.ogg', 50, TRUE)
+			playsound(container, 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg', 50, TRUE)
 			if(create_smoke)
 				var/turf/turf = get_turf(container)
 				turf.pollute_turf(/datum/pollutant/smoke, 75)
@@ -173,7 +173,7 @@
 
 	SEND_SIGNAL(container, COMSIG_TRY_STORAGE_TAKE, food, get_turf(container))
 	// Visual and sound effects
-	playsound(T, 'sound/foley/dropsound/food_drop.ogg', 50, TRUE)
+	playsound(T, 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg', 50, TRUE)
 	container.visible_message(span_danger("[food] inside [container] has burned to a crisp!"))
 
 	// Create the burned food item

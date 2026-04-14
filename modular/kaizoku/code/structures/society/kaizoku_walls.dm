@@ -6,8 +6,8 @@
 	icon = 	'modular/kaizoku/icons/tileset/spine_alt.dmi'
 	icon_state = MAP_SWITCH("spine", "spine-0")
 	sheet_type = /obj/item/natural/stone
-	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
-	attacked_sound = list('sound/combat/hits/onstone/wallhit.ogg', 'sound/combat/hits/onstone/wallhit2.ogg', 'sound/combat/hits/onstone/wallhit3.ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onstone/stonedeath.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onstone/wallhit.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit2.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit3.ogg')
 	above_floor = /turf/open/floor/blocks
 	baseturfs = list(/turf/open/floor/blocks)
 	climbdiff = 1
@@ -73,8 +73,8 @@
 	desc = "Wooden wall of abyssal architecture that uses wooden joinery that fits together seamlessly."
 	icon = 	'modular/kaizoku/icons/tileset/vectorial.dmi'
 	icon_state = "vectorial"
-	break_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'
-	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroywalldoor.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
 	above_floor = /turf/open/floor/woodturned
 	baseturfs = list(/turf/open/floor/woodturned)
 	neighborlay = "dirtedge"
@@ -103,8 +103,8 @@
 	icon_state = MAP_SWITCH("fractal", "fractal-0")
 	blade_dulling = DULLING_BASHCHOP
 	max_integrity = 1100
-	break_sound = 'sound/combat/hits/onwood/destroywalldoor.ogg'
-	attacked_sound = list('sound/combat/hits/onwood/woodimpact (1).ogg','sound/combat/hits/onwood/woodimpact (2).ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onwood/destroywalldoor.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onwood/woodimpact (1).ogg','modular/kaizoku/sound/combat/hits/onwood/woodimpact (2).ogg')
 //	sheet_type = /obj/item/grown/log/tree/lumber
 	above_floor = /turf/open/floor/ruinedwood
 	baseturfs = list(/turf/open/floor/ruinedwood)
@@ -138,8 +138,8 @@
 	icon = 	'modular/kaizoku/icons/tileset/gladiatora.dmi'
 	icon_state = MAP_SWITCH("gladiatora", "gladiatora-0")
 	sheet_type = /obj/item/natural/dirtclod
-	break_sound = 'sound/combat/hits/onstone/stonedeath.ogg'
-	attacked_sound = list('sound/combat/hits/onstone/wallhit.ogg', 'sound/combat/hits/onstone/wallhit2.ogg', 'sound/combat/hits/onstone/wallhit3.ogg')
+	break_sound = 'modular/kaizoku/sound/combat/hits/onstone/stonedeath.ogg'
+	attacked_sound = list('modular/kaizoku/sound/combat/hits/onstone/wallhit.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit2.ogg', 'modular/kaizoku/sound/combat/hits/onstone/wallhit3.ogg')
 	above_floor = /turf/open/floor/blocks
 	baseturfs = list(/turf/open/floor/blocks)
 	climbdiff = 0

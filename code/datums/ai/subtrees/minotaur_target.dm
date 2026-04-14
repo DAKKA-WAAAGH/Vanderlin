@@ -25,7 +25,7 @@
 			if(boss.health < boss.maxHealth * 0.3 && controller.blackboard[BB_MINOTAUR_PHASE] < 3)
 				controller.set_blackboard_key(BB_MINOTAUR_PHASE, 3)
 				boss.visible_message("<span class='danger'>[boss] lets out an earthshaking roar as blood seeps from its wounds!</span>")
-				boss.playsound_local(get_turf(boss), 'sound/misc/explode/explosionfar (1).ogg', 50, TRUE)
+				boss.playsound_local(get_turf(boss), 'modular/kaizoku/sound/misc/explode/explosionfar (1).ogg', 50, TRUE)
 				new /obj/effect/temp_visual/minotaur_rage(get_turf(boss))
 				controller.set_blackboard_key(BB_MINOTAUR_ENRAGE_BONUS, 15)
 			else if(boss.health < boss.maxHealth * 0.6 && controller.blackboard[BB_MINOTAUR_PHASE] < 2)

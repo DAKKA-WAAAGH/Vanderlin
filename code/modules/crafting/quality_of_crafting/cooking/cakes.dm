@@ -13,7 +13,7 @@
 	output = /obj/item/reagent_containers/food/snacks/chescake_poison
 	required_table = TRUE
 	craft_time = 6 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	crafting_message = "add some juicy fruit filling"
 	extra_chance = 100
 
@@ -31,7 +31,7 @@
 	output = /obj/item/reagent_containers/food/snacks/chescake_poison
 	required_table = TRUE
 	craft_time = 6 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	crafting_message = "add some juicy fruit filling"
 	extra_chance = 100
 
@@ -48,7 +48,7 @@
 	output = /obj/item/reagent_containers/food/snacks/chescake
 	required_table = TRUE
 	craft_time = 6 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	crafting_message = "add some juicy fruit filling"
 	extra_chance = 100
 
@@ -65,7 +65,7 @@
 	output = /obj/item/reagent_containers/food/snacks/chescake
 	required_table = TRUE
 	craft_time = 6 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	crafting_message = "add some juicy fruit filling"
 	extra_chance = 100
 
@@ -82,7 +82,7 @@
 	output = /obj/item/reagent_containers/food/snacks/cake
 	required_table = TRUE
 	craft_time = 6 SECONDS
-	crafting_sound = 'sound/foley/dropsound/food_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/food_drop.ogg'
 	crafting_message = "work egg into the dough, shaping it into a cake"
 	minimum_skill_level = 2
 	extra_chance = 100
@@ -101,7 +101,7 @@
 	starting_atom = /obj/item/reagent_containers/food/snacks/produce/fruit/pear
 	output = /obj/item/reagent_containers/food/snacks/zybcake
 	craft_time = 9 SECONDS
-	crafting_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 	crafting_message = "add mouth-watering pear filling"
 	extra_chance = 100
 
@@ -118,7 +118,7 @@
 	starting_atom = /obj/item/reagent_containers/food/snacks/produce/fruit/plum
 	output = /obj/item/reagent_containers/food/snacks/crimsoncake
 	craft_time = 9 SECONDS
-	crafting_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 	crafting_message = "add some fine plum filling"
 	extra_chance = 100
 
@@ -135,7 +135,7 @@
 	starting_atom = /obj/item/reagent_containers/food/snacks/produce/fruit/tangerine
 	output = /obj/item/reagent_containers/food/snacks/tangerinecake
 	craft_time = 9 SECONDS
-	crafting_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 	crafting_message = "add some tangy tangerine filling"
 	extra_chance = 100
 
@@ -152,7 +152,7 @@
 	starting_atom = /obj/item/reagent_containers/food/snacks/produce/fruit/strawberry
 	output = /obj/item/reagent_containers/food/snacks/strawbycake
 	craft_time = 9 SECONDS
-	crafting_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 	crafting_message = "add some tangy tangerine filling"
 	extra_chance = 100
 
@@ -169,7 +169,7 @@
 	starting_atom = /obj/item/reagent_containers/food/snacks/cheese
 	output = /obj/item/reagent_containers/food/snacks/chescake_ready
 	craft_time = 9 SECONDS
-	crafting_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 	crafting_message = "spread fresh cheese on the cake"
 	extra_chance = 100
 
@@ -187,7 +187,7 @@
 	starting_atom = /obj/item/reagent_containers/food/snacks/cheese
 	output = /obj/item/reagent_containers/food/snacks/chescake_poison_ready
 	craft_time = 9 SECONDS
-	crafting_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 	crafting_message = "spread fresh cheese on the cake"
 	extra_chance = 100
 
@@ -204,7 +204,7 @@
 	starting_atom = /obj/item/reagent_containers/food/snacks/spiderhoney
 	output = /obj/item/reagent_containers/food/snacks/zybcake_ready
 	craft_time = 9 SECONDS
-	crafting_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 	crafting_message = "spread spider-honey on the cake"
 	extra_chance = 100
 
@@ -221,7 +221,7 @@
 	starting_atom = /obj/item/reagent_containers/food/snacks/sugar
 	output = /obj/item/reagent_containers/food/snacks/strawbycake_ready
 	craft_time = 9 SECONDS
-	crafting_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 	crafting_message = "spread sugar frosting on the cake"
 	extra_chance = 100
 
@@ -238,7 +238,7 @@
 	starting_atom = /obj/item/reagent_containers/food/snacks/chocolate
 	output = /obj/item/reagent_containers/food/snacks/crimsoncake_ready
 	craft_time = 9 SECONDS
-	crafting_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 	crafting_message = "add chocolate to the dough"
 	extra_chance = 100
 
@@ -255,6 +255,6 @@
 	starting_atom = /obj/item/reagent_containers/food/snacks/sugar
 	output = /obj/item/reagent_containers/food/snacks/tangerinecake_ready
 	craft_time = 9 SECONDS
-	crafting_sound = 'sound/foley/dropsound/gen_drop.ogg'
+	crafting_sound = 'modular/kaizoku/sound/foley/dropsound/gen_drop.ogg'
 	crafting_message = "spread sugar frosting on the cake"
 	extra_chance = 100

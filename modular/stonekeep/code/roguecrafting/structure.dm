@@ -11,7 +11,7 @@
 	skillcraft = /datum/skill/craft/carpentry
 	verbage = "carpent"
 	verbage_tp = "carpents"
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 	construct_tool = list(/obj/item/weapon/hammer)
 
 /datum/blueprint_recipe/structure/carpentry/stool
@@ -229,7 +229,7 @@
 	skillcraft = /datum/skill/craft/masonry
 	verbage = "mason"
 	verbage_tp = "masons"
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 
 /datum/blueprint_recipe/structure/masonry/millstone
 	name = "millstone"
@@ -304,13 +304,13 @@
 	required_materials = list(/obj/item/rope = 1)
 	verbage = "tie"
 	verbage_tp = "ties"
-	craftsound = 'sound/foley/noose_idle.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/noose_idle.ogg'
 
 /datum/blueprint_recipe/structure/fence
 	name = "palisade (s x2)"
 	result_type = /obj/structure/fluff/railing/fence
 	required_materials = list(/obj/item/grown/log/tree/stake = 2)
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 
 
 /datum/blueprint_recipe/structure/fence/alt
@@ -340,7 +340,7 @@
 	result_type = /obj/machinery/light/fueled/campfire/pyre
 	required_materials = list(/obj/item/grown/log/tree/small = 2,
 				/obj/item/grown/log/tree/stake = 3)
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 
 /* === SKILL LEVEL 1 === */
 
@@ -364,7 +364,7 @@
 	required_materials = list(/obj/item/grown/log/tree/stick = 4)
 	verbage = "construct"
 	verbage_tp = "constructs"
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 	craftdiff = 1
 
 /* === SKILL LEVEL 2 === */
@@ -373,7 +373,7 @@
 	name = "anvil"
 	result_type = /obj/machinery/anvil
 	required_materials = list(/obj/item/ingot/iron = 1)
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 	craftdiff = 2
 
 /datum/blueprint_recipe/structure/smelter
@@ -420,7 +420,7 @@
 /datum/blueprint_recipe/structure/engineer
 	verbage = "construct"
 	verbage_tp = "constructs"
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 	skillcraft = /datum/skill/craft/engineering
 
 /datum/blueprint_recipe/structure/engineer/lever

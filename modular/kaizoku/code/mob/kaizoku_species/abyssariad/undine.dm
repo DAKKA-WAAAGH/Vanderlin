@@ -220,7 +220,7 @@
 	craftdiff = 2
 	verbage = "assemble"
 	verbage_tp = "assembles"
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 
 /datum/blueprint_recipe/tribal/reinforced_helmet
 	name = "Reinforced Tribal Helmet"
@@ -236,7 +236,7 @@
 	craftdiff = 2
 	verbage = "assemble"
 	verbage_tp = "assembles"
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 
 /datum/blueprint_recipe/tribal/medium_helmet
 	name = "Medium Tribal Helmet"
@@ -252,7 +252,7 @@
 	craftdiff = 1
 	verbage = "craft"
 	verbage_tp = "crafts"
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 
 /datum/blueprint_recipe/tribal/medium_armor
 	name = "Medium Tribal Armor"
@@ -268,7 +268,7 @@
 	craftdiff = 1
 	verbage = "craft"
 	verbage_tp = "crafts"
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 
 /datum/blueprint_recipe/tribal/light_helmet
 	name = "Light Tribal Helmet"
@@ -282,7 +282,7 @@
 	craftdiff = 0
 	verbage = "stitch"
 	verbage_tp = "stitches"
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 
 /datum/blueprint_recipe/tribal/light_armor
 	name = "Light Tribal Armor"
@@ -296,7 +296,7 @@
 	craftdiff = 0
 	verbage = "stitch"
 	verbage_tp = "stitches"
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 
 /datum/blueprint_recipe/tribal_weapons
 	category = "Tribal Weapons"
@@ -316,7 +316,7 @@
 	craftdiff = 1
 	verbage = "bind"
 	verbage_tp = "binds"
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'
 
 /datum/blueprint_recipe/tribal_weapons/obsidian_spear
 	name = "Obsidian Spear"
@@ -332,4 +332,4 @@
 	craftdiff = 1
 	verbage = "lash"
 	verbage_tp = "lashes"
-	craftsound = 'sound/foley/Building-01.ogg'
+	craftsound = 'modular/kaizoku/sound/foley/Building-01.ogg'

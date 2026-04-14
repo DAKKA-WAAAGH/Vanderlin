@@ -337,7 +337,7 @@
 /atom/movable/screen/drop/Click()
 	if(ismob(usr))
 		var/mob/M = usr
-		M.playsound_local(M, 'sound/misc/click.ogg', 100)
+		M.playsound_local(M, 'modular/kaizoku/sound/misc/click.ogg', 100)
 	if(usr.stat == CONSCIOUS)
 		usr.dropItemToGround(usr.get_active_held_item(), silent = FALSE)
 
@@ -439,7 +439,7 @@
 	if(usr != user)
 		return TRUE
 
-	user.playsound_local(user, 'sound/misc/click.ogg', 100)
+	user.playsound_local(user, 'modular/kaizoku/sound/misc/click.ogg', 100)
 
 	var/_x = text2num(LAZYACCESS(modifiers, ICON_X))
 	var/_y = text2num(LAZYACCESS(modifiers, ICON_Y))
@@ -493,7 +493,7 @@
 /atom/movable/screen/quad_intents/Click(location, control, params)
 	if(ismob(usr))
 		var/mob/M = usr
-		M.playsound_local(M, 'sound/misc/click.ogg', 100)
+		M.playsound_local(M, 'modular/kaizoku/sound/misc/click.ogg', 100)
 
 	var/list/modifiers = params2list(params)
 	var/_y = text2num(LAZYACCESS(modifiers, ICON_Y))
@@ -528,7 +528,7 @@
 /atom/movable/screen/give_intent/Click(location, control, params)
 	if(ismob(usr))
 		var/mob/M = usr
-		M.playsound_local(M, 'sound/misc/click.ogg', 100)
+		M.playsound_local(M, 'modular/kaizoku/sound/misc/click.ogg', 100)
 	usr.mmb_intent_change(QINTENT_GIVE)
 
 /atom/movable/screen/give_intent/update_icon_state()
@@ -569,7 +569,7 @@
 	var/list/modifiers = params2list(params)
 	if(isliving(usr))
 		var/mob/living/L = usr
-		L.playsound_local(L, 'sound/misc/click.ogg', 100)
+		L.playsound_local(L, 'modular/kaizoku/sound/misc/click.ogg', 100)
 		if(LAZYACCESS(modifiers, RIGHT_CLICK))
 			L.submit()
 		else
@@ -706,7 +706,7 @@
 	var/list/modifiers = params2list(params)
 	var/_y = text2num(LAZYACCESS(modifiers, ICON_Y))
 
-	hud.mymob.playsound_local(hud.mymob, 'sound/misc/click.ogg', 100)
+	hud.mymob.playsound_local(hud.mymob, 'modular/kaizoku/sound/misc/click.ogg', 100)
 	if(isliving(hud?.mymob))
 		var/mob/living/L = hud.mymob
 		if(L.eyesclosed)

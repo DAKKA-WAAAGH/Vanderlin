@@ -26,7 +26,7 @@
 	base_intents = list(/datum/intent/simple/claw/deepone_unarmed)
 	attack_verb_continuous = "slashes"
 	attack_verb_simple = "slash"
-	attack_sound = 'sound/combat/wooshes/punch/punchwoosh (1).ogg'
+	attack_sound = 'modular/kaizoku/sound/combat/wooshes/punch/punchwoosh (1).ogg'
 	canparry = TRUE
 	d_intent = INTENT_DODGE
 	defprob = 50
@@ -62,7 +62,7 @@
 	icon_living = "deep1_spit"
 	icon_dead = "deep1_d"
 	projectiletype = /obj/projectile/bullet/reusable/deepone
-	projectilesound = 'sound/combat/wooshes/punch/punchwoosh (1).ogg'
+	projectilesound = 'modular/kaizoku/sound/combat/wooshes/punch/punchwoosh (1).ogg'
 	ranged = 1
 	retreat_distance = 2
 	minimum_distance = 5
@@ -97,7 +97,7 @@
 	attack_verb = list("claws", "strikes")
 	blade_class = BCLASS_CHOP
 	animname = "cut"
-	hitsound = 'sound/combat/hits/bladed/smallslash (1).ogg'
+	hitsound = 'modular/kaizoku/sound/combat/hits/bladed/smallslash (1).ogg'
 	clickcd = DEEPONE_ATTACK_SPEED
 	penfactor = 5
 	chargetime = 2
@@ -105,7 +105,7 @@
 	attack_verb = list("smashes", "slams")
 	blade_class = BCLASS_CHOP
 	animname = "cut"
-	hitsound = 'sound/combat/hits/blunt/metalblunt (1).ogg'
+	hitsound = 'modular/kaizoku/sound/combat/hits/blunt/metalblunt (1).ogg'
 	clickcd = DEEPONE_ATTACK_SPEED
 	penfactor = 5
 	chargetime = 2

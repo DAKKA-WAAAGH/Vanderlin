@@ -48,6 +48,6 @@
 		span_userdanger("YOU ARE MATTHIOS' CHOSEN!"),
 		span_notice("Dead don't need anything anymore! Rob graves to earn Matthios' approval!"),
 	))
-	chosen_one.playsound_local(chosen_one, 'sound/misc/gods/matthios_omen.ogg', 100)
+	chosen_one.playsound_local(chosen_one, 'modular/kaizoku/sound/misc/gods/matthios_omen.ogg', 100)
 
 	chosen_one.mind.announce_personal_objectives()

@@ -356,7 +356,7 @@
 
 /obj/item/clothing/ring/gold/burden/proc/psstt()
 	if(!ismob(loc))
-		playsound(src, 'sound/vo/psst.ogg', 50)
+		playsound(src, 'modular/kaizoku/sound/vo/psst.ogg', 50)
 		addtimer(CALLBACK(src, PROC_REF(psstt)), rand(10,20) SECONDS)
 
 /obj/item/clothing/ring/gold/burden/proc/on_ring_drop(mob/user, slot)

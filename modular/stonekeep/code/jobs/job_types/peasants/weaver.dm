@@ -10,7 +10,7 @@
 	min_pq = -50
 
 	outfit = /datum/outfit/job/stonekeep/weaver
-	cmode_music = 'sound/music/cmode/combat_guard.ogg'
+	cmode_music = 'modular/kaizoku/sound/music/cmode/combat_guard.ogg'
 
 /datum/outfit/job/stonekeep/weaver/pre_equip(mob/living/carbon/human/H)
 	..()

@@ -21,8 +21,8 @@
 	sharpness = IS_BLUNT
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK
-	swingsound = list('sound/combat/wooshes/blunt/shovel_swing.ogg','sound/combat/wooshes/blunt/shovel_swing2.ogg')
-	drop_sound = 'sound/foley/dropsound/shovel_drop.ogg'
+	swingsound = list('modular/kaizoku/sound/combat/wooshes/blunt/shovel_swing.ogg','modular/kaizoku/sound/combat/wooshes/blunt/shovel_swing2.ogg')
+	drop_sound = 'modular/kaizoku/sound/foley/dropsound/shovel_drop.ogg'
 	var/obj/item/natural/dirtclod/heldclod
 	melting_material = /datum/material/iron
 	melt_amount = 75
@@ -39,7 +39,7 @@
 	if(!istype(A, /obj/structure/snow))
 		return
 	var/turf/target_turf = get_turf(A)
-	playsound(A,'sound/items/dig_shovel.ogg', 100, TRUE)
+	playsound(A,'modular/kaizoku/sound/items/dig_shovel.ogg', 100, TRUE)
 	qdel(A)
 	for(var/dir in GLOB.cardinals)
 		var/turf/card = get_step(target_turf, dir)
@@ -125,7 +125,7 @@
 					else
 						heldclod.forceMove(T)
 					heldclod = null
-					playsound(T,'sound/items/empty_shovel.ogg', 100, TRUE)
+					playsound(T,'modular/kaizoku/sound/items/empty_shovel.ogg', 100, TRUE)
 					update_appearance(UPDATE_ICON_STATE)
 					return
 			else
@@ -137,7 +137,7 @@
 					else
 						T.ChangeTurf(/turf/open/floor/dirt/road, flags = CHANGETURF_INHERIT_AIR)
 					heldclod = new(src)
-					playsound(T,'sound/items/dig_shovel.ogg', 100, TRUE)
+					playsound(T,'modular/kaizoku/sound/items/dig_shovel.ogg', 100, TRUE)
 					update_appearance(UPDATE_ICON_STATE)
 			return
 		if(heldclod)
@@ -146,7 +146,7 @@
 			else
 				heldclod.forceMove(T)
 			heldclod = null
-			playsound(T,'sound/items/empty_shovel.ogg', 100, TRUE)
+			playsound(T,'modular/kaizoku/sound/items/empty_shovel.ogg', 100, TRUE)
 			update_appearance(UPDATE_ICON_STATE)
 			return
 		if(istype(T, /turf/open/floor/grass))

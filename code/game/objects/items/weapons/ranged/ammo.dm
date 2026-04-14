@@ -44,7 +44,7 @@
 	icon_state = "bolt_proj"
 	ammo_type = /obj/item/ammo_casing/caseless/bolt
 	range = 30
-	hitsound = 'sound/combat/hits/hi_arrow2.ogg'
+	hitsound = 'modular/kaizoku/sound/combat/hits/hi_arrow2.ogg'
 	embedchance = 100
 	armor_penetration = BOLT_PENETRATION
 	woundclass = BCLASS_PIERCE
@@ -121,7 +121,7 @@
 	woundclass = BCLASS_BLUNT
 	damage = BOLT_DAMAGE-20
 	armor_penetration = BOLT_PENETRATION-30
-	var/explode_sound = list('sound/misc/explode/incendiary (1).ogg','sound/misc/explode/incendiary (2).ogg')
+	var/explode_sound = list('modular/kaizoku/sound/misc/explode/incendiary (1).ogg','modular/kaizoku/sound/misc/explode/incendiary (2).ogg')
 
 /obj/projectile/bullet/reusable/bolt/pyro/on_hit(target)
 	. = ..()
@@ -251,7 +251,7 @@
 	icon_state = "bolthwater_proj"
 	ammo_type = /obj/item/ammo_casing/caseless/bolt/holy
 	range = 15
-	hitsound = 'sound/combat/hits/hi_arrow2.ogg'
+	hitsound = 'modular/kaizoku/sound/combat/hits/hi_arrow2.ogg'
 	embedchance = 100
 	woundclass = BCLASS_PIERCE
 	flag = "piercing"
@@ -290,7 +290,7 @@
 	icon_state = "arrow_proj"
 	ammo_type = /obj/item/ammo_casing/caseless/arrow
 	range = 30
-	hitsound = 'sound/combat/hits/hi_arrow2.ogg'
+	hitsound = 'modular/kaizoku/sound/combat/hits/hi_arrow2.ogg'
 	embedchance = 100
 	armor_penetration = ARROW_PENETRATION
 	woundclass = BCLASS_PIERCE
@@ -382,7 +382,7 @@
 	woundclass = BCLASS_BLUNT
 	damage = ARROW_DAMAGE-15
 	armor_penetration = ARROW_PENETRATION-15
-	var/explode_sound = list('sound/misc/explode/incendiary (1).ogg','sound/misc/explode/incendiary (2).ogg')
+	var/explode_sound = list('modular/kaizoku/sound/misc/explode/incendiary (1).ogg','modular/kaizoku/sound/misc/explode/incendiary (2).ogg')
 
 /obj/projectile/bullet/reusable/arrow/pyro/on_hit(target)
 	. = ..()
@@ -503,7 +503,7 @@
 	range = 15
 	jitter = 5
 	eyeblur = 3
-	hitsound = 'sound/combat/hits/hi_bolt (2).ogg'
+	hitsound = 'modular/kaizoku/sound/combat/hits/hi_bolt (2).ogg'
 	embedchance = 100
 	woundclass = BCLASS_SHOT
 	impact_effect_type = /obj/effect/temp_visual/impact_effect
@@ -563,7 +563,7 @@
 	range = 50
 	jitter = 5
 	stun = 1
-	hitsound = 'sound/combat/hits/hi_bolt (2).ogg'
+	hitsound = 'modular/kaizoku/sound/combat/hits/hi_bolt (2).ogg'
 	embedchance = 0
 	dismemberment = 500
 	spread = 0
@@ -583,7 +583,7 @@
 	if(iscarbon(target))
 		var/mob/living/carbon/M = target
 		M.gib()
-	explosion(explosion_place, devastation_range = 2, heavy_impact_range = 4, light_impact_range = 12, flame_range = 7, smoke = TRUE, soundin = pick('sound/misc/explode/bottlebomb (1).ogg','sound/misc/explode/bottlebomb (2).ogg'))
+	explosion(explosion_place, devastation_range = 2, heavy_impact_range = 4, light_impact_range = 12, flame_range = 7, smoke = TRUE, soundin = pick('modular/kaizoku/sound/misc/explode/bottlebomb (1).ogg','modular/kaizoku/sound/misc/explode/bottlebomb (2).ogg'))
 
 //................ Grapeshot ............... //
 /obj/item/ammo_casing/caseless/cball
@@ -639,7 +639,7 @@
 	icon_state = "dart_proj"
 	ammo_type = /obj/item/ammo_casing/caseless/dart
 	range = 6
-	hitsound = 'sound/combat/hits/hi_arrow2.ogg'
+	hitsound = 'modular/kaizoku/sound/combat/hits/hi_arrow2.ogg'
 	embedchance = 100
 	woundclass = BCLASS_STAB
 	damage = BLOWDART_DAMAGE

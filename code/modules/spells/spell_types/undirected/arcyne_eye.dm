@@ -2,7 +2,7 @@
 	name = "Arcyne Eye"
 	desc = "Tap into the arcyne to see what is unseen."
 	button_icon_state = "transfix"
-	sound = 'sound/vo/smokedrag.ogg'
+	sound = 'modular/kaizoku/sound/vo/smokedrag.ogg'
 
 	point_cost = 0
 
