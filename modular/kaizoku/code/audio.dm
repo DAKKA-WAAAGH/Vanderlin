@@ -4,7 +4,7 @@
 	desc = "shamisen, or just 'three-stings' is a abyssariad puckled stringed musical instrument, usually played using a Bachi."
 	icon = 'modular/kaizoku/icons/misc/music.dmi'
 	icon_state = "shamisen"
-	hitsound = 'sound/combat/hits/hit_shamisen.ogg'
+	hitsound = 'modular/kaizoku/sound/combat/hits/hit_shamisen.ogg'
 	lefthand_file = 'modular/kaizoku/icons/misc/lefthand_music.dmi'
 	righthand_file = 'modular/kaizoku/icons/misc/righthand_music.dmi'
 	song_list = list(
