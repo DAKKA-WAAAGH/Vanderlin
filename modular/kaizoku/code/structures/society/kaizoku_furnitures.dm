@@ -130,6 +130,116 @@
 	item_chair = null
 	anchored = FALSE
 
+/obj/structure/table/wood/foglander
+	name = "table"
+	desc = "A low wooden table."
+	icon_state = "table"
+	icon = 'modular/kaizoku/w/structure32x32.dmi'
+
+/obj/structure/closet/crate/crafted_closet/foglander
+	name = "closet"
+	desc = "A tall closet."
+	icon = 'modular/kaizoku/w/structure32x32.dmi'
+	base_icon_state = "closet"
+	icon_state = "closet"
+	open_sound = 'modular/kaizoku/sound/foley/oshiire.ogg'
+	close_sound = 'modular/kaizoku/sound/foley/oshiire.ogg'
+
+/obj/structure/closet/crate/drawer/foglander
+	name = "drawer"
+	desc = "A small drawer."
+	icon = 'modular/kaizoku/w/structure32x32.dmi'
+	icon_state = "drawer"
+	base_icon_state = "drawer"
+	open_sound = 'modular/kaizoku/sound/foley/oshiire.ogg'
+	close_sound = 'modular/kaizoku/sound/foley/oshiire.ogg'
+
+/obj/structure/fluff/walldeco/scroll
+	name = "wallscroll"
+	icon = 'modular/kaizoku/w/structure32x32.dmi'
+	icon_state = "wallscroll"
+
+/obj/structure/fluff/walldeco/scrollabyssor
+	name = "wallscroll"
+	icon = 'modular/kaizoku/w/structure32x32.dmi'
+	icon_state = "wallscroll_abyssor"
+
+/obj/structure/fluff/customsign/kaizoku
+	name = "sign"
+	desc = ""
+	icon_state = "sign"
+	max_integrity = 500
+	blade_dulling = DULLING_BASHCHOP
+	icon = 'modular/kaizoku/w/structure32x32.dmi'
+
+/obj/structure/fluff/sign/kaizoku/abyssor
+	name = "sign"
+	desc = ""
+	icon_state = "sign_abyssor"
+	max_integrity = 500
+	blade_dulling = DULLING_BASHCHOP
+	icon = 'modular/kaizoku/w/structure32x32.dmi'
+
+/obj/structure/fluff/sign/kaizoku/zizo
+	name = "sign"
+	desc = ""
+	icon_state = "sign_zizo"
+	max_integrity = 500
+	blade_dulling = DULLING_BASHCHOP
+	icon = 'modular/kaizoku/w/structure32x32.dmi'
+
+/obj/structure/fluff/sign/kaizoku/psy
+	name = "sign"
+	desc = ""
+	icon_state = "sign_psy"
+	max_integrity = 500
+	blade_dulling = DULLING_BASHCHOP
+	icon = 'modular/kaizoku/w/structure32x32.dmi'
+
+/obj/structure/fluff/railing/kaizoku
+	name = "fence"
+	desc = "A finely crafted wooden fence."
+	icon_state = "hulan"
+	icon = 'modular/kaizoku/w/railings.dmi'
+
+/obj/item/dmusicbox/kaizoku
+	name = "music box"
+	desc = "A finely crafted device made of wood, operated by pushing a button on its center. When pressed, the machine will roll the cylinder on its top and play music."
+	icon_state = "mbox0"
+	icon = 'modular/kaizoku/w/structure32x32.dmi'
+
+/obj/structure/fluff/kaizoku/ogham
+	name = "ogham stone"
+	desc = "A large rock with words from the native Enigman language carved into it. Planted by some of the first Enigmans to arrive on the Foglands."
+	icon = 'modular/kaizoku/w/structure32x32.dmi'
+	icon_state = "ogham"
+
+/obj/structure/fluff/kaizoku/ogham/overgrown
+	name = "ogham stone"
+	desc = "A large rock with words from the native Enigman language carved into it. Planted by some of the first Enigmans to arrive on the Foglands."
+	icon = 'modular/kaizoku/w/structure32x32.dmi'
+	icon_state = "oghamovergrown"
+
+/obj/structure/fluff/kaizoku/banner
+	name = "banner"
+	icon = 'modular/kaizoku/w/tallstructure.dmi'
+	icon_state = "banner"
+
+/obj/structure/fluff/kaizoku/banner/flipped
+	name = "banner"
+	icon = 'modular/kaizoku/w/tallstructure.dmi'
+	icon_state = "bannerflipped"
+
+/obj/structure/fluff/kaizoku/banner/evil
+	name = "banner"
+	icon = 'modular/kaizoku/w/tallstructure.dmi'
+	icon_state = "evilbanner"
+
+/obj/structure/fluff/kaizoku/banner/evil/flipped
+	name = "banner"
+	icon = 'modular/kaizoku/w/tallstructure.dmi'
+	icon_state = "evilbannerflipped"
+
 /obj/structure/well/shishiodoshi //Make this scare demons and tieflings later.
 	name = "demon frightener" //deerscare
 	desc = "Water fountain used in gardens, making windstalks bash against an argentite ore, creating an almost imperceptible sound that makes demons uncomfortable."
