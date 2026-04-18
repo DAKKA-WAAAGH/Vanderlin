@@ -540,6 +540,12 @@
 	desc = "This one features an elongated tang on each side that is the same length as the forward point."
 	icon_state = "jumonjiyari"
 
+/obj/item/weapon/polearm/spear/billhook/qinglongji
+	name = "qinglong ji"
+	desc = "A long spear with a crescent blade."
+	icon = 'modular/kaizoku/w/64.dmi'
+	icon_state = "qinglongji"
+
 /obj/item/weapon/polearm/halberd/bardiche/naginata
 	name = "naginata"
 	desc = "Its earliest form being a zatana blade mounted upon a long wooden pole, the naginata was the first polearm to come into widespread use by the Abyssariad."

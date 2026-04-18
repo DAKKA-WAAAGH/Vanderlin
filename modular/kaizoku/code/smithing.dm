@@ -526,6 +526,15 @@
 	additional_items = list(/obj/item/grown/log/tree/small, /obj/item/ingot/iron)
 	created_item = /obj/item/weapon/polearm/spear/yari/katakama
 
+/datum/anvil_recipe/weapons/qinglongji
+	name = "Qinglong Ji (+w)"
+	recipe_name = "a Qinglong Ji"
+	appro_skill = /datum/skill/craft/weaponsmithing
+	req_bar = /obj/item/ingot/steel
+	additional_items = list(/obj/item/grown/log/tree/small)
+	created_item = /obj/item/weapon/polearm/spear/billhook/qinglongji
+	craftdiff = 3
+
 /datum/anvil_recipe/weapons/jumonji
 	name = "Jumonji Yari (+w)"
 	recipe_name = "a Jumonji Yari"
