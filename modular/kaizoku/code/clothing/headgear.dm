@@ -208,12 +208,54 @@
 	icon_state = "zunari_kabuto"
 	icon = 'modular/kaizoku/icons/clothingicon/head.dmi'
 	mob_overlay_icon = 'modular/kaizoku/icons/clothing/head.dmi'
+	var/picked = FALSE
+	var/crest = null
 	adjustable = CAN_CADJUST
 	emote_environment = 3
 	block2add = FOV_RIGHT|FOV_LEFT
 	flags_inv = HIDEEARS|HIDEFACE|HIDEHAIR
 	body_parts_covered = HEAD_EXCEPT_MOUTH
 	detail_tag = "_det"
+
+/obj/item/clothing/head/helmet/visored/zunari/zamurai/attack_hand_secondary(mob/user, params)
+	. = ..()
+	if(. == SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN)
+		return
+	if(!picked)
+		var/list/icons = HELMET_KABUTO_DECORATIONS
+		var/choice = input(user, "Choose a crest.", "Zamurai crests") as anything in icons
+		if(!choice)
+			return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+		var/playerchoice = icons[choice]
+		crest = playerchoice  // Temporarily apply crest for preview
+		update_icon()
+		if(loc == user && ishuman(user))
+			var/mob/living/carbon/H = user
+			H.update_inv_head()
+		var/confirm = alert(user, "Are you sure you want the [choice] crest?", "Confirm Crest Selection", "Yes", "No")
+		if(confirm == "No")
+			crest = null  // Remove preview
+			update_icon()
+			if(loc == user && ishuman(user))
+				var/mob/living/carbon/H = user
+				H.update_inv_head()
+			return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+		picked = TRUE  // Confirm selection
+		return SECONDARY_ATTACK_CANCEL_ATTACK_CHAIN
+
+/obj/item/clothing/head/helmet/visored/zunari/zamurai/update_icon()
+	. = ..()
+	cut_overlays()
+	if(crest)
+		var/mutable_appearance/crest_overlay = mutable_appearance('modular/kaizoku/w/crests_icons.dmi', crest)
+		add_overlay(crest_overlay)
+
+/obj/item/clothing/head/helmet/visored/zunari/zamurai/worn_overlays(mutable_appearance/standing, isinhands, icon_file, dummy_block)
+	var/list/overlays = ..(standing, isinhands, icon_file, dummy_block)
+	if(crest && !isinhands)
+		var/mutable_appearance/crest_mob = mutable_appearance('modular/kaizoku/w/crests_onmob.dmi', crest)
+		overlays += crest_mob
+	return overlays
 
 /obj/item/clothing/head/helmet/visored/zunari/cursed/Initialize()
 	. = ..()
@@ -587,6 +629,13 @@
 			pic.color = get_detail_color()
 		add_overlay(pic)
 
+	if(crest)
+		var/crest_icon_state = crest
+		if(adjustable == CADJUSTED)
+			crest_icon_state = "[crest]_raised"
+		var/mutable_appearance/crest_overlay = mutable_appearance('modular/kaizoku/w/crests_icons.dmi', crest_icon_state)
+		add_overlay(crest_overlay)
+
 /obj/item/clothing/head/helmet/visored/zunari/zamurai/AdjustClothes(mob/user)
 	if(loc == user)
 		playsound(user, "sound/items/visor.ogg", 50, TRUE, -1)
@@ -611,6 +660,16 @@
 	else // Failsafe.
 		to_chat(user, "<span class='warning'>Wear the helmet on your head to open and close the visor.</span>")
 		return
+
+/obj/item/clothing/head/helmet/visored/zunari/zamurai/worn_overlays(mutable_appearance/standing, isinhands, icon_file, dummy_block)
+	var/list/overlays = ..(standing, isinhands, icon_file, dummy_block)
+	if(crest && !isinhands)
+		var/crest_mob_state = crest
+		if(adjustable == CADJUSTED)
+			crest_mob_state = "[crest]_raised"
+		var/mutable_appearance/crest_mob = mutable_appearance('modular/kaizoku/w/crests_onmob.dmi', crest_mob_state)
+		overlays += crest_mob
+	return overlays
 
 /obj/item/clothing/head/helmet/leather/paddedt
 	name = "grenadier bearskin"

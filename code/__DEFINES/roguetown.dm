@@ -675,6 +675,12 @@ BCLASS_TWIST)
 		"Oathtaker"="oathtaker_bascinet",\
 		"Skull"="skull_bascinet")
 
+#define HELMET_KABUTO_DECORATIONS list(\
+		"Nothing"="nothing",\
+		"V Fin"="vfin",\
+		"Coin"="coin",\
+		"Horns"="horns")
+
 #define SKULLMET_ICONS list(\
 		"volf"="skullmet_volf",\
 		"bear"="skullmet_bear",\
