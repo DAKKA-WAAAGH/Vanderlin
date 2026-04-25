@@ -2,6 +2,7 @@
 	uses_integrity = TRUE
 	name = "base class wall"
 	desc = "Abyssor is with us"
+	icon = 'modular/kaizoku/icons/tileset/newwallset/woodframe/woodplank.dmi'
 	icon_state = "wall0"
 	base_icon_state = "wall"
 	baseturfs = /turf/open/floor/dirt/road
@@ -557,6 +558,8 @@
 /turf/closed/wall/kaizojave/lattice
 	name = "You should not be able to see this."
 	desc = "Mappers fucked up if they spawned this."
+	icon = 'modular/kaizoku/icons/tileset/newwallset/latticenailess/wattledaub.dmi'
+	frill_icon = 'modular/kaizoku/icons/tileset/newwallset/latticenailess/wattledaub_frill.dmi'
 	wall_variety = "wood"
 	climbdiff = 2
 	explosion_block = 1
@@ -633,6 +636,8 @@
 /turf/closed/wall/kaizojave/wood
 	name = "wood framed wall"
 	desc = "You should NOT be seeing this."
+	icon = 'modular/kaizoku/icons/tileset/newwallset/woodframe/woodplank.dmi'
+	frill_icon = 'modular/kaizoku/icons/tileset/newwallset/woodframe/woodplank_frill.dmi'
 	wall_variety = "wood"
 	climbdiff = 3
 	explosion_block = 4
@@ -685,6 +690,8 @@
 /turf/closed/wall/kaizojave/stone
 	name = "stone framed wall"
 	desc = "You should not see thiiiiis..."
+	icon = 'modular/kaizoku/icons/tileset/newwallset/stoneframe/encapsulateneutral.dmi'
+	frill_icon = 'modular/kaizoku/icons/tileset/newwallset/stoneframe/encapsulateneutral_frill.dmi'
 	wall_variety = "stone"
 	climbdiff = 5
 	explosion_block = 12
@@ -772,6 +779,8 @@
 /turf/closed/wall/kaizojave/metal
 	name = "metal framed wall"
 	desc = "grrrrrr."
+	icon = 'modular/kaizoku/icons/tileset/newwallset/metalframe/steel.dmi'
+	frill_icon = 'modular/kaizoku/icons/tileset/newwallset/metalframe/steel_frill.dmi'
 	wall_variety = "metal"
 	climbdiff = 6
 	explosion_block = 20

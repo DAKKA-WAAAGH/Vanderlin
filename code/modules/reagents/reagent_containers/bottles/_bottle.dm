@@ -16,7 +16,7 @@ GLOBAL_LIST_INIT(wisdoms, world.file2list("strings/rt/wisdoms.txt"))
 	reagent_flags = TRANSPARENT
 	fill_icon_under_override = TRUE
 	w_class = WEIGHT_CLASS_NORMAL
-	drinksounds = list('sound/items/drink_bottle (1).ogg','sound/items/drink_bottle (2).ogg')
+	drinksounds = list('sound/items/drink_bottle (1).ogg','modular/kaizoku/sound/items/drink_bottle (2).ogg')
 	fillsounds = list('sound/items/fillcup.ogg')
 	poursounds = list('sound/items/fillbottle.ogg')
 	experimental_onhip = TRUE
@@ -210,7 +210,7 @@ GLOBAL_LIST_INIT(wisdoms, world.file2list("strings/rt/wisdoms.txt"))
 	w_class = WEIGHT_CLASS_SMALL
 	grid_width = 32
 	grid_height = 32
-	drinksounds = list('sound/items/drink_bottle (1).ogg','sound/items/drink_bottle (2).ogg')
+	drinksounds = list('sound/items/drink_bottle (1).ogg','modular/kaizoku/sound/items/drink_bottle (2).ogg')
 	fillsounds = list('sound/items/fillcup.ogg')
 	poursounds = list('sound/items/fillbottle.ogg')
 	label_prefix = "vial of "

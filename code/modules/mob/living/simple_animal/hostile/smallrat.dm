@@ -126,7 +126,7 @@
 				return
 			if(S != src)
 				qdel(S)
-				playsound(src,'sound/misc/eat.ogg', rand(30,60), TRUE)
+				playsound(src,'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 				if(prob(23))
 					var/turf/T = src.loc
 					if(T)

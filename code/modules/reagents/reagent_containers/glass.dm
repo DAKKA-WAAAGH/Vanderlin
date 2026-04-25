@@ -110,7 +110,7 @@
 		SEND_SIGNAL(user, COMSIG_SPLASHED_MOB, M, reagents.reagent_list)
 		reagents.reaction(M, TOUCH)
 		chem_splash(M.loc, 2, list(reagents))
-		playsound(M, pick('sound/foley/water_land1.ogg','sound/foley/water_land2.ogg', 'sound/foley/water_land3.ogg'), 100, FALSE)
+		playsound(M, pick('modular/kaizoku/sound/foley/water_land1.ogg','sound/foley/water_land2.ogg', 'modular/kaizoku/sound/foley/water_land3.ogg'), 100, FALSE)
 		log_combat(user, M, "splashed", R)
 		return
 	if(user.used_intent.type == INTENT_POUR)
@@ -219,7 +219,7 @@
 			newT = get_step(newT, get_dir(newT, user.loc))
 		reagents.reaction(newT, TOUCH)
 		chem_splash(newT, 2, list(reagents))
-		playsound(newT, pick('sound/foley/water_land1.ogg','sound/foley/water_land2.ogg', 'sound/foley/water_land3.ogg'), 100, FALSE)
+		playsound(newT, pick('modular/kaizoku/sound/foley/water_land1.ogg','sound/foley/water_land2.ogg', 'modular/kaizoku/sound/foley/water_land3.ogg'), 100, FALSE)
 		if(stealthy)
 			to_chat(user, span_notice("I splash the contents of [src] onto \the [newT]."))
 		else

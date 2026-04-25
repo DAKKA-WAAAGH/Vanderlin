@@ -234,7 +234,7 @@
 				sleep(3)
 				visible_message("<span class='notice'>The pig devours the vulnerable truffles!</span>")
 				hangry_meter = 0
-				playsound(src,'sound/misc/eat.ogg', rand(30,60), TRUE)
+				playsound(src,'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 				qdel(M)
 				break
 
@@ -264,12 +264,12 @@
 	if(istype(O, /obj/item/reagent_containers/food/snacks/truffles))
 		visible_message("<span class='notice'>The pig munches the truffles, looking happy.</span>")
 		hangry_meter = 0
-		playsound(src,'sound/misc/eat.ogg', rand(30,60), TRUE)
+		playsound(src,'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 		qdel(O)
 
 	if(istype(O, /obj/item/reagent_containers/food/snacks/toxicshrooms))
 		visible_message("<span class='notice'>The pig munches the truffles reluctantly.</span>")
-		playsound(src,'sound/misc/eat.ogg', rand(30,60), TRUE)
+		playsound(src,'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 		qdel(O)
 		playsound(src, 'sound/vo/mobs/pig/hangry.ogg', 100, TRUE, -1)
 		sleep(20)

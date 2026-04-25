@@ -231,7 +231,7 @@
 	parrysound = "bladedmedium"
 	swingsound = BLADEWOOSH_MED
 	possible_item_intents = list(/datum/intent/simple/werewolf)
-	parrysound = list('sound/combat/parry/parrygen.ogg')
+	parrysound = list('modular/kaizoku/sound/combat/parry/parrygen.ogg')
 	embedding = list("embedded_pain_multiplier" = 0, "embed_chance" = 0, "embedded_fall_chance" = 0)
 	item_flags = DROPDEL
 

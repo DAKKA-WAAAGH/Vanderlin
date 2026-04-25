@@ -214,7 +214,7 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 /mob/living/simple_animal/proc/try_tame(obj/item/O, mob/living/carbon/human/user)
 	if(!stat)
 		user.visible_message("<span class='info'>[user] hand-feeds [O] to [src].</span>", "<span class='notice'>I hand-feed [O] to [src].</span>")
-		playsound(src,'sound/misc/eat.ogg', rand(30,60), TRUE)
+		playsound(src,'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 		SEND_SIGNAL(src, COMSIG_MOB_FEED, O, 30, user)
 		SEND_SIGNAL(src, COMSIG_FRIENDSHIP_CHANGE, user, 10)
 		qdel(O)
@@ -928,7 +928,7 @@ GLOBAL_VAR_INIT(farm_animals, FALSE)
 		stack_trace("eating non snack")
 		return FALSE
 
-	playsound(src, 'sound/misc/eat.ogg', rand(30,60), TRUE)
+	playsound(src, 'modular/kaizoku/sound/misc/eat.ogg', rand(30,60), TRUE)
 	var/nutriment_give = 0
 	for(var/datum/reagent/consumable/C in eaten.reagents.reagent_list)
 		nutriment_give += C.nutriment_factor * C.volume / C.metabolization_rate
