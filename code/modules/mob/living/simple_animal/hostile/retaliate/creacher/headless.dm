@@ -149,7 +149,7 @@
 	if(swallowed_mob)
 		return
 	visible_message(span_notice("[src] grabs [L] and swallows them."))
-	playsound(src, 'sound/misc/eat.ogg', 25, TRUE)
+	playsound(src, 'modular/kaizoku/sound/misc/eat.ogg', 25, TRUE)
 	L.forceMove(src)
 	swallowed_mob = L
 	health_at_swallow = health

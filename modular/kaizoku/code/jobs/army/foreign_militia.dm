@@ -1,5 +1,7 @@
 //Differently of Vanderlin, the Militiaman has no such a thing as weaponsmithing/armorsmithing or smithing hammer. It'd be improper for Stonekeep in any way.
 //Militia's idea was to have some minor 'worker' skills to offset their less quantity of combat skill. But Gundam was against that
+// Update; Gundam have no control over this anymore, since we are KAIZOKU now.
+// Militias are GOING to have their minor 'worker' skills.
 //If you want Militia to have some 'minor work skills', talk with them and change their mind.
 
 /datum/job/kaizoku/militia // Replacement for 'Squires', most suitable because squires usually is implied, in irl terms, to be minors. This still functions as a beginner role.

@@ -3,7 +3,7 @@
 	name = "natural kaizojave wall"
 	desc = "Woops! This was not meant to to appear. Warn an coder or admin!"
 	icon = 'modular/kaizoku/icons/tileset/newwallset/natural/graniterock.dmi'
-	icon_state = "wall0"
+	icon_state = "wall0_0"
 	base_icon_state = "wall"
 	smoothing_flags = SMOOTH_BITMASK
 	smoothing_groups = SMOOTH_GROUP_KAIZOJAVE_NATURAL_WALL

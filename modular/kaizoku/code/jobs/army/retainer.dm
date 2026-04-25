@@ -171,7 +171,7 @@
 	ADD_TRAIT(H, TRAIT_MEDIUMARMOR, TRAIT_GENERIC)
 
 /datum/job/advclass/kaizoku/retainer/marksman
-	title = "Falconer Retinue"
+	title = "Falconer Retinue" //Remember to give them the ability to move on weak branches.
 	tutorial = "Your steady hands know the string just as much as your vision reachers farther than any other man, your precision has been shaped by the endless wind. You have a loyal companion for scouting, combat and communication as long it is alive."
 	outfit = /datum/outfit/job/kaizoku/retainer/marksman
 	category_tags = list(CTAG_RETAINER)

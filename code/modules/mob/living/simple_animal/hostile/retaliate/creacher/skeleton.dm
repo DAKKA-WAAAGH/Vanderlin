@@ -147,7 +147,7 @@
 	attack_verb = list("claws", "strikes", "punches")
 	blade_class = BCLASS_CHOP
 	animname = "cut"
-	hitsound = list('sound/combat/hits/bladed/genchop (1).ogg', 'sound/combat/hits/bladed/genchop (2).ogg', 'sound/combat/hits/bladed/genchop (3).ogg')
+	hitsound = list('sound/combat/hits/bladed/genchop (1).ogg', 'modular/kaizoku/sound/combat/hits/bladed/genchop (2).ogg', 'sound/combat/hits/bladed/genchop (3).ogg')
 	chargetime = 2
 	penfactor = 5
 	swingdelay = 8
